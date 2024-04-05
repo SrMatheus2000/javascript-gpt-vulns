@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'moveNodeModulesBack' is vulnerable to path traversal attacks. The function takes an argument 'next' and uses it to move files around in the file system. If an attacker can control the value of 'next', they could potentially move files to arbitrary locations in the file system, leading to unauthorized access to sensitive information or even remote code execution. This vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

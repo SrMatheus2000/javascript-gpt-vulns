@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-602"],
+"vulnerabilities": ["Client-Side Enforcement of Server-Side Security"],
+"description": "The function isSafeMethod is vulnerable as it relies on client-side validation to enforce security. This is a bad practice as client-side validation can be easily bypassed. The function checks if a method is defined on an object or its prototype, but this can be manipulated by an attacker. This vulnerability is classified as CWE-602: Client-Side Enforcement of Server-Side Security."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-23", "CWE-36"],
+  "vulnerabilities": ["Path Traversal", "Null Byte Injection", "Unrestricted File Upload"],
+  "description": "The function is vulnerable to path traversal attacks, null byte injection, and unrestricted file upload. An attacker can manipulate the 'path' parameter to access files outside of the intended directory, inject null bytes to bypass security checks, and upload malicious files to the server."
+}

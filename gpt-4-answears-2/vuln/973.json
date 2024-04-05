@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Information Exposure Through Sent Data", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function reads SSL certificate files using 'fs.readFileSync' which can lead to potential information exposure if the file paths or contents are logged or mishandled. Additionally, the function does not handle errors that may occur during file reading, which could lead to application crashes or resource exhaustion if the file does not exist or is too large."
+}

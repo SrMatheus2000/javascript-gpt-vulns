@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It checks if the provided method is supported, if the handler function is provided, and if the route already exists. It also catches any errors that occur when building the schema. Therefore, it does not seem to be vulnerable to common web application security risks such as Injection, Cross-Site Scripting (XSS), Insecure Direct Object References, Security Misconfiguration, or Cross-Site Request Forgery (CSRF)."
+}

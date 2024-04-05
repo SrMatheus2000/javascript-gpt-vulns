@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function is vulnerable to code injection. The function interpolates user-controlled data into a string that is then processed as code. This could allow an attacker to inject malicious code that is then executed by the application. The vulnerability occurs because the function does not properly validate or sanitize the 'options' input before using it in the 'interpolate' and 'nest' methods."
+}

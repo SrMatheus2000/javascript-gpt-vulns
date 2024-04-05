@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution which allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to several types of JavaScript-based attacks where the attacker has more control over the execution flow of the program. The vulnerability exists because the function does not properly validate the input 'path' and directly uses it to access and modify properties of the 'obj' object. An attacker can provide a 'path' that modifies the prototype of the 'Object' object, which can lead to the modification of all objects in the program."
+}

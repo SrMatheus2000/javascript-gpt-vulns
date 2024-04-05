@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Denial of Service"],
+  "description": "The function 'unique_name_633' is vulnerable to code injection attacks because it uses the 'markdown-it' library to parse user input without properly sanitizing it first. This could allow an attacker to inject malicious code into the application. Additionally, the function does not limit the size of the files that can be read using the 'fs' module, which could lead to a denial of service attack if an attacker is able to upload a large file that exhausts the server's resources."
+}

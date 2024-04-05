@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_671 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly injects user-supplied data (data.legendText, data.headText, data.subText, data.extra) into the HTML document without properly sanitizing it. An attacker could exploit this vulnerability by injecting malicious scripts into these data fields, which would then be executed in the browser of any user viewing the page. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

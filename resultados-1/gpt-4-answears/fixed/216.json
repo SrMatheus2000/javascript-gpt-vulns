@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["No input validation", "Potential SQL Injection"],
+  "description": "The function does not validate the input 'nodes'. This can lead to unexpected behavior if 'nodes' is not an array or does not contain the expected properties. Additionally, the function uses the 'field' property of 'node' and 'clone' directly in some operations, which could lead to SQL Injection if these properties contain malicious SQL commands."
+}

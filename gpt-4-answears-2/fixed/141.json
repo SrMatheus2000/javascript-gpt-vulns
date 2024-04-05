@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be secure. It uses DOMPurify to sanitize user-provided SVG before appending it to the document body, which helps prevent Cross-Site Scripting (XSS) attacks. It also removes the SVG element from the document body after use, which is a good practice to prevent memory leaks. No known vulnerabilities or CWEs (Common Weakness Enumerations) are found in this function."
+}

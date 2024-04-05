@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'html' method of jQuery to insert untrusted data returned by 'Handlebars.templates.main(this.model)' into the DOM. This can allow for JavaScript code execution if 'this.model' contains malicious script. The 'sanitizeHtml' function is used on 'id', but not on 'this.model' which is a potential source of XSS attacks."
+}

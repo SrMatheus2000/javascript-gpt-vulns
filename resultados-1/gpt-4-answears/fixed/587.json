@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'unique_name_320' is vulnerable to OS command injection. The function uses 'spawnSync' to execute a command that includes user-supplied input ('opts.sqlclPath', 'opts.connectString', 'opts.directory', 'opts.appID', 'opts.destination', 'opts.pluginName'). An attacker could potentially inject malicious commands via these inputs, leading to arbitrary command execution on the server."
+}

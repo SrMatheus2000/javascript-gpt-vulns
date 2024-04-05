@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function embedYoutubeIframe is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled data (youtubeParams) into the HTML content (elem.innerHTML). An attacker could potentially inject malicious scripts by manipulating the 'data-ytparams' attribute of the element."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is due to the fact that it directly uses user input in the generation of HTML content without properly sanitizing it. Specifically, the function uses the 'jax.originalText' variable, which can be controlled by the user, in the generation of an 'annotation' tag. If an attacker can control the value of 'jax.originalText', they can inject malicious scripts that will be executed when the generated HTML content is rendered in a web browser."
+}

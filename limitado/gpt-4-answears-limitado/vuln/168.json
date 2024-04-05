@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-20: Improper Input Validation", "CWE-706: Use of Incorrectly-Resolved Name or Reference"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Input", "Incorrectly Resolved Name or Reference"],
+  "description": "The function is vulnerable to path traversal attacks because it does not validate or sanitize the 'filepath' input. An attacker could potentially read any file on the system by providing a malicious 'filepath'. Additionally, the function does not handle errors that may occur during the reading and parsing of the file, which could lead to unhandled exceptions and potential denial of service. The function also uses the 'grunt' utility in a way that could potentially lead to incorrect resolution of names or references."
+}

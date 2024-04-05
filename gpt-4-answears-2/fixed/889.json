@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It takes an input string and decodes HTML entities, then manipulates the string and inserts it into an SVG. If the input string contains malicious scripts, they will be executed when the SVG is rendered. The function also fails to properly escape or encode the output, which can lead to injection attacks."
+}

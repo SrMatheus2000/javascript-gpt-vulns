@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function does not validate the 'path' parameter which can lead to Prototype Pollution if it is user-controlled. Prototype Pollution can lead to several security vulnerabilities including Remote Code Execution (RCE), Denial of Service (DoS), and Cross-Site Scripting (XSS)."
+}

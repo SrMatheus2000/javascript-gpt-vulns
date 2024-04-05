@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function '_getPasteContent' creates a new div element with contenteditable attribute set to true and appends it to the editor element. This allows an attacker to inject malicious scripts into the web page by pasting them into the editable div. The function '_processPasteContent' then inserts the pasted content into the editor's selection, which can lead to the execution of the injected scripts when the content is rendered by the browser. The function '_cleanPasteFontSize' also manipulates the style attribute of elements, which can be exploited to inject malicious scripts."
+}

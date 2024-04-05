@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-77"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Command Injection"],
+"description": "The function printDirect does not validate or sanitize the input parameters. This can lead to various vulnerabilities such as SQL Injection (CWE-89), Code Injection (CWE-94), and Command Injection (CWE-77) if the parameters are used in a context that allows for execution of commands or code. Additionally, the lack of input validation (CWE-20) can lead to unexpected behavior or errors."
+}

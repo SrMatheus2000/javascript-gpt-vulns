@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function getSizeFromRatio is vulnerable to code injection attacks. The function uses the math.eval function to evaluate a string provided in the options.ratio parameter. An attacker could provide a malicious string that includes JavaScript code, which would be executed when the math.eval function is called. This could lead to a variety of attacks, including data theft, data corruption, or denial of service."
+}

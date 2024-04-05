@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function is vulnerable to URL redirection, which means it can be manipulated to redirect users to an untrusted site. This is done through the 'window.location' object, which is used to change the current page to the URL specified in the hash part of the URL. An attacker could potentially manipulate the hash to redirect users to a malicious site."
+}

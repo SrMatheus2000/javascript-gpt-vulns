@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection because it concatenates the 'options' variable directly into a command string without any sanitization or escaping. An attacker could provide malicious input in 'options' that alters the command to perform unintended actions."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Email Validation Bypass"],
+  "description": "The function is vulnerable as it does not properly validate the email format. It allows for certain special characters in the user part of the email that are not typically allowed. For example, it allows for the backslash (\\) character in the user part of the email, which can be used to bypass the validation. This can lead to various security issues such as injection attacks."
+}

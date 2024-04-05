@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20", "CWE-200"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation", "Information Exposure"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it does not properly sanitize the 'options.headers' object before setting it as HTTP headers. An attacker could inject malicious scripts as headers, leading to XSS attacks. Additionally, the function does not validate the 'options' object, which could lead to unexpected behavior if the object is not properly formatted. The function also exposes potentially sensitive information in error messages, which could be exploited by an attacker to gain more information about the system."
+}

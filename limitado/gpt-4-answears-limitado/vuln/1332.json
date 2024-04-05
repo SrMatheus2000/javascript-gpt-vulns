@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it constructs a command using user-supplied input (source, target, options) and then executes it using exec(). This could allow an attacker to execute arbitrary commands on the system. Additionally, the function is vulnerable to path traversal attacks because it uses user-supplied input to construct file paths. An attacker could potentially read, write, or delete arbitrary files on the system."
+}

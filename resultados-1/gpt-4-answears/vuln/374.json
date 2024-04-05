@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service"],
+  "description": "The function unique_name_179 generates a random number 'n' between 1 and 9 and then enters a loop that runs 'n' times. If the random number is large, this could potentially lead to a high CPU usage and slow down the application, leading to a Denial of Service (DoS) attack. This is especially true if the 'generate' function called within the loop is resource-intensive."
+}

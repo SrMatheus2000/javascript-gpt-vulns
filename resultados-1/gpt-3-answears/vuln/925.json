@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-116"],
+  "vulnerabilities": ["Code Injection", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function is vulnerable to code injection (CWE-94) and server-side request forgery (CWE-116) attacks. The use of the 'new Function()' constructor without proper input validation allows an attacker to inject arbitrary code and execute it. Additionally, the function does not validate or sanitize user-supplied input, which can lead to SSRF vulnerabilities."
+}

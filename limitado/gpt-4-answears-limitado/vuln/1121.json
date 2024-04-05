@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function does not properly validate or sanitize the input 'str'. If 'str' is a function, it is directly executed which can lead to code injection. Also, the function directly assigns the input 'str' to the 'data' property of 'elem' object without any sanitization or encoding, which can lead to Cross-Site Scripting (XSS) if the 'elem' object is later used to generate HTML. It's recommended to always validate and sanitize user inputs and escape output to prevent these vulnerabilities."
+}

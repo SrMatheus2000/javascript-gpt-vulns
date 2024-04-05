@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function unique_name_236 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the 'matched' property of the input object 't' directly in the HTML output without properly sanitizing it. Although the function attempts to sanitize the 'matched' property using the 'escapeHTML' function, this sanitization is not applied when the 'matched' property is used to construct a CSS class name. An attacker could potentially inject malicious scripts by providing a specially crafted 'matched' property."
+}

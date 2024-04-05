@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it uses the 'execFile' function with a user-supplied argument 'iface'. An attacker could provide a malicious argument that could execute arbitrary commands on the system."
+}

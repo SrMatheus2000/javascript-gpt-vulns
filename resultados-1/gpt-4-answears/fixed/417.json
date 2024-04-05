@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_209 is vulnerable to OS command injection. This is because it uses the exec function to execute system commands and concatenates the dir variable directly into the command string. Even though there is an attempt to guard against injection by splitting the dir variable on semicolons and taking the first element, this is not sufficient to prevent all possible injection attacks. For example, an attacker could provide a dir value that includes double quote characters to escape from the quoted string context and inject arbitrary commands. This vulnerability is classified as CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

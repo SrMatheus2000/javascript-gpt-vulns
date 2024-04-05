@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Memory Exhaustion"],
+"description": "The function does not validate the size of the jpegData input before attempting to allocate memory for it. This could lead to memory exhaustion if a large jpegData is provided, causing a denial of service (DoS) condition."
+}

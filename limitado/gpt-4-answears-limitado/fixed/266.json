@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470", "CWE-400"],
+  "vulnerabilities": ["Unrestricted use of dangerous functions", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Unrestricted use of dangerous functions (CWE-470) as it uses the 'eval' function which can execute arbitrary code. This can lead to serious security issues if an attacker can control the input to the 'eval' function. The function is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of iterations in the for loop, which can lead to high CPU and memory usage if the input array is large."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)", "Buffer Overflow"],
+"description": "The function does not validate the input 'line' which can lead to unexpected behavior. If an attacker provides a large amount of data, it can cause the application to consume high resources leading to Denial of Service (DoS). Also, the function continuously appends the input to '_bodyBuffer' which can lead to Buffer Overflow if the input is not properly controlled."
+}

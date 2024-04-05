@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Type Error Exception"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) if the 'protocolre' regular expression is not properly defined and can cause the application to hang. Additionally, if the 'address' parameter is not a string, the function will throw a TypeError when trying to execute the 'trimLeft' method or 'protocolre.exec' method. This can lead to unexpected application crashes if not properly handled."
+}

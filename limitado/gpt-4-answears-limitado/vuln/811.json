@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the input 'val' which is derived from the match function. This could lead to potential SQL injection if the input is used in a database query. Also, the function does not handle errors that may occur during the execution of the function, which could lead to unexpected behavior."
+}

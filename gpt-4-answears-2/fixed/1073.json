@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-330: Use of Insufficiently Random Values"],
+"vulnerabilities": ["Insecure Randomness"],
+"description": "The function uses Math.random() as a fallback if window.crypto.getRandomValues or window.msCrypto.getRandomValues are not available. Math.random() is not suitable for generating cryptographic keys as it is not cryptographically secure. An attacker may be able to predict the output of Math.random() and generate the same password."
+}

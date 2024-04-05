@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function sanitizeURL is vulnerable to Cross-Site Scripting (XSS) attacks. The function checks if the URL starts with 'javascript:' and if so, it returns 'about:blank'. However, this check is case-insensitive and only trims whitespace from the start and end of the URL. An attacker could bypass this check by adding whitespace or using mixed case, such as '  JaVaScRiPt:alert(1)'. The function would not recognize this as a 'javascript:' URL and would return it as is, potentially leading to XSS attacks if the URL is used in a context that allows JavaScript execution."
+}

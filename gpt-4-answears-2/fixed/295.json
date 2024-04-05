@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Improper Input Validation", "Potential Injection Vulnerability"],
+"description": "The function does not validate the 'value' parameter which can lead to potential injection attacks if the function is used with untrusted input. Also, the function does not validate the 'output' parameter which can lead to potential improper input validation vulnerabilities."
+}

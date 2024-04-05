@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Randomness"],
+  "description": "The function uses the 'crypto' library to encrypt and decrypt data, but the 'algorithm' variable is not defined in the provided code. If a weak or broken algorithm is used, it could lead to insecure cryptographic storage. Also, the initialization vector (IV) is generated using 'crypto.randomBytes(16)', which may not provide sufficient randomness for cryptographic operations. This could potentially lead to predictable IVs, making the encryption more susceptible to attacks."
+}

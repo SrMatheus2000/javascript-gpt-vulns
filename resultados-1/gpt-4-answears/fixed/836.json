@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Code Injection"],
+  "description": "The function does not validate or sanitize the 'data' input, which can lead to SQL Injection or Code Injection attacks if the input includes malicious code. Also, the function uses the 'JSON.parse' method which can throw an exception if the input is not a valid JSON, but it does not handle this potential exception."
+}

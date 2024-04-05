@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The 'file' variable, which is used to construct the 'from' and 'to' paths, is not properly sanitized before use. An attacker could potentially manipulate the 'file' variable to navigate to arbitrary directories."
+}

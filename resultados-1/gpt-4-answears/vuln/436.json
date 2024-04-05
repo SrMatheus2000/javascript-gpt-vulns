@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service"],
+  "description": "The function 'unique_name_208' has a couple of vulnerabilities. First, it exposes sensitive information through error messages (CWE-209). This can be seen in the 'stderrmsg' variable where it includes detailed error messages, stack traces, and other system information. This information could be useful to an attacker for exploiting other vulnerabilities. Secondly, the function has a potential Denial of Service (DoS) vulnerability (CWE-400). This can occur if the 'diecount' variable is not properly controlled, leading to an infinite loop and consuming system resources, causing a DoS condition."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-328: Reversible One-Way Hash", "CWE-759: Use of a One-Way Hash without a Salt", "CWE-760: Use of a One-Way Hash with a Predictable Salt"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insufficiently Protected Credentials"],
+  "description": "The function uses SHA-1, which is considered weak due to vulnerabilities that allow for collision attacks. It also does not use a salt when hashing the password, making it vulnerable to rainbow table attacks. The scramble value is also not checked for its existence or validity, which could lead to unexpected behavior. The use of the Buffer constructor is also deprecated due to security and usability issues, and should be replaced with Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe()."
+}

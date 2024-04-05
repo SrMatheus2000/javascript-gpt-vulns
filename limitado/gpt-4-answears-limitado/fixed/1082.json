@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'window.parent.db' variable is directly used in the 'question' variable without proper sanitization or encoding. If an attacker can control the value of 'window.parent.db', they can inject malicious scripts that will be executed in the context of the victim's session. This can lead to session theft, account takeover, and other serious impacts. The vulnerability corresponds to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

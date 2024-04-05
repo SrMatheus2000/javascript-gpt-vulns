@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. It constructs a command to be executed using the 'execCommand' function with inputs 'ap.ssid' and 'config.iface' directly inserted into the command string. If an attacker can control these inputs, they could inject arbitrary commands to be executed on the system."
+}

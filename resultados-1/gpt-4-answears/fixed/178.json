@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400", "CWE-20"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it reads files directly from the provided filename without any validation. An attacker could provide a path to a sensitive file, leading to information disclosure. It's also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it doesn't limit the size of the file being read, potentially leading to a denial of service if a large file is provided. Lastly, it's vulnerable to Improper Input Validation (CWE-20) as it doesn't validate the structure of the loaded YAML file before using it."
+}

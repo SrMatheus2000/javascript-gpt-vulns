@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-311", "CWE-327"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Missing Encryption of Sensitive Data", "Use of a Broken or Risky Cryptographic Algorithm"],
+"description": "The function does not validate the 'value' and 'definition' parameters properly. This can lead to various vulnerabilities such as injection attacks. The function also exposes sensitive information by returning decoded values without any encryption. The use of 'base64' encoding is not secure for sensitive data as it can be easily decoded. The function also uses 'iron' encoding which is deprecated and known to have security issues."
+}

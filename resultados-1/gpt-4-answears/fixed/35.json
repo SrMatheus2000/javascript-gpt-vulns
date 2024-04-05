@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to parse the 'dataUrl' input. If the input is not properly validated, an attacker can provide a specially crafted string that causes the regex to take a very long time to process, leading to a Denial of Service (DoS) attack. This is known as a Regular Expression Denial of Service (ReDoS) vulnerability."
+}

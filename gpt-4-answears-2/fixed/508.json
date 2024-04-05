@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["URL Redirection to Untrusted Site ('Open Redirect')", "Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to URL Redirection and Cross-Site Scripting (XSS) attacks. The function attempts to sanitize the input URL by decoding it and removing non-alphanumeric characters. However, it only checks for 'javascript:', 'vbscript:', and 'data:' at the beginning of the string. An attacker could bypass this check by adding spaces or other characters before these strings. Additionally, the function does not validate the input URL, which could lead to Open Redirect vulnerabilities if the URL is used to redirect the user to another site."
+}

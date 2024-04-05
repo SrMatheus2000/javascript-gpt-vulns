@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function json2html does not properly sanitize the input for the 'key' variable. If the 'withQuotes' option is set to false, the 'key' variable is directly inserted into the HTML without any sanitization or escaping. This could lead to a Cross-Site Scripting (XSS) vulnerability if the 'key' variable contains malicious scripts."
+}

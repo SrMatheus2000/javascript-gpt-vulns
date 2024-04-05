@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the input 'v' which can lead to injection attacks. Also, the function does not properly escape or encode the output which can lead to Cross-Site Scripting (XSS) attacks. An attacker can inject malicious scripts or commands through the input 'v'. These scripts or commands can be executed in the context of the user's session, leading to unauthorized actions."
+}

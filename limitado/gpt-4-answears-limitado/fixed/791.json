@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Memory Exhaustion"],
+  "description": "The function '_allocate' can lead to memory exhaustion. It allocates a new buffer of size 'newSize' which is the sum of the current buffer length and the maximum of 'BUFFER_ALLOC_SIZE' and 'bytes'. If 'bytes' is a large value, this can lead to excessive memory consumption. This is a form of Denial of Service (DoS) attack where an attacker can cause the application to consume more memory than it is supposed to, leading to system slowdown or crash."
+}

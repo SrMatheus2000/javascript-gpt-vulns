@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack that occurs when an attacker is able to inject properties into existing JavaScript language construct prototypes, such as objects. This vulnerability is caused by the fact that the function does not properly validate the keys of the object that is being merged, allowing an attacker to modify the prototype of 'Object' which can alter the behavior of the entire application."
+}

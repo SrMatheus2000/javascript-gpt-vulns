@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function normalizes a path, which could potentially allow an attacker to traverse the file system outside of the intended directory. This is known as a Path Traversal vulnerability. An attacker could provide a directory string that includes sequences like '../' to navigate to parent directories and access sensitive files."
+}

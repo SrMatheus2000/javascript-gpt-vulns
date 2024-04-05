@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize the 'value' parameter before using it to set an attribute on an element. This could lead to Cross-Site Scripting (XSS) if the 'value' parameter can be controlled by an attacker. XSS vulnerabilities occur when data enters a web application through an untrusted source (in this case, the 'value' parameter) and is used to generate dynamic HTML content. An attacker can exploit this vulnerability to inject malicious scripts into web pages viewed by other users. These scripts can steal sensitive information (like login data), manipulate web content, or redirect the user to malicious sites."
+}

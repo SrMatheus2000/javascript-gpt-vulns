@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-116"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The cmdSet function is vulnerable to command injection and improper input validation. The function takes two parameters, 'key' and 'val', and attempts to parse the 'val' parameter as JSON. However, the function does not properly validate the 'val' parameter before parsing it, which can lead to command injection vulnerabilities. An attacker can provide malicious input that is executed as a command on the server. Additionally, the function does not handle exceptions properly, which can lead to unexpected behavior or information disclosure."
+}

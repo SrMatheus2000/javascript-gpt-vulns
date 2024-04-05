@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-119"],
+  "vulnerabilities": ["Buffer Overflow", "Improper Input Validation"],
+  "description": "The function is vulnerable to a buffer overflow and lacks proper input validation. An attacker can potentially exploit this vulnerability to execute arbitrary code or cause a denial of service."
+}

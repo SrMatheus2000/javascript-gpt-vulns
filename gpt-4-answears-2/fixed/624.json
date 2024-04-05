@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Input Validation Vulnerability"],
+"description": "The function does not validate or sanitize the input that is used to set the contentType, charset, and other properties. This could potentially lead to various issues such as Cross-Site Scripting (XSS) or code injection attacks if the input is controlled by an attacker."
+}

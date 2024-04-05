@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). This is due to the fact that user input is used to construct file paths in a way that is not properly sanitized, allowing an attacker to access arbitrary files on the system. The vulnerability is specifically in the line where the filename is constructed using user input from 'ctx.path'. An attacker could potentially manipulate 'ctx.path' to navigate to directories outside of the intended scope, leading to unauthorized file access."
+}

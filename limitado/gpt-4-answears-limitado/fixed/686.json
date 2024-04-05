@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function 'mrk.htmlify.link' and 'mrk.htmlify.autolink' are using the 'mrk.escapeHTML' function to escape the 'href' attribute of the 'a' tag. However, this does not prevent all possible XSS attacks, as it does not escape other HTML attributes that could potentially contain malicious scripts. An attacker could inject a script in the 'href' attribute that would be executed when the link is clicked."
+}

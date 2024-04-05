@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'port' parameter is directly used in a command line string that is executed by the system. An attacker could provide a malicious input for 'port' that includes command line syntax, potentially allowing them to execute arbitrary commands on the system."
+}

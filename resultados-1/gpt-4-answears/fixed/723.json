@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to contain any known vulnerabilities. It is primarily defining a set of utility functions and constants on the provided object, and does not perform any inherently risky operations such as eval(), direct manipulation of the DOM, or insecure handling of user input. As such, it does not appear to be vulnerable to common JavaScript vulnerabilities such as Cross-Site Scripting (XSS), Eval Injection, or Insecure Direct Object References (IDOR)."
+}

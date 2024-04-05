@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection"],
+  "description": "The function is vulnerable to Path Traversal and OS Command Injection. The 'stderr' parameter is used directly in a file system operation without any sanitization, which could allow an attacker to access, modify, or delete files (CWE-22). Additionally, the 'stderr' parameter is used in an OS command without any sanitization, which could allow an attacker to execute arbitrary commands (CWE-78)."
+}

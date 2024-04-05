@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'getLastOfPath' is vulnerable to Prototype Pollution because it directly modifies an object based on the input without validating if the input properties are reserved and could affect the base Object prototype. An attacker could manipulate these properties to add or modify existing properties of all objects, leading to issues such as denial of service, data manipulation, or even remote code execution if the application logic depends on certain properties."
+}

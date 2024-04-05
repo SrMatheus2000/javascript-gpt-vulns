@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-522: Insufficiently Protected Credentials"],
+  "vulnerabilities": ["Sensitive data exposure", "Insecure handling of user credentials"],
+  "description": "The function readPkcs12 is vulnerable as it exposes sensitive information. The passwords for the PKCS12 file and the client key are not adequately protected. They are stored in plaintext and passed around in the options object. This could lead to information exposure (CWE-200) if an attacker can access these values. Additionally, the function creates temporary files to store these passwords (CWE-522), which could be accessed by an unauthorized user, leading to a potential breach of sensitive data."
+}

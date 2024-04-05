@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the 'dangerouslySetInnerHTML' property to directly insert user-provided input (this.props.value.md) into the HTML content. If the user input is not properly sanitized, this could lead to the execution of malicious scripts."
+}

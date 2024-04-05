@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The replace function is used to remove certain characters from the input value, but it does not sufficiently sanitize the input to prevent all possible malicious inputs. An attacker could potentially inject script tags or other malicious content into the input value, which would then be returned by the function and could be executed by the client's browser."
+}

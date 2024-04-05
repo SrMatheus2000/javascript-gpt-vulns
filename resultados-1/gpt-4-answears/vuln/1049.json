@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-522"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Insufficiently Protected Credentials"],
+  "description": "The function _startTLS is vulnerable as it does not validate the server's certificate against a list of trusted Certificate Authorities, nor does it validate the hostname. This could allow a man-in-the-middle attack. Also, the credentials are not adequately protected, they are stored in the configuration file in plaintext, which could lead to unauthorized access if the configuration file is compromised."
+}

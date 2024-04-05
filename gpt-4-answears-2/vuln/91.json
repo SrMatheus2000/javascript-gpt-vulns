@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to Code Injection through the use of the Function constructor. This allows for arbitrary code execution. The input 'e' is directly used to form a URL without any validation, which can lead to various attacks if the input is not trusted."
+}

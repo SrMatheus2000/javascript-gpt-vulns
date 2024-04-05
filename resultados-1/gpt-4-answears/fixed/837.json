@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to several types of attacks. Firstly, it does not validate or sanitize the 'data' input, which can lead to various types of injection attacks. For instance, an attacker could potentially inject malicious SQL or code (CWE-89, CWE-94). Secondly, the function does not limit the size of the 'data' input, which could lead to a denial of service attack by consuming too much memory (CWE-400)."
+}

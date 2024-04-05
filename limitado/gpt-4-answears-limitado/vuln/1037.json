@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks because it directly evaluates expressions from the 'argsFn' array without any sanitization or validation. This can allow an attacker to execute arbitrary code. Additionally, the function does not validate the input received in 'fn' and 'contextGetter' parameters, which can lead to unexpected behavior or errors."
+}

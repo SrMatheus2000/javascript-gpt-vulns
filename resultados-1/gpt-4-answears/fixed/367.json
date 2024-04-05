@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Infinite Loop Vulnerability"],
+  "description": "The function stripCustomNsAttrs has a potential vulnerability where it can enter an infinite loop if the getNonDescendant function does not return a node that is not a descendant of the current node. This can lead to a Denial of Service (DoS) attack where the application becomes unresponsive due to the infinite loop. This is an example of CWE-20, where the function does not properly validate the input from the getNonDescendant function."
+}

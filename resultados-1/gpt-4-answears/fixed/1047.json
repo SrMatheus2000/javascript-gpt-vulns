@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["No validation of configObject properties", "Potential exposure of sensitive information in development environment", "Potential for denial of service attack"],
+  "description": "The function does not validate the properties of the configObject, which could lead to unexpected behavior or errors. In the development environment, the function exposes a route that could potentially reveal sensitive information. Additionally, the function does not limit the number of requests that can be made to the '/i18n/:locale' and '/i18n/:locale/:phrase' routes, which could lead to a denial of service attack if an attacker makes a large number of requests."
+}

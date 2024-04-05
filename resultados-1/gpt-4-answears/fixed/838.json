@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Information Disclosure", "Improper Input Validation", "Cross-Site Request Forgery", "Cross-Site Scripting"],
+  "description": "The function 'unique_name_464' is vulnerable to several types of attacks. Firstly, it discloses server information which can be used by an attacker to exploit known vulnerabilities of the server. Secondly, it does not validate the 'data' input which can lead to unexpected behavior or even code execution. Thirdly, it does not implement any CSRF protections, allowing an attacker to trick a victim into making a request they did not intend. Lastly, it does not properly sanitize the 'callback' parameter before including it in the response, leading to a potential Cross-Site Scripting (XSS) vulnerability."
+}

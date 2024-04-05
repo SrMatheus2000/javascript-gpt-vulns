@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-749: Exposed Dangerous Method or Function"],
+  "vulnerabilities": ["Information Exposure", "Exposed Dangerous Method"],
+  "description": "The function is vulnerable as it exposes sensitive information through error messages. In the catch block, the error message is directly set as the value of the CodeMirror instance, which could potentially expose sensitive information to the user. This is related to CWE-209. Additionally, the function triggers events such as 'file_loaded.Editor' and 'file_load_failed.Editor' which could potentially be listened to by malicious scripts, leading to the exposure of dangerous methods or functions (CWE-749)."
+}

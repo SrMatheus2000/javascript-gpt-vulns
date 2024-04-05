@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'connectToWifi' is vulnerable to OS command injection. The function constructs a command string using user-supplied input (ap.ssid, ap.password, config.iface) and then executes this command using the 'exec' function. An attacker could potentially supply malicious input that alters the command string to execute arbitrary commands on the system."
+}

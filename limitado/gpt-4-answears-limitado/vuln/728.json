@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection because it uses the 'exec' function to execute a system command and includes user-supplied input ('iface') in the command without properly sanitizing it. An attacker could provide a malicious 'iface' value that includes command injection payloads, leading to arbitrary command execution."
+}

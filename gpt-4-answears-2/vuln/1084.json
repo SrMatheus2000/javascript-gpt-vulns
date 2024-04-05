@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Potential Denial of Service (DoS)"],
+"description": "The function 'unique_name_609' could potentially lead to a Denial of Service (DoS) attack. This is due to the uncontrolled consumption of resources. The function pushes notifications to the '_notificationsQueue' array and processes them without any limit. If an attacker can control the number of notifications, they could potentially cause the application to consume excessive resources, leading to a DoS condition. This is related to CWE-400: Uncontrolled Resource Consumption."
+}

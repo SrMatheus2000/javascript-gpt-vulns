@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-74", "CWE-89", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Injection", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the 'mime' parameter which can lead to various vulnerabilities. An attacker can pass a malicious 'mime' type that can lead to injection attacks. The function also does not handle exceptions for the 'Bourne.parse' and 'Querystring.parse' methods which can lead to denial of service (DoS) if a large payload is passed. The function also does not sanitize the 'payload' parameter which can lead to cross-site scripting (XSS) attacks if the payload is rendered in the browser."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94"],
+  "vulnerabilities": ["Path Traversal", "Code Injection"],
+  "description": "The function is vulnerable to Path Traversal and Code Injection attacks. The Path Traversal vulnerability (CWE-22) is due to the use of 'fs.statSync' and 'path.resolve' functions without proper validation of the 'staticPath' variable which can be manipulated to access arbitrary files on the system. The Code Injection vulnerability (CWE-94) is due to the use of 'controllerInst._handleAction.call' function which can be manipulated to execute arbitrary code."
+}

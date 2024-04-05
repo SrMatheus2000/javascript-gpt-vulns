@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Sensitive Information Exposure"],
+  "description": "The function is designed to replace sensitive environment variables (like tokens, passwords, credentials, secrets, and private keys) in the output with a replacement string. However, it only checks for these sensitive variables if their size is greater than or equal to SECRET_MIN_SIZE. If a sensitive variable is smaller than SECRET_MIN_SIZE, it will not be replaced, potentially exposing sensitive information. Additionally, the function does not handle the case where the environment variable is not a string, which could lead to unexpected behavior."
+}

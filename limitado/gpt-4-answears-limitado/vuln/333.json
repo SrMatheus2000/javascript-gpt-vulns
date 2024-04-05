@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-384: Session Fixation"],
+  "vulnerabilities": ["Insecure Cryptographic Operations", "Session Management"],
+  "description": "The function signPersonalMessage uses a potentially insecure cryptographic operation. The 'v' value is derived from the payload and then converted to hexadecimal. If the payload is compromised, this could lead to insecure cryptographic operations. Additionally, the function uses session-based authentication without proper session management, which could lead to session fixation attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Insecure Cryptographic Operations"],
+  "description": "The function seems to be using a cryptographic operation to sign a message. However, it does not validate the input message before signing it, which could lead to potential security risks. An attacker could potentially provide a malicious input, leading to unexpected behavior. Additionally, the function does not handle errors properly. When an error occurs, it simply rejects the promise with a new Error object, but it does not log the error or handle it in any other way. This could make debugging difficult and could potentially lead to unhandled promise rejections."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Improper Input Validation"],
+  "description": "The function does not handle non-string inputs properly. If the input is not a string, it is returned as is without any sanitization or validation. This could lead to potential security vulnerabilities such as code injection if the function is used in a context where the input is expected to be sanitized or validated."
+}

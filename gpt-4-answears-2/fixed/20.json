@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function is vulnerable to code injection. It dynamically generates code using the 'new Function' constructor, which can lead to arbitrary code execution if user-supplied input is not properly sanitized. This is especially dangerous if the function is used in a server-side JavaScript environment, where an attacker could potentially execute arbitrary code with the privileges of the server process."
+}

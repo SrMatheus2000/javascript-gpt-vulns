@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function listens to various events and directly uses the data provided by these events without any sanitization or encoding. This can allow an attacker to inject malicious scripts through these events, which will then be executed in the user's browser. Specifically, the 'page-title-updated' event handler directly sets the window title to the event's title without any sanitization. If an attacker can control the title of the event, they can inject malicious scripts that will be executed when the title is displayed in the user's browser."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The file.name is directly concatenated into the dataName variable and then used in the attribute variable. If an attacker can control the file.name, they can inject malicious scripts that will be executed when the attribute is rendered in the HTML."
+}

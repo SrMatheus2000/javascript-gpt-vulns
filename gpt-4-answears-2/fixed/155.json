@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-287: Improper Authentication", "CWE-359: Exposure of Private Information"],
+"vulnerabilities": ["Insecure Direct Object References (IDOR)", "Potential Information Disclosure"],
+"description": "The function does not properly verify the user's identity before allowing password changes. This could allow an attacker to change another user's password if they can guess or brute-force the user ID (uid). Additionally, the function may expose sensitive information such as hashed passwords and UUIDs."
+}

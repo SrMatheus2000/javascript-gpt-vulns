@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-259", "CWE-78"],
+  "vulnerabilities": ["Path Traversal", "Use of Hard-coded Password", "OS Command Injection"],
+  "description": "The function is vulnerable to several types of attacks. First, it does not validate or sanitize the 'pathBundleIN' and 'pathOUT' inputs, which can lead to Path Traversal (CWE-22) if an attacker provides a malicious path. Second, it uses a hard-coded password (CWE-259), which is a bad security practice as it can be easily discovered and exploited. Lastly, the function uses the 'openssl.spawnWrapper' function with user-supplied input, which can lead to OS Command Injection (CWE-78) if an attacker provides a malicious command."
+}

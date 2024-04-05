@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-400"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) because it creates an HTTP server if the 'https' option is not provided, which could lead to the exposure of sensitive information. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the number of WebSocket connections that can be made, which could lead to a Denial of Service (DoS) attack."
+}

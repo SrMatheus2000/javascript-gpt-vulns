@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "This function is vulnerable to timing attacks. The time it takes to execute can vary based on the input, which can potentially reveal sensitive information. Specifically, the 'if (hBit != eBit)' condition can cause different execution paths and thus different timings. An attacker could potentially use this information to infer the secret key 'k'."
+}

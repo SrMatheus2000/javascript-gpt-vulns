@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Command Injection", "Denial of Service"],
+  "description": "The function is vulnerable to command injection because it concatenates a sanitized URL directly into a command string that is then executed. An attacker could potentially control the command that is executed if they can control the input URL. Additionally, the function is vulnerable to a denial of service attack because it does not limit the number of requests that can be made, potentially allowing an attacker to exhaust system resources."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-749: Exposed Dangerous Method or Function"],
+"vulnerabilities": ["Improper Input Validation", "Exposure of Private Information", "Exposed Dangerous Method or Function"],
+"description": "The function does not validate the 'params' input, which can lead to unexpected behavior or errors. It also exposes the 'parent' and 'message' properties, which could potentially expose sensitive information. The function also uses the 'delete' keyword to remove properties from the 'params' object, which can lead to unexpected behavior if the 'params' object is used elsewhere. The function also directly manipulates the Vue instance, which can lead to unexpected behavior or security vulnerabilities."
+}

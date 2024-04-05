@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function attempts to mitigate basic Cross-Site Scripting (XSS) attacks by replacing '<' and '>' characters in strings. However, this is not sufficient to prevent all XSS attacks. For example, an attacker could still inject malicious scripts using event handlers or other HTML attributes. Additionally, the function does not sanitize other types of data, such as objects or arrays, which could also be used to carry out XSS attacks."
+}

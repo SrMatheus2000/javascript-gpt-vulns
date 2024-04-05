@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "The function pointFpMultiplyTwo is vulnerable to timing attacks. This is because the time taken by the function depends on the input values, which can be exploited by an attacker to gain information about the secret values. This is a common vulnerability in cryptographic algorithms that do not implement constant-time operations."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function does not validate the input for 'hierarchies' and 'target' which can lead to Prototype Pollution if the input is not trusted. Prototype Pollution is about polluting the prototype of a base object which can sometimes lead to arbitrary code execution."
+}

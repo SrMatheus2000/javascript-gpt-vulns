@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Input Validation"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not validate the 'header' input properly. If an attacker provides a large 'header' input, the function will consume a lot of resources (CPU and memory) when splitting the 'header' and matching the ranges, which can lead to a DoS condition. Additionally, the function does not validate the 'length' input, which can lead to unexpected behavior if an attacker provides a negative number or a non-integer value."
+}

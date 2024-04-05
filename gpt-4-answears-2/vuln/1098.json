@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-918"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function is vulnerable as it uses HTTP instead of HTTPS for transmitting data, which can expose sensitive information to an attacker. This is known as Cleartext Transmission of Sensitive Information (CWE-319). Additionally, the function could be exploited to perform Server-Side Request Forgery (SSRF) attacks (CWE-918) as it takes a URL and makes a request to it without validating the URL."
+}

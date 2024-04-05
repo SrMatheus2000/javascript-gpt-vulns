@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-site Scripting (XSS) attacks. This is due to the use of innerHTML property which can potentially insert malicious scripts into the DOM. The function '_escapeHTML' is used to sanitize the input, but it's not clear how effective this function is without seeing its implementation. If it's not properly implemented, it could lead to XSS attacks."
+}

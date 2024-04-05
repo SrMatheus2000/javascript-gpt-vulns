@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Code Injection", "Resource Exhaustion"],
+"description": "The function is vulnerable to Code Injection through the 'ext' parameter in the 'set' method. An attacker could potentially inject malicious code that could be executed. Additionally, the function does not have any control over the size of the 'ext' array, which could lead to Resource Exhaustion if an excessively large array is passed."
+}

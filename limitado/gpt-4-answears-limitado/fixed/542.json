@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The destination path is created by joining the options.path and file.path, but there is no validation to ensure that file.path is not a relative path that could lead outside of the intended directory. An attacker could potentially provide a file.path such as '../../etc/passwd' to access sensitive files outside of the intended directory. This is a common vulnerability known as Path Traversal (CWE-22)."
+}

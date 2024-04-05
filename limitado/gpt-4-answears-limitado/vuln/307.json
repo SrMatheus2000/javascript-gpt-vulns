@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the eval() function to dynamically generate code. This can lead to code injection if the input is not properly sanitized. An attacker could potentially inject malicious code that could be executed, leading to a variety of attacks such as data theft, data corruption, or denial of service."
+}

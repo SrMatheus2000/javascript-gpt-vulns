@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-22", "CWE-400", "CWE-94"],
+  "vulnerabilities": ["Improper Input Validation", "Path Traversal", "Uncontrolled Resource Consumption", "Code Injection"],
+  "description": "The function is vulnerable to several types of attacks. Firstly, it does not validate the input data before processing it (CWE-20), which can lead to various types of attacks. Secondly, it uses user-supplied input to construct file paths (CWE-22), which can lead to path traversal attacks if the input is not properly sanitized. Thirdly, it concatenates user-supplied input directly into a command that is executed by the server (CWE-94), which can lead to code injection attacks. Lastly, it does not limit the size of the data that can be sent in a request (CWE-400), which can lead to a denial of service attack if an attacker sends a large amount of data."
+}

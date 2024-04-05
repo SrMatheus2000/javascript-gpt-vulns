@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function does not properly sanitize the 'val' input, which can lead to SQL Injection if the input includes SQL syntax. This is especially problematic when the dialect is 'postgres', 'sqlite', or 'mssql', as the function only replaces single quotes, leaving the rest of the SQL syntax intact. This can allow an attacker to manipulate the SQL query."
+}

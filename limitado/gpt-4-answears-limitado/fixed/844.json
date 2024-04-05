@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "vulnerabilities": ["Code Injection", "Eval Injection"],
+  "description": "The function is vulnerable to code injection and eval injection. The use of eval() function makes the code susceptible to arbitrary code execution. Even though a sanitizer is used, it is not foolproof and can be bypassed. The code is also iterating over properties of an object using a for-in loop without checking if the property belongs to the object itself or its prototype chain, which can lead to unexpected behavior."
+}

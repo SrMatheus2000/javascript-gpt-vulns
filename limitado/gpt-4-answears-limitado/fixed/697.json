@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'name' parameter is directly used in the creation of a new HTML element without proper sanitization or encoding, which allows an attacker to inject malicious scripts. The 'replace' function used for escaping is not sufficient as it only escapes a limited set of characters. This vulnerability is identified as CWE-79."
+}

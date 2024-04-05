@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Email Validation"],
+  "description": "The function is vulnerable because it uses a very basic regular expression to validate the email which can be bypassed easily. For example, it will validate 'test@com' as a valid email which is incorrect. Also, it does not check for null or undefined values which can cause a TypeError when trying to access the length property or the match method."
+}

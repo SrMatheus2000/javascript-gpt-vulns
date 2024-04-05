@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function 'unique_name_460' is vulnerable to Cross-Site Scripting (XSS) attacks. The 'message' and 'title' parameters are directly passed to the 'ELECTRON_BROWSER_WINDOW_CONFIRM' event without proper input validation or output encoding, allowing an attacker to inject malicious scripts and execute arbitrary code in the context of the Electron application."
+}

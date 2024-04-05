@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-352: Cross-Site Request Forgery (CSRF)"],
+  "vulnerabilities": ["No validation of input", "Potential SQL Injection", "Potential CSRF"],
+  "description": "The function is vulnerable as it does not validate the input data. This can lead to potential SQL Injection attacks if the 'sessionIDs' are used in a SQL query. Also, the function does not check if the request is coming from a trusted source, making it vulnerable to Cross-Site Request Forgery (CSRF) attacks."
+}

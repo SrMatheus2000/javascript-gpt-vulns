@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Control of Generation of Code ('Code Injection')"],
+  "description": "The provided code is vulnerable to command injection and code injection attacks. The 'file' parameter is directly concatenated into the command executed by the child process, allowing an attacker to inject arbitrary commands. Additionally, the 'width' and 'height' variables are not properly validated or sanitized before being used in the command, which could lead to code injection vulnerabilities."
+}

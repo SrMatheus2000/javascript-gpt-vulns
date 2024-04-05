@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'unique_name_551' is vulnerable to Cross-site Scripting (XSS) attacks. The function attempts to sanitize the 'value' input with the '$sanitize' function. However, if the '$sanitize' function throws an exception, the function catches it and returns the old value without sanitizing it. This could allow an attacker to inject malicious scripts that could be executed in the user's browser."
+}

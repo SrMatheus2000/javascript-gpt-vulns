@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The function is vulnerable to Path Traversal attack (CWE-22) because it uses user input to construct a file path without properly sanitizing it. The replace function only removes the first occurrence of '../' and '/..', so an attacker can still traverse directories by using multiple '../' or '/..' in the URL. This can allow an attacker to read arbitrary files on the server. Additionally, the function is vulnerable to Information Exposure (CWE-200) because it logs sensitive information such as the request URL and method, which can contain sensitive data."
+}

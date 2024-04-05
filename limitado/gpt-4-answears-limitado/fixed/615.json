@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Leak"],
+  "description": "The function is vulnerable to memory leak. The cache object keeps growing as new keys are added without any mechanism to limit its size or remove old entries. This can lead to excessive memory usage if the function is called with a large number of unique arguments, potentially leading to resource exhaustion and application crash."
+}

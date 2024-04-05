@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function '_recursiveMerge' is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify an object's prototype, which can lead to an alteration in the properties that are shared across all objects. In this function, the 'extend' object properties are being assigned to the 'base' object without any validation. This can lead to an attacker being able to modify the prototype of 'base' object if they have control over the 'extend' object. This can lead to various security issues like denial of service (DoS), property injection, or even remote code execution."
+}

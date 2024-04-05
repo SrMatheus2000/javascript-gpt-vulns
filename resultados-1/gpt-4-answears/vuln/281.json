@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not validate the size of the input jpegData before trying to allocate memory for it. An attacker could provide a very large jpegData, causing the application to consume all available memory and crash, leading to a Denial of Service (DoS) condition. This is related to CWE-400: Uncontrolled Resource Consumption."
+}

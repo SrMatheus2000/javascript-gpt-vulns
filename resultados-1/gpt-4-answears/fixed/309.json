@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["No error handling for child process", "Potential Denial of Service (DoS)"],
+  "description": "The function does not have any error handling for the child process. If the child process fails or throws an error, it could cause the entire application to crash. Additionally, the function does not limit the number of child processes that can be created, which could potentially lead to a Denial of Service (DoS) attack if an attacker continuously requests new child processes, consuming all available system resources."
+}

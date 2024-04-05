@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-770: Allocation of Resources Without Limits or Throttling"],
+"vulnerabilities": ["Uncontrolled Recursion", "Modification of Assumed-Immutable Data"],
+"description": "The function is vulnerable to uncontrolled recursion which can lead to a Denial of Service (DoS) if an attacker provides a specially crafted input that causes excessive recursion. This is related to CWE-770. Additionally, the function modifies the input object directly which is a violation of the principle of immutability (CWE-471). This can lead to unexpected behavior if the input object is used elsewhere in the program."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it does not validate or sanitize the 'filename' parameter before passing it to 'fs.createWriteStream'. An attacker could potentially provide a path that leads to an important system file, leading to its overwrite. The function is also vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of the file being downloaded. An attacker could potentially cause a Denial of Service by initiating the download of an extremely large file."
+}

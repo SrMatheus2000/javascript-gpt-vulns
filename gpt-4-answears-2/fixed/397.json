@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to construct file paths without proper validation or sanitization, allowing an attacker to access arbitrary files. It's also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it allows an attacker to fill the routeCache object with arbitrary data, potentially leading to a Denial of Service (DoS) attack."
+}

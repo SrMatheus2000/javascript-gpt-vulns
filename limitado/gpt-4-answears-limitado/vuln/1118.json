@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Algorithm substitution attack"],
+  "description": "The function is vulnerable to an algorithm substitution attack. The 'alg' variable is derived from the 'headP' object, which is parsed from the input 'sJWS'. An attacker can manipulate the 'alg' field in the 'headP' object to 'none', bypassing the signature verification process. This vulnerability is known as CWE-347: Improper Verification of Cryptographic Signature."
+}

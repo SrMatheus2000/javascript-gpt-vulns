@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to code injection and cross-site scripting (XSS) attacks. The function does not properly validate or sanitize the input passed to it, which can lead to code injection if an attacker can control the 'str' or 'replacementHash' parameters. Additionally, the function does not properly escape the output, which can lead to XSS attacks if the output is rendered in a web page. The function also uses the 'eval' function, which can execute arbitrary JavaScript code and is generally considered unsafe."
+}

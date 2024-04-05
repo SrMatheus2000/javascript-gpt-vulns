@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function seems to be vulnerable to code injection attacks. The 'method' variable is directly derived from the 'message.channel' input and then used to call a function without any sanitization or validation. This could allow an attacker to inject arbitrary code by manipulating the 'message.channel' input."
+}

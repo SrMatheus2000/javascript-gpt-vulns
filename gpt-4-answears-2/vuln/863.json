@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function uses dangerouslySetInnerHTML which is a known potential source of Cross-Site Scripting (XSS) vulnerabilities. If the 'md' property of 'this.props.value' can be controlled by the user, it can lead to an XSS attack."
+}

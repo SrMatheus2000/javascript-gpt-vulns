@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Object Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses the decode function without properly sanitizing the input, which can lead to script injection if the input includes malicious scripts. It's also vulnerable to Object Injection because it directly uses the input to build an object without proper validation. An attacker can manipulate the input to add or modify properties of the object, leading to unexpected behavior."
+}

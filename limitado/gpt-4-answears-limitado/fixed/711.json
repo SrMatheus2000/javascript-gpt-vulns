@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not properly sanitize the 'relativePath' input, which can allow an attacker to traverse the file system outside of the intended directory. This can lead to unauthorized access to files. The function checks if the path is absolute and if it contains NULL bytes, but it does not check for path traversal sequences like '../'."
+}

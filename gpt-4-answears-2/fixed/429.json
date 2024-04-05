@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe as it uses the escapeHTML function to sanitize the input value, which helps prevent Cross-Site Scripting (XSS) attacks."
+}

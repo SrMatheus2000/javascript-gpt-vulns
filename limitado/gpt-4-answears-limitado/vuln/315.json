@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function _is_clamav_binary is vulnerable to OS command injection. The function uses the 'scanner' parameter to construct a command that is executed by the cp_exec function. If an attacker can control the 'scanner' parameter, they can inject arbitrary commands that will be executed by the server. This is a serious security issue that can lead to full server compromise."
+}

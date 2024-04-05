@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Unrestricted Use of System Critical APIs", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Unrestricted Use of System Critical APIs", "Improper Input Validation"],
+  "description": "The function 'generate' is vulnerable due to unrestricted use of system critical APIs and improper input validation. The function does not validate the 'hierarchies' input which is used to call system critical APIs such as 'call'. This can lead to arbitrary code execution if a malicious user can control the 'hierarchies' input. Additionally, the function does not validate the 'target' input which can lead to unexpected behavior if it is not an object."
+}

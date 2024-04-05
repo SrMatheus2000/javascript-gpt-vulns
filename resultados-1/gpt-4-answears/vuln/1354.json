@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_789 is vulnerable to OS command injection. It concatenates the 'port' parameter directly into a command string that is executed by the system. An attacker could provide a malicious 'port' value that alters the command to perform unintended actions."
+}

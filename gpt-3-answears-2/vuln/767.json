@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-390", "CWE-561"],
+  "vulnerabilities": ["Command Injection", "Uncaught Exception"],
+  "description": "The function 'unique_name_401' is vulnerable to command injection (CWE-78) and uncaught exceptions (CWE-248). The 'correctMkdir' function does not properly sanitize the 'from' parameter, allowing an attacker to inject arbitrary commands. Additionally, the 'iferr' function does not handle exceptions properly, which can lead to uncaught exceptions and potential application crashes."
+}

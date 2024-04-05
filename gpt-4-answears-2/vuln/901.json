@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files without proper validation. It's also vulnerable to Code Injection (CWE-94) as it uses user input in the 'options.filter' without proper sanitization. Lastly, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the amount of resources it can use when reading files, potentially leading to a Denial of Service (DoS) attack."
+}

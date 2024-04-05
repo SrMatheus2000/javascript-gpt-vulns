@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'files', 'message', and 'tagName' parameters are directly used in the command line without proper sanitization. An attacker could potentially inject malicious commands through these parameters. Although the function attempts to escape quotes, it does not prevent all forms of command injection. It is recommended to use safer methods to execute OS commands, such as using libraries that allow parameters to be passed separately from the command itself."
+}

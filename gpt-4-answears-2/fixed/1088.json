@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352", "CWE-20", "CWE-79"],
+"vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation", "Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any form of CSRF protection. It is also vulnerable to Improper Input Validation as it does not validate the user input before using it. Additionally, it is vulnerable to Cross-site Scripting (XSS) as it directly injects the response body into the HTML without proper sanitization."
+}

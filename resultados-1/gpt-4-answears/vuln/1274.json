@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'text' and 'lang' parameters are directly inserted into the 'command' string which is then executed. An attacker could potentially insert malicious commands into these parameters, which would then be executed by the server. This could lead to unauthorized access, data corruption, or even a denial of service."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The function takes user-controlled input (options) and uses it to control code execution. An attacker could potentially inject malicious code through the 'options' parameter, leading to arbitrary code execution. This is particularly dangerous if the function is used in a server-side context, as it could lead to remote code execution (RCE)."
+}

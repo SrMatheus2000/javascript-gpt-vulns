@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89"],
+  "vulnerabilities": ["Command Injection", "SQL Injection"],
+  "description": "The function is vulnerable to command injection and SQL injection attacks. The 'e' function takes user input as parameters without proper validation or sanitization, which can lead to command injection and SQL injection vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function 'diskusage' is vulnerable to OS command injection because it uses 'execFile' to execute a system command 'df' with a user-supplied argument 'path'. An attacker could provide a malicious 'path' that includes command line syntax to execute arbitrary commands on the system."
+}

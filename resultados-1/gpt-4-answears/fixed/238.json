@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The line 'db.__proto__ = new EventEmitter()' directly manipulates the prototype of the 'db' object. This can allow attackers to manipulate the application's behaviour by modifying the prototype of the object. This can lead to various security issues like denial of service (DoS), property injection, or even arbitrary code execution."
+}

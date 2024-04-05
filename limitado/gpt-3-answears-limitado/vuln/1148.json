@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL injection due to the direct concatenation of user-controlled input (options.offset and options.limit) into the SQL query."
+}

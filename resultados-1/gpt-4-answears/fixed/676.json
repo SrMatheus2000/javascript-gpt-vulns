@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function makeDestination uses user-supplied input in a filesystem operation, which can allow an attacker to manipulate the filesystem structure and potentially access arbitrary files. This is known as a Path Traversal vulnerability."
+}

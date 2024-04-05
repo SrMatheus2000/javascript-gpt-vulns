@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+  "description": "The function does not validate or sanitize the 'postData' input which can lead to SQL Injection if the 'postData' is used in a SQL query. Also, the function does not check if 'uid' is a valid user id before using it. This can lead to unexpected behavior or errors."
+}

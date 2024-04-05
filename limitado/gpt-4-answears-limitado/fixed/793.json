@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to a Denial of Service (DoS) attack. The 'length' parameter is used to allocate a buffer without any checks. An attacker can provide a very large value for 'length', causing the application to consume a large amount of memory and potentially crash, leading to a Denial of Service."
+}

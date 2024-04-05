@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-522: Insufficiently Protected Credentials"],
+  "vulnerabilities": ["Information Exposure", "Insufficiently Protected Credentials"],
+  "description": "The function is directly assigning the value of an environment variable to a property of an object. If the key corresponds to sensitive information such as credentials, tokens, or secrets, this could lead to exposure of sensitive information. This is especially dangerous if the 'env' object is logged, returned in an HTTP response, or otherwise exposed. Additionally, if an error occurs while accessing the environment variable, the error message could potentially reveal information about the system's environment variables."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'executeCommand' is vulnerable to OS command injection because it directly uses the 'cmd' parameter in the 'exec' function without any sanitization or validation. An attacker could provide a malicious command as the 'cmd' parameter, which would then be executed by the system."
+}

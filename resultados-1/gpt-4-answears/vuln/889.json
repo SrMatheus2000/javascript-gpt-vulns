@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function 'toBuffer' is vulnerable to Buffer Overflow. This is because it creates a new Buffer with a length that is calculated from user-controlled input ('length' and 'packets'). If an attacker can control the size of the buffer and can cause it to overflow, this can lead to arbitrary code execution, denial of service, or information disclosure. The function does not properly validate or limit the size of the input before using it to allocate memory. This can lead to a buffer overflow if the input is larger than what the buffer can hold."
+}

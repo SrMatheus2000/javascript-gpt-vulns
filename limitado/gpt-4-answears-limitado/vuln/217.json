@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The function takes an 'options' object as an argument and directly uses its properties without proper sanitization or validation. An attacker can pass malicious code as properties of the 'options' object, which can lead to code injection. Specifically, the 'interpolation', 'replace', 'postProcess' properties of the 'options' object are used directly and can be exploited."
+}

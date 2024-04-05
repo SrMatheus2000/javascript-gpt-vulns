@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input 'request.endpoint' which can lead to improper input validation (CWE-20). This can be exploited by an attacker to perform attacks such as Server-Side Request Forgery (SSRF). Additionally, the function does not limit the amount of data that can be appended to the 'buffer' object. This can lead to a denial of service (DoS) attack due to uncontrolled resource consumption (CWE-400)."
+}

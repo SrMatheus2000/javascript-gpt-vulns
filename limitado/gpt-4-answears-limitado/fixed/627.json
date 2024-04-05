@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "HTML Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and HTML Injection attacks. The function does not properly validate or sanitize the 'params' input, which is used to generate HTML content. An attacker could potentially inject malicious scripts or HTML through the 'params' input, leading to XSS or HTML Injection attacks. Additionally, the function uses the 'entities.encode' method to encode the 'params' input and 'txn.redirectURI', but it does not properly escape or encode all special characters, which could lead to improper output encoding."
+}

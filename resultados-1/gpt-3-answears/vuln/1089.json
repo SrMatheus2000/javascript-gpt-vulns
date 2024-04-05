@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-601", "CWE-400"],
+  "vulnerabilities": ["Insecure Direct Object References", "Unvalidated Redirects and Forwards"],
+  "description": "The function is vulnerable to Insecure Direct Object References (CWE-601) and Unvalidated Redirects and Forwards (CWE-400). The function constructs a URL using user-controlled input without proper validation or sanitization. This can allow an attacker to manipulate the URL and access unauthorized resources or redirect the user to malicious websites."
+}

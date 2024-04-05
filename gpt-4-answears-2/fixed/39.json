@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-209", "CWE-276"],
+"vulnerabilities": ["Path Traversal", "Information Exposure Through an Error Message", "Incorrect Default Permissions"],
+"description": "The function is vulnerable to path traversal attacks (CWE-22) as it uses user input to access file system paths without proper validation or sanitization. It also exposes potentially sensitive information through error messages (CWE-209) when gitConfig is not found or its version is old. Lastly, it sets incorrect default permissions (CWE-276) by disabling the projects feature if gitConfig is not found or its version is old, without considering the user's original permissions."
+}

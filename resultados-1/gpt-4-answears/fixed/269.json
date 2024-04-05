@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. The function does not prevent the modification of the Object prototype. An attacker can control the 'propertyPath' to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values. This can lead to several types of attacks such as Denial of Service, Remote Code Execution, or even lead to other vulnerabilities like Cross-Site Scripting (XSS)."
+}

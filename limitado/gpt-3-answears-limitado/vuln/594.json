@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-327"],
+  "vulnerabilities": ["Improper Input Validation", "Use of a Broken or Risky Cryptographic Algorithm"],
+  "description": "The function is vulnerable to CWE-20 (Improper Input Validation) as it does not properly validate the input 'value'. An attacker can potentially pass a null or undefined value, causing an error to be thrown. Additionally, the function is vulnerable to CWE-327 (Use of a Broken or Risky Cryptographic Algorithm) as it uses the 'crypto.createDecipheriv' function without specifying a secure cryptographic algorithm."
+}

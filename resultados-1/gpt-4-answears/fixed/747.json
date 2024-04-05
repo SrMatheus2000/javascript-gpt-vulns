@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure Through an Error Message"],
+  "description": "The function does not validate the 'method' and 'contentType' inputs from the 'req' object, which can lead to unexpected behavior or errors. This is an instance of CWE-20: Improper Input Validation. Additionally, the function exposes potentially sensitive information in error messages (the 'method' and 'contentType'), which is an instance of CWE-209: Information Exposure Through an Error Message."
+}

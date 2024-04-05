@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information"],
+"description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) as it does not enforce encryption for sensitive data. The function uses the 'tls' and 'net' modules to create a socket connection to a proxy server. However, if the 'secureProxy' property is not set, the function will use an unencrypted connection. This could allow an attacker to intercept and read any data sent over this connection."
+}

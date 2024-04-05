@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'destination' parameter is directly used in a command that is executed, without any sanitization or escaping. This means that an attacker could provide a 'destination' that includes arbitrary commands, which would then be executed."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-749"],
+  "vulnerabilities": ["Exposed Dangerous Method or Function"],
+  "description": "The function uses 'ipcRenderer.sendSync' which is a method that can expose potential security issues if not properly handled. It can allow potential attackers to send arbitrary synchronous messages to the main process, which could lead to remote code execution if the main process does not validate the messages. It's recommended to avoid using this method if possible, or ensure that the messages are properly validated in the main process."
+}

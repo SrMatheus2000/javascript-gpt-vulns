@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-94"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection"],
+"description": "The function does not properly validate the input for the 'where' parameter. This could lead to SQL Injection if the input is crafted in a certain way. Also, the use of 'new RegExp(cond, options)' can lead to Code Injection if 'cond' contains malicious JavaScript code."
+}

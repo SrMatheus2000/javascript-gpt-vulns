@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-119"],
+  "vulnerabilities": ["Buffer Overflow", "Integer Overflow"],
+  "description": "The function does not perform proper input validation and can be vulnerable to buffer overflow and integer overflow attacks. An attacker can send a large content-length header value to overflow the buffer and potentially execute arbitrary code or crash the application."
+}

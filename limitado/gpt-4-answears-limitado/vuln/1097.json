@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')"],
+  "vulnerabilities": ["Input Validation", "HTTP Response Splitting", "Code Injection"],
+  "description": "The function buildDownloadUrl does not validate or sanitize the input parameters 'version' and 'minorVersion'. This could lead to vulnerabilities such as HTTP Response Splitting or Code Injection, where an attacker could manipulate the URL to execute arbitrary code or manipulate HTTP headers. It's recommended to always validate and sanitize user inputs to prevent such vulnerabilities."
+}

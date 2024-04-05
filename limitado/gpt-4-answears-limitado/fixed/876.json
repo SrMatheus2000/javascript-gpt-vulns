@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function _wrapMatchesInNode is vulnerable to Cross-site Scripting (XSS) attacks. This is because it takes an input (textNode.data) and inserts it into the HTML of tempElement without properly sanitizing it first. An attacker could potentially insert malicious scripts through textNode.data, which would then be executed when the HTML is rendered."
+}

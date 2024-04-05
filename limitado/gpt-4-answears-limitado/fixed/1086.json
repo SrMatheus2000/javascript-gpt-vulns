@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery .live() method to attach event handlers to elements. This method has been deprecated since jQuery 1.7 and removed in jQuery 1.9. It is recommended to use the .on() method instead. The function also uses the .get() method to make AJAX requests, which could be vulnerable to Cross-Site Request Forgery (CSRF) attacks if not properly secured. The function does not appear to sanitize user input before using it in the AJAX request, which could lead to Cross-Site Scripting (XSS) attacks."
+}

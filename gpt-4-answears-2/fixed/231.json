@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Information Disclosure", "Denial of Service"],
+"description": "The function does not validate or sanitize the 'options' input, which can lead to Information Disclosure (CWE-200) if sensitive information is passed. Additionally, the function does not limit the size of the 'options' input, which can lead to a Denial of Service (DoS) attack (CWE-400) by consuming server resources."
+}

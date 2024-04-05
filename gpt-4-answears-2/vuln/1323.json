@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_769 is vulnerable to OS command injection. The function uses user-supplied input in the 'options.binary' variable to construct a command to be executed using the 'exec' function. An attacker could potentially inject malicious commands by manipulating the 'options.binary' input."
+}

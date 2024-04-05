@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It seems to be a Vue.js component method that creates a progress bar. The function uses the 'h' function to create virtual DOM elements, and it properly sanitizes the 'label' property with a 'stripScripts' function to prevent potential Cross-Site Scripting (XSS) attacks. The function also uses 'toFixed' method to convert numbers to strings, which prevents potential type coercion vulnerabilities. Therefore, no Common Weakness Enumerations (CWEs) are identified."
+}

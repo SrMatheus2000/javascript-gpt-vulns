@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message"],
+"vulnerabilities": ["Error Handling", "Callback Function Not Defined"],
+"description": "The function does not validate the input 'er' which can lead to unexpected behavior. Also, the callback function 'cb' is not defined within the scope of the function which can lead to a ReferenceError. Additionally, the error messages are directly returned without any sanitization, which can expose sensitive information."
+}

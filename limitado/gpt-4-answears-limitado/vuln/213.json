@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Information Exposure"],
+  "description": "The function does not validate the 'opts' parameter, which can lead to Insecure Direct Object References (IDOR) if an attacker can manipulate 'opts' to reference objects that they should not have access to. Additionally, sensitive information such as 'clientId', 'reconnectInterval', 'secure', 'emotes', 'emotesets', 'globaluserstate', 'userstate' etc. are exposed without any encryption or protection, leading to potential privacy violation."
+}

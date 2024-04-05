@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Denial of Service (DoS)", "Type Confusion"],
+"description": "The function is vulnerable to Denial of Service (DoS) attacks. If an attacker sends a large amount of data, it can consume server resources leading to a DoS condition. This is due to the lack of proper input validation and resource limitation. The function also suffers from type confusion vulnerability as it does not properly validate the type of 'bytes' argument. An attacker can pass an object instead of a string or number, which can lead to unexpected behavior."
+}

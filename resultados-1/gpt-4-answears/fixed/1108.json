@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_664' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the 'replace' method to remove certain characters from the 'value' parameter when the 'name' parameter is 'user_host'. However, it does not properly sanitize the 'value' parameter in other cases, which could allow an attacker to inject malicious scripts. The function attempts to mitigate this by using the 'escapeHtml' function, but this is not sufficient to prevent all possible XSS attacks. The vulnerability is related to the CWE-116: Improper Encoding or Escaping of Output."
+}

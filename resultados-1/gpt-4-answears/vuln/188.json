@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["No input validation", "Potential Cross-site Scripting (XSS)"],
+  "description": "The function does not validate the 'params' input, which can lead to potential security vulnerabilities. If an attacker can control the 'params' input, they may be able to inject malicious scripts, leading to Cross-site Scripting (XSS) attacks. This is because the 'params' input is directly used in the creation of a new Vue instance and its properties. An attacker could potentially include script tags in the 'params' input, which would then be executed when the Vue instance is created."
+}

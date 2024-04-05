@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-302: Authentication Bypass by Assumed-Immutable Data", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Weak Authentication", "Loose Comparison", "Potential Path Traversal"],
+  "description": "The function staticUsersAuthorizer is vulnerable due to the use of '==' for comparison which is a loose comparison in JavaScript. This can lead to potential security issues as it allows type coercion. An attacker can bypass the authentication by passing an array or an object. Also, the function does not sanitize the input which can lead to path traversal attacks. The function does not implement any form of password hashing or encryption, which is a bad practice and can lead to weak authentication."
+}

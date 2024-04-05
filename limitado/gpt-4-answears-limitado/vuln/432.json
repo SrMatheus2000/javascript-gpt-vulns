@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function __isInt(value) is used to check if a value is an integer. It uses a regular expression to test if the value is an integer, allowing for optional leading '+' or '-' signs. The function appears to be secure and does not have any obvious vulnerabilities."
+}

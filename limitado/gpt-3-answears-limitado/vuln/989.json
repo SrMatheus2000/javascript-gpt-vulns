@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The provided JavaScript function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes user input 'e' and 't' as parameters and inserts them into the HTML document without proper sanitization or encoding. This can allow an attacker to inject malicious scripts into the page, leading to potential XSS vulnerabilities."
+}

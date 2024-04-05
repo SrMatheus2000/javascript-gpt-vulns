@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not limit the number of connections that can be made to the sockServer. An attacker could potentially open a large number of connections to the server, consuming system resources and potentially causing the server to become unresponsive or crash. This is a type of resource exhaustion attack, also known as a Denial of Service attack."
+}

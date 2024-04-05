@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Improper Input Validation"],
+  "description": "The function 'unique_name_602' is vulnerable to Denial of Service (DoS) attacks due to the uncontrolled resource consumption. The function maintains an array 'Clients' which keeps growing as new connections are made, but it does not have a mechanism to limit the size of this array. If an attacker makes a large number of connections, it could consume all available memory and crash the application. This is related to CWE-400. Additionally, the function does not validate the 'command' input in the 'processing' function which could lead to unexpected behavior or security issues if an attacker provides malicious input. This is related to CWE-20."
+}

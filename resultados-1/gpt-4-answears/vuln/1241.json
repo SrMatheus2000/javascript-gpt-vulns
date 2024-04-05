@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'html_unescape' method on 'objId' and 'newRepr' which could potentially unescape malicious scripts. These unescaped values are then used in the 'innerHTML' and 'value' properties which could lead to script execution if a malicious value is passed. This is a form of Stored XSS, where the malicious script is injected and stored, then later returned in this function."
+}

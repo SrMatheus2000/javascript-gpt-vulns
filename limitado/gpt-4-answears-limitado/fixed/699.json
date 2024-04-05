@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses several regular expressions which could be exploited to cause a Denial of Service (DoS) attack. This is known as a Regular Expression Denial of Service (ReDoS) attack. An attacker could provide a specially crafted string as input to the function that causes the regular expression to take a very long time to evaluate, effectively blocking the event loop and causing the application to become unresponsive. This is particularly concerning for the 'coord' regular expression, which could be exploited with long sequences of digits."
+}

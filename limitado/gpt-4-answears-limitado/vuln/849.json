@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-209: Information Exposure Through an Error Message", "CWE-404: Improper Resource Shutdown or Release"],
+  "vulnerabilities": ["Denial of Service", "Information Exposure", "Resource Leak"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks due to the uncontrolled consumption of resources. The function pushes packets into an array without any limit, which can lead to excessive memory consumption if an attacker sends a large number of packets (CWE-400). Additionally, the function suppresses connection errors, which can lead to Information Exposure (CWE-209) as it may hide important error information that could be useful for debugging or identifying issues. Lastly, the function does not properly release or shut down resources after they are no longer needed, which can lead to a Resource Leak (CWE

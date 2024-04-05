@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Uncontrolled Resource Consumption"],
+  "description": "The function uses regular expressions which can lead to Regular Expression Denial of Service (ReDoS) if the input is not properly sanitized. Also, the function does not control the consumption of resources while processing the file header, which can lead to a denial of service attack if an attacker provides a large file."
+}

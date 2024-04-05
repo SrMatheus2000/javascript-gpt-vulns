@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function unique_name_590 is vulnerable to code injection attacks. It takes an input 'name' and directly uses it in a string concatenation operation without properly sanitizing it. An attacker could provide a 'name' value that includes code snippets, which would be executed when the resulting string is used in a context where it's interpreted as code."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure"],
+"vulnerabilities": ["Sensitive Data Exposure"],
+"description": "The function is intended to sanitize sensitive information such as passwords or secrets from an error object before it is returned. However, it only checks for the exact strings 'password' and 'secret' in a case-insensitive manner. If the sensitive data is labeled with a different key, it will not be sanitized. Furthermore, the function does not sanitize the data if it is nested within the error object."
+}

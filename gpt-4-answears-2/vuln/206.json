@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Prototype Pollution", "Potential Denial of Service"],
+"description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. The function does not properly prevent the modification of the Object prototype. An attacker can control the 'source' parameter to add or modify properties of 'Object.prototype'. This can lead to various impacts such as altering the application logic, remote code execution, or even cause a Denial of Service (DoS) by triggering an infinite recursion."
+}

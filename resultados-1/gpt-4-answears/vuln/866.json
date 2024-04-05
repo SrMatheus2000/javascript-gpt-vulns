@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-20"],
+  "vulnerabilities": ["Path Traversal", "Input Validation"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22) because it does not properly sanitize the user input 'u'. An attacker could manipulate the 'u' parameter to navigate through the file system and access restricted files. The function also lacks proper input validation (CWE-20), as it attempts to decode the URL without first verifying its format, which could lead to unexpected behavior or errors."
+}

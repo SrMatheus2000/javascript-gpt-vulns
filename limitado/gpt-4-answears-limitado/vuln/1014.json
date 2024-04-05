@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It uses AngularJS's built-in $sanitize service to sanitize the input, which helps prevent Cross-Site Scripting (XSS) attacks. It also removes script tags from the input to prevent the execution of arbitrary JavaScript code. The function also handles the 'readonly' attribute properly, preventing unauthorized modifications. Therefore, no Common Weakness Enumerations (CWEs) are identified."
+}

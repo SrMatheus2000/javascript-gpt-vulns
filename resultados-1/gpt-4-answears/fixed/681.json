@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'fileCompletion' is vulnerable to Path Traversal attack (also known as Directory Traversal). The variable 'req' is concatenated directly into the file path without any validation or sanitization. An attacker can provide '../' sequences in 'req' to navigate up directories and access files outside of the intended root directory. This can lead to unauthorized read access to sensitive files on the server."
+}

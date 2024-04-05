@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Eval Injection"],
+  "description": "The function is vulnerable to code injection and eval injection attacks. The use of eval() function can allow an attacker to execute arbitrary code, leading to code injection vulnerabilities. Additionally, the use of eval() with user-controlled input can result in eval injection, where an attacker can manipulate the input to execute unintended code."
+}

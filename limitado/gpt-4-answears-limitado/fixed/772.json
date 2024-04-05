@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-272"],
+  "vulnerabilities": ["Least Privilege Violation"],
+  "description": "The function does not properly manage the permissions for an authority. It allows inheriting permissions from the parent window to the child window. This could lead to a Least Privilege Violation, as the child window could gain more permissions than it should have. This is related to CWE-272: Least Privilege Violation."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. It allows the modification of the prototype of an object, which can lead to several types of vulnerabilities like denial of service, property injection, or even remote code execution. The function does not validate or sanitize the 'field' input, which can be manipulated to alter the object prototype."
+}

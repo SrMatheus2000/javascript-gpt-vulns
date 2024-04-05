@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+  "vulnerabilities": ["Type confusion", "Exception handling"],
+  "description": "The function does not validate the type of the 'value' parameter before processing it. This can lead to type confusion vulnerabilities. For example, if 'value' is an object when 'type' is 'number', the function will attempt to convert the object to a number, which will result in NaN. Similarly, if 'value' is a number when 'type' is 'array', the function will attempt to split the number, which will throw an exception. The function also does not handle exceptions properly. When 'type' is 'object', the function attempts to parse 'value' as JSON. If 'value' is not valid JSON, this will throw an exception, which the function catches and ignores. This can lead to unexpected behavior."
+}

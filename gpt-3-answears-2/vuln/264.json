@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-676"],
+  "vulnerabilities": ["Path Traversal", "Arbitrary Code Execution"],
+  "description": "The function 'requireModule' is vulnerable to path traversal and arbitrary code execution attacks. The 'path' parameter is directly used in the 'resolve' function without proper validation or sanitization, allowing an attacker to traverse the file system and potentially execute arbitrary code."
+}

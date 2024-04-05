@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Denial of Service"],
+  "description": "The function is vulnerable to Code Injection attacks. The Remarkable library used in the function is known to be vulnerable to Code Injection attacks. An attacker can inject malicious code into the markdown, which will then be executed when the markdown is parsed. This can lead to serious security issues such as data theft, data corruption, or even server takeover. Additionally, the function is vulnerable to Denial of Service attacks. The function reads all files in a directory without any limit. If the directory contains a large number of files, this can consume a large amount of system resources, potentially leading to a Denial of Service."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks (CWE-22). The function does not validate or sanitize the 'entry.absolute' input, which is used to construct file paths. An attacker could potentially manipulate 'entry.absolute' to access arbitrary files on the system."
+}

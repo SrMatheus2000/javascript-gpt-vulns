@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'sanitize' is used to remove potentially harmful scripts from the HTML content. However, it only checks for 'on*' attributes and 'javascript:' in attribute values. This is not sufficient to prevent all forms of Cross-Site Scripting (XSS) attacks. For example, an attacker could use other event handlers like 'href', 'src', 'data', or 'formaction' with a 'javascript:' payload. Also, the check for 'javascript:' is not case-insensitive, so an attacker could bypass it using 'Javascript:' or 'JAVASCRIPT:'. Moreover, the function does not handle HTML comments, CDATA, HTML entities, or other obfuscation techniques that could be used to hide malicious scripts."
+}

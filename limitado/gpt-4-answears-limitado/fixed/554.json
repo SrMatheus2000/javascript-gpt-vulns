@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'props.prependHTML', 'props.appendHTML', 'props.prepend', and 'props.append' are directly inserted into the DOM without any sanitization or encoding. If these props contain malicious scripts, they will be executed when the component is rendered. This can lead to various security issues such as session theft, defacement, or distribution of malicious code to users."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and Code Injection attacks. The function uses the decodeURIComponent function to decode user-supplied input, which can lead to XSS if the output is rendered in a web page without proper sanitization. Additionally, the function does not validate or sanitize the input string before processing it, which can lead to Code Injection attacks if the input string contains malicious code."
+}

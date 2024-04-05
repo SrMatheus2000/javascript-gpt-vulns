@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service"],
+  "description": "The function is vulnerable to Path Traversal and Denial of Service attacks. The Path Traversal vulnerability exists because the function uses user-supplied input in file system operations without properly validating or sanitizing it. An attacker could manipulate 'req.urlBase' to access files outside of the intended directory. The Denial of Service vulnerability exists because the function does not limit the number of iterations in the for loop, which could lead to excessive resource consumption if an attacker provides a large 'altControllerPaths' array."
+}

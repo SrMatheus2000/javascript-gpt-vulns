@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the input parameters 'addr' and 'mask'. If the input is not a valid IP address or mask, the function 'ip.toBuffer()' could throw an error or behave unexpectedly. This could lead to potential Denial of Service (DoS) attacks if the function is exposed to external inputs. It is recommended to validate the input parameters before processing them."
+}

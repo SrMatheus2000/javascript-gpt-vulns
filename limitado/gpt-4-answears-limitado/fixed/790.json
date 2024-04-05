@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-125", "CWE-119"],
+  "vulnerabilities": ["Out-of-bounds Read", "Buffer Overflow"],
+  "description": "The function allocates a buffer using Buffer.allocUnsafe which can lead to uninitialized memory being exposed. This can lead to sensitive information disclosure if the buffer is read from before being written to. Additionally, the function does not check if the 'end' variable exceeds the buffer length which can lead to out-of-bounds read vulnerability. Also, the function does not check if the 'length + packets * 4' exceeds the maximum buffer size which can lead to buffer overflow."
+}

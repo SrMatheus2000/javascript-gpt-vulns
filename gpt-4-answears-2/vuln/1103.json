@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-330: Use of Insufficiently Random Values", "CWE-200: Information Exposure"],
+"vulnerabilities": ["Sensitive Data Exposure", "Insufficient Entropy", "Information Disclosure"],
+"description": "The function decodeToken is vulnerable as it does not encrypt sensitive data (the token). It also uses insufficiently random values for the initialization vector (iv), which can lead to predictability in the encryption process. Furthermore, the function exposes sensitive information through error messages, which can be exploited by an attacker to gain more information about the system."
+}

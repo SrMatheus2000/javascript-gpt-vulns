@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. The function does not validate or has any restrictions on what properties can be added or modified in the target object. An attacker can manipulate these properties to modify the Object prototype. This can allow an attacker to add or modify existing properties that will be inherited by all objects."
+}

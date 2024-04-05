@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Prototype Pollution", "Code Injection"],
+"description": "The function does not properly validate the input, which can lead to Prototype Pollution vulnerability. This can allow an attacker to manipulate the properties of JavaScript objects. Also, the function is vulnerable to Code Injection, as it directly concatenates user-controlled input into a string that is later evaluated as code. This can allow an attacker to inject arbitrary JavaScript code."
+}

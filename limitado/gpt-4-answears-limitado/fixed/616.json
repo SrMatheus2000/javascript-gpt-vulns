@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of jQuery's .attr() and .append() methods, which can interpret the input as HTML and execute any scripts included. An attacker could inject malicious scripts through the 'el' parameter, which could lead to various attacks such as stealing sensitive information or performing actions on behalf of the user."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function '_getPasteContent' is vulnerable to Cross-Site Scripting (XSS) attacks. It uses the 'innerHTML' property to insert user-supplied input into the HTML document, which can lead to the execution of malicious scripts if the input is not properly sanitized. Although the function uses 'DOMPurify' to sanitize the input, it only does so conditionally, which means that if 'DOMPurify' is not defined, the input will be inserted into the document without any sanitization."
+}

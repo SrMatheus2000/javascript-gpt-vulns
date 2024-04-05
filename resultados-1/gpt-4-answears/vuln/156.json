@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Weak Email Validation", "Potential Information Exposure"],
+  "description": "The function uses a very basic regular expression to validate the email which can allow invalid emails to pass through. This is an example of CWE-20. Also, the function might expose sensitive information through error messages (CWE-200), depending on what 'requirements.email.valid' contains."
+}

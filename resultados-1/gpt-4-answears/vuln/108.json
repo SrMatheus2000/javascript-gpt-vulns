@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94", "CWE-89"],
+  "vulnerabilities": ["Path Traversal", "Code Injection", "SQL Injection"],
+  "description": "The function 'unique_name_50' is vulnerable to several types of attacks. The 'fs.readFile' function can be exploited for Path Traversal (CWE-22) if an attacker can control the input to the 'path.resolve' function. The 'Comments.getCommentData', 'Comments.replyToComment', and 'Comments.publishArticle' functions could potentially be vulnerable to Code Injection (CWE-94) and SQL Injection (CWE-89) attacks if they do not properly sanitize and validate their inputs."
+}

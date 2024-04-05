@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-209"],
+  "vulnerabilities": ["Type Confusion", "Insecure Cryptographic Storage"],
+  "description": "The function is vulnerable to type confusion and insecure cryptographic storage. The function does not properly validate the type of the 'val' and 'secret' parameters, which can lead to type confusion vulnerabilities. Additionally, the function uses an insecure cryptographic storage method by comparing the SHA1 hash of 'mac' with the SHA1 hash of 'val', which can be susceptible to various attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function 'unique_name_282' is vulnerable to Path Traversal. The variable 'srcpath' is created by resolving a path using 'cwd' and 'header.linkname', which could be manipulated to access files outside of the intended directory. This could allow an attacker to read, write, or delete files that they should not have access to."
+}

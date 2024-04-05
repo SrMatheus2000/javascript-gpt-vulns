@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)"],
+"description": "The function does not properly limit the amount of data received in the request. If an attacker sends a large amount of data, it could lead to resource exhaustion and a Denial of Service (DoS) condition. The 'bytes' variable is not defined in the function, which could lead to unexpected behavior."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116", "CWE-94"],
+"vulnerabilities": ["Improper Input Validation", "Improper Output Neutralization for Logs", "Injection"],
+"description": "The function is vulnerable to several types of attacks. First, it does not validate the 'response' input, which can lead to unexpected behavior (CWE-20). Second, it logs the 'response' without neutralizing it, which can lead to log injection attacks (CWE-116). Third, it constructs a JSONP response without properly sanitizing the 'response' and 'req.query.jsonp', which can lead to injection attacks (CWE-94)."
+}

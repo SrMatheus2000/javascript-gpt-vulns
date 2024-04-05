@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'dir' parameter is used to construct a file path and is not properly sanitized before use. An attacker could manipulate 'dir' to access arbitrary files on the system."
+}

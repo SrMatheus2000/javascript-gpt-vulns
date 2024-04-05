@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-297"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Improper Validation of Certificate with Host Mismatch"],
+  "description": "The function _startTLS is vulnerable as it may allow for the cleartext transmission of sensitive information. This is due to the fact that the function pipes the secureSocket to the _protocol without any form of encryption. This could potentially allow an attacker to intercept and read the data being transmitted. Additionally, the function may not properly validate the certificate with the host, which could allow an attacker to perform a man-in-the-middle attack."
+}

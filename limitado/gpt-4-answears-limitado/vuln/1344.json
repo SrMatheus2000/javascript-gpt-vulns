@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it uses the exec function with user-supplied input (args.join(' ')) without proper sanitization or validation. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function is vulnerable to path traversal attacks because it uses user-supplied input to access file system resources (fs.existsSync(filename), fs.lstatSync(filename), fs.createWriteStream(path.resolve(target))) without proper sanitization or validation. This could allow an attacker to read, write, or delete arbitrary files on the system."
+}

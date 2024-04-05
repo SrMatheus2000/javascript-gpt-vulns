@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function unique_name_292 is vulnerable to Cross-site Scripting (XSS) attacks. This is because it takes an input (tElement.text()) and directly uses it to replace certain characters without properly sanitizing the input first. An attacker could potentially input a malicious script as tElement.text() which would then be executed when the function is run."
+}

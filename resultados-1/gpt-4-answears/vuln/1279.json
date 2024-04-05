@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function _ps is vulnerable to OS command injection. It concatenates the 'args' parameter directly into the command string that is passed to childProcess.exec. An attacker could provide malicious input in 'args' that could execute arbitrary commands on the system."
+}

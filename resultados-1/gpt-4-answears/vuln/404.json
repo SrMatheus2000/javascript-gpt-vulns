@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service"],
+  "description": "The function is vulnerable to Path Traversal attack as it uses user input to access files (filename). An attacker can manipulate the input to access sensitive files outside of the intended directory. Additionally, the function does not limit the size of the file being read into memory, which can lead to a Denial of Service (DoS) attack if an attacker requests a large file, consuming server resources."
+}

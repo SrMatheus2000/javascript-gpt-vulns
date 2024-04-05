@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78", "CWE-94", "CWE-209"],
+  "vulnerabilities": ["Path Traversal", "Command Injection", "Code Injection", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable to several types of attacks. It uses user-supplied input in file system operations (fs.readFileSync, fs.existsSync, fs.unlinkSync), which can lead to Path Traversal attacks (CWE-22). It also uses user-supplied input in command execution (execSync), which can lead to Command Injection attacks (CWE-78). The function also uses user-supplied input in code execution (jsYaml.safeLoad), which can lead to Code Injection attacks (CWE-94). Finally, the function may expose sensitive information in error messages (console.log), which can lead to Information Exposure Through an Error Message (CWE-209)."
+}

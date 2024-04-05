@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure"],
+"vulnerabilities": ["Sensitive Information Exposure"],
+"description": "The function is vulnerable to information exposure as it is reading all environment variables that start with 'AEGIR_' and adding them to the 'raw' object. This could potentially expose sensitive information if any of these environment variables contain such information. The only exception is the 'AEGIR_GHTOKEN' which is explicitly excluded. However, other potentially sensitive variables are not excluded."
+}

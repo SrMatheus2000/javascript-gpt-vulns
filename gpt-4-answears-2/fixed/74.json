@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be secure. It checks the type of the input parameters and handles edge cases such as null values and '__proto__' keys. It also prevents the modification of the original path array by creating a copy of it. There are no apparent vulnerabilities or CWEs (Common Weakness Enumeration) in this function."
+}

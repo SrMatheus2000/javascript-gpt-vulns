@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Infinite Loop", "Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function 'unique_name_394' is vulnerable to both infinite loop and Regular Expression Denial of Service (ReDoS) attacks. The while loops in the 'escape' and 'bracket' parsers do not have a clear exit condition and can potentially run indefinitely if the input string does not contain the expected characters. This can lead to high CPU usage and application unresponsiveness (CWE-400). Additionally, the regular expressions used in the match() calls can be exploited with specially crafted input to cause excessive backtracking, leading to a ReDoS attack (CWE-20)."
+}

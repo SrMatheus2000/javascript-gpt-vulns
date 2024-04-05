@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. Even though it attempts to guard against injection by splitting the input on semicolons and taking the first part, it does not properly sanitize the input. An attacker could potentially include a double quote in the src or dest parameters to escape the string context and inject arbitrary commands. For example, a src value of 'validpath\"; malicious command #\"' would result in the execution of the malicious command."
+}

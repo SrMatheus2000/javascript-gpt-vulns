@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89"],
+  "vulnerabilities": ["Command Injection", "SQL Injection"],
+  "description": "The provided JavaScript function is vulnerable to command injection and SQL injection attacks. The function does not properly sanitize user input, allowing an attacker to inject malicious commands or SQL queries."
+}

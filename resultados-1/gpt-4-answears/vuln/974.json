@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_527 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it takes an 'element' parameter and directly injects it into the HTML of an iframe without properly sanitizing or escaping it. If the 'element' parameter contains malicious JavaScript code, it will be executed when the iframe is loaded. This can lead to various security issues such as stealing sensitive data, session hijacking, and defacement of the website."
+}

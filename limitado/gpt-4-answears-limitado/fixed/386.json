@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function appears to be safe. It is iterating over the 'encodings' object and creating a HTML table string. It uses 'Utils.escapeHtml' and 'Utils.printable' functions to sanitize and format the values before inserting them into the HTML string, which should prevent Cross-Site Scripting (XSS) attacks. However, the safety of this function also depends on the correct implementation of 'Utils.escapeHtml' and 'Utils.printable' functions."
+}

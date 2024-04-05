@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Input Validation", "Server-Side Request Forgery"],
+  "description": "The function does not validate the 'result' parameter before using it to construct a URL. This could lead to Server-Side Request Forgery (SSRF) if an attacker can control the 'result' parameter to make the server send a request to an arbitrary URL. Additionally, the function does not handle errors properly. If 'parseSeleniumMinor(result)' returns an error, the function will call 'callback' with the error, but it does not stop execution or throw an exception. This could lead to unexpected behavior."
+}

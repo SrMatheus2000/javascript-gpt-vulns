@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Input Validation"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it does not properly validate or sanitize the 'url' parameter in the 'window.open' function. An attacker could inject malicious scripts into the 'url' parameter, which would then be executed in the user's browser. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user. Additionally, the function does not validate the 'message' and 'title' parameters in the 'window.alert' and 'window.confirm' functions, which could also lead to XSS attacks."
+}

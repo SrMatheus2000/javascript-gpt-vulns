@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Algorithm substitution attack"],
+  "description": "The function is vulnerable to an algorithm substitution attack. The 'alg' parameter can be manipulated by an attacker to change the algorithm used for the signature verification. If the 'alg' is set to 'none', the function will return true without verifying the signature. This can allow an attacker to forge a JWT with a payload of their choosing."
+}

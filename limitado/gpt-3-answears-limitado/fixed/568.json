@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-338"],
+  "vulnerabilities": ["Insecure Randomness"],
+  "description": "The function uses an insecure random number generator, which can lead to predictable or easily guessable values. This can be exploited by an attacker to bypass security measures or gain unauthorized access."
+}

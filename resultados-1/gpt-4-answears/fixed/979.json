@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Potential for Prototype Pollution"],
+  "description": "The function does not validate the input 'p' before using it to access properties of the 'data' object. This could potentially lead to prototype pollution if 'p' is '__proto__' or 'constructor.prototype'. Prototype pollution can lead to several security vulnerabilities, such as adding or modifying object properties, and can potentially lead to remote code execution."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function parseAssignment() is vulnerable to code injection. This is because it directly uses the input provided by the user (through the 'token' variable) without properly sanitizing it. An attacker could potentially provide a malicious input that could lead to arbitrary code execution. This vulnerability is classified as CWE-94: Improper Control of Generation of Code ('Code Injection')."
+}

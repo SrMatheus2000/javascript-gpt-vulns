@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-338"],
+  "vulnerabilities": ["Inadequate Encryption Strength"],
+  "description": "The function uses crypto.randomBytes(1) to generate a random number, but it only generates a single byte of random data. This can lead to inadequate encryption strength as the generated random number may not be sufficiently unpredictable. An attacker could potentially guess or brute force the random number, compromising the security of the system."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function uses the eval() function, which can execute arbitrary code. This can lead to a code injection vulnerability if the input is not properly sanitized."
+}

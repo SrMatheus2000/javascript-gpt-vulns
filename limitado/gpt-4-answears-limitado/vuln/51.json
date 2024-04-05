@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-400"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) because it uses 'rejectUnauthorized: false' in the TLS options, which allows unauthorized certificates. This can lead to Man-in-the-Middle attacks. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the amount of data that can be appended to the 'buffer' object, which can lead to a Denial of Service attack by consuming all available memory."
+}

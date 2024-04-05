@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input in the generation of a web page without properly sanitizing it. Specifically, the 'data.query.jsonp' value is directly inserted into the 'hs' string, which is then written to the response. If an attacker can control the 'data.query.jsonp' value, they can inject arbitrary JavaScript code, which will be executed in the context of the user's browser when the page is loaded."
+}

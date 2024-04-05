@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'unique_name_616' is vulnerable to code injection. The function does not sanitize the input 'p' before using it to access a property of the 'data' object. An attacker could potentially use this to inject malicious code. Although there is a check to prevent setting the 'root' property, other properties can still be manipulated."
+}

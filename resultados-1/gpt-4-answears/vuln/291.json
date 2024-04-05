@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function unique_name_137 is vulnerable to code injection. The message parameter is directly used in the exec function without proper sanitization or validation. An attacker can inject arbitrary commands by passing a specially crafted string as the message parameter. Although the function attempts to escape double quotes, it does not prevent other forms of command injection. For example, an attacker could use backticks (`) or $() to execute arbitrary commands."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Improper Neutralization of Special Elements in Output Used by a Downstream Component", "Improper Input Validation"],
+  "description": "The function is vulnerable to OS command injection because it concatenates a sanitized URL directly into a command string that is executed by the system. Although the function attempts to sanitize the URL by removing certain special characters, it does not adequately prevent all forms of command injection. For example, it does not prevent the use of semicolons, which can be used to execute additional commands. Additionally, the function does not validate the URL before using it, which could lead to unexpected behavior if an invalid URL is provided."
+}

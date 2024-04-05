@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It correctly uses the 'in' operator to prevent overriding of existing properties, which protects against prototype pollution attacks. The function also uses the 'decode' function to decode URI components, which can help prevent cross-site scripting (XSS) attacks. However, the 'decode' function is not defined in the provided code, so its implementation could potentially introduce vulnerabilities."
+}

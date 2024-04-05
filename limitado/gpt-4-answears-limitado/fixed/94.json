@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "This JavaScript function is a regular expression that matches semantic versioning in a string. It does not have any known vulnerabilities as it does not perform any operations that could be exploited, such as executing dynamic code, accessing sensitive information, or modifying any data."
+}

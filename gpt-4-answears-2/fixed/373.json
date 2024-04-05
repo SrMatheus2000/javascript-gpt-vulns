@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The event.message, event.filename, event.lineno, event.colno, and event.error.stack are directly concatenated into the HTML content without any sanitization or encoding. If an attacker can control the content of these variables, they can inject malicious scripts into the web page, leading to XSS attacks."
+}

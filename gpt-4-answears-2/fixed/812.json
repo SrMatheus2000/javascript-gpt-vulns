@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Path Traversal", "Denial of Service"],
+"description": "The function does not validate the 'pid' parameter before using it to construct a file path, which could allow an attacker to traverse the file system and read arbitrary files (Path Traversal). Additionally, the function does not limit the amount of resources it can consume when reading a file, which could lead to a Denial of Service (DoS) if an attacker can cause it to read a very large file."
+}

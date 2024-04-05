@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Improper Input Validation"],
+  "description": "The function unique_name_41 is vulnerable to OS command injection because it uses user-supplied input (the 'ip' variable) in a call to 'execFile' without proper sanitization or validation. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function does not validate the 'range' parameter, which could lead to unexpected behavior if it is not an array."
+}

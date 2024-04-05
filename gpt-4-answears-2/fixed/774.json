@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-749"],
+"vulnerabilities": ["Exposed Dangerous Method or Function"],
+"description": "The function 'unique_name_424' is using 'ipcRenderer.sendSync' which is a synchronous Inter-Process Communication method in Electron. This can be a potential security risk as it allows the renderer processes to send synchronous messages to the main process. Malicious actors can exploit this to execute arbitrary commands on the main process. It is recommended to use asynchronous IPC methods or validate and sanitize all incoming messages."
+}

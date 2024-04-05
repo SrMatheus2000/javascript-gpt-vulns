@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-346: Origin Validation Error"],
+  "vulnerabilities": ["Missing Authentication for Critical Function", "Reliance on Untrusted Inputs in a Security Decision"],
+  "description": "The function does not perform any authentication before processing the JWT token, which can lead to unauthorized access. It also relies on untrusted inputs (header and claims) to make security decisions without any validation, which can lead to various attacks such as injection attacks."
+}

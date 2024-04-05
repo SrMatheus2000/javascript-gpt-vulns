@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks. The 'allowUnsafe' parameter controls whether the 'parser.load' or 'parser.safeLoad' function is used to parse the input string. If 'allowUnsafe' is true, 'parser.load' is used, which can execute arbitrary code contained in the input string. This can lead to remote code execution (RCE) if an attacker can control the input string. Additionally, the function does not validate the input string before using it, which can lead to other types of attacks."
+}

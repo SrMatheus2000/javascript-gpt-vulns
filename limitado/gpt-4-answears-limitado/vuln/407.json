@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Prototype Pollution", "Potential Denial of Service"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. This happens because the function recursively merges properties of any JavaScript object to the first argument without any property validation. If a malicious user can control part or all of the structure of these objects, they can add or modify existing prototype properties. Additionally, the recursive nature of the function can lead to a Denial of Service (DoS) if the depth of the objects is too large."
+}

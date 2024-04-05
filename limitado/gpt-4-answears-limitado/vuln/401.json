@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The for-in loop in the function can be tricked into adding or modifying properties of the Object prototype. These properties will be present on all objects, which can lead to various types of bugs or vulnerabilities such as denial of service, remote code execution, or other types of attacks."
+}

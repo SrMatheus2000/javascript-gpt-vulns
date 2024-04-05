@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input (req.urlBase) to access files (README.md) without proper validation or sanitization. This could allow an attacker to access sensitive files outside of the intended directories. Additionally, the function may expose sensitive information (CWE-200) by revealing the existence of files and directories through error messages or responses."
+}

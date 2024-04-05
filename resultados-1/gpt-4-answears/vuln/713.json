@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Buffer Overflow"],
+  "description": "The function '_processBodyLine' is vulnerable to Denial of Service (DoS) and Buffer Overflow attacks. The function does not validate the input 'line' which can lead to unexpected behavior (CWE-20). Also, the function continuously appends to '_bodyBuffer' without any limit, which can lead to excessive memory consumption and eventually crash the system (CWE-400)."
+}

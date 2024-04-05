@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "URL Redirection to Untrusted Site ('Open Redirect')"],
+  "description": "The function sanitizeURL is vulnerable because it only checks if the URL starts with 'javascript:', 'vbscript:', or 'data:'. An attacker could bypass this check by adding spaces or other characters before these strings. Additionally, the function does not validate or escape the output URL, which could lead to Cross-Site Scripting (XSS) or URL Redirection to Untrusted Site ('Open Redirect') vulnerabilities."
+}

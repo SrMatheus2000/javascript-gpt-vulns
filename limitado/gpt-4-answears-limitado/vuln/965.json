@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection"],
+  "description": "The function 'runNpmCommand' is vulnerable to OS command injection because it uses the 'exec' function from 'child_process' module with user-supplied input 'command' without proper sanitization or validation. This could allow an attacker to execute arbitrary commands on the system. Similarly, the 'toggleInstall' and 'upgrade' functions are vulnerable to code injection as they concatenate user-supplied input 'id' and 'version' directly into the command string without proper sanitization or validation."
+}

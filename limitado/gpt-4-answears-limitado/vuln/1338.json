@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'packages' parameter is directly concatenated into the 'cmdString' variable, which is then executed. If an attacker can control the 'packages' parameter, they can inject arbitrary commands to be executed on the server. This is a serious security issue and can lead to full server compromise. This vulnerability is classified as CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-770: Allocation of Resources Without Limits or Throttling"],
+  "vulnerabilities": ["Memory Leak"],
+  "description": "The function 'unique_name_336' is vulnerable to a memory leak. This is because it stores the result of every function call in a cache without any mechanism to limit the size of the cache. If the function is called a large number of times with different arguments, the cache could grow indefinitely, potentially consuming all available memory and causing the application to crash. This is a type of Denial of Service (DoS) attack."
+}

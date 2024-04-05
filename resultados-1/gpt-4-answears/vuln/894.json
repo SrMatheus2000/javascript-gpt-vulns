@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure use of Buffer"],
+  "description": "The function uses the Buffer constructor, which is considered insecure because it can lead to various security issues if not used properly. If the argument passed to the Buffer constructor is a number, it will return a Buffer of that size but the memory allocated will not be initialized, so it may contain sensitive data. It's recommended to use Buffer.alloc() or Buffer.from() instead."
+}

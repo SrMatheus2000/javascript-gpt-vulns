@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-377"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The code uses the 'path.resolve' function without proper input validation, which can lead to a path traversal vulnerability. An attacker may manipulate the 'to' parameter to access files outside the intended directory."
+}

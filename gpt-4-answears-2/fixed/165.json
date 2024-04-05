@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe. It has checks against prototype pollution by preventing the '__proto__' property from being modified. It also validates the type of the 'path' argument to ensure it's a string. The function also seems to handle the case where the 'obj' argument is not an object. Therefore, no common weakness enumerations (CWEs) or vulnerabilities are identified in this function."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'entry.path' and 'entry.linkpath' variables are directly influenced by user input and are not properly sanitized before being used to construct file paths. An attacker could manipulate these values to escape the intended directory and gain unauthorized access to files or directories."
+}

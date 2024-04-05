@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks for '__proto__' property and only merges properties that exist on the source object, which helps prevent prototype pollution. It also handles arrays and objects separately, which can prevent unexpected behavior. However, without knowing the implementation of 'hasOwn', 'isObject', 'union', and 'clone' functions, it's hard to say definitively whether there are any vulnerabilities."
+}

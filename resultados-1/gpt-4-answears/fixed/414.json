@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes a string as input and decodes HTML entities, then manipulates the string and returns it. The function does not properly sanitize the input or escape the output, which can lead to XSS attacks if the input includes malicious scripts. The function also uses the 'innerHTML' property, which can lead to XSS attacks if the input is not properly sanitized. Additionally, the function does not validate or sanitize the 'href' attribute of the 'a' tag, which can lead to other types of attacks such as phishing."
+}

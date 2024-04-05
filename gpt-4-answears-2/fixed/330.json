@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'url' parameter is not properly sanitized before being used to construct an HTML image tag. An attacker could potentially inject malicious scripts through the 'url' parameter, which would then be executed in the context of the user's browser when the image tag is rendered."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It simply uses a regular expression to match certain patterns in a string and returns an array with the original string and the matched patterns. There are no operations that could lead to security issues such as SQL injection, cross-site scripting (XSS), or remote code execution."
+}

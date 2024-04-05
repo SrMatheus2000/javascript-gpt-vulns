@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Exhaustion"],
+  "description": "The function 'unique_name_473' is vulnerable to memory exhaustion. The function continuously pushes data into the 'buf' array without any limit. If the function is called with a large amount of data, it could consume all available memory, leading to a denial of service (DoS) condition. This is a form of resource exhaustion (CWE-400)."
+}

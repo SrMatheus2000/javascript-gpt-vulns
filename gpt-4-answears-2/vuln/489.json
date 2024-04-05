@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is due to the use of the 'domify' function which directly injects HTML content into the DOM. If the 'tabs', 'group', or 'entry' objects contain user-controlled data, this could lead to a potential XSS attack. An attacker could inject malicious scripts as part of these objects, which would then be executed in the user's browser."
+}

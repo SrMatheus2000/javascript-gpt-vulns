@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The vulnerability is due to the lack of input validation on the 'data' parameter. An attacker can provide a large input to the function, causing it to consume a large amount of resources, potentially leading to a crash. This is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

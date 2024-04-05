@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+  "description": "The function 'handleStaticFile' uses 'fs.statSync' which is a synchronous function that can block the event loop and potentially lead to Denial of Service (DoS) attacks (CWE-400). Also, the function 'handleNoMatchedRoute' uses 'decodeURIComponent(reqUrl)' to get the path to the file, which can lead to Path Traversal attacks (CWE-22) if the 'reqUrl' is not properly sanitized."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attack (also known as directory traversal) as it uses user-supplied input in 'this.request.path' without proper validation or sanitization. This could allow an attacker to access, read, or modify files outside of the intended directory. The vulnerability corresponds to CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-346: Origin Validation Error", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Data Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it uses the postMessage method with a wildcard '*' as the target origin, which means that the message will be sent to any window, regardless of its origin. This can allow an attacker to intercept the message. This is related to CWE-346. Additionally, the function does not validate or sanitize the 'event.data' input before using it, which can lead to various attacks such as XSS or data injection. This is related to CWE-20."
+}

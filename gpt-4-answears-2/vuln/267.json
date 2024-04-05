@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function does not properly validate the input for the 'path', 'method', 'origin', 'valid', and 'stream' parameters. This could lead to various vulnerabilities such as code injection (CWE-94) if an attacker can control the input to these parameters. The function also does not handle exceptions that could be thrown when creating a new RegExp object from the 'regex' parameter, which could lead to a denial of service (CWE-400) if an attacker provides a regex that leads to excessive backtracking. Furthermore, the function does not limit the size of the 'valid' array, which could also lead to a denial of service if an attacker provides a large array."
+}

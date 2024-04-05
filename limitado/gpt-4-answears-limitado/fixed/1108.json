@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'user_host' value is not being properly escaped or encoded before being returned, which could allow an attacker to inject malicious scripts. The function should use a method like 'escapeHtml' to properly encode the 'user_host' value as well."
+}

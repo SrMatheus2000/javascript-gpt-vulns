@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-352", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly includes user input (data.query.jsonp) in the response without proper sanitization. This could allow an attacker to inject malicious scripts that will be executed in the context of the victim's browser. The function is also vulnerable to Cross-Site Request Forgery (CSRF) because it does not implement any CSRF protection mechanism. An attacker could trick a victim into making a request that the victim did not intend to make. Lastly, the function does not properly validate the input data, which could lead to various types of attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a recursive function that iterates over an object or array and stores its keys and values in an array. It does not execute any dynamic code, does not modify any global variables, and does not have any obvious security issues such as injection vulnerabilities or cross-site scripting (XSS) vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'file' parameter is directly concatenated into the command string that is passed to 'child_process_1.exec'. An attacker could provide a malicious file name that includes command injection payloads, leading to arbitrary command execution."
+}

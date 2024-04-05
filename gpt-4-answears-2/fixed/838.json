@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-209", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to several issues. First, it does not validate the input 'data' which can lead to unexpected behavior (CWE-20). Second, it exposes potentially sensitive server information (CWE-200). Third, it may expose sensitive error information (CWE-209). Lastly, it does not control the size of the response, which can lead to resource exhaustion (CWE-400)."
+}

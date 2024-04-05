@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection via the 'params.message' and 'params.jsonp' parameters. The 'params.message' parameter is parsed with 'JSON.parse' without any validation, which can lead to code injection if the input is not properly sanitized. The 'params.jsonp' parameter is also used without proper validation, which can lead to code injection if it contains malicious code. Additionally, the function does not validate the 'request.method' parameter, which can lead to unexpected behavior if it contains unexpected values."
+}

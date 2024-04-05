@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Command Injection", "Information Exposure", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to command injection as it uses user-supplied input in the 'openssl.spawnWrapper' function without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. The function also exposes sensitive information by returning the modulus of the certificate, which could be used by an attacker to gain unauthorized access. Additionally, the function does not control the consumption of resources, which could lead to a denial of service if an attacker provides a large amount of data."
+}

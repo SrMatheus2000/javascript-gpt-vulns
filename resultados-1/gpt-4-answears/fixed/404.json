@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function getCurrentConnection is vulnerable to OS command injection. The function uses the execFile function to execute the 'nmcli' command with user-supplied input (config.iface). If an attacker can control the value of config.iface, they can inject arbitrary commands to be executed on the system with the privileges of the Node.js process."
+}

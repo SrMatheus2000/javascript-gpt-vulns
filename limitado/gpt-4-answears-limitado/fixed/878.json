@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the .html() method in jQuery, which does not escape or sanitize the input and can lead to the execution of malicious scripts if the input is not properly handled. The Handlebars.templates.main(this.model) could potentially contain malicious scripts. It is recommended to use text() instead of html() or ensure that the input is properly sanitized before being inserted into the HTML."
+}

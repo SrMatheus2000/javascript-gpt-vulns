@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-497: Exposure of System Data to an Unauthorized Control Sphere"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is vulnerable to information disclosure. It logs and prints out detailed error messages, including system and environment details, which could potentially expose sensitive information. This could be exploited by an attacker to gain knowledge about the system and aid in further attacks. The function also allows for the execution of arbitrary code through the 'so.errhandler' call, which could lead to unauthorized control over system data."
+}

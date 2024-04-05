@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any common security vulnerabilities. It is primarily concerned with defining regular expressions and keywords for a syntax highlighting library, and does not perform any risky operations such as eval(), document.write(), setting innerHTML, etc. It also does not appear to handle any user input directly, further reducing its attack surface."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The function checks if the pathname contains '../' or '..\\' or '..%5c' to prevent directory traversal, but it does not consider other forms of encoding. An attacker could use different encodings to bypass this check and access files outside of the intended directories. For example, an attacker could use URL encoded characters or double URL encoding to bypass the check."
+}

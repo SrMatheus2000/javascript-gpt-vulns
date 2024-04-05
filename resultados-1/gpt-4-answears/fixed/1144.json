@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-200", "CWE-209", "CWE-598"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure", "Information Exposure Through an Error Message", "Information Exposure Through Query Strings in URL"],
+  "description": "The function is vulnerable to several types of attacks. Firstly, it does not validate or sanitize the 'req.url' input, which can lead to attacks such as Cross-Site Scripting (XSS) or SQL Injection. Secondly, it exposes potentially sensitive information through the 'req' and 'res' objects, which can be exploited to gain unauthorized access to the system. Thirdly, it exposes error messages through the 'res.throw400()' function, which can provide attackers with valuable information about the system. Lastly, it exposes information through query strings in the URL, which can be intercepted and exploited."
+}

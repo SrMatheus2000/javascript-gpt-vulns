@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-359: Exposure of Private Information", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Weak Authentication", "Exposure of Sensitive Information", "Information Exposure Through Error Message"],
+  "description": "The function 'buildMiddleware' is vulnerable due to several reasons. Firstly, it uses weak authentication mechanism in the 'staticUsersAuthorizer' function where it compares username and password in a non-secure way which can lead to improper authentication (CWE-287). Secondly, the function exposes sensitive information such as username and password in the 'req.auth' object (CWE-359). Lastly, the function exposes information through error messages in the 'assert' statements which can provide valuable information to an attacker (CWE-209)."
+}

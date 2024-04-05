@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-483"],
+  "vulnerabilities": ["Improper Copying of Array"],
+  "description": "The cloneArray function is vulnerable to CWE-483, which is the improper copying of an array. The function uses the slice method with incorrect arguments to create a shallow copy of the array. This can lead to unexpected behavior and potential security vulnerabilities."
+}

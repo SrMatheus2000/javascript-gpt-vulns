@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. If an attacker sends a large number of requests with a large content-length, it could consume all the server's resources, causing it to crash or become unresponsive. This is due to the fact that the function does not limit the number of incoming requests, only the size of each individual request. This vulnerability is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

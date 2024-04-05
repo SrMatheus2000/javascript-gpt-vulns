@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-613", "CWE-352"],
+  "vulnerabilities": ["Session Fixation", "Insecure Cookie"],
+  "description": "The function is vulnerable to session fixation and insecure cookie vulnerabilities. It generates a session ID and sets it as a cookie without properly validating or securing it. This can allow an attacker to fixate a session ID or steal the session ID through various means."
+}

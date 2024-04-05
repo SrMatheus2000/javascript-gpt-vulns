@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate or sanitize the 'name' and 'config' inputs. This could lead to various types of attacks such as Cross-Site Scripting (XSS), SQL Injection, and Command Injection if the inputs contain malicious values. It's recommended to always validate and sanitize user inputs to prevent such vulnerabilities."
+}

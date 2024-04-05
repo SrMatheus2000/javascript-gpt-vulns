@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'dangerouslySetInnerHTML' property in React can open up the application to XSS attacks if the input is not properly sanitized. Although the function appears to use a sanitizer function, it's not clear how effective this is. If the sanitizer function is not properly implemented, it may not fully protect against XSS attacks. Additionally, the 'useUnsafeMarkdown' option could potentially allow unsafe input if it's set to true."
+}

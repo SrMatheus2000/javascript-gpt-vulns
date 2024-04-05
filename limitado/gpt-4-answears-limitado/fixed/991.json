@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-74", "CWE-89", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to several types of attacks. First, it does not properly validate the input, which can lead to injection attacks (CWE-20, CWE-74, CWE-89, CWE-94). For example, an attacker could manipulate the 'content-type' header to inject malicious code. Second, the function does not limit the size of the data it processes, which can lead to resource exhaustion (CWE-400). An attacker could send a large amount of data, causing the server to consume excessive resources and potentially crash."
+}

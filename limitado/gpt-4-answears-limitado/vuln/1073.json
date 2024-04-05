@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'opts.tag', 'opts.no_data_class', and 'opts.no_data_text' variables are directly inserted into the HTML code without any sanitization or encoding. If an attacker can control the values of these variables, they can inject malicious scripts into the web page, leading to XSS attacks. This is related to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

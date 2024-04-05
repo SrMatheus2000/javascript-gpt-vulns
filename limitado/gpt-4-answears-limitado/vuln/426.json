@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it uses cookies for session handling. An attacker can trick a victim into sending a malicious request with the identity and privileges of the victim. Also, the function does not validate or sanitize the input properly which can lead to various attacks such as SQL Injection, XSS, etc."
+}

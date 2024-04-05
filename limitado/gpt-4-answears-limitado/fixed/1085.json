@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The curr_table_name and curr_column_name variables are directly taken from the window.parent.table and the text of a label element respectively. If an attacker can control the value of these variables, they can inject malicious scripts. Although the escapeHtml function is used, it may not be sufficient to prevent all forms of XSS, especially if the function does not correctly escape all special characters. This vulnerability is classified as CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

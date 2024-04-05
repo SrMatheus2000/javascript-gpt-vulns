@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function Extract is vulnerable to path traversal attacks. The vulnerability lies in the line where the path of the file to be written is constructed. An attacker can manipulate the 'entry.path' value to navigate to arbitrary directories. This can lead to unauthorized read or write access to files outside of the intended directory."
+}

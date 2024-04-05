@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference", "CWE-571: Expression is Always True"],
+  "vulnerabilities": ["Null Pointer Dereference", "Unconditional Validation"],
+  "description": "The function is vulnerable to null pointer dereference. It checks if obj1[property] or obj2[property] is null and if so, it calls the callback function with these potentially null values. If the callback function does not handle null values properly, this could lead to a null pointer dereference error. Additionally, the function uses the 'valid' variable in a way that it will always be true. This is because 'valid' is only updated with the return value of the callback function if the callback function is called. If the callback function is never called, 'valid' will remain true, leading to unconditional validation."
+}

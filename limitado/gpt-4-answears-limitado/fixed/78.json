@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function spawns a child process to execute a command, which is constructed using user-supplied input. If an attacker can control the 'type' or 'self.filename' variables, they could inject arbitrary commands to be executed on the server. This is a serious security vulnerability known as command injection."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled data ('c' and 'd' variables) into HTML content without proper sanitization or encoding. An attacker could potentially inject malicious scripts by manipulating the 'data-youtube' and 'data-ytparams' attributes, leading to XSS attacks. This is related to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

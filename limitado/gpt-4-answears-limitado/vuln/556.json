@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. It takes an input and directly uses it to create a new RegExp object (`const trimmer = new RegExp(`^${whitespace}`, 'gm');`). If the input is not properly sanitized, an attacker could inject malicious scripts that would be executed when the RegExp is used. This could lead to various security issues, such as stealing sensitive data, performing actions on behalf of the user, etc."
+}

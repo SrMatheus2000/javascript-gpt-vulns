@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-287", "CWE-89", "CWE-352"],
+"vulnerabilities": ["Improper Authentication", "SQL Injection", "Cross-Site Request Forgery (CSRF)"],
+"description": "The function is vulnerable to Improper Authentication as it uses a static user authorizer which can be easily bypassed. It is also vulnerable to SQL Injection as it does not sanitize the username and password inputs before using them in the authorizer function. Lastly, it is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any CSRF protection mechanisms."
+}

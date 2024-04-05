@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a caching function that stores the results of a function call to avoid repeated calculations. It handles promises correctly, removing them from the cache if they are rejected unless the 'cachePromiseRejection' option is set to true. There are no obvious security issues such as injection vulnerabilities, insecure use of eval, or insecure direct object references."
+}

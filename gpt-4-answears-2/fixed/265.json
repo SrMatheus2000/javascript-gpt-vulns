@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure"],
+"vulnerabilities": ["Unvalidated input", "Potential information exposure"],
+"description": "The function getOriginOfRequest does not validate the origin and referrer from the request. This could lead to potential security risks such as information exposure or injection attacks. The origin and referrer should be validated to ensure they are from trusted sources."
+}

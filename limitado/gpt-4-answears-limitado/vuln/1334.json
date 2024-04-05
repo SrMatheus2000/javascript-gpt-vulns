@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function addRemote and addRemote.sync are vulnerable to OS command injection because they concatenate user-controlled input into a command string that is executed by the application. An attacker can manipulate the 'name' and 'url' parameters to execute arbitrary commands on the system."
+}

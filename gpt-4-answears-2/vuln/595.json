@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm"],
+"description": "The function uses the 'crypto.createCipheriv' and 'crypto.createDecipheriv' methods for encryption and decryption respectively. These methods are considered risky as they do not provide authenticated encryption. This means that the encrypted data can be tampered with, leading to potential security risks. It is recommended to use an authenticated encryption mode like GCM (Galois/Counter Mode) instead."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Type confusion", "Potential for injection attacks"],
+  "description": "The function does not validate the types of the input parameters. This can lead to type confusion vulnerabilities if the function is called with unexpected types. Additionally, the function directly includes the 'name' and 'obj' parameters in an exception message without any sanitization. If these parameters can be controlled by an attacker, this could lead to injection attacks."
+}

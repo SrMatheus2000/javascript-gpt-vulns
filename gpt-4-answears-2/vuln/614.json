@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-site Scripting (XSS) attacks. This is due to the use of 'innerHTML' which can potentially insert malicious scripts if the input is not properly sanitized. An attacker can inject malicious scripts through the 'option' parameter which will then be executed when the 'innerHTML' is called."
+}

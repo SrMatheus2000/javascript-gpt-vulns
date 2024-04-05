@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Null Pointer Dereference"],
+  "description": "The function unique_name_273 does not check if 'vertices' is defined before accessing its 'id' property. This could lead to a Null Pointer Dereference if 'vertices' is undefined. It's recommended to add a check to ensure 'vertices' is defined before accessing its properties."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-276: Incorrect Default Permissions", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Insecure File Permissions", "Lack of Input Validation"],
+"description": "The function sets file permissions to '0666' by default, which allows read and write access to all users. This can lead to unauthorized access or modification of the file. Additionally, the function does not validate the 'where' parameter, which can lead to unexpected behavior if an invalid value is passed."
+}

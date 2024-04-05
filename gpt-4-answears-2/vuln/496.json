@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-79"],
+"vulnerabilities": ["Improper Input Validation", "Cross-Site Scripting (XSS)"],
+"description": "The function does not validate the 'file' parameter which can lead to file inclusion vulnerabilities. Also, the function directly uses the 'req.headers.host' in the 'jsonFileUrl' which can lead to Host Header Injection attacks. Moreover, the function does not sanitize the 'options.validatorUrl' and 'options.supportedSubmitMethods' before using them which can lead to Cross-Site Scripting (XSS) attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470", "CWE-400"],
+  "vulnerabilities": ["Unrestricted use of dangerous functions", "Uncontrolled Resource Consumption"],
+  "description": "The function uses the 'delete' operator which can lead to performance issues (CWE-400). It also uses the 'eval' function (indirectly through util.inherits and util.promisify), which can lead to arbitrary code execution if the input is not properly sanitized (CWE-470)."
+}

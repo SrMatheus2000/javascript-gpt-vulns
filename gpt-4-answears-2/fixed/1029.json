@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116"],
+"vulnerabilities": ["Improper Encoding or Escaping of Output"],
+"description": "The function unescape() is vulnerable because it does not properly sanitize the input. This can lead to Cross-Site Scripting (XSS) attacks if the output is used in a HTML context. The function attempts to replace HTML entities, but it does not cover all possible entities. For example, it does not handle entities that are not decimal, hex, or named. Additionally, it does not handle named entities that are not 'colon'. This incomplete coverage leaves the function open to potential XSS attacks."
+}

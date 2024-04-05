@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-311: Missing Encryption of Sensitive Data", "CWE-759: Use of a One-Way Hash without a Salt"],
+  "vulnerabilities": ["No input validation", "Sensitive data might be exposed", "No salt used in hashing"],
+  "description": "The function does not validate the input 'value' and 'definition' which can lead to unexpected behavior or errors. If 'value' is not a string, the function will throw an error. If 'definition' is not an object with the expected properties, the function will also throw an error. The function also does not encrypt sensitive data when the encoding is 'iron', 'base64json', or 'base64'. This can lead to exposure of sensitive data. Finally, the function does not use a salt when hashing the 'value', which can make the hash easier to crack."
+}

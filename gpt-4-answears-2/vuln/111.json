@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Type Coercion", "Regular Expression Denial of Service (ReDoS)", "Potential Code Injection"],
+"description": "The function does not properly validate the input 'data'. It attempts to convert non-string inputs to string using the toString method, which can lead to unexpected behavior or Type Coercion vulnerabilities. The function also constructs regular expressions from user-controlled input, which can lead to Regular Expression Denial of Service (ReDoS) if the input contains expressions that take a long time to evaluate. Additionally, the function uses the input to create keys and values in an object, which could potentially lead to Code Injection if the input is not properly sanitized."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400", "CWE-209"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to construct a filesystem path without properly neutralizing special elements. This could allow an attacker to read arbitrary files on the server. It's also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it reads files synchronously which could block the event loop if the file is large. Lastly, it's vulnerable to Information Exposure Through an Error Message (CWE-209) as it directly sends the error message to the client which could leak sensitive server information."
+}

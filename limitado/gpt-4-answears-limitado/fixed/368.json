@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Output Neutralization for Logs"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It sanitizes HTML input but does not properly handle SVG elements, which can be manipulated to execute arbitrary JavaScript code. This can lead to various security issues like session hijacking, identity theft, defacement of the website, etc. Additionally, the function does not properly neutralize output for logs, which can lead to injection attacks."
+}

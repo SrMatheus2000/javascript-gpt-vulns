@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["SQL Injection", "No validation of propName"],
+"description": "The function does not sanitize or validate the 'propName' input, which is directly used in an SQL query. This can lead to SQL Injection if an attacker can control the 'propName' value. Additionally, there is no check to ensure 'propName' is a valid property of 'm.properties', which could lead to a TypeError if 'propName' is not a property of 'm.properties'."
+}

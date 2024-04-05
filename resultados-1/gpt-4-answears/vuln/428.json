@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-400"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) as it does not enforce encryption for all communications. This could allow an attacker to intercept and read sensitive data. Additionally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of the buffers array. This could allow an attacker to cause a denial of service by sending a large amount of data and filling up the server's memory."
+}

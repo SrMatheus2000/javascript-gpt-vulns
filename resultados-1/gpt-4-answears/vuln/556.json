@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Injection"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks and Injection attacks. The function takes an input 'capture' and uses it to generate a regular expression without proper sanitization or encoding. This could allow an attacker to inject malicious scripts or commands. The function also seems to parse HTML elements without proper validation, which could lead to XSS attacks if the input contains malicious scripts."
+}

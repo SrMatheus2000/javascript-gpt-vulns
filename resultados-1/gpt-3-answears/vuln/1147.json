@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119"],
+  "vulnerabilities": ["Buffer overflow"],
+  "description": "The use of the deprecated Buffer constructor without proper length validation can lead to a buffer overflow vulnerability."
+}

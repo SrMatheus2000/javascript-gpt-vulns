@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Sensitive Data Exposure", "Error Message Information Leak"],
+  "description": "The function 'unique_name_404' is vulnerable to information exposure. The function exposes sensitive information in error messages. For example, when validating the uniqueness of email and username, the error messages 'Email already exists' and 'User already exists' are returned. This could potentially allow an attacker to enumerate usernames and emails. Additionally, the function does not properly handle access control, potentially exposing private information."
+}

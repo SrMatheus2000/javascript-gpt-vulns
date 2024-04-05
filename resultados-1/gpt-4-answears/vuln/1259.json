@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_734 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'path_part' variable in the creation of an HTML element without properly sanitizing it. An attacker could potentially inject malicious scripts by providing a 'path_part' that includes script tags. This script would then be executed when the HTML is rendered in the browser. The vulnerability corresponds to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

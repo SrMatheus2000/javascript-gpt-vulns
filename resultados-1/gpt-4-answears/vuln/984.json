@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the 'html' function from jQuery on user-controlled data without proper sanitization or encoding. The 'html' function can interpret the input as HTML, including script tags, which can lead to arbitrary JavaScript execution. The 'SwaggerUi.utils.sanitize' function is used, but it may not be sufficient to prevent all XSS attacks, depending on its implementation. It's recommended to use text or other methods that do not interpret the input as HTML, or to ensure that any user-controlled data is properly sanitized or encoded."
+}

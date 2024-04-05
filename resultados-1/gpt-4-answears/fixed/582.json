@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function compile() is vulnerable to code injection attacks. This is because it uses the Function() constructor to create a new function from a string of JavaScript code (variable 'js'). An attacker could potentially control the content of 'format', leading to arbitrary code execution. This is a serious security risk, as it could allow an attacker to execute malicious code within the application's environment."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an HTML string as input and directly assigns it to the innerHTML property of an element. This can lead to execution of malicious scripts if the input is not properly sanitized. Although the function attempts to sanitize the input, it does not properly handle all cases, making it susceptible to mXSS (mutation-based XSS) attacks."
+}

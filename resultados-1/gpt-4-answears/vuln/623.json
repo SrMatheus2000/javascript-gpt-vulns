@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Exposure", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to information exposure as it logs error messages to the console which may contain sensitive information. This is a violation of CWE-200 and CWE-209. Additionally, the function does not limit the size of the request body, making it vulnerable to resource exhaustion attacks (CWE-400). An attacker could send a large amount of data in the body of the request, causing the server to consume excessive resources and potentially leading to a denial of service."
+}

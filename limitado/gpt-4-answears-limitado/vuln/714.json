@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function splits the input into lines and processes each line separately. If an attacker provides a large input, the function will consume a lot of resources (CPU and memory) to process it, potentially leading to resource exhaustion and service unavailability. This is known as a Denial of Service (DoS) attack. The vulnerability corresponds to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

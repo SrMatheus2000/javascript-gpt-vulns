@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function unique_name_174 is vulnerable to code injection attacks. It takes an event object, extracts the data from it, and if the data is a string that looks like JSON, it parses it into an object. If the parsed object has a 'method' property, the function attempts to call a method on the 'Reveal' object with the same name, passing any arguments that were included in the original data. This means that an attacker could potentially inject arbitrary code by crafting a string that, when parsed, results in an object with a 'method' property that corresponds to a method on the 'Reveal' object, and 'args' that include the malicious code. Additionally, the function does not perform any validation on the input data before processing it, which could lead to unexpected behavior or errors."
+}

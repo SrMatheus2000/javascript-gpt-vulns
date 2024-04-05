@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It allows a wide range of HTML, SVG, and MathML tags and attributes, including 'style' and 'on*' event handlers, which can be used to inject malicious scripts. The function also does not properly encode or escape output, which can lead to injection attacks. Additionally, the function does not properly handle DOM clobbering attacks, which can lead to unexpected behavior and potential security issues."
+}

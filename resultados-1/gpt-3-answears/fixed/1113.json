@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-390"],
+  "vulnerabilities": ["Improper Error Handling"],
+  "description": "The function does not handle the error case properly, potentially exposing sensitive information or causing unexpected behavior."
+}

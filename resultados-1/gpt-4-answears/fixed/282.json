@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-346: Origin Validation Error"],
+  "vulnerabilities": ["Input Validation", "Origin Validation"],
+  "description": "The function does not validate the input 'address' before using it. This could lead to unexpected behavior or security issues. Also, the function does not validate the origin of the 'payload' before using it. This could lead to security issues if the 'payload' is manipulated by an attacker."
+}

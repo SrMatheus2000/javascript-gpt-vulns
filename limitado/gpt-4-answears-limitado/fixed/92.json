@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack where the properties of JavaScript objects can be manipulated. This can lead to a variety of security vulnerabilities, such as Denial of Service (DoS), Remote Code Execution (RCE), or even property injection. The function does not properly validate the 'path' parameter to prevent '__proto__' or 'constructor' properties from being modified. An attacker can use this vulnerability to add or modify existing properties of Object.prototype. This can lead to the execution of malicious code or cause application crashes."
+}

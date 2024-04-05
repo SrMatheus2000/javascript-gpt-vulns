@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function unique_name_538 is vulnerable to SQL Injection. The variable 'propName' is directly used in the SQL query without any sanitization or parameterized query, making it possible for an attacker to inject malicious SQL code. This could lead to unauthorized viewing of data, data corruption or even data deletion."
+}

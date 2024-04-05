@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. The function sanitise() is used to sanitize the input, but it's not defined in the provided code. If this function doesn't properly sanitize the input, it could lead to XSS attacks. The variables 'title', 'value', 'name', and 'bgcolor' are used in the construction of HTML content and if they contain malicious scripts, they could be executed in the client's browser."
+}

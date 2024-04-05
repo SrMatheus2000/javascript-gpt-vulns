@@ -1,0 +1,5 @@
+{
+  "isVulnerable": false,
+  "CWEs":  "vulnerabilities [],
+  "description": " provided JavaScript function does not any known vulnerabilities or CWEs."
+}

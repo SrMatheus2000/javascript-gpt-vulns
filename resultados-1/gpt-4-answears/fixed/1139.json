@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-117: Improper Output Neutralization for Logs", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Log Injection", "JSONP Callback Function Code Injection"],
+  "description": "The function logs the request parameters without sanitizing them, which could lead to log injection if the parameters contain malicious content. Also, the function allows the client to specify a JSONP callback function, which could lead to code injection if the callback function name is not properly sanitized."
+}

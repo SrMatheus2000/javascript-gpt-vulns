@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the input 'stack' which can lead to code injection vulnerabilities. Also, the function does not escape the output which can lead to Cross-Site Scripting (XSS) vulnerabilities if the output is used in a web context."
+}

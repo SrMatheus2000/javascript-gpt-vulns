@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It simply checks if the provided name is 'user_host', and if so, it removes any square bracketed content from the value. If the name is not 'user_host', it returns the value as is. There are no obvious security issues such as injection vulnerabilities, insecure direct object references, or insecure use of eval()."
+}

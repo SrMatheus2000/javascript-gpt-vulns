@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Potential Denial of Service (DoS)"],
+"description": "The function 'consume' can potentially lead to a Denial of Service (DoS) attack. This is because it uses a while loop to process elements in the '_bufs' array without checking if the array is empty or not. If an attacker provides a large array, it could consume significant system resources, leading to a DoS condition."
+}

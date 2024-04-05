@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-306: Missing Authentication for Critical Function"],
+  "vulnerabilities": ["Code Injection", "Missing Authentication"],
+  "description": "The function 'thenify' is vulnerable to code injection because it uses the 'eval' function, which executes the code it's given with the privileges of the caller. If an attacker can influence the input of 'eval', they can run arbitrary code. This is a critical security risk. Additionally, there is no authentication mechanism in place to ensure that the function being passed to 'thenify' is legitimate and safe to use, which could lead to unauthorized access or execution of sensitive functions."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327", "CWE-759"],
+  "vulnerabilities": ["Insecure Use of Cryptography", "Insufficient Entropy"],
+  "description": "The function is vulnerable to CWE-327 (Insecure Use of Cryptography) and CWE-759 (Insufficient Entropy). The use of the sha1 algorithm for hashing passwords is considered insecure as it is susceptible to various attacks. Additionally, the function does not provide sufficient entropy for generating secure cryptographic keys."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. The data.linkText and data.email.address are directly used in the creation of new CKEDITOR.dom.text and element.setText without any sanitization or encoding. If these data fields contain malicious scripts, they will be executed when the resulting text is rendered in the browser."
+}

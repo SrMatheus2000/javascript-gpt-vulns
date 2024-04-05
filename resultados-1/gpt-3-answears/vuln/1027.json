@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-384"],
+  "vulnerabilities": ["Insecure Session Management"],
+  "description": "The function does not properly handle session management, leading to potential security vulnerabilities. The session is saved automatically without any validation or security measures, which can result in session hijacking or session fixation attacks."
+}

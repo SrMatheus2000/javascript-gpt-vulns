@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Denial of Service"],
+  "description": "The function is vulnerable to code injection attacks because it evaluates code based on user input without proper sanitization. This can lead to arbitrary code execution. Additionally, the function does not have any mechanism to prevent or limit resource consumption, making it susceptible to Denial of Service (DoS) attacks where an attacker could cause the application to consume excessive resources, leading to slow performance or crashes."
+}

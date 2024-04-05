@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_134 is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input to create a script element and set its src attribute (in function d). An attacker could potentially inject malicious scripts by manipulating the 'c' parameter of the function d. This script would then be executed when the created script element is added to the document."
+}

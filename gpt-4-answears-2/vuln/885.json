@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-328", "CWE-759", "CWE-760"],
+"vulnerabilities": ["Use of Weak Hashing Function", "Use of Password Hash With Insufficient Computational Effort", "Use of Password Hash Instead of Password-Based Key Derivation Function"],
+"description": "The function uses SHA-1, which is a weak hashing function and can be vulnerable to collision attacks. It also uses password hash with insufficient computational effort, making it easier for attackers to guess the password. Lastly, it uses password hash instead of a Password-Based Key Derivation Function (PBKDF), which is a more secure way of storing passwords."
+}

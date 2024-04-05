@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to Path Traversal and Cross-Site Scripting attacks. The Path Traversal vulnerability (CWE-22) is due to the fact that the function directly uses the user-supplied input (req.url) to access a file system without any validation or sanitization. This could allow an attacker to read arbitrary files on the server. The Cross-Site Scripting vulnerability (CWE-79) is due to the fact that the function logs the user-supplied input (req.url) without any sanitization, which could allow an attacker to inject malicious scripts."
+}

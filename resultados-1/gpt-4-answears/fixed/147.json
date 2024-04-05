@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE200: Information Exposure", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Request Forgery", "Information Exposure", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any CSRF protection mechanism. It is also vulnerable to Information Exposure as it logs sensitive information such as access tokens when loggingNoPII option is false. Additionally, the function does not validate the input properly, for example, it does not check if the tenantIdOrName is a valid tenant ID or name, which can lead to unexpected behavior or security issues."
+}

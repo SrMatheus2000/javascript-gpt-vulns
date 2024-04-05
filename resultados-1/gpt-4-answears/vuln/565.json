@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the `insertAdjacentHTML` method which can execute JavaScript code if it's present in the string being inserted. If an attacker can control the `opts.character` or `target` parameters, they could inject malicious scripts that would be executed when the function is called. To mitigate this, it's recommended to sanitize all user inputs and avoid using methods that can execute scripts in strings."
+}

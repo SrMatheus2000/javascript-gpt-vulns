@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It has checks in place to prevent prototype pollution, which is a common vulnerability in JavaScript. It also has type checking to ensure that the provided arguments are of the correct type. Therefore, it does not seem to be vulnerable to any known CWEs (Common Weakness Enumerations)."
+}

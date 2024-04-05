@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-73: External Control of File Name or Path", "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+"vulnerabilities": ["Command Injection", "Path Traversal", "Insecure Temporary File"],
+"description": "The function is vulnerable to command injection because it uses user-supplied input in a command that is executed by a child process. This could allow an attacker to execute arbitrary commands. The function is also vulnerable to path traversal because it uses user-supplied input to construct a file path without properly sanitizing the input. This could allow an attacker to access, modify, or delete files outside of the intended directory. Additionally, the function creates a temporary file in a publicly accessible directory, which could expose sensitive information or be manipulated by other processes."
+}

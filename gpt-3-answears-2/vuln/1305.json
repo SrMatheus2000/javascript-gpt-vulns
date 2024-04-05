@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "description": "The function 'unique_name_759' is vulnerable to command injection and improper neutralization of special elements in output used by a downstream component. The 'key' and 'value' parameters are directly used in constructing shell commands without proper sanitization or validation, which can allow an attacker to execute arbitrary commands or inject malicious code."
+}

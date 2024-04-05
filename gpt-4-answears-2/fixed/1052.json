@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+"vulnerabilities": ["Path Traversal", "Input Validation"],
+"description": "The function does not validate the input 'entry' and directly uses it to manipulate file paths. This can lead to path traversal attacks if an attacker can control the 'entry' object. The function also does not check if 'opts.strip' is a number before using it in the 'slice' function, which can lead to unexpected behavior."
+}

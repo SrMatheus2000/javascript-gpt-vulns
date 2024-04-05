@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-209", "CWE-400"],
+  "vulnerabilities": ["OS Command Injection", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input (opts.range) to form a command that is executed by the system. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function discards stderr messages, which could contain important error information that could help an attacker understand the system better (information exposure). Finally, the function does not limit the number of reports that can be pushed to the 'reports' array, which could lead to a denial of service (DoS) attack if an attacker can cause a large number of reports to be generated (uncontrolled resource consumption)."
+}

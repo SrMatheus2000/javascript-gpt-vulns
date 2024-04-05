@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-404", "CWE-20"],
+"vulnerabilities": ["Command Injection", "Improper Resource Shutdown or Release", "Improper Input Validation"],
+"description": "The function is vulnerable to command injection because it uses the exec function to execute the arp command with user-supplied input. This could allow an attacker to execute arbitrary commands. The function also does not properly handle errors, which could lead to resource leaks. Additionally, the function does not validate the input to the range parameter, which could lead to unexpected behavior."
+}

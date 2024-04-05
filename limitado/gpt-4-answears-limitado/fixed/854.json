@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-312: Cleartext Storage of Sensitive Information", "CWE-384: Session Fixation", "CWE-613: Insufficient Session Expiration"],
+  "vulnerabilities": ["Sensitive data exposure", "Session fixation", "Insufficient session expiration"],
+  "description": "The function is vulnerable as it appears to be storing sensitive authentication information in cookies without any apparent encryption, which could lead to exposure of this data (CWE-312). Additionally, the function does not seem to handle session IDs in a secure manner, potentially allowing an attacker to fixate the session ID and hijack the session (CWE-384). The function also sets a timeout for authentication, but it does not appear to invalidate the session after this timeout, which could lead to an attacker being able to use an old session (CWE-613)."
+}

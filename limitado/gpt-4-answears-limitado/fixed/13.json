@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) attacks. If an attacker provides a large sourceMapString, the regular expression can cause the application to freeze. This is due to the use of the '.*' in the regular expression, which can lead to catastrophic backtracking. Additionally, the function does not validate the input, which can lead to unexpected behavior if the input does not match the expected format."
+}

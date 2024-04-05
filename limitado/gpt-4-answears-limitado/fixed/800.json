@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function 'createSocket' is vulnerable to Denial of Service (DoS) attacks. This is because it does not limit the number of sockets that can be created and pushed into the 'self.sockets' array. An attacker could potentially create a large number of sockets, consuming system resources and causing the application to slow down or crash. This is related to CWE-400, which refers to uncontrolled resource consumption, also known as 'resource exhaustion'."
+}

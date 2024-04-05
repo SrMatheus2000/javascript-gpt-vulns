@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-829", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Inclusion of Functionality from Untrusted Control Sphere", "Improper Control of Generation of Code ('Code Injection')", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function downloads a file from a URL that is constructed using unvalidated input, which can allow an attacker to download arbitrary files. This is a form of CWE-829. The function also does not handle errors properly, which can lead to uncontrolled resource consumption (CWE-400). Additionally, the function uses the 'eval' function, which can lead to code injection (CWE-94) if the input is not properly sanitized."
+}

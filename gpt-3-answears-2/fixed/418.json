@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-73"
+  ],
+  "vulnerabilities": [
+    "Path Traversal",
+    "Insecure File Permissions"
+  ],
+  "description": "The function is vulnerable to a path traversal attack (CWE-73) and insecure file permissions (CWE-78). The 'dir' parameter is not properly validated, allowing an attacker to traverse the file system and potentially access or modify sensitive files. Additionally, the file permissions set in the 'mkdir' function (484) are insecure and may allow unauthorized access to the created directories and files."
+}

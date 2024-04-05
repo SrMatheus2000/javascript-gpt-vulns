@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-918", "CWE-20"],
+"vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Input Validation"],
+"description": "The function does not validate the parsedSignature parameter which can lead to Server-Side Request Forgery (SSRF) if the parameter contains a malicious URL. Additionally, the function does not validate the algorithm provided in the parsedSignature, which can lead to unexpected behavior or errors if an invalid or unsupported algorithm is provided."
+}

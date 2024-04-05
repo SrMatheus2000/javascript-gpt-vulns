@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'execFile' function is used to execute the 'arp' command with user-supplied input (the 'ip' variable). If an attacker can control the 'ip' variable, they could inject arbitrary commands to be executed on the server. This could lead to a variety of attacks, including data theft, data corruption, or denial of service."
+}

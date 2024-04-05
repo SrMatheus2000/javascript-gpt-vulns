@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Command Injection", "Verbose Error Messages"],
+  "description": "The function is vulnerable to command injection because it directly uses user input to form a command that is executed by the system. This is done in the line 'cmd = scope.command(opts, range);'. An attacker could potentially inject malicious commands through the 'opts' parameter. Additionally, the function may expose sensitive information through error messages when 'opts.verbose' is true. This could provide an attacker with valuable information about the system."
+}

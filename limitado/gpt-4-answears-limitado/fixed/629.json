@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The vulnerability exists because the function uses the 'entry.path' input to construct a file path to write to. An attacker can manipulate 'entry.path' to navigate to arbitrary directories. The function attempts to prevent this by checking if the resolved 'extractPath' starts with 'opts.path', but this check can be bypassed by using paths like '../dir'. This can allow an attacker to write files to arbitrary locations. The function should use a more secure method to validate 'entry.path', such as by checking if the resolved 'extractPath' is still within the intended directory after all '..' and symbolic links have been resolved."
+}

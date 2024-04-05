@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The function takes a 'stack' argument and splits it into lines. It then reduces these lines and directly manipulates and returns them. If an attacker can control the 'stack' input, they could inject malicious code into the lines of the stack trace, which could then be executed. This is a form of code injection vulnerability."
+}

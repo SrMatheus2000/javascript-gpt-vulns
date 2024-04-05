@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-22"],
+"vulnerabilities": ["OS Command Injection", "Path Traversal"],
+"description": "The function uses execFileSync to execute a command, which can lead to OS command injection if the input parameters are not properly sanitized. Also, the function uses input parameters to construct file paths, which can lead to path traversal attacks if the input parameters are not properly sanitized."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function uses the execFileSync method to execute a command without proper input validation, allowing an attacker to inject malicious commands."
+}

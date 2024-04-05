@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["JSON Injection", "Denial of Service"],
+"description": "The function is vulnerable to JSON Injection because it parses user-supplied input without proper validation. This could allow an attacker to inject malicious JSON to manipulate the application's logic. Additionally, the function does not limit the number of files that can be uploaded, which could lead to a Denial of Service (DoS) attack by consuming server resources."
+}

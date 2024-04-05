@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function unique_name_214 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'msg' parameter to create a jQuery object, which is then inserted into the DOM. If 'msg' contains any malicious scripts, they will be executed when the jQuery object is created. This can lead to various security issues, such as stealing user data or performing actions on behalf of the user."
+}

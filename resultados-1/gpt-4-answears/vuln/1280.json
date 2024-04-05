@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-470: Unrestricted Upload of File with Dangerous Type"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the input for the 'key' parameter. If the key contains '__proto__', 'prototype' or 'constructor', it can cause a prototype pollution vulnerability. This can allow an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to several types of attacks like denial of service, property injection, or even remote code execution."
+}

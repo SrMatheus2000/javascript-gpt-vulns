@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+"description": "The function does not properly validate or escape input, which can lead to vulnerabilities such as Cross-Site Scripting (XSS) and Code Injection. For example, if the source is a string, it is directly appended to the output without proper escaping. This can lead to XSS if the output is used in a web context. Similarly, if the source is a function, its string representation is directly appended to the output, which can lead to Code Injection if the output is evaluated as code."
+}

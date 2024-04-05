@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function is not vulnerable. It uses lodash's escape function to prevent Cross-Site Scripting (XSS) attacks by converting potentially harmful characters to their escaped counterparts. This ensures that any input is treated as display text and not executable code."
+}

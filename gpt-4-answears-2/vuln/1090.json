@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-73: External Control of File Name or Path", "CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Path Traversal", "Denial of Service", "Unvalidated Input"],
+"description": "The function is vulnerable to path traversal attacks because it does not validate or sanitize the 'filename' parameter before using it to create a file stream. This could allow an attacker to overwrite any file on the system. Additionally, the function does not handle errors that may occur during the HTTP request, which could lead to a Denial of Service (DoS) if the request fails or the server responds with a large amount of data. Finally, the function does not validate the response status code before piping the response to the file stream, which could lead to unexpected behavior if the server responds with an error status code."
+}

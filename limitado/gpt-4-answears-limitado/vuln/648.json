@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-338: Use of Cryptographically Weak PRNG"],
+  "vulnerabilities": ["Insecure Randomness"],
+  "description": "The function uses the modulo operator on a random number, which can introduce bias and make the randomness predictable. This is because the maximum value that can be returned by crypto.randomBytes(1)[0] is not always a multiple of 'max', so some outcomes are more likely than others. This can be exploited in some contexts to predict the output of the function."
+}

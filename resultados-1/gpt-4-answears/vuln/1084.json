@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not limit the number of notifications that can be added to the '_notificationsQueue'. An attacker can continuously add notifications to the queue, causing the application to consume excessive resources and potentially crash. This is a form of resource exhaustion, and is classified as CWE-400."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to several types of attacks. First, it does not validate the input for the 'proxy_host' and 'proxy_port' parameters, which can lead to unexpected behavior or security issues (CWE-20). Second, it exposes potentially sensitive information in error messages (CWE-200). Lastly, it does not limit the number of connections that can be made to the proxy server, which can lead to resource exhaustion (CWE-400)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-74", "CWE-95"],
+  "vulnerabilities": ["Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "description": "The function 'unique_name_358' is vulnerable to SQL injection and cross-site scripting (XSS) attacks. It does not properly sanitize the input 't' and 'e' parameters, which can allow an attacker to execute arbitrary SQL commands or inject malicious scripts into the generated web page."
+}

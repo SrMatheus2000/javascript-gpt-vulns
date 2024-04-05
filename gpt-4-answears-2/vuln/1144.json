@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function unescape() is vulnerable to Cross-Site Scripting (XSS) attacks. It replaces HTML entities with their corresponding characters, which can lead to the execution of malicious scripts if the input is not properly sanitized. For example, an attacker could input a string like '&#x3C;script&#x3E;alert(1)&#x3C;/script&#x3E;', which would be converted to '<script>alert(1)</script>' and executed by the browser."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-73", "CWE-276"],
+"vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Incorrect Default Permissions"],
+"description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user-supplied input (filePath) to create directories without proper validation. This could allow an attacker to create directories outside of the intended path. The function also allows external control of file name or path (CWE-73) as it uses the user-supplied filePath to determine the extraction path and the type of file to extract. This could allow an attacker to manipulate the file path to access or overwrite arbitrary files. Lastly, the function sets incorrect default permissions (CWE-276) by setting the permissions of the created directory to 0777, which allows read, write, and execute permissions to all users."
+}

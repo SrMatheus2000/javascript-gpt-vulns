@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate or sanitize the 'name' and 'config' inputs. This could lead to issues such as code injection or other unexpected behavior. For example, if the 'name' input contains a '/' character, it is replaced with '%2f', but other special characters are not handled. Similarly, the 'config' input is directly used to get values without any validation. This could lead to potential security vulnerabilities if the input is controlled by an attacker."
+}

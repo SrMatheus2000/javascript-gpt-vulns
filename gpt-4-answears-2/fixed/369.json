@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It uses innerHTML property which can execute JavaScript code. It also does not properly encode or escape output, which can lead to injection attacks. The function also uses synchronous XMLHttpRequest which is deprecated due to its negative effects on the user's experience."
+}

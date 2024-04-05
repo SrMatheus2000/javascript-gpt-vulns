@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function acceptHtmlAndProvidePdf is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses the request content to generate a PDF without sanitizing the input. This could allow an attacker to inject malicious scripts into the PDF. Additionally, the function does not validate the 'x-page-size' header from the request, which could lead to unexpected behavior if an attacker provides an invalid value."
+}

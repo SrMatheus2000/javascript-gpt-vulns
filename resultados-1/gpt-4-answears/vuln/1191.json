@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'prepare' takes a parameter '_html' and directly appends it to 'tooltip_div' without any sanitization. This could lead to a Cross-Site Scripting (XSS) attack if the '_html' parameter contains malicious scripts. An attacker could inject scripts that can steal sensitive information, perform actions on behalf of the user, or spread malware."
+}

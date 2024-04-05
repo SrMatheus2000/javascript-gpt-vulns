@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'sources' variable is concatenated directly into the command that is passed to 'cp.spawn', which can lead to arbitrary command execution if 'sources' contains malicious input. This is a serious security issue that can lead to full system compromise."
+}

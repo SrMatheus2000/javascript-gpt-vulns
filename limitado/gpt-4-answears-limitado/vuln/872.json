@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-749"],
+  "vulnerabilities": ["Exposed Dangerous Method or Function"],
+  "description": "The function uses 'ipcRenderer.sendSync' which is a synchronous inter-process communication method in Electron. This can be exploited by an attacker to send arbitrary events to the main process, potentially leading to Remote Code Execution (RCE) if unsanitized input is passed to the function. It's recommended to avoid using 'sendSync' with user-supplied input or ensure proper input sanitization."
+}

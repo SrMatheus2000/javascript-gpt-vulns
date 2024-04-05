@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The gitUrl and options parameters are directly concatenated into the command string without any sanitization or escaping. This means that if a user can control the gitUrl or options, they can inject arbitrary commands to be executed on the server."
+}

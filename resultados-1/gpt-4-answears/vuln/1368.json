@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73", "CWE-494"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Download of Code Without Integrity Check"],
+  "description": "The function is vulnerable to path traversal attacks (CWE-22) because it constructs a file path using user-supplied input (moduleVer) without proper sanitization. This could allow an attacker to access, modify, or create files outside of the intended directory. It also allows external control of file name or path (CWE-73) which can lead to the overwrite of arbitrary files. Additionally, the function downloads a file from an external source without verifying its integrity (CWE-494), which could lead to the execution of malicious code."
+}

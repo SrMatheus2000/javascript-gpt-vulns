@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'innerHTML' property is used to insert 'option.text' directly into the HTML content of the 'option' element. If 'option.text' contains malicious script, it will be executed when the HTML content is rendered by the browser. This can lead to various security issues, such as stealing user data or performing actions on behalf of the user."
+}

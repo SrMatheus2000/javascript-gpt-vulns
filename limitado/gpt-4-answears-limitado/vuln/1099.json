@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73", "CWE-494"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Download of Code Without Integrity Check"],
+  "description": "The function downloads a file from a URL that can be controlled by an environment variable. This can lead to path traversal attacks (CWE-22) if an attacker can control the environment variable and set it to a malicious URL. The function also does not validate the file name before using it to create a path (CWE-73), which can lead to other files being overwritten. Finally, the function does not check the integrity of the downloaded file (CWE-494), which can lead to execution of malicious code if the file is tampered with during download."
+}

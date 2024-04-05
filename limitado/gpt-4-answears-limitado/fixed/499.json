@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function '_typed' is vulnerable to code injection. It uses the 'new Function()' constructor to create a new function from a string of JavaScript code. This is dangerous as it allows for the execution of arbitrary JavaScript code. An attacker could potentially inject malicious code into the function, leading to a variety of attacks such as Cross-Site Scripting (XSS), data theft, or other malicious activities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not properly sanitize the input for 'relativePath'. This could allow an attacker to traverse the file system to arbitrary locations or files. The function checks for NULL bytes and absolute paths, but it does not check for relative paths such as '../'. This could allow an attacker to access sensitive files outside of the intended root directory."
+}

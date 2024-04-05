@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-918: Server-Side Request Forgery (SSRF)"],
+"vulnerabilities": ["Insecure Cryptographic Algorithm Usage", "Potential Server-Side Request Forgery"],
+"description": "The function uses RSA for encryption which is considered a risky cryptographic algorithm due to its susceptibility to various attacks. Also, the function does not validate the 'options' parameter which could lead to Server-Side Request Forgery (SSRF) if an attacker can control the 'options' parameter."
+}

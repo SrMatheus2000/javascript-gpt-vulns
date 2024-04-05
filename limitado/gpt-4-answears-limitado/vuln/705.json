@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Command Injection", "Potential Denial of Service"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input (stderr) in a command that is executed by the system. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function could potentially cause a denial of service by consuming system resources in an uncontrolled manner. This is due to the while loop that continues until 'this.isReady' is true, which could potentially never happen, causing the function to loop indefinitely and consume system resources."
+}

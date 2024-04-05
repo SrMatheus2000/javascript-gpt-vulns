@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-943"],
+  "vulnerabilities": ["SQL Injection", "Improper Neutralization of Special Elements in Data Query Logic"],
+  "description": "The function webSqlPouch is vulnerable to SQL Injection attacks. This is due to the fact that it constructs SQL queries by concatenating user-supplied input directly into the query. An attacker could exploit this by providing specially crafted input that modifies the query to perform actions not intended by the developer, such as retrieving, updating or deleting data. This is a violation of the CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection'). Additionally, the function does not properly neutralize special elements that are used in a command in the SQL query, which is a violation of the CWE-943: Improper Neutralization of Special Elements in Data Query Logic."
+}

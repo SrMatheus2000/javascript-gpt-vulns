@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function 'decodeMap' does not have any checks for the size of the input buffer. If a large buffer is passed, it could result in excessive CPU usage leading to a Denial of Service (DoS) attack. This is because the function iterates over the buffer without any limit, which could potentially consume a lot of resources if the buffer is large. This is known as 'Uncontrolled Resource Consumption' (CWE-400)."
+}

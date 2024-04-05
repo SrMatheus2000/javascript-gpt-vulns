@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function does not sanitize the 'content' parameter, which can lead to Cross-site Scripting (XSS) if the content includes malicious scripts. Also, the function does not check if 'attrsMap' is an object, which can lead to a TypeError if a non-object is passed."
+}

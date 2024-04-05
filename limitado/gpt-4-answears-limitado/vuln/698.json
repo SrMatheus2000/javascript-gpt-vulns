@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-200: Information Exposure", "CWE-613: Insufficient Session Expiration"],
+  "vulnerabilities": ["SQL Injection", "Information Exposure", "Insufficient Session Expiration"],
+  "description": "The function is vulnerable to SQL Injection because it directly uses the email from the request body without sanitizing it. An attacker could potentially inject malicious SQL commands. Additionally, the function exposes sensitive information by sending detailed error messages to the client, which could be used by an attacker to gain more information about the system. Lastly, the function does not handle session expiration, which could allow an attacker to use an old session to gain unauthorized access."
+}

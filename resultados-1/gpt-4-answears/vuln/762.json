@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The 'file' variable, which is used to construct file paths, is directly taken from the 'modules' array without any sanitization. An attacker can provide a malicious 'file' value such as '../../../etc/passwd' to read or write to arbitrary files on the system."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Type Coercion"],
+  "description": "The function does not validate the input 'value' before processing it, which can lead to unexpected behavior or security vulnerabilities. It also does not properly escape or encode the output when the input is an array or a plain object, which can lead to Cross-Site Scripting (XSS) attacks if the output is rendered in a web page. The function also uses the 'toString' method without checking the type of 'value', which can lead to Type Coercion vulnerabilities."
+}

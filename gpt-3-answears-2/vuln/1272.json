@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The given JavaScript function is vulnerable to command injection. The 'direction' parameter is directly concatenated into the 'exec' function call without proper sanitization or validation. An attacker can manipulate the 'direction' parameter to execute arbitrary commands on the underlying system."
+}

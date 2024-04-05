@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Potential null pointer exception"],
+  "description": "The function getAnnotationURL does not validate if the sourceMapString contains a sourceMappingURL. If it does not, the match function will return null and the function will throw a TypeError when trying to access the [1] index of null. This can lead to unexpected application crashes."
+}

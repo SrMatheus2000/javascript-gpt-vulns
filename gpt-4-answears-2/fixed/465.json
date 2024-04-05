@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to several types of attacks. First, it does not validate the input data before processing it, which can lead to various types of attacks, such as buffer overflow or code injection (CWE-20). Second, if the 'sessionIDs' parameter is controlled by the user, it could be used to perform a SQL Injection attack (CWE-89). Lastly, the function does not limit the number of session IDs it processes, which could lead to a Denial of Service (DoS) attack due to resource exhaustion (CWE-400)."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-119"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function '_allocate' is vulnerable to buffer overflow. It creates a new buffer with a size that is calculated based on user input ('bytes'). If a user provides a large enough value, it could cause the application to crash or behave unexpectedly. This is a common security issue known as a buffer overflow (CWE-119)."
+}

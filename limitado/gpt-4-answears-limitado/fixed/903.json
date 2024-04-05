@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is due to the fact that it uses the .html() method to set HTML directly from user input, which can include malicious scripts. Additionally, the function attempts to sanitize the input, but it does so in a try-catch block, which means that if the sanitization fails for any reason, the function will still return the potentially unsafe input. This could allow an attacker to inject malicious scripts that could steal sensitive information or perform other harmful actions."
+}

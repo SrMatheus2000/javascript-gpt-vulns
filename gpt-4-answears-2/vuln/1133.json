@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function constructs HTML strings using input data and directly injects them into the DOM. If the input data is not properly sanitized and contains malicious scripts, it can lead to XSS attacks. The vulnerability is specifically in the lines where the 'title', 'name', 'bgcolor', and 'value' variables are directly concatenated into the HTML string."
+}

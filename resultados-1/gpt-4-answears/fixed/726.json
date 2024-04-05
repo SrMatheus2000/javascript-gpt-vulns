@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-74", "CWE-89", "CWE-116"],
+  "vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "description": "The function parse_URI is vulnerable as it does not properly validate and sanitize the input URI. This could lead to various types of injection attacks, including Cross-Site Scripting (XSS) and SQL Injection, if the output is used in a context that allows for execution of injected code. Additionally, the function does not properly neutralize special elements in the output, which could be used by a downstream component in a way that allows for execution of arbitrary code or commands."
+}

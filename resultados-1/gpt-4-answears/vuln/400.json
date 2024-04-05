@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function attempts to sanitize the 'id' and 'name' parameters to prevent path traversal attacks. However, it only removes instances of '..' from the 'id' parameter and does not check for encoded versions of '../' or '..\\'. An attacker could potentially bypass the sanitization by using URL encoded versions of '../' or '..\\'. The 'name' parameter is also vulnerable as it only normalizes the path and replaces '\\' with '/', but does not remove instances of '..'. This could allow an attacker to traverse directories by including '..' in the 'name' parameter."
+}

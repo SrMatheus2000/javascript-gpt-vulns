@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function findLoad is vulnerable to OS command injection. The function constructs a command string with user-supplied input (arg), which is then executed. If an attacker can control the 'arg' parameter, they can inject arbitrary commands to be executed on the server. This is a serious security risk. The vulnerability corresponds to CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

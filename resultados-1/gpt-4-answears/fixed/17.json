@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Direct object references"],
+  "description": "The function does not validate or sanitize the input data before using it. This can lead to issues such as direct object references, where an attacker could manipulate the input to reference objects that they should not have access to. In this case, the 'child' object is directly manipulated without any checks. An attacker could potentially pass malicious data or objects through this function."
+}

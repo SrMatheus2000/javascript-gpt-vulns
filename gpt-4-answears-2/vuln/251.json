@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-209: Information Exposure Through an Error Message", "CWE-404: Improper Resource Shutdown or Release"],
+"vulnerabilities": ["Command Injection", "Information Exposure", "Improper Resource Shutdown"],
+"description": "The function is vulnerable to command injection because it uses user-supplied input in a command that is executed by the system. This can allow an attacker to execute arbitrary commands. The function also exposes information through error messages, which can provide useful information to an attacker. Additionally, the function does not properly shut down or release resources, which can lead to resource exhaustion and denial of service."
+}

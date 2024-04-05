@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly includes user input in the response without proper sanitization or encoding. This is evident in the 'writeErr' function where 'data.query.jsonp' is directly included in the response. This can allow an attacker to inject malicious scripts that can be executed in the context of the victim's session. Additionally, the function does not validate or sanitize the 'origin' header from the request, which can lead to security issues if the 'origin' is controlled by an attacker."
+}

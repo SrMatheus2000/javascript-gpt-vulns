@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to code injection attacks because it uses the JSON.parse method to parse data from an event without properly validating or sanitizing the input. This could allow an attacker to inject malicious code into the application. Additionally, the function does not properly validate the 'method' property of the parsed data, which could lead to the execution of unintended functions or methods."
+}

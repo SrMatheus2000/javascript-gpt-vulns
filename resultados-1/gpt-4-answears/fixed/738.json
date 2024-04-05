@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input (the 'id' parameter) in a command that is executed by the system. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function does not validate the 'id' parameter before using it, which could lead to unexpected behavior or errors."
+}

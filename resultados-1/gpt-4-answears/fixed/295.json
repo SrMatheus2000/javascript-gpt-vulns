@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function writeConfig is vulnerable to Prototype Pollution. This is because it does not validate or has any restrictions on what properties can be added or modified on the object. An attacker can manipulate these properties to add or modify a JavaScript object prototype. When that manipulated object is processed, the attacker could potentially execute arbitrary code."
+}

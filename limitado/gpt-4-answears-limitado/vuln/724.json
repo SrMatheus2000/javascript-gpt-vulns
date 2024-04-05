@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'exec' function is used to execute system commands, and it directly uses the 'imagePaths' variable in the command without any sanitization or validation. An attacker could potentially inject malicious commands through the 'imagePaths' variable, leading to arbitrary command execution on the server."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Potential Denial of Service (DoS)"],
+"description": "The function recursively processes input without any termination condition. If the input is a deeply nested object, it could lead to a stack overflow error, causing a Denial of Service (DoS). This is known as 'Uncontrolled Resource Consumption' (CWE-400)."
+}

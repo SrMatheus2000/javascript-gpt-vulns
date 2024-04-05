@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Error message exposure", "Lack of input validation"],
+  "description": "The function unique_name_124 is vulnerable as it exposes detailed error messages (err) to the callback function (cb) without any sanitization or handling. This could potentially leak sensitive information about the system. This is related to CWE-209. Additionally, the function does not validate or sanitize the input data before processing it, which could lead to unexpected behavior or security issues. This is related to CWE-20."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-384: Session Fixation"],
+  "vulnerabilities": ["Error Information Exposure", "Session Fixation"],
+  "description": "The function does not handle the error 'err' returned by 'req.session.save'. This could lead to Information Exposure Through an Error Message (CWE-209) if any error information is returned. Additionally, the session is saved automatically when responding, which could potentially lead to Session Fixation (CWE-384) if an attacker is able to manipulate the session ID."
+}

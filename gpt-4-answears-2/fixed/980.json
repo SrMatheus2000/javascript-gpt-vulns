@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It correctly checks if a property exists in the data object before assigning it to the opts object. It also checks if the property is in a blacklist before assigning it, which can prevent potentially dangerous properties from being set."
+}

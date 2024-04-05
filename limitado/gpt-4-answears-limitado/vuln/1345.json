@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it uses the exec function to execute a shell command that includes user-supplied input (the 'filename' parameter). An attacker could potentially provide a malicious filename that includes shell commands, which would then be executed on the server."
+}

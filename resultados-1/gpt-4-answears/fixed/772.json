@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-1021: Improper Restriction of Rendered UI Layers or Frames"],
+  "vulnerabilities": ["Potential for Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_422' is vulnerable as it does not properly restrict the rendering of UI layers or frames. This could potentially allow an attacker to execute arbitrary code in the context of the parent window, leading to Cross-Site Scripting (XSS) attacks. The vulnerability arises from the fact that the function merges options from the parent window to the child window without proper sanitization or validation. This could allow an attacker to inject malicious scripts into the child window, which would then be executed in the context of the parent window."
+}

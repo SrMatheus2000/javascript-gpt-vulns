@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-494"],
+  "vulnerabilities": ["Path Traversal", "Download of Code Without Integrity Check"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it does not validate or sanitize the 'to' parameter, which is used to specify the path where the ChromeDriver will be installed. An attacker could potentially manipulate the 'to' parameter to overwrite any file on the system. Additionally, the function is vulnerable to Download of Code Without Integrity Check (CWE-494) because it downloads and extracts a zip file from a URL without verifying the integrity of the downloaded file. This could allow an attacker to execute arbitrary code by tampering with the downloaded file."
+}

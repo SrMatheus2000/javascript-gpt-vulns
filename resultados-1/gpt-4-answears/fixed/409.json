@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'getCurrentConnections' is vulnerable to OS command injection. The function uses 'execFile' to execute a command that is constructed using user-supplied input ('config' parameter). An attacker could potentially inject malicious commands through this input, leading to arbitrary command execution on the server."
+}

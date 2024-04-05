@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Missing Function Level Access Control"],
+  "description": "The function is vulnerable as it directly uses the 'auth' object from the 'state' without any validation. An attacker can manipulate the 'state' object to include malicious 'auth' data. This can lead to Insecure Direct Object References (IDOR) vulnerability where an attacker can bypass authorization and access resources directly by modifying the value of a pointer/reference to an object. Also, the function does not have any access control mechanism in place, which means any user, regardless of their privileges, can set credentials and artifacts."
+}

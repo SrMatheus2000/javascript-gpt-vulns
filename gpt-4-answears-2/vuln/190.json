@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Unvalidated Input"],
+"description": "The function does not validate or sanitize the 'params' input, which can lead to Cross-Site Scripting (XSS) if the input is controlled by an attacker. The 'params' input is directly used to create a new ToastComponent instance, which can lead to potential security risks if the input contains malicious scripts. Additionally, the function does not check if 'params' is null or undefined before accessing its properties, which can lead to potential errors."
+}

@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service", "Cross-Site Request Forgery", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to several types of attacks. It exposes sensitive information through error messages (CWE-200). It does not limit the number of attempts to boot the server, which can lead to a Denial of Service attack (CWE-400). It does not implement any CSRF protection, making it vulnerable to Cross-Site Request Forgery attacks (CWE-352). It also does not properly sanitize user input before using it to generate

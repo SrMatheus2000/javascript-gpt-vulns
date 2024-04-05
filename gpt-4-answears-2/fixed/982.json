@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Input Validation", "URL Injection"],
+"description": "The function does not validate or sanitize the 'parsedMinor.minorVersion' before appending it to the 'prefixedUrl'. This could lead to an Input Validation vulnerability, allowing an attacker to manipulate the URL and potentially lead to URL Injection attacks."
+}

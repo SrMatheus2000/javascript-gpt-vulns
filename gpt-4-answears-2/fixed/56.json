@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is primarily defining and extending language syntax for a Prism syntax highlighter. There is no direct manipulation of the DOM, no use of eval, no obvious injection points, and no insecure use of regular expressions that could lead to ReDoS (Regular Expression Denial of Service)."
+}

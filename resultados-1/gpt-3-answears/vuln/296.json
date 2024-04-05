@@ -1,0 +1,12 @@
+{
+ "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-95"
+  ],
+  "vulnerabilities": [
+    "Command Injection",
+    "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"
+  ],
+  "description": "The commit function is vulnerable to command injection and SQL injection attacks. The 'message' parameter is not properly sanitized before being used in the 'exec' function, allowing an attacker to inject arbitrary commands or SQL statements."
+}

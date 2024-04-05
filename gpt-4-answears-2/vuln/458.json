@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input in file system operations without proper validation or sanitization. This could allow an attacker to access, read, or modify files outside of the intended directory. Additionally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of iterations in the for loop, which could lead to excessive CPU or memory consumption if an attacker provides a large array for 'altControllerPaths'."
+}

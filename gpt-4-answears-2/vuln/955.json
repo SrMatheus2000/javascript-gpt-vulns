@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a sanitization function that removes potentially harmful elements from HTML, SVG, and MathML tags. It also has checks in place to prevent clobbering attacks. It does not use any dangerous JavaScript functions like eval(), and it does not appear to have any injection vulnerabilities or other common web vulnerabilities."
+}

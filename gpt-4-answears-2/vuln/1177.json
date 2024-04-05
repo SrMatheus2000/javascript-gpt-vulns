@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE20: Improper Input Validation"],
+"vulnerabilities": ["Missing CSRF Protection", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) attacks as it does not implement any CSRF protection mechanism. It also does not validate the input properly, which can lead to other types of attacks such as XSS (Cross-Site Scripting) or SQL Injection. The function also uses the 'delete' operator to remove the crumb from the request, which can lead to memory leaks if not handled properly."
+}

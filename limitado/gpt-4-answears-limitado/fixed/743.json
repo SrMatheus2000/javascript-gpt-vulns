@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "The function is vulnerable to timing attacks. The time taken by the function to compare two strings can be used by an attacker to guess the string values. This is because the function compares the strings character by character and takes longer when the strings have more characters in common. This vulnerability is known as a timing attack and is a type of side channel attack."
+}

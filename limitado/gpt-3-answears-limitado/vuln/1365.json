@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Unvalidated File Write"],
+  "description": "The provided code is vulnerable to Path Traversal and Unvalidated File Write attacks. An attacker can manipulate the 'version' parameter to traverse the file system and potentially write arbitrary files to the system."
+}

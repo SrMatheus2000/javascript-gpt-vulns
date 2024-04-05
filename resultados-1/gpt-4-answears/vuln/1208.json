@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The event.title is directly inserted into the HTML without any sanitization or escaping. If the event.title contains malicious scripts, it will be executed when the HTML is rendered in the browser."
+}

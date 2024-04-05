@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["NoSQL Injection"],
+  "description": "The function is vulnerable to NoSQL Injection. The 'filter' object is directly used in the 'find' function without any sanitization or parameterization. An attacker can inject malicious code through the 'filter' object to manipulate the query, leading to unauthorized data access or modification."
+}

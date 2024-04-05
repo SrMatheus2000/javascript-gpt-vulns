@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function checkPkcs12 is vulnerable to OS command injection. The function uses user-supplied input (bufferOrPath) in a command that is executed by the system. An attacker could manipulate the bufferOrPath to execute arbitrary commands on the system."
+}

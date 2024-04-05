@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The file.name is directly used in the creation of the link and dataName without any sanitization. An attacker can craft a malicious file name that includes script tags and JavaScript code. When this function is used to render a link on a webpage, the malicious JavaScript code will be executed in the user's browser."
+}

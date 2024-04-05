@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. In the 'onData' event handler, it concatenates incoming data chunks directly to a string 'body'. If an attacker sends a large amount of data, it can cause the server to consume a lot of memory and CPU resources, leading to a DoS condition. This is known as a 'large payload' attack. The vulnerability is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

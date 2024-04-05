@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function does not properly sanitize the input for 'val' parameter. If the 'val' parameter is an object and the operator is not 'between', 'inq', or 'nin', the function directly uses the 'val' parameter in a SQL query without any sanitization or escaping. This could lead to SQL Injection if an attacker can control the 'val' parameter."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function 'unique_name_401' is vulnerable to path traversal attacks. The 'from' and 'fromModules' variables are used as arguments for the 'correctMkdir' and 'move' functions without any form of sanitization or validation. An attacker could potentially manipulate these variables to access, modify, or delete files outside of the intended directories."
+}

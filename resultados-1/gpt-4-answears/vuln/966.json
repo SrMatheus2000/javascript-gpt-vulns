@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'results' and 'data' inputs before using them. This could lead to an SQL Injection if the 'results' or 'data' objects contain malicious SQL commands. Also, the function does not check if 'results.userInfo[0]' or 'results.topicInfo' exist before assigning them to 'postData.user' and 'postData.topic' respectively, which could lead to a TypeError if 'results.userInfo' or 'results.topicInfo' are undefined."
+}

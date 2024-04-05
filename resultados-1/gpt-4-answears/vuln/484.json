@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_232' is vulnerable to path traversal attacks. It takes a 'path' parameter and does not validate or sanitize it before using it to access the file system. An attacker could potentially input a path such as '../../etc/passwd' to access sensitive files on the server."
+}

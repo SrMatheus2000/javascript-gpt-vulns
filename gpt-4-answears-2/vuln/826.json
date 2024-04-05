@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-400"],
+"vulnerabilities": ["Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Code Injection (CWE-94) because it uses the 'require' function with a dynamic argument which can be manipulated to execute arbitrary code. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of the files it processes, which can lead to denial of service if a large file is processed."
+}

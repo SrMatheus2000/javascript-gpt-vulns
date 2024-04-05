@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled data (the 'org' object properties) into HTML without proper sanitization or encoding. An attacker could potentially inject malicious scripts through the 'org' object properties, which would then be executed in the browser of any user viewing the generated HTML."
+}

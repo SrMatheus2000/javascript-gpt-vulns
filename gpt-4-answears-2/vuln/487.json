@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is due to the fact that it directly uses user input to create HTML content. If the 'group.id', 'group.label', 'entry.id', or 'entry.html' variables contain malicious scripts, they will be executed when the HTML content is rendered in a web browser."
+}

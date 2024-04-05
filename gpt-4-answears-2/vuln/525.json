@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function unique_name_257 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input (t.matched and t.normal) in the creation of HTML content (htmlText). An attacker could potentially input malicious scripts as part of 't.matched' or 't.normal', which would then be executed when the HTML content is rendered."
+}

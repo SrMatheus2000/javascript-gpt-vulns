@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-297"],
+  "vulnerabilities": ["Weak Transport Layer Security", "Improper Certificate Validation"],
+  "description": "The function _startTLS is vulnerable due to the use of weak transport layer security. The function uses the 'rejectUnauthorized' configuration to decide whether to validate the SSL certificate or not. If 'rejectUnauthorized' is set to false, the function will not validate the SSL certificate, which can lead to man-in-the-middle attacks. This is a violation of CWE-319 (Cleartext Transmission of Sensitive Information) and CWE-297 (Improper Validation of Certificate with Host Mismatch)."
+}

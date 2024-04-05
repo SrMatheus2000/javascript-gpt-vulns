@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22) because it uses user input from 'req.url' to access files on the server without proper validation or sanitization. This could allow an attacker to read arbitrary files on the server by sending a specially crafted request. Additionally, the function is vulnerable to Information Exposure (CWE-200) because it reveals sensitive information such as the server's file structure and IP addresses, which could be useful to an attacker."
+}

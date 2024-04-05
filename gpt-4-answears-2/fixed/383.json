@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function 'unique_name_193' is vulnerable to Cross-Site Scripting (XSS) attacks. The href attribute of the button is bound to the 'href' property of 'this' object, which could be manipulated to inject malicious scripts. Although there is a function 'ensureSafeUrl' that seems to sanitize the 'href', it's not clear how effective this function is without seeing its implementation. If it's not properly implemented, it could still leave the application open to XSS attacks."
+}

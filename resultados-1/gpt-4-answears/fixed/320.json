@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service"],
+  "description": "The function unique_name_161 has a potential Denial of Service (DoS) vulnerability. In the nested for loop, a new property is added to the object 'o' up to 'n' times, where 'n' is a random integer between 1 and 9. If the 'prop' object has a large number of properties, this could lead to a large number of iterations, consuming a lot of resources and potentially leading to a DoS condition. This is related to CWE-400: Uncontrolled Resource Consumption."
+}

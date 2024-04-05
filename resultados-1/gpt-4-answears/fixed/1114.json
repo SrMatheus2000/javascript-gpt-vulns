@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["SQL Injection", "Denial of Service"],
+  "description": "The function is vulnerable to SQL Injection because it concatenates user input directly into SQL queries without sanitizing it first. This could allow an attacker to manipulate the SQL queries and potentially access, modify or delete data in the database. Additionally, the function is vulnerable to Denial of Service attacks because it does not limit the number of records it retrieves from the database, which could lead to resource exhaustion if an attacker sends a large number of requests."
+}

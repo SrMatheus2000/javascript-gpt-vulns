@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["SQL Injection", "Cross-site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function does not validate or sanitize the 'name' input, which can lead to SQL Injection if the input is used in a SQL query. It also does not sanitize the 'name' input before using it in the generation of a web page, which can lead to Cross-site Scripting (XSS) attacks. The function also fails to properly validate the 'name' input before using it in the 'GetBrackets' and 'GetArgument' functions, which can lead to unexpected behavior or errors."
+}

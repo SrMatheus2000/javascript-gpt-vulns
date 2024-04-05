@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-346: Origin Validation Error"],
+"vulnerabilities": ["Input Validation", "Origin Validation"],
+"description": "The function does not validate the input before using it. This could lead to various attacks such as SQL Injection, XSS, etc. Also, the function does not validate the origin of the data, which could lead to security vulnerabilities."
+}

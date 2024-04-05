@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-749"],
+  "vulnerabilities": ["Exposed Dangerous Method or Function"],
+  "description": "The function is using 'ipcMain.emit' which is a part of Electron's IPC (Inter-Process Communication) module. This can be a potential security risk if the event names or the data being passed are not properly validated or sanitized. An attacker could potentially inject malicious code or trigger unwanted actions within the application. This is classified as CWE-749: Exposed Dangerous Method or Function."
+}

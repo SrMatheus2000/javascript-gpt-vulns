@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-522", "CWE-312"],
+"vulnerabilities": ["OS Command Injection", "Insufficiently Protected Credentials", "Cleartext Storage of Sensitive Information"],
+"description": "The function is vulnerable to OS command injection because it constructs a command using user-supplied input (pathBundleIN, pathOUT, password) which are passed to openssl.spawnWrapper without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. Additionally, the function creates password files with helper.createPasswordFile, potentially storing sensitive information in cleartext. The password is also passed around in cleartext, which could expose it to unauthorized users."
+}

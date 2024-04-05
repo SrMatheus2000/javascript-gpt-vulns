@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Insecure Direct Object References"],
+  "description": "The function is vulnerable to command injection (CWE-78) and insecure direct object references (CWE-94). The 'name' parameter is directly concatenated into the command 'ps -ef | grep ' + name', which can be manipulated to execute arbitrary commands. Additionally, the function uses the 'list' variable to store and pass a list of process IDs without proper validation or authorization checks, which can lead to insecure direct object references."
+}

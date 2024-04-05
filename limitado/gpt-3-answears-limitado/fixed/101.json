@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The code is vulnerable to Cross-Site Scripting (XSS) attack. The 'escapeFn' function is not defined, so it is assumed that it performs some kind of escaping to prevent XSS. However, the code does not properly sanitize the 'val' parameter before passing it to 'escapeFn', which can lead to XSS vulnerabilities if 'escapeFn' does not provide adequate protection."
+}

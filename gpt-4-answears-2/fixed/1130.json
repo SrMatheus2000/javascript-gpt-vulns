@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'id' variable is not defined within the function and its value is directly concatenated into the HTML string without any sanitization or encoding. If an attacker can control the value of 'id', they can inject arbitrary JavaScript code into the page, leading to XSS attacks. The same issue applies to 'org.type' and 'org.uuid'. Although 'org.name' is properly sanitized using jQuery's text() method, the other variables are not."
+}

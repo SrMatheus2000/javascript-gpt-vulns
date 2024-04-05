@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted use of dangerous function"],
+"description": "The function 'unique_name_199' allows unrestricted use of potentially dangerous functions. The function checks if a function call is allowed or if it should pass through, but it does not validate or sanitize the input. This could lead to arbitrary code execution if a malicious user can control the input."
+}

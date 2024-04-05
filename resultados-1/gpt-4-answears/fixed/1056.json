@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Input Validation", "Code Injection"],
+  "description": "The function 'unique_name_623' does not validate the 'json' input parameter before using it. This could lead to unexpected behavior or even security vulnerabilities. For example, if 'json.tiles[0]' is not a string, calling 'match' on it will throw an exception. Also, if 'json.attribution' is a string containing malicious code, it could be executed when 'this.options.sanitizer(json.attribution)' is called, leading to a potential code injection vulnerability."
+}

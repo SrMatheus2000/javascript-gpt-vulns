@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it concatenates a variable (ap.ssid) directly into a command string that is executed by the system. An attacker could potentially control the value of ap.ssid, allowing them to execute arbitrary commands on the system."
+}

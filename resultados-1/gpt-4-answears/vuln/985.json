@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function unique_name_536 is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses the 'data-caption' attribute from the '$image' object and injects it into the 'container' object's HTML without any sanitization or encoding. An attacker can inject malicious scripts into the 'data-caption' attribute, which will then be executed when the 'container' object's HTML is rendered."
+}

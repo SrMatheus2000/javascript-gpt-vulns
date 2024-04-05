@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-476"],
+  "vulnerabilities": ["Arithmetic Overflow", "Code Injection"],
+  "description": "The given JavaScript function is vulnerable to arithmetic overflow and code injection attacks. The function performs various date and time calculations without proper input validation and sanitization, which can lead to unexpected behavior and security vulnerabilities."
+}

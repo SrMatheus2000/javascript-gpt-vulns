@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Information Exposure", "Input Validation", "SQL Injection"],
+  "description": "The function getEmail is vulnerable due to several reasons. First, it exposes sensitive information through error messages (CWE-209) by attaching the status code to the error object and passing it to the next middleware. This could potentially leak sensitive information to the client. Second, it does not validate the input (CWE-20) from req.params.email before passing it to the ldapProvider.validate function. This could lead to unexpected behavior or security vulnerabilities if the input is malicious. Lastly, if the ldapProvider.validate function interacts with a database, it could be vulnerable to SQL Injection

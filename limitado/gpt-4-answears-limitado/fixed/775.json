@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-749: Exposed Dangerous Method or Function"],
+  "vulnerabilities": ["Potential Cross-Site Scripting (XSS)", "Exposed Dangerous Method"],
+  "description": "The function is vulnerable to potential Cross-Site Scripting (XSS) attacks due to the lack of input validation on the 'url' parameter in the 'window.open' function. An attacker could potentially inject malicious scripts through the 'url' parameter. Additionally, the function exposes dangerous methods such as 'window.open', 'window.alert', 'window.confirm', and 'window.prompt' which could be exploited by an attacker to perform malicious actions."
+}

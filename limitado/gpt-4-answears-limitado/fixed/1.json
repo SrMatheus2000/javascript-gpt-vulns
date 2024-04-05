@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function does not validate the input URL before parsing it and appending or removing a trailing slash. This could lead to an open redirect vulnerability, where an attacker could craft a URL that redirects users to a malicious site. Additionally, the function does not handle the case where the input URL is not a string, which could lead to type errors."
+}

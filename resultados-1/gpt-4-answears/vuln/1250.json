@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the jQuery $.trim() function, which can be manipulated to execute arbitrary JavaScript code. This can lead to various security issues, such as session hijacking, defacement of the website, or even remote code execution. The specific CWE for this vulnerability is CWE-79, which refers to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

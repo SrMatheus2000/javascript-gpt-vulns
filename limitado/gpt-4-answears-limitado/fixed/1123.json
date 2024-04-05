@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses user input in the creation of HTML content. For example, the 'playback.url' and 'options.pluginVars' variables are directly used to create HTML content without any sanitization or encoding. An attacker could potentially inject malicious scripts through these variables, leading to XSS attacks. It's recommended to always sanitize and/or encode user inputs before using them to generate HTML content."
+}

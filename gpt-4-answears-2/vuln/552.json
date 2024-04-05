@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly assigns user-controlled input to innerHTML. This can allow an attacker to inject malicious scripts. The function also does not appear to properly encode or escape output, which can lead to injection attacks."
+}

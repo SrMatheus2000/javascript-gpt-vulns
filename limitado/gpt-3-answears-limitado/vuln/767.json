@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-390"],
+  "vulnerabilities": ["Insecure Temporary File"],
+  "description": "The code is vulnerable to an insecure temporary file vulnerability. The 'move' function is used to move the 'tempFromModules' directory to 'fromModules'. However, it does not ensure that the temporary directory is secure and can be manipulated by an attacker to perform malicious actions."
+}

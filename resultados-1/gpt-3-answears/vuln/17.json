@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-95", "CWE-116"],
+  "vulnerabilities": ["Prototype Pollution", "Command Injection"],
+  "description": "The function is vulnerable to Prototype Pollution and Command Injection attacks. It does not properly sanitize the 'path' parameter, allowing an attacker to modify the prototype of objects or execute arbitrary commands."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The function does not properly validate the 'path' input, which can be manipulated to modify the prototype of 'Object'. This can allow an attacker to add or modify properties of all objects, potentially leading to various impacts such as denial of service, data manipulation, or remote code execution. The 'ignoreProperties' check is not sufficient to prevent this, as it only checks the current property and not the entire path."
+}

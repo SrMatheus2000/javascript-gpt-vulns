@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Path Traversal", "Improper Input Validation"],
+  "description": "The function sanitizePath is vulnerable to path traversal attacks. The function attempts to sanitize the 'name' parameter by removing '../' sequences, but it does not properly handle cases where these sequences are encoded. An attacker could potentially exploit this to access arbitrary files on the system. Additionally, the function does not properly validate the 'id' parameter, allowing for potential injection attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-77", "CWE-89", "CWE-94", "CWE-99"],
+  "vulnerabilities": ["Path Traversal", "Command Injection", "SQL Injection", "Code Injection", "Resource Injection"],
+  "description": "The function is vulnerable to several types of attacks. The 'url' parameter is directly used in the 'http.get' function without any sanitization or validation, which can lead to Path Traversal (CWE-22). The 'dest' parameter is used in the 'execFile' function, which can lead to Command Injection (CWE-77). The 'installerFilename' parameter is directly used in the 'console.log' function, which can lead to SQL Injection (CWE-89), Code Injection (CWE-94), and Resource Injection (CWE-99) if the parameter contains malicious code."
+}

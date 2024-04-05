@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-79"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize or validate the input data before using it in database queries, which can lead to SQL Injection attacks. Also, the function does not escape the output before rendering it to the user, which can lead to Cross-Site Scripting (XSS) attacks."
+}

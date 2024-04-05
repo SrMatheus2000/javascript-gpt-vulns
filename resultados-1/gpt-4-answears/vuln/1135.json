@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function 'unique_name_648' is vulnerable to Cross-Site Scripting (XSS) because it directly uses the 'data' parameter to set the HTML content of an element with the jQuery 'html' function. This allows an attacker to inject arbitrary HTML or JavaScript code. This is referenced as CWE-79. Additionally, the function does not validate or sanitize the 'data' input, which is a violation of CWE-20, Improper Input Validation."
+}

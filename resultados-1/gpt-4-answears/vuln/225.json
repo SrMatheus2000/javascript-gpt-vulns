@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function 'escapeshellarg' is not vulnerable. It is a simple function that escapes shell arguments to prevent command injection vulnerabilities. It does this by replacing any unescaped single quotes in the input string with an escaped single quote. This function does not have any known Common Weakness Enumerations (CWEs) or vulnerabilities."
+}

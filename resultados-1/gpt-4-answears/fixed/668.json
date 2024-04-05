@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_368 seems to be vulnerable to command injection attacks. This is because it uses the 'where' property of 'this' object in the 'mkdirp' and 'path.join' functions without proper sanitization or validation. An attacker could potentially inject malicious commands by manipulating the 'where' property. This vulnerability is classified as CWE-77."
+}

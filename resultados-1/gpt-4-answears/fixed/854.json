@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-312: Cleartext Storage of Sensitive Information", "CWE-384: Session Fixation", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Sensitive Data Exposure", "Session Fixation", "Information Exposure Through Error Messages"],
+  "description": "The function 'unique_name_474' appears to be vulnerable due to several reasons. Firstly, it seems to be storing sensitive information such as authentication cookies in cleartext, which is a violation of CWE-312. This could potentially expose sensitive user data to unauthorized parties. Secondly, the function does not appear to handle session management securely, potentially leading to session fixation attacks (CWE-384). Lastly, the function may expose sensitive information through its error messages (CWE-209), which could provide valuable information to an attacker."
+}

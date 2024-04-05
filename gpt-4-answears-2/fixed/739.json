@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses execFileSync to execute a shell command without any sanitization or validation of the command being executed. This could potentially allow an attacker to execute arbitrary commands on the system if they can control the input to the execFileSync function."
+}

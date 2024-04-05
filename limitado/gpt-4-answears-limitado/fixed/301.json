@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-site Scripting (XSS) attacks. The 'markup' parameter is used to generate HTML content, which is then returned and potentially rendered in a web page. If an attacker can control the 'markup' parameter, they could inject malicious scripts that would be executed when the page is loaded. Although there is a call to 'htmlUtils.sanitizeHtml', depending on the implementation of this function, it might not be sufficient to prevent all XSS attacks. For example, it might not handle all possible ways of encoding a script, or it might not handle scripts that are only executed in certain browsers."
+}

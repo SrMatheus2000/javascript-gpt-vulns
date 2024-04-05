@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-359: Exposure of Private Information"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Potential Information Disclosure"],
+  "description": "The function is vulnerable to Insecure Direct Object References (IDOR) because it does not properly verify if the user performing the action is the same user that the action is being performed on. This could allow an attacker to change the password of any user. Additionally, the function may expose sensitive information such as the user's hashed password and rss_token if an error occurs during the execution of the function."
+}

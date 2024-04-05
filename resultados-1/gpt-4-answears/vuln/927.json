@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function unique_name_491 is vulnerable to Cross-Site Scripting (XSS) and Code Injection attacks. The function uses _.unescape() which can potentially allow an attacker to execute arbitrary code. The function also uses JSON.parse() without proper error handling, which can lead to unhandled exceptions. Additionally, the function does not validate or sanitize the input, which can lead to various types of injection attacks."
+}

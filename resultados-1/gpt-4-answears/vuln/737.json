@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is simply setting attributes on a link and a current object. The function uses 'Entity.encode(name)' to prevent Cross-Site Scripting (XSS) attacks by encoding the 'name' variable before it is used in the innerHTML property. The function does not seem to use any dangerous functions or practices that could lead to vulnerabilities."
+}

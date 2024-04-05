@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the eval() function, which is dangerous because it executes any code given to it. It's not just limited to the code you think it will execute. Any user-controlled input passed into this function will be executed by the JavaScript interpreter. This could lead to arbitrary code execution, leading to serious security issues like data leakage, data manipulation, or even server takeover in a worst-case scenario."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400", "CWE-20", "CWE-200"],
+"vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Input Validation", "Information Exposure"],
+"description": "The function is vulnerable to Uncontrolled Resource Consumption (CWE-400) due to the lack of control over the size of data being processed in the form parsing. This could lead to a Denial of Service attack. Improper Input Validation (CWE-20) is present as the function does not properly validate or sanitize the user-supplied data in the request parameters. This could lead to various attacks such as Cross-Site Scripting or SQL Injection. Information Exposure (CWE-200) is present as the function exposes sensitive information in error messages, which could be exploited by an attacker to gain more information about the system."
+}

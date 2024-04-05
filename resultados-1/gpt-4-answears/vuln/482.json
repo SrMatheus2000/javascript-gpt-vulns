@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_230' is vulnerable to path traversal attacks. The 'dir' parameter is used to construct a file path and is not properly sanitized before use. An attacker could manipulate 'dir' to navigate outside of the intended directory structure, potentially gaining unauthorized access to files on the system."
+}

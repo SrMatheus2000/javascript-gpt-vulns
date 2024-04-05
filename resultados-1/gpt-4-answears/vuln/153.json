@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation Vulnerability"],
+  "description": "The function inet_pton does not properly validate the input for an IP address. It allows for non-numeric characters to be inputted for an IPv4 address and non-hexadecimal characters for an IPv6 address. This could potentially lead to unexpected behavior or errors. It is recommended to add proper input validation to ensure that the input is in the correct format for an IP address."
+}

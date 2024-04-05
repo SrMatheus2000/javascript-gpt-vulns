@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471", "CWE-915"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The provided JavaScript function is vulnerable to Prototype Pollution. This vulnerability allows an attacker to modify the prototype of an object and potentially modify or add properties to all instances of that object. This can lead to various security issues such as arbitrary code execution or privilege escalation."
+}

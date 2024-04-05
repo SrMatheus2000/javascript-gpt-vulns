@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function takes a 'filter' parameter from the user and uses it to build a database query. If an attacker can control the 'filter' input, they could potentially inject malicious SQL commands into the query, leading to SQL Injection. This could allow the attacker to view, modify, or delete data in the database."
+}

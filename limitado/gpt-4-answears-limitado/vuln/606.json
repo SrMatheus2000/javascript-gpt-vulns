@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The function uses user-supplied input to build a command that is executed by the system. If an attacker can control the 'options' object, they can inject arbitrary commands that will be executed by the system. This can lead to serious security issues, such as remote code execution, data exfiltration, or denial of service."
+}

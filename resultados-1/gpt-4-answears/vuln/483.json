@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-88", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Improper Neutralization of Special Elements used in an OS Command", "Improper Input Validation"],
+  "description": "The function unique_name_231 is vulnerable to OS command injection. It concatenates a user-supplied 'dir' variable directly into a command that is executed by the system. An attacker could provide a malicious 'dir' value that includes command line syntax, which could result in arbitrary command execution. For example, an attacker could provide a 'dir' value of '; rm -rf /' on a Linux system to delete all files on the system. This is a serious security issue that could result in complete system compromise. The function should be modified to properly sanitize the 'dir' input before using it in a command."
+}

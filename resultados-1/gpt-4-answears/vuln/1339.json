@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Undefined Variable"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) attacks. This is because it uses regular expressions (REG_GROUP and REG_PROP) to parse the input string. If an attacker provides a specially crafted string that results in catastrophic backtracking, it could cause the application to consume excessive resources, leading to a denial of service. Additionally, the variables REG_GROUP and REG_PROP are not defined within the function or passed as parameters, which could lead to ReferenceError exceptions."
+}

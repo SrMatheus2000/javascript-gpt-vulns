@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Open Redirect Vulnerability", "Information Disclosure through Server Logs"],
+  "description": "The function 'unique_name_75' is vulnerable due to several reasons. Firstly, it does not validate the 'request.url' properly which can lead to Insecure Direct Object References (IDOR) vulnerability. Secondly, it changes the URL from 'file://' to 'http://' without any validation, which can lead to Open Redirect Vulnerability. Lastly, it logs the 'request.url' which can lead to sensitive information disclosure through server logs."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function actualize is vulnerable to SQL Injection. The propName parameter is directly concatenated into the SQL query without any sanitization or parameterization. An attacker could provide a propName that alters the SQL query to perform unintended actions, such as retrieving, altering, or deleting data."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Type confusion"],
+  "description": "The function does not properly sanitize the input, which can lead to Cross-Site Scripting (XSS) attacks if the output is rendered in HTML without proper escaping. The function also does not validate the type of the input, which can lead to type confusion vulnerabilities. The 'decodeComponent' function is used to decode the keys and values, but it's not defined in the provided code, which could potentially lead to errors or unexpected behavior."
+}

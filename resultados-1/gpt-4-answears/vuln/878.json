@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Header Injection"],
+  "description": "The function does not validate or sanitize the 'header' input before using it to access properties of 'req.headers'. This could lead to Header Injection attacks if an attacker can control the 'header' input, potentially allowing them to manipulate or spoof HTTP headers."
+}

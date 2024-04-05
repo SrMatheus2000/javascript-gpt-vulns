@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470"],
+  "vulnerabilities": ["Unrestricted use of dangerous functions or methods"],
+  "description": "The function uses the 'instanceOf' method to check the type of the 'value' parameter. This method can be overridden by an attacker, leading to potential security vulnerabilities. An attacker could potentially manipulate the 'instanceOf' method to bypass the type checks and execute arbitrary code. This is a type of Unrestricted use of dangerous functions or methods vulnerability (CWE-470)."
+}

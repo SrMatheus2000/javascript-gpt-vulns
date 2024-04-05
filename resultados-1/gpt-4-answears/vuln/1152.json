@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses user input in the 'onmessage' event handler without proper sanitization or validation. This could allow an attacker to inject malicious scripts that will be executed in the context of the victim's session. The function is also vulnerable to Improper Input Validation because it does not validate or sanitize the data received from the WebSocket before using it."
+}

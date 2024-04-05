@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to SQL Injection because it directly uses the 'sql' variable in the 'executeSql' function without any sanitization or parameterization. This could allow an attacker to manipulate the SQL query. Also, the function parses 'doc.metadata' and 'doc.data' with 'JSON.parse' without validating the input, which could lead to Cross-Site Scripting (XSS) if the parsed data is used in the DOM. The function also does not validate 'metadata

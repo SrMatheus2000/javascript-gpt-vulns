@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function constructs an HTML table as a string and includes user-supplied input in this string. If an attacker can control the 'name', 'title', or 'value' properties of the 'd' object, they can inject arbitrary HTML or JavaScript code into the page. This code will be executed when the resulting string is added to the DOM."
+}

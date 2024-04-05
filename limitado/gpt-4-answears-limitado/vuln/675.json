@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It unpipes a request from a parser, resumes the request, and checks if a map exists. If the map exists, it iterates over the map values and rejects any upload that does not have a file with a 400 error. Without additional context, it's hard to identify any specific vulnerabilities."
+}

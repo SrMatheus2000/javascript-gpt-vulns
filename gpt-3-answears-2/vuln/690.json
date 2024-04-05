@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-74", "CWE-95"],
+  "vulnerabilities": ["Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "description": "The provided JavaScript function is vulnerable to injection attacks. It uses the 'eval' function without properly sanitizing or validating the input 't' parameter, which can lead to code injection vulnerabilities (CWE-74). Additionally, the function uses the 'eval' function to execute dynamically evaluated code, which can also introduce security risks (CWE-95). It is recommended to refactor the code to avoid using 'eval' or to implement proper input validation and sanitization techniques."
+}

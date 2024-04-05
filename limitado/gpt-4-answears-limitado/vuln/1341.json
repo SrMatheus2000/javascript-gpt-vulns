@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Resource Exhaustion"],
+  "description": "The function is vulnerable to code injection because it uses the 'require' function with a variable 'filePath' that can be manipulated to load and execute arbitrary code. This is a serious security risk as it can lead to remote code execution (RCE). Additionally, the function is also vulnerable to resource exhaustion. The 'update' function is called every time the 'gaze' object emits 'ready' or 'all' events. If these events are emitted too frequently, it could lead to high CPU and memory usage, potentially causing a denial of service (DoS)."
+}

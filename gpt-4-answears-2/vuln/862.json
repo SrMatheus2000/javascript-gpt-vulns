@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function does not validate or sanitize the input 'value'. This could lead to code injection if the input is controlled by an attacker. For example, if the input is a string that includes JavaScript code, this code will be executed."
+}

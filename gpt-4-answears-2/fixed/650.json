@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks the type of the input value and creates a new instance of the same type with the same value. If the input value is not of a type that the function expects, it throws an error. This function does not perform any unsafe operations, such as evaluating code from a string or accessing properties of objects in an unsafe way."
+}

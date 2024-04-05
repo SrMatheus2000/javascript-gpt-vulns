@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function f() is vulnerable to Cross-Site Scripting (XSS) attacks. The value of the 'data-vimeo' attribute is directly concatenated into the 'src' attribute of the iframe element without proper sanitization or encoding, allowing an attacker to inject malicious scripts."
+}

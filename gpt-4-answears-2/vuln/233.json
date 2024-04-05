@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate or sanitize the 'domValue' and 'childs' inputs before using them. This could lead to potential security issues such as Cross-Site Scripting (XSS) if the inputs are controlled by an attacker."
+}

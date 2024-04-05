@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')"],
+  "vulnerabilities": ["HTTP Header Injection"],
+  "description": "The function is vulnerable to HTTP Header Injection. It takes input directly from the request headers and uses it without any validation or sanitization. An attacker can inject malicious values into the headers, which can lead to HTTP Response Splitting or other types of attacks. This is related to CWE-20 and CWE-113."
+}

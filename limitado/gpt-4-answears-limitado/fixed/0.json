@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The Buffer.byteLength method is used, which can cause a high CPU load when processing large strings. An attacker could exploit this by providing a very large string as input, causing the server to become unresponsive."
+}

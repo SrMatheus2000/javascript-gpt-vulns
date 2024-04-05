@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function 'unique_name_534' is vulnerable to Cross-Site Scripting (XSS) attacks. It removes script tags from the HTML input, but does not properly sanitize or validate the remaining HTML. This can allow an attacker to inject malicious scripts or code into the resulting HTML, leading to potential XSS vulnerabilities."
+}

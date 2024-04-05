@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function uses the 'new Buffer(data)' constructor, which is vulnerable to buffer overflow attacks if 'data' is user-controlled and not properly validated. This can lead to potential security issues like Denial of Service (DoS) or Remote Code Execution (RCE). It's recommended to use 'Buffer.from(data)', 'Buffer.alloc(size)', or 'Buffer.allocUnsafe(size)' instead."
+}

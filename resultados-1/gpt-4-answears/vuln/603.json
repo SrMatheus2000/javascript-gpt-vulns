@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-522", "CWE-89", "CWE-78"],
+  "vulnerabilities": ["Insufficiently Protected Credentials", "SQL Injection", "OS Command Injection"],
+  "description": "The function 'unique_name_309' is vulnerable as it does not sanitize or validate the input parameters 'pathIN', 'pathOUT', and 'password'. This can lead to several vulnerabilities. The password is stored in a temporary file without encryption (CWE-522). If an attacker gains access to the system, they can read this file and gain the password. The parameters 'pathIN' and 'pathOUT' are directly used in the 'openssl.spawnWrapper' function without any validation, which can lead to SQL Injection (CWE-89) if the parameters contain SQL commands. Similarly, if the parameters contain OS commands, it can lead to OS Command Injection (CWE-78)."
+}

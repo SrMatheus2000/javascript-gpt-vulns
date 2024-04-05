@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function seems to be safe. It is properly escaping any HTML content that could be injected into the page, which would prevent Cross-Site Scripting (XSS) attacks. The function is also not using any dangerous JavaScript functions that could lead to security vulnerabilities."
+}

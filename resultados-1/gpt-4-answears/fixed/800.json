@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-200"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Information Exposure"],
+  "description": "The function 'createSocket' is vulnerable as it uses Basic Authentication which transmits credentials in cleartext. This can expose sensitive information, leading to potential unauthorized access. Additionally, error messages are detailed and could potentially expose sensitive system or application information."
+}

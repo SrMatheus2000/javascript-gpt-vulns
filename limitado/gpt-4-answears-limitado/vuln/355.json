@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-74", "CWE-89", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate the 'mime' parameter, which can lead to various vulnerabilities. For instance, an attacker can pass a malicious payload with a mime type that can lead to injection attacks (CWE-74, CWE-89, CWE-94). Also, the function does not handle the case when the 'payload' parameter is not a string or does not have a 'length' property, which can lead to unhandled exceptions and potential Denial of Service (DoS) attacks (CWE-20, CWE-400)."
+}

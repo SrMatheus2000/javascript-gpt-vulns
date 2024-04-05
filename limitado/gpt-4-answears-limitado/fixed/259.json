@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not properly sanitize the input for the 'e' parameter, which is used to construct a URL. If an attacker can control the value of 'e', they could inject malicious scripts that would be executed in the context of the user's session. This could lead to a variety of attacks, such as stealing the user's session cookies or performing actions on their behalf."
+}

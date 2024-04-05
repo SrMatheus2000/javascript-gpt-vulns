@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. It takes an input 'capture' and directly uses it to create a new RegExp and to replace content in a string. If the input is not properly sanitized before being used, it can lead to XSS attacks where an attacker can inject malicious scripts. The function does not seem to implement any form of input validation or sanitization. It's recommended to always validate and sanitize user inputs to prevent such vulnerabilities."
+}

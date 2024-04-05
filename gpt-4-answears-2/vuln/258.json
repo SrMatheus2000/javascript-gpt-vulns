@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function uses the 'eval' function, which can execute arbitrary code. This can lead to code injection if the input is not properly sanitized. The 'createWrapper' function's output is directly passed into 'eval', which can be dangerous if 'createWrapper' does not properly sanitize its output."
+}

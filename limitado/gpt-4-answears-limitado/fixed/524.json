@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-522", "CWE-200", "CWE-209"],
+  "vulnerabilities": ["Insufficiently Protected Credentials", "Information Exposure", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable as it exposes sensitive information such as passwords. The password is passed as a parameter and used in helper.createPasswordFile function which could potentially be logged or leaked through error messages. This is a violation of CWE-522: Insufficiently Protected Credentials. Additionally, the function does not handle errors securely, potentially revealing sensitive information about the system or the state of the application, violating CWE-200: Information Exposure and CWE-209: Information Exposure Through an Error Message."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input in the creation of HTML content (e.g., `tmp = $('<div />').html(tmp);`). An attacker could potentially inject malicious scripts through the user input, which would then be executed when the HTML content is rendered in a web browser."
+}

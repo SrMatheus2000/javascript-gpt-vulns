@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-362: Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition')"],
+  "vulnerabilities": ["SQL Injection", "Race Condition"],
+  "description": "The function 'unique_name_716' is vulnerable to SQL Injection because it concatenates the 'padId' directly into the SQL query without any sanitization or parameterization. This allows an attacker to manipulate the SQL query by injecting malicious SQL code through 'padId'. Additionally, the function is also vulnerable to a race condition. The function retrieves and modifies data from the database concurrently without proper synchronization. This could lead to inconsistent data if multiple requests are made at the same time."
+}

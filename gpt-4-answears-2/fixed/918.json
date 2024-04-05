@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20", "CWE-200"],
+"vulnerabilities": ["SQL Injection", "Input Validation", "Information Exposure"],
+"description": "The function does not validate or sanitize the 'socketIOData' input which can lead to SQL Injection if the input is used in a SQL query. The function also does not handle errors properly, potentially revealing sensitive information. Additionally, the function does not validate the 'socketIOCallback' parameter, which could lead to arbitrary code execution if a malicious function is passed."
+}

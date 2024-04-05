@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'dangerouslySetInnerHTML' property to set HTML directly from user input which is a potential security risk as it allows for the execution of arbitrary JavaScript code. Even though the function uses a sanitizer, it may not cover all possible XSS attack vectors. It's recommended to avoid using 'dangerouslySetInnerHTML' whenever possible."
+}

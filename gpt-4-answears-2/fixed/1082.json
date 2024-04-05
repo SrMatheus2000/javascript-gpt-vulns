@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function uses escapeHtml() on window.parent.db when constructing the 'question' variable. If window.parent.db contains malicious script, it could lead to Cross-Site Scripting (XSS) attacks. XSS vulnerabilities occur when an application includes user supplied data in a page sent to the browser without properly validating or escaping that content."
+}

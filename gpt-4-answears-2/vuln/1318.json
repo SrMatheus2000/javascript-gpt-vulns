@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77", "CWE-78", "CWE-88", "CWE-89", "CWE-20", "CWE-400"],
+"vulnerabilities": ["Command Injection", "Improper Neutralization of Special Elements used in a Command ('Command Injection')", "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "Argument Injection or Modification", "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function is vulnerable to command injection because it uses user-supplied input in a command that is executed by a child process. This can allow an attacker to execute arbitrary commands in the server's context. The function also does not properly validate or sanitize the input, which can lead to other types of injection attacks. Additionally, the function does not properly manage resources, which can lead to resource exhaustion if an attacker sends a large amount of data."
+}

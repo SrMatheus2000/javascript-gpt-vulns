@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function uses execa to execute a shell command with parameters that could potentially be controlled by the user. This could lead to OS command injection if the parameters are not properly sanitized. In this case, the parameters are hardcoded and do not seem to be controllable by the user, but if this changes in the future, it could introduce a vulnerability."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Information Exposure", "Uncontrolled Resource Consumption", "Server-Side Request Forgery"],
+  "description": "The function is vulnerable to Information Exposure through error messages (CWE-200) as it logs error messages that could potentially reveal sensitive information. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of boot attempts, which could lead to resource exhaustion. Additionally, it is vulnerable to Server-Side Request Forgery (CWE-918) as it does not validate or restrict the 'req' parameter of the 'handleRequest' function, potentially allowing an attacker to make arbitrary HTTP requests to internal resources."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Remote Code Execution", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it writes files to a path that could be manipulated by the 'version' parameter. It's also vulnerable to Remote Code Execution (CWE-94) as it downloads and executes a file from a remote server without any validation. Lastly, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of the file being downloaded, which could lead to a Denial of Service (DoS) attack."
+}

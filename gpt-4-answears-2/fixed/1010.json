@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any vulnerabilities. It correctly uses encodeURIComponent to prevent potential Cross-Site Scripting (XSS) attacks when appending query parameters to a URL."
+}

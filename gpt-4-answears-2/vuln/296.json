@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function does not properly sanitize the 'message' and 'options' inputs. This could allow an attacker to inject arbitrary commands into the 'exec' function call, leading to code injection. The replace function only escapes double quotes, but other special characters that could be used for command injection are not escaped. The 'options' variable is also directly concatenated into the command string without any sanitization, which is another potential point of injection."
+}

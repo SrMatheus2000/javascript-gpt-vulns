@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'name' parameter is directly used in the 'cp.exec' function without any sanitization or validation. An attacker can inject arbitrary OS commands through the 'name' parameter."
+}

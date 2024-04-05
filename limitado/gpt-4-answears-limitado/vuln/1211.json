@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the '$F(u)' expression to get the value of the 'upload' element and directly includes it in the HTML content. If the value of the 'upload' element is not properly sanitized and can be controlled by an attacker, it can lead to XSS attacks where the attacker can inject malicious scripts."
+}

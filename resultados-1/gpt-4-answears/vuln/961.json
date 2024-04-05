@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function isHTML() checks if the input is HTML by checking if the first character is '<' and the last character is '>'. This can be exploited by an attacker to inject malicious scripts into the web page, leading to Cross-Site Scripting (XSS) attacks. The function setContent() uses the result of isHTML() to decide whether to use the 'html' or 'text' method to set the content of the tooltip. If the input is considered HTML, the 'html' method is used, which can interpret the input as HTML and execute any scripts it contains."
+}

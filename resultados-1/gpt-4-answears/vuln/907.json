@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the .html() method in jQuery, which can potentially execute malicious scripts if the input is not properly sanitized. This is particularly concerning in the line 'data.text = tmp.html();', where the .html() method is used to set the 'text' property of the 'data' object. If 'tmp' contains any script tags, they will be executed when this line is run. This can lead to various security issues, such as session hijacking, defacement of the website, or malicious redirection."
+}

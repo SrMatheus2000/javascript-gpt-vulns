@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Null Pointer Dereference"],
+  "description": "The function 'cloneArray' is vulnerable because it does not check if the input 'array' is null or undefined before trying to access its properties. This can lead to a Null Pointer Dereference error if the function is called with a null or undefined argument. The 'getEnumerableOwnPropertyKeys' and 'clone' functions are also not defined in the provided code, which could lead to ReferenceError if they are not defined elsewhere in the program."
+}

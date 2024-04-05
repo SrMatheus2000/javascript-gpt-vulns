@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-682"],
+  "vulnerabilities": ["Uncontrolled Recursion"],
+  "description": "The provided JavaScript function 'objectForEach' is vulnerable to uncontrolled recursion. This can lead to a denial of service (DoS) attack by consuming excessive system resources."
+}

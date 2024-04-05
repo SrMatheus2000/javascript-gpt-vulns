@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-377"],
+  "vulnerabilities": ["Unrestricted File Upload"],
+  "description": "The function does not properly validate user input before using it to create or modify files. This can lead to an unrestricted file upload vulnerability, allowing an attacker to upload malicious files to the server."
+}

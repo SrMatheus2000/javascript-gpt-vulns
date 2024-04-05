@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack where the properties of JavaScript's object prototype can be injected with the user's input, leading to a variety of potential security issues. This is because JavaScript allows all objects to implicitly reference to a 'prototype' object that comes with an initial set of properties. These properties can be overwritten by properties of the same name from other objects. In this function, the 'setPath' function does not properly validate the 'keyPath' input, which can lead to an attacker being able to modify a JavaScript application object prototype. While the function does check for '__proto__', it does not check for 'constructor' and 'prototype' properties, which can also lead to Prototype Pollution."
+}

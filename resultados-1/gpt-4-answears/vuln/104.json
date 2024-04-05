@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is about polluting the prototype of a base object which can sometimes lead to arbitrary code execution. The function does not prevent the modification of the Object prototype. An attacker can control the 'path' parameter to overwrite or inject properties into the Object prototype. This can affect the application logic leading to Remote Code Execution or other security vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Input Validation"],
+"description": "The function does not sanitize the 'key' and 'value' inputs before using them. This could lead to Cross-Site Scripting (XSS) if the inputs are controlled by an attacker. The function also does not validate the inputs, which could lead to unexpected behavior or errors."
+}

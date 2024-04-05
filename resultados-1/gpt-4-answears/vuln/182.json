@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Modification of Assumed-Immutable Data", "Improper Input Validation"],
+  "description": "The function is vulnerable to Modification of Assumed-Immutable Data (MAID) as it modifies the input object directly which can lead to unexpected behavior if the input object is assumed to be immutable. It also lacks proper input validation which can lead to unexpected behavior if the input is not as expected. For example, if 'path' is not a string or if 'obj' is not an object, the function may behave unexpectedly."
+}

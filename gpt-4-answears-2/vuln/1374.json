@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any security vulnerabilities. It constructs a URL based on the provided parameters, but does not execute or fetch the URL, nor does it handle any sensitive data. Therefore, it does not expose any common weaknesses (CWEs)."
+}

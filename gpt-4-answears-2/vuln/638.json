@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'innerHTML' property is used to insert 'field.label' into the DOM. If 'field.label' contains malicious script, it will be executed when the page is rendered. This can lead to various attacks such as stealing user's cookies, performing actions on behalf of the user, or even defacing the website."
+}

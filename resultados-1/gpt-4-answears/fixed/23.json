@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Input Validation", "Code Injection"],
+  "description": "The function does not validate the input 'giturl' which can lead to unexpected behavior. Also, the function uses the 'decodeURIComponent' function which can lead to code injection if the input is not properly sanitized."
+}

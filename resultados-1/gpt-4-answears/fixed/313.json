@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The function unique_name_155 is vulnerable to command injection. This is because it uses the exec function to execute a command that includes user-supplied input (path). Although there is an attempt to sanitize the input by checking for certain special characters, this is not sufficient to prevent all possible command injection attacks. For example, an attacker could still inject a command by using other special characters or escape sequences that are not checked by the regular expression. This could allow the attacker to execute arbitrary commands on the system with the same privileges as the process running the JavaScript code. Additionally, the function does not properly handle errors that may occur during the execution of the command, which could lead to unexpected behavior."
+}

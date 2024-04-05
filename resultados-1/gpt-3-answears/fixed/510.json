@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Command Injection"],
+  "description": "The function allows arbitrary code execution by injecting and executing the provided code parameter without proper validation or sanitization. This can lead to code injection and command injection vulnerabilities."
+}

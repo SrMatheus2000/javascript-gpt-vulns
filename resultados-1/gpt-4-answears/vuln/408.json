@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) and Cross-Site Scripting (CWE-79). The Path Traversal vulnerability exists because the function uses user-supplied input to construct a file path for file system operations without properly validating or sanitizing the input. This could allow an attacker to access, modify, or execute files outside of the intended directory. The Cross-Site Scripting vulnerability exists because the function includes user-supplied data in HTTP responses without proper validation or escaping, which could allow an attacker to inject malicious scripts."
+}

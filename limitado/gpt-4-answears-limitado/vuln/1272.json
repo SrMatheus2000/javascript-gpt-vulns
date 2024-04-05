@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function takes an input 'direction' and directly appends it to an OS command without any sanitization or validation. This could allow an attacker to inject arbitrary OS commands, leading to command execution vulnerability."
+}

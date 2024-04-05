@@ -1,0 +1,13 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-89",
+    "CWE-434"
+  ],
+  "vulnerabilities": [
+    "Potential SQL Injection",
+    "Potential Cross-Site Scripting (XSS)",
+    "Potential Uncontrolled Format String"
+  ],
+  "description": "The code is vulnerable to potential SQL injection because it concatenates user input (body.cod, body.tag, body.author) directly into the 'key' variable without sanitizing or validating the input. This can allow an attacker to manipulate the SQL query and perform unauthorized actions on the database.\n\nThe code is also vulnerable to potential cross-site scripting (XSS) because it does not properly sanitize the user input before writing it to the response. This can allow an attacker to inject malicious scripts into the response and execute them in the context of other users.\n\nThe code is vulnerable to potential uncontrolled

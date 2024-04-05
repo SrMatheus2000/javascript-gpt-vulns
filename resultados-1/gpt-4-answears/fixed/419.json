@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_211' is vulnerable to path traversal attacks. The function takes a 'path' parameter and checks if it exists, then reads the directory and deletes all files and folders within it. An attacker could potentially provide a path that navigates to sensitive areas of the file system, leading to unauthorized deletion of files. The guard against injection only splits the path at semicolons, which does not prevent path traversal attacks."
+}

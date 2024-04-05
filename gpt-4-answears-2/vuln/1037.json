@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470", "CWE-20"],
+"vulnerabilities": ["Unrestricted use of dangerous function", "Improper Input Validation"],
+"description": "The function unique_name_572 is vulnerable as it uses unrestricted dangerous functions such as apply and does not properly validate the input before using it. This can lead to unexpected behavior and potential security risks such as code injection or denial of service."
+}

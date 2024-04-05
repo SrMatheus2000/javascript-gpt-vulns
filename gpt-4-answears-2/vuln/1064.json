@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function is vulnerable to SQL Injection attacks. The function constructs SQL queries by concatenating user-controlled input, which can be manipulated to inject malicious SQL code. This is evident in the lines where the function concatenates the 'propName' and 'indexName' variables directly into the SQL query."
+}

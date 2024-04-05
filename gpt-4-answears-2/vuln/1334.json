@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function 'addRemote' and 'addRemote.sync' are vulnerable to command injection because they concatenate and execute a command without properly sanitizing the 'name' and 'url' inputs. An attacker could provide specially crafted input to execute arbitrary commands."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function 'wrapValue' is vulnerable to SQL Injection attacks. It takes a value and wraps it in double quotes without properly sanitizing it. This could allow an attacker to inject malicious SQL code by closing the double quotes and appending their own SQL code. The function 'wrapValue' should be modified to properly sanitize the input value to prevent SQL Injection attacks."
+}

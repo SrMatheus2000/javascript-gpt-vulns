@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Neutralization for Logs"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the input, allowing an attacker to inject malicious scripts. These scripts are executed when the user visits the page. This can lead to a variety of attacks such as stealing sensitive information, performing actions on behalf of the user, or spreading malware. The function also does not properly neutralize output for logs, which can lead to injection of arbitrary commands."
+}

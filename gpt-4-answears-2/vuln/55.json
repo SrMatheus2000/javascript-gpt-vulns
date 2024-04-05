@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function isExternal(url) is vulnerable to improper input validation. If the input url is not a string or is a malicious string, it can cause the application to crash or behave unexpectedly. This is because the function uses the match method without first checking if the url is a string and if it's a well-formed URL. This can lead to unexpected behavior or errors. This vulnerability is classified as CWE-20: Improper Input Validation."
+}

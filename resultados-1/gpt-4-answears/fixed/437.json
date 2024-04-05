@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Cross-site Scripting"],
+  "description": "The function unique_name_225 does not validate or sanitize the 'name' input, which can lead to SQL Injection if the input is used in a SQL query. Additionally, if the input is used in the generation of a web page, it can lead to Cross-site Scripting (XSS) attacks. The function also does not handle errors properly, which can lead to unexpected behavior."
+}

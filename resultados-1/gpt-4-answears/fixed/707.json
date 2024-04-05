@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution because it directly adds properties to the Term prototype within a loop. Prototype Pollution can lead to several potential issues, such as Denial of Service (DoS), Remote Code Execution (RCE), or even property injection. An attacker could manipulate these properties to modify the structure of the object, which could lead to application crashes or other unexpected behavior."
+}

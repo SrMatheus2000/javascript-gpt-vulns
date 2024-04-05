@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it uses the 'escape.entities' function to escape the 'url' parameter before inserting it into the HTML. However, this function only escapes HTML entities, not JavaScript code. Therefore, if the 'url' parameter contains JavaScript code, it will be executed when the resulting HTML is rendered by a web browser."
+}

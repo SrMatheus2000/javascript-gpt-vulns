@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It directly injects user-supplied data into the HTML document without proper sanitization or encoding. An attacker can inject malicious scripts through 'data' object properties (legendText, headText, subText, extra) which will be executed in the browser of any user viewing the page. The 'escapeJsString' function is used to escape the 'primary_key' values, but it's not used for the other data properties. To mitigate this, all dynamic data should be properly encoded or sanitized before being inserted into the HTML document."
+}

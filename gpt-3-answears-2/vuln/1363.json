@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Code Injection"],
+  "description": "The function is vulnerable to command injection and code injection attacks. The 'arg' parameter is directly concatenated into the 'cmd' variable without proper sanitization or validation, allowing an attacker to inject arbitrary commands. Additionally, the 'exec' function is used without proper input validation, which can lead to code injection vulnerabilities."
+}

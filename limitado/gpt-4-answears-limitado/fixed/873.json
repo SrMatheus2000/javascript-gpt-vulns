@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-311: Missing Encryption of Sensitive Data"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References"],
+  "description": "The function is vulnerable as it uses a cryptographic algorithm that may not be secure. The private key is converted to forge format without any encryption, which can lead to exposure of sensitive information. Also, the function does not validate the key length before computing the secret, which can lead to insecure direct object references."
+}

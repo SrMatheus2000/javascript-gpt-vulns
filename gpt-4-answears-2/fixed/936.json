@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20"],
+"vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+"description": "The function does not properly sanitize the input for the 'val' parameter, which can lead to SQL Injection if the input includes SQL commands. Additionally, the function does not validate the input for the 'val' parameter, which can lead to unexpected behavior if the input is not of the expected type or format."
+}

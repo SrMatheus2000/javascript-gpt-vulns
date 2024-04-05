@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to parse the input. However, the regex used is vulnerable to a Regular Expression Denial of Service (ReDoS) attack. In a ReDoS attack, an attacker provides a large input string that takes a very long time to process, effectively causing a denial of service. This is due to the use of the '.*?' pattern in the regex, which can lead to excessive backtracking. The function does not have any input length restrictions or timeouts for regex processing, which makes this vulnerability exploitable."
+}

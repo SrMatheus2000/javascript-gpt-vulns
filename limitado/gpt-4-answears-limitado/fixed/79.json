@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function cmdSet is vulnerable to code injection. The function takes a key and a value, and attempts to parse the value as JSON. If the parsing fails, it uses the value as a string. However, if an attacker provides a string that can be parsed as a function, the function will be executed when the property is accessed. This can lead to arbitrary code execution."
+}

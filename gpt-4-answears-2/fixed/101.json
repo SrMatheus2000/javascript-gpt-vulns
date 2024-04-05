@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function uses the escapeFn function on user-supplied input, which can lead to code injection if the escapeFn function does not properly sanitize the input. An attacker could potentially inject malicious code as the 'val' parameter, which would then be executed."
+}

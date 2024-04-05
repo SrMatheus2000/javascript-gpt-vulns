@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Leak"],
+  "description": "The function is vulnerable to memory leak. If the function 'fn' returns a promise that gets rejected, and 'cachePromiseRejection' is set to false, the cache entry for that key is deleted. However, if 'fn' keeps returning rejected promises, the cache will keep growing indefinitely, leading to a memory leak. This can lead to resource exhaustion, making the system slow or unresponsive."
+}

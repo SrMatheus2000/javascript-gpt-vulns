@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function unique_name_287 uses a regular expression (RegExp) to replace a password in a URI with asterisks. However, it does not validate the input before using it in the RegExp constructor. This can lead to a Regular Expression Denial of Service (ReDoS) if the password contains special characters that have a different meaning in a regular expression context. An attacker could provide a password that creates a very complex regular expression, causing the server to spend a lot of time processing it, leading to a denial of service."
+}

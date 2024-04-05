@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function deleteConnection is vulnerable to OS command injection. It constructs a command to delete a network connection using the 'nmcli' utility, and appends the 'ssid' property of the 'ap' object directly into the command string. If an attacker can control the 'ssid' value, they can inject arbitrary commands to be executed with the privileges of the Node.js process."
+}

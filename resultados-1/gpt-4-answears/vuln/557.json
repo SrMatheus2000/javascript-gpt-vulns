@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function takes markdown input and converts it to JSX. If the markdown input is not properly sanitized before being processed, it could lead to Cross-Site Scripting (XSS) vulnerabilities. An attacker could inject malicious scripts through the markdown input, which would then get executed when the JSX is rendered in the browser."
+}

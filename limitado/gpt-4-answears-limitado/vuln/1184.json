@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function 'parsePost', 'parseSignature', and 'parseRaw' take user input and pass it to the 'render' function of the 'parser' object without proper sanitization or encoding. This could allow an attacker to inject malicious scripts that would be executed in the context of the victim's browser. The attacker could steal sensitive information like session cookies or perform actions on behalf of the victim."
+}

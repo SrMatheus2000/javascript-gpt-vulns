@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the 'new Function()' constructor to create a new function from a string of JavaScript code. This is dangerous as it allows for arbitrary code execution. If an attacker can control the 'argument' or 'source' variables, they could inject malicious code which would be executed. This is a form of code injection vulnerability."
+}

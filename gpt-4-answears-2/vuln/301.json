@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection because it concatenates the 'gitUrl' and 'options' variables directly into the command string that is passed to 'this.exec'. An attacker could potentially control these variables and inject arbitrary commands to be executed on the server."
+}

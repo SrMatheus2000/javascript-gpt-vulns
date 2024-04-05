@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-95 "CWE-676"],
+  "vulnerabilities": ["Prototype Pollution", "Command Injection"],
+  "description": "The provided function is vulnerable to Prototype Pollution and Command Injection attacks. It does not properly sanitize user input and allows an attacker to modify the prototype of objects or execute arbitrary commands."
+}

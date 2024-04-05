@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function deleteConnection is vulnerable to OS command injection. The function constructs a command string using user-supplied input (config.iface and ap.ssid), which is then executed. An attacker could potentially inject malicious commands by manipulating these inputs."
+}

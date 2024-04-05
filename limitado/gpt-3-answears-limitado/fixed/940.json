@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-564"],
+  "vulnerabilities": ["SQL Injection", "Improper Authorization"],
+  "description": "The given code is vulnerable to SQL injection attacks as it directly concatenates user input into the SQL query without proper sanitization or parameterization. It is also vulnerable to improper authorization as it does not properly check the user's authorization before executing the DROP COLUMN statement."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function 'unique_name_254' is vulnerable to SQL Injection. The function constructs SQL queries by concatenating user-controlled input into the query string without properly escaping or sanitizing the input. This could allow an attacker to manipulate the SQL queries by injecting malicious SQL code. The vulnerability is particularly present in the 'castKey' function where the '$cast' variable, which can be controlled by user input, is directly concatenated into the SQL query string."
+}

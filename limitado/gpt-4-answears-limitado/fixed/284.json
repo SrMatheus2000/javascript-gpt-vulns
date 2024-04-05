@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Input Validation"],
+  "description": "The function signTransaction is vulnerable to SQL Injection and Input Validation attacks. The function takes an address and a transaction as parameters and does not sanitize or validate these inputs before using them. This could allow an attacker to inject malicious code or data, leading to unauthorized access or data corruption. The function also does not handle errors properly, which could lead to unexpected behavior or crashes."
+}

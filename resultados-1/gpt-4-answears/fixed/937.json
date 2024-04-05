@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function 'unique_name_531' is vulnerable to SQL Injection. The function does not properly sanitize the 'val' parameter before using it in SQL queries. An attacker could exploit this vulnerability by passing specially crafted input to the 'val' parameter, which could allow the attacker to manipulate SQL queries and potentially gain unauthorized access to data."
+}

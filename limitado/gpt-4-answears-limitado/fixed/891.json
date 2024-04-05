@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'html' variable, which is derived from 'this.container.innerHTML.trim()', is directly used in the 'this.clipboard.convert()' function without any sanitization. If 'this.container.innerHTML' contains any malicious script, it will be executed when 'this.clipboard.convert()' is called. This can lead to various security issues, including session hijacking, identity theft, defacement of the website, and other malicious activities."
+}

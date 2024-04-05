@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'getData' function is used to set the 'src' attribute of an 'img' element. If the 'originalUrl' attribute of the 'img' element is controlled by an attacker, they could inject malicious scripts. Similarly, the 'getAttribute' function is used to set the 'alt' attribute of an 'img' element, which could also be exploited in a similar manner."
+}

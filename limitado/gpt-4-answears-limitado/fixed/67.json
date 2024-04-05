@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property in the function. The innerHTML property is used to write arbitrary HTML content, including script tags, into the document. If the content is user-controlled, it can lead to Cross-Site Scripting (XSS) attacks. In this function, the innerHTML property is used to write the content of 'text' and 'w.config.legend.markers.customHTML' into the document. If these values are controlled by the user, it can lead to XSS attacks."
+}

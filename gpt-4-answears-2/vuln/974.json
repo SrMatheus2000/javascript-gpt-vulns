@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an 'element' parameter and directly injects it into the HTML of a new iframe without any sanitization or encoding. This could allow an attacker to inject malicious scripts into the webpage that would be executed in the context of the user's session."
+}

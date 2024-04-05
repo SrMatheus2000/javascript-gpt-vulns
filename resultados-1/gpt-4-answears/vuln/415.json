@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not validate the 'repoDir' parameter, which is used in a 'path.resolve' function. This could lead to a Path Traversal vulnerability if an attacker can control the 'repoDir' parameter, allowing them to access arbitrary files on the system."
+}

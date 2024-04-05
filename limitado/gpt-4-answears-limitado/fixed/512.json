@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is vulnerable to information disclosure. If the lengths of the two input strings are different, the function will allocate a buffer of the length of the first string for both strings. This can lead to the leakage of the length of the first string, which is an information disclosure vulnerability. Additionally, if the second string is longer than the first, the function will only compare the first n characters, where n is the length of the first string. This can lead to false positives if the first string is a prefix of the second."
+}

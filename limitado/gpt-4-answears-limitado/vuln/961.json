@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function isHTML() checks if the input is HTML by checking if the first character is '<' and the last character is '>'. This can be exploited by an attacker to inject malicious scripts into the web page, leading to Cross-Site Scripting (XSS) attacks. XSS attacks can lead to session hijacking, identity theft, defacement of the website, and other security issues."
+}

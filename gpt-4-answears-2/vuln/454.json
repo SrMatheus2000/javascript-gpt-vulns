@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-798: Use of Hard-coded Credentials", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Hard-coded credentials", "Lack of input validation"],
+"description": "The function does not validate the input data before using it. This could lead to unexpected behavior or security vulnerabilities. Additionally, the function seems to use hard-coded credentials (public keys), which could be exploited by an attacker who gains access to the source code."
+}

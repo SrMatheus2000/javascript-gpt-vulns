@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service"],
+  "description": "The function is vulnerable to Path Traversal attacks because it uses user-supplied input (req.urlBase) in file system operations without properly sanitizing it. This could allow an attacker to access, read, or modify files outside of the intended directory. Additionally, the function is vulnerable to Denial of Service attacks. The routeCache object can be filled with arbitrary data by an attacker, potentially causing the application to consume excessive resources and become unresponsive."
+}

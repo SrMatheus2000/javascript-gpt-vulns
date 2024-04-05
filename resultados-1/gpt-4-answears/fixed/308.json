@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Path Traversal", "Code Injection"],
+  "description": "The function is vulnerable to command injection via the 'execSync' function, which executes shell commands. This can be exploited if an attacker can control the input to 'execSync', leading to arbitrary command execution. The function is also vulnerable to path traversal via the 'fs.readFileSync' function, which reads files from the file system. If an attacker can control the input to 'fs.readFileSync', they can read arbitrary files from the file system. Finally, the function is vulnerable to code injection via the 'eval' function, which evaluates JavaScript code. If an attacker can control the input to 'eval', they can execute arbitrary JavaScript code."
+}

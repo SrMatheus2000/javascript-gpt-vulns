@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function runNpmCommand is vulnerable to OS command injection because it concatenates user-supplied input into a command that is executed without proper sanitization or validation. An attacker could potentially execute arbitrary commands on the system by providing specially crafted input."
+}

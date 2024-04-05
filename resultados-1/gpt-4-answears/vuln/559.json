@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-706"],
+  "vulnerabilities": ["Path Traversal", "Use of Incorrectly-Resolved Name or Reference"],
+  "description": "The function 'unique_name_283' is vulnerable to path traversal attacks (CWE-22) because it uses user-supplied input in 'header.linkname' to resolve a file path without proper sanitization. This could allow an attacker to access, read, or modify files outside of the intended directory. Additionally, the function may not correctly resolve the name or reference (CWE-706) due to the use of 'xfs.link' without proper error handling, which could lead to unexpected behavior."
+}

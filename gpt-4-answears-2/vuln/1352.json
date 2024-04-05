@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Command Injection", "Null Pointer Dereference"],
+"description": "The function is vulnerable to command injection because it concatenates user-supplied input (pinNumber and direction) into a command that is executed without proper sanitization. This could allow an attacker to execute arbitrary commands. Additionally, the function does not check if the 'gpio' and 'gpioEventNames' variables are null before using them, which could lead to a null pointer dereference."
+}

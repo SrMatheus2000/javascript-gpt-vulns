@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-476"],
+  "vulnerabilities": ["Arbitrary Code Execution", "Information Exposure"],
+  "description": "The provided JavaScript function is vulnerable to arbitrary code execution and information exposure. The function does not properly validate user input and can be exploited to execute arbitrary code or expose sensitive information."
+}

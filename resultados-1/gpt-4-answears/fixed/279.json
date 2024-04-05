@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function uses the 'path.sep' and 'process.cwd()' methods which can lead to path traversal vulnerabilities if user input is used to construct file paths. An attacker could potentially access sensitive files outside of the intended directories."
+}

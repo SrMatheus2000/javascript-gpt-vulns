@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function is vulnerable to SQL Injection. The 'column' and 'path' parameters are directly used in SQL queries without proper sanitization or parameterized queries. An attacker could potentially manipulate the SQL queries by passing specially crafted input to the 'column' and 'path' parameters, leading to unauthorized data access or other unintended consequences."
+}

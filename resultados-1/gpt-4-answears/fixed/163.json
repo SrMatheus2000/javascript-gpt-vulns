@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Infinite Loop", "Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function unique_name_86 is vulnerable due to the potential for an infinite loop. The while loop continues to call the digest function until it returns false, but if it never returns false, the loop will continue indefinitely, leading to a Denial of Service (DoS) attack. This is an example of CWE-400: Uncontrolled Resource Consumption. Additionally, the function does not validate the input for configObj and envObj, which could lead to unexpected behavior or errors. This is an example of CWE-20: Improper Input Validation."
+}

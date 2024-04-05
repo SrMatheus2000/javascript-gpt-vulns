@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function sendMessage does not validate or sanitize the input parameters 'commandName', 'target', and 'message'. This could lead to potential security vulnerabilities such as command injection if the 'commandName' parameter is controlled by an attacker. Similarly, if 'target' or 'message' parameters are not properly validated, it could lead to other forms of injection attacks."
+}

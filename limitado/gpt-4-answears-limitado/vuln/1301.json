@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-346: Origin Validation Error", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["PostMessage Vulnerability", "Improper Input Validation"],
+  "description": "The function is vulnerable to PostMessage vulnerability (CWE-346) because it uses the postMessage method to send data to other windows without validating the origin of the message. This can allow an attacker to intercept the message. The function is also vulnerable to Improper Input Validation (CWE-20) because it does not validate the data received in the event object. This can allow an attacker to send malicious data to the function."
+}

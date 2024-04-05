@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property which can interpret HTML tags and potentially execute malicious scripts. The function uses innerHTML at several places to update the DOM which can lead to XSS if the input is not properly sanitized. The CWE associated with this vulnerability is CWE-79."
+}

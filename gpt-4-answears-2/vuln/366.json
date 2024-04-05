@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function createMuteOgg uses string concatenation to build a command that is then executed by child_process_1.exec. This can allow an attacker to inject arbitrary commands if they have control over the 'options' object. This is a classic example of OS Command Injection vulnerability."
+}

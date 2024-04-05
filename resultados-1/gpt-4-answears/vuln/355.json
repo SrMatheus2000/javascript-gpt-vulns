@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Injection attacks", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) attacks due to the use of regular expressions in the 'mime.match' and 'test' methods. An attacker could provide a specially crafted payload that causes the regular expression to take a long time to evaluate, leading to a denial of service. Additionally, the function does not properly validate the 'mime' and 'payload' inputs, which could lead to injection attacks. The function also does not limit the size of the 'payload', which could lead to uncontrolled resource consumption if an attacker provides a very large payload."
+}

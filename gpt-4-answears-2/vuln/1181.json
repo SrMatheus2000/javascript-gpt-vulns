@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-749: Exposed Dangerous Method or Function"],
+"vulnerabilities": ["Open Redirect Vulnerability", "Cross-Site Request Forgery", "Exposed Dangerous Method or Function"],
+"description": "The function is vulnerable to Open Redirect attacks because it uses the getScript() method to load a script from an external site. This could be manipulated to redirect users to a malicious site. It's also vulnerable to Cross-Site Request Forgery (CSRF) because it submits forms without any CSRF tokens. This could allow an attacker to trick a user into performing actions they didn't intend to. The function also exposes dangerous methods or functions that could be exploited by an attacker."
+}

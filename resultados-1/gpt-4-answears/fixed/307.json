@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'unique_name_150' is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify a JavaScript object prototype. The prototype is an object from which other objects inherit properties. When a function is called on an object, JavaScript will look for that function in the object's prototype if it does not exist in the object itself. If an attacker can control part of the structure of this object, they can inject properties into JavaScript objects. This could potentially lead to Denial of Service (DoS) by exhausting memory, Remote Code Execution, or other side effects that could aid an attacker in violating data privacy and integrity."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The Buffer.alloc(0) method is used to allocate a new buffer of any size. If an attacker can control the size of the buffer, they can cause the application to consume excessive amounts of memory, leading to a DoS condition. This is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function compileObjectNode is vulnerable to code injection attacks. The function does not properly sanitize the 'key' variable before it is used to generate code. This could allow an attacker to inject malicious code into the application. Additionally, the function does not properly validate the input 'node' before using it, which could lead to unexpected behavior or errors."
+}

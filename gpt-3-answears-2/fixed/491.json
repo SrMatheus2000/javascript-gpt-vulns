@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-377"],
+  "vulnerabilities": ["Unrestricted File Upload"],
+  "description": "The function allows for the creation of hardlinks without proper validation, which can lead to unrestricted file upload vulnerability."
+}

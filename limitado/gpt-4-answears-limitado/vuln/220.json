@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20", "CWE-200"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation", "Information Exposure"],
+  "description": "The function is vulnerable to command injection because it directly includes user-controlled data in a command that is processed by a shell command. This can allow an attacker to execute arbitrary commands. The function does not validate the 'config' input, which can lead to unexpected behavior. Additionally, the function may expose sensitive information through error messages."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Input Validation"],
+"description": "The function does not validate the 'version' parameter before using it in a regular expression match. This could lead to unexpected behavior or errors if the 'version' parameter is not in the expected format. It could also potentially lead to security vulnerabilities if an attacker is able to control the 'version' parameter."
+}

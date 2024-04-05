@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400", "CWE-404", "CWE-20"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption", "Improper Resource Shutdown or Release", "Improper Input Validation"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it does not validate or sanitize the 'stderr' input which is used in a file system operation. This could allow an attacker to access, modify, or read files outside of the intended directory. The function also has potential for Uncontrolled Resource Consumption (CWE-400) due to the while loop that could potentially run indefinitely if 'this.isReady' never becomes true. Improper Resource Shutdown or Release (CWE-404) is present as the child process is killed without ensuring it has properly released all resources. Lastly, the function does not

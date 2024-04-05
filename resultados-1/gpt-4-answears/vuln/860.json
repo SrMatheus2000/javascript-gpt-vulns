@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Injection Attack", "Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the input 'param'. This could lead to an Injection attack if the input includes malicious code. Also, the function does not escape the output, which could lead to Cross-Site Scripting (XSS) if the output is rendered in a web page."
+}

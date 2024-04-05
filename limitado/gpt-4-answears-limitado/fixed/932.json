@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncaught Exception"],
+  "description": "The function does not validate the input 'this.source' before processing it, which could lead to unexpected behavior or errors. If 'this.source' is not a string or a valid object, the function could throw an uncaught exception, leading to a Denial of Service (DoS) attack. Additionally, the function does not control the number of iterations in the 'while' loop when processing 'err.details', which could lead to high CPU usage if 'err.details' contains a large number of items, resulting in a DoS condition."
+}

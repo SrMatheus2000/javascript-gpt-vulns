@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution which is a serious security vulnerability. The function does not validate the input parameters 'arrKey' and 'val'. An attacker can manipulate these inputs to modify the prototype of 'Object' which can lead to several security issues like denial of service, property injection, and potentially remote code execution."
+}

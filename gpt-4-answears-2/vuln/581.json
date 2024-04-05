@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Unvalidated Input"],
+"description": "The loadImage function is vulnerable to Cross-Site Scripting (XSS) attacks because it does not properly sanitize the 'image' input when it is a string. An attacker could potentially inject malicious scripts through the 'image' parameter, which would then be executed when the image is loaded. Additionally, the function does not validate the 'image' input when it is a File or Blob, which could lead to unexpected behavior or errors."
+}

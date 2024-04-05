@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Prototype Pollution", "Potential Denial of Service"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to multiple application-level vulnerabilities such as Remote Code Execution, Denial of Service, or even Cross-Site Scripting. This happens because the function does not properly prevent the modification of the Object prototype. Additionally, the recursive nature of the function can lead to a potential Denial of Service (DoS) attack by causing the application to consume excessive resources, which could lead to a crash."
+}

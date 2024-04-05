@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77", "CWE-78", "CWE-88", "CWE-89", "CWE-94"],
+"vulnerabilities": ["Command Injection", "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Neutralization of Special Elements used in a Command ('Command Injection')", "Improper Control of Generation of Code ('Code Injection')"],
+"description": "The function 'unique_name_344' is vulnerable to command injection. The 'cmd' variable is constructed by concatenating user-supplied input ('opts' and 'range'), which is then passed to the 'proc' function and executed. An attacker could provide malicious input to execute arbitrary commands on the system. This is a serious security issue that could lead to full system compromise. The function does not perform any input validation or sanitization, making it susceptible to command injection attacks."
+}

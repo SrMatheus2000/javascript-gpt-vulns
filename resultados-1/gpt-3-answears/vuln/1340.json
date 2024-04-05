@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-95"],
+  "vulnerabilities": ["Command Injection", "Callback Injection"],
+  "description": "The function 'unique_name_778' is vulnerable to command injection and callback injection attacks. The 'execGitCommand' function is called with user-controlled input 'dir' and 'options' without proper validation or sanitization, allowing an attacker to inject arbitrary commands. Additionally, the 'getCallback' function is used to construct a callback function using user-controlled input 'options' and 'callback', which can lead to arbitrary code execution."
+}

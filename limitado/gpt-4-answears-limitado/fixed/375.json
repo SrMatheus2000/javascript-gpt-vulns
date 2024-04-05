@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input in the creation of HTML content. For example, the 'settings.maxWidth', 'settings.id', 'settings.content', 'settings.cssClass', and 'settings.title' variables are directly used to create HTML content. If an attacker can control these variables, they can inject malicious scripts into the web page, leading to XSS attacks. The function does attempt to mitigate this risk by using the 'xssUtils.stripTags' function to remove potentially harmful HTML tags from the 'settings.title' variable, but it does not do this for the other variables."
+}

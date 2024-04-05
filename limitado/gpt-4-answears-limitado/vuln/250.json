@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-88", "CWE-89"],
+  "vulnerabilities": ["OS Command Injection", "Argument Injection"],
+  "description": "The function is vulnerable to OS command injection because it concatenates user-controlled input into command line instructions. This is a critical issue because an attacker could inject commands to be executed on the server. The 'files', 'message', and 'tagName' parameters are directly included in the command line instructions without proper sanitization or validation. This could lead to argument injection or even arbitrary command execution if an attacker provides specially crafted input."
+}

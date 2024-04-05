@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'caption' variable is directly used to set the innerHTML of 'containerPlain' without any sanitization or encoding. This means that if an attacker can control the value of 'data-caption', they can inject arbitrary HTML or JavaScript code, which will be executed when the page is loaded."
+}

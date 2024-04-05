@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Path Traversal", "Information Disclosure", "Denial of Service"],
+  "description": "The function does not validate the 'options' parameter, which can lead to path traversal attacks if an attacker can control the 'contentBase' property. This can allow an attacker to read arbitrary files on the system. Additionally, error messages are directly returned to the client, potentially revealing sensitive information about the system (Information Disclosure). Finally, the function does not limit the number of requests a client can make, which can lead to a Denial of Service (DoS) attack if an attacker makes a large number of requests."
+}

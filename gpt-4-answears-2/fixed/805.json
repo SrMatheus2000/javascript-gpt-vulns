@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)"],
+"description": "The function does not have any mechanism to control or limit the consumption of resources. The 'writes' array can grow indefinitely, consuming more and more memory, which can lead to a Denial of Service (DoS) attack. Also, the function uses setInterval for polling, which can lead to event loop blocking if the operations within the interval take longer than the interval time, causing the application to become unresponsive."
+}

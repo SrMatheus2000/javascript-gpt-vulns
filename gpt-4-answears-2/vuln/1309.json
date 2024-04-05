@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user-supplied input in file paths without proper validation or sanitization, allowing an attacker to read, write, or delete files outside of the intended directories. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of files that can be uploaded, potentially leading to a denial of service if an attacker uploads a very large file."
+}

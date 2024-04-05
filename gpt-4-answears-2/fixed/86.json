@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution which is a type of attack where the attacker is able to inject properties into existing JavaScript language construct prototypes, such as objects. This happens in the while loop where the function fails to prevent the modification of Object prototype. An attacker can manipulate these attributes to insert rogue code into the application, leading to various impacts such as Remote Code Execution, Denial of Service, or even Cross-Site Scripting."
+}

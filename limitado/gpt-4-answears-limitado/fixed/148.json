@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Prototype Pollution", "Potential Denial of Service"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. This happens because the function directly assigns properties to the 'target' object without checking if the property already exists in the object's prototype. This can allow an attacker to manipulate the application's behaviour by modifying the object's prototype. Additionally, the recursive nature of the function can lead to a Denial of Service (DoS) if an attacker provides a deeply nested object, consuming large amounts of system resources."
+}

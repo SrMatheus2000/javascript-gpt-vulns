@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The rootID parameter is directly concatenated into the HTML string without proper sanitization or encoding, which could allow an attacker to inject malicious scripts. Although the escapeTextForBrowser function is used for the this.props.text, it is not used for the rootID parameter. An attacker could potentially provide a rootID that includes a script tag, leading to arbitrary JavaScript execution when the HTML is rendered."
+}

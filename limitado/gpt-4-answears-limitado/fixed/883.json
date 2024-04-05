@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It uses DOMPurify to sanitize input, which helps prevent Cross-Site Scripting (XSS) attacks. If DOMPurify is not supported, it manually slices the input between `<!--StartFragment-->` and `<!--EndFragment-->` markers, which could potentially be a point of concern if the input is not properly validated elsewhere. However, without further context, it's not possible to definitively say if this is a vulnerability. The function also handles errors gracefully with a try-catch block."
+}

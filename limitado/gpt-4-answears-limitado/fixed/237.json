@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'key' input which can lead to security vulnerabilities. If the 'key' input is an object, its properties are directly used without any checks. This can lead to an SQL Injection if the 'key' object properties are used in a SQL query. Also, if the 'key' is not an object, a number, or a valid ssb message id or flume offset, an error is thrown which can lead to Denial of Service (DoS) if the function is repeatedly called with invalid 'key' values."
+}

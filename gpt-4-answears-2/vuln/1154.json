@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-384: Session Fixation", "CWE-613: Insufficient Session Expiration"],
+"vulnerabilities": ["Session ID is predictable", "Session does not expire", "Session fixation vulnerability"],
+"description": "The function is vulnerable as it generates predictable session IDs which can lead to session hijacking. It also sets a session to never expire which can lead to unauthorized access if the session ID is compromised. Additionally, it is susceptible to session fixation attacks as it does not change the session ID after login."
+}

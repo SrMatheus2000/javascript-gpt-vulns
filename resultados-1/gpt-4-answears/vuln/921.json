@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Input Validation"],
+  "description": "The function handleSource is vulnerable to SQL Injection because it directly uses the user input (req.body.subscribed_url) in the postlookup function without any sanitization or parameterized query. An attacker can manipulate the 'subscribed_url' parameter to execute arbitrary SQL commands. Additionally, there is no input validation for the 'subscribed_url' and 'referrer' parameters, which can lead to unexpected behavior."
+}

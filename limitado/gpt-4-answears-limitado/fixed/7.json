@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function coverQuery does not validate the input for the 'coverage' parameter. It directly converts the input to a float using parseFloat without checking if the input is a valid number. This could lead to unexpected behavior or errors if the input is not a number. Similarly, the 'statMode' parameter is used in a regular expression match without any validation. This could lead to Regular Expression Denial of Service (ReDoS) if a malicious user provides a specially crafted string that takes a long time to process."
+}

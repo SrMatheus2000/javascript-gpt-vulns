@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function setText directly assigns a value to innerHTML. This can lead to Cross-Site Scripting (XSS) if the value or state[property].value is user-controlled and not properly sanitized. An attacker can inject malicious scripts as the value, which will be executed when the HTML is rendered."
+}

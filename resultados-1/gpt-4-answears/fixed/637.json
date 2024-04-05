@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Buffer Overflow", "Uncontrolled Resource Consumption"],
+  "description": "The function 'unique_name_352' is vulnerable to buffer overflow and uncontrolled resource consumption. The function does not check the size of the input before copying it to the buffer, which can lead to buffer overflow if the input is larger than the buffer. Additionally, the function does not limit the size of the buffer that can be allocated, which can lead to uncontrolled resource consumption if a large size is specified."
+}

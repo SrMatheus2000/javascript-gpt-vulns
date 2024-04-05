@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89", "CWE-20"],
+  "vulnerabilities": ["Command Injection", "SQL Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to command injection because it uses the exec function to execute shell commands that include user-supplied input. This could allow an attacker to execute arbitrary commands on the system. The function is also vulnerable to SQL injection because it concatenates user-supplied input into SQL queries. This could allow an attacker to manipulate the queries to access or modify data in ways not intended by the application. Finally, the function does not properly validate user-supplied input, which could lead to various types of attacks."
+}

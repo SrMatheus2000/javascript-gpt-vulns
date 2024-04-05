@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function baseExtend is recursively calling itself without any termination condition. This can lead to a stack overflow if the input is a deeply nested object, causing the application to crash. This can be exploited to perform a Denial of Service (DoS) attack. The function also does not handle circular references, which can lead to an infinite loop."
+}

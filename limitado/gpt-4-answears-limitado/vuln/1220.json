@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery $.get() method to send AJAX requests. The data returned from the server is directly inserted into the DOM using the .html() method. If the server-side script is compromised or if an attacker can manipulate the data being sent to the server, they could inject malicious scripts into the web page, which would then be executed in the context of the victim's browser. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

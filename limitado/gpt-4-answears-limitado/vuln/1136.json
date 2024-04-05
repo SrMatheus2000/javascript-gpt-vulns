@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function sanitizeHtml is vulnerable to Cross-site Scripting (XSS) attacks. This is because it does not properly sanitize the HTML input. Specifically, the function does not escape special characters in the input, which can allow an attacker to inject malicious scripts into the web page. This can lead to various security issues, such as stealing sensitive information, performing actions on behalf of the user, or spreading malware."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Command Injection", "Information Exposure", "Resource Exhaustion"],
+  "description": "The function is vulnerable to command injection because it constructs a command using user-supplied input (opts.range) and then executes it using proc(). An attacker could potentially inject malicious commands. Additionally, verbose error messages are printed to the console, which could expose sensitive information. Finally, the function creates a new function for each range block, which could lead to resource exhaustion if the number of range blocks is large."
+}

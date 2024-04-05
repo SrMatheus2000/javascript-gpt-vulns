@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Injection vulnerability", "Uncontrolled resource consumption"],
+  "description": "The function does not properly validate the input 'form' which can lead to injection attacks if the input is controlled by an attacker. Additionally, the function uses regular expressions which can lead to catastrophic backtracking, consuming excessive resources (CPU and memory), if the input is not properly sanitized. This can lead to Denial of Service (DoS) attacks."
+}

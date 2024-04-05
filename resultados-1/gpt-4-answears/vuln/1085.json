@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["SQL Injection", "Cross-site Scripting", "Path Traversal"],
+  "description": "The function 'unique_name_610' is vulnerable to SQL Injection, Cross-site Scripting, and Path Traversal attacks. The 'url' parameter is directly used in the 'http.get' function without any sanitization or validation, which can lead to SQL Injection if the 'url' parameter contains malicious SQL commands. Similarly, if the 'url' parameter contains malicious scripts, it can lead to Cross-site Scripting attacks. The function also does not limit the pathname to a restricted directory, which can lead to Path Traversal attacks if the 'url' parameter contains directory traversal sequences."
+}

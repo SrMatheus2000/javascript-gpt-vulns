@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Prototype Pollution", "Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Prototype Pollution which allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to several types of attacks like adding or modifying object properties. When polluted, it may lead to many issues related to application security. Also, the recursive call to the 'extend' function can lead to a Denial of Service (DoS) attack by causing the application to consume excessive resources, which can lead to performance issues or crashing."
+}

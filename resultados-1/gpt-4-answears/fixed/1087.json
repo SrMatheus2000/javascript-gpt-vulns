@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function unique_name_648 is vulnerable to Cross-site Scripting (XSS) attacks. It directly inserts the 'response_body' into the HTML document without sanitizing it. If 'response_body' contains malicious scripts, they will be executed in the user's browser."
+}

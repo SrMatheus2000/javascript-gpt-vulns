@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-95"],
+  "vulnerabilities": ["Command Injection", "Callback Injection"],
+  "description": "The function is vulnerable to command injection and callback injection. An attacker can manipulate the 'name' and 'url' parameters to execute arbitrary commands on the system. Additionally, an attacker can inject malicious code into the 'cb' parameter, leading to potential execution vulnerabilities."
+}

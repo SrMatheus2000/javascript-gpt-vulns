@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-326"],
+  "vulnerabilities": ["Insecure Direct Object References", "Inadequate Encryption Strength"],
+  "description": "The function createPkcs12 has several vulnerabilities. It does not properly validate user input, leading to potential Insecure Direct Object References (CWE-319) and Inadequate Encryption Strength (CWE-326) vulnerabilities. Additionally, it does not handle errors properly, potentially exposing sensitive information."
+}

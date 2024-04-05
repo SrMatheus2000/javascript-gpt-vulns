@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It uses a language highlighter to format code snippets and sanitize text content. It also replaces CSS classes in the highlighted output. All inputs seem to be properly handled and sanitized, reducing the risk of injection attacks."
+}

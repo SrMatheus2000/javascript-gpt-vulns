@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe. It is a function to extend objects, and it has checks in place to prevent prototype pollution by filtering out '__proto__'. It also checks if the property is enumerable before copying it. There is no apparent vulnerability in this function."
+}

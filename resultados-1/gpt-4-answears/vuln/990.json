@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to SQL Injection because it directly uses the 'metadata.id' and 'doc.data' in the SQL query without proper sanitization or parameterization. This could allow an attacker to manipulate the SQL query and perform unauthorized actions. It is also vulnerable to Cross-Site Scripting (XSS) because it directly uses the 'metadata.id' and 'doc.data' in the HTML output without proper encoding or escaping. This could allow an attacker to inject malicious scripts and perform actions on behalf of the user. Lastly, the function does not validate the input 'metadata.id' and 'doc.data' before using them, which could lead to unexpected behavior or errors."
+}

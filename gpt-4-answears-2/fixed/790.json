@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-125", "CWE-119"],
+"vulnerabilities": ["Buffer Overflow", "Out-of-bounds Read"],
+"description": "The function allocates an unsafe buffer, which can lead to buffer overflow vulnerabilities. It also slices the buffer without checking if the end index is within the buffer's length, which can lead to out-of-bounds read vulnerabilities."
+}

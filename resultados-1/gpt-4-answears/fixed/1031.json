@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the input 'val' before using it in SQL queries. This could lead to SQL Injection attacks where an attacker could inject malicious SQL code via 'val' parameter. This is especially true for the case when 'val' is an object and 'stringifyObjects' is false, as 'val' is directly passed to 'SqlString.objectToValues' function without any sanitization. Also, the function attempts to escape certain characters in 'val' but this may not be sufficient to prevent all forms of SQL Injection."
+}

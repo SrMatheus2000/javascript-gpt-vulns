@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Buffer Overflow", "Denial of Service"],
+  "description": "The function does not validate or limit the size of the input 'data'. If 'data' is large, it can cause a Buffer Overflow (CWE-119) leading to potential memory corruption. Also, the function keeps pushing 'data' into 'buf' array without any limit which can lead to excessive memory usage causing a Denial of Service (CWE-400)."
+}

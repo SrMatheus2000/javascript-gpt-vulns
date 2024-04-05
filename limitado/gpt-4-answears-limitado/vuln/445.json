@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-20"],
+  "vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to SQL Injection attacks (CWE-89) because it concatenates user-controlled input into SQL queries without properly sanitizing it. This can be seen in the `PGStore.prototype.query` and `PGStore.prototype.quotedTable` methods where the `query` and `tableName` variables are directly used in SQL queries. An attacker could potentially manipulate these inputs to execute arbitrary SQL commands. Additionally, the function does not perform sufficient input validation (CWE-20) on the `options` object, which could lead to unexpected behavior if an attacker provides malicious input."
+}

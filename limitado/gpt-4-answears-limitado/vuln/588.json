@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "The function is vulnerable to timing attacks. The function uses the 'crypto.timingSafeEqual' method to compare two strings. However, the time it takes to execute this method can vary depending on the input, which can potentially allow an attacker to guess the correct string by measuring the time it takes for the function to return a result. This is a type of side-channel attack."
+}

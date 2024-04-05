@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The function constructs a command to be executed using the exec function with inputs orig and compareTo. Although these inputs are escaped using a utility function, if the utility function is not properly implemented, it could lead to command injection vulnerabilities. An attacker could potentially inject malicious commands through the orig and compareTo parameters, leading to unauthorized actions."
+}

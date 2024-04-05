@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22) because it uses user input to construct a file path without properly sanitizing it. This could allow an attacker to access, read, or modify files outside of the intended directory. It also suffers from External Control of File Name or Path (CWE-73) as it allows user-controlled input to influence or control the reading of files. Lastly, it is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the amount of data that can be read from a file, potentially leading to a denial of service if an attacker requests a large file."
+}

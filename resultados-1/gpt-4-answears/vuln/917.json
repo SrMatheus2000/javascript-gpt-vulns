@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function _showHeader is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input (repo.username, repo.reponame, repo.branch) in the HTML content without proper sanitization or encoding. An attacker could inject malicious scripts by manipulating these values, leading to potential security risks such as data theft, site defacement, or reverse shell attacks."
+}

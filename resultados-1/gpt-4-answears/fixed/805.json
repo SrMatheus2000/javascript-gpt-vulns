@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function 'unique_name_437' is vulnerable to Denial of Service (DoS) attacks. The vulnerability is due to the lack of control over the size of the 'buf' array and the 'writes' array. An attacker can continuously call the 'write' function with large data, causing the 'buf' array and 'writes' array to grow indefinitely, leading to excessive memory consumption. This can result in the application becoming unresponsive or crashing, constituting a Denial of Service (DoS) attack. This vulnerability is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

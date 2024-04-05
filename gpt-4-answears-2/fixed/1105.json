@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The escapeHtml function is used to sanitize the 'table' parameter before it is used in a string that is later added to the page content. However, if the escapeHtml function is not properly implemented, it could allow an attacker to inject malicious scripts into the web page, leading to XSS attacks. This is identified as CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "URL Redirection to Untrusted Site ('Open Redirect')"],
+  "description": "The function sanitizeURL is vulnerable because it only checks if the URL starts with 'javascript:', 'vbscript:', or 'data:'. An attacker could bypass this check by adding spaces or encoding the malicious script. Also, the function does not validate or sanitize the 'href' parameter, which could lead to an open redirect vulnerability if the 'href' parameter is controlled by the user."
+}

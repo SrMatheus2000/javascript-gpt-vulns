@@ -1,0 +1,26 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-22",
+    "CWE-23",
+    "CWE-36",
+    "CWE-73",
+    "CWE-74",
+    "CWE-99",
+    "CWE-116",
+    "CWE-117",
+    "CWE-120",
+    "CWE-134",
+    "CWE-601"
+  ],
+  "vulnerabilities": [
+    "Path Traversal",
+    "Directory Traversal",
+    "Unrestricted File Upload",
+    "Server-side Request Forgery (SSRF)",
+    "Command Injection",
+    "Improper Error Handling",
+    "Use of Hard-coded Credentials",
+    "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+    "Improper Restriction of Excessive

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function 'unique_name_468' is vulnerable to buffer overflow. It creates a new buffer of a specified length and copies data from '_buffer' into it without checking if the length exceeds the size of '_buffer'. This can lead to overflows if the length is greater than the size of '_buffer'."
+}

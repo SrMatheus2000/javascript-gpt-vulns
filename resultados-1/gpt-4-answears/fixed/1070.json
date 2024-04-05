@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-117: Improper Output Neutralization for Logs"],
+  "vulnerabilities": ["Log Injection"],
+  "description": "The function logs an error message that includes user-supplied data, which can lead to log injection if the error message is not properly sanitized. An attacker could potentially inject malicious content into the logs."
+}

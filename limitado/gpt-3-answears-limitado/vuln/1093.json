@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Unsanitized parameterized use of `render`", "Possibility of remote code execution"],
+  "description": "The function is vulnerable to CWE-94 (Improper Control of Generation of Code ('Code Injection')) and CWE-95 (Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')). The function does not properly sanitize the `render` parameter, which could allow an attacker to execute arbitrary code remotely."
+}

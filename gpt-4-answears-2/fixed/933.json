@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure Through Error Messages"],
+"description": "The function does not properly validate the input when loading the YAML. This could lead to processing of malicious data. Additionally, the function exposes detailed error messages which could provide an attacker with valuable information about the system."
+}

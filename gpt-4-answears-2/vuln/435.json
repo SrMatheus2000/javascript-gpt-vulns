@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses string concatenation to create HTML content, which is then inserted into the DOM using jQuery's $ function. This can allow an attacker to inject malicious scripts into the web page if they can control the 'settings' object. The 'settings' object properties like 'maxWidth', 'title', 'id', 'content', etc. are directly used in the HTML string without any sanitization or encoding, making it possible for an attacker to inject script tags or other malicious content."
+}

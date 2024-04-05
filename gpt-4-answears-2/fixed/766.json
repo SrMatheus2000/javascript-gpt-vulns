@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted use of dangerous function"],
+"description": "The function uses the Function constructor in an unrestricted way, which can lead to Remote Code Execution (RCE) if user-controlled input is passed into the function. The Function constructor is a form of eval() which can execute arbitrary JavaScript code and potentially lead to code injection attacks."
+}

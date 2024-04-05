@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. It uses the spawn function to execute a command that is built by concatenating unsanitized input into the command string. An attacker could inject arbitrary commands by providing specially crafted input."
+}

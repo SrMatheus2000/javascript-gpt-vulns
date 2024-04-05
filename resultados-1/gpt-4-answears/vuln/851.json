@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'unique_name_448' is vulnerable to code injection. This is because it uses the 'call' function with user-supplied input (ftr), which can be manipulated to execute arbitrary code. An attacker could potentially inject malicious code by passing a crafted function as 'ftr'."
+}

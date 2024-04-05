@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-117: Improper Output Neutralization for Logs", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Log Injection", "Unvalidated Input"],
+  "description": "The function logs error messages that include the error object directly, which could lead to log injection if the error object contains malicious data. Additionally, the function does not validate the URL it uses to start the Selenium server, which could lead to unexpected behavior if the URL is not a valid Selenium server."
+}

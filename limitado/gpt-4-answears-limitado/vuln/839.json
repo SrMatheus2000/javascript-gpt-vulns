@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-602: Client-Side Enforcement of Server-Side Security"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function isSafeMethod is vulnerable to prototype pollution because it directly accesses properties on objects without checking if the property is a prototype property. An attacker can manipulate these properties to change the behavior of the application, leading to various security issues such as denial of service, remote code execution, or property injection."
+}

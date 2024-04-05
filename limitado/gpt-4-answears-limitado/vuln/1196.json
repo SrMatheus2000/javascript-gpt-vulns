@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function PMA_unInlineEditRow is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the .html() method in jQuery, which sets the HTML content of an element. If the content being set is user-controlled and not properly sanitized, it can lead to XSS attacks. In this function, new_html is being set as the HTML content of $this_sibling, and new_html can contain user-controlled input from the textarea or other elements. An attacker can inject malicious scripts as the value of these elements, which will then be executed when the HTML content is set."
+}

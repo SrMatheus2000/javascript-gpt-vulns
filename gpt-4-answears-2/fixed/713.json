@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209", "CWE-117"],
+"vulnerabilities": ["Information Exposure Through an Error Message", "Improper Output Neutralization for Logs"],
+"description": "The function exposes potentially sensitive information through error messages (CWE-209). It also fails to neutralize output before it is written to logs, which could allow an attacker to insert malicious content into the logs (CWE-117)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is simply extracting the last sourceMappingURL from a CSS string. There is no direct user input being processed, no insecure API calls, and no insecure data handling that could lead to common vulnerabilities such as Cross-Site Scripting (XSS), SQL Injection, or Command Injection. However, without the context of the rest of the application, it's impossible to say for certain that there are no vulnerabilities."
+}

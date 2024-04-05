@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function seems to be vulnerable to code injection attacks. The function accepts an 'options' object and directly spreads it into another object without any validation or sanitization. This could allow an attacker to inject arbitrary properties and values into the object. Additionally, the function uses the 'eval' function, which can execute arbitrary JavaScript code. If an attacker can control the input to 'eval', they could execute arbitrary code in the context of the application."
+}

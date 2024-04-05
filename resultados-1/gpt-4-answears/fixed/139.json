@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function allows for code injection through the 'allowInjection' option. If this option is set to true, it could allow an attacker to execute arbitrary code. This is a serious security risk as it can lead to a complete system compromise."
+}

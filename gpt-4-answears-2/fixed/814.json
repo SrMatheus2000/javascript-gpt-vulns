@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The username and reponame are directly inserted into the HTML without any sanitization. An attacker could inject malicious scripts by manipulating the username or reponame."
+}

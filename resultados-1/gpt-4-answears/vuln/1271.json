@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input directly in a command that is executed by the operating system. An attacker could manipulate the 'start', 'input', 'duration', or 'output' parameters to execute arbitrary commands on the system."
+}

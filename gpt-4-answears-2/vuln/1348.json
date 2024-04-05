@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-918"],
+"vulnerabilities": ["Path Traversal", "Server-Side Request Forgery (SSRF)"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user input to construct a file path in 'fs.readFile(__dirname + '/cache')' without properly sanitizing the input. This could allow an attacker to access, read, or modify files outside of the intended directory. The function is also vulnerable to Server-Side Request Forgery (SSRF) (CWE-918) because it sends a HTTP request to a URL constructed from user input in 'http.get('http://169.254.169.254/latest/meta-data/instance-id')' without validating the input. This could allow an attacker to make the server send a request to an arbitrary destination, potentially leading to information disclosure or other unintended consequences."
+}

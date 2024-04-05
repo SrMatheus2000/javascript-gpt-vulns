@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function scanWifi is vulnerable to command injection. This is because it concatenates a user-supplied string (config.iface) directly into a command string (commandStr) that is later passed to exec(), which executes the command in a shell. An attacker could provide a specially crafted string that includes shell commands, which would then be executed on the server."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)"],
+  "description": "The function modifies the input object directly which can lead to unexpected behavior if the object is assumed to be immutable. This is a violation of the principle of least surprise. The function should return a new object instead of modifying the input object."
+}

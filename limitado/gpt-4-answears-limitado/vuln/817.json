@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-330: Use of Insufficiently Random Values", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Insecure Randomness", "Potential Denial of Service"],
+  "description": "The function uses Math.random() to generate random numbers, which is not cryptographically secure and can lead to predictable randomness (CWE-330). Also, the function does not have any mechanism to prevent excessive resource consumption when processing large inputs, which can lead to a potential Denial of Service (DoS) attack (CWE-400)."
+}

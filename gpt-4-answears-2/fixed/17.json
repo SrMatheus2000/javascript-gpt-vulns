@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted use of dangerous function"],
+"description": "The function uses '_remove()' and '_data' which are not standard JavaScript methods and could potentially be dangerous if they are not properly defined elsewhere in the code. This could lead to unexpected behavior or security vulnerabilities. This is an example of CWE-470: Unrestricted use of a critical API."
+}

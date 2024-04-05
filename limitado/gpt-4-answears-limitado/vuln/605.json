@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Insecure Default Initialization", "Potential Information Disclosure", "Weak Cryptography"],
+  "description": "The function createPrivateKey is vulnerable due to several reasons. Firstly, it does not validate the input for 'keyBitsize', 'options', and 'callback' which can lead to unexpected behavior (CWE-20). Secondly, it uses a default keyBitsize of 2048 if none is provided, which may not be secure enough for certain applications (CWE-310). Lastly, the function may expose sensitive information such as the private key and password if an error occurs during the execution of the openssl command (CWE-200)."
+}

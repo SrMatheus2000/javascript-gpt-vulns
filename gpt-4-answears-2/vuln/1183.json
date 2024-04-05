@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+"description": "The function does not validate or sanitize the 'options' input which can lead to Insecure Direct Object References (IDOR). An attacker can manipulate the 'options' input to access or modify data they are not authorized to access."
+}

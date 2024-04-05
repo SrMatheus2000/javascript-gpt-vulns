@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["No input validation", "Potential SQL Injection"],
+  "description": "The function does not perform any validation on the 'nodes' input. This could lead to unexpected behavior or errors if the input is not as expected. Additionally, the function appears to be manipulating and using the 'nodes' input in a way that could potentially lead to SQL Injection if the input is not properly sanitized. This is particularly concerning in the 'findUniqueName' and 'insertAfter' functions, where the 'node.field' and 'existingFieldNames' variables could potentially be manipulated to execute unintended SQL commands."
+}

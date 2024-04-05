@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not sanitize or escape the 'value' parameter in the 'wrapValue' and '_wrapString' methods. This could lead to SQL Injection if the 'value' parameter can be controlled by an attacker. An attacker could provide a 'value' that modifies the SQL query to change its intent, leading to unauthorized access or modification of data."
+}

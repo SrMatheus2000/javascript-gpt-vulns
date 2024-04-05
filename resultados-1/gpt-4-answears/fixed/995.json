@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Missing Input Validation", "Algorithm Not Enforced"],
+  "description": "The function jwt_decode is vulnerable because it does not validate the input 'noVerify' and 'algorithm'. If 'noVerify' is set to true, the function will not verify the signature of the JWT token, which allows an attacker to forge tokens. Additionally, the function does not enforce a secure algorithm for the signature verification, which allows an attacker to choose a weak or broken algorithm. This is a violation of CWE-347: Improper Verification of Cryptographic Signature."
+}

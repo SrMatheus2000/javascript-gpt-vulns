@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-119"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function does not perform any input validation or boundary checks when copying the data from the request into the buffer. This can lead to a buffer overflow vulnerability (CWE-119) if the content length provided in the request header is larger than the buffer size."
+}

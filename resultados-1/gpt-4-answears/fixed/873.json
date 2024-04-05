@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-311: Missing Encryption of Sensitive Data"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References"],
+  "description": "The function 'unique_name_490' is vulnerable as it uses a cryptographic algorithm to compute a secret key. However, there is no validation or error handling mechanism to ensure the security of the key. If the key length is too large, the function simply rejects the promise with an error message, which could potentially expose sensitive information. Additionally, the function does not encrypt the private key, which could lead to insecure storage and potential exposure of sensitive data."
+}

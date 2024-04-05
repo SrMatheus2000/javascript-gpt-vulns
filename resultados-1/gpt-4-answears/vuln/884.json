@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function is vulnerable to buffer overflow attacks. The 'new Buffer()' function is deprecated due to security and usability issues, and it can lead to buffer overflow if the input is not properly validated. It's recommended to use 'Buffer.from()', 'Buffer.alloc()', or 'Buffer.allocUnsafe()' instead. The 'options.bufferSize' is not defined in the function, which could lead to unexpected behavior."
+}

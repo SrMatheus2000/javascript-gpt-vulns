@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the 'options' object that is passed to it. This can lead to a Prototype Pollution vulnerability if an attacker can control the properties of the 'options' object. Prototype Pollution can lead to several types of attacks including Denial of Service (DoS), Remote Code Execution (RCE), and Property Injection."
+}

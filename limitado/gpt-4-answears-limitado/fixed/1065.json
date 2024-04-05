@@ -1,0 +1,14 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-20",
+    "CWE-89",
+    "CWE-22"
+  ],
+  "vulnerabilities": [
+    "Improper Input Validation",
+    "SQL Injection",
+    "Path Traversal"
+  ],
+  "description": "The function printDirect is vulnerable due to several reasons. Firstly, there is no input validation for the parameters passed to the function. This can lead to unexpected behavior or even security vulnerabilities if the function is called with malicious input (CWE-20). Secondly, the function uses the input parameters to construct a command that is executed on the system. If an attacker can control the input parameters, they could inject arbitrary commands to be executed on the system (CWE-89). Lastly, the function writes the input data to a temporary file in the system's temp directory. If an attacker can control the input data, they could potentially write arbitrary data to any location on the system (CWE-22)."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function 'unique_name_371' is vulnerable to path traversal attacks. The 'from' variable, which is used as a parameter in the 'mkdirp' function, is not validated or sanitized before use. This could allow an attacker to manipulate the file path to access, modify, or delete files outside of the intended directory."
+}

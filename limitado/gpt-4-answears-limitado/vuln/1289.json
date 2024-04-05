@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a serious security vulnerability in JavaScript. It allows an attacker to manipulate the properties of JavaScript objects. If the 'parts' parameter can be controlled by an attacker, they can modify the prototype of 'Object', adding or modifying existing properties. This can lead to a variety of impacts such as Denial of Service, Remote Code Execution, or other unintended side effects."
+}

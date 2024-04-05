@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution. The function does not validate the 'path' parameter which can be manipulated to add or modify properties of the Object prototype. These changes to the Object prototype would be applied to all objects in the current context, leading to potential denial of service (DoS), Remote Code Execution (RCE) or property injection."
+}

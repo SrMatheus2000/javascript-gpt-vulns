@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-918: Server-Side Request Forgery (SSRF)"],
+"vulnerabilities": ["Uncontrolled Resource Consumption", "Server-Side Request Forgery"],
+"description": "The function downloadToFile is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of the file being downloaded. This could lead to a denial of service if an attacker is able to trigger the download of a large file. Additionally, the function is vulnerable to Server-Side Request Forgery (CWE-918) because it does not validate or restrict the URL being used to download the file. An attacker could potentially manipulate the URL to make the server download a file from a malicious source."
+}

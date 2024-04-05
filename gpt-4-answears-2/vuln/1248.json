@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'val' parameter is used to create a new span element and is also used in the creation of the 'xbutton' element. If an attacker can control the value of 'val', they could inject malicious scripts that would be executed when the span or button is rendered in the browser. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

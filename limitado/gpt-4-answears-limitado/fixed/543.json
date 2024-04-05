@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The vulnerability exists because the function does not properly sanitize the 'options.path' input, which is used to construct file paths. An attacker could potentially manipulate 'options.path' to navigate outside of the intended directory, leading to unauthorized access to files."
+}

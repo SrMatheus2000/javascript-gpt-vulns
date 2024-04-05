@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the `innerHTML` property to insert user-controlled data (`html`) into the HTML document. If an attacker can control the `html` variable, they can inject arbitrary JavaScript code into the web page, which will be executed when the page is loaded. This can lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'pkg.path' variable is used in file system operations without proper sanitization. An attacker could potentially manipulate 'pkg.path' to access directories and files outside of the intended scope, leading to unauthorized access to sensitive information or potential code execution."
+}

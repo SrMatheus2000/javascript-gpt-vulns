@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Email validation is not robust", "Potential for open redirect"],
+  "description": "The function is vulnerable as it does not properly validate the email input. The regular expression used for email validation is not robust and can allow invalid emails to pass through. Additionally, the function does not check for potential open redirects in the email input, which could lead to users being redirected to untrusted sites."
+}

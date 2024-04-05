@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal attack as it uses the 'pid' parameter directly in the 'fs.readFile' function without proper validation or sanitization. An attacker could potentially manipulate the 'pid' to read arbitrary files on the system. Additionally, the function does not have any control over the amount of resources it consumes. If the 'pid' parameter is manipulated to point to a large file, it could lead to excessive consumption of system resources, leading to a Denial of Service (DoS) condition."
+}

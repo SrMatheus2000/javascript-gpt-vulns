@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Unvalidated input", "Error message information leak"],
+  "description": "The function does not validate the 'options' parameter, which can lead to unexpected behavior if malicious input is provided. This is an instance of CWE-20. Additionally, the function throws an error with a message that could potentially reveal sensitive information about the system's file structure, which is an instance of CWE-209."
+}

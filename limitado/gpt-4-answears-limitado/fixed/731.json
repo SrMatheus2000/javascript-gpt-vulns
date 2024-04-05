@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The 'set' method of the 'Mimer' object allows for arbitrary input to be set as a MIME type. If an attacker can control the 'ext' parameter, they could potentially execute arbitrary code. This is because the 'ext' parameter is not properly sanitized before being used. This vulnerability is classified as CWE-94."
+}

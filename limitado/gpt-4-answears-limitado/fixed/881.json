@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it takes an HTML string as input and directly inserts it into the DOM without proper sanitization. If the 'DOMPurify' library is not available or not supported, the function falls back to a less secure method of sanitizing the HTML input, which only removes certain fragments of the HTML string. This could allow an attacker to inject malicious scripts into the web page, leading to various types of attacks such as stealing sensitive information or performing actions on behalf of the user."
+}

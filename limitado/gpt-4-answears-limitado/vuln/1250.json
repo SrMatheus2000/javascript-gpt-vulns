@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery $.trim() and $.text() methods to sanitize user input, but these methods do not protect against XSS attacks. An attacker could inject malicious scripts into the input fields, which would then be executed when the page is rendered. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

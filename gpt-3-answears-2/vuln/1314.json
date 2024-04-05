@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Command Injection"],
+  "description": "The 'template' function is vulnerable to code injection and command injection attacks. It uses the 'eval' function to execute the template literal, which can lead to arbitrary code execution. An attacker can manipulate the 'literal' parameter to inject malicious code or commands, potentially compromising the system."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The function does not properly sanitize the 'path' variable, which is used to access file system resources. An attacker could manipulate the 'path' variable to access arbitrary files and directories stored on the file system, including application source code, configuration and critical system files."
+}

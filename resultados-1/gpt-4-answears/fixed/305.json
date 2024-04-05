@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. If an attacker provides a large number of ranges in the header, the function will consume a lot of resources to process them, potentially leading to resource exhaustion. This is due to the lack of input validation and control over the number of iterations in the for loop. Additionally, the function does not validate the input header, which could lead to unexpected behavior if the input is not in the expected format."
+}

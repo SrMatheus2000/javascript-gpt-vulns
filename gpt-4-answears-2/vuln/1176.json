@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471", "CWE-476"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)", "NULL Pointer Dereference"],
+"description": "The function is vulnerable to Modification of Assumed-Immutable Data (MAID) as it modifies the input object directly which can lead to unexpected behavior if the object is assumed to be immutable. Also, the function does not check if the object properties are null before calling the compact function on them, which can lead to NULL Pointer Dereference."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'repo.branch' variable is passed to the 'child.exec' function without proper sanitization or validation. An attacker could potentially inject malicious commands by manipulating the 'repo.branch' variable."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. It allows for the mutation of the Object.prototype, which can lead to unexpected behavior and security vulnerabilities."
+}

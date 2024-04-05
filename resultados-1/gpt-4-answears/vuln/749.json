@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function 'whereis' is vulnerable to command injection because it concatenates the 'name' parameter directly into the command string that is executed by the 'cp.exec' function. An attacker could provide a malicious 'name' parameter that includes command line special characters, allowing them to execute arbitrary commands on the system."
+}

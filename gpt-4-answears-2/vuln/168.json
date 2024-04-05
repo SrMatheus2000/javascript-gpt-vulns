@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-706", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Use of Incorrectly-Resolved Name or Reference", "Uncontrolled Resource Consumption"],
+"description": "The function reads a file from a path provided by the user without validating or sanitizing the input, which could lead to Path Traversal vulnerability (CWE-22). The function also uses the 'grunt.util.error' function which could lead to Use of Incorrectly-Resolved Name or Reference (CWE-706). Additionally, the function does not limit the size of the file being read, which could lead to Uncontrolled Resource Consumption (CWE-400)."
+}

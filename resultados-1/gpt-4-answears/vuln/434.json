@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable. It is a simple function that checks if a given value is an integer using a regular expression. There are no security vulnerabilities associated with this function."
+}

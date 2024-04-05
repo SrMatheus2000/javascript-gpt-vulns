@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function unique_name_449 is vulnerable to code injection. It uses the 'new Function' constructor to create a new function from a string, which is a form of eval. This can lead to arbitrary code execution if an attacker can control the 'template' parameter. The function does attempt to sanitize the 'template' parameter by replacing certain characters, but this is not sufficient to prevent all possible code injection attacks."
+}

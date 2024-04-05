@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-347", "CWE-20"],
+"vulnerabilities": ["Improper Verification of Cryptographic Signature", "Improper Input Validation"],
+"description": "The function is vulnerable to cryptographic signature verification bypass. The 'alg' field in the header can be manipulated to 'none', bypassing the signature verification process. This can allow an attacker to forge a JWT. Additionally, the function does not properly validate the input, leading to potential security risks."
+}

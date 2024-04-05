@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-79",
+    "CWE-116"
+  ],
+  "vulnerabilities": [
+    "Cross-Site Scripting (XSS)",
+    "Untrusted Data Exposure"
+  ],
+  "description": "The code is vulnerable to Cross-Site Scripting (XSS) and Untrusted Data Exposure. The 'cortex_data' variable is obtained from user input and directly used in the 'popupHtml' variable without proper sanitization or validation. This can allow an attacker to inject malicious scripts or HTML code, leading to XSS attacks. Additionally, the 'cortex_data' variable is stored in the DOM using the 'html()' function, which can expose sensitive data to potential attackers."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-94"],
+"vulnerabilities": ["OS Command Injection", "Code Injection"],
+"description": "The function 'runNpmCommand' is vulnerable to OS command injection as it directly uses the input in a command that is executed by the system. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function 'toggleInstall' and 'upgrade' are vulnerable to code injection as they directly use the input in a command that is executed by the system. This could allow an attacker to execute arbitrary code on the system."
+}

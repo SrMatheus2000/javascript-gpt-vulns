@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the innerHTML property to directly insert user-controlled input (the 'row' variable) into the HTML content of 'divRow'. An attacker could potentially inject malicious scripts into the 'row' variable, which would then be executed when the HTML content is rendered by the browser."
+}

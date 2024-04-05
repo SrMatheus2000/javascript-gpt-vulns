@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'entry.html' and 'entry.id' values in the DOM without properly sanitizing them first. An attacker could potentially inject malicious scripts through these values, which would then be executed in the user's browser when the page is loaded. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

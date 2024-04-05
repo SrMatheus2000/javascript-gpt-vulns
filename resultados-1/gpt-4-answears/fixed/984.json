@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918: Server-Side Request Forgery (SSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+  "description": "The function 'getLatestVersion' is vulnerable to Server-Side Request Forgery (SSRF) as it makes HTTP requests to an external server based on user input without any validation. An attacker could potentially manipulate the 'url' variable to make the server perform requests to arbitrary URLs, possibly leading to unauthorized actions. Additionally, the function does not validate or sanitize the input it receives before using it, which could lead to other types of attacks such as Cross-Site Scripting (XSS) or SQL Injection."
+}

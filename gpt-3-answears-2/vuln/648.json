@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-338"],
+  "vulnerabilities": ["Inadequate Encryption Strength"],
+  "description": "The function 'unique_name_334' uses the 'crypto.randomBytes' function to generate a random number. However, it only uses a single byte from the generated random bytes, which results in a limited range of possible values. This can lead to inadequate encryption strength and make the function vulnerable to brute-force attacks."
+}

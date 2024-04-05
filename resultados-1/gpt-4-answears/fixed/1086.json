@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery .live() method to attach event handlers to elements. This method is deprecated as of jQuery 1.7 and removed in 1.9. The function also uses the .get() method to send AJAX requests, which can be exploited if the URL parameter is not properly sanitized. The function does not properly sanitize the 'curr_table_name' and 'curr_column_name' variables before using them in the 'question' variable, which is then passed to the .PMA_confirm() method. This could allow an attacker to inject malicious scripts into the web page, leading to XSS attacks."
+}

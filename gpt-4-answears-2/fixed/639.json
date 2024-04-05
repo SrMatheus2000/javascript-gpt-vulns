@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it does not properly sanitize the 'pathname' input. Although it checks for '../' and '..\\', it does not cover all possible encodings or methods of referencing parent directories. This could allow an attacker to access sensitive files outside of the intended directories. The function is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of entries that can be added to the 'etagCache' object. This could allow an attacker to cause a denial of service by consuming all available memory."
+}

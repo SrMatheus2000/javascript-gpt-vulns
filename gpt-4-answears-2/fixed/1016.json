@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-328: Reversible One-Way Hash"],
+"vulnerabilities": ["Insecure Cryptographic Storage"],
+"description": "The function uses SHA-1 for hashing which is considered insecure for many cryptographic functions. SHA-1 is vulnerable to collision attacks where two different inputs produce the same hash output, potentially allowing an attacker to substitute or modify the data. The function also does not implement any form of salt for the hashing process, making it vulnerable to rainbow table attacks."
+}

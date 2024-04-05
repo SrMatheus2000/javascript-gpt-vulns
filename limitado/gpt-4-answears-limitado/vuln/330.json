@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-384: Session Fixation"],
+  "vulnerabilities": ["Insecure Cryptographic Operations", "Session Management"],
+  "description": "The function seems to be using a cryptographic operation for signing a message. However, it's not clear if the cryptographic algorithm used is secure. If a weak or broken cryptographic algorithm is used, it can lead to vulnerabilities where an attacker can break the encryption and gain unauthorized access. Additionally, the function seems to be managing a session (unlocking an account and then performing operations). If the session management is not handled securely, it can lead to session fixation attacks where an attacker can hijack a user's session."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327", "CWE-311"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm", "Missing Encryption of Sensitive Data"],
+"description": "The function uses 'sha1' for HMAC which is considered weak due to known vulnerabilities. It is recommended to use a stronger hash function like 'sha256' or 'sha3'. Also, the function uses 'aes-256-cbc' for encryption which is vulnerable to padding oracle attacks. It is recommended to use an authenticated encryption mode like GCM. Furthermore, the function does not handle errors that may occur during the encryption process, potentially leading to exposure of sensitive information."
+}

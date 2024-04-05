@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Improper Input Validation"],
+  "description": "The function `findIndexes` is vulnerable to Regular Expression Denial of Service (ReDoS) attacks. This is because it uses a regular expression (`new RegExp("\\b(?:" + identifiers.join("|") + ")\\b", "g")`) that can cause catastrophic backtracking when given a specially crafted input, leading to excessive CPU usage. Additionally, the function does not validate the `identifiers` input, which can lead to unexpected behavior if the input is not an array or contains non-string elements."
+}

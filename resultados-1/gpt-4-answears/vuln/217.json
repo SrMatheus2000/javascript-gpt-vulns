@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'extendTranslation' is vulnerable to code injection. This is due to the use of interpolation and nesting within the function, which can allow an attacker to inject malicious code. This is particularly dangerous if user-supplied input is passed into the function without proper sanitization. The vulnerability corresponds to CWE-94: Improper Control of Generation of Code ('Code Injection')."
+}

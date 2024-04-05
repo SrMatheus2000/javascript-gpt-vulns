@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable. It is a simple function that validates a data URL using a regular expression. It does not have any known vulnerabilities or CWEs (Common Weakness Enumeration). It does not perform any unsafe operations, does not use any deprecated or insecure functions, and does not have any error handling or input validation issues."
+}

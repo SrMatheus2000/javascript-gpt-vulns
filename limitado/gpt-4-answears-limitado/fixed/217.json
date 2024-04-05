@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize the 'string' input before using it in the 'match' function and appending it to the DOM. This could lead to a Cross-Site Scripting (XSS) attack, where an attacker could inject malicious scripts into the web page, which would then be executed in the user's browser."
+}

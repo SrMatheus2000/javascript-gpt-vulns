@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-89"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses the .html() method to insert user-controlled data into the DOM. This can allow an attacker to inject malicious scripts that can steal sensitive information or perform actions on behalf of the user. The function is also vulnerable to SQL Injection because it concatenates user-controlled data directly into a SQL query. This can allow an attacker to manipulate the query to access, modify or delete data in the database."
+}

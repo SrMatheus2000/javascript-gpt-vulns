@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression to validate email addresses. However, the regular expression is not specific enough and can lead to Regular Expression Denial of Service (ReDoS) if a long string of characters is passed as an argument. An attacker can exploit this by providing a long, specially crafted string as an email address, causing the application to consume excessive resources and potentially crash."
+}

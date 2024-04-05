@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any security vulnerabilities. It is simply parsing a string input to match a specific format and returning an array of values. It does not execute any potentially harmful operations such as eval(), does not modify any global objects, and does not expose any sensitive information. It also properly handles potential null or undefined inputs."
+}

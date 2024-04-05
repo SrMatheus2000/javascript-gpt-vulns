@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918", "CWE-20"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) as it takes a URL from the response headers and makes a request to it without any validation. This could allow an attacker to make the server send requests to arbitrary URLs, potentially accessing sensitive information or services within the server's network. This is related to CWE-918. Additionally, there is no input validation on the 'chunk' data received in the 'data' event listener, which could lead to other types of vulnerabilities depending on how 'self.responseText' is used, related to CWE-20."
+}

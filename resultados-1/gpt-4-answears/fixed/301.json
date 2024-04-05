@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-89"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and SQL Injection attacks. The XSS vulnerability arises from the fact that the function does not properly sanitize the 'markup' input before using it to generate HTML. This could allow an attacker to inject malicious scripts that would be executed when the generated HTML is rendered in a web browser. The SQL Injection vulnerability arises from the fact that the function uses the 'markup' input to generate a cache key without properly sanitizing it. This could allow an attacker to manipulate the SQL query used to retrieve the cached HTML, potentially leading to unauthorized access to sensitive data or other malicious activities."
+}

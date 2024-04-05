@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function is not vulnerable. It parses a query string into an object. It also has a protection mechanism against overriding existing properties, which prevents potential prototype pollution attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function uses JSON.stringify() in a loop, which can be very CPU intensive if the input is large. This can lead to resource exhaustion, making the system unresponsive. This is known as a Denial of Service (DoS) attack. The vulnerability is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

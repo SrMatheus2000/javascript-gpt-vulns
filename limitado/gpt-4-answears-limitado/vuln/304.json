@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It properly sets up a Koa server with appropriate security headers and error handling. It also checks for the presence of a referer in non-GET requests and disallows requests from blob URLs. However, without knowing the context in which this function is used, it's impossible to say for certain that there are no vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function reads a file from a path provided by the user without validating or sanitizing the input, which could lead to Path Traversal attacks (CWE-22). Also, the function does not limit the size of the file being read, which could lead to Uncontrolled Resource Consumption (CWE-400) if an attacker provides a path to a very large file."
+}

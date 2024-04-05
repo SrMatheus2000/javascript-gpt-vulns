@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Information Exposure", "Improper Input Validation"],
+  "description": "The function 'collectBody' creates a buffer of size based on the 'Content-length' header of the request. This can lead to a Denial of Service (DoS) attack if an attacker sends a request with a very large 'Content-length' value, causing the server to consume excessive resources (CWE-400). Additionally, error messages are directly sent to the client in the 'forwardResponse' function, potentially exposing sensitive server information (CWE-209). The function also does not validate the input it receives, which can lead to various attacks if the input is manipulated (CWE-20)."
+}

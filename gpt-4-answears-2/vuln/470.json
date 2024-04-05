@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The function uses the exec function to execute a command that includes user-supplied input (config.iface). An attacker could provide specially crafted input to execute arbitrary commands on the system."
+}

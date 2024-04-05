@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20"],
+  "vulnerabilities": ["Information Exposure"],
+  "description": "The function does not perform any input validation or error handling. If the sourceMapString does not contain a sourceMappingURL, the match() method will throw an error. Additionally, the function directly returns the extracted URL without any further validation or sanitization, which can lead to information exposure if the URL contains sensitive information."
+}

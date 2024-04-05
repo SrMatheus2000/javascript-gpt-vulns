@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. In the 'FunctionExpression' block, the function uses the Function constructor to create a new function from a string of JavaScript code ('return ' + unparse(node)). This can allow an attacker to inject arbitrary JavaScript code into the application, leading to a variety of attacks such as cross-site scripting (XSS), data theft, or denial of service."
+}

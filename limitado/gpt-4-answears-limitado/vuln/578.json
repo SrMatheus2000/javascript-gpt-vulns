@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-706"],
+  "vulnerabilities": ["Path Traversal", "Use of Incorrectly-Resolved Name or Reference"],
+  "description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user-supplied input in file system operations without proper validation or sanitization. This could allow an attacker to read, write, or delete files outside of the intended directories. Additionally, the function is vulnerable to the use of incorrectly-resolved name or reference (CWE-706) because it uses variables that can be modified by external processes, potentially leading to unexpected behavior."
+}

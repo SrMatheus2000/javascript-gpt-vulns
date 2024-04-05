@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-209: Information Exposure Through an Error Message"],
+"vulnerabilities": ["Open Redirect Vulnerability", "Information Exposure Through Error Message"],
+"description": "The function is vulnerable to URL redirection attacks because it uses user input to determine the redirection target (req.query.from) without proper validation. This could allow an attacker to redirect users to an arbitrary website. Additionally, the function exposes sensitive information through error messages, which could provide an attacker with useful information about the system."
+}

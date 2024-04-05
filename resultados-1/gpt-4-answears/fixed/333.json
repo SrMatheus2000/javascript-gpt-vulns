@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'url' parameter is inserted into the 'src' attribute of an 'img' tag without proper sanitization. Although the 'escape.entities' function is used, it may not be sufficient to prevent all possible XSS attacks, especially if the 'url' parameter can come from user input. An attacker could potentially insert a 'javascript:' URL, leading to arbitrary JavaScript execution."
+}

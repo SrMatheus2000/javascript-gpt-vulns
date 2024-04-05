@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-276: Incorrect Default Permissions", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Information Disclosure", "Insecure File Permissions", "Path Traversal"],
+  "description": "The function is vulnerable to several issues. First, it exposes potentially sensitive information through error messages (CWE-209). This can provide an attacker with valuable information about the system. Second, it does not properly set default permissions (CWE-276), which could allow an attacker to access or modify sensitive files. Lastly, it does not properly limit a pathname to a restricted directory (CWE-22), which could allow an attacker to access files outside of the intended directory."
+}

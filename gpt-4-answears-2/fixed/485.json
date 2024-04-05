@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function '_getPasteContent' uses the 'html()' method to insert user-supplied data into the page, which can lead to execution of malicious scripts if the input is not properly sanitized. The function '_processPasteContent' also inserts user-supplied data into the page without proper sanitization. Although the function uses 'DOMPurify' to sanitize the HTML, it is not always used, which can lead to XSS attacks."
+}

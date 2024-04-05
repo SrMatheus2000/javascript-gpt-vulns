@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_294' is vulnerable to Path Traversal. It uses 'entry.absolute' as a parameter for several file system operations without validating or sanitizing it. An attacker could potentially manipulate 'entry.absolute' to navigate to arbitrary directories and perform unauthorized read, write, or delete operations."
+}

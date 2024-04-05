@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Improper Input Validation", "Potential Injection"],
+  "description": "The function does not validate or sanitize the 'param' input, which could lead to improper input validation vulnerability. This could allow an attacker to manipulate the 'param' input in a way that could lead to unexpected behavior. Additionally, the function does not neutralize special elements in the output used by a downstream component, which could lead to an injection vulnerability. An attacker could potentially inject malicious code into the 'param' input, which could then be executed by the downstream component."
+}

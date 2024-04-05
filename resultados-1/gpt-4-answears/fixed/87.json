@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Infinite Loop", "Improper Input Validation"],
+  "description": "The function is vulnerable to an infinite loop if the input string does not contain the expected characters. This can lead to resource exhaustion (CWE-400). The function also does not properly validate the input string before processing it, which can lead to unexpected behavior (CWE-20)."
+}

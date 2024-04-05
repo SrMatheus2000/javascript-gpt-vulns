@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection"],
+  "description": "The function 'unique_name_131' is vulnerable to OS command injection and code injection. The 'command' parameter is directly used in the 'shell.exec' function without proper sanitization or validation, which allows an attacker to execute arbitrary commands. Additionally, the 'callback' parameter is directly used in the 'callback.apply' function, which can lead to code injection if the 'callback' parameter is controlled by an attacker."
+}

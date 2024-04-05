@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73", "CWE-94", "CWE-99"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Improper Control of Generation of Code ('Code Injection')", "Improper Control of Resource Identifiers ('Resource Injection')"],
+  "description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user input to construct file paths without properly sanitizing it. This could allow an attacker to access, modify, or delete files outside of the intended directory. It also allows external control of file name or path (CWE-73) which can lead to unauthorized file access. The function is also vulnerable to code injection (CWE-94) and resource injection (CWE-99) because it uses user input in a command that is executed by the system.

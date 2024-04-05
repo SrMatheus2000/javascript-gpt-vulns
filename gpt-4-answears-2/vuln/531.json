@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-352"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses the 'win.open(url)' method which can be manipulated to execute malicious scripts. It is also vulnerable to Cross-Site Request Forgery (CSRF) because it does not implement any anti-CSRF mechanism to ensure that the requests made are legitimate and not from an attacker."
+}

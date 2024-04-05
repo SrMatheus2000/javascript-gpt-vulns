@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'args' variable is not defined in the function, so it will throw an error. However, if 'args' is defined globally, an attacker can manipulate the 'val' parameter to inject malicious scripts into the 'args' array, leading to XSS vulnerabilities."
+}

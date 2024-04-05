@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Lack of JWT signature verification", "Lack of JWT expiration time verification"],
+  "description": "The function does not properly verify the JWT signature, which could allow an attacker to forge a JWT. Additionally, the function does not properly check the expiration time of the JWT, which could allow an expired JWT to be used."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-20"],
+"vulnerabilities": ["Path Traversal", "Input Validation"],
+"description": "The function is vulnerable to Path Traversal attacks (CWE-22) because it does not properly sanitize the 'name' parameter. An attacker could potentially manipulate the 'name' parameter to navigate outside of the intended directory. Additionally, the function does not properly validate the 'id' parameter (CWE-20), allowing an attacker to inject invalid characters."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Unrestricted Creation of File-like Objects"],
+  "vulnerabilities": ["Unrestricted Creation of File-like Objects"],
+  "description": "The function is vulnerable as it allows unrestricted creation of file-like objects. This can lead to various security issues like unauthorized access or modification of data. The function does not validate or restrict the 'value' parameter, which can be an object. This object can be manipulated to create or modify file-like objects. This vulnerability is classified as CWE-470."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection via the 'opts' parameter. An attacker could potentially pass malicious code as part of the 'opts' object, which could then be executed. This is particularly dangerous if the function is exposed to user input. Additionally, there is no validation of the 'opts' parameter, which could lead to unexpected behavior or errors."
+}

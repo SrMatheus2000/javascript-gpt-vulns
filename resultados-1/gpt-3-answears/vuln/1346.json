@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The provided JavaScript function is vulnerable to command injection. The 'dir' parameter is directly concatenated into the 'cmd' variable without proper sanitization or validation. An attacker can potentially manipulate the 'dir' parameter to execute arbitrary commands on the underlying operating system."
+}

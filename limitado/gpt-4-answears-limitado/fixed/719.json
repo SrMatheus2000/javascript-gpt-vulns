@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function seems to have a potential Denial of Service (DoS) vulnerability. In the 'escape' and 'bracket' sections, there are while loops that consume characters from the input string until a certain condition is met. If the condition is never met (for example, if the input string does not contain a '}' or ']' character), the loop will continue indefinitely, consuming resources and potentially leading to a DoS condition. This is related to CWE-400, which refers to uncontrolled resource consumption."
+}

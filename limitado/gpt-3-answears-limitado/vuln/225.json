@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function 'escapeshellarg' does not have any known vulnerabilities or CWEs."
+}

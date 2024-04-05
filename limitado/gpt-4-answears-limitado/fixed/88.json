@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection via the 'opts' parameter. An attacker could potentially pass malicious code through this parameter, which could then be executed. This is due to the use of 'Object.assign' which does not properly sanitize the input. Additionally, the function does not validate the 'opts' parameter, which could lead to unexpected behavior if incorrect or malicious data is passed."
+}

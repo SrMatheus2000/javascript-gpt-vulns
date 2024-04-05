@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function does not properly validate the input for 'path', 'origin', 'method', 'valid', and 'stream' variables. This could lead to code injection if a malicious user can control the input to these variables. For example, the 'path' variable is used in a regular expression without proper sanitization, which could lead to Regular Expression Denial of Service (ReDoS) if a user can control the 'path' input. Similarly, the 'origin' variable is used in a replace function without proper sanitization, which could lead to code injection. The 'method' variable is also used without proper sanitization, which could lead to HTTP verb tampering if a user can control the 'method' input. The 'valid' variable is used in a filter function without proper sanitization, which could lead to bypassing of the filter if a user can control the 'valid' input. The 'stream' variable is returned without proper sanitization, which could lead to code injection if a user can control the 'stream' input."
+}

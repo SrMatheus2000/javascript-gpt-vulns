@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function 'runNpmCommand' is vulnerable to OS command injection as it uses 'child_process' to execute npm commands. An attacker could potentially inject malicious commands. The function 'toggleInstall' and 'upgrade' are vulnerable to code injection as they do not validate or sanitize the 'id' and 'version' parameters before using them. This could allow an attacker to inject malicious code. The function 'unique_name_479' is vulnerable to uncontrolled resource consumption (CWE-400) as it does not limit the number of event listeners that can be added to 'pubsub'. This could lead to a denial of service if an attacker adds a large number of listeners."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The 'file' variable is directly taken from the request parameters and used in the 'fs.readFile' function without any sanitization or validation. This could allow an attacker to read arbitrary files on the server by providing a path like '../../etc/passwd' as the file parameter."
+}

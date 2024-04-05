@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any vulnerabilities. It properly sanitizes user-provided SVG input using DOMPurify before appending it to the document body, which helps prevent Cross-Site Scripting (XSS) attacks. It also properly handles potential errors and always removes the appended element from the document body, even if an error occurs. Therefore, it does not seem to have any security vulnerabilities."
+}

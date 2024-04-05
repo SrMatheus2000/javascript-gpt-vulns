@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input (imagePaths) in a command that is executed by the system. An attacker could potentially inject malicious commands by manipulating the imagePaths variable, leading to unauthorized system access or data manipulation."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Unvalidated Input"],
+  "description": "The function does not validate or sanitize the 'params' input, which can lead to Cross-Site Scripting (XSS) if the input is controlled by an attacker. This can allow the attacker to inject malicious scripts and run them in the context of the victim's browser. Additionally, the function does not check if 'params' is an object before treating it as such, which can lead to unexpected behavior if 'params' is not an object."
+}

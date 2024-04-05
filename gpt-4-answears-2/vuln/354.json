@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input 'payload' and 'mime' which can lead to improper input validation vulnerability (CWE-20). Also, the function does not limit the size of 'payload' which can lead to uncontrolled resource consumption (CWE-400)."
+}

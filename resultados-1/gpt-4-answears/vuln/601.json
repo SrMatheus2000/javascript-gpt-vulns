@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["SQL Injection", "Path Traversal", "OS Command Injection"],
+  "description": "The function is vulnerable to SQL Injection, Path Traversal, and OS Command Injection. The 'params' variable is directly influenced by the 'pathBundleIN' object, which could be manipulated to inject malicious SQL commands, traverse the file system, or inject malicious OS commands. The 'helper.createPasswordFile' and 'openssl.spawnWrapper' functions are particularly concerning as they could be used to execute arbitrary commands or access sensitive data."
+}

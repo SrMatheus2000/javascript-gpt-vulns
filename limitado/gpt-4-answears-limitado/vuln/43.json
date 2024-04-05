@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-346: Origin Validation Error"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function is vulnerable because it does not validate the content of the 'e' object. An attacker can manipulate the 'e' object to perform actions on behalf of the user. This is an example of an Insecure Direct Object References (IDOR) vulnerability. The function also does not validate the origin of the event, which can lead to Cross-Site Scripting (XSS) attacks if the event data is used in a context that allows for script execution."
+}

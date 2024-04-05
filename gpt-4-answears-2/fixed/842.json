@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses the spawn function to execute a command that is built using user-supplied input. This can allow an attacker to execute arbitrary commands on the system with the privileges of the process."
+}

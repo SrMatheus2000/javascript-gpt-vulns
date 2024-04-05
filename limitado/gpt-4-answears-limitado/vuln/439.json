@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It directly inserts user-controlled data (`file.name` and `file.path`) into HTML output without proper sanitization or encoding. An attacker could potentially inject malicious scripts by manipulating the `file.name` or `file.path` values, leading to various types of attacks such as stealing sensitive data, session hijacking, or defacement of the website."
+}

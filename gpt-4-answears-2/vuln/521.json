@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function uses 'innerHTML' to insert user-controlled data into the DOM. This can lead to Cross-Site Scripting (XSS) attacks if the data is not properly sanitized before being inserted. An attacker could inject malicious scripts that can steal sensitive data, manipulate web content, or perform actions on behalf of the user."
+}

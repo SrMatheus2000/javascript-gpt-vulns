@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate the input 'this.source' before processing it, which could lead to unexpected behavior or errors. This is an instance of CWE-20: Improper Input Validation. Additionally, the function processes all paths in the 'swagger.paths' object without controlling the amount of resources consumed, which could lead to a denial of service if an attacker provides a large number of paths. This is an instance of CWE-400: Uncontrolled Resource Consumption."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-359: Exposure of Private Information"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Potential Information Disclosure"],
+  "description": "The function is vulnerable to Insecure Direct Object References (IDOR) because it allows a user to change the password of another user if they are an admin and not the same user. This could lead to unauthorized access. Additionally, the function may expose sensitive information such as the user's IP address and password hash. The function does not properly validate the user's current password before allowing a password change, which could lead to unauthorized password changes."
+}

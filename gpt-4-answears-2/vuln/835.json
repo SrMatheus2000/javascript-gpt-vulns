@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses execSync to execute a git command that includes user-supplied input. This can lead to OS command injection if the user-supplied input is not properly sanitized."
+}

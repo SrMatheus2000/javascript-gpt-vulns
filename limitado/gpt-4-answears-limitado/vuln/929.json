@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The vulnerability exists because the function uses the .html() method to insert user-controlled data (track.entries[i].text) into the HTML document. An attacker could exploit this vulnerability by injecting malicious scripts into the 'text' property of the 'entries' object, which would then be executed in the context of the victim's browser when the captions are displayed."
+}

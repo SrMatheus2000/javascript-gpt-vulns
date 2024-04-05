@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function takes an HTML string, processes it, and returns a serialized string representation of the processed HTML. However, it does not sanitize the input HTML string, which could lead to Cross-Site Scripting (XSS) attacks if the input HTML string contains malicious scripts. This is a common vulnerability in web applications that do not properly sanitize user inputs."
+}

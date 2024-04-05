@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it directly uses user input in the creation of HTML content. An attacker could inject malicious scripts by manipulating 'opts.tag', 'opts.no_data_class', or 'opts.no_data_text'."
+}

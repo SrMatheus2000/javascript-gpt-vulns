@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function is vulnerable to SQL Injection attacks. This is because it concatenates user-supplied input directly into a SQL query. An attacker could manipulate the 'opts' parameter to modify the SQL query, leading to unauthorized access to data, data corruption, or data loss."
+}

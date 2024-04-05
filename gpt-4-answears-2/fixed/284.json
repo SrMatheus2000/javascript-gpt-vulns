@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-384: Session Fixation"],
+"vulnerabilities": ["Insecure Cryptographic Storage", "Session Fixation"],
+"description": "The function signTransaction uses a risky cryptographic algorithm to sign transactions. The 'v', 'r', and 's' values are set to static values before being overwritten by the response from the '_sendMessage' function. If the '_sendMessage' function fails to return a valid response, the transaction could be signed with these insecure values. Additionally, the function does not handle session management securely. The 'unlock' function is called without any checks or validations, which could lead to session fixation attacks where an attacker could hijack a user's session."
+}

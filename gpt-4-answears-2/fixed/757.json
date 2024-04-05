@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function dataselectfn is vulnerable to Cross-site Scripting (XSS) attacks. This is because it takes an input (sel) and uses it to dynamically generate JavaScript code without properly sanitizing it. Although there is an attempt to mitigate basic XSS by replacing '<' and '>' characters, this is not sufficient to prevent all forms of XSS attacks. For example, an attacker could still inject script using event handlers or other methods that do not require these characters."
+}

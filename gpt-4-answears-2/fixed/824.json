@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["JSON Injection"],
+"description": "The function attempts to parse all string values in the 'options' object with 'JSON.parse'. If a malicious user can control the value of a string in 'options', they could potentially inject arbitrary JSON, leading to a variety of attacks such as cross-site scripting (XSS), denial of service, or remote code execution."
+}

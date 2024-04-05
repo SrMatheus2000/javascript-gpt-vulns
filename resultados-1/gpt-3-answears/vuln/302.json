@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209"],
+  "vulnerabilities": ["Information Exposure Through an Error Message"],
+  "description": "The code exposes sensitive error information to the user by outputting the full error stack trace. This can potentially reveal implementation details and sensitive data to attackers."
+}

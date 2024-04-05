@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601", "CWE-601"],
+  "vulnerabilities": ["Open Redirect", "Open Redirect"],
+  "description": "The function is vulnerable to Open Redirect attacks. The 'req.query.from' parameter is not properly validated before being used in the 'res.redirect' function, allowing an attacker to redirect users to malicious websites."
+}

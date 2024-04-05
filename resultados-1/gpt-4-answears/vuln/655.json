@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function 'unique_name_338' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it takes an 'html' input and directly uses it in the 'replace' function without properly sanitizing it. An attacker can inject malicious scripts through the 'html' input, which will then be executed when the output is rendered in a web page. The 'allowed' parameter is also not properly validated, allowing an attacker to potentially allow harmful tags. The function also fails to handle case-insensitive tags, which can be used to bypass the whitelist."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'html' variable, which is derived from 'this.container.innerHTML.trim()', is directly inserted into the HTML of the page using 'this.pasteHTML()'. If an attacker can control the content of 'this.container', they could inject malicious scripts that would be executed in the context of the user's session."
+}

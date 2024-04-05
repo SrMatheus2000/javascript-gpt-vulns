@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user input to access files (fs.readFile(path.resolve(swaggerUiPath, file))). An attacker could manipulate the 'file' parameter to access sensitive files outside of the intended directory. The function is also vulnerable to Cross-Site Scripting (XSS) (CWE-79) because it directly uses user input in the response without proper sanitization or output encoding (res.write(content)). An attacker could inject malicious scripts that would be executed in the browser of any user viewing the page."
+}

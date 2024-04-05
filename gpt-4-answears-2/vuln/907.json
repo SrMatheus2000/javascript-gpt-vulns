@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. It uses the jQuery html() function to set the innerHTML of an element, which can lead to XSS if the input is not properly sanitized. This is because the html() function does not escape HTML special characters, so any HTML the attacker provides will be treated as actual HTML code."
+}

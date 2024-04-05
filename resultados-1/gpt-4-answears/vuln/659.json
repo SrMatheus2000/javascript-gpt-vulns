@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not properly validate the input for the 'path' parameter. This could lead to a Prototype Pollution vulnerability if the function is used with untrusted input. Prototype Pollution can lead to several security issues, such as Denial of Service, Remote Code Execution, or Property Injection."
+}

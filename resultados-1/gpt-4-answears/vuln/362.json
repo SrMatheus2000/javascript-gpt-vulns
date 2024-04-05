@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption", "CWE-404: Improper Resource Shutdown or Release"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Input Validation", "Improper Resource Shutdown or Release"],
+  "description": "The function does not validate the input 'port' which can lead to unexpected behavior. It also does not properly manage resources, as it creates child processes without ensuring they are properly shut down or released, which can lead to resource leaks. Additionally, the function does not control the amount of resources (memory, CPU, etc.) that the child processes can consume, which can lead to a Denial of Service (DoS) if the child processes consume too many resources."
+}

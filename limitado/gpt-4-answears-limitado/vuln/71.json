@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Command Injection", "Denial of Service"],
+  "description": "The function is vulnerable to command injection because it concatenates a user-controlled variable 'urlSanitized' directly into a command that is executed by the system. An attacker could potentially inject malicious commands to be executed. Additionally, the function does not limit the amount of data that can be processed, which could lead to a Denial of Service (DoS) attack by consuming all available system resources."
+}

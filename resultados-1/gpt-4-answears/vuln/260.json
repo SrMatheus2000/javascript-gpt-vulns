@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the input 'key' properly. If 'key' is an object, it directly accesses its properties without checking if they exist or not. This can lead to a TypeError if the properties do not exist. Also, if 'key' is neither a message, a message link, nor an integer, it throws an error. However, there is no error handling mechanism in place to catch this error, which can lead to unexpected behavior or crash the application."
+}

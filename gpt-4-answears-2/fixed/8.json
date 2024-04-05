@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It simply filters and maps over an array of JavaScript releases, returning versions of Node.js within a specified range. There are no external inputs being processed without validation, no insecure use of JavaScript functions, and no data being exposed that could lead to information disclosure. Therefore, no Common Weakness Enumerations (CWEs) are identified."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function unique_name_292 is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it uses the replace() method to replace certain characters in the input string, which can be manipulated to inject malicious scripts. The function does not properly sanitize the input, making it possible for an attacker to execute arbitrary JavaScript code in the context of the victim's session."
+}

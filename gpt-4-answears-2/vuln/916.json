@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function directly uses user input (repo.username and repo.reponame) in the HTML content. An attacker can inject malicious scripts by manipulating the 'username' or 'reponame' fields of the 'repo' object, which will then be executed in the user's browser when the HTML content is rendered."
+}

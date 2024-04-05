@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+"description": "The function uses the '__proto__' property to assign a new EventEmitter object. This can lead to prototype pollution which allows an attacker to manipulate the behavior of an object in JavaScript. This can lead to serious security issues like Remote Code Execution (RCE)."
+}

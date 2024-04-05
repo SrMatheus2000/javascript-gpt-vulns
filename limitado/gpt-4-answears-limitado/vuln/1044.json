@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'getterFn' is vulnerable to code injection. This is because it dynamically generates code using the 'Function' constructor with user-supplied input ('path'). An attacker could potentially supply a 'path' that includes malicious code, leading to code injection. This could allow the attacker to execute arbitrary JavaScript code within the application's environment, leading to a variety of possible attacks such as data theft, data corruption, or denial of service."
+}

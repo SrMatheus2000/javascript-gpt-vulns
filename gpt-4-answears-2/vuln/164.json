@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution because it does not validate the 'key' parameter. An attacker can manipulate the 'key' parameter to add or modify properties of the Object prototype. These changes could lead to arbitrary code execution or other unexpected behavior."
+}

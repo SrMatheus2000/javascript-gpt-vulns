@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the 'attrsMap' parameter, which is used to generate HTML attributes. An attacker could potentially inject malicious scripts through this parameter. The 'htmlEscape' function is used to sanitize the 'tagName' and 'content' parameters, but not 'attrsMap'. This could lead to a situation where the 'attrsMap' parameter contains malicious scripts."
+}

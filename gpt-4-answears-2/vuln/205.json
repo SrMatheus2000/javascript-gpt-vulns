@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-78", "CWE-94", "CWE-200"],
+"vulnerabilities": ["Path Traversal", "OS Command Injection", "Code Injection", "Information Exposure"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user-supplied input in file paths without proper validation or sanitization. It is also vulnerable to OS Command Injection (CWE-78) as it uses user-supplied input in OS commands. Code Injection (CWE-94) is possible as the function uses user-supplied input in code that is later executed. The function also exposes sensitive information (CWE-200) as it prints out potentially sensitive data to the console."
+}

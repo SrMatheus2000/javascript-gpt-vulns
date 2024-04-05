@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption", "CWE-770: Allocation of Resources Without Limits or Throttling"],
+"vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Uncontrolled Recursion"],
+"description": "The function uses regular expressions which can be exploited to cause a Denial of Service (DoS) attack. An attacker can provide a specially crafted payload that causes the regular expression to take a long time to process, effectively blocking the event loop and causing a DoS condition. This is known as a Regular Expression Denial of Service (ReDoS) vulnerability. Additionally, the function uses recursion without any limit, which can lead to a stack overflow error if the recursion is too deep, causing the application to crash. This is known as an Uncontrolled Recursion vulnerability."
+}

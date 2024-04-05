@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to match the sourceMappingURL in the css input. If the css input is a long string, the regex can cause a Regular Expression Denial of Service (ReDoS) vulnerability. This happens when the regex takes a very long time to run, blocking the event loop and making the application unresponsive. This can be exploited by an attacker to cause a denial of service."
+}

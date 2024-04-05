@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function _setNestedProperty is vulnerable to Prototype Pollution, which allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to several injection vulnerabilities."
+}

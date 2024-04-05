@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-94"],
+"vulnerabilities": ["Path Traversal", "Code Injection"],
+"description": "The function is vulnerable to Path Traversal and Code Injection attacks. The function uses the 'path.sep' and 'process.cwd()' methods which can be manipulated to traverse the file system (CWE-22). Also, the function uses the 'stack.split()' and 'line.replace()' methods which can be manipulated to inject malicious code (CWE-94)."
+}

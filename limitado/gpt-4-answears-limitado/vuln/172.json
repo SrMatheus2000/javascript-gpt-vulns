@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'sync' is vulnerable to OS command injection. It takes an 'os' object as an argument and directly uses it to construct a command that is then executed synchronously. If an attacker can control the value of 'os', they can inject arbitrary commands to be executed on the server. This can lead to serious security issues, such as unauthorized access, data leakage, data corruption, or even system shutdown."
+}

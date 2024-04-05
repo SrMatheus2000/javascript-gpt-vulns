@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The function 'unique_name_603' is vulnerable to Path Traversal attack (CWE-22) as it uses user input to construct a file path without properly validating or sanitizing it. An attacker can manipulate the 'req.url' to access arbitrary files on the system. Additionally, the function is also vulnerable to Information Exposure (CWE-200) as it logs sensitive information such as the request method, URL, and response status code, which could potentially be exploited by an attacker to gain more information about the system or application."
+}

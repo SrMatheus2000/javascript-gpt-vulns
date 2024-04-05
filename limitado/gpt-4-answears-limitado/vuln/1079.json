@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize or escape the 'value' input, which could lead to Cross-Site Scripting (XSS) attacks if the returned string is rendered in an HTML context. An attacker could inject malicious scripts by providing a string that includes script tags or other HTML elements."
+}

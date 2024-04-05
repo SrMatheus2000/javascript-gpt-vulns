@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'exec' function is used to execute a command that is constructed by concatenating unsanitized input. This could allow an attacker to inject arbitrary commands to be executed on the server. The 'file.originalPath' and 'file.path' variables are used directly in the command without any sanitization or escaping, making the function vulnerable to command injection if an attacker can control the contents of these variables."
+}

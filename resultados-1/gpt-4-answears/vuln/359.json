@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Prototype Pollution", "Potential Denial of Service"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. This happens because the function directly assigns properties to the 'obj' parameter without checking if the keys in 'path' are built-in JavaScript properties. An attacker can manipulate these properties to modify the Object prototype. Also, the function does not limit the size of the object or array it creates, which can lead to a Denial of Service (DoS) if an attacker provides a large amount of data."
+}

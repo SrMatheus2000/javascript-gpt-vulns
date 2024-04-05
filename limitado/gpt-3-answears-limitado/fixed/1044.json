@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The 'repo' parameter is directly used in the 'git.clone' function without proper input validation or sanitization, which can lead to command injection vulnerabilities. An attacker can manipulate the 'repo' parameter to execute arbitrary commands on the system."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-497: Exposure of System Data to an Unauthorized Control Sphere"],
+"vulnerabilities": ["Information Disclosure"],
+"description": "The function is vulnerable to information disclosure as it prints the full error object to the console, which could potentially expose sensitive system or application data. Additionally, if the request is valid, it sets the error message to the error stack and exposes it, which could provide an attacker with valuable debugging information or details about the system's internal workings."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function unique_name_187 is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly inserts user-provided 'url' and 'text' into HTML without proper sanitization or encoding, which allows an attacker to inject malicious scripts."
+}

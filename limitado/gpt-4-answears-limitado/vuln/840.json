@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Input Validation"],
+  "description": "The function does not validate the 'opts' parameter, which can lead to unexpected behavior or crashes if it is not an object or does not contain the expected properties. This can lead to a Denial of Service (DoS) attack if an attacker can influence the input to this function. Additionally, the function does not limit the size of the 'opts.method' array, which can lead to excessive resource consumption if it is very large."
+}

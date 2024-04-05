@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the input before inserting it into HTML context. This could allow an attacker to inject malicious scripts that would be executed by the browser. The vulnerability is present in the sections where the function constructs HTML strings using the input object's properties without properly encoding them. For example, in the 'Large property' and 'Large row' sections, the function inserts the 'input.attribu' and 'input.maxSize' properties directly into the HTML string without encoding them."
+}

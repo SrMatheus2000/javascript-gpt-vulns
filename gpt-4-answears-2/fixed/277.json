@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the input parameters 'list' and 'line'. This could lead to unexpected behavior or errors if the input is not as expected. For example, if 'list' is not an array or 'line' is not a string. Additionally, the function uses a regular expression to test and replace parts of the 'line' input, which could lead to Regular Expression Denial of Service (ReDoS) if the input is a long, specially crafted string."
+}

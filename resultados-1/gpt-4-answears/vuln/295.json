@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_141 is vulnerable to command injection. This is because it concatenates the gitUrl and options directly into the command string that is passed to exec. If an attacker can control the gitUrl or options, they could inject arbitrary commands that will be executed by the system."
+}

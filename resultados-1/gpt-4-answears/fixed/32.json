@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is performing a regular expression match on an input string and then performing some calculations on the matched groups. All the calculations are done on parsed float values, which mitigates the risk of injection attacks. The function also properly handles the case where the input string is null or undefined."
+}

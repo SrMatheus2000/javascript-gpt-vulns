@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Exposure of sensitive information", "Lack of input validation"],
+  "description": "The function is vulnerable as it exposes sensitive information by unlocking accounts and pushing the addresses into a public array. This could lead to privacy violation (CWE-359). Additionally, there is no validation of the input 'n', which could lead to improper input validation (CWE-20)."
+}

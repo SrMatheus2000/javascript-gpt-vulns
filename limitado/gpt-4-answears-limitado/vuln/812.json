@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses regular expressions in multiple places. If an attacker provides a malicious input that results in a long-running match, it could cause the application to hang, consuming server resources and leading to a Denial of Service (DoS) condition. This is known as a Regular Expression Denial of Service (ReDoS) vulnerability."
+}

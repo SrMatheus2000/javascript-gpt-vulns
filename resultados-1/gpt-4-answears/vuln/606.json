@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function createCSR is vulnerable to command injection. This is because it constructs a command to be executed using the openssl.exec function with inputs from the options object, which can be controlled by the user. If a user provides malicious input, they could execute arbitrary commands on the system. This is a serious security vulnerability that could lead to full system compromise."
+}

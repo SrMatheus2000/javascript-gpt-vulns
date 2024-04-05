@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It takes an SVG input and replaces certain patterns, but it does not properly sanitize the input to remove or escape potentially harmful characters. An attacker could inject malicious scripts through the SVG input, which could then be executed in the context of the user's browser."
+}

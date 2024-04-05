@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function deleteConnection is vulnerable to OS command injection. The function uses the execFile function to execute the 'networksetup' command with user-supplied input (config.iface and ap.ssid) without proper sanitization or validation. An attacker could potentially inject malicious commands through these inputs, leading to arbitrary command execution."
+}

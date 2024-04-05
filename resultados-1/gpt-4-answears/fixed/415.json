@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The vulnerability exists because user input is used to construct a file path that is used to read a file. An attacker could manipulate the input to read arbitrary files on the system. The 'fullRequestPath' variable is constructed using 'requestPath' which is derived from 'this.request.path'. If an attacker can control the value of 'this.request.path', they can potentially read any file on the system. The check 'if (!fullRequestPath.startsWith(directory))' is not sufficient to prevent this attack because it does not prevent path sequences like '../' which can be used to traverse to other directories."
+}

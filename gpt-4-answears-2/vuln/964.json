@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function runNpmCommand takes a command as an argument and directly passes it to child_process.exec without any sanitization. This could allow an attacker to execute arbitrary commands on the system with the privileges of the node.js process."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Code Injection and Cross-Site Scripting (XSS) attacks. The eval function is used to parse data, which can lead to Code Injection if the data contains malicious JavaScript code. The function also creates HTML elements and sets their text content based on data, which can lead to XSS if the data contains HTML tags with malicious JavaScript code."
+}

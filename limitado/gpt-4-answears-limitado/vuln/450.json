@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Unvalidated Input"],
+  "description": "The function does not validate the input for 'node.object' and 'node.property'. This could lead to unexpected behavior or errors if the input is not as expected. It could also potentially lead to security vulnerabilities if an attacker is able to control the input."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function uses the eval() function to parse the input value. This can lead to code injection if the input is not properly sanitized. An attacker can provide a malicious string that, when evaluated, can lead to arbitrary code execution."
+}

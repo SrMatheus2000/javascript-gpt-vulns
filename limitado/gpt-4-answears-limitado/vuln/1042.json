@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Unsafe Reflection"],
+  "description": "The function seems to be using the 'indexFn' function to determine the index of the object 'o'. If the 'indexFn' function is controlled by user input, it could lead to an unsafe reflection vulnerability. This could allow an attacker to manipulate the function's behavior by passing malicious input. Additionally, the function does not validate or sanitize the 'self' and 'locals' inputs, which could lead to other potential vulnerabilities."
+}

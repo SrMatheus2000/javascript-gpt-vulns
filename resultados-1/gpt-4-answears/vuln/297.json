@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function pull is vulnerable to command injection. It concatenates the 'options' parameter directly into a command string that will be executed, without any sanitization or escaping. This means that if a user can control the 'options' parameter, they can execute arbitrary commands on the system where this code is running."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-200"],
+"vulnerabilities": ["Path Traversal", "Information Exposure"],
+"description": "The function is vulnerable to Path Traversal attacks (CWE-22) because it uses user input to construct a file path without properly sanitizing it. The replace function used to remove '../' is not sufficient to prevent an attacker from navigating to arbitrary directories. Additionally, the function may expose sensitive information (CWE-200) through error messages or debug logs."
+}

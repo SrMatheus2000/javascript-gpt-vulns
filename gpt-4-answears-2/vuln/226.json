@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')"],
+"vulnerabilities": ["Input Validation", "SQL Injection", "HTTP Response Splitting"],
+"description": "The function does not properly validate the 'url' input, which can lead to security vulnerabilities. An attacker could potentially exploit this to perform SQL injection attacks, or HTTP response splitting attacks. The 'req.query.key' is directly appended to the query string without any sanitization or encoding, which could lead to potential security risks."
+}

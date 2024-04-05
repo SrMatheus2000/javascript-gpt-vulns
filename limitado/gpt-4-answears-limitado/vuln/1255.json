@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-117", "CWE-94"],
+  "vulnerabilities": ["Improper Output Neutralization for Logs", "Improper Control of Generation of Code ('Code Injection')"],
+  "description": "The function logs sensitive information such as the request parameters and fields which can lead to information exposure (CWE-117). Also, the function does not sanitize the 'jsonp' query parameter before using it to generate code, which can lead to code injection (CWE-94)."
+}

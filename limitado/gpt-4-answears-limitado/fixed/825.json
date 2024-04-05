@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function is vulnerable to URL redirection attacks (also known as 'Open Redirect') because it constructs a URL and redirects the user to it based on the 'redirect_uri' property of the 'self' object. If an attacker can control the value of 'self.redirectUri', they can redirect users to a malicious site. This can be used for phishing attacks, stealing user credentials, or performing other malicious activities. It's recommended to validate and sanitize the 'redirect_uri' before using it."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Data Injection"],
+  "description": "The function does not validate or sanitize the 'index' input, which could lead to Cross-Site Scripting (XSS) if the 'index' is controlled by an attacker. Also, the function directly uses the 'index' to access array elements and object properties, which could lead to Data Injection if the 'index' is controlled by an attacker. Furthermore, the function does not properly encode or escape the output when setting the 'textContent' of 'this.label', which could lead to Cross-Site Scripting (XSS) if the 'data' or 'option.textContent' is controlled by an attacker."
+}

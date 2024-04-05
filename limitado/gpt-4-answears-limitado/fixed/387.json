@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function appears to be safe from common vulnerabilities such as Cross-Site Scripting (XSS) as it uses the Utils.escapeHtml function to sanitize the input before inserting it into the HTML. This should prevent any malicious scripts from being executed. There are no obvious security vulnerabilities in this function."
+}

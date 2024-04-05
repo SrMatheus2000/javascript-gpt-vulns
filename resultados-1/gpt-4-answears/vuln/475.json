@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_225 is vulnerable to OS command injection. It concatenates a variable (ap.ssid) directly into a command string that is executed by the system. If an attacker can control the value of ap.ssid, they could inject arbitrary commands to be executed on the system."
+}

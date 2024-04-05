@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to command injection because it directly uses the user-provided input (req.query.url) in a system command without proper sanitization or validation. An attacker could potentially provide a malicious URL that includes command line instructions, which would then be executed on the server. This could lead to unauthorized access, data leakage, or even server takeover. Additionally, there is no input validation to ensure that the provided URL is in the correct format or is a valid URL, which could lead to unexpected behavior or errors."
+}

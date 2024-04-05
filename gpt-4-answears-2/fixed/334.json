@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'escape.entities' method to escape the 'email' and 'text' variables, but it does not properly sanitize the input. This could allow an attacker to inject malicious scripts into the 'email' or 'text' variables, which would then be executed when the resulting HTML is rendered in a web browser."
+}

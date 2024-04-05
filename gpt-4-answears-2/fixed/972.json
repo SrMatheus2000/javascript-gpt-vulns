@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-918", "CWE-22", "CWE-94"],
+"vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Path Traversal", "Code Injection"],
+"description": "The function is vulnerable to Server-Side Request Forgery (SSRF) as it takes a URL as input and makes a GET request to it without any validation. This could allow an attacker to make requests to internal resources. It's also vulnerable to Path Traversal as it uses the user-supplied 'dest' variable to determine the file path where the downloaded file will be saved. An attacker could manipulate 'dest' to overwrite any file on the system. Lastly, it's vulnerable to Code Injection as it uses the 'execFile' function with user-supplied input, which could allow an attacker to execute arbitrary commands on the system."
+}

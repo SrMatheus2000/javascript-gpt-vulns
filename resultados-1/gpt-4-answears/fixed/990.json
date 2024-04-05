@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-330: Use of Insufficiently Random Values", "CWE-780: Use of RSA Algorithm without OAEP"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Randomness", "Insecure Cryptographic Algorithm"],
+  "description": "The function uses a cryptographic algorithm that is not secure. The function also uses a random value that is not sufficiently random, which can lead to predictability of the value. The function uses RSA algorithm without Optimal Asymmetric Encryption Padding (OAEP), which can lead to various attacks such as padding oracle attacks."
+}

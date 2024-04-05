@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-209: Information Exposure Through an Error Message"],
+"vulnerabilities": ["Denial of Service", "Information Exposure"],
+"description": "The function sets the server timeout to 0, which means the server will hold the connection as long as the client is connected. This can lead to a Denial of Service (DoS) attack if an attacker holds many connections for a long time (CWE-400). Additionally, the function exposes potentially sensitive error information to users, which could be exploited to gain more information about the system (CWE-209)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the .html() method to insert content into the #rep element. If an attacker can control the content of the #db_select or #db_type elements, they could inject malicious scripts that would be executed when the .html() method is called. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

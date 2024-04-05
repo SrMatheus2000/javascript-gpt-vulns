@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input from the request object which can lead to various vulnerabilities. It also exposes information through error messages which can be exploited by attackers. The function also does not limit the size of the request which can lead to resource exhaustion."
+}

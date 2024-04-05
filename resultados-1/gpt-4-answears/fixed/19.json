@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_5 is vulnerable to command injection. It uses the exec function to execute system commands, which can be manipulated to execute arbitrary commands if an attacker can control the 'port' parameter. This can lead to serious security issues, such as unauthorized access, data leakage, or even denial of service."
+}

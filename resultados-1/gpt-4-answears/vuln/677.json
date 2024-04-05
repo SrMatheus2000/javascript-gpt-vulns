@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The 'maxFileSize' and 'maxFiles' parameters are set to 'Infinity' by default, which means an attacker can upload an unlimited number of files of unlimited size, potentially exhausting server resources and causing a service outage. This is a form of resource exhaustion and is classified as CWE-400."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function '_combineLongPacketBuffers' is vulnerable to Buffer Overflow. This is because it uses the 'new Buffer()' constructor, which is deprecated due to security and usability issues. If the input is a number, a non-initialized buffer is returned, which can contain sensitive data. If the input is a string, it can lead to Denial of Service (DoS) attacks. It's recommended to use 'Buffer.alloc()', 'Buffer.allocUnsafe()', or 'Buffer.from()' methods instead."
+}

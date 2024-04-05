@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'dataselectfn' is vulnerable to code injection. This is because it takes an input 'sel' and directly uses it in a function call without proper sanitization or validation. An attacker could potentially pass malicious code as 'sel', which would then be executed, leading to arbitrary code execution. This is a serious security issue and could lead to a variety of attacks, including data theft, data corruption, or even full system compromise."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to Path Traversal attacks (CWE-22). The function uses the 'decodeURIComponent' function to decode the request URL and then uses it to resolve a path. An attacker can manipulate the request URL to traverse directories and access sensitive files on the server."
+}

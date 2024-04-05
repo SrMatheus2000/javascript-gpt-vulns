@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_202 does not properly sanitize the input 'value'. If the input contains special characters, it could lead to Cross-Site Scripting (XSS) attacks. The replace function is intended to replace '[' characters with '[', which doesn't change the input and doesn't prevent any form of code injection. An attacker could provide a string that includes JavaScript code, which would be executed in the context of the user's browser."
+}

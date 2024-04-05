@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'id' variable is directly concatenated into the HTML string without any sanitization or encoding, which could allow an attacker to inject malicious scripts if they can control the value of 'id'. This is a common vulnerability known as Cross-Site Scripting (XSS), classified under CWE-79."
+}

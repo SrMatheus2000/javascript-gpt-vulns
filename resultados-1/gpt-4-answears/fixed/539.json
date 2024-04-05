@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-759: Use of a One-Way Hash without a Salt", "CWE-311: Missing Encryption of Sensitive Data"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Insecure Cryptographic Storage", "Insufficient Input Validation"],
+  "description": "The function does not validate the 'value' and 'definition' parameters properly. This could lead to Insecure Direct Object References (IDOR) if the 'value' parameter can be controlled by an attacker. The function also uses the 'Iron.unseal' method without a salt, which could lead to Insecure Cryptographic Storage. Additionally, the function does not encrypt sensitive data when the 'definition.encoding' is 'base64' or 'form', which could lead to exposure of sensitive information."
+}

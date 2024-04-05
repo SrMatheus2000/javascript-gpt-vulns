@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400", "CWE-94"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption", "Code Injection"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to construct file paths without proper validation or sanitization. This could allow an attacker to access or modify files outside of the intended directories. The function is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of entries in the routeCache, which could be exploited to cause a denial of service. Lastly, the function is vulnerable to Code Injection (CWE-94) as it uses the require function with user-controlled input, which could allow an attacker to execute arbitrary code."
+}

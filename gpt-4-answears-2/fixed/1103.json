@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It uses the escapeHtml function to sanitize the table name before it is used in a query, which should prevent SQL injection attacks. It also uses the $.get method to send an AJAX request, which is safe as long as the server-side code properly handles the request. The function also uses the PMA_confirm method to ask for user confirmation before performing the action, which is a good practice to prevent unintended actions."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Exposure of sensitive information", "Potential for code injection"],
+"description": "The function 'addAccounts' is vulnerable as it exposes sensitive information by unlocking the account and potentially exposing the account address. This could lead to privacy violation (CWE-359). Additionally, the function does not validate the input 'n', which could lead to code injection (CWE-20) if a malicious user provides a specially crafted input."
+}

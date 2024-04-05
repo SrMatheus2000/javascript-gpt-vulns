@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery $.get() method to send an AJAX request and includes user-supplied input in the request without properly sanitizing it. An attacker could potentially inject malicious scripts through the 'table' parameter, which is included in the 'DROP TABLE', 'DROP VIEW', and 'TRUNCATE' SQL commands. These scripts could be executed in the browser of any user viewing the page, leading to unauthorized access, data theft, or other malicious activities."
+}

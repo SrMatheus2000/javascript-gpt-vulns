@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_238 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'option.value' and 'option.label' in the DOM without properly sanitizing or escaping them. An attacker can inject malicious scripts through 'option.value' or 'option.label', which will be executed when the HTML is rendered in the browser."
+}

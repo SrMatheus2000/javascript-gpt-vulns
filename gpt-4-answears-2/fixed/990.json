@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327", "CWE-330"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm", "Use of Insufficiently Random Values"],
+"description": "The function uses a cryptographic algorithm that is not considered strong by modern standards. Additionally, the function uses a predictable random value as an initialization vector (IV) for cryptographic operations, which can expose the system to various attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+"vulnerabilities": ["Insecure Cryptographic Operations"],
+"description": "The function uses 'ethUtil' for cryptographic operations which might not be secure. The function also does not handle exceptions that might be thrown by the 'ethUtil' methods. This could lead to unexpected behavior or crashes. The function also does not validate the 'address' parameter which could lead to security vulnerabilities if the 'address' is controlled by an attacker."
+}

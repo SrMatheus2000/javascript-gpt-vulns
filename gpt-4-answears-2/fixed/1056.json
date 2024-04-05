@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Input Validation", "Code Injection"],
+"description": "The function does not validate the input 'json' properly. It assumes that 'json' is an object and directly uses its properties without checking if they exist or not. This can lead to 'undefined' errors. Also, the function uses the 'match' method on 'json.tiles[0]' without checking if 'json.tiles' is an array and if it has at least one element. This can lead to 'Cannot read property '0' of undefined' errors. Furthermore, the function does not sanitize 'json.tiles[0]' before using it in a regular expression match, which can lead to Regular Expression Injection (ReDoS) if 'json.tiles[0]' contains special regular expression characters."
+}

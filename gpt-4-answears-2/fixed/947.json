@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function takes a SQL query as a parameter and directly executes it without any sanitization or parameterization, which makes it vulnerable to SQL Injection attacks. An attacker could provide a malicious SQL query that could read sensitive data, modify database data, potentially execute system commands, or exploit other vulnerabilities in the database."
+}

@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-471", "CWE-915"],
+  "vulnerabilities": ["Prototype Pollution", "Insecure Object Assignment"],
+  "description": "The provided JavaScript function is vulnerable to Prototype Pollution and Insecure Object Assignment. These vulnerabilities can lead to arbitrary code execution and data tampering."
+}

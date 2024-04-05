@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_455' is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it uses the 'innerHTML' property to insert user-controlled data into the DOM. Although the function attempts to sanitize the input by removing script tags and certain attributes, it does not properly handle all possible cases. For example, it does not consider event handlers like 'onmouseover' or 'onload' that do not start with 'on', or script execution via CSS injection in style attributes. An attacker could exploit this vulnerability to execute arbitrary JavaScript code in the context of the user's browser session."
+}

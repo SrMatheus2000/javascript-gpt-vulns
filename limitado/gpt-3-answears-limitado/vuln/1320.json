@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-703", "CWE-561"],
+  "vulnerabilities": ["Insecure Object Deserialization", "Unrestricted File Upload"],
+  "description": "The merge function is vulnerable to insecure object deserialization and unrestricted file upload. The function blindly merges the properties of object b into object a without any validation or sanitization. This can lead to various security issues, such as deserializing malicious objects or overwriting sensitive properties. Additionally, if the function is used to merge user-supplied data into a file path, it can result in unrestricted file upload vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-23"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The filename is constructed from the user-supplied input (req.url), which is then used to access a file (fs.existsSync(filename)). An attacker can manipulate the input to access arbitrary files on the system, potentially leading to unauthorized access to sensitive data or code execution. The function does not properly validate or sanitize the user-supplied input, which leads to this vulnerability."
+}

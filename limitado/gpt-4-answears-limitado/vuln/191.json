@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Type Confusion"],
+  "description": "The function does not properly validate the types of the 'value' and 'pattern' objects. This can lead to type confusion vulnerabilities where an attacker can manipulate the input to cause unexpected behavior. For example, if an attacker can control the 'value' object, they can set it to an array when the function expects it to be an object. This can cause the function to throw an error or behave unexpectedly. Additionally, the function does not check if 'value[property]' or 'pattern[property]' are objects before calling their 'constructor' property, which can cause a TypeError if they are not objects."
+}

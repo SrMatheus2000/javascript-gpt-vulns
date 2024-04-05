@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function setElementContent is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts content into the HTML DOM with the .html() or .append() methods, which do not escape or sanitize the content. If the content variable contains malicious script, it will be executed when the HTML is rendered in the browser."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function setColorTheme uses the eval function to execute code. Even though it uses eval-sanitizer to sanitize the input, it's generally a bad practice to use eval because it can lead to code injection vulnerabilities. An attacker could potentially control the input to the eval function and execute arbitrary code."
+}

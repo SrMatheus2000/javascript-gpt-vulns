@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)"],
+"description": "The function merge is vulnerable as it allows modification of the target object. This can lead to unexpected behavior if the target object is assumed to be immutable. This is known as Modification of Assumed-Immutable Data (MAID) and is classified under CWE-471."
+}

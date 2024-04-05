@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function loadQueryAnalysis is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the jQuery .html() method, which does not escape HTML special characters, thus allowing the injection of malicious scripts. The vulnerability can be found in multiple places in the function, such as $('#queryAnalyzerDialog div.placeHolder').html(...) and $('#queryAnalyzerDialog div.placeHolder td.explain').append(explain). An attacker can exploit this vulnerability to execute arbitrary JavaScript code in the context of the victim's browser session."
+}

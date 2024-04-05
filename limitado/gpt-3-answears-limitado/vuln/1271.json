@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78"],
+  "vulnerabilities": ["Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to command injection and path traversal attacks. The 'input' parameter is directly used in the command executed by the 'exec' function, allowing an attacker to inject arbitrary commands. Additionally, the 'output' parameter is concatenated directly to the output file name without proper validation, which can lead to path traversal vulnerabilities."
+}

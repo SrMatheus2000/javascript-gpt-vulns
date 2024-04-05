@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-74", "CWE-89"],
+"vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"description": "The function does not properly validate the input for 'node.properties[key]' before using it to compile an object. This could lead to potential security vulnerabilities such as code injection or SQL injection if the input is not properly sanitized. The function also does not properly neutralize special elements in the output, which could be used by a downstream component and lead to potential security vulnerabilities."
+}

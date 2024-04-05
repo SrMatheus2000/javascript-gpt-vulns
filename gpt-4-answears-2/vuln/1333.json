@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function addRemote is vulnerable to OS command injection because it concatenates user-supplied input into a command that is executed without proper sanitization or validation. An attacker could exploit this by providing a specially crafted input that includes shell metacharacters, potentially leading to arbitrary command execution."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-494: Download of Code Without Integrity Check", "CWE-73: External Control of File Name or Path"],
+"vulnerabilities": ["Unverified download", "Potential command injection"],
+"description": "The function downloads and compiles a binary without verifying its integrity, which could lead to the execution of malicious code if the download is tampered with. Additionally, the function uses string interpolation to construct a command line string, which could lead to command injection if the bin.dest() function returns a string containing shell metacharacters."
+}

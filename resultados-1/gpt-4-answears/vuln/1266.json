@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_740' is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of 'decodeURIComponent' function without proper sanitization of the input. An attacker can inject malicious scripts as part of the 'params' argument, which will be executed when the output is used in a web context."
+}

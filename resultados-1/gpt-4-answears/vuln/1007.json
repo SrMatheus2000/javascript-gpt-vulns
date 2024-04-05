@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to SQL Injection and Cross-Site Scripting (XSS) attacks. The function does not sanitize the 'data.query.jsonp' input before using it to construct a string that is then executed as code. This allows an attacker to inject malicious code into the 'data.query.jsonp' input, leading to SQL Injection or XSS attacks. Additionally, the function does not validate or sanitize the 'newData' input before using it in the 'onHandshake' and 'publish' methods, which could lead to further vulnerabilities."
+}

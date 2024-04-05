@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function does not properly validate the input for the 'pathToTest' variable, which is derived from the 'req.path' input. This could potentially allow an attacker to manipulate the path and cause an open redirect vulnerability. The function attempts to remove open redirects from the URL, but it does so after the potential manipulation of 'pathToTest', which could still leave the application vulnerable."
+}

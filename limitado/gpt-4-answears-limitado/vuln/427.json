@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Null Pointer Dereference"],
+  "description": "The function nullifies the 'buffers' variable without checking if it's being used elsewhere. This could lead to a Null Pointer Dereference if 'buffers' is accessed after it's been nullified."
+}

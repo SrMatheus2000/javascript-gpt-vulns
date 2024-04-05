@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Code Injection", "Resource Exhaustion"],
+"description": "The function is vulnerable to code injection through the 'require' function which can lead to arbitrary code execution. It is also vulnerable to resource exhaustion as it does not limit the number of files it can open, potentially leading to a denial of service."
+}

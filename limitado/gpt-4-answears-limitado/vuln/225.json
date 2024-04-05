@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Improper escaping of special characters"],
+  "description": "The function escapeshellarg is intended to escape any special characters in a string that is used as a shell argument. However, the regular expression used in the replace function only matches single quotes that are not preceded by a backslash. This means that any other special characters, such as $, &, *, and so on, are not escaped. This could potentially lead to command injection vulnerabilities if the argument is used in a shell command."
+}

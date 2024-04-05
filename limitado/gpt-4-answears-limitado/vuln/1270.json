@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "SQL Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to OS command injection because it directly uses the 'pid' and 'signal' parameters in a shell command without proper sanitization or validation. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function does not validate the 'pid' and 'signal' parameters, which could lead to SQL injection if these parameters are used in a SQL query. The function also does not handle errors properly, which could lead to unhandled promise rejections."
+}

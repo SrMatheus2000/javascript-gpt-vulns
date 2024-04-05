@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-79",
+    "CWE-116"
+  ],
+  "vulnerabilities": [
+    "Cross-Site Scripting (XSS)",
+    "Server-Side Request Forgery (SSRF)"
+  ],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and Server-Side Request Forgery (SSRF) attacks. The input values from the 'organisations' array are directly concatenated into the HTML string without proper sanitization or validation, allowing an attacker to inject malicious code or manipulate server-side requests."
+}

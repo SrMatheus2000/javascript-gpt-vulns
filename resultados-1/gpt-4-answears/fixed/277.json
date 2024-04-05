@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to test and replace a string. If the input string is large, the regex can cause a significant performance hit, leading to a Regular Expression Denial of Service (ReDoS) vulnerability. This is due to the fact that JavaScript's regex engine can take exponential time when dealing with certain patterns and long strings, blocking the event loop and making the application unresponsive."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'e' parameter is directly used to set the innerHTML of an element, which means that if 'e' contains any malicious script, it will be executed when the HTML is rendered. This can lead to various security issues, such as stealing user data or performing actions on behalf of the user."
+}

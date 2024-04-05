@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. In the case where the 'key' argument is a large array or a string that results in a large array when split, the function will consume a lot of resources iterating over the array elements. This can lead to resource exhaustion, causing the application to slow down or crash, effectively resulting in a DoS condition."
+}

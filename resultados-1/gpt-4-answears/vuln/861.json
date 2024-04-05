@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Injection vulnerability"],
+  "description": "The function does not validate or sanitize the input 'v' before using it to split into parameters. This could lead to injection attacks if an attacker can control the input. Additionally, the function does not properly handle the encoding or escaping of output when dealing with the 'value' variable. This could lead to issues with data integrity and could potentially be exploited in an attack."
+}

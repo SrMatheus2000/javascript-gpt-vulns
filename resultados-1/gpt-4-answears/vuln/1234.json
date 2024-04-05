@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses user input in the .html() method, which can lead to the execution of malicious scripts. Also, there is no input validation for the 'data' parameter, which can lead to unexpected behavior or errors."
+}

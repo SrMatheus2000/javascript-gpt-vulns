@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'ffmpeg' is vulnerable to OS command injection. The function takes an 'os' object as an argument and uses its 'stdio' property to set the 'stdio' option for 'cp.execFile'. If an attacker can control the 'os' object, they can inject arbitrary OS commands through the 'stdio' property. This can lead to arbitrary command execution on the server where the JavaScript code is running."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_205 is vulnerable to OS command injection. It constructs a command to be executed using the 'execCommand' function with parameters that include user-supplied input ('ap.ssid' and 'config.iface'). An attacker could potentially inject malicious commands by providing specially crafted input."
+}

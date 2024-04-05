@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. It uses the 'new Function' constructor which allows for dynamic creation of a new function. The problem is that the 'template' parameter is directly inserted into the function body. If an attacker can control the 'template' parameter, they can inject arbitrary JavaScript code which will be executed. This can lead to a variety of attacks, including data theft, data corruption, and denial of service."
+}

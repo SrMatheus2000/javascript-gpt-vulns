@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-522", "CWE-200"],
+"vulnerabilities": ["Insufficiently Protected Credentials", "Information Exposure"],
+"description": "The function creates temporary files to store passwords, which can be accessed by other processes or users on the same system. This can lead to exposure of sensitive information. Additionally, the function does not encrypt the password, which can lead to exposure of sensitive information if the password file is compromised."
+}

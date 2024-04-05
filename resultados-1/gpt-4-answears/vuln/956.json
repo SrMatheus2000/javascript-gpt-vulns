@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-312: Cleartext Storage of Sensitive Information", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Sensitive Data Exposure", "Insecure Direct Object References"],
+  "description": "The function is vulnerable as it seems to be storing sensitive information (authentication credentials) in cookies. Cookies are typically transmitted in clear text, which can be intercepted and read by an attacker. This can lead to unauthorized access if the credentials are compromised. Additionally, the function directly references an object (auth.artifacts) without any validation, which can lead to exposure of private information if an attacker can manipulate the object references."
+}

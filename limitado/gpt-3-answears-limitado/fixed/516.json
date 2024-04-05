@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-321", "CWE-326"],
+  "vulnerabilities": ["Improper Validation of Array Index", "Inadequate Encryption Strength"],
+  "description": "The function is vulnerable to CWE-321 (Improper Validation of Array Index) because it does not perform proper validation of the 'value' parameter before using it. An attacker could potentially exploit this vulnerability by passing a null or undefined value, causing the function to throw an error. Additionally, the function is vulnerable to CWE-326 (Inadequate Encryption Strength) because it uses a weak encryption algorithm (algorithm) and does not specify a secure key length or iteration count for key derivation."
+}

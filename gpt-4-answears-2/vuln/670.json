@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["JSON Injection", "Denial of Service"],
+"description": "The function is vulnerable to JSON Injection because it parses user-supplied input without proper validation. This can lead to various types of attacks such as Cross-Site Scripting (XSS), Server-Side JavaScript Injection (SSJI), and Denial of Service (DoS). The function also does not limit the size of the parsed JSON, which can lead to a Denial of Service (DoS) attack by consuming all available memory."
+}

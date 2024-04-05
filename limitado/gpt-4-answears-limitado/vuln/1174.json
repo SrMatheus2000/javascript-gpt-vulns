@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the eval() function to evaluate a string as code. This is a dangerous practice as it can lead to code injection vulnerabilities. An attacker could potentially control the value of 'ref.' + parts[i].value, leading to arbitrary code execution."
+}

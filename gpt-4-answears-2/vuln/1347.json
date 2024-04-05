@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-94"],
+"vulnerabilities": ["Command Injection", "Code Injection"],
+"description": "The function 'execCommand' is vulnerable to command injection and code injection attacks. The function takes a 'command' argument and directly executes it without any sanitization or validation. An attacker could potentially provide a malicious command or code, leading to unauthorized actions or information disclosure. CWE-78 refers to the command injection vulnerability, while CWE-94 refers to the code injection vulnerability."
+}

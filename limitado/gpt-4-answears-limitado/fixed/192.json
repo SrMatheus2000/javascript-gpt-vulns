@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function does not validate or sanitize the 'opts' input parameter. This could lead to Insecure Direct Object References (IDOR) vulnerability if the 'opts' object contains properties that reference system-level objects or other sensitive resources. An attacker could potentially manipulate these references to gain unauthorized access to data or resources. It is recommended to validate and sanitize all input parameters to prevent such vulnerabilities."
+}

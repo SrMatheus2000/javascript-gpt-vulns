@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["JSON Injection", "Denial of Service"],
+  "description": "The function is vulnerable to JSON Injection because it uses JSON.parse() on user-supplied data without proper validation. This can lead to various attacks such as cross-site scripting (XSS), denial of service (DoS), and remote code execution (RCE). Additionally, the function does not limit the size of the JSON that can be parsed, which can lead to a Denial of Service (DoS) attack by exhausting system resources."
+}

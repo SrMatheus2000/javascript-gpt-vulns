@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any known vulnerabilities. It is a syntax highlighting function for Fortran code, and does not perform any risky operations such as executing dynamic code or handling user input."
+}

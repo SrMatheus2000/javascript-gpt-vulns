@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function unique_name_711 is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled data ('value' parameter) into HTML output without properly sanitizing or escaping it. An attacker could exploit this by providing malicious script code as 'value', which would then be executed in the browser of any user viewing the generated HTML. The function also fails to validate or sanitize the 'key' parameter, which could lead to similar issues."
+}

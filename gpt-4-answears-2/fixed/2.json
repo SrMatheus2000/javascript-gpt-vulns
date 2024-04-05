@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe. It checks the type of the input arguments and handles them accordingly. It also specifically checks for '__proto__', 'constructor', and 'prototype' keys to prevent Prototype Pollution attacks. Therefore, no known vulnerabilities are detected."
+}

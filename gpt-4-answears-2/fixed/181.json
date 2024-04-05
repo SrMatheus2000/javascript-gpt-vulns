@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function does not properly validate input for the 'op' property of the 'c' parameter. This could allow an attacker to inject arbitrary code into the function, leading to code execution. Additionally, the function does not properly validate the 'path' property of the 'c' parameter, which could lead to unexpected behavior if the path is not properly formatted or contains unexpected values."
+}

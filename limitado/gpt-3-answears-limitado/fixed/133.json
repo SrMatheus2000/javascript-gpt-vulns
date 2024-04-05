@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable to any known CWEs. It implements a regular expression pattern to validate an email address based on the RFC 5322 specification."
+}

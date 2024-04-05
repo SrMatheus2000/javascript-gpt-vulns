@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses execFileSync to execute git commands. This can lead to OS command injection if the 'id' or 'branch' parameters are controlled by the user and not properly sanitized. An attacker could potentially inject malicious commands."
+}

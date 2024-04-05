@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not properly sanitize the file path, which can allow an attacker to access arbitrary files and directories stored on file system including application source code, configuration and critical system files. It may read, write, or execute arbitrary files."
+}

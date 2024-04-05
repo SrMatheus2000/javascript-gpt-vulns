@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-200", "CWE-613"],
+"vulnerabilities": ["SQL Injection", "Information Exposure", "Insufficient Session Expiration"],
+"description": "The function is vulnerable to SQL Injection (CWE-89) as it directly uses user input in a database query without proper sanitization or parameterization. This could allow an attacker to manipulate the query and gain unauthorized access to data. The function also exposes sensitive information (CWE-200) by returning detailed error messages that could provide an attacker with clues about the system's configuration or user's existence. Additionally, the function does not handle session expiration (CWE-613), which could allow an attacker to use an old session to gain unauthorized access."
+}

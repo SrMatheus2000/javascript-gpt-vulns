@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'host' variable is passed directly to the 'Child.spawn' function without any sanitization or validation. This could allow an attacker to execute arbitrary commands on the system by providing a specially crafted 'host' value."
+}

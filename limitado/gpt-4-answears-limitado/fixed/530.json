@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22", "CWE-522"],
+  "vulnerabilities": ["OS Command Injection", "Path Traversal", "Insufficiently Protected Credentials"],
+  "description": "The function is vulnerable to OS command injection as it passes user-controlled input to the openssl.execBinary function without proper sanitization. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function is vulnerable to path traversal attacks as it uses user-controlled input to create file paths without proper validation. This could allow an attacker to access, modify, or delete files outside of the intended directories. Lastly, the function stores sensitive information such as passwords in temporary files, which may not be securely deleted, leading to insufficiently protected credentials."
+}

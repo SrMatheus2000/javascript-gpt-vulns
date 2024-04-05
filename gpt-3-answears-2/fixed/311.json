@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-703"],
+  "vulnerabilities": ["Uncaught Exception", "Server Shutdown"],
+  "description": "The code is vulnerable to uncaught exceptions and server shutdown. If an uncaught exception occurs, the server will not handle it properly and may crash. Additionally, the server shutdown process is not properly handled, which can lead to unexpected behavior."
+}

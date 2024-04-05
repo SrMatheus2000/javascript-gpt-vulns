@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The setText function directly assigns the value of a property to the textContent of an element without any sanitization. If the property value contains malicious scripts, it will be executed when the element is rendered. Similarly, the setStyle function directly assigns the value of a property to the style of an element without any sanitization. If the property value contains malicious scripts, it will be executed when the element is rendered."
+}

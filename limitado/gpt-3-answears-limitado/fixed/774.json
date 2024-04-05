@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The provided JavaScript function is vulnerable to Cross-Site Scripting (XSS) attacks. The function directly concatenates the 'message' and 'title' variables into the 'ELECTRON_BROWSER_WINDOW_CONFIRM' event payload without proper input validation or output encoding. This allows an attacker to inject malicious code into the payload, which can be executed by the Electron browser window."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'runInContext' is vulnerable to code injection. It concatenates the 'code' parameter directly into a string that is then executed by 'vm.runInContext'. An attacker could provide malicious code as the 'code' parameter, which would then be executed with the permissions of the script. This could lead to arbitrary code execution, data leakage, or denial of service."
+}

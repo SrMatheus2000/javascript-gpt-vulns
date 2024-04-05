@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'getType' is vulnerable to Path Traversal attacks (also known as Directory Traversal). This is due to the fact that it takes a 'path' parameter and uses it to access file system resources without properly validating or sanitizing it. An attacker could potentially exploit this by providing a path that includes special sequences (like '../') to navigate to arbitrary directories and access sensitive files on the server."
+}

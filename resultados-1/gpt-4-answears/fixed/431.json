@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The file path is constructed from user input (req.params['*']), which is then used to read a file from the file system. An attacker could manipulate the input to escape the intended directory (swaggerUiPath) and read arbitrary files from the server's file system."
+}

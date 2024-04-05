@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'text.title' and 'text.content' variables are directly concatenated into the 'html' variable without proper sanitization or encoding, allowing an attacker to inject malicious scripts."
+}

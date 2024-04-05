@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-754", "CWE-476"],
+  "vulnerabilities": ["Improper Input Validation", "Improper Check for Unusual or Exceptional Conditions", "NULL Pointer Dereference"],
+  "description": "The function does not validate the input parameters which can lead to unexpected behavior (CWE-20). It also does not check for unusual or exceptional conditions that might occur during the execution of the program (CWE-754). There is also a potential for NULL pointer dereference (CWE-476) as the function does not check if the objects it is accessing (yy, $$, etc.) are not null before using them."
+}

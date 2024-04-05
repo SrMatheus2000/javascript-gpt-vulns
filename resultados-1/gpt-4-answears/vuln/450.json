@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Type confusion vulnerability"],
+  "description": "The function unique_name_216 does not validate the types of its arguments. This can lead to a type confusion vulnerability if the function is called with arguments of unexpected types. For example, if 'node' is not an object or if 'node.object' or 'node.property' are not the expected types, the function may throw an exception or behave unexpectedly. It's recommended to add type checks at the beginning of the function to ensure that the arguments are of the expected types."
+}

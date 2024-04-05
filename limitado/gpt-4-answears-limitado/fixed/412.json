@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Command Injection", "Path Traversal", "Information Exposure"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input (ap.ssid and config.iface) in execCommand without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. The function also writes sensitive information (the WiFi password) to a file (nodeWifiConnect.xml) which could lead to information exposure. Additionally, the function does not properly restrict the pathname to a restricted directory, which could lead to path traversal attacks."
+}

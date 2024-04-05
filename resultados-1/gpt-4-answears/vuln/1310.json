@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-434: Unrestricted Upload of File with Dangerous Type", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Unrestricted File Upload", "Path Traversal"],
+  "description": "The function allows for unrestricted file uploads, which can lead to arbitrary code execution if an attacker uploads a script file. Additionally, the function does not properly limit or sanitize the 'uploadDir' parameter, which can lead to path traversal attacks, allowing an attacker to read, write, or delete files outside of the intended directory."
+}

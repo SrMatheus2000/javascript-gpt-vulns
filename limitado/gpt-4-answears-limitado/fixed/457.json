@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function appears to be secure. It checks if a text is matched and if so, it adds it to the htmlText string after escaping any HTML characters to prevent Cross-Site Scripting (XSS) attacks. If the text is not matched, it still escapes any HTML characters before adding it to the htmlText string. Therefore, no vulnerabilities are detected."
+}

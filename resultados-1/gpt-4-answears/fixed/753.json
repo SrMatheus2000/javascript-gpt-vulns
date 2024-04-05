@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the input 'msg' before using it to decode a proposal and create a public key. This could lead to unexpected behavior or errors if 'msg' is not in the expected format. It could also potentially be exploited to execute arbitrary code or cause a denial of service (DoS) if 'msg' contains malicious data."
+}

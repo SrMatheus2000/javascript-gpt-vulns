@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-79"],
+"vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to SQL Injection and Cross-Site Scripting (XSS) attacks. The function does not properly sanitize user input, allowing an attacker to inject malicious SQL commands or scripts. This could lead to unauthorized access to data, data manipulation, and other potential security breaches."
+}

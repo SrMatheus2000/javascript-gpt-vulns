@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The function attempts to sanitize the 'dir' input by splitting it on ';' and taking the first element, but this is not sufficient to prevent path traversal. An attacker could provide a 'dir' value like '../../etc/passwd' to escape the intended directory and access sensitive files. The function should validate that the 'dir' value is a safe path before using it."
+}

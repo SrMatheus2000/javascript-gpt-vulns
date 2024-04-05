@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Insecure Cryptographic Storage"],
+  "description": "The function uses the 'crypto.createCipheriv' method for encryption, but the 'algorithm' and 'key' are not defined within the function. If these are not securely defined elsewhere in the code, it could lead to insecure cryptographic storage. The algorithm used could be weak or broken, and the key could be easily guessed or brute-forced. This could allow an attacker to decrypt the data."
+}

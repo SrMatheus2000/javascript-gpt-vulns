@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution, which is a type of attack where the properties of JavaScript object prototypes are modified. The attacker can manipulate these attributes to add or modify properties of JavaScript objects. This can lead to several issues like denial of service, property injection, or even remote code execution. In this function, the target object's properties are dynamically set using the 'key' variable, which can be controlled by an attacker."
+}

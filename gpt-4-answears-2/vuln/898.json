@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-312", "CWE-319", "CWE-200"],
+"vulnerabilities": ["Cleartext Storage of Sensitive Information", "Cleartext Transmission of Sensitive Information", "Information Exposure"],
+"description": "The function is using the Buffer constructor to convert the API key to base64, which is deprecated due to security and reliability issues. It's also storing and transmitting sensitive information in cleartext, which can expose it to unauthorized parties."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function 'unique_name_629' is vulnerable to Cross-Site Scripting (XSS) attacks. It checks if the 'name' parameter is 'script' or 'noscript' and returns if it is, but it does not sanitize or escape other HTML tags. This could allow an attacker to inject malicious scripts. Additionally, the function checks if any attribute names start with 'on', which are typically used for event handlers in HTML, and returns if they do. However, this check is case-sensitive, so an attacker could bypass it by using uppercase letters. Furthermore, the function does not validate or sanitize the 'attrs' parameter, which could lead to other types of injection attacks."
+}

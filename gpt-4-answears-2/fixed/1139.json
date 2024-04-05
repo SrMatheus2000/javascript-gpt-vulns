@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-117", "CWE-20", "CWE-94"],
+"vulnerabilities": ["Improper Output Neutralization for Logs", "Improper Input Validation", "Improper Control of Generation of Code ('Code Injection')"],
+"description": "The function logs sensitive information which can lead to information exposure through logs (CWE-117). It also does not validate the input received in req.params.func and req.params.version which can lead to various attacks (CWE-20). The function also seems to be vulnerable to JSONP callback function injection, as it directly uses the user-provided input to form a function call without proper sanitization (CWE-94)."
+}

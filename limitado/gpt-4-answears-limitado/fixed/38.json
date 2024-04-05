@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Path Traversal", "Denial of Service"],
+  "description": "The function is vulnerable to Information Disclosure as it throws errors with potentially sensitive information. It is also vulnerable to Path Traversal as it reads files from the local filesystem without validating or sanitizing the input, which could allow an attacker to read arbitrary files. Additionally, it is vulnerable to Denial of Service as it does not limit the amount of data read from a file, which could lead to excessive resource consumption."
+}

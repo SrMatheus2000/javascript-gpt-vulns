@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a serious vulnerability that occurs when the properties of JavaScript objects can be manipulated through the prototype chain. This can lead to a variety of security vulnerabilities, such as Remote Code Execution, Denial of Service, or even Cross-Site Scripting. In this function, the 'key' can be manipulated to modify the Object prototype. If the 'array' parameter can be controlled by an attacker, it could be used to modify the prototype of 'Object', adding or modifying existing properties."
+}

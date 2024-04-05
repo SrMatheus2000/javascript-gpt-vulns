@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+"vulnerabilities": ["Information Disclosure", "Denial of Service", "Path Traversal"],
+"description": "The function unique_name_20 has several potential vulnerabilities. First, it may disclose sensitive information through error messages (CWE-209). Second, it does not limit the consumption of system resources, which could lead to a Denial of Service (DoS) attack (CWE-400). Lastly, it does not properly limit the pathname to a restricted directory, which could allow an attacker to access files outside of the intended directories (CWE-22)."
+}

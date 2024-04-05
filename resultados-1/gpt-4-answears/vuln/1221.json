@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function 'unique_name_710' is vulnerable to Open Redirect attacks. This is due to the fact that the function does not validate or sanitize the 'hash' input before using it to redirect the user. An attacker could exploit this vulnerability by crafting a URL with a malicious hash, which when visited by a user, could redirect them to an untrusted site. This could lead to various attacks such as phishing, stealing user credentials, or delivering malware."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-328: Reversible One-Way Hash"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insufficiently Protected Credentials"],
+  "description": "The function seems to be using a custom method for signing and verifying data, which can be a potential security risk. It's not clear what algorithm 'exports.sign' uses, but if it's not a secure one, it could lead to vulnerabilities. The function also doesn't seem to handle cases where 'val' doesn't contain a '.', which could lead to unexpected behavior. Moreover, the function returns either the original string or false, which could leak information about the data if it's used improperly."
+}

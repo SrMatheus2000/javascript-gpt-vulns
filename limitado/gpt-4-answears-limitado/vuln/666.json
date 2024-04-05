@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'cmd' variable is constructed by concatenating user-controlled input ('opts.range[block]') into a command that is executed by the system. An attacker could potentially control the 'block' parameter to inject malicious commands, leading to arbitrary command execution on the server."
+}

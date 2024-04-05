@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Error Message Information Leak", "Potential Denial of Service"],
+  "description": "The function is vulnerable to information disclosure through error messages. In several places, the function returns error messages that include potentially sensitive information, such as file paths or internal state information (e.g., 'File not found', 'File is too big. (Max 600MB)', 'port missing', etc.). This could allow an attacker to gain information about the internal workings of the application that could be used in further attacks. Additionally, the function does not appear to limit the size of the files it processes or the number of requests it handles, which could make it vulnerable to a denial of service attack if an attacker sends a

@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Code Injection", "Path Traversal"],
+  "description": "The function is vulnerable to code injection via the 'options.allowInjection' parameter. If this parameter is set to true, it allows for the execution of arbitrary code. This is a serious security risk as it can lead to remote code execution (RCE) attacks. This is represented by CWE-94. Additionally, the function uses 'fs.readdirSync(options.datadir)' and 'fs.readFileSync(imposterFilename)' without properly validating or sanitizing the 'options.datadir' and 'imposterFilename' inputs, which can lead to path traversal attacks where an attacker can read arbitrary files on the system. This is represented

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function whereis is vulnerable to OS command injection because it concatenates a user-supplied string 'name' directly into a command that is executed by the system. An attacker could exploit this by providing a malicious string that executes arbitrary commands on the system."
+}

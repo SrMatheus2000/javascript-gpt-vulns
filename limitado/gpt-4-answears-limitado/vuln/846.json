@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Input Validation"],
+  "description": "The function is vulnerable to OS command injection because it concatenates the 'host' input directly into the command that is executed. An attacker could provide a malicious 'host' value that alters the command to perform unintended actions. Additionally, the function does not properly validate the 'host' input before using it, which could lead to unexpected behavior or errors."
+}

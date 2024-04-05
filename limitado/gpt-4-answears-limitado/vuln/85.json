@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'toast' is vulnerable to code injection. The 'message' parameter is directly embedded into a string that is later evaluated as code. If an attacker can control the 'message' parameter, they can inject arbitrary JavaScript code that will be executed in the context of the inspected window. This can lead to a variety of attacks, including stealing sensitive data, performing actions on behalf of the user, or executing malicious code."
+}

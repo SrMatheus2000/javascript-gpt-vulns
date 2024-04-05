@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function encodes the bookmark tags, title, and URL, but it does not properly sanitize the bookmark id before appending it to the DOM. An attacker could potentially inject malicious scripts through the bookmark id, leading to an XSS attack. This is a violation of CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting'). Additionally, the function does not properly escape or encode the output before appending it to the DOM, which is a violation of CWE-116: Improper Encoding or Escaping of Output."
+}

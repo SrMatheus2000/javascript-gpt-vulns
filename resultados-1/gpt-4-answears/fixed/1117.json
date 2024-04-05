@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the jQuery .html() method, which can execute JavaScript code. If an attacker can control the value of PMA_messages.strFinishMsg or PMA_commonParams.get('table'), they could inject malicious JavaScript code that would be executed when the function is called."
+}

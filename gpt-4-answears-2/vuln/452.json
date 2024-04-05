@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function unique_name_218 is vulnerable to code injection. The function takes a 'tag' and 'expressions' as input and directly uses them to construct and execute a function. If an attacker can control the 'tag' or 'expressions' input, they could inject arbitrary code into the function, leading to potential remote code execution."
+}

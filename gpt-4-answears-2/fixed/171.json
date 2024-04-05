@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'slot' variable is directly inserted into the template of 'CustomSlot' without any sanitization or escaping. This means that if a user can control the value of 'slot', they can inject arbitrary HTML or JavaScript code, which will be executed when the component is rendered."
+}

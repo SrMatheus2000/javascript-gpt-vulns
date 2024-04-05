@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the eval() function, which is dangerous because it executes any code given to it. It's not just limited to the code you write. This means that an attacker could inject code into your application and make it do things you didn't intend. This is known as code injection. In this case, an attacker could manipulate the 'ratio' option to execute arbitrary JavaScript code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that user input is directly inserted into HTML content without proper sanitization or encoding. Specifically, the 'createOption' function directly inserts the 'value' parameter into an HTML string, which is then used to create a new HTML element. If an attacker can control the 'value' parameter, they can inject arbitrary HTML or JavaScript code, leading to an XSS attack."
+}

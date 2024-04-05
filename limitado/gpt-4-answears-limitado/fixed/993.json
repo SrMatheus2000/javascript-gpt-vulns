@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Buffer Overflow"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks and Buffer Overflow. The 'Content-length' header is used to create a new Buffer without any validation. An attacker can provide a very large number in the 'Content-length' header, causing the application to consume a large amount of memory and potentially crash, leading to a DoS attack. Additionally, the 'copy' method is used to copy data into the buffer without checking if the buffer has enough space, which can lead to a Buffer Overflow."
+}

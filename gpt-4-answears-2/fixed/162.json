@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be secure. It checks for '__proto__' and 'constructor' keys in objects to prevent prototype pollution attacks. It also does not use any dangerous functions or methods that could lead to vulnerabilities such as code injection or cross-site scripting (XSS)."
+}

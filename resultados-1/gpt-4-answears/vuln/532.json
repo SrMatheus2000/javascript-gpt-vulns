@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-79"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Cross-site Scripting (XSS)"],
+  "description": "The function unique_name_262 is vulnerable as it does not validate or sanitize the 'data' input before using it to split and parse into JSON. This could lead to various attacks such as SQL Injection, Code Injection, or Cross-site Scripting (XSS) if an attacker is able to control the 'data' input. Additionally, the function does not handle errors that may occur during the parsing of the JSON, which could lead to application crashes or unexpected behavior."
+}

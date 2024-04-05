@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path"],
+  "description": "The function does not validate or sanitize the 'cwd' and 'opts' parameters, which can lead to path traversal vulnerabilities if the parameters are controlled by an attacker. This can allow an attacker to read, write or delete files outside of the intended directory. Additionally, the function uses the 'header.name' and 'header.linkname' values to create file paths without validating or sanitizing them, which can lead to external control of file name or path vulnerability if these values are controlled by an attacker."
+}

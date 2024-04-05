@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure Randomness"],
+  "description": "The function uses the 'new Buffer(size)' constructor, which is deprecated and unsafe as it can lead to memory exposure if 'size' is not a number. If 'size' is a string, it will allocate a buffer of that size but will not initialize it, potentially leading to sensitive information disclosure. It's recommended to use 'Buffer.alloc(size)' instead, which will initialize the buffer with zeros. Also, the function does not handle the case where 'crypto.getRandomValues' is not available, which can lead to errors in older browsers."
+}

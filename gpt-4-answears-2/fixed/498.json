@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-807"],
+"vulnerabilities": ["Reliance on Untrusted Inputs in a Security Decision"],
+"description": "The function 'lookup' does not properly validate the 'field' parameter. This could allow an attacker to access and modify properties of the 'obj' object that should not be directly accessible, leading to potential security issues. This is a form of the CWE-807: Reliance on Untrusted Inputs in a Security Decision vulnerability."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted use of dangerous function"],
+"description": "The function uses the 'then' method without checking if it's a legitimate function or not. This could lead to the execution of arbitrary code if an attacker can control the 'then' property of the object 'v'. This is known as 'Unrestricted use of dangerous function' vulnerability."
+}

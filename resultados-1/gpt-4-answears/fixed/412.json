@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Command Injection", "Path Traversal", "External Control of File Name or Path"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input (ap.ssid and config.iface) in a command that is executed by the system. An attacker could potentially inject malicious commands by providing a specially crafted ssid or iface. Additionally, the function writes to a file using a hard-coded file name and path, which could potentially be exploited to overwrite important files or write to restricted directories. Finally, the function deletes a file using a hard-coded file name and path, which could potentially be exploited to delete important files."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function is vulnerable to SQL Injection. The 'indexName' and 'i.columns' variables are directly used in the SQL query without any sanitization or parameterized queries, which can lead to SQL Injection if the user input is not properly sanitized before being passed to this function."
+}

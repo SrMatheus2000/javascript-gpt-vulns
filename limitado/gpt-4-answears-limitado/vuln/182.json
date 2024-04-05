@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Unvalidated input", "Potential for code injection"],
+  "description": "The function does not validate the input for 'path' which can lead to unexpected behavior or potential code injection if the input is not properly sanitized before being passed to the function. The function also directly manipulates the input object 'obj' which can lead to unintended side effects if the object is used elsewhere in the application."
+}

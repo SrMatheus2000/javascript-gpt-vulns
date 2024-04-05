@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function json2html is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled input into HTML output without proper sanitization or encoding. Specifically, the function does not escape special characters in the 'key' variable, which is used to generate HTML content. An attacker could exploit this by providing a malicious JSON object with keys containing script tags, which would then be executed when the generated HTML is rendered in a web browser."
+}

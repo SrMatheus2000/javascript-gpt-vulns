@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The href, title, and text parameters are directly concatenated into the output HTML without any sanitization or encoding. An attacker could inject malicious scripts through these parameters. The function attempts to sanitize the href parameter by checking for 'javascript:' or 'vbscript:' protocols, but this is insufficient as there are many other ways to execute JavaScript in a href attribute. The title and text parameters are not sanitized at all. Additionally, the function does not properly escape the output, which could lead to other types of injection attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function does not sanitize or escape the 'text' input when the 'tag' is either 'script' or 'style'. This could lead to Cross-site Scripting (XSS) attacks if the input is not properly validated or sanitized elsewhere in the application. XSS attacks occur when an attacker is able to inject malicious scripts into webpages viewed by other users, which can lead to a variety of attacks such as stealing user data, defacing web sites, or redirecting the user to malicious sites."
+}

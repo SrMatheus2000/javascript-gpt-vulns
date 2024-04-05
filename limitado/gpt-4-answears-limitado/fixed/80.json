@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the `cheerio.load()` function to parse HTML content from a response, and then directly injects this content into the page using the `.html()` function. An attacker could potentially inject malicious scripts into the HTML content, which would then be executed when the page is loaded. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

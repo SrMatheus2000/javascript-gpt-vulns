@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function escapeHtml is used to sanitize the table name before it is inserted into the SQL query. However, if the escapeHtml function is not properly implemented, it could allow an attacker to inject malicious scripts into the web page, leading to XSS attacks. This could allow the attacker to steal sensitive information, perform actions on behalf of the user, or deliver malware to the user's browser."
+}

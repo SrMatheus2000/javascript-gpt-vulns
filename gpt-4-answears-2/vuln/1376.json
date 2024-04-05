@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-117", "CWE-209"],
+"vulnerabilities": ["Information Exposure Through an Error Message", "Information Exposure Through Log Files"],
+"description": "The function logs error messages that may contain sensitive information, which could be exposed to unauthorized users. Additionally, the function does not handle errors securely, potentially leading to information exposure."
+}

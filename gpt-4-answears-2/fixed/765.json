@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe as it is properly escaping any HTML content within the markdown string before setting it as innerHTML. This prevents Cross-Site Scripting (XSS) attacks."
+}

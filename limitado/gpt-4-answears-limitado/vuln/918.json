@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Path Traversal", "SQL Injection", "Cross-Site Scripting"],
+  "description": "The function does not validate or sanitize the 'item' input, which can lead to several vulnerabilities. An attacker could manipulate the 'path' to traverse the file system (Path Traversal). If 'repo.username', 'repo.reponame', or 'repo.branch' are used in a SQL query, it could lead to SQL Injection if they contain malicious SQL code. If 'item.type', 'item.path', or 'name' are rendered in a web page, it could lead to Cross-Site

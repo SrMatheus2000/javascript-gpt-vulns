@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site WebSocket Hijacking (CSWSH)", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site WebSocket Hijacking (CSWSH) as it does not validate the origin of the WebSocket connection. This can allow an attacker to interact with the WebSocket as if they were the legitimate user. Additionally, the function does not validate or sanitize the input received through the WebSocket, which can lead to various types of attacks such as Cross-Site Scripting (XSS) or SQL Injection."
+}

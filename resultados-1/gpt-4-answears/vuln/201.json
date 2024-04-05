@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Denial of Service", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks as it evaluates code via the 'eval' function. This can allow an attacker to run arbitrary code in the context of the application. The function also does not properly validate input, which can lead to other types of attacks such as SQL injection or cross-site scripting (XSS). Additionally, the function does not properly manage resources, which can lead to a denial of service (DoS) condition if an attacker can cause it to consume excessive resources."
+}

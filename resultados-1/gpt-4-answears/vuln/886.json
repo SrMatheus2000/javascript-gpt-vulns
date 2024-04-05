@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-759: Use of a One-Way Hash without a Salt"],
+  "vulnerabilities": ["Sensitive data is not encrypted", "Use of a one-way hash without a salt"],
+  "description": "The function 'unique_name_466' is vulnerable as it does not encrypt sensitive data (passwords) which can lead to exposure of sensitive information. It also uses a one-way hash without a salt, making it susceptible to rainbow table attacks. A salt is a random value that is used as an additional input to a one-way function that hashes data or passwords. The absence of a salt allows an attacker to pre-compute the hash value using dictionary attack or rainbow tables."
+}

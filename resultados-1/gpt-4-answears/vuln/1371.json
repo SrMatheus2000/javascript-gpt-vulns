@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-829", "CWE-494"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Download of Code Without Integrity Check"],
+  "description": "The function downloads a file from a fixed URL without any form of verification. This can lead to an Insecure Direct Object References (IDOR) vulnerability, where an attacker could potentially manipulate the 'version' variable to download malicious files. Additionally, the function does not perform any integrity checks on the downloaded files, which could lead to the execution of malicious code if the source is compromised."
+}

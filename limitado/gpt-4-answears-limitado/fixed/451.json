@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function directly assigns the 'value' or 'state[property].value' to 'elem.textContent' without any sanitization or encoding. This could lead to Cross-Site Scripting (XSS) attacks if the 'value' or 'state[property].value' contains malicious scripts."
+}

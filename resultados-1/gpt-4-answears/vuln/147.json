@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure", "Open Redirect"],
+  "description": "The function 'unique_name_80' is vulnerable due to several reasons. Firstly, it logs the request URL which can lead to information exposure. Secondly, it does not validate the 'request.url' properly before using it in the 'lastIndexOf' method which can lead to improper input validation. Lastly, it changes the URL from 'file://' to 'http://' without proper validation which can lead to open redirect vulnerability."
+}

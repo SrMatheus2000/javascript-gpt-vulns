@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Input Validation", "Code Injection"],
+  "description": "The function does not validate the 'json' input parameter before using it. This could lead to unexpected behavior or even code injection if the 'json' object contains malicious data. For example, if 'json.tiles[0]' is a string that can pass the 'formatPattern' match, it could potentially be used to alter the behavior of the function. Similarly, 'json.attribution', 'json.minzoom', 'json.maxzoom', 'json.scheme', and 'json.bounds' are used without any validation. This could lead to a variety of issues, including code injection, type confusion, or logical errors."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'slot' variable, which is derived from user input (params.message), is directly injected into the template of the 'CustomSlot' Vue component without any sanitization or escaping. This allows an attacker to inject malicious scripts as the message, which will be executed when the component is rendered."
+}

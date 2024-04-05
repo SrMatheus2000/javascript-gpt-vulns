@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses user input to create a new text node (new CKEDITOR.dom.text( data.linkText, editor.document )) and set HTML content (element.setHtml( newText )). If the user input is not properly sanitized, an attacker can inject malicious scripts, which will be executed when the generated HTML content is rendered in a web browser."
+}

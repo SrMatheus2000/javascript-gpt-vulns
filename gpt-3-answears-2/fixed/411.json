@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89"],
+  "vulnerabilities": ["Command Injection", "SQL Injection"],
+  "description": "The function is vulnerable to command injection and SQL injection attacks. The 'cmd' variable is directly concatenated with the 'params' array without proper sanitization or validation, allowing an attacker to inject arbitrary commands or SQL queries."
+}

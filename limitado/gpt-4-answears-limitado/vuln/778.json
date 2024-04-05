@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function 'mrk.htmlify.link' does not properly sanitize the 'href' attribute of the 'a' tag. Although it attempts to remove 'javascript:' from the href, it does not account for case-insensitive matches or encoded versions of 'javascript:'. An attacker could potentially inject malicious scripts through the href attribute, leading to an XSS attack."
+}

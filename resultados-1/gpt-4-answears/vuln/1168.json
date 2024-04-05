@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service"],
+  "description": "The function does not validate the 'opts' parameter before using it, which can lead to a Path Traversal vulnerability if a malicious path is passed. This can allow an attacker to read or write files outside of the intended directory. Additionally, the function does not handle errors that may occur during the extraction process, which can lead to a Denial of Service (DoS) if the process runs out of resources (e.g., memory, disk space)."
+}

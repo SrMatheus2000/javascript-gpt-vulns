@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm"],
+"description": "The function uses the 'deriveBits' method which might be using a weak cryptographic algorithm. This could lead to the exposure of sensitive information as weak cryptographic algorithms can be easily broken. It's recommended to use a strong cryptographic algorithm."
+}

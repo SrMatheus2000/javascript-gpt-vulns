@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted prototype modification"],
+"description": "The function modifies the prototype of a passed object, which can lead to unrestricted prototype modification. This can potentially lead to execution of arbitrary JavaScript code or even denial of service."
+}

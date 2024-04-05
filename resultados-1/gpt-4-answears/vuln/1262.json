@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'attr' method to get the attribute of an HTML element. If the attribute value is controlled by the user, it can lead to an XSS attack. The attacker can inject malicious scripts in the attribute value, which will be executed when the function is called. This can lead to various attacks like stealing sensitive information, session hijacking, etc."
+}

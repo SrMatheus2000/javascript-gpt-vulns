@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It allows a wide range of HTML tags and attributes, including 'style' and 'on*' event handlers, which can be used to inject malicious scripts. Although the function attempts to sanitize the input, it does not properly neutralize all forms of scripts, such as those in event handlers or CSS. This can lead to XSS attacks where an attacker can inject a script that can be executed on the user's browser, leading to various attacks such as cookie theft, session hijacking, defacement of websites, and redirection to malicious sites."
+}

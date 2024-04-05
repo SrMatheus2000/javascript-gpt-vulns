@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'file' variable, which is used to construct the 'from' and 'to' paths, is not properly sanitized before use. An attacker could potentially manipulate the 'file' variable to navigate to arbitrary directories. This could lead to unauthorized access to sensitive information or potential code execution if the attacker can write to a directory that is accessible by the server."
+}

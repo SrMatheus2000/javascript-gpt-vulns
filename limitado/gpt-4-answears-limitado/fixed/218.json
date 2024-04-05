@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly assigns user-controlled input to element attributes and text content. An attacker can inject malicious scripts through the 'a' parameter, which will be executed when the created element is added to the DOM."
+}

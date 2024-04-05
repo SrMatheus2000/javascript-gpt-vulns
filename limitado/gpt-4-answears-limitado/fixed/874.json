@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Private Key Exposure", "Lack of Input Validation"],
+  "description": "The function seems to be vulnerable to private key exposure as it uses the private key in a way that could potentially expose it. It also lacks proper input validation which could lead to unexpected behavior or security issues. For instance, there is no check to ensure that the 'key' and 'props' parameters are of the correct type or format. This could lead to type confusion or other errors."
+}

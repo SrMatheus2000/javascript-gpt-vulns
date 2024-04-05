@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)", "Prototype Pollution"],
+"description": "The function does not validate the input 'data' properly. If a large amount of data is passed, it can lead to a Denial of Service (DoS) attack by consuming system resources. Additionally, the function does not prevent the modification of the prototype of an object, which can lead to Prototype Pollution."
+}

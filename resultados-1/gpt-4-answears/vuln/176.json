@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a recursive function that iterates over an object or array and its nested objects or arrays, and pushes the keys and values into an 'entries' array. It does not execute any code or evaluate any strings, so there is no risk of code injection. It also does not access any external resources or sensitive information, so there is no risk of information exposure. However, it's worth noting that if the input object is deeply nested, this function could potentially cause a stack overflow due to its recursive nature."
+}

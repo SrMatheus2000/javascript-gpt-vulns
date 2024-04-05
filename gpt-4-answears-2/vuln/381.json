@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-78", "CWE-200"],
+"vulnerabilities": ["Path Traversal", "OS Command Injection", "Information Exposure"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files without proper validation. It's also vulnerable to OS Command Injection (CWE-78) as it uses user input to form a command that is executed by the system. Additionally, it exposes sensitive information like AWS keys and secrets (CWE-200) which can lead to unauthorized access to the AWS resources."
+}

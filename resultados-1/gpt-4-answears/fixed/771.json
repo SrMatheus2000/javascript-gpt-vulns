@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function does not sanitize or validate the 'url' parameter before using it to load a URL, which could lead to Cross-Site Scripting (XSS) if a malicious URL is passed. Also, the function does not validate the 'postData' parameter before using it, which could lead to issues if the postData is not in the expected format or contains malicious data."
+}

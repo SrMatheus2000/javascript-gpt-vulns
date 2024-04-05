@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function normalizes a path joining the 'repoDir' and 'dir' variables. If an attacker can control the 'dir' variable, they could potentially navigate to arbitrary directories (Path Traversal). This could lead to unauthorized access to files on the server."
+}

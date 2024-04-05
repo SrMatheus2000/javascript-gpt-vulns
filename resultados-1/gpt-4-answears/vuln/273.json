@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-730: Incorrect Regular Expression"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) attack. The 'regex.exec(string)' can be exploited if a malicious user provides a specially crafted string that takes a long time to process. This can lead to the application becoming unresponsive or consuming excessive resources, leading to a denial of service. Additionally, the function does not validate the input 'string' before processing it, which can lead to unexpected behavior or errors. The 'parser.load(yaml)' can also be a potential point of failure if the 'yaml' is not properly formatted or contains malicious data."
+}

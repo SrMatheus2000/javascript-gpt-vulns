@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a serious security vulnerability. The function does not validate or sanitize the input 'ch.key' which can be manipulated to modify the prototype of 'Object'. If an attacker can control part of the structure of 'ch.key', they can inject properties into 'Object.prototype'. These properties will be available on all objects and can lead to various security issues like denial of service (DoS), property overwrite, or even arbitrary code execution."
+}

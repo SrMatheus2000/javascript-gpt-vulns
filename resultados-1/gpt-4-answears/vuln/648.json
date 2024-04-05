@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-330: Use of Insufficiently Random Values"],
+  "vulnerabilities": ["Insecure Randomness"],
+  "description": "The function uses the crypto.randomBytes(1)[0] % max to generate a random number, but the '%' operator introduces modulo bias because the random numbers are not evenly distributed. This could lead to predictability in the generated numbers, making the function insecure."
+}

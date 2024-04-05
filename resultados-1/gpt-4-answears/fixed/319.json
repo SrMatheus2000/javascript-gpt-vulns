@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["No input validation"],
+  "description": "The function does not perform any validation on the input parameters 'schema' and 'post'. This could lead to unexpected behavior if the function is called with incorrect or malicious input. For example, if 'schema' or 'post' is not an object, the function will simply return 'post', which could potentially be any value. Additionally, the function does not check if 'schema.items' or 'post' are arrays before attempting to access their length property, which could result in a TypeError if either of these values is not an array."
+}

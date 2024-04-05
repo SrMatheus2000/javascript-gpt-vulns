@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "XML External Entity (XXE) Injection"],
+  "description": "The function parseDCC is vulnerable to Denial of Service (DoS) and XML External Entity (XXE) Injection attacks. The function does not validate the input 'source' which can lead to unexpected behavior. If an attacker provides a large input, it can cause the application to consume resources excessively, leading to a DoS condition. Additionally, the function handles XML data without disabling the use of external entities. This can lead to XXE attacks, where an attacker can cause the application to read local files, interact with internal systems, or execute arbitrary requests."
+}

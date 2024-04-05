@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20"],
+  "vulnerabilities": ["Integer Overflow or Wraparound"],
+  "description": "The provided JavaScript function __isInt is vulnerable to an integer overflow or wraparound vulnerability. This vulnerability occurs when the input value is a large positive or negative number that exceeds the maximum or minimum value that can be represented by the JavaScript number data type. The regular expression used in the function does not handle such cases correctly, leading to incorrect results."
+}

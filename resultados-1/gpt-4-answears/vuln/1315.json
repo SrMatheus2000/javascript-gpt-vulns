@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the eval() function, which is dangerous because it executes any code given to it. It's not safe to use eval() with user input because it allows for potential code injection attacks. In this case, a malicious user could provide a string of code as 'color', which would then be executed by the eval() function."
+}

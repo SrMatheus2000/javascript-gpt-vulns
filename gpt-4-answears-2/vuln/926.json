@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function", "CWE-20: Improper Input Validation", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Use of potentially dangerous function", "Improper input validation", "Potential null pointer dereference"],
+"description": "The function uses the potentially dangerous function _.unescape() which can lead to security vulnerabilities if the input is not properly sanitized. It also does not validate the input before trying to parse it with JSON.parse(), which can lead to unexpected behavior or errors. Additionally, the function does not check if 'options' or 'key' are defined before trying to assign a value to options[key], which can lead to a null pointer dereference."
+}

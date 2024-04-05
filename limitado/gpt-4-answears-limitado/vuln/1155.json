@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352", "CWE-200", "CWE-614"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Information Exposure", "Sensitive Cookie in HTTPS Session Without 'Secure' Attribute"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CWE-352) because it does not validate or verify the source of the request before processing it. This could allow an attacker to trick a user into making an unintended request to the web application. The function also exposes sensitive information (CWE-200) by setting cookies with sensitive session IDs without the 'Secure' attribute (CWE-614), which means that the cookie could be sent over an unencrypted HTTP connection, exposing it to potential interception and misuse."
+}

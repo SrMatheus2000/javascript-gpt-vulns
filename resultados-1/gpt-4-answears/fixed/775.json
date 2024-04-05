@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-749: Exposed Dangerous Method or Function"],
+  "vulnerabilities": ["URL Redirection to Untrusted Site ('Open Redirect')", "Exposed Dangerous Method or Function"],
+  "description": "The function is vulnerable to URL redirection attacks because it does not validate the URL before opening it. This could allow an attacker to redirect users to an untrusted site. Additionally, the function exposes dangerous methods or functions, such as 'window.open', 'window.alert', 'window.confirm', and 'window.prompt', which could be exploited by an attacker to execute arbitrary code or perform other malicious actions."
+}

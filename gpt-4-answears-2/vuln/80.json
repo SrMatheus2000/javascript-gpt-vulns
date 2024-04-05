@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it uses the innerHTML property to directly insert user-controlled input into the DOM. If the variables xVal, xAxisTTVal, seriesName, val, zVal, and w.config.tooltip.z.title contain malicious scripts, they will be executed in the user's browser."
+}

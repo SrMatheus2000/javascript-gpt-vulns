@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The regular expression used in the function can cause exponential backtracking on certain inputs. This can lead to a Regular Expression Denial of Service (ReDoS) where the server becomes unresponsive due to excessive resource consumption."
+}

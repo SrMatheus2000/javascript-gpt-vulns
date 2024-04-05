@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Object Access", "Insecure Property Access"],
+  "description": "The function 'setter' is vulnerable as it does not validate or sanitize the 'path' input, which is used to access properties of the 'obj' object. This can lead to insecure object access and insecure property access vulnerabilities. An attacker can manipulate the 'path' input to access and modify arbitrary properties of the 'obj' object. This can lead to unauthorized access to sensitive data or potentially harmful modifications to the object. The function also does not handle promises safely, which can lead to unexpected behavior if the 'obj' object contains promises."
+}

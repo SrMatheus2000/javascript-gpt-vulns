@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly uses user input in the HTML output without proper sanitization or escaping. This occurs when the function sets the HTML of an element using the invocationUrl variable, which is constructed using user-provided input. This could allow an attacker to inject malicious scripts into the web page, leading to various types of attacks such as stealing sensitive information or performing actions on behalf of the user. Additionally, the function does not properly validate or sanitize the user-provided input before using it, which could lead to various types of attacks."
+}

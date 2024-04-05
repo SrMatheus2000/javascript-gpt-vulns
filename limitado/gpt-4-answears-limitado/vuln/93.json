@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "vulnerabilities": ["Code Injection", "Eval Injection"],
+  "description": "The function is vulnerable to code injection attacks because it uses the Function constructor to create new functions from strings. This allows an attacker to inject arbitrary JavaScript code into the application. Additionally, the function uses the 'with' statement, which can lead to scope pollution and unexpected behavior. It also uses eval-like methods (new Function), which can lead to eval injection vulnerabilities if user input is not properly sanitized."
+}

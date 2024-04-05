@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Exposure Through Environment Variables"],
+  "description": "The function is vulnerable as it exposes environment variables that start with 'AEGIR_'. This could potentially leak sensitive information if any of these variables contain such data. The function also does not sanitize or validate the environment variables, which could lead to other vulnerabilities if the variables are used in a security-sensitive context elsewhere in the application."
+}

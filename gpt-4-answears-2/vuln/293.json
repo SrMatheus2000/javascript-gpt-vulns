@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function 'unique_name_139' is vulnerable to command injection. It concatenates the 'options' parameter directly into a command string without any sanitization or escaping. This means that if an attacker can control the 'options' parameter, they can inject arbitrary commands to be executed."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Error messages exposure", "Potential Denial of Service (DoS)", "Improper input validation"],
+"description": "The function is vulnerable as it exposes detailed error messages to the client, which could potentially reveal sensitive information about the system (CWE-209). It also does not limit the size of the data it receives, which could lead to a Denial of Service (DoS) attack by consuming too much memory (CWE-400). Additionally, the function does not validate the input it receives, which could lead to unexpected behavior or security vulnerabilities (CWE-20)."
+}

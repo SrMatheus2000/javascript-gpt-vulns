@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to several issues. First, it does not validate the input for 'config.timeout' and 'config.cookie', which can lead to unexpected behavior (CWE-20). Second, it exposes potentially sensitive information through cookies (CWE-200). Lastly, it does not control the consumption of resources when setting the timeout, which can lead to a denial of service (CWE-400)."
+}

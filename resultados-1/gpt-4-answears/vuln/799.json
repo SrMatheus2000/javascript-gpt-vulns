@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses regular expressions (regex) which can lead to a Regular Expression Denial of Service (ReDoS) if the input is not properly sanitized. This can happen if an attacker provides a malicious input that causes the regex to take a very long time to evaluate, effectively blocking the event loop and causing a denial of service. This is especially true for regex that use quantifiers and backtracking. The function does not appear to sanitize or limit the input in any way before applying the regex, making it vulnerable to this type of attack."
+}

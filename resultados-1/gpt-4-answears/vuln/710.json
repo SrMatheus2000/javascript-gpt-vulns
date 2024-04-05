@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function 'unique_name_371' is vulnerable to Denial of Service (DoS) attacks. The function continuously appends data to the '_bodyBuffer' variable without any limit. If an attacker sends a large amount of data, it could consume all available memory, causing the application to slow down or crash. This is known as a CWE-400: Uncontrolled Resource Consumption vulnerability."
+}

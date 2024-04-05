@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Input Validation", "Code Injection"],
+"description": "The function does not validate the input parameters 'obj', 'name', and 'loc'. This could lead to unexpected behavior or even code injection if the parameters contain malicious values. For instance, if 'name' contains a string that is actually a piece of executable code, it could be executed when the 'in' operator is used. Also, the function throws an exception with a message that includes the 'name' and 'obj' parameters, which could lead to information leakage if they contain sensitive data."
+}

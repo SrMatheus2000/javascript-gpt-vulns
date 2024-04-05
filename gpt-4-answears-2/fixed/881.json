@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'innerHTML' property to parse HTML into the DOM tree. If the 'DOMPurify' library is not available or not supported, and the 'html' input is not properly sanitized before being passed to the function, it could lead to the execution of malicious scripts. This is a common vulnerability known as Cross-Site Scripting (XSS), classified as CWE-79."
+}

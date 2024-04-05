@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any common security vulnerabilities. It is primarily defining a set of keywords and rules for a syntax highlighter, and does not perform any risky operations such as executing dynamic code or handling user input."
+}

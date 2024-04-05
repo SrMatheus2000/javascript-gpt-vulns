@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-311: Missing Encryption of Sensitive Data", "CWE-759: Use of a One-Way Hash without a Salt"],
+  "vulnerabilities": ["No validation for 'value' parameter", "Sensitive data might be exposed in 'base64' encoding", "No salt used in 'iron' encoding"],
+  "description": "The function does not validate the 'value' parameter, which can lead to unexpected behavior or errors. When the 'base64' encoding is used, the data is not encrypted, which can expose sensitive information. When the 'iron' encoding is used, there is no salt added to the hash, which makes it more vulnerable to attacks."
+}

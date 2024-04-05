@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function 'optimizedFindOrCreate' is vulnerable to SQL Injection. The 'filter' parameter is directly used in the 'findOneAndUpdate' function without any sanitization or parameterization, which allows an attacker to inject malicious SQL commands. This can lead to unauthorized access, data corruption or even data loss."
+}

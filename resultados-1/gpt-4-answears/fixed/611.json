@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-306: Missing Authentication for Critical Function", "CWE-319: Cleartext Transmission of Sensitive Information"],
+  "vulnerabilities": ["Missing authentication", "Sensitive data transmission in clear text"],
+  "description": "The function is vulnerable as it does not implement any form of authentication before establishing a WebSocket connection. This could allow unauthorized users to connect to the server. Additionally, if the 'https' option is not set, the server will transmit data in clear text, which could expose sensitive information to potential eavesdroppers."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack where the properties of JavaScript objects can be manipulated. The function does not properly validate the 'path' parameter, allowing an attacker to modify the prototype of 'Object'. This can potentially lead to Denial of Service (DoS) by exhausting system resources, or can be used for other attacks such as property injection."
+}

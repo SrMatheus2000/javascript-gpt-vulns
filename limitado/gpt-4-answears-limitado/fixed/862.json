@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection", "Improper Input Validation"],
+  "description": "The function 'runNpmCommand' is vulnerable to OS command injection as it uses 'child_process' to execute npm commands. An attacker could potentially inject malicious commands through the 'pkgName' and 'version' parameters. Additionally, the function 'toggleInstall' and 'upgrade' could be vulnerable to code injection as they do not validate or sanitize the 'id' and 'version' parameters before using them. This could allow an attacker to inject malicious code that could be executed in the context of the application. Furthermore, the function does not perform proper input validation on the 'id' and 'version' parameters, which could lead to other types of attacks."
+}

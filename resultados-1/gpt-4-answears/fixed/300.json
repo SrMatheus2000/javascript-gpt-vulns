@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. The user input is directly used in the 'htmlTag' function without proper sanitization or encoding. An attacker could potentially inject malicious scripts through the 'node.content' or 'node.lang' parameters, which could lead to various security issues such as stealing sensitive data, session hijacking, or defacement of the website."
+}

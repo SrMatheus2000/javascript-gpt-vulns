@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-94"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection"],
+  "description": "The function unique_name_502 is vulnerable to several types of attacks. Firstly, it does not validate the input data, which can lead to unexpected behavior (CWE-20). Secondly, if the 'data' variable is user-controlled and is used in a SQL query, it could lead to SQL Injection (CWE-89). Lastly, the function uses the 'eval' function, which can lead to Code Injection (CWE-94) if the 'data' variable is user-controlled."
+}

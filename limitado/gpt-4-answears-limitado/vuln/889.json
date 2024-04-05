@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function 'toBuffer' is vulnerable to Buffer Overflow. This is because it creates a new Buffer with a length that is calculated from user-controlled input ('this._offset'). If a large value is provided, it could result in a buffer overflow, leading to unexpected behavior or potential execution of malicious code. The 'slice' method is also used without proper bounds checking, which could lead to out-of-bounds read."
+}

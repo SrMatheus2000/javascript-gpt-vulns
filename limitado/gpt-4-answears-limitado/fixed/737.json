@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function uses execFileSync to execute a shell command. This can lead to OS command injection if the input is not properly sanitized. In this case, the input is hard-coded and seems safe, but if it were to be replaced with user input, it could lead to a vulnerability."
+}

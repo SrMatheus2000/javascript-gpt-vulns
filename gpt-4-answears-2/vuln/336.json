@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Undefined variable"],
+"description": "The variable 'o' is not defined in the function scope. This can lead to a ReferenceError when the function is called, as 'o' is not defined or passed as a parameter to the function. This is a potential NULL Pointer Dereference vulnerability."
+}

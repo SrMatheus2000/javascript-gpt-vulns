@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function _typed is vulnerable to code injection. It constructs a new function using the Function constructor with string arguments. This can lead to arbitrary code execution if an attacker can control the input to the function. The function does not sanitize or validate the 'name' parameter before using it to generate code, which can lead to code injection if an attacker can control the 'name' parameter."
+}

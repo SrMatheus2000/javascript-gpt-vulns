@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-352"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses the .text() method to get the column name, which can be manipulated to inject malicious scripts. It's also vulnerable to Cross-Site Request Forgery (CSRF) because it does not validate or verify the origin of the requests made to the server."
+}

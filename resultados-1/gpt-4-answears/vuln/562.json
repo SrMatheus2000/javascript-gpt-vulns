@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_286 takes an HTML string as input and processes it to a tree structure. However, it does not sanitize the input HTML string before processing it. This could lead to Cross-Site Scripting (XSS) attacks if the input HTML string contains malicious scripts. An attacker could inject scripts that steal sensitive information or perform other malicious actions."
+}

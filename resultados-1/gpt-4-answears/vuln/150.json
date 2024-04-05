@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function _setNestedProperty is vulnerable to Prototype Pollution because it does not validate the input for the 'currentProperty' parameter. An attacker can manipulate the 'currentProperty' parameter to add or modify properties of the Object prototype. These changes could alter the application's behavior, possibly leading to Remote Code Execution or other types of attacks."
+}

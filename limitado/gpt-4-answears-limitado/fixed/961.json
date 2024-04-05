@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-provided 'data' into the HTML content of 'contentElem' without any sanitization or encoding. An attacker could provide malicious script as 'data', which would then be executed when the HTML is rendered in a user's browser."
+}

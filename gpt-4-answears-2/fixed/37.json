@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function is not vulnerable. It properly handles the redirection URL and ensures that the redirection does not occur outside of the instance. It also has a try-catch block to handle any exceptions that may occur during the execution of the function."
+}

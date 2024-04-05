@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the 'execFile' function to execute the 'ipconfig' command with user-supplied input ('iface'). This can lead to code injection if the user-supplied input is not properly sanitized. An attacker could provide a malicious input that, when executed as a command, could lead to unauthorized actions."
+}

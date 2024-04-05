@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to path traversal attacks. The function takes a path as an input and does not properly sanitize it before using it to access the file system. An attacker could potentially input a path that navigates to sensitive areas of the file system, leading to unauthorized read or write access. The 'split' function used to guard against injection is not sufficient to prevent path traversal attacks as it only removes semicolons, but does not prevent directory traversal sequences (e.g., '../')."
+}

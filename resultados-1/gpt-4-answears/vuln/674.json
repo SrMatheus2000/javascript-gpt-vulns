@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["No validation on maxFieldSize, maxFileSize, maxFiles", "Potential Denial of Service (DoS)"],
+  "description": "The function does not validate the maxFieldSize, maxFileSize, and maxFiles parameters. This could lead to a Denial of Service (DoS) attack if an attacker sends a large number of files, a file with a large size, or a field with a large size. This could exhaust the server's resources. It's recommended to add validation on these parameters to prevent such attacks."
+}

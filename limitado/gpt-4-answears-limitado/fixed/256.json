@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an event object 'a' as an argument, retrieves the 'data-vimeo' and 'data-vimeoparams' attributes from the event's current target, and then constructs an iframe with a source URL that includes these attributes. If an attacker can control the values of these attributes, they can inject malicious scripts into the iframe's source URL, which will then be executed when the iframe is loaded. This can lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

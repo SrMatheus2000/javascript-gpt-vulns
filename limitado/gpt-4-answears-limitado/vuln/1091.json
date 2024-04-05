@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-918", "CWE-494"],
+  "vulnerabilities": ["Path Traversal", "Server-Side Request Forgery (SSRF)", "Download of Code Without Integrity Check"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to construct a file path without proper sanitization. It is also vulnerable to Server-Side Request Forgery (SSRF) (CWE-918) as it makes a HTTP request to a URL constructed from user input without validation. Lastly, it downloads code without an integrity check (CWE-494), which could allow an attacker to execute arbitrary code."
+}

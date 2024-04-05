@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function uses the 'new Buffer()' constructor, which is unsafe and can lead to security vulnerabilities such as buffer overflow if not properly managed. It's recommended to use 'Buffer.from()', 'Buffer.alloc()', or 'Buffer.allocUnsafe()' instead. The 'copy()' method can also lead to buffer overflow if the target buffer is not large enough to hold the source buffer."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-20", "CWE-200"],
+  "vulnerabilities": ["SQL Injection", "Input Validation", "Information Exposure"],
+  "description": "The function is vulnerable to SQL Injection because it directly uses user input in `req.params` without any sanitization. This can allow an attacker to inject malicious SQL commands. The function also lacks proper input validation, which is a violation of CWE-20. It directly uses user input from `socketIOData` without validating or sanitizing it. This can lead to various attacks such as Cross-Site Scripting (XSS), SQL Injection, etc. The function also exposes sensitive information such as the host and port in the headers, which is a violation of CWE-200."
+}

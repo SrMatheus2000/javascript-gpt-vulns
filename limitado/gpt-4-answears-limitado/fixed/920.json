@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Code Injection", "Unvalidated Input"],
+  "description": "The function does not validate or sanitize the input it receives, which can lead to code injection attacks. The function also directly uses the input to access object properties (lhs[rhs]), which can lead to unexpected behavior if the input is not properly validated."
+}

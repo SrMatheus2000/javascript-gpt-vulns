@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The vulnerability lies in the line where the cssStrings are directly injected into the styleHtml without any sanitization. An attacker can inject malicious scripts through the theme or options parameters, which will then be executed when the HTML is rendered."
+}

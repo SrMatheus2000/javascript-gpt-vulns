@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is a simple function that moves node modules back to a previous location. However, without the full context of the code, it's hard to say definitively. It's always recommended to follow best practices for secure coding to prevent potential security issues."
+}

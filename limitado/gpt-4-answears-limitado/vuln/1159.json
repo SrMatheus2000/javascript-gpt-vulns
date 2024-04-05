@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Code Injection", "SQL Injection", "Cross-site Scripting"],
+  "description": "The function is vulnerable as it does not validate or sanitize the 'repo' input. This could lead to code injection if the 'repo' input contains malicious code. Additionally, if the 'repo' input is used in a SQL command or a web page without proper neutralization, it could lead to SQL injection or cross-site scripting respectively."
+}

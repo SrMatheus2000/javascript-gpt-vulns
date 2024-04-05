@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access file system without proper validation. It is also vulnerable to Code Injection (CWE-94) as it uses 'require' function with user input to load modules. Additionally, it is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of the routeCache object, which can lead to a Denial of Service (DoS) attack."
+}

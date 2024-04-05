@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["No validation of 'data' input", "Potential SQL Injection through 'adapterSessionIds'"],
+  "description": "The function does not validate the 'data' input before splitting it, which could lead to unexpected behavior or errors. Additionally, 'adapterSessionIds' from the payload are used directly in the 'unstoreGrant' function without any sanitization or parameterized queries, which could potentially lead to SQL Injection if 'keycloak.unstoreGrant' interacts with a database."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-158"],
+  "vulnerabilities": ["Path Traversal", "Null Byte Injection"],
+  "description": "The function is vulnerable to Path Traversal and Null Byte Injection attacks. The Path Traversal vulnerability (CWE-22) exists because the function does not properly sanitize the 'ReceivedPath' input, which could allow an attacker to access arbitrary files on the system. The Null Byte Injection vulnerability (CWE-158) exists because the function does not properly handle null bytes in the 'ReceivedPath' input, which could allow an attacker to manipulate the resulting path."
+}

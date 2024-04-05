@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'fileCompletion' is vulnerable to Path Traversal attacks (CWE-22). The 'req' parameter is concatenated directly into the 'pattern' variable, which is then used in the 'glob' function. An attacker could manipulate the 'req' parameter to navigate to arbitrary directories. This could allow an attacker to read, write, or delete files outside of the intended directory."
+}

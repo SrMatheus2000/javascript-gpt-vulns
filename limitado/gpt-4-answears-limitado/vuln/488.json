@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly concatenates user-controlled input into HTML templates without proper sanitization or encoding. An attacker could inject malicious scripts through the 'id', 'label', 'html', or 'cssClasses' properties of the 'tab', 'group', or 'entry' objects, which would then be executed in the context of the user's browser when the generated HTML is rendered."
+}

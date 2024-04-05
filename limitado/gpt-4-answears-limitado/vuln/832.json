@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function uses execSync to execute a shell command which can lead to OS command injection if the input is not properly sanitized. In this case, if the git config command returns a malicious string, it could lead to arbitrary command execution."
+}

@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-119"],
+  "vulnerabilities": ["Buffer Overflow", "Improper Input Validation"],
+  "description": "The function is vulnerable to a buffer overflow and lacks proper input validation. The 'Content-length' header is used to create a buffer without validating its size, which can lead to a buffer overflow vulnerability."
+}

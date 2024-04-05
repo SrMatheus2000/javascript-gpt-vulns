@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'opts.uri' parameter is concatenated directly into the command string that is passed to 'execFile'. If an attacker can control the 'opts.uri' parameter, they can inject arbitrary commands to be executed by the system."
+}

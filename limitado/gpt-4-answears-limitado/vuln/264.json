@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Code Injection", "Denial of Service", "Path Traversal"],
+  "description": "The function 'requireModule' is vulnerable as it allows for the dynamic loading of modules based on a user-supplied path. This can lead to several vulnerabilities. Firstly, it can lead to code injection (CWE-94) if an attacker is able to control the 'path' parameter and load malicious modules. Secondly, it can lead to a denial of service (CWE-400) if an attacker is able to cause the application to continuously load modules, consuming system resources. Lastly, it can lead to path traversal (

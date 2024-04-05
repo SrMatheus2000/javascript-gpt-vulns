@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function uses the 'pid' parameter to construct a file path that is used to read a file. If an attacker can control the 'pid' parameter, they can potentially read any file on the system that the Node.js process has access to, leading to information disclosure. This is a Path Traversal vulnerability (CWE-22)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-79"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Cross-site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the 'domains', 'path', 'format', 'publicUrl', 'aliases' inputs, and 'req.query' parameters. This could lead to Improper Input Validation (CWE-20), where an attacker could pass malicious data to the function. It could also lead to SQL Injection (CWE-89), if the inputs are used in a SQL query. Additionally, if the inputs are rendered on a web page, it could lead to Cross-site Scripting (XSS) attacks (CWE-79), where an attacker could inject malicious scripts."
+}

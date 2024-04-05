@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-384: Session Fixation", "CWE-613: Insufficient Session Expiration"],
+  "vulnerabilities": ["Session ID Exposure", "Session Fixation", "Insufficient Session Expiration"],
+  "description": "The function is vulnerable as it exposes the session ID in the Set-Cookie HTTP header. This could potentially allow an attacker to hijack the user's session. This is known as Session Fixation. Additionally, the session expiration is set to a static value of 1 year, which is a long period and could lead to Insufficient Session Expiration vulnerability. An attacker could use a stolen session ID for a long period of time without it expiring."
+}

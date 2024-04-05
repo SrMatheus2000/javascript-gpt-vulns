@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function unique_name_560 has a couple of vulnerabilities. First, it does not validate the input for 'key' and 'value', which can lead to unexpected behavior or even security issues (CWE-20). Second, the function uses regular expressions which can lead to excessive consumption of resources (CPU and memory) if the input is not properly controlled, leading to a potential Denial of Service (DoS) attack (CWE-400)."
+}

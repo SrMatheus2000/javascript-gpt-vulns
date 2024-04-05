@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is simply encoding data into a specific format. However, without knowing the implementation of the 'decode' and 'mimeWordEncode' functions, it's impossible to say for certain. Always ensure to validate and sanitize inputs when dealing with user-provided data."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Prototype Pollution", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Prototype Pollution and Cross-Site Scripting (XSS) attacks. Prototype Pollution occurs when the properties of JavaScript's Object prototype are modified, which can lead to application-wide changes. In this case, the function does not properly validate the 'field' input, allowing an attacker to potentially modify the prototype of 'obj'. This can lead to unexpected behavior and potential security issues. Additionally, the function does not properly sanitize the 'field' input, which can lead to Cross-Site Scripting (XSS) attacks if the output is rendered in a web page without proper encoding."
+}

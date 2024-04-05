@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-200: Information Exposure"],
+"vulnerabilities": ["Information Exposure"],
+"description": "The function is exposing environment variables which might contain sensitive information. It's filtering and exposing all environment variables that start with 'AEGIR_'. If any of these variables contain sensitive information, it could be exposed. Also, the default value for NODE_ENV is 'development', which could expose details about the environment if not properly set."
+}

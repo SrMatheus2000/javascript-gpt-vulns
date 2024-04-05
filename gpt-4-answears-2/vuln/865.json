@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function 'unique_name_454' is vulnerable to code injection. This is due to the use of the 'Function' constructor in the 'FunctionExpression' block. The 'Function' constructor is a form of eval() that executes code dynamically, which can lead to code injection if the input is not properly sanitized. An attacker could potentially inject malicious code through the 'vars' parameter."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a simple function that retrieves a Unicode character code from a string at a given index. It also handles surrogate pairs correctly. There are no external calls or manipulations that could lead to vulnerabilities such as injection attacks, and all inputs are properly checked and handled."
+}

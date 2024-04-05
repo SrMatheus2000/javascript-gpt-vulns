@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327", "CWE-310"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm", "Cryptographic Issues"],
+"description": "The function uses a cryptographic algorithm to decrypt data, but the key and algorithm used are not specified within the function. This could potentially lead to the use of a weak or broken cryptographic algorithm, making the data vulnerable to attacks. Additionally, the function does not handle errors that may occur during the decryption process, which could lead to unexpected behavior or information disclosure."
+}

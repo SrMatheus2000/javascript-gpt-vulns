@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses the exec() function to delete image files. However, it directly concatenates user-supplied input (imagePaths) into the command string without proper sanitization or validation. This could allow an attacker to inject arbitrary commands to be executed on the server."
+}

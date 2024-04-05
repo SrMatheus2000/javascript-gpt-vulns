@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-200"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Information Exposure"],
+  "description": "The function 'unique_name_335' is vulnerable as it allows the creation of a server without HTTPS, which can lead to Cleartext Transmission of Sensitive Information (CWE-319). This means that the data transmitted over the network can be intercepted and read by unauthorized individuals. Additionally, the function exposes potentially sensitive information through error messages (CWE-200). When a WebSocket connection error occurs, the error details are sent to the client, which could potentially expose sensitive system or application details to an attacker."
+}

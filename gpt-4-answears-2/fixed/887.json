@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-116"],
+"vulnerabilities": ["Code Injection", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to code injection attacks. The 'name' variable is directly used in the 'header' without proper sanitization or validation, which can lead to code injection if the 'callback' or 'callback_prefix' and 'load' parameters contain malicious scripts. Additionally, the function does not properly encode or escape output, which can lead to cross-site scripting (XSS) attacks if the output is used in a web page."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks because it uses the JSON.parse method on the 'data' variable without properly validating or sanitizing the input. An attacker could potentially send a malicious string that, when parsed, could lead to arbitrary code execution. Additionally, the function checks if the first and last characters of the 'data' string are '{' and '}', respectively, which is not a reliable way to ensure that the input is valid JSON. This could lead to unexpected behavior or errors."
+}

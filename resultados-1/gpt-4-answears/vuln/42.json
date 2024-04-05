@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-89", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "SQL Injection", "Information Exposure"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it reads files directly from the filesystem without validating the input, which could allow an attacker to read arbitrary files. It is also vulnerable to SQL Injection (CWE-89) as it constructs a SQL query directly from user input, which could allow an attacker to execute arbitrary SQL commands. Lastly, it is vulnerable to Information Exposure (CWE-200) as it exposes sensitive information in error messages, which could be used by an attacker to gain additional information about the system."
+}

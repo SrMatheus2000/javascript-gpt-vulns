@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Sensitive information exposure", "Error message information leakage", "Cross-Site Request Forgery", "Cross-Site Scripting"],
+"description": "The function is vulnerable to information exposure through environment variables and error messages. It also allows Cross-Origin Resource Sharing (CORS) from any origin, which can lead to Cross-Site Request Forgery (CSRF). The function does not sanitize user input, which can lead to Cross-Site Scripting (XSS) attacks. The function also allows the serving of dotfiles, which can expose sensitive system files."
+}

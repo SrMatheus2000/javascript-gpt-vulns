@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-287: Improper Authentication"],
+  "vulnerabilities": ["Input Validation", "Information Exposure", "Improper Authentication"],
+  "description": "The function does not validate the 'options.key' and 'options.keyId' inputs, which can lead to security vulnerabilities. It also exposes sensitive information such as the algorithm used and the headers. Furthermore, the function does not properly authenticate the user before signing the request."
+}

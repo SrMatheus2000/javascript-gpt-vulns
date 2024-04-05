@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not properly limit the amount of data that is read from the request, which can lead to a Denial of Service (DoS) attack. An attacker can send a large amount of data in the request, causing the server to consume excessive resources and potentially crash. This is a type of Resource Exhaustion attack (CWE-400)."
+}

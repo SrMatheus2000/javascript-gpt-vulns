@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+"vulnerabilities": ["Type confusion", "Potential code injection"],
+"description": "The function does not properly validate the input 'type'. If an unexpected value is passed, it could lead to type confusion. Additionally, when parsing a string to an object, it does not properly handle exceptions, which could lead to potential code injection if the 'value' contains malicious code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function uses innerHTML property to insert HTML content into the page. This can lead to Cross-Site Scripting (XSS) attacks if the content is user-controlled and not properly sanitized. For example, the 'details.source' and 'details.runtime' variables are directly inserted into the page without any sanitization or encoding. An attacker could potentially control these values and inject malicious scripts."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Type confusion"],
+  "description": "The function 'decodeString' is vulnerable to Denial of Service (DoS) attacks due to the lack of input validation and potential for infinite loops. If a malicious user provides a specially crafted string, it could cause the application to enter an infinite loop, consuming CPU resources and potentially causing the application to crash or become unresponsive (CWE-400). Additionally, the function does not properly validate the type of the input, which could lead to type confusion vulnerabilities (CWE-20)."
+}

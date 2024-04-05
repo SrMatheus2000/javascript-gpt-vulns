@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "Improper Input Validation", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function is vulnerable to OS command injection as it uses user input to construct a file path that is later required. This can allow an attacker to execute arbitrary commands. The function also lacks proper input validation, which can lead to unexpected behavior. Additionally, the function does not limit the number of rules that can be loaded, which can lead to resource exhaustion if an attacker provides a large number of rules."
+}

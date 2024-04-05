@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"vulnerabilities": ["Input Validation", "SQL Injection"],
+"description": "The function does not validate or sanitize the 'domains', 'path', 'format', 'publicUrl', 'aliases' inputs. This could lead to various vulnerabilities such as SQL Injection if these inputs are used in a SQL query or Cross-Site Scripting (XSS) if these inputs are rendered on a web page. The function also does not validate the 'req' object, which could lead to Null Pointer Exception if the 'req' object is null or does not have expected properties."
+}

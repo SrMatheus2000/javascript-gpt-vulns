@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Type Confusion"],
+"description": "The function does not properly validate the types of input that it receives. This could lead to type confusion vulnerabilities where the function behaves differently based on the input type. For example, if the 'property' is an array when it is expected to be a string, it could lead to unexpected behavior. Additionally, the function does not handle the case where 'property' is not a property of 'pattern' or 'value', which could lead to a TypeError."
+}

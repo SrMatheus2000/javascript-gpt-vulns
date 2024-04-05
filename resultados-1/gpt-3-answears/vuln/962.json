@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The provided JavaScript function is vulnerable to Cross-Site Scripting (XSS) attacks. This vulnerability occurs because the function does not properly sanitize user input before using it to dynamically generate HTML content. An attacker can exploit this vulnerability by injecting malicious code into the 'title' attribute of the target element, which will be executed when the tooltip is displayed."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Potential Remote Code Execution (RCE)", "Potential Denial of Service (DoS)"],
+"description": "The function uses the Buffer constructor, which is unsafe as it can lead to security vulnerabilities if not used properly. If the input is not properly validated, it can lead to remote code execution (RCE) or denial of service (DoS) attacks. It is recommended to use Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe() instead of the Buffer constructor."
+}

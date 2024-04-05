@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The replace method is used to remove certain characters from the 'value' parameter, but it does not sanitize the input to prevent the injection of malicious scripts. An attacker could potentially inject a script as part of the 'value' parameter, which could then be executed in the context of the user's browser."
+}

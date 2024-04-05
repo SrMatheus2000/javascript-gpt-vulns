@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks (CWE-22). The 'from' variable in the 'mkdirp' function and 'tempFromModules' in the 'move' function are not validated or sanitized, which means an attacker could potentially manipulate these to access, modify, or delete files outside of the intended directories."
+}

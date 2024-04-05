@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Type Coercion"],
+"description": "The function does not validate the types of the input parameters. This can lead to unexpected behavior if the function is called with parameters of incorrect types. For example, if 'obj' is not an object or 'name' is not a string, the function will throw an error. This is a type of Type Coercion vulnerability."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Type Confusion"],
+  "description": "The function does not properly sanitize the input for special SQL characters, which can lead to SQL injection if the input is controlled by an attacker. This is particularly dangerous if the function is used to construct SQL queries. Additionally, the function does not validate the type of the input parameters, which can lead to unexpected behavior and potential security issues if the function is passed an object when a primitive type was expected, or vice versa."
+}

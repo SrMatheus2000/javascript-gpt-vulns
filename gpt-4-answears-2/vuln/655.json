@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It attempts to sanitize the input 'html' by removing any tags not included in the 'allowed' whitelist. However, it does not properly handle cases where the tag attributes may contain malicious scripts. For example, an attacker could pass in a tag like '<img src=x onerror=alert(1)>' and it would not be properly sanitized, leading to potential XSS attacks."
+}

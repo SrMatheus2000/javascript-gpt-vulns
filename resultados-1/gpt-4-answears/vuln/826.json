@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function uses user input to construct a file path to be used in a file system operation. If the user input is not properly sanitized, an attacker could manipulate the path to access arbitrary files and directories stored on the file system. This is known as a Path Traversal vulnerability."
+}

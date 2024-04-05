@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses the spawn function to execute a command that includes user-supplied input. This can allow an attacker to inject commands to be executed on the server. The user-supplied input is the 'options.file' and 'options.highlightColor' variables, which are included in the 'args' array that is passed to the spawn function. If an attacker can control the value of 'options.file' or 'options.highlightColor', they can execute arbitrary commands on the server."
+}

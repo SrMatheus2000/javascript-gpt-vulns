@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-330: Use of Insufficiently Random Values", "CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Use of potentially insecure random number generator", "Use of potentially dangerous function 'Buffer.allocUnsafe'"],
+"description": "The function uses 'Math.random()' for generating random values which is not cryptographically secure and can lead to predictability in generated values. Also, the function uses 'Buffer.allocUnsafe' which can potentially lead to the disclosure of sensitive information as it allows for the allocation of a Buffer of a certain size without initializing it. This can lead to old or sensitive data being included in the new Buffer."
+}

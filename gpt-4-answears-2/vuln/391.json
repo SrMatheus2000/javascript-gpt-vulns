@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-476: NULL Pointer Dereference", "CWE-571: Expression is Always True"],
+"vulnerabilities": ["Null Pointer Dereference", "Uncontrolled Recursion"],
+"description": "The function has a potential Null Pointer Dereference vulnerability when it tries to access properties of obj1 or obj2 without checking if these objects are null. This can lead to a runtime error if either obj1 or obj2 is null. Additionally, the function has an uncontrolled recursion vulnerability. The function calls itself recursively without a proper base case, which can lead to a stack overflow error if the input objects have a circular reference or a deeply nested structure."
+}

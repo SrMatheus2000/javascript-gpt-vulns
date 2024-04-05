@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'id' variable is directly used to create an HTML element without proper sanitization or encoding, which could allow an attacker to inject malicious scripts. If an attacker can control the 'id' attribute of the 'el' element, they could inject a script that would be executed when the button is created."
+}

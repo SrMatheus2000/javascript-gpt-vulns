@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The 'set' method of the 'Mimer' object allows for arbitrary input to be set as a property of the 'list' object. If an attacker can control the 'ext' parameter, they could potentially inject malicious code. This is a form of code injection vulnerability, specifically CWE-94."
+}

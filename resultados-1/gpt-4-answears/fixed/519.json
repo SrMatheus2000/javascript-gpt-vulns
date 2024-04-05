@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400", "CWE-918"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files (filename). An attacker could manipulate the path to access sensitive files. It's also vulnerable to Uncontrolled Resource Consumption (CWE-400) because it reads the entire file into memory which could lead to a denial of service if the file is large. Lastly, it's vulnerable to Server-Side Request Forgery (SSRF) (CWE-918) as it could be manipulated to send requests to internal resources."
+}

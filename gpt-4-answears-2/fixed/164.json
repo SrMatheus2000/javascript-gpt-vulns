@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is a function that takes an object, a key, and a value, and sets the value at the specified key in the object. The key can be a string or an array of strings and numbers, representing a path to a nested property. If any part of the path does not exist, it is created. The function throws an error if the key array contains anything other than strings and numbers. This function does not use any dangerous JavaScript functions or patterns, and it does not have any obvious injection vulnerabilities, as it does not execute or evaluate any code or commands."
+}

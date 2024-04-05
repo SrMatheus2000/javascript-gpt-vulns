@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'sanitise' function to sanitize the 'title', 'value', and 'name' variables before they are added to the 'text' variable. However, the 'sanitise' function is not defined within the provided function, and it's not clear if it properly sanitizes the input to prevent XSS attacks. If the 'sanitise' function does not properly sanitize the input, an attacker could inject malicious scripts through the 'title', 'value', or 'name' variables, which would then be executed when the 'text' variable is rendered in the browser."
+}

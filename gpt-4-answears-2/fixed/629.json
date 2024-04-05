@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be secure. It checks if the entry type is a directory and if so, it returns without doing anything. It also checks for a zip slip vulnerability by ensuring that the target path is nested in the intended destination. If it's not, it doesn't extract it. The function also handles errors properly by emitting an error event when an error occurs."
+}

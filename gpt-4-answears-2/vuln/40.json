@@ -1,0 +1,6 @@
+{
+"isulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function checkGraphvizInstalled is vulnerable to OS command injection. It constructs a command to be executed using the 'exec' function with input from the 'config.graphVizPath' variable. If an attacker can control the value of 'config.graphVizPath', they can inject arbitrary commands to be executed by the system."
+}

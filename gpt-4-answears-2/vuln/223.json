@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Input Validation", "Cross-Site Scripting"],
+"description": "The function does not validate or sanitize the 'data' input, which can lead to potential security vulnerabilities. For instance, if 'data' is user-controlled and not properly sanitized, it could lead to Cross-Site Scripting (XSS) attacks. Also, the function uses the 'eval' function, which can lead to arbitrary code execution if the input is not properly sanitized."
+}

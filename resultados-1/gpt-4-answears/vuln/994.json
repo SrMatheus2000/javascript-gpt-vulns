@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Potential Buffer Overflow"],
+  "description": "The function uses the 'new Buffer()' constructor, which is deprecated and potentially unsafe. If the 'new Buffer()' constructor is called with a number as argument, it allocates a new buffer of the specified size in bytes. If the function is called with an argument that could be converted to a number, it could potentially lead to memory exposure and buffer overflow."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The code is vulnerable to code injection due to the use of the eval function. An attacker can manipulate the 'color' parameter to execute arbitrary code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-601"],
+  "vulnerabilities": ["Improper Input Validation", "Improper Handling of Exceptions"],
+  "description": "The function is vulnerable to CWE-400 (Uncontrolled Resource Consumption) and CWE-601 (URL Redirection to Untrusted Site). The 'data' variable is not defined in the code, which may lead to an error. Additionally, the function does not properly validate the input before parsing it as JSON, which can result in a Denial of Service attack. Furthermore, the function does not handle exceptions properly, as it simply returns a 400 status code and ends the response, which may expose sensitive information to attackers."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it uses the 'domify' function to directly insert user-controlled input into HTML. If an attacker can control the 'id', 'label', or 'html' properties of the 'tab', 'group', or 'entry' objects, they could inject malicious scripts that would be executed when the resulting HTML is rendered in a web page."
+}

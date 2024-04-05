@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function f() is vulnerable to Cross-Site Scripting (XSS) attack. It directly injects user-controlled data into the HTML without proper sanitization or encoding, allowing an attacker to execute arbitrary scripts."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function setText directly sets the innerHTML property of an element with user-controlled input, which can lead to Cross-Site Scripting (XSS) if the input is not properly sanitized. Similarly, the function setList also sets the innerHTML property with user-controlled input. XSS allows attackers to execute arbitrary scripts in the victim's browser, which can lead to various attacks such as stealing sensitive information, performing actions on behalf of the user, etc."
+}

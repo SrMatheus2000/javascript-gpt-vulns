@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Code Injection", "Type confusion"],
+"description": "The function does not validate the input for 'parts' and 'value', which can lead to code injection if malicious input is passed. Also, the function assumes that 'obj' is an object without checking, which can lead to type confusion errors."
+}

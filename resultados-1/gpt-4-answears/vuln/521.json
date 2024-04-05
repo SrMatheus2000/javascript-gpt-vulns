@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of 'innerHTML' property in the 'setText' and 'setList' functions which allows the execution of arbitrary JavaScript code. An attacker can inject malicious scripts through the 'value' parameter of the 'setText' function or through the 'state[property].value' in the 'setList' function. These scripts will be executed when the HTML is rendered in the browser."
+}

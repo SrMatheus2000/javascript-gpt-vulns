@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Potential for Prototype Pollution"],
+"description": "The function 'unique_name_422' is vulnerable to prototype pollution because it does not validate or sanitize the 'options' and 'embedder' inputs before using them to set properties on objects. An attacker could potentially manipulate these inputs to modify the prototype of 'options.webPreferences', leading to unexpected behavior in the application."
+}

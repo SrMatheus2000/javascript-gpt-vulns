@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-829", "CWE-494"],
+"vulnerabilities": ["Insecure Download", "Download of Code Without Integrity Check"],
+"description": "The function downloads a file from a non-HTTPS URL, which exposes it to man-in-the-middle attacks. Additionally, it does not perform any integrity checks on the downloaded file, which means it could execute malicious code if the file is tampered with during the download process."
+}

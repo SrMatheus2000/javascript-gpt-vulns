@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function 'unique_name_204' is vulnerable to open redirect attacks. The 'url' parameter from the request query is directly used to render a page without proper validation. An attacker can manipulate the 'url' parameter to redirect users to a malicious site. Although the 'validator.escape' function is used, it only escapes HTML special characters and does not validate the URL."
+}

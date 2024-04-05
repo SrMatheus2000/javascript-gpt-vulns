@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Path Manipulation"],
+  "description": "The function is vulnerable to command injection and path manipulation attacks. The 'exec' function is used to execute a command without proper input validation or sanitization, allowing an attacker to inject malicious commands. Additionally, the 'path.join' function is used to construct a file path without proper validation, which can be manipulated by an attacker to access or overwrite arbitrary files."
+}

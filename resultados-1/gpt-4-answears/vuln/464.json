@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not validate or check the origin of the request before processing it. This could allow an attacker to trick a victim into making an unintended request to the web application. The function also does not validate the pathname input, which could lead to unexpected behavior if an attacker provides malicious input."
+}

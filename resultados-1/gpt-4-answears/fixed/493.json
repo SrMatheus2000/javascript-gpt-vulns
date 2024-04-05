@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not validate or sanitize the 'cwd' and 'header.name' inputs which are used to construct a file path. This could lead to a Path Traversal vulnerability where an attacker could manipulate the path to access arbitrary files or directories outside of the intended directory. This could lead to unauthorized read or write access to sensitive information."
+}

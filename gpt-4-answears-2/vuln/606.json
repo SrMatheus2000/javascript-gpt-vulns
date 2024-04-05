@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function is vulnerable to command injection. The function uses user-supplied input to construct a command to be executed by the system. If an attacker can influence the 'options' object, they could inject commands that will be run on the system. This could lead to arbitrary command execution on the server where the JavaScript code is running."
+}

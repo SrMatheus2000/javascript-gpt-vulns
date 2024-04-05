@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the 'eval' method, which can lead to code injection if the input is not properly sanitized. An attacker could potentially inject malicious scripts to be executed in the context of the application."
+}

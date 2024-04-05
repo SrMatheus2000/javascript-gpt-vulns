@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The code is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the 'value' parameter before using it in the $sanitize() function, which can allow an attacker to inject malicious scripts into the application."
+}

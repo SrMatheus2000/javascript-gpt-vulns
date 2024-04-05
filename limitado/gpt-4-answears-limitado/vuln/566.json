@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-730: Incorrect Regular Expression"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) attacks. The regular expression used in the function can cause exponential backtracking on certain inputs, which can lead to a denial of service. An attacker could provide a specially crafted password that, when used in the regular expression, would cause the function to consume excessive resources, potentially leading to a denial of service."
+}

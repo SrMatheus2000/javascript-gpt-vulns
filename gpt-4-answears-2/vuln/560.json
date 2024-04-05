@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to path traversal attacks. The 'header.name' variable is used to construct a file path without proper sanitization. An attacker could potentially manipulate 'header.name' to navigate to arbitrary directories."
+}

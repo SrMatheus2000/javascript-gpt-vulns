@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["No input validation"],
+  "description": "The function does not perform any form of input validation on the 'options' parameter. This could lead to unexpected behavior if the 'options' object does not contain the expected properties. It could also potentially lead to security vulnerabilities if malicious data is passed in. It's recommended to add input validation to ensure the 'options' object contains the expected properties and that they are of the correct type."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"vulnerabilities": ["NoSQL Injection"],
+"description": "The function does not properly sanitize the 'where' parameter, which could lead to NoSQL Injection if the parameter is controlled by the user. An attacker could provide a malicious payload as the 'where' parameter to manipulate the query, leading to unauthorized access to data."
+}

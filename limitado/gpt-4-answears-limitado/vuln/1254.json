@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks. The req.query.jsonp parameter is directly concatenated into the response without any sanitization or validation. An attacker could potentially provide a malicious script as the jsonp parameter, which would then be executed when the response is processed. This is a form of code injection attack. Additionally, the function does not validate the input it receives, which is a violation of the principle of 'never trust user input'."
+}

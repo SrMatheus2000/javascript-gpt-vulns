@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate or sanitize the input 'val' before using it. This could lead to various attacks such as Cross-Site Scripting (XSS) or SQL Injection if the function is used in a web application and the input comes from an untrusted source."
+}

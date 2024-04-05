@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection due to the direct concatenation of user-controlled input (repo) into the 'log' function. An attacker can manipulate the 'repo' parameter to execute arbitrary commands on the system."
+}

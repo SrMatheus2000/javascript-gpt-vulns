@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function htmlParserImpl is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an HTML string as input and directly assigns it to the innerHTML property of an element. This can lead to execution of malicious scripts if the input HTML string contains script tags or event handlers. Although the function attempts to sanitize the input by stripping custom-namespaced attributes on IE<=11 and triggering mXSS protection, it may not cover all possible XSS vectors. It is recommended to use a robust HTML sanitizer library to sanitize the input HTML string before assigning it to the innerHTML property."
+}

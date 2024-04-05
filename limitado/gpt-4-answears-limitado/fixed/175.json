@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the 'value' input before using it. This could lead to unexpected behavior or errors if the input is not as expected. For example, if 'value' is not a string or if it is a string that does not match any of the keys in the object or the regular expression, the function could throw an error. This could potentially be exploited by an attacker to cause a denial of service by sending unexpected input to the function."
+}

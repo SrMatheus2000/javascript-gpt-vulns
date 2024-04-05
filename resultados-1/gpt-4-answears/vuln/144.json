@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470"],
+  "vulnerabilities": ["Unrestricted Property Assignment"],
+  "description": "The function 'generate' is vulnerable to unrestricted property assignment. This vulnerability occurs when the function assigns values to object properties without proper validation. An attacker can exploit this vulnerability to manipulate or overwrite properties of any object that the function has access to, leading to unexpected behavior or potential security issues. In this case, the function assigns a value to the property 'current[name]' without checking if 'name' is a valid property of 'current'."
+}

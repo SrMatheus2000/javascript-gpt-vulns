@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Unrestricted Use of System Critical APIs", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution", "Unrestricted Use of System Critical APIs"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack where the properties of JavaScript objects can be manipulated. This can lead to a variety of security vulnerabilities such as Denial of Service, Remote Code Execution, or even property injection. The function does not validate or sanitize the 'path' input which can lead to an attacker being able to modify the prototype of 'Object' and overwrite properties. Additionally, the function uses system critical APIs without any restrictions which can lead to security vulnerabilities."
+}

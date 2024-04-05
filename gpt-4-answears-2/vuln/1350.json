@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function doNpmCommand is vulnerable to OS command injection. The function constructs a command to be executed using the exec function, with parts of the command being formed from user-supplied input (options.npmCommand and options.cmdOptions). An attacker could potentially supply input that, when executed as a command, could lead to arbitrary command execution on the host system."
+}

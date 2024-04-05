@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to Path Traversal and Cross-Site Scripting attacks. The function uses the 'unescape' function on the 'pathname' parameter which can be manipulated by an attacker to traverse the file system and access restricted directories. This is a Path Traversal vulnerability (CWE-22). Additionally, the function does not properly sanitize the 'pathname' parameter before using it to generate a web page. This could allow an attacker to inject malicious scripts that would be executed in the context of the victim's browser. This is a Cross-Site Scripting vulnerability (CWE-79)."
+}

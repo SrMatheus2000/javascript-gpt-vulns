@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-116"],
+  "vulnerabilities": ["Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Access Control"],
+  "description": "The given function is vulnerable to SQL injection and improper access control. It does not properly sanitize the 'path' parameter before using it in the 'reduce' function, which can lead to SQL injection attacks. Additionally, it does not perform proper access control checks, allowing unauthorized access to sensitive data."
+}

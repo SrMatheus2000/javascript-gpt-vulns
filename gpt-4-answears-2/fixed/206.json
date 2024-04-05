@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-79"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Cross-site Scripting (XSS)"],
+"description": "The function does not validate or sanitize the 'domains', 'path', 'format', 'publicUrl', and 'aliases' inputs. This could lead to vulnerabilities such as SQL Injection, where an attacker could insert malicious SQL code; Cross-site Scripting (XSS), where an attacker could insert malicious scripts; and Improper Input Validation, where the function could behave unpredictably with unexpected inputs."
+}

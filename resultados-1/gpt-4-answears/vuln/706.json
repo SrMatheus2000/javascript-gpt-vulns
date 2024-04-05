@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function does not properly validate or sanitize the input, which can lead to Cross-Site Scripting (XSS) attacks if the input includes malicious scripts. Additionally, the use of regular expressions can lead to a Denial of Service (DoS) attack if an attacker provides a string that results in extensive backtracking, known as a Regular Expression Denial of Service (ReDoS) attack."
+}

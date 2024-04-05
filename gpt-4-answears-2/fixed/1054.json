@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). This vulnerability occurs when an attacker is able to manipulate a URL in such a way that the web server executes or reveals the contents of files anywhere on the web server. This can be used to read sensitive files on the server, execute powerful commands, traverse the file system, and possibly execute arbitrary code. In this function, the path variable is being decoded and used to access files without proper validation or sanitization, making it vulnerable to such attacks."
+}

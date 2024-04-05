@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-116"],
+  "vulnerabilities": ["Improper Neutralization of Input During Web Page Generation (Cross-site Scripting)", "Improper Handling of Unexpected Data Type"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks and improper handling of unexpected data types. The 'value' parameter is not properly sanitized before being used in the '_.unescape' function, which can lead to XSS vulnerabilities. Additionally, the 'parsed' variable is assigned the result of 'JSON.parse(parsed)', which can cause unexpected behavior if 'parsed' is not a valid JSON string."
+}

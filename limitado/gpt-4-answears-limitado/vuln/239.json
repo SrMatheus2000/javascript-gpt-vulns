@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the input provided in the 'a' parameter to set the innerHTML of the created element. If the 'a' object contains a 'html' property, its value is directly assigned to the innerHTML of the element, which can lead to the execution of malicious scripts if the input is not properly sanitized. This vulnerability is classified as CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

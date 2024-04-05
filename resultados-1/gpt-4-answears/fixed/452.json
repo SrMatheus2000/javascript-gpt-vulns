@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The setText function directly sets the textContent of an element to a value or a property from the state. If the state or value is user-controlled and not properly sanitized, this could lead to a Cross-Site Scripting (XSS) vulnerability. Similarly, the setStyle function sets the style of an element based on a property from the state. If the state is user-controlled and not properly sanitized, this could also lead to a Cross-Site Scripting (XSS) vulnerability."
+}

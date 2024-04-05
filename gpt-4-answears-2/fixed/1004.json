@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Insecure Cryptographic Algorithm Usage", "Improper Input Validation"],
+"description": "The function uses the 'alg' parameter to determine the cryptographic algorithm to use, which can be manipulated by an attacker to use a weak or broken algorithm. This is a vulnerability known as CWE-327. Additionally, the function does not properly validate the 'allowed_algs' parameter, which can lead to unexpected behavior if it is not an array or does not contain the expected values. This is a vulnerability known as CWE-20."
+}

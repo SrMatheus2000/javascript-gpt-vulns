@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Unvalidated Input"],
+  "description": "The function unique_name_671 does not validate the input 'json' before using it. This could lead to various issues such as type errors or code injection if the input is not as expected. For example, if json.tiles[0] is not a string, the match function will throw an error. Similarly, if json.tiles, json.attribution, json.minzoom, json.maxzoom, json.scheme, or json.bounds are not of the expected type, it could lead to unexpected behavior or errors. It's recommended to validate and sanitize all inputs before using them."
+}

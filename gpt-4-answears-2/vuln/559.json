@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-706"],
+"vulnerabilities": ["Path Traversal", "Incorrect Permission Assignment"],
+"description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user-supplied input in 'header.linkname' to build a file path without properly sanitizing it. This could allow an attacker to access, modify, or delete files outside of the intended directory. Additionally, the function may incorrectly assign permissions (CWE-706) when creating a hard link, potentially allowing unauthorized access to the file."
+}

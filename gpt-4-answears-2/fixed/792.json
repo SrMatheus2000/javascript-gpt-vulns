@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function uses 'Buffer.allocUnsafe' which allows for the creation of buffer instances with uninitialized memory. This is a potential security risk as it could lead to information disclosure if the buffer is read from before being written to. Additionally, the function does not perform any checks on the size of the input, which could lead to a buffer overflow if the input is larger than the allocated buffer."
+}

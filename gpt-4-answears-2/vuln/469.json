@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function 'disconnect' is vulnerable to OS command injection. It constructs a command string using user-supplied input (config.iface) without proper sanitization or validation, and then executes this command using the 'exec' function. An attacker could potentially inject malicious commands by providing specially crafted input."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function diskusage is vulnerable to command injection because it concatenates a user-supplied path directly into a command that is executed by the system. An attacker could provide a path that includes command line syntax, which could result in arbitrary command execution. For example, an attacker could provide a path like '; rm -rf /' which would delete all files on the system. The function checks for double quotes in the path, but this is not sufficient to prevent command injection. The function should use a method that properly escapes or sanitizes the user-supplied input to prevent command injection."
+}

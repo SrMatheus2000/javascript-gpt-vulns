@@ -1,0 +1,18 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-94",
+    "CWE-116",
+    "CWE-117",
+    "CWE-134",
+    "CWE-400"
+  ],
+  "vulnerabilities": [
+    "Potential command injection vulnerability in the 'fs.exists' function",
+    "Potential command injection vulnerability in the 'fs.readFile' function",
+    "Potential command injection vulnerability in the 'fs.writeFile' function",
+    "Potential command injection vulnerability in the 'fs.writeFileSync' function"
+  ],
+  "description": "The code is vulnerable to command injection attacks due to the use of user-controlled input in the 'fs.exists', 'fs.readFile', 'fs.writeFile', and 'fs.writeFileSync' functions. An attacker can manipulate the input to execute arbitrary commands on the server."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly injects the 'response_body' into the HTML document without proper sanitization or escaping. An attacker could potentially inject malicious scripts through 'response_body', which would then be executed in the user's browser."
+}

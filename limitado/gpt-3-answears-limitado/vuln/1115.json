@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not have any known vulnerabilities or CWEs. It checks if the name parameter is 'script' or 'noscript' and returns without performing any further actions. It also checks if any attribute name starts with 'on' and returns without performing any further actions. Otherwise, it calls the writer.start function with the provided parameters."
+}

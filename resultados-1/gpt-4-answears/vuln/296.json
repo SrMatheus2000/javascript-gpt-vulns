@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The 'message' parameter is directly used in a command that is executed, without proper sanitization. An attacker could provide a malicious string as 'message' that could execute arbitrary commands. The replace function only escapes double quotes, but other special characters that could be used for command injection are not escaped. This could lead to arbitrary command execution."
+}

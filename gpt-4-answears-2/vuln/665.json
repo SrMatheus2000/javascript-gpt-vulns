@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77", "CWE-78", "CWE-88", "CWE-89", "CWE-90", "CWE-91"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function is vulnerable to command injection. The 'cmd' variable is constructed by concatenating user-controlled input ('opts' and 'range') without proper sanitization or validation. This can allow an attacker to inject arbitrary commands to be executed by the system."
+}

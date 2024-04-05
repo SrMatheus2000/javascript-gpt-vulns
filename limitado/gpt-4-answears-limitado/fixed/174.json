@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is directly injecting HTML into the page using innerHTML. This can lead to Cross-Site Scripting (XSS) attacks if the data being injected is user-controlled and not properly sanitized. In this case, the data is static and does not seem to be user-controlled, but it's still a bad practice that can lead to vulnerabilities if not handled carefully."
+}

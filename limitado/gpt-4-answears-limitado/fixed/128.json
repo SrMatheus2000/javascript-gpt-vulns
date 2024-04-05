@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-798: Use of Hard-coded Credentials"],
+  "vulnerabilities": ["Information Disclosure", "Hard-coded Secrets"],
+  "description": "The function is vulnerable to information disclosure as it uses regular expressions to filter out sensitive environment variables such as tokens, passwords, credentials, secrets, and private keys. However, if the variable name does not match the regular expression, the sensitive information could be exposed. Additionally, the function uses a hard-coded string 'SECRET_REPLACEMENT' to replace the sensitive information, which could be a potential security risk if the replacement string is known."
+}

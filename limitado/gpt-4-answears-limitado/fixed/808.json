@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any CSRF protection mechanism. It checks if the request host matches the origin host, but it does not validate the origin of the request, which can be manipulated by an attacker. Also, the function does not validate the input properly. It splits the origin into port and domain without checking if the origin is a valid URL. This can lead to unexpected behavior if the origin is not a well-formed URL."
+}

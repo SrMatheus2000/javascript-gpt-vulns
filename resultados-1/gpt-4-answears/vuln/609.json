@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-522", "CWE-200"],
+  "vulnerabilities": ["OS Command Injection", "Insufficiently Protected Credentials", "Information Exposure"],
+  "description": "The function is vulnerable to OS command injection because it constructs a command using user-supplied input (options, key, certificate, password) that are passed to openssl.execBinary function without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. Additionally, the function creates temporary files to store passwords which could lead to exposure of sensitive information if the files are not properly protected or deleted. The function also does not handle errors properly, potentially leading to information exposure."
+}

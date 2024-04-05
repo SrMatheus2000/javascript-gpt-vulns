@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200", "CWE-209", "CWE-598"],
+"vulnerabilities": ["Information Exposure", "Information Exposure Through an Error Message", "Use of GET Request Method With Sensitive Query Strings"],
+"description": "The function is vulnerable to information exposure through error messages (CWE-209) as it logs error messages that contain sensitive information. It also exposes sensitive information (CWE-200) by not properly validating or sanitizing user input. The function also uses GET request method with sensitive query strings (CWE-598), which can expose sensitive information in server logs, referrer headers, and browser history."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-494", "CWE-22"],
+  "vulnerabilities": ["Download of Code Without Integrity Check", "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "description": "The function 'installChromeDr' is vulnerable as it downloads and extracts a zip file from a URL without checking the integrity of the downloaded file. This could lead to the execution of malicious code if an attacker is able to manipulate the downloaded file (CWE-494). Additionally, the function does not properly limit or check the 'to' pathname, which could lead to a path traversal vulnerability (CWE-22). An attacker could potentially use this vulnerability to access sensitive information or execute arbitrary code."
+}

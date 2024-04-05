@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'extendTranslation' is vulnerable to code injection. This is due to the use of interpolation in the 'interpolate' method of 'this.interpolator'. The data used for interpolation is taken from the 'options' parameter, which could be manipulated by an attacker to inject malicious code. This could lead to arbitrary code execution within the application."
+}

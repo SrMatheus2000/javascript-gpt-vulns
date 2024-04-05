@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function 'expand' is vulnerable to Denial of Service (DoS) attacks. This is due to the fact that it recursively expands strings based on the input. If an attacker provides a specially crafted string that causes deep recursion or generates a large number of expansions, it could consume system resources leading to a slowdown or crash, thus causing a denial of service. This vulnerability is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

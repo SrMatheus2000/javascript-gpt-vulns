@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Cryptographic Algorithm Usage", "Lack of Input Validation"],
+  "description": "The function uses the 'rsa-sha256' algorithm by default if no algorithm is provided in the options. This algorithm is considered weak and potentially vulnerable to attacks. It is recommended to use a more secure algorithm. Additionally, the function does not validate the 'keyId' and 'key' provided in the options. If these values are controlled by an attacker, they could potentially manipulate the signature generation process."
+}

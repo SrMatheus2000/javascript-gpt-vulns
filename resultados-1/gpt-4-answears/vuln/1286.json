@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Type confusion", "Property Injection/Pollution"],
+  "description": "The function does not validate the input parameters. This can lead to type confusion vulnerabilities if the function is called with unexpected types. For example, if 'keys' is not a string or an array, the function will throw an exception. Additionally, the function is vulnerable to property injection or pollution, as it directly uses input to set properties on an object. An attacker could potentially use this to manipulate or access sensitive data."
+}

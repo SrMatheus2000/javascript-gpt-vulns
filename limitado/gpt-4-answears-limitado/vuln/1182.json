@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the 'options' object before using it to set properties on the '_self.config' object. This can lead to a Prototype Pollution vulnerability if an attacker can control the keys and values in the 'options' object. Prototype Pollution can allow an attacker to manipulate the behavior of an application in unexpected ways, potentially leading to Remote Code Execution (RCE), Denial of Service (DoS), or other security vulnerabilities."
+}

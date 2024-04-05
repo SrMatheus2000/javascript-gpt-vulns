@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The vulnerability lies in the line where the function sets the 'src' attribute of the 'image' element to the value of 'originalUrl' data attribute of the 'img' element. If an attacker can control the value of 'originalUrl', they can inject malicious scripts that will be executed when the 'image' element is loaded. This can lead to various attacks such as stealing sensitive data, session hijacking, defacement of the website, etc."
+}

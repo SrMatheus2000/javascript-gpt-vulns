@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to split the path. This regex is vulnerable to Regular Expression Denial of Service (ReDoS) attacks. If an attacker provides a specially crafted string, it can cause the regex to take a very long time to evaluate, effectively blocking the event loop and causing a denial of service."
+}

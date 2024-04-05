@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-88"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The _command function is vulnerable to command injection attacks. It takes a user-supplied command as input and directly passes it to the exec function without proper validation or sanitization. This allows an attacker to execute arbitrary commands on the underlying operating system."
+}

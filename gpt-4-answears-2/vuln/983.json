@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function attempts to sanitize the input HTML by removing script tags and inline event handlers. However, it is vulnerable to Cross-Site Scripting (XSS) attacks because it does not properly handle all possible cases. For example, it does not handle cases where the script tag or event handlers are not in lowercase, or cases where there are additional spaces or other characters. Additionally, it does not handle cases where the script is embedded in other HTML tags, such as img, a, div, etc. This could allow an attacker to inject malicious scripts into the web page."
+}

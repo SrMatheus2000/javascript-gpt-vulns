@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'cwd' input, which could lead to an injection attack. The 'repo' variable is derived from the 'cwd' input and is used in the 'url.parse' function without any validation. An attacker could potentially inject malicious code through the 'cwd' input. Additionally, the function does not handle SQL commands properly, which could lead to SQL injection if the 'path' variable is used in a database query."
+}

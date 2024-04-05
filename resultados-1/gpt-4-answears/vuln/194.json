@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The value of 'value' is directly used in the SVG markup without proper sanitization or encoding, which can lead to script injection if the 'value' contains malicious scripts. An attacker can exploit this vulnerability to execute arbitrary JavaScript code in the context of the victim's browser session."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is simply setting some properties on a link object and an attribute on a current object. The function also uses an encode function to potentially prevent Cross-Site Scripting (XSS) attacks by encoding the name before setting it as innerHTML. However, without knowing the context in which this function is used or the implementation of the encode function, it's impossible to definitively say it's completely secure."
+}

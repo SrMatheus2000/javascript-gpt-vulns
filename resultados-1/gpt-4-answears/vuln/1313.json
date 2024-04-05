@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function _removeCodeblockFirstLine is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property on the 'firstDiv' element. The innerHTML property sets or returns the HTML content (inner HTML) of an element. If the HTML content inserted into the document by the script is not properly sanitized, it can lead to XSS attacks. In this case, the function sanitizeHtmlCode is used, but it's not defined in the provided code, so it's not clear if it properly sanitizes the input. If it doesn't, an attacker could inject malicious scripts into the web page, which would then be executed when the page is loaded."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It attempts to sanitize the input HTML by removing disallowed tags, but it does not properly handle cases where the tags are nested or where attributes contain malicious payloads. For example, an attacker could bypass the filter with a payload like '<img src=x onerror=alert(1)>' or '<a href='javascript:alert(1)'>click me</a>'. The function also does not handle cases where the HTML entities are encoded. An attacker could use encoded entities to bypass the filter and execute arbitrary JavaScript code."
+}

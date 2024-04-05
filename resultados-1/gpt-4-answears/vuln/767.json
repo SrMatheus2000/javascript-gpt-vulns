@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-706: Use of Incorrectly-Resolved Name or Reference"],
+  "vulnerabilities": ["Path Traversal", "Incorrectly Resolved Name or Reference"],
+  "description": "The function 'unique_name_401' is vulnerable to path traversal attacks because it does not validate or sanitize the 'from' and 'fromModules' variables before using them to create or move directories. An attacker could potentially manipulate these variables to access or modify files outside of the intended directories. Additionally, the function may incorrectly resolve the names or references of these directories, leading to further potential vulnerabilities."
+}

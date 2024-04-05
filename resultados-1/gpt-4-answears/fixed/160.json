@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Infinite Loop"],
+  "description": "The function contains a while(true) loop that can potentially lead to an infinite loop if the condition to break the loop is not met. This can cause the application to consume excessive resources, leading to a Denial of Service (DoS) condition."
+}

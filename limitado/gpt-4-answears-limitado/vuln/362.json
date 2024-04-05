@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["No validation of 'port' input", "Potential for denial of service through resource exhaustion"],
+  "description": "The function does not validate the 'port' input, which could lead to unexpected behavior or errors. Additionally, the function does not limit the number of worker processes that can be created, which could lead to resource exhaustion and a denial of service if an attacker can control the number of worker processes."
+}

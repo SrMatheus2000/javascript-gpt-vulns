@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77", "CWE-78", "CWE-88", "CWE-89", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Command Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to command injection because it uses user-supplied input (opts.range[block]) in a command that is executed by the system. This allows an attacker to inject malicious commands that will be executed with the same privileges as the application. Additionally, the function does not handle errors that may occur during the execution of the command, which can lead to uncontrolled resource consumption (CWE-400) if the command produces a large amount of output or errors."
+}

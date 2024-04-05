@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable to any known CWEs or common vulnerabilities. It strips script tags from the HTML and removes inline event handlers, which helps prevent potential XSS (Cross-Site Scripting) attacks."
+}

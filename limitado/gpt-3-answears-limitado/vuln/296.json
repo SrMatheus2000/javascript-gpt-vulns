@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The commit function is vulnerable to command injection due to the use of user-controlled input in constructing the command string. An attacker can manipulate the 'message' parameter to inject arbitrary commands and execute them on the underlying system."
+}

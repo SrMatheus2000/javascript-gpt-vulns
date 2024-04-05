@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'value' variable is directly inserted into HTML without proper sanitization or encoding, which allows for the injection of malicious scripts. This is a violation of CWE-116: Improper Encoding or Escaping of Output. An attacker could exploit this vulnerability to execute arbitrary JavaScript code in the context of the user's browser session."
+}

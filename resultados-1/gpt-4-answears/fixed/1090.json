@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the .val() method to get the value of the selected option in the '#db_select' dropdown. If an attacker can manipulate this value, they can inject malicious scripts. When these values are used in the .text() method, the malicious script can be executed in the user's browser. This can lead to various attacks such as stealing sensitive information, session hijacking, and defacement of the website."
+}

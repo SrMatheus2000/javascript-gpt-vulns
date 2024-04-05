@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. It takes an HTML string and a whitelist of allowed tags as input, and returns a string with all tags not in the whitelist removed. However, it does not properly sanitize the input, allowing an attacker to inject malicious scripts. For example, an attacker could bypass the whitelist by using uppercase letters in the tag names, because the function only checks for lowercase tag names. Additionally, the function does not remove event handlers like 'onclick' from the tags, which can also be used to execute scripts."
+}

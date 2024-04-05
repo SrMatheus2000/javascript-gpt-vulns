@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Information Exposure", "Information Exposure Through an Error Message", "Path Traversal"],
+  "description": "The function is vulnerable to Information Exposure through the error message that is printed when the SERVE_USER and SERVE_PASSWORD environment variables are not set. This could potentially provide an attacker with sensitive information. Additionally, the function is vulnerable to Path Traversal attacks as it does not properly limit or sanitize the pathname, allowing an attacker to access restricted directories. The function also exposes information by allowing dotfiles to be served, which could potentially contain sensitive information."
+}

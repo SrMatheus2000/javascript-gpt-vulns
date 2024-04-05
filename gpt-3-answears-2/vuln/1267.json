@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-116"],
+  "vulnerabilities": ["Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "description": "The given JavaScript function is vulnerable to both SQL injection (CWE-78) and OS command injection (CWE-116) attacks. The function takes two parameters, decodeKeys and decodeValues, and processes the input to create an object. However, the function does not properly sanitize or validate the input, allowing an attacker to inject malicious SQL or OS commands. This can lead to unauthorized access, data manipulation, or execution of arbitrary commands on the underlying system."
+}

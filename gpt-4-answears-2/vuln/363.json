@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input passed to the 'findFreePort' function, which can lead to improper input validation (CWE-20). Also, the function does not control the number of worker processes that can be created, which can lead to uncontrolled resource consumption (CWE-400)."
+}

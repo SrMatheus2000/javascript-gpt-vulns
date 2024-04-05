@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Prototype Pollution"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of regular expressions with user-controlled input. This can lead to excessive consumption of CPU resources. The function is also vulnerable to Prototype Pollution as it directly assigns user-controlled input to object properties. This can lead to unintended property modifications and potentially arbitrary code execution."
+}

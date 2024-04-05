@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'prepare' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly appends the '_html' parameter to 'tooltip_div' without sanitizing or encoding it. If '_html' contains malicious scripts, they will be executed when the tooltip is displayed. This can lead to various attacks such as stealing sensitive data, session hijacking, defacement of the website, etc."
+}

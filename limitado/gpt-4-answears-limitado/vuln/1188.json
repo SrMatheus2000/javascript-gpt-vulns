@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-330: Use of Insufficiently Random Values"],
+  "vulnerabilities": ["Insecure Randomness"],
+  "description": "The function uses Math.random() for generating password which is not cryptographically secure. It can lead to predictability in password generation, making the application susceptible to attacks."
+}

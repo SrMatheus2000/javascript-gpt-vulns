@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the 'attr' input, which could lead to Cross-Site Scripting (XSS) attacks if the input is controlled by an attacker. An attacker could inject malicious scripts through the 'attr' parameter, which would then be executed in the user's browser."
+}

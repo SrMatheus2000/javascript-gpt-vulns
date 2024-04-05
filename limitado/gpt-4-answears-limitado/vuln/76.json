@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function uses the exec() function to execute a system command. This can lead to command injection if the function is called with untrusted input. In this case, if an attacker can control the 'maskCmd' variable, they could potentially execute arbitrary commands on the system."
+}

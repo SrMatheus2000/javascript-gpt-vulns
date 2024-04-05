@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The filePath variable is constructed by concatenating the current working directory (process.cwd()) and the requested URL (resource.pathname). An attacker can manipulate the requested URL to navigate to arbitrary directories on the server. For example, by sending a request with a URL like '/../../../../etc/passwd', the attacker can read sensitive files on the server. To mitigate this vulnerability, the application should validate and sanitize the requested URL before using it to construct the file path."
+}

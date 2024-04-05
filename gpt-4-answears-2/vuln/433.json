@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function is a simple regular expression test in JavaScript. It checks if the input value is a positive or negative integer. There are no apparent security vulnerabilities in this function."
+}

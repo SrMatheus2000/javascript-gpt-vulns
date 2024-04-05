@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function takes a URL from the request query and uses it to render a page. This can lead to an Open Redirect vulnerability if the URL is controlled by an attacker. An attacker could craft a URL that redirects users to a malicious site. Although the function uses a validator to escape the URL, it does not check if the URL is from a trusted domain. This could be mitigated by validating that the URL is from a trusted domain before using it."
+}

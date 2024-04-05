@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function does not properly sanitize the 'value' input, which could lead to Cross-Site Scripting (XSS) attacks if the function's output is rendered in a web page without further sanitization. Specifically, the function does not escape the ']' character, which could allow an attacker to close the bracket early and inject malicious code."
+}

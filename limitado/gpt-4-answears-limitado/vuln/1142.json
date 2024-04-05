@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The vulnerability lies in the fact that the function keeps adding clients to the 'Clients' array without any limit. If an attacker continuously connects to the server, it can cause the server to run out of memory, leading to a DoS condition. This is a type of resource exhaustion attack (CWE-400)."
+}

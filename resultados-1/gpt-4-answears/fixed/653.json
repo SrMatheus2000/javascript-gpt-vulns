@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the input 'array'. If the input is not an array, the function will throw an error. Moreover, the function is vulnerable to prototype pollution because it directly assigns properties from the input array to the result array without checking if the properties are built-in JavaScript properties. An attacker could potentially add or modify properties of the Object prototype, affecting all objects in the application."
+}

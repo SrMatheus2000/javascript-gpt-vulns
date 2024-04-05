@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["No input validation"],
+  "description": "The function does not perform any validation on the input parameters 'rows' and 'cluster_num'. This could lead to unexpected behavior or errors if the input is not as expected. For example, if 'rows' is not an array or 'cluster_num' is not a number, the function will throw an error. It's recommended to add input validation to ensure the function behaves as expected."
+}

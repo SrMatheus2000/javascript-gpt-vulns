@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function addClickFn does not sanitize the input parameters 'color', 'colorName', and 'colorbox'. This could potentially lead to Cross-site Scripting (XSS) attacks if the input parameters contain malicious scripts. An attacker could inject scripts that can manipulate the DOM or steal sensitive information."
+}

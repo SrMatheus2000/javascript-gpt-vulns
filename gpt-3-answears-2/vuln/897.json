@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327"],
+  "vulnerabilities": ["Insecure Base64 Encoding"],
+  "description": "The function uses an insecure method of base64 encoding the API key, which can lead to potential security vulnerabilities. CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+}

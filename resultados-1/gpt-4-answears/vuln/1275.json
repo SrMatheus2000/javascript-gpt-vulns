@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'port' parameter is directly used in the 'exec' function without any sanitization or validation. An attacker can inject arbitrary OS commands through the 'port' parameter, which can lead to unauthorized actions, data breaches, or even full system compromise."
+}

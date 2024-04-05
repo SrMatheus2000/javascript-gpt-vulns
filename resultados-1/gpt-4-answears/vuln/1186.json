@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-749: Exposed Dangerous Method or Function"],
+  "vulnerabilities": ["Information Exposure", "Exposed Dangerous Method"],
+  "description": "The function exposes potentially sensitive information through error messages. In the catch block, the error message is directly set as the value of the CodeMirror instance, which could expose sensitive information to the user. Additionally, the function triggers events with potentially sensitive data (the error object) which could be intercepted by malicious scripts. The function also uses the 'console.warn' method which could expose sensitive information in the console logs."
+}

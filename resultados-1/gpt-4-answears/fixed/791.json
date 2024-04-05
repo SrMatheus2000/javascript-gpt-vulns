@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Exhaustion"],
+  "description": "The function '_allocate' is vulnerable to memory exhaustion. It allocates a new buffer of size 'newSize' without checking if there is enough memory available. This can lead to a denial of service (DoS) if an attacker can control the 'bytes' parameter and request a large amount of memory to be allocated, causing the system to run out of memory."
+}

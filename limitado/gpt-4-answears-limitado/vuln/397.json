@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function sanitizeURL is vulnerable because it only checks if the URL starts with 'javascript:' in a case-insensitive manner. However, it does not consider other possible ways to inject malicious scripts. For example, a URL like 'JaVaScRiPt:alert(1)' would bypass the check. Also, it does not encode or escape the output, which could lead to Cross-Site Scripting (XSS) attacks if the URL is used in an HTML context."
+}

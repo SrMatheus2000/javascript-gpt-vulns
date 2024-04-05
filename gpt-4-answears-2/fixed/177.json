@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-117: Improper Output Neutralization for Logs"],
+"vulnerabilities": ["Improper Input Validation", "Improper Output Neutralization for Logs"],
+"description": "The function unique_name_95 does not validate the input 'error' before using it. This could lead to unexpected behavior or errors if the input is not in the expected format. Additionally, the function does not properly sanitize the error messages before logging them, which could lead to information leakage or other security issues."
+}

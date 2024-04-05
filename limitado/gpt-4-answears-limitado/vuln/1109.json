@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Missing Signature Verification"],
+  "description": "The function jwt_decode has a vulnerability where it allows the caller to skip the verification of the JWT signature by setting the 'noVerify' parameter to true. This could allow an attacker to forge a JWT by changing the payload and header as they wish, without needing the correct signing key. This is a critical security issue as it could lead to unauthorized access or privilege escalation."
+}

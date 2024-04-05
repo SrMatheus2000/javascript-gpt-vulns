@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function _ps is vulnerable to command injection. This is because it concatenates user-supplied input (args) directly into a command that is executed by the system. An attacker could provide malicious input that alters the command to perform unintended actions."
+}

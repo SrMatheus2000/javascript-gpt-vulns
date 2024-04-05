@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the input 'value'. If the input is not properly sanitized, it could lead to unexpected behavior or security vulnerabilities. For example, if the input contains special characters or sequences that can be interpreted in a special way, it could lead to injection attacks."
+}

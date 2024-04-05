@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses user-supplied input in a command that is executed by an OS command interpreter. If the user-supplied input is not properly validated, an attacker can inject arbitrary commands leading to command injection vulnerability."
+}

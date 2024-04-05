@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks. The function does not properly sanitize the user input for 'src', 'git', 'clone', 'branch', 'remote', 'base', 'only', 'message', 'silent' and other options. An attacker could potentially inject malicious code as input, which could then be executed. Additionally, the function does not validate the input properly, which could lead to unexpected behavior or errors."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not contain any known vulnerabilities or CWEs. It checks if the 'name' parameter is equal to 'user_host' and if so, it removes any occurrences of square brackets and their contents from the 'value' parameter using a regular expression. Otherwise, it calls the 'escapeHtml' function on the 'value' parameter."
+}

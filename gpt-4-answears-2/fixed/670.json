@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate the 'modules' input which can lead to path traversal attacks. An attacker can provide relative paths or absolute paths to access sensitive files or directories outside of the intended 'node_modules' directory."
+}

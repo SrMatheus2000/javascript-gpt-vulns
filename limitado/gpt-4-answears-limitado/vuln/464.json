@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it allows cross-origin requests (CORS) without any CSRF protection. An attacker can trick a victim into making a request that the victim did not intend to make. Also, the function does not validate or sanitize the 'pathname' input which can lead to various attacks such as SQL Injection, XSS, etc. if the input is used in a context that is not safe."
+}

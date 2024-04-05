@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate or sanitize the 'from' and 'to' parameters before using them to construct file paths. This could allow an attacker to manipulate these parameters to access arbitrary files on the system, leading to Path Traversal vulnerability."
+}

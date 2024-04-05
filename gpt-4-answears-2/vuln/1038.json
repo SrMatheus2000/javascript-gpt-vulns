@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470", "CWE-20"],
+"vulnerabilities": ["Unrestricted File Upload", "Improper Input Validation"],
+"description": "The function does not validate the input for 'path' and 'setValue', which can lead to unrestricted file upload and improper input validation. This can allow an attacker to upload malicious files or inject malicious code into the application. The function also does not handle promises safely, which can lead to unhandled promise rejections."
+}

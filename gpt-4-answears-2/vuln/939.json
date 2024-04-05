@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-94"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection"],
+"description": "The function does not validate or sanitize the 'data' input which can lead to various vulnerabilities. An attacker can pass malicious input to the 'data' variable causing unexpected behavior. This can lead to SQL Injection if the data is used in a SQL query or Code Injection if the data is executed as code. The function also does not handle errors properly, potentially revealing sensitive information."
+}

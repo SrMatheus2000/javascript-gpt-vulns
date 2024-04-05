@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Leak"],
+  "description": "The function 'unique_name_440' is vulnerable to memory leak. The 'Cacheman' object is created every time the function is called but it is not cleared or deleted after its use. This can lead to excessive memory consumption if the function is called multiple times, leading to a potential Denial of Service (DoS) attack. This vulnerability is classified as CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'convertToSVG' is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it takes an input string '_str' and directly uses it to create SVG elements without properly sanitizing it. An attacker can inject malicious scripts through this input, which will be executed when the SVG is rendered. This is a common vulnerability known as Cross-Site Scripting (XSS), specifically referred to as CWE-79 in the Common Weakness Enumeration (CWE) list."
+}

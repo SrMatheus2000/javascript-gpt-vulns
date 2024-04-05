@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The regex used to filter attributes allows any attribute starting with 'script' or 'data', which can be exploited to inject malicious scripts. Additionally, the function does not properly escape or encode the output, which can lead to injection attacks."
+}

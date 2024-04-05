@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "The function is vulnerable to timing attacks. The time taken by the function can reveal information about the length of the input, which can be used to guess the input. This is because the function uses the maximum length of the two inputs to create the buffers, and the time taken to create and fill these buffers can vary depending on their length. This can potentially expose sensitive information."
+}

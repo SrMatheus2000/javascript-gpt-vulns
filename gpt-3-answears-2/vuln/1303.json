@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function uses user input to construct a command that is executed using execSync. This can lead to command injection vulnerabilities, allowing an attacker to execute arbitrary commands on the system."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The filename is constructed by joining parts of the request URL, which can be manipulated by an attacker to access arbitrary files on the system. This is a serious security issue that can lead to exposure of sensitive information, corruption of data, or even execution of arbitrary code if the attacker can reach system files or directories."
+}

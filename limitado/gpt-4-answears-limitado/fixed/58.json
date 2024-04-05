@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It has a check to prevent prototype pollution, which is a common security issue in JavaScript. The function also checks if the object is not null and if it's not a string before proceeding, which prevents potential type errors. The function 'cleanKey' also sanitizes the input by replacing '###' with '.'. Therefore, it seems to be well-secured against common JavaScript vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function isSafe checks if the user agent string contains a sequence of 100 or more consecutive digits. If it does, the function returns false, otherwise it returns true. There are no apparent vulnerabilities in this function as it does not perform any risky operations such as executing user input, accessing sensitive data, or making network requests."
+}

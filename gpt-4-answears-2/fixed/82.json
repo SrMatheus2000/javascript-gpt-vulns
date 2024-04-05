@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function is vulnerable to code injection. This is due to the use of the Function constructor to create new functions from strings, which can lead to arbitrary code execution if the input is not properly sanitized. This is particularly dangerous as the function seems to be designed to handle user-provided input, increasing the risk of exploitation."
+}

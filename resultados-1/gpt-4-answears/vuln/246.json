@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'calculateWidthForText' is vulnerable to Cross-site Scripting (XSS) attacks. This is because it takes an input 'text' and directly uses it to set the 'innerHTML' of an HTML element without properly sanitizing it. Although the function attempts to sanitize the input by replacing certain characters with their HTML encoded equivalents, this is not sufficient to prevent all possible XSS attacks. An attacker could potentially inject malicious scripts into the 'text' input, which would then be executed when the HTML is rendered in a web browser."
+}

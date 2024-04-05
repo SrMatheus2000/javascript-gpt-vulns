@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function deleteConnection is vulnerable to command injection. The function constructs a command string using user-supplied input (ap.ssid), which is then executed. If an attacker can control the value of ap.ssid, they can inject arbitrary commands to be executed on the system with the privileges of the Node.js process."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-367"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not properly validate user-supplied input, allowing an attacker to traverse the file system and access unauthorized files."
+}

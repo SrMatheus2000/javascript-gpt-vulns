@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function runInContext is vulnerable to code injection. It takes a string 'code' as input and directly concatenates it into a new function without proper sanitization or validation. This can allow an attacker to inject malicious code and execute arbitrary commands within the context of the function."
+}

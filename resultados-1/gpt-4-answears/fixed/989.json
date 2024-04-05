@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-328: Reversible One-Way Hash", "CWE-200: Information Exposure", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References", "Timing Attack"],
+  "description": "The function is vulnerable to a timing attack because it uses the '==' operator to compare HMACs. This operator is not constant time, meaning that an attacker could potentially determine the correct HMAC by measuring the time it takes for the function to return an error. The function also exposes potentially sensitive information by throwing errors with specific messages when the token is invalid. Additionally, the function does not securely store cryptographic secrets, as the 'secret' property is directly accessible and can be modified."
+}

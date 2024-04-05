@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient Input Validation"],
+"description": "The function does not validate the input 'param' properly. It splits the input based on the '=' character and does not check if the key is valid or not. This can lead to unexpected behavior if the input is not in the expected format. Also, the function does not handle the case where the input string contains more than one '=' character. This can lead to incorrect parsing of the input. Moreover, the function does not properly handle the case where the value is enclosed in double quotes. If the value contains a double quote in the middle, it will not be removed."
+}

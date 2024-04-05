@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'method' and 'contentType' variables which are directly used in the function logic. This could lead to potential security vulnerabilities such as SQL Injection if the 'method' or 'contentType' variables contain malicious SQL commands. Also, the function does not validate the 'req' object which could lead to potential security vulnerabilities if the 'req' object contains malicious data."
+}

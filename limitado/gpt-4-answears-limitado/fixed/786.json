@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-328: Reversible One-Way Hash", "CWE-759: Use of a One-Way Hash without a Salt", "CWE-760: Use of a One-Way Hash with a Predictable Salt"],
+  "vulnerabilities": ["Lack of Salt in Hashing Process", "Use of Predictable Salt", "Use of Reversible One-Way Hash"],
+  "description": "The function uses SHA-1, which is a weak hash function that can be reversed. This means that if an attacker gets hold of the hashed password, they can potentially reverse-engineer the original password. Additionally, the function does not use a salt in the hashing process, which makes it vulnerable to rainbow table attacks. A salt is a random value that is used as an additional input to the hash function to protect against these types of attacks. Furthermore, the function uses a predictable salt (

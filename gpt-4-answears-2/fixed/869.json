@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It takes an 'element' parameter and directly uses it to create an HTML string, which is then inserted into the DOM. If the 'element' parameter can be controlled by an attacker, they could inject malicious scripts into the webpage. The function attempts to mitigate this by removing script tags from the 'element' parameter, but this is not a robust solution as there are many ways to bypass such filters. Additionally, the function does not properly escape or encode the 'element' parameter before inserting it into the HTML string, which could lead to other types of injection attacks."
+}

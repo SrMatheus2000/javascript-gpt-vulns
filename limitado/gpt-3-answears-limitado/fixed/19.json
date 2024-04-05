@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Control of Generation of Code ('Code Injection')"],
+  "description": "The provided code is vulnerable to command injection and improper control of generation of code. The 'port' parameter is directly passed to the 'exec' function without proper sanitization or validation, allowing an attacker to inject arbitrary commands. Additionally, the 'processId' variable is not properly validated before being used in the 'exec' function, which can lead to code injection vulnerabilities."
+}

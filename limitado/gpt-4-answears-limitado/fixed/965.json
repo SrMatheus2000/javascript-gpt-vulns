@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not properly sanitize the input 'value'. If the input contains script tags or other HTML, it could lead to Cross-Site Scripting (XSS) attacks. This is because the replace function only escapes double quotes, but other potentially harmful characters are not escaped. An attacker could provide a string that includes script tags or other HTML, which could then be executed in the context of the user's browser."
+}

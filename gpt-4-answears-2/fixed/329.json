@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient Encoding or Escaping of Output", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate or sanitize the input 'source' which can lead to security vulnerabilities. It also does not properly escape or encode the output 'out', which can lead to injection attacks. The function also does not control the consumption of resources which can lead to a denial of service if an attacker provides a large or complex 'source'."
+}

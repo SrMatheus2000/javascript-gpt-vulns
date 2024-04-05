@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a function that finds the indexes of certain identifiers in a given code string, while ignoring those that are property accesses. It uses a regular expression to match the identifiers, and checks that the match is not preceded by a '.' character. The function does not use any dangerous JavaScript functions or methods that could lead to vulnerabilities such as code injection, and it does not seem to handle any sensitive data that could be exposed. Therefore, it is not vulnerable based on the provided code."
+}

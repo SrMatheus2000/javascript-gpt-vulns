@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_303 is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it uses the 'h' function to create HTML elements and assigns user-controlled input to the 'domProps' property of these elements without properly sanitizing the input. An attacker could exploit this vulnerability by injecting malicious scripts as input, which would then be executed when the generated HTML is rendered in a user's browser."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-798: Use of Hard-coded Credentials", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+"vulnerabilities": ["Hard-coded credentials", "SQL Injection"],
+"description": "The function uses a hard-coded token to authenticate with Github, which is a security risk. If the token is compromised, an attacker could gain unauthorized access to the Github repository. Additionally, the function does not sanitize the 'repo.branch' input before using it in a SQL command, which could lead to SQL injection if the input contains malicious SQL code."
+}

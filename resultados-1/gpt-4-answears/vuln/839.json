@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-602: Client-Side Enforcement of Server-Side Security"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to multiple application-level vulnerabilities such as Remote Code Execution, DoS, and Property Injection. The function does not properly validate the 'method' parameter, allowing an attacker to modify a JavaScript object's prototype. This can lead to the addition or modification of existing properties that will exist on all instances of the object. The vulnerability is related to the CWE-602 as the function relies on client-side validation to enforce security constraints."
+}

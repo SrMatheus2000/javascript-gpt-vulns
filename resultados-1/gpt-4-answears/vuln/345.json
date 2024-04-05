@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a simple function that calculates the next index for a given input, considering the length of a source string and certain Unicode character ranges. It does not perform any dangerous operations such as eval(), does not manipulate the DOM, does not make any network requests, and does not handle any sensitive data. Therefore, it does not seem to be susceptible to common web vulnerabilities such as Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), or SQL Injection."
+}

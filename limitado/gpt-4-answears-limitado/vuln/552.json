@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'val' parameter is directly injected into the innerHTML of the body element without any sanitization or encoding. This allows an attacker to inject malicious scripts that will be executed in the context of the user's browser."
+}

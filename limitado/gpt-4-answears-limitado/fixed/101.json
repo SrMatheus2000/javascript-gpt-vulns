@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable because it uses the escapeFn function to escape the input. If the escapeFn function does not properly escape all potentially dangerous characters, it could lead to Cross-Site Scripting (XSS) vulnerabilities. XSS vulnerabilities occur when an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript."
+}

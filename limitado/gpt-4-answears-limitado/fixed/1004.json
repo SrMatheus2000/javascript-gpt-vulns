@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Algorithm substitution attack"],
+  "description": "The function is vulnerable to an algorithm substitution attack. The 'alg' parameter, which specifies the algorithm to be used for the signature verification, is taken from the header of the JWS. An attacker can manipulate the 'alg' parameter in the header to 'none', bypassing the signature verification process. This is because the function checks if the algorithm is 'none' and if it is, it returns true without verifying the signature. This can lead to unauthorized access or modification of the data."
+}

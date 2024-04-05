@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is vulnerable to information disclosure. The error messages returned by the function reveal whether a user with a given email exists in the database or not. This could potentially be used by an attacker to enumerate the users in the system. It is recommended to return a generic error message regardless of whether the user exists or not."
+}

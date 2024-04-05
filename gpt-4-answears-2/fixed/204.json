@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function 'escapeshellarg' is used to escape any special characters in a string that is used as a shell argument. It does not appear to have any vulnerabilities as it properly escapes all single quote characters, which are the only characters that need to be escaped in shell arguments. Therefore, it is not vulnerable to any known CWEs."
+}

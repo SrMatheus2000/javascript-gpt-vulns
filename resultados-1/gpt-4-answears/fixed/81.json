@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_37 is vulnerable to OS command injection. It uses the 'spawn' function to execute shell commands, and the 'destination' parameter is directly included in the command string without proper sanitization or validation. This allows an attacker to inject arbitrary shell commands by providing a specially crafted 'destination' string."
+}

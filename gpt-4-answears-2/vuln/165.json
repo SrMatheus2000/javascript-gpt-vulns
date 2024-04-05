@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-20"],
+"vulnerabilities": ["Path Traversal", "Input Validation"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input from 'req.url' to construct a file path without proper sanitization or validation. This could allow an attacker to access sensitive files outside of the intended directory. Additionally, the function is vulnerable to Input Validation (CWE-20) issues as it does not validate or sanitize the 'range' header from the request, which could lead to unexpected behavior or errors."
+}

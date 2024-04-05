@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Resource Exhaustion", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection because it uses the 'require' function with a parameter ('req.body.options.execModulePath') that can be controlled by the user. This can allow an attacker to execute arbitrary code. The function also does not properly validate the length of the data received in the request, which can lead to resource exhaustion if an attacker sends a large amount of data. Additionally, the function does not properly validate the input received in the request, which can lead to various types of attacks."
+}

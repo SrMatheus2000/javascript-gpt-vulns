@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function 'unique_name_776' is vulnerable to command injection. This is because it uses the 'exec' function to execute commands that are constructed by concatenating user-supplied input ('options' object) without properly sanitizing it. An attacker could provide malicious input that includes shell metacharacters, leading to arbitrary command execution."
+}

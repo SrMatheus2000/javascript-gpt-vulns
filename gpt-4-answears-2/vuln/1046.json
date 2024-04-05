@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input 'this.source' before processing it, which could lead to unexpected behavior or errors (CWE-20). Additionally, the function does not control the number of iterations in the 'while' loop when processing 'err.details', which could lead to excessive resource consumption if the input is large or crafted in a certain way (CWE-400)."
+}

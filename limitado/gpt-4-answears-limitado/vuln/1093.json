@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function does not sanitize the input 'p' before using it to access a property of the 'data' object and assign it to the 'opts' object. This could potentially lead to code injection if an attacker can control the value of 'p' and 'data[p]'."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Input Validation", "Code Injection"],
+  "description": "The function does not validate the input properly. It directly uses the request URL and request body without any sanitization or validation. This can lead to various attacks such as Code Injection, where an attacker can inject malicious code into the URL or body. Also, the function uses the 'RegExp' constructor to create a regular expression from user input, which can lead to Regular Expression Denial of Service (ReDoS) if the user input forms a malicious regular expression."
+}

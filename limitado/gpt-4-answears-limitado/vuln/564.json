@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Weak Authentication", "Potential SQL Injection"],
+  "description": "The function 'buildMiddleware' is vulnerable due to weak authentication and potential SQL injection. The 'staticUsersAuthorizer' function uses a simple comparison of username and password which can be easily bypassed. Also, the function does not sanitize the username and password before using them in the 'authorizer' function, which could lead to SQL injection if the 'authorizer' function uses these values in a SQL query."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Command Injection"],
+  "description": "The function is vulnerable to code injection and command injection attacks. The 'eval' function is used with user-controlled input without proper sanitization, allowing an attacker to execute arbitrary code or commands."
+}

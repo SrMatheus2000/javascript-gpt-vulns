@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Unvalidated Input"],
+  "description": "The function does not validate or sanitize the 'propsData' input, which is used to create a new DialogComponent. If 'propsData' contains malicious script, it could lead to Cross-Site Scripting (XSS) attacks. Also, the function does not check if 'propsData' is of the expected format or type, leading to potential errors or unexpected behavior."
+}

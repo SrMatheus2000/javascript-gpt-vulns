@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_167' is vulnerable to Cross-Site Scripting (XSS) attacks. The 'url' parameter is inserted into the 'src' attribute of an 'img' tag without proper sanitization. Although the 'escape.entities' function is used, it may not prevent all possible XSS payloads. An attacker could potentially inject malicious scripts into the 'url' parameter, which would then be executed when the resulting HTML is rendered in a user's browser."
+}

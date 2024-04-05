@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-384", "CWE-613", "CWE-352"],
+"vulnerabilities": ["Session Fixation", "Insufficient Session Expiration", "Cross-Site Request Forgery (CSRF)"],
+"description": "The function is vulnerable to Session Fixation as it sets a new session ID without invalidating the old one. It also has Insufficient Session Expiration vulnerability as it sets a long expiration time for the session cookie. Additionally, it is vulnerable to Cross-Site Request Forgery (CSRF) as it does not validate or check for any CSRF tokens."
+}

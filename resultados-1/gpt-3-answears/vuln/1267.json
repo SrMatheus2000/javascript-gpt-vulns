@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-79"],
+  "vulnerabilities": ["Improper Neutralization of Input During Web Page Generation (CWE-79)", "Improper Input Validation (CWE-20)"],
+  "description": "The function does not properly validate or sanitize the input received in the 'decodeKeys' and 'decodeValues' parameters. This can lead to vulnerabilities such as Cross-Site Scripting (XSS) (CWE-79) and Injection (CWE-20) if the input is used in a context where it can be interpreted as code or executed."
+}

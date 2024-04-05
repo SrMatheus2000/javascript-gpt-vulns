@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function inet_pton does not properly validate the input for an IPv4 address. It allows for any number of digits in each octet of the address, which can lead to incorrect processing of the IP address. For example, an IP address like '999.999.999.999' would pass the validation, but it is not a valid IPv4 address. This can lead to unexpected behavior and potential security issues. This is an instance of CWE-20: Improper Input Validation."
+}

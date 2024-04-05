@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function unique_name_513 is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses user input (stringId, subs) to construct a string that is then used to retrieve a message. If an attacker can control the value of stringId or subs, they could inject malicious scripts that would be executed in the context of the user's session. This could lead to a variety of attacks, such as stealing the user's session token or performing actions on their behalf."
+}

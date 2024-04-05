@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption", "CWE-770: Allocation of Resources Without Limits or Throttling"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service"],
+  "description": "The function is vulnerable to Path Traversal and Denial of Service attacks. The Path Traversal vulnerability arises from the use of user-supplied input without proper validation in the 'fs.existsSync' and 'fs.statSync' functions. An attacker could manipulate 'req.urlBase' to access files outside of the intended directories. The Denial of Service vulnerability arises from the lack of limits or throttling on resource allocation. An attacker could potentially cause the application to consume excessive resources, leading to a denial of service."
+}

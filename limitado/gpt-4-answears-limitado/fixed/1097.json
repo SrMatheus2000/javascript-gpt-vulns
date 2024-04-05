@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'highlightTarget' is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an input 'anchor' and uses it directly in the jQuery selector without any sanitization or encoding. An attacker can inject malicious scripts through the 'anchor' parameter, which will be executed in the user's browser when the page is rendered. This can lead to various attacks such as stealing sensitive information, session hijacking, defacement of the website, etc."
+}

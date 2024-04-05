@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function compile is vulnerable to code injection. It uses the Function constructor to create a new function from a string. An attacker could potentially control the input to the Function constructor, which could lead to arbitrary code execution."
+}

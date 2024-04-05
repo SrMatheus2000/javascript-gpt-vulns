@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function getRedirectUrl is vulnerable to URL redirection, which means it could be manipulated to redirect users to an untrusted site. This could be used in phishing attacks to trick users into visiting malicious websites. The vulnerability lies in the fact that the function does not properly validate the 'redirect' parameter to ensure it's a safe and trusted URL before redirecting the user."
+}

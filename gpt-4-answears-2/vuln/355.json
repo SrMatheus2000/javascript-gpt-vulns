@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-74", "CWE-89", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Injection", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Control of Generation of Code ('Code Injection')", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function does not properly validate the input 'mime' and 'payload', which can lead to various vulnerabilities. An attacker can pass specially crafted 'mime' and 'payload' to execute arbitrary code (Code Injection), perform SQL Injection, or cause the application to consume excessive resources leading to Denial of Service (DoS). The function also does not handle errors properly, which can lead to information disclosure."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["No validation for 'nodes' input", "Potential Cross-site Scripting (XSS)"],
+"description": "The function does not validate the 'nodes' input which can lead to unexpected behavior or errors. Additionally, the function uses 'innerHTML' which can potentially lead to Cross-site Scripting (XSS) attacks if the input is not properly sanitized."
+}

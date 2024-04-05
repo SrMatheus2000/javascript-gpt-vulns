@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is simply encoding words in a string based on a specified encoding and charset. There are no eval statements, no insecure regular expressions, no insecure dynamic code execution, and no insecure external resource loading. Therefore, it is not vulnerable to common JavaScript vulnerabilities such as Cross-Site Scripting (XSS), Regular expression Denial of Service (ReDoS), or Remote Code Execution (RCE)."
+}

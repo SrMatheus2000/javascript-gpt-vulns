@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function 'unique_name_561' is vulnerable to potential Denial of Service (DoS) attacks. This is due to the uncontrolled resource consumption that can occur when the function is handling a large number of events or notifications. If an attacker floods the system with a large number of events, it could consume system resources leading to a slowdown or crash. This is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

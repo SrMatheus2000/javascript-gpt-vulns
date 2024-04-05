@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Code Injection", "Path Traversal"],
+  "description": "The function is vulnerable to both Code Injection and Path Traversal attacks. The 'name' variable, which is used to require a module, is directly taken from the 'apis' parameter without any sanitization or validation. This allows an attacker to inject arbitrary code or traverse the file system to access restricted directories."
+}

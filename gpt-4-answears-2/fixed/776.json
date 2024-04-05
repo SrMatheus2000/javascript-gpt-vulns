@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-749"],
+"vulnerabilities": ["Exposed Dangerous Method or Function"],
+"description": "The function is using 'ELECTRON_GUEST_WINDOW_MANAGER_INTERNAL_WINDOW_OPEN' which is an internal Electron event and should not be exposed to the renderer process. This can lead to potential Remote Code Execution (RCE) attacks if an attacker can control the 'url' parameter."
+}

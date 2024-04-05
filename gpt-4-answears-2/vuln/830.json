@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Denial of Service (DoS)", "Improper Input Validation"],
+"description": "The function does not validate the 'name' parameter which can lead to resource exhaustion if a large input is provided, causing a Denial of Service (DoS). Additionally, the function does not validate the 'config.driver' input, which can lead to unexpected behavior if an invalid input is provided."
+}

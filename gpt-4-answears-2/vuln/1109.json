@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+"vulnerabilities": ["Missing Signature Verification"],
+"description": "The function jwt_decode has a parameter 'noVerify' which, if set to true, allows the function to return the payload without verifying the signature. This could allow an attacker to forge a token and bypass the signature verification process, leading to potential unauthorized access."
+}

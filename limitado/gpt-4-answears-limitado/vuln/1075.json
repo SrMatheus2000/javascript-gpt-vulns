@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'data' input to create HTML content. If an attacker can control the 'data' input, they can inject malicious scripts into the web page, which will then be executed in the context of the victim's session. This can lead to session hijacking, identity theft, defacement of the website, and other attacks. The vulnerability is present in both the 'if' and 'else' branches of the function."
+}

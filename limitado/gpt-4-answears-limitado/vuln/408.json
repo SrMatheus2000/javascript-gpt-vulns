@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) and Cross-Site Scripting (XSS) (CWE-79). The function uses user input to construct file paths that are used to read files. If an attacker can control the input, they can read arbitrary files on the system. Additionally, the function does not properly sanitize user input before using it to generate HTML, which can lead to Cross-Site Scripting attacks."
+}

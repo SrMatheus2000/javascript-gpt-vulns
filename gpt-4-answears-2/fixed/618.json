@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses 'stderr' input directly in 'fs.stat' and 'execFile' without proper validation or sanitization, allowing an attacker to read arbitrary files on the system. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it uses a while loop that depends on 'this.isReady' to terminate. If 'this.isReady' never becomes true, the loop will continue indefinitely, potentially leading to a Denial of Service (DoS) condition."
+}

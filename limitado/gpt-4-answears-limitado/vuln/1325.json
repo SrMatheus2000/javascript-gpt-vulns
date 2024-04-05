@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service"],
+  "description": "The function is vulnerable to Information Disclosure and Denial of Service attacks. In the case of an error, the function throws the error object which might expose sensitive information (CWE-209). Also, the function does not control the number of tasks that can be pushed into the 'tasks' array, which can lead to resource exhaustion if a large number of tasks are added (CWE-400)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-346: Origin Validation Error", "CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function is vulnerable because it does not validate the origin of the postMessage event. This could allow an attacker to send malicious messages from an external site, leading to Cross-Site Scripting (XSS) attacks. Additionally, the function does not validate the 'method' property of the parsed JSON data, which could lead to Code Injection attacks if the 'Reveal' object contains methods that execute arbitrary code."
+}

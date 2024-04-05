@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution which can cause an application to crash or behave unexpectedly. This happens because the function does not validate the input 'key' and directly assigns it to the 'merged' object. An attacker can manipulate the 'key' to modify the prototype of the object, which can lead to unexpected behavior in the application."
+}

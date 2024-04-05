@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "DOM Clobbering"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and DOM Clobbering. The regex used to sanitize the attributes of the clonedNode is not sufficient to prevent all possible XSS attacks. For example, it does not prevent the use of encoded or obfuscated javascript code. Additionally, the function does not properly validate the input, which can lead to DOM Clobbering. This occurs when the 'id' or 'name' attribute of an HTML element is set to a value that matches the name of a global JavaScript property or a property of the 'window' object. This can lead to unexpected behavior

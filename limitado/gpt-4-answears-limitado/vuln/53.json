@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Null Pointer Dereference"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) if the 'protocolre' regular expression is not properly defined and can cause the application to hang. Additionally, if the 'protocolre' regular expression does not match the 'address' input, 'match' will be null and trying to access 'match[1]', 'match[2]', or 'match[3]' will result in a Null Pointer Dereference error. The function does not validate the input nor does it handle the case where the regular expression does not match the input."
+}

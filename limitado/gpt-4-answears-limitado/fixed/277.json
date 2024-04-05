@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Potential Code Injection"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of a potentially inefficient regular expression in '/:\\d+:\\d+\\)?$/.test(line)'. An attacker could provide a specially crafted input that causes the regular expression to take a long time to evaluate, leading to a denial of service. Additionally, the function may be vulnerable to code injection as it directly uses the 'line' variable in the 'line.replace' method without proper sanitization or validation, which could allow an attacker to execute arbitrary code."
+}

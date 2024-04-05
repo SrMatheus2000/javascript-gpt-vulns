@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": [" Injection"],
+  "description": "The function is vulnerable to injection attacks. It takes an input 'name' and uses it in a string concatenation operation without proper sanit or validation. An attacker can provide a 'name' value includes malicious code, which will be executed when the returned string is used in a context where it's interpreted as code. This is a common vulnerability known as code injection. The associated Commonness Enumeration (CWE) identifier is CWE-116, which refers to improper encoding or escaping of output."
+}

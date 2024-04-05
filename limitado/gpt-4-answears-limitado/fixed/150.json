@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'sources' variable, which is concatenated into the 'args' array, is passed directly to the 'cp.spawn' function without any sanitization or validation. If an attacker can control the value of 'sources', they can inject arbitrary commands to be executed on the server."
+}

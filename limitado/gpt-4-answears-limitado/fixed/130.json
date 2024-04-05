@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify an object's prototype. This can lead to property injection or pollution, which can cause application-wide changes that can lead to Denial of Service (DoS) or Remote Code Execution (RCE). In this function, the object properties are dynamically determined and modified without proper checks, which can lead to such vulnerabilities."
+}

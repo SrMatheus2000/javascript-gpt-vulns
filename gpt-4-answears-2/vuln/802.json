@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-184: Incomplete List of Disallowed Inputs"],
+"vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+"description": "The function uses regular expressions (RegExp) to validate and manipulate the input URL. However, it does not properly validate the input, which can lead to Regular Expression Denial of Service (ReDoS) if a malicious user provides a specially crafted URL. This can cause the application to consume excessive resources, leading to a denial of service. Additionally, the function does not have a complete list of disallowed inputs, which can lead to unexpected behavior if a URL with a disallowed protocol is provided."
+}

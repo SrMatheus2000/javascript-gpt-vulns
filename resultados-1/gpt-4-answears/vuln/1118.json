@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Insecure Cryptographic Algorithm Usage", "Potential Server-Side Request Forgery"],
+  "description": "The function uses the 'alg' parameter from the parsed JWT header to determine the cryptographic algorithm for signature verification. If the 'alg' is set to 'none', the function will return true, bypassing the signature verification. This could allow an attacker to forge a JWT by setting 'alg' to 'none' and removing the signature. Additionally, the function uses the 'key.verifyString' and 'key.hashAndVerify' methods without validating the 'key' parameter, which could lead to Server-Side Request Forgery if an attacker can control the 'key' parameter."
+}

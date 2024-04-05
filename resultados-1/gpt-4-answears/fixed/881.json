@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it takes an HTML string as input and directly inserts it into the DOM without proper sanitization or encoding. If the 'DOMPurify' library is not available or not supported, the function falls back to a less secure method of handling the HTML input, which can lead to XSS attacks if the input is not trusted. The vulnerability is specifically related to the 'div.innerHTML = html;' line, where the HTML input is directly assigned to 'innerHTML'. An attacker can inject malicious scripts through the HTML input, which will then be executed when the HTML is inserted into the DOM."
+}

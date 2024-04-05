@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-918", "CWE-494"],
+"vulnerabilities": ["Server-side Request Forgery (SSRF)", "Download of Code Without Integrity Check"],
+"description": "The function is vulnerable to Server-side Request Forgery (SSRF) as it sends a request to a URL without validating it. An attacker could potentially manipulate the URL to access unauthorized internal resources. Additionally, the function downloads code without checking its integrity, which could lead to the execution of malicious code."
+}

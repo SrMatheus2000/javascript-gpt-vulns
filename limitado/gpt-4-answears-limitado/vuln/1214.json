@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'table' parameter from 'PMA_commonParams.get('table')' is directly concatenated into the 'question' string, which is then used in the 'PMA_confirm' function. If an attacker can control the value of 'table', they could inject malicious scripts that would be executed in the context of the user's session. This could lead to session hijacking, identity theft, defacement of the website, or other malicious activities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Path Injection", "Type Confusion"],
+  "description": "The function does not validate the 'path' parameter, which can lead to path injection if the 'path' parameter is user-controlled. This can allow an attacker to manipulate the structure of 'obj' in unintended ways. Additionally, the function assumes that 'obj' is an array without validating it, which can lead to type confusion if 'obj' is not an array."
+}

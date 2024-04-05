@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it allows all origins by default. This can allow an attacker to trick a victim into making a request they did not intend to make. Additionally, the function does not properly validate the input, which can lead to various types of attacks such as SQL Injection, XSS, etc."
+}

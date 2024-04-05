@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The function uses the exec function to execute system commands, which can be manipulated by an attacker to execute arbitrary commands on the system. This is particularly dangerous if the function is exposed to user input, as it could allow an attacker to execute any command they wish on the system. This vulnerability is classified as CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

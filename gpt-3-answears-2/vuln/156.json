@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function checks if the given email address is valid. It uses a regular expression to match the email format. If the email does not match the required format, it returns an error message. Otherwise, it returns null."
+}

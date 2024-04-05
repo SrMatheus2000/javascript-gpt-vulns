@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["No validation for JSON.parse"],
+  "description": "The function does not validate the input before parsing it with JSON.parse. This can lead to unexpected behavior or errors if the input is not valid JSON. It can also lead to security vulnerabilities if the input is maliciously crafted."
+}

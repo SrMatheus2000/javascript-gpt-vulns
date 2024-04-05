@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-426"],
+  "vulnerabilities": ["Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to command injection and path traversal attacks. The 'dir' parameter is directly concatenated into the command executed by the child process, allowing an attacker to inject arbitrary commands. Additionally, the function does not properly validate or sanitize the 'dir' parameter, which could lead to path traversal vulnerabilities."
+}

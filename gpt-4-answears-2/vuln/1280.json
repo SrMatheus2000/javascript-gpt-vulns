@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function does not validate the input for the 'key' parameter. If the key contains '__proto__', 'prototype' or 'constructor', it can cause a change in the prototype of the object. This can lead to an alteration in the object's behavior, which is known as Prototype Pollution. This can potentially lead to more serious security vulnerabilities like Remote Code Execution (RCE), Denial of Service (DoS), or even lead to other vulnerabilities like Cross-Site Scripting (XSS)."
+}

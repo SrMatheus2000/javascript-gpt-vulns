@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function attempts to sanitize the input HTML by removing disallowed tags, but it does not properly handle cases where the tags are nested or malformed. An attacker could potentially inject malicious scripts by using such tags. This is a common web application vulnerability (CWE-79)."
+}

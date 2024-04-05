@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function is vulnerable to command injection. It uses user-supplied input in the 'git' command without proper sanitization or validation. An attacker could potentially inject malicious commands to be executed on the server."
+}

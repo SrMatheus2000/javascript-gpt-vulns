@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-89"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) and SQL Injection attacks. The function uses the jQuery $.post method to send a POST request to the server. The data sent in the POST request includes the value of the 'query' parameter, which is obtained from the user's input. If the user's input is not properly sanitized, it can lead to SQL Injection attacks. Additionally, the function uses the jQuery .html method to add HTML content to elements. If the HTML content includes user input and is not properly sanitized, it can lead to Cross-Site Scripting (XSS) attacks."
+}

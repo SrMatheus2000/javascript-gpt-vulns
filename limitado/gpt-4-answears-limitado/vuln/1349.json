@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function noLocalBranchConflict is vulnerable to command injection because it concatenates a user-supplied string (branch) into a command that is executed by the system. An attacker could provide a branch name that includes shell commands, which would be executed with the same privileges as the process running the script. This could lead to arbitrary command execution."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Error Handling"],
+  "description": "The function is vulnerable to command injection and improper error handling. An attacker can manipulate the 'http://chromedriver.storage.googleapis.com/LATEST_RELEASE' URL to execute arbitrary commands on the server. Additionally, the function does not properly handle errors, which can lead to information disclosure or other security issues."
+}

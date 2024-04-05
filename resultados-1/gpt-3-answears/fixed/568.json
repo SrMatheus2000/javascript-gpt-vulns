@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-330"],
+  "vulnerabilities": ["Insufficient Entropy"],
+  "description": "The function uses crypto.randomBytes(1) to generate a random number, but it only uses one byte of randomness. This can lead to insufficient entropy and predictable output, making it vulnerable to cryptographic attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-918"],
+  "vulnerabilities": ["Path Traversal", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses the 'filename' parameter directly in 'fs.createWriteStream(filename)' without any validation or sanitization, allowing an attacker to write files anywhere on the system. It is also vulnerable to Server-Side Request Forgery (CWE-918) because it uses the 'getArchiveName()' function directly in the URL for the HTTP GET request, potentially allowing an attacker to make the server send a request to an arbitrary URL."
+}

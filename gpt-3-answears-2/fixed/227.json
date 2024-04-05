@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-95"],
+  "vulnerabilities": ["Command Injection", "Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to command injection and cross-site scripting (XSS) attacks. The 'files' and 'tagName' parameters are not properly validated or sanitized before being used in command execution. This can allow an attacker to inject malicious commands or scripts. Additionally, the 'message' parameter is not properly sanitized, which can lead to XSS vulnerabilities."
+}

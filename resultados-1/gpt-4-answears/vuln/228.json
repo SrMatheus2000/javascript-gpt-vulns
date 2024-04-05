@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input to create HTML elements without properly sanitizing the input. For example, the 'item.text' and 'item.title' properties are directly used to create HTML content. If an attacker can control the value of these properties, they can inject malicious scripts into the web page, leading to XSS attacks."
+}

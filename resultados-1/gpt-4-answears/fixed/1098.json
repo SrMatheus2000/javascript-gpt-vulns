@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function uses the eval() function to parse data, which can lead to code injection if the data is not properly sanitized. This is a serious security risk as it allows an attacker to execute arbitrary JavaScript code. Additionally, the function uses jQuery's html() method to insert data into the DOM. If the data is not properly sanitized, this can lead to Cross-Site Scripting (XSS) attacks, where an attacker can inject malicious scripts into web pages viewed by other users."
+}

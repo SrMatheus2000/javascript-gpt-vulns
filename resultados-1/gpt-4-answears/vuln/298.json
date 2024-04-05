@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The 'options' parameter is directly concatenated into the command string that is passed to 'this.exec'. If an attacker can control the 'options' value, they can inject arbitrary commands. This can lead to serious security issues such as remote code execution."
+}

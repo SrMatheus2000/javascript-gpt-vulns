@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize user input before inserting it into the DOM. This can lead to Cross-Site Scripting (XSS) attacks, where an attacker can inject malicious scripts into web pages viewed by other users. This can lead to a variety of attacks such as stealing user data, performing actions on behalf of the user, or defacing the website."
+}

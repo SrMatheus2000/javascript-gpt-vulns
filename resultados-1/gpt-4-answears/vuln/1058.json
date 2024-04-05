@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+  "description": "The function unique_name_586 is vulnerable to SQL Injection because it concatenates propName directly into the SQL query without any sanitization or parameterization. An attacker could potentially manipulate propName to alter the SQL query, leading to unauthorized data access, data corruption, or data loss. Additionally, the function does not validate the input propName, which could lead to unexpected behavior or errors."
+}

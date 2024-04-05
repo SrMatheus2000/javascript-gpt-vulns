@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-209", "CWE-598"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Information Exposure Through an Error Message", "Information Exposure Through Query Strings in GET Request"],
+"description": "The function does not validate or sanitize the input from the user, which can lead to various types of attacks such as Cross-Site Scripting (XSS), SQL Injection, etc. It also exposes sensitive information through error messages and query strings in GET request. The function also does not handle errors properly, which can lead to information exposure."
+}

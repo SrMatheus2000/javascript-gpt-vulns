@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function 'unique_name_126' is vulnerable to Cross-Site Scripting (XSS) attacks. It directly appends a node to a fragment without any sanitization or validation of the input. This could allow an attacker to inject malicious scripts into the web page, leading to various types of attacks such as stealing user data, performing actions on behalf of the user, etc."
+}

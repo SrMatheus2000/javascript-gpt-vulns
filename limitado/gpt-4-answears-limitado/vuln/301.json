@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function takes a gitUrl and options as input and directly concatenates them into a command string that is then executed. This could allow an attacker to inject arbitrary commands by providing a specially crafted gitUrl or options."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user-supplied input in 'fileInfo.uploadTo' and 'fileInfo.name' to construct a file path without properly sanitizing it. This could allow an attacker to access, modify, or overwrite arbitrary files on the system. Additionally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of files that can be uploaded, potentially leading to a Denial of Service (DoS) condition if an attacker uploads a very large file."
+}

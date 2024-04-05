@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_487' is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it takes an HTML input and directly uses it without proper sanitization or encoding, allowing for the potential execution of malicious scripts. The vulnerability is specifically located in the 'process' function where the 'element' parameter is directly used without any form of sanitization. An attacker could exploit this by providing a malicious script as input, which would then be executed when the function is called."
+}

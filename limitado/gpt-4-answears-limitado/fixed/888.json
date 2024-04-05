@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an input 'd' and uses it to create HTML tags without properly sanitizing it. This could allow an attacker to inject malicious scripts into the web page. The vulnerability is particularly present in the 'extra' variable, which is directly derived from the input 'd' and used to create HTML tags. The 'dummyAnchor.href' is also a potential point of vulnerability as it directly uses the 'extra' variable. The function does attempt to check for valid protocols, but this does not prevent all potential XSS attacks."
+}

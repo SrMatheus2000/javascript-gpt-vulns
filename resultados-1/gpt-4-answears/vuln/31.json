@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the 'input' parameter before inserting it into HTML context. This could allow an attacker to inject malicious scripts that would be executed by the browser. The vulnerability is present in the sections where the function handles large properties, large rows, images, audio, and video. The function uses the 'input' parameter directly in the HTML without properly sanitizing it first."
+}

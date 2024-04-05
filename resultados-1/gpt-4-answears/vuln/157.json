@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-770: Allocation of Resources Without Limits or Throttling"],
+  "vulnerabilities": ["Infinite Recursion"],
+  "description": "The function deepExtend is vulnerable to infinite recursion if an object with a circular reference is passed as an argument. This can lead to a RangeError: Maximum call stack size exceeded, which can crash the application. This is a type of Denial of Service (DoS) attack."
+}

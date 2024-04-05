@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can cause changes to the JavaScript object prototype. This can lead to potential Denial of Service (DoS) attacks or Remote Code Execution (RCE) if the polluted objects are processed in an insecure way. The vulnerability is due to the use of the for-in loop to copy properties without checking if the property is a prototype property."
+}

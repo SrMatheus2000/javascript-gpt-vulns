@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is primarily manipulating and managing an internal stack, and does not perform any dangerous operations such as eval(), does not use any deprecated functions, and does not expose any sensitive information. It also properly checks for object properties before accessing them, which prevents prototype pollution attacks."
+}

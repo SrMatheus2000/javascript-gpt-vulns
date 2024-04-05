@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'unique_name_56' is vulnerable to Cross-site Scripting (XSS) attacks. It directly uses the 'color' parameter without proper input validation or sanitization, allowing an attacker to inject malicious scripts."
+}

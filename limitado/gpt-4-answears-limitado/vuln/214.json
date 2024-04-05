@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'execCommit' is vulnerable to OS command injection. The function constructs a command string using user-supplied input and then executes this command using the 'runExec' function. An attacker could potentially inject malicious commands by providing specially crafted input. This could lead to arbitrary command execution on the server where the JavaScript code is running."
+}

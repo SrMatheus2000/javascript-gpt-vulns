@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Information Disclosure", "Path Traversal"],
+  "description": "The function 'unique_name_20' is vulnerable to Information Disclosure and Path Traversal. The Information Disclosure vulnerability is due to the error messages that are pushed to 'projectLogMessages' which may contain sensitive information about the system. The Path Traversal vulnerability is due to the use of 'fspath.join' with 'settings.userDir' and 'projectsDir' which can be manipulated to access directories outside of the intended scope."
+}

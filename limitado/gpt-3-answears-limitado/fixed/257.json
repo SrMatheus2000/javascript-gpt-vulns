@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The provided JavaScript function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes user input from the 'data-youtube' and 'data-ytparams' attributes and directly inserts them into the HTML content without proper sanitization or encoding. This allows an attacker to inject malicious scripts or HTML code, leading to potential XSS vulnerabilities."
+}

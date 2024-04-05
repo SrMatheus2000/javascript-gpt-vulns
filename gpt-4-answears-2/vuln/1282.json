@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function is not vulnerable. It has checks to prevent prototype pollution which is a common JavaScript vulnerability."
+}

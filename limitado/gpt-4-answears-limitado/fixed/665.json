@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-276: Incorrect Default Permissions", "CWE-732: Incorrect Permission Assignment for Critical Resource"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Insecure File Permissions"],
+  "description": "The function 'setUser' is vulnerable as it sets the user to the owner of the prefix folder without validating the user's permissions. This can lead to Insecure Direct Object References (IDOR) where an attacker can manipulate the 'prefix' to gain unauthorized access. Also, the function does not check or set secure file permissions while creating directories with 'mkdirp', which can lead to unauthorized file access or modification."
+}

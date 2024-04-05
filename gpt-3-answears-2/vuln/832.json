@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection due to the use of `execSync` without proper input validation or sanitization. An attacker can manipulate the `url` parameter to execute arbitrary commands on the system."
+}

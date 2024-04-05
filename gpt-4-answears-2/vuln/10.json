@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-754"],
+"vulnerabilities": ["Improper Input Validation", "Improper Check for Unusual or Exceptional Conditions"],
+"description": "The function does not validate the 'coverage' input before parsing it to float which can lead to unexpected behavior if the input is not a number. This is an example of CWE-20: Improper Input Validation. Additionally, the function does not properly check for unusual or exceptional conditions when accessing array elements. If the 'versions' array is empty or 'i' exceeds the array length, it will lead to undefined behavior. This is an example of CWE-754: Improper Check for Unusual or Exceptional Conditions."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not properly sanitize the filename variable, which is used to construct a path. This could allow an attacker to traverse the file system to access files or directories that are outside of the restricted directory. This is known as a path traversal vulnerability."
+}

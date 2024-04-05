@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE22", "CWE-73"],
+  "vulnerabilities": ["Pathaversal", "Server-Side Request Forgery (RF)"],
+  "description": "The function is vulnerable to Path Traversal and Server-Side Request Forgery (SSRF) attacks. The 'uri' variable is derived from the user-supplied 'req.url' without proper validation or sanitization, which can allow an attacker to traverse the file system and access sensitive files. Additionally, the 'req.url' is directly used in the 'fs.exists' function, which can lead to SSRF vulnerabilities by allowing an attacker to make arbitrary requests to internal resources."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'ip' variable is directly used in the 'exec' function without any sanitization or validation. An attacker can inject arbitrary commands by manipulating the 'ip' variable."
+}

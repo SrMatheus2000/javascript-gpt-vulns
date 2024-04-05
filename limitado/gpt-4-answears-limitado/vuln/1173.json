@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'execCmd' variable is constructed by concatenating user-controlled input ('orig', 'compareTo', 'options.file', 'options.highlightColor', 'options.highlightStyle') which is then passed to the 'exec' function. Although the 'utils.escape' function is used, it may not be sufficient to prevent all forms of command injection, depending on its implementation. An attacker could potentially inject arbitrary commands by providing specially crafted input."
+}

@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Input Validation", "Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function does not validate the input 'json' properly. It assumes that 'json' is an object and that it has certain properties like 'tiles', 'attribution', 'minzoom', 'maxzoom', 'scheme', and 'bounds'. If 'json' is not an object or does not have these properties, the function will throw an error. Additionally, the function uses a regular expression to parse the 'tiles' property. If the 'tiles' property is a string that matches the regular expression in a certain way, it could cause a Regular Expression Denial of Service (ReDoS

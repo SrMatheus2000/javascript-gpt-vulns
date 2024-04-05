@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_758 is vulnerable to OS command injection. The function takes an 'option' parameter and directly concatenates it with the 'foption' string, which is then passed to the 'exec' function. An attacker could provide a malicious 'option' that includes command line syntax, which would be executed by the 'exec' function. This could allow the attacker to execute arbitrary commands on the system with the privileges of the process running the JavaScript code."
+}

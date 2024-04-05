@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. In the onData function, it concatenates incoming data chunks to the 'body' variable without any limit. An attacker can send a very large request body, causing the server to consume a large amount of memory and potentially crash, leading to a Denial of Service."
+}

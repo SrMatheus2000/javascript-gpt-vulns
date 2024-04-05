@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to path traversal attacks. The 'entry.path' is concatenated with 'opts.path' without any validation or sanitization, which allows an attacker to traverse the file system to arbitrary locations or access arbitrary files."
+}

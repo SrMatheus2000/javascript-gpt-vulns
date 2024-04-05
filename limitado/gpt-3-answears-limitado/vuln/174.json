@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-116"],
+  "vulnerabilities": ["Command Injection", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function is vulnerable to command injection and server-side request forgery (SSRF) attacks. The 'arg' parameter is split using the '=' character, allowing an attacker to inject arbitrary commands or URLs. This can lead to remote code execution or unauthorized access to internal resources."
+}

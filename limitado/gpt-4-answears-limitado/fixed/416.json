@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Input Validation"],
+  "description": "The function is vulnerable to OS command injection. Even though it attempts to guard against injection by splitting the 'src' and 'dest' variables on semicolons and taking the first part, it does not properly sanitize the input. An attacker could still inject commands by including them in the 'src' or 'dest' strings, especially if they contain spaces or other special characters. This could allow an attacker to execute arbitrary commands on the system with the privileges of the process running the script. The function also does not validate the input to ensure it is of the expected format or type, which is a violation of CWE-20: Improper Input Validation."
+}

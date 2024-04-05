@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure Through Error Messages", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input 'this.source' before processing it, which could lead to unexpected behavior or errors. Error messages are directly returned to the user, potentially exposing sensitive information. The function also does not control the number of iterations in the 'while' loop, which could lead to high resource consumption if 'err.details' contains a large number of items."
+}

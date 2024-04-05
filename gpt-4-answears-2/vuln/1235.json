@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-352"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly injects the response from the server into the HTML without proper sanitization or encoding, which could allow an attacker to inject malicious scripts. It is also vulnerable to Cross-Site Request Forgery (CSRF) because it does not validate or verify the request origin, allowing an attacker to trick a victim into executing unwanted actions in a web application in which they're authenticated."
+}

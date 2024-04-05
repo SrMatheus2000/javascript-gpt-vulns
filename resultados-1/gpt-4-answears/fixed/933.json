@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncaught Exception"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not validate the input 'this.source' before attempting to parse it as YAML. If 'this.source' is not a valid YAML string, the yaml.safeLoad() function will throw an exception, which is caught and handled, but it can cause the application to consume resources unnecessarily and slow down or crash if the input is large or complex enough. Additionally, the function does not handle exceptions that may be thrown by the 'handleSwaggerPath' function, which could lead to uncaught exceptions if there is a problem with the Swagger document."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470", "CWE-476"],
+"vulnerabilities": ["Unrestricted use of dangerous function", "Null pointer dereference"],
+"description": "The function uses the 'hasOwnProperty' method which can be dangerous if the object's prototype has been modified. This can lead to unexpected behavior and potential security issues. Additionally, the function does not check if 'value' or 'pattern' are null before accessing their properties, which can lead to a null pointer dereference."
+}

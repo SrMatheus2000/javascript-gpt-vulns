@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78", "CWE-94", "CWE-209", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection", "Code Injection", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files without proper validation. It is also vulnerable to OS Command Injection (CWE-78) as it uses user input to form a command that is executed by the system. Code Injection (CWE-94) is possible as user input is used to form a part of the code without proper sanitization. Information Exposure Through an Error Message (CWE-209) is possible as detailed error messages are printed to the console. Uncontrolled Resource Consumption (CWE-400

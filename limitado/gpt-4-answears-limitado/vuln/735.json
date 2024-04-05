@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Denial of Service (DoS)", "Information Disclosure"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) as it allows the user to specify the target URL which can be exploited to make the server send requests to arbitrary URLs. This can lead to information disclosure if the server can access internal resources. The function also does not validate or sanitize the input URL which can lead to other vulnerabilities such as Denial of Service (DoS) if an attacker sends a large number of requests or a request to a resource-intensive URL. The function also exposes the internal IP address (127.0.0.1) which can be considered

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-88", "CWE-89", "CWE-20"],
+"vulnerabilities": ["Command Injection", "Argument Injection", "SQL Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to command injection because it concatenates user-supplied input into a command that is executed by the system. This allows an attacker to execute arbitrary commands. The function is also vulnerable to argument injection because it concatenates user-supplied input into the arguments of a command. This allows an attacker to manipulate the command's arguments. The function is vulnerable to SQL injection because it concatenates user-supplied input into an SQL query. This allows an attacker to manipulate the SQL query. The function does not properly validate user-supplied input, which can lead to various types of attacks."
+}

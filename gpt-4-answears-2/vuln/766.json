@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function uses 'path.resolve' which can be manipulated to access directories outside of the intended scope, leading to a Path Traversal vulnerability. An attacker could potentially read sensitive files on the server."
+}

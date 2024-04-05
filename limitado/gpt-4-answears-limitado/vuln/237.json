@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["No validation of node properties", "Potential Cross-site Scripting (XSS)"],
+  "description": "The function does not validate the properties of the 'node' objects. If the 'node' object has properties like 'parent', 'editor', 'field', etc. that are not as expected, it could lead to unexpected behavior or errors. Also, the function directly assigns the 'field' property of a 'node' object to the 'innerHTML' of a DOM element. If the 'field' property contains malicious script, it could lead to Cross-site Scripting (XSS) attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-400"],
+  "vulnerabilities": ["Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function 'evaluate_value' uses the 'new Function()' constructor which can lead to code injection (CWE-94) if the input is not properly sanitized. This happens when the function tries to evaluate a mathematical expression from a string. An attacker could potentially inject arbitrary JavaScript code. Additionally, the function 'get_different_numbers' has a while loop that could potentially lead to uncontrolled resource consumption (CWE-400) if the limit is not reached, causing a Denial of Service (DoS)."
+}

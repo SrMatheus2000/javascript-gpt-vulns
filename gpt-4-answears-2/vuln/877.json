@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-749"],
+"vulnerabilities": ["Exposed Dangerous Method or Function"],
+"description": "The function unique_name_461 uses Electron's ipcMain module to emit events, which can be a potential security risk if not handled properly. An attacker can potentially send arbitrary events to the ipcMain module, leading to Remote Code Execution (RCE) vulnerability. It's recommended to validate or sanitize all incoming events to prevent any potential security threats."
+}

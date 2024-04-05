@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-95", "CWE-94"],
+  "vulnerabilities": ["Code Injection", "Improper Neutralization of Directives in Dynamically Evaluated Code"],
+  "description": "The function dust.loadSource uses the eval function to execute code. This can lead to code injection vulnerabilities if the source parameter is not properly sanitized. This is related to CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection') and CWE-94: Improper Control of Generation of Code ('Code Injection')."
+}

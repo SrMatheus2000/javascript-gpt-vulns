@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is a function that creates a new instance of Prism's Previewer plugin, which is used to preview easing functions. The function does not take any user input, does not perform any dangerous operations such as eval(), and does not interact with any external systems or resources, so there is no opportunity for injection attacks or other common web vulnerabilities. The function also does not appear to have any error handling issues or other potential sources of unexpected behavior."
+}

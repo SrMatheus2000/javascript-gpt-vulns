@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-798: Use of Hard-coded Credentials", "CWE-200: Information Exposure"],
+"vulnerabilities": ["Hard-coded credentials", "Sensitive information exposure"],
+"description": "The function uses a hard-coded API key which is a security risk. If the code is exposed or shared, the API key will be visible to everyone. This can lead to unauthorized access to the API. Additionally, the API key is converted to base64 which can be easily decoded, leading to information exposure."
+}

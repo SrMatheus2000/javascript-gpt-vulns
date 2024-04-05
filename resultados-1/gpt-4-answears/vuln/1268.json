@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "URL Redirection to Untrusted Site ('Open Redirect')"],
+  "description": "The function 'unique_name_742' is vulnerable due to the use of 'decodeURIComponent' and 'replace' functions without proper validation or sanitization of the input. This could lead to Cross-Site Scripting (XSS) attacks where an attacker can inject malicious scripts into the web page viewed by other users. Additionally, the function could be exploited to redirect users to untrusted sites, leading to phishing attacks or other forms of social engineering."
+}

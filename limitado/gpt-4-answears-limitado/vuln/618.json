@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-400", "CWE-918"],
+  "vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function does not validate the 'value' and 'definition' parameters properly. This can lead to various vulnerabilities. For example, if the 'value' is not a string, the function will throw an error, but it does not prevent the execution of the function. This can lead to Denial of Service (DoS) attacks (CWE-400). Also, the function does not validate the 'definition.encoding' parameter. If it is not one of the expected values, the function will return the parsed 'value' as is, which can lead to Server-Side Request Forgery (SSRF) attacks (CWE-918). Furthermore,

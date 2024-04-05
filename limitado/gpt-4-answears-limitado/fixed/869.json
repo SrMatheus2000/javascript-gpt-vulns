@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an 'element' parameter and directly injects it into the HTML of an iframe without properly sanitizing the input. Although there is an attempt to remove script tags from the 'element' parameter, this is not sufficient to prevent all forms of XSS, as there are many ways to inject malicious scripts without using script tags. An attacker could potentially inject malicious scripts that would be executed when the iframe is loaded."
+}

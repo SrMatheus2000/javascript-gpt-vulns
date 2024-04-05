@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["No input validation"],
+  "description": "The function does not perform any input validation on the 'schema' and 'post' parameters. This could lead to unexpected behavior or security vulnerabilities if the function is passed malicious or malformed input. For example, an attacker could potentially exploit this to perform a Cross-Site Scripting (XSS) attack or to inject malicious code. It's recommended to always validate and sanitize input before using it."
+}

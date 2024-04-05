@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918", "CWE-20", "CWE-74"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation", "Injection"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) because it sends a request to a URL that is constructed by concatenating a static string with a value returned by the getArchiveName() function. If an attacker can control the value returned by getArchiveName(), they can force the server to send a request to an arbitrary URL. This could be used to attack internal network resources that are not normally accessible from the outside. The function also does not validate the input from getArchiveName() function which could lead to Improper Input Validation vulnerability. Additionally, the function is vulnerable to Injection attacks because it uses the util.format() function to construct a string that is

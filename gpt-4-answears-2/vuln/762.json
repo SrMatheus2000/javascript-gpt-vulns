@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate or sanitize the 'file' input which is used to construct file paths. This could allow an attacker to manipulate the file path to access or overwrite files outside of the intended directory, leading to information disclosure, denial of service, or code execution."
+}

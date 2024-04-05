@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Path Traversal"],
+  "description": "The function is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of the file being downloaded. This could lead to a Denial of Service (DoS) attack if an attacker is able to manipulate the file size to consume all available resources. Additionally, the function is vulnerable to Path Traversal (CWE-22) because it uses user input to construct a file path without properly validating or sanitizing the input. This could allow an attacker to access, modify, or delete files outside of the intended directory."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-200"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Information Exposure"],
+  "description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) and Information Exposure (CWE-200). The function sends HTTP requests and includes support for HTTP Basic Authentication. However, it does not enforce the use of HTTPS for secure communication, which means that sensitive information such as usernames and passwords could be exposed in cleartext if an unencrypted protocol is used. Additionally, the function uses environment variables to configure proxy settings, which could expose sensitive information if the environment variables are not properly secured."
+}

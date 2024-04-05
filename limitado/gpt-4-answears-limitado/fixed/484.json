@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function appears to be safe from common vulnerabilities. It sanitizes the input using DOMPurify before inserting it into the innerHTML, which should prevent Cross-Site Scripting (XSS) attacks. Other operations also do not seem to introduce any vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-384: Session Fixation"],
+  "vulnerabilities": ["Information Exposure Through Sent Data", "Session Fixation"],
+  "description": "The function 'unique_name_295' is vulnerable to Information Exposure Through Sent Data (CWE-200) and Session Fixation (CWE-384). The function proxies requests and includes the client's IP address in the 'x-forwarded-for' header, potentially exposing sensitive information. Additionally, the function does not appear to manage sessions securely, potentially allowing an attacker to fixate the session ID and hijack the session."
+}

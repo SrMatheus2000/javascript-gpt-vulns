@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication"],
+  "vulnerabilities": ["Improper Authentication"],
+  "description": "The function 'unique_name_86' is vulnerable to improper authentication. The function checks if the user is an admin or if the user doesn't have a password and is the same user who is trying to change the password. However, it doesn't check if the user is authenticated before allowing them to change the password. This could allow an unauthenticated user to change the password of any user, including admins, if they know the user's uid."
+}

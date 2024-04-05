@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function fetch uses execSync to execute a git command. The command includes the variable 'id' and 'branch' which are not sanitized before being included in the command. This could allow an attacker to inject arbitrary commands by manipulating the 'id' or 'branch' value."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'propsData.message' input is directly used to create a new DialogComponent without any sanitization or encoding. If 'propsData.message' contains malicious scripts, it will be executed when the DialogComponent is rendered. This can lead to various attacks such as stealing sensitive data, session hijacking, defacement of the website, etc."
+}

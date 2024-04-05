@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The replace function is intended to escape the '[' character, but it actually doesn't change anything because it replaces '[' with '['. This means that if the input includes any script, it will be executed when the output is rendered in a browser."
+}

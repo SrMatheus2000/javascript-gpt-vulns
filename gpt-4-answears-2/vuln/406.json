@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function decorateLogFile in the provided JavaScript code is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled data into HTML output without proper sanitization or encoding, which allows attackers to inject malicious scripts. This can lead to a variety of attacks such as stealing sensitive information, performing actions on behalf of the user, or spreading malware."
+}

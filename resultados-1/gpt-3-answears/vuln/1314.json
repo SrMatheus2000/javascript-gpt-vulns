@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Command Injection"],
+  "description": "The provided JavaScript function vulnerable to code injection and command injection attacks. The use of eval() function with user-supplied data can lead to arbitrary code execution, allowing an attacker to inject malicious code or execute arbitrary commands on the server. This can result in unauthorized access, data leakage, or even complete compromise of the system. It is highly recommended to avoid using eval() function with user-controlled input and instead use safer alternatives like JSON.parse()."
+}

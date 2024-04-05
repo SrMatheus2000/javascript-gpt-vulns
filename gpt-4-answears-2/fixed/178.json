@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it reads files directly from the provided filename without any validation or sanitization. An attacker could provide a path to a sensitive file, leading to information disclosure. Additionally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of the file being read. An attacker could provide a very large file, causing the application to consume excessive resources while processing the file, potentially leading to a denial of service."
+}

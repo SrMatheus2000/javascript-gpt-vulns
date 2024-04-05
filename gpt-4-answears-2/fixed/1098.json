@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Eval Injection", "Cross-site Scripting"],
+"description": "The function uses the eval() function to parse data, which can lead to code injection if the data is not properly sanitized. This is known as Eval Injection (CWE-95). Additionally, the function dynamically generates HTML content based on user input, which can lead to Cross-site Scripting (XSS) attacks if the input is not properly sanitized (CWE-79)."
+}

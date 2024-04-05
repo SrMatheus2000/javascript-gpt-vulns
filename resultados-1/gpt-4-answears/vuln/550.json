@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function 'unique_name_275' is vulnerable to Cross-Site Scripting (XSS) because it uses the 'window.open' function with a parameter 'linkStr' that could be manipulated to execute malicious scripts. Also, the function does not validate the input 'ids' and 'linkStr' which could lead to unexpected behavior or security issues."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the input for the 'val' parameter, which is used in SQL queries. This could allow an attacker to inject malicious SQL code, leading to SQL Injection attacks. The 'escape' function is used to sanitize some inputs, but not all. Specifically, the 'val' parameter is not sanitized when it is an Object or when the 'prop.type.name' is 'Number', 'Date', 'Timestamp', 'Boolean', or 'GeoPoint'."
+}

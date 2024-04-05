@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it uses the 'rendy' function to directly insert user-controlled input into HTML output. This can allow an attacker to inject malicious scripts that will be executed in the context of the victim's browser. The function also does not validate or sanitize the 'params' input, which can lead to other types of attacks such as SQL Injection or Command Injection if the input is used in a dangerous context."
+}

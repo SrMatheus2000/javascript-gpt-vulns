@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the 'configObject' parameter, which can lead to improper input validation (CWE-20). This can potentially allow an attacker to manipulate the configuration settings. The function also exposes sensitive information during development mode by allowing translation of any phrase (CWE-200). This can potentially expose sensitive information to an attacker. Lastly, the function does not limit the number of requests that can be made to the '/i18n/:locale' and '/i18n/:locale/:phrase' endpoints, which can lead to uncontrolled resource consumption (CWE-400) and potentially cause a denial of service."
+}

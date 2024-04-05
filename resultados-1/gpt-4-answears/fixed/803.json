@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It properly checks the types of its inputs, uses a secure method to create HMACs, and uses a double-hash method to avoid leaking timing information. The function also properly handles errors and exceptions."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses several regular expressions to test the input. If the input is a very long string, these regular expressions can cause the function to consume a lot of resources and slow down or even crash the application. This is known as a Regular Expression Denial of Service (ReDoS) attack."
+}

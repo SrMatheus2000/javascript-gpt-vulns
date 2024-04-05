@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)"],
+"description": "The function 'unique_name_318' is vulnerable to Modification of Assumed-Immutable Data (MAID) as it modifies the '__proto__' property of objects. This can lead to unexpected behavior and potential security issues. The vulnerability is related to CWE-471: Modification of Assumed-Immutable Data."
+}

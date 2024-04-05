@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-311: Missing Encryption of Sensitive Data", "CWE-330: Use of Insufficiently Random Values"],
+  "vulnerabilities": ["Sensitive data exposure", "Missing encryption of sensitive data", "Use of predictable values"],
+  "description": "The function is vulnerable as it exposes sensitive information. The 'secret' and 'token' properties are not encrypted and can be accessed directly. Also, the function uses predictable values for the 'iv' property in the 'setIV' method, which can lead to security issues. The 'encode' and 'decode' methods also do not validate the input, which can lead to potential security risks."
+}

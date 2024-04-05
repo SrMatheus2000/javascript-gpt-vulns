@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function parseDCC is vulnerable to SQL Injection and Cross-Site Scripting (XSS) attacks. The function takes an input 'source' and uses it directly in the 'indexOf' method and 'substr' method without any sanitization or validation. This can allow an attacker to inject malicious scripts or SQL commands. The function also does not properly encode or escape the output, which can lead to Cross-Site Scripting (XSS) attacks if the output is rendered in a web page."
+}

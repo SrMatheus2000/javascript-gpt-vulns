@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601", "CWE-400"],
+  "vulnerabilities": ["Insecure Direct Object References", "Unvalidated Redirects and Forwards"],
+  "description": "The function is vulnerable to Insecure Direct Object References (CWE-601) and Unvalidated Redirects and Forwards (CWE-400). The URL constructed using util.format() does not perform any input validation or sanitization, which can lead to an attacker manipulating the URL and accessing unauthorized resources. Additionally, the function does not validate or sanitize the 'filename' parameter before passing it to the 'callback' function, which can result in unvalidated redirects or forwards."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Use of eval function"],
+  "description": "The function uses the 'eval' function, which can lead to code injection if the input is not properly sanitized. This can allow an attacker to run arbitrary code in the context of the application, leading to a variety of attacks such as data theft, denial of service, or even full system compromise."
+}

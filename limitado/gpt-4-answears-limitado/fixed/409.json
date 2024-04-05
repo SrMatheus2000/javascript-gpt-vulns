@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'getCurrentConnections' uses 'execFile' to execute a command without properly sanitizing the 'macProvider' variable. This could allow an attacker to inject arbitrary commands, leading to OS command injection."
+}

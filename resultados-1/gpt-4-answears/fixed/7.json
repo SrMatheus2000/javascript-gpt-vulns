@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function coverQuery does not validate the input for 'coverage' and 'statMode' parameters. This could lead to unexpected behavior or errors. For instance, if 'coverage' is not a number, parseFloat will return NaN and could cause issues in the calculation of 'coveraged'. Similarly, if 'statMode' is not a string, calling match or toUpperCase/toLowerCase on it will throw an error. It's recommended to add input validation to ensure the function behaves as expected."
+}

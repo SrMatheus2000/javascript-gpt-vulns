@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function uses user-supplied input to construct a filesystem path that should be restricted to a certain directory, but it does not properly neutralize sequences such as '..' that can resolve to a location that is outside of that directory. This can allow an attacker to access, modify, or execute files that they should not be able to access."
+}

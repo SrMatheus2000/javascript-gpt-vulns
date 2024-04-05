@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-200: Information Exposure", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Error Message Information Leak", "Sensitive Data Exposure"],
+  "description": "The function is vulnerable as it exposes sensitive information through error messages. When an error occurs, the function returns a message 'Access denied. Check password and try again.' which can be used by an attacker to infer that the user exists in the database. Additionally, when a customer successfully logs in, the entire customer object is returned in the response, which may include sensitive information. It's recommended to limit the information returned in both error and success responses."
+}

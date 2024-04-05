@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-95", "CWE-116"],
+  "vulnerabilities": ["Object Injection", "Insecure Object References"],
+  "description": "The function is vulnerable to Object Injection and Insecure Object References. It blindly accepts user input as the 'i' parameter without proper validation or sanitization. This can lead to potential security issues such as arbitrary code execution or unauthorized access to sensitive data."
+}

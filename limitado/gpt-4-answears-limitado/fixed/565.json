@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327", "CWE-310", "CWE-759", "CWE-760"],
+  "vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm", "Cryptographic Issues", "Use of a One-Way Hash without a Salt", "Use of a One-Way Hash with a Predictable Salt"],
+  "description": "The function uses the SHA-1 algorithm which is considered insecure for many cryptographic functions. It also uses the 'crypto.pbkdf2Sync' function which can lead to potential blocking of the event loop for longer periods of time, depending on the input. The function also does not use a salt for the HMAC signature, making it vulnerable to rainbow table attacks. The salt used for the 'crypto.pbkdf2' function is also predictable, which can lead to vulnerabilities."
+}

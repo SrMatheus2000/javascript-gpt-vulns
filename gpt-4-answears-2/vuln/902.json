@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-310", "CWE-327"],
+"vulnerabilities": ["Cryptographic Issues", "Use of a Broken or Risky Cryptographic Algorithm"],
+"description": "The function uses the HMAC algorithm for cryptographic operations. However, it does not validate the algorithm provided in the parsedSignature object. This could allow an attacker to use a weak or broken algorithm, leading to cryptographic vulnerabilities. Additionally, the function does not handle errors that may occur during the creation of the HMAC or during the update process, which could lead to unhandled exceptions and potential denial of service attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm"],
+"description": "The function uses a cryptographic algorithm that is potentially broken or risky. This may allow an attacker to break the encryption and gain access to the underlying data. The specific vulnerability depends on the algorithm used, but common problems include using a weak key generation algorithm, using a weak block cipher, or using a cipher with known vulnerabilities."
+}

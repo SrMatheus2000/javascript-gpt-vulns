@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+"description": "The function uses regular expressions (RegExp) which can lead to a Regular Expression Denial of Service (ReDoS) if the input is not properly sanitized. An attacker can provide a specially crafted input that can cause the application to consume an excessive amount of CPU, leading to a denial of service. The function also does not validate the 'protocol' parameter, which can lead to unexpected behavior if an invalid or malicious value is passed."
+}

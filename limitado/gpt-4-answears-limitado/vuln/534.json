@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. The function takes a 'message' parameter and uses it to create a jQuery object without properly sanitizing the input. This could allow an attacker to inject malicious scripts into the web page, which would then be executed in the context of the victim's session. This could lead to a variety of attacks, such as stealing the victim's session cookies or performing actions on their behalf."
+}

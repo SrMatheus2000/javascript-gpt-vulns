@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection", "Type Coercion"],
+  "description": "The function does not properly validate the input for 'prop' and 'val' parameters, which can lead to SQL Injection if the input is crafted in a certain way. The function also does not handle type coercion properly, which can lead to unexpected behavior and potential security issues. For example, the function checks if 'val' is an object and if it has a 'length' property, but it does not check if 'val' is an array, which can lead to type coercion and unexpected behavior. Additionally, the function uses the 'escape' function to sanitize the input, but this function is not sufficient to prevent all forms of SQL Injection."

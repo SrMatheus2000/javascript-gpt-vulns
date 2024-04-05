@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_43' is vulnerable to Open Redirect and Cross-Site Scripting (XSS) attacks. The function does not validate or sanitize the 'string' input, which can be manipulated to redirect users to untrusted sites (Open Redirect) or to inject malicious scripts (XSS). The 'URI.decode' method is used on the 'username' and 'password' fields without any sanitization, which can lead to XSS if these fields are displayed in the browser."
+}

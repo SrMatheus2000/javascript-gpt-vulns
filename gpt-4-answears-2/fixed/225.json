@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function uses the 'dangerouslySetInnerHTML' property which is a potential security risk as it can open up the application to Cross-Site Scripting (XSS) attacks. Although the function attempts to sanitize the HTML content, if the sanitizer function is not robust enough, it may not catch all possible XSS attack vectors. This is especially risky when the 'useUnsafeMarkdown' option is enabled."
+}

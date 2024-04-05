@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["No validation of input", "Potential for prototype pollution"],
+  "description": "The function does not validate the input for 'obj', 'path', and 'val'. This could lead to unexpected behavior or errors if the input is not as expected. Additionally, the function directly assigns values to properties of 'obj' based on 'path', which could potentially lead to prototype pollution if 'path' contains '__proto__' or 'constructor' and 'val' contains malicious code."
+}

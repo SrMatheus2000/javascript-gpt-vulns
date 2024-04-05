@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-311: Missing Encryption of Sensitive Data", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References", "Server-Side Request Forgery"],
+  "description": "The function is vulnerable due to the use of insecure cryptographic storage. The 'aes-256-cbc' algorithm used in the 'crypto.createDecipheriv' function is not secure enough for sensitive data. The function also lacks proper encryption of sensitive data, as it directly uses the 'cookie' and 'isSignedCookie' parameters without any encryption. This can lead to insecure direct object references, where an attacker can manipulate these parameters to gain unauthorized access to data. Additionally, the function is vulnerable to server-side request forgery

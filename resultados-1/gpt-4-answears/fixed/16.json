@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function normalizeSpacing takes an HTML string as input and manipulates it without properly sanitizing it. This could lead to Cross-Site Scripting (XSS) attacks if the input is controlled by an attacker. An attacker could inject malicious scripts in the HTML string that could be executed when the manipulated HTML is rendered in a web page."
+}

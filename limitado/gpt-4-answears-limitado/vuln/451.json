@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The function uses the 'callee' and 'args' variables to create a new function and execute it. If an attacker can control the content of 'callee' or 'args', they can inject arbitrary code into the function, leading to a code injection vulnerability. This can lead to serious security issues, such as remote code execution, data leakage, or denial of service."
+}

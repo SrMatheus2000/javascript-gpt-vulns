@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "description": "The function unique_name_571 is vulnerable because it does not properly control the modification of an object's attributes. The function uses the 'apply' method to call a function with a given 'this' value and arguments provided as an array (or an array-like object). However, if the function 'fnPtr' does not have an 'apply' method, it directly calls the function with arguments. This can lead to unexpected behavior if the function 'fnPtr' modifies the attributes of the 'context' object in an unexpected way. This vulnerability is classified as CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes."
+}

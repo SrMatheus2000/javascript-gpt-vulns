@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function attempts to prevent Cross-site Scripting (XSS) attacks by removing 'script' tags from the input value. However, this is not a comprehensive solution and can be bypassed. For example, an attacker could use event handlers like 'onload', 'onerror', or 'onmouseover' in other HTML tags to execute malicious JavaScript code. Additionally, the function does not sanitize the input value when it is assigned to 'element.html(val)' or 'element.val(val)', which could lead to Stored XSS attacks if the input value is retrieved from a persistent storage like a database."
+}

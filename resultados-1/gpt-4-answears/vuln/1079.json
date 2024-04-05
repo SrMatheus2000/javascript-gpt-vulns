@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any vulnerabilities. It simply checks if the input value is not equal to '*' and if so, it returns the value enclosed in double quotes. If the value is '*', it returns '*'. There are no operations here that could lead to common JavaScript vulnerabilities such as Cross-Site Scripting (XSS), SQL Injection, or Remote Code Execution."
+}

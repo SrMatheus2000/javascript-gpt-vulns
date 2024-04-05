@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It properly checks the types of its inputs and handles edge cases, such as null values and '__proto__' keys, which could potentially be exploited for prototype pollution attacks. Therefore, it is not vulnerable."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is primarily defining patterns for a syntax highlighter for bash scripts. It does not perform any dangerous operations such as eval(), does not manipulate the DOM, and does not handle any user input, which are common sources of vulnerabilities in JavaScript."
+}

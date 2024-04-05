@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function unique_name_514 does not validate or sanitize the 'text' input, which can lead to Cross-Site Scripting (XSS) if the input includes malicious scripts. This is especially dangerous if the 'tag' is included in the 'nonTextTagsArray', as the text is directly appended to the 'result' without any sanitization. Additionally, the function does not validate the 'text' input, which can lead to unexpected behavior or errors."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It properly sanitizes input to prevent Cross-Site Scripting (XSS) attacks, and it also handles read-only attributes correctly to prevent unauthorized modifications. It also removes script tags from the input to prevent the execution of arbitrary JavaScript code."
+}

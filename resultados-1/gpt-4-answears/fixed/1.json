@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Input Validation Vulnerability"],
+  "description": "The function does not validate or sanitize the 'req.url' input, which can lead to an Open Redirect vulnerability. This can allow an attacker to redirect users to malicious websites. Additionally, the function does not check if the 'req', 'res', and 'next' arguments are of the correct type, which can lead to unexpected behavior or errors."
+}

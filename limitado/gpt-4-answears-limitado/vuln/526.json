@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function createHtmlText is vulnerable Cross-Site Scripting (XSS) attacks. This is because it directly concatenates user input (the 'matched' and 'normal' properties of the 'tokens' objects) into HTML code without properly sanitizing it first. An attacker could potentially inject malicious scripts by providing specially crafted 'tokens' objects, which would then be executed when the resulting HTML is rendered in a web browser."
+}

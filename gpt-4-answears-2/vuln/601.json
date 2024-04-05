@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-522: Insufficiently Protected Credentials"],
+"vulnerabilities": ["Command Injection", "Insufficiently Protected Credentials"],
+"description": "The function is vulnerable to command injection because it constructs a command using user-supplied input (params) which is then executed. This could allow an attacker to execute arbitrary commands. Additionally, the function creates a password file with a blank cipher and the password in plaintext, which is insecure and could allow an attacker to easily obtain the password."
+}

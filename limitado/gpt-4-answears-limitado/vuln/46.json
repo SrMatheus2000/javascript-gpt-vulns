@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Error Message Information Leak", "Potential Denial of Service", "Path Traversal"],
+  "description": "The function is vulnerable to several issues. Firstly, it exposes potentially sensitive information through error messages (CWE-209). This can provide an attacker with valuable information about the system. Secondly, the function does not limit the consumption of resources (CWE-400), which could lead to a denial of service if an attacker sends a large amount of data. Lastly, the function does not properly limit the pathname to a restricted directory (CWE-22), which could allow an attacker to access sensitive files or directories."
+}

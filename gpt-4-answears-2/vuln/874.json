@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-749"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Exposed Dangerous Method or Function"],
+"description": "The function is vulnerable to several issues. First, it does not validate or sanitize the 'url' parameter in the 'window.open' function, which could lead to Improper Input Validation (CWE-20). This could potentially allow an attacker to inject malicious scripts. Second, the function exposes sensitive information through the 'window.alert' and 'window.confirm' functions, which could lead to Information Exposure (CWE-200). Lastly, the function exposes the 'window.prompt' function, which is considered a dangerous method and could be exploited by an attacker (CWE-749)."
+}

@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-79",
+    "CWE-95"
+  ],
+  "vulnerabilities": [
+    "Cross-Site Scripting (XSS)",
+    "Improper Neutralization of Directives in Dynamically Evaluated Code (Eval Injection)"
+  ],
+  "description": "The 'prepare' function is vulnerable to Cross-Site Scripting (XSS) and Eval Injection attacks. The '_html' parameter is directly appended to the 'tooltip_div' element without proper sanitization or encoding, allowing an attacker to inject malicious code. Additionally, the function uses the 'eval' function, which can execute arbitrary code and lead to code injection vulnerabilities."
+}

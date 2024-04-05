@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function seems to be vulnerable to a potential Denial of Service (DoS) attack. The function pushes notifications to a queue (_notificationsQueue) and processes them one by one. If an attacker can send a large number of notifications, it could cause the queue to grow indefinitely, consuming more and more memory and potentially leading to a crash due to resource exhaustion. This is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

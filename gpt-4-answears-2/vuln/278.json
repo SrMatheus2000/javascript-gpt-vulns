@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400"],
+"vulnerabilities": ["Denial of Service"],
+"description": "The function does not validate the input data length before processing it. This can lead to a Denial of Service (DoS) attack if an attacker provides a large data set, causing the function to consume excessive system resources (CPU and memory), leading to a system slowdown or crash. This is known as an Uncontrolled Resource Consumption vulnerability (CWE-400)."
+}

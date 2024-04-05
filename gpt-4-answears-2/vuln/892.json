@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-119: Improper Restriction of Operations within the Buffer Boundaries"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function 'unique_name_468' is vulnerable to buffer overflow. It does not perform any checks to ensure that the 'length' parameter is within the bounds of the '_buffer' object. If a 'length' is provided that is larger than the size of '_buffer', it will result in a buffer overflow, which could lead to arbitrary code execution, application crashes, or other types of undefined behavior."
+}

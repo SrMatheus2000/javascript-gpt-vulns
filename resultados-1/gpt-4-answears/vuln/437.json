@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service"],
+  "description": "The function 'unique_name_209' is vulnerable to information disclosure through error messages (CWE-209). It prints detailed error messages including stack traces, process information, and environment variables, which could potentially expose sensitive information. Additionally, the function is vulnerable to denial of service (CWE-400) as it does not control the consumption of resources in case of an error, which could lead to the exhaustion of system resources."
+}

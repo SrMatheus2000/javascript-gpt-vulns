@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_191' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts the 'html' and 'author' parameters into the HTML content without properly sanitizing them. An attacker could potentially inject malicious scripts through these parameters, which would then be executed in the user's browser when the page is rendered."
+}

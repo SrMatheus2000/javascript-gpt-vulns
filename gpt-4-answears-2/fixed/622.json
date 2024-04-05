@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Prototype Pollution", "Null Pointer Dereference"],
+"description": "The function is vulnerable to Prototype Pollution which can cause addition or modification of properties on `Object.prototype`. This can impact the application's flow and potentially lead to Remote Code Execution. The function also does not handle null values properly, leading to a potential Null Pointer Dereference."
+}

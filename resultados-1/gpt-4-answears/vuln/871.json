@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-1021: Improper Restriction of Rendered UI Layers or Frames"],
+  "vulnerabilities": ["Potential for Cross-Site Scripting (XSS)"],
+  "description": "The function does not explicitly disable the 'nodeIntegration' and 'contextIsolation' options for the new window. If the parent window does not have these options set, the new window could potentially have Node.js integration enabled and context isolation disabled. This could allow for potential Cross-Site Scripting (XSS) attacks, as malicious scripts could gain access to Node.js APIs and execute arbitrary code. It is recommended to always explicitly set 'nodeIntegration' to false and 'contextIsolation' to true when creating new windows, regardless of the parent window's settings."
+}

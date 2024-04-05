@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'unique_name_498' is vulnerable to Cross-site Scripting (XSS) attacks. This is because it takes an input 'e' and directly uses it to set the innerHTML of a newly created DIV element without properly sanitizing the input. This could allow an attacker to inject malicious scripts into the web page, which would then be executed in the context of the user's browser. Although there is an attempt to sanitize the input using DOMPurify, this is only done conditionally and is not guaranteed to always occur."
+}

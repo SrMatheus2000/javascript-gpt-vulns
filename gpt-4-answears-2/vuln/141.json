@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-798: Use of Hard-coded Credentials"],
+"vulnerabilities": ["Sensitive data exposure", "Hard-coded credentials"],
+"description": "The function is vulnerable as it does not validate the input properly. It filters environment variables based on a hard-coded list of sensitive keywords (token, password, credential, secret, private) and replaces them with a secret replacement. This could lead to sensitive data exposure if an attacker can control the environment variables. Additionally, the use of hard-coded credentials (the secret replacement) is a security risk as it could be discovered by an attacker."
+}

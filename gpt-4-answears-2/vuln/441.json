@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any CSRF protection mechanism. It is also vulnerable to Improper Input Validation as it does not validate or sanitize the 'req.headers.origin' before using it to set the 'Access-Control-Allow-Origin' header. This could potentially allow an attacker to perform a DNS rebinding attack."
+}

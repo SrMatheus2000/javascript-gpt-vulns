@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function validateStdin() is vulnerable to command injection. This is because it uses the execSync function to execute shell commands that include user-supplied input (the 'sha' variable). An attacker could potentially inject malicious commands by providing a specially crafted 'sha' value."
+}

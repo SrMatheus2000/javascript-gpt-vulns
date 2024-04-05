@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'email' and 'text' parameters are directly inserted into the HTML without any sanitization or encoding. An attacker could inject malicious scripts by providing specially crafted 'email' or 'text' values, which would then be executed in the context of the victim's session when the generated HTML is rendered by a web browser."
+}

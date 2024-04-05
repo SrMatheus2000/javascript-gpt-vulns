@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function attempts to sanitize the 'id' and 'name' parameters to prevent path traversal attacks, but it does not properly handle all cases. The function only checks for and removes '../' in the 'id' parameter, but it does not check for encoded versions of '../' (e.g., '%2e%2e%2f'). An attacker could potentially use this oversight to traverse directories. Similarly, the function attempts to normalize the 'name' parameter and replace backslashes with forward slashes, but it does not check for or remove '../' or its encoded versions. This could also allow an attacker to traverse directories."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate or sanitize the 'path' property of the 'opts' object. This could allow an attacker to manipulate the file path to access directories or files outside of the intended directory, leading to unauthorized access to sensitive information or potential code execution. This is known as a Path Traversal vulnerability."
+}

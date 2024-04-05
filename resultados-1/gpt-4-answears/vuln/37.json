@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'unique_name_14' is vulnerable to prototype pollution because it does not validate or sanitize the 'ch.key' input. This allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. An attacker can manipulate these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values. This can lead to a variety of application-level attacks such as Denial of Service (DoS), Remote Code Execution, and Property Injection."
+}

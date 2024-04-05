@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Potential null pointer exception"],
+"description": "The function does not validate if the sourceMapString contains the sourceMappingURL annotation. If it doesn't, the match method will return null and the function will throw a TypeError when trying to access the [1] index and the trim method."
+}

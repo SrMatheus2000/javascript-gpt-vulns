@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses the 'PMA_commonParams.get('table')' value in the HTML content. If an attacker can control the value of 'table', they can inject malicious scripts that will be executed in the user's browser."
+}

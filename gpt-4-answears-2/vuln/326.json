@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Exposure of sensitive information", "Potential for code injection"],
+"description": "The function seems to be dealing with sensitive information (unlockedAccount) which could lead to exposure of private information. Also, the function does not validate the input 'n' which could lead to potential code injection attacks."
+}

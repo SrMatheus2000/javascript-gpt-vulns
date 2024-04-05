@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function deleteConnection is vulnerable to OS command injection. The function uses the execFile method to execute the 'nmcli' command with user-supplied input (ap.ssid) without proper sanitization or validation. This could allow an attacker to inject malicious commands by providing a specially crafted string as the ssid, which could lead to arbitrary command execution on the server."
+}

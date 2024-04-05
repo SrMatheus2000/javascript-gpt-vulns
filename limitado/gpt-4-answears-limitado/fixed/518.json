@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-200", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate or sanitize the input properly which can lead to various attacks such as SQL Injection, XSS, etc. (CWE-20). It also exposes sensitive information through error messages or other responses (CWE-200). The function does not properly prevent a sent request from consuming too much resources, potentially leading to a denial of service (CWE-400)."
+}

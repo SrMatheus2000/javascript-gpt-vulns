@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Command Injection", "Prototype Pollution"],
+"description": "The function is vulnerable to command injection because it concatenates a user-controlled variable 'urlSanitized' directly into a command that is executed by the system. An attacker could potentially control the 'urlSanitized' variable to execute arbitrary commands on the system. Additionally, the function is vulnerable to prototype pollution because it directly modifies the '__proto__' property of an object. An attacker could potentially manipulate these properties to change the behavior of the entire application."
+}

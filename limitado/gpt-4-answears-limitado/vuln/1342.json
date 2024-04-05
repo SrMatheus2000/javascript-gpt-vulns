@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The function uses the exec function to execute a command that is constructed by concatenating a fixed string with user-controlled input (the 'args' array). An attacker could potentially control the 'args' array to execute arbitrary commands on the system."
+}

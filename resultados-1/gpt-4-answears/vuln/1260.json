@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Information Exposure", "Cross-Site Request Forgery (CSRF)", "Open Redirect"],
+  "description": "The function is vulnerable to Information Exposure through the headers['x-forwarded-proto'] or headers['x-forwarded-protocol'] which can expose sensitive information. It is also vulnerable to Cross-Site Request Forgery (CSRF) as it does not validate or check any CSRF token. The function is also vulnerable to Open Redirect as it does not validate the redirect URL from F.routes.redirects[req.$protocol + '://' + req.host]."
+}

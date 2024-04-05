@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Arbitrary Code Execution"],
+  "description": "The function unique_name_217 is vulnerable to arbitrary code execution. The function takes a 'node' and 'initialScope' as parameters, and it uses the 'node.callee' and 'node.arguments' to dynamically create a new function and execute it. If an attacker can control the 'node' object, they can execute arbitrary code. This is a serious security issue."
+}

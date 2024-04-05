@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function __isInt(value) is not vulnerable. It is a simple function checks if a given value is an integer using a regular expression. It does not have any known common weaknesses (CWEs) or vulnerabilities."
+}

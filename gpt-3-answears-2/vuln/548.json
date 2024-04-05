@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470"],
+  "vulnerabilities": ["Improper Null Termination"],
+  "description": "The function does not check if the 'linkStr' variable is defined before assigning it to the 'link' property of the 'vertices[id]' object. This can lead to an improper null termination vulnerability, where the 'link' property may contain an undefined or null value."
+}

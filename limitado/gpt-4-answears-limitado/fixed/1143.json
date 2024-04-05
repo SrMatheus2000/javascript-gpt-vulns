@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'path_part' parameter is directly used to create a URL and set the text of a link without proper sanitization or encoding. An attacker could inject malicious scripts by providing a 'path_part' that includes script tags. This script would then be executed when the link is clicked. This is a type of Stored XSS attack, as the malicious script would be permanently stored in the created link. The vulnerability corresponds to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

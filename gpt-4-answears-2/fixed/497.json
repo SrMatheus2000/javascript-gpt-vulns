@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-807"],
+"vulnerabilities": ["Reliance on Untrusted Inputs in a Security Decision"],
+"description": "The function does not validate the 'field' parameter, which can lead to potential security risks. An attacker can pass in a string that accesses prototype properties or methods, potentially leading to unexpected behavior or prototype pollution. The function also does not check if 'obj' is an object, which can lead to type errors if a non-object is passed in."
+}

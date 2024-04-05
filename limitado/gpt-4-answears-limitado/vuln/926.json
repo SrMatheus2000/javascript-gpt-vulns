@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to code injection and cross-site scripting (XSS) attacks. The function uses the _.unescape() method, which can lead to potential code injection if the input is not properly sanitized. Additionally, the function does not validate or sanitize the input before using it in JSON.parse(), which can lead to potential XSS attacks if the parsed JSON is used in a context that allows for script execution."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Improper Control of Generation of Code ('Code Injection')", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function is vulnerable to code injection through the 'regex' parameter in the bodyRegexFilters array. An attacker could provide a malicious regex that could lead to code execution (CWE-94). Additionally, the function does not properly validate the input from the 'req' parameter, which could lead to unexpected behavior or errors (CWE-20). The function also does not limit the size of the 'req.body' and 'querystring' inputs, which could lead to resource exhaustion if an attacker provides a large input (CWE-400)."
+}

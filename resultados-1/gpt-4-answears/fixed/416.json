@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. Even though it attempts to guard against injection by splitting the 'src' and 'dest' parameters on semicolons and taking the first part, it does not properly sanitize the input. An attacker could potentially include a double quote in the 'src' or 'dest' parameters to escape the parameter context and inject arbitrary commands. This is a classic example of CWE-78, where data can be injected that is then used as part of a command to be executed."
+}

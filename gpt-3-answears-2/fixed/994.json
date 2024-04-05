@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-78"],
+  "vulnerabilities": ["Potential command injection", "Potential cross-site scripting (XSS)"],
+  "description": "The code is vulnerable to command injection and cross-site scripting (XSS) attacks. The 'createRequest' function does not properly sanitize user input before using it to construct a request object, which can lead to command injection. Additionally, the 'forwardResponse' function does not properly sanitize user input before sending it as a response, which can lead to XSS attacks."
+}

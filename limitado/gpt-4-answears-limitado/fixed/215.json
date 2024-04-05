@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property in several places, which can lead to the execution of malicious scripts if user input is not properly sanitized. For example, in the 'change' event for 'dom.select', the value of the select element is directly assigned to innerHTML without any sanitization. Similarly, in the 'blur' and 'change' events for 'dom.value', the value is escaped but then unescaped before being assigned to innerHTML, which can also lead to XSS if the escaping function is not robust. The same issue is present in the 'blur' event for 'dom.field'."
+}

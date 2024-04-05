@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Potential Prototype Pollution"],
+  "description": "The function uses the mergeOptions function to merge objects without validating the input. This could potentially lead to prototype pollution if the embedder object contains properties that can overwrite important prototype properties. Prototype pollution can lead to several security vulnerabilities including Remote Code Execution (RCE), Denial of Service (DoS), and potentially other unexpected behavior."
+}

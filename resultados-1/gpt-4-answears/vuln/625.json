@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service"],
+  "description": "The function 'unique_name_320' is vulnerable to Information Disclosure and Denial of Service attacks. The Information Disclosure vulnerability arises from the use of 'console.error(err)' which could potentially expose sensitive information in error messages. The Denial of Service vulnerability arises from the lack of control over the size of the request body, which could lead to resource exhaustion if an attacker sends a large amount of data."
+}

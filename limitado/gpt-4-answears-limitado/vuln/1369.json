@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-829", "CWE-94"],
+  "vulnerabilities": ["Inclusion of Functionality from Untrusted Control Sphere", "Improper Control of Generation of Code ('Code Injection')"],
+  "description": "The function is vulnerable as it downloads and includes functionality from an untrusted source (scala-js.org) without any form of verification, which can lead to the inclusion of malicious code. This is identified as CWE-829. Additionally, the function constructs a URL using string concatenation with user-controlled variables (scalaVersion and scalaJsVersion), which can lead to code injection (CWE-94) if the variables are manipulated to alter the URL."
+}

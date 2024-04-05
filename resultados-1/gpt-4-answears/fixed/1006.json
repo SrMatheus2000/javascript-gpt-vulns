@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication"],
+  "vulnerabilities": ["Missing JWT signature verification"],
+  "description": "The function 'unique_name_585' is vulnerable because it does not verify the signature of the JWT token. This means that an attacker could forge a JWT token and the function would accept it as valid. This is a violation of CWE-287: Improper Authentication. The function 'verifyJWSByKey' is called, but it is not clear if this function verifies the signature of the JWT token. If it does not, then the vulnerability exists."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'config.iface' parameter is concatenated directly into the 'commandStr' variable without proper sanitization or validation, allowing an attacker to inject arbitrary commands."
+}

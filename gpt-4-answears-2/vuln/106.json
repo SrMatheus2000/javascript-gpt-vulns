@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "This JavaScript function is a regular expression that does not have any vulnerabilities. It does not interact with any external systems or user input, so there is no risk of injection attacks. It also does not have any logic that could lead to unexpected behavior."
+}

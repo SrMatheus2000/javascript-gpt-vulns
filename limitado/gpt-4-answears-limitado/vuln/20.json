@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Direct object references"],
+  "description": "The function directly manipulates the '_data' property of the 'child' object without any validation. This could lead to potential issues if the 'child' object does not have a '_data' property or if it is not of the expected type. This is an example of CWE-20, where the function does not properly validate the input before using it."
+}

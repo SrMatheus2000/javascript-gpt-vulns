@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is vulnerable to information disclosure as it exposes environment variables that match the prefix 'AEGIR_'. This could potentially leak sensitive information if any of these environment variables contain such data. The only exception is the 'AEGIR_GHTOKEN' which is explicitly excluded from being returned. However, all other 'AEGIR_' prefixed environment variables are at risk of being exposed."
+}

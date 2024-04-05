@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL Injection. The function 'PGStore.prototype.quotedTable' is concatenating user input directly into SQL queries. This could allow an attacker to manipulate SQL queries and potentially gain unauthorized access to the database, modify data, or perform other malicious activities. The vulnerability corresponds to CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly concatenates the 'id' variable into the 'optionTemplate' string, which is then passed to the 'domify' function. If the 'id' variable can be controlled by an attacker, they could inject malicious scripts that would be executed when the 'optionTemplate' is rendered in the DOM. This is a violation of the CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') weakness."
+}

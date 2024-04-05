@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Command Injection", "Verbose Error Messages", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input in a command that is executed by a subprocess. This could allow an attacker to execute arbitrary commands. Additionally, the function may expose sensitive information through error messages when 'opts.verbose' is true. Lastly, the function does not limit the amount of data that can be pushed into the 'report' array, which could lead to a denial of service due to resource exhaustion."
+}

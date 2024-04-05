@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function does not sanitize the 'author' and 'html' inputs before inserting them into the HTML content. This could allow an attacker to inject malicious scripts, leading to Cross-site Scripting (XSS) attacks."
+}

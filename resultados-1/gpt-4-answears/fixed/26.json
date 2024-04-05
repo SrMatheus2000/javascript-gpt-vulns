@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function escapeShellArg is vulnerable to command injection because it does not properly sanitize the input. It only removes null characters and escapes double quotes, but other special characters that can be used for command injection, such as semicolons, ampersands, and backticks, are not handled. An attacker could potentially inject malicious commands by including these special characters in the input."
+}

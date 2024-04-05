@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-312", "CWE-209", "CWE-598"],
+"vulnerabilities": ["Cleartext Storage of Sensitive Information", "Information Exposure Through an Error Message", "Information Exposure Through Query Strings in GET Request"],
+"description": "The function is vulnerable as it uses the 'new Buffer' constructor, which is deprecated and can lead to security vulnerabilities if not used properly. It also exposes sensitive information (API key) in base64 format which can be easily decoded. This can lead to information disclosure and unauthorized access."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'unique_name_544' is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an input 'd' and uses it to generate HTML content without properly sanitizing it. This allows an attacker to inject malicious scripts into the generated HTML, which will be executed when the HTML is rendered in a web browser. The vulnerability is particularly present in the 'extraStyle' variable, where the input is directly included into the style attribute of an HTML tag."
+}

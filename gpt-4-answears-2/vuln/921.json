@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20"],
+"vulnerabilities": ["SQL Injection", "Input Validation"],
+"description": "The function handleSource is vulnerable to SQL Injection because it directly uses user input (req.body.subscribed_url) in a database query (postlookup). This could allow an attacker to manipulate the query and execute arbitrary SQL commands. Additionally, the function does not perform any input validation on the user input, which is a violation of CWE-20: Improper Input Validation."
+}

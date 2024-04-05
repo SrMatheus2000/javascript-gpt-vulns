@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function createMenuItems is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'item.text' and 'item.title' values in the creation of HTML elements without properly sanitizing them. If these values contain malicious scripts, they will be executed when the HTML is rendered in the browser. This can lead to various security issues such as stealing sensitive data, session hijacking, and defacement of the website."
+}

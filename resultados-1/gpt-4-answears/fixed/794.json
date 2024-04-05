@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-125"],
+  "vulnerabilities": ["Out-of-bounds Read"],
+  "description": "The function '_combineLongPacketBuffers' is vulnerable to an out-of-bounds read, which is a type of vulnerability where the software reads data past the end, or before the beginning, of the intended buffer. This typically occurs when the pointer or its index is incremented or decremented to a position beyond the bounds of the buffer, when pointer arithmetic results in a position outside the valid memory location or when a buffer is filled up and the subsequent write operation overflows the buffer causing the out-of-bounds read. This vulnerability is identified as CWE-125 in the Common Weakness Enumeration list."
+}

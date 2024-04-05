@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Code Injection", "Denial of Service"],
+"description": "The function 'requireModule' is vulnerable to code injection attacks because it directly uses the input 'path' to require a module without any sanitization or validation. An attacker could potentially provide a malicious path that points to a module containing harmful code, leading to code injection. Additionally, the function does not handle exceptions that may occur during the 'require' operation, which could lead to denial of service if an error is thrown."
+}

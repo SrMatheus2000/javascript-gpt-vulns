@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'email' and 'text' parameters are inserted into the HTML without proper sanitization or encoding. If an attacker can control the 'email' or 'text' parameters, they could inject malicious scripts that would be executed in the context of the user's browser. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

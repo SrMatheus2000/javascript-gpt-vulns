@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the input 'array'. If an attacker can control part of the structure of 'array', they can add or modify properties of 'Object.prototype'. This is known as prototype pollution and can lead to a variety of security vulnerabilities, including Remote Code Execution (RCE), Denial of Service (DoS), and Cross-Site Scripting (XSS)."
+}

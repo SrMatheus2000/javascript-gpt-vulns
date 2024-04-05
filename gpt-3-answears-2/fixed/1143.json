@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function does not properly sanitize user input before using it to create HTML elements. This can lead to a Cross-Site Scripting (XSS) vulnerability."
+}

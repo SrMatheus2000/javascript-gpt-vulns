@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function 'unique_name_488' is vulnerable to URL redirection attacks. The function checks if the 'from' query parameter exists and if it does not start with 'http', '//' or 'javascript', it redirects the user to the URL specified in the 'from' parameter. An attacker can exploit this vulnerability by crafting a URL with a malicious 'from' parameter that redirects the user to an untrusted site."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The function uses the 'req.url' parameter to create a file path that is used to read a file from the system. An attacker could manipulate the 'req.url' parameter to move up the directory tree and access files outside of the intended directory. Although there is an attempt to mitigate this by replacing '../' patterns, this is not sufficient as an attacker could use encoded or other representations of '../'. This vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

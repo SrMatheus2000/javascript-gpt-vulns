@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Access Control"],
+  "description": "The function does not properly sanitize user input before using it in an HTML context, which can lead to a Cross-Site Scripting (XSS) vulnerability. Additionally, the function does not properly check access control before displaying captions, which can result in improper access control."
+}

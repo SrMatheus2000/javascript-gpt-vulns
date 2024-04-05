@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function 'unique_name_353' is vulnerable to Path Traversal attack. The function decodes the 'pathname' parameter using 'decodeURI' function and checks if it contains '../' or '..\\' or '..%5c'. However, this check can be bypassed by encoding these sequences. An attacker can provide a pathname that contains encoded sequences of '../' or '..\\' or '..%5c' to access arbitrary files on the system."
+}

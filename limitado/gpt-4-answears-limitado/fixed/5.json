@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Type coercion", "Potential code injection"],
+  "description": "The function is vulnerable to type coercion and potential code injection. In the 'number' case, the function uses the Number() constructor to convert the input value to a number. If the input is not a number, the function returns undefined, which could lead to unexpected behavior. In the 'array' case, the function splits the input value by a user-defined token, which could lead to unexpected results if the token is not properly sanitized. In the 'object' case, the function uses the Bourne.parse() method to parse the input value. If the input is not a

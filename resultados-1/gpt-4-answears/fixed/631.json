@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'imagePaths' variable is passed directly to the 'rm' command without any sanitization or validation. If an attacker can control the value of 'imagePaths', they could potentially execute arbitrary commands on the system."
+}

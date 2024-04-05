@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-522"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Insufficiently Protected Credentials"],
+  "description": "The function _startTLS is vulnerable as it transmits sensitive information in cleartext. This can expose the data to unauthorized actors who can intercept the network traffic. The function also does not adequately protect the credentials used for creating the secure pair. This can lead to unauthorized access if the credentials are compromised."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Cross-Site Request Forgery", "Denial of Service"],
+  "description": "The function is vulnerable to Information Disclosure as it exposes internal network resources to an external attacker through the proxy. It is also vulnerable to Cross-Site Request Forgery (CSRF) as it does not validate or check the origin of the request. Additionally, it is vulnerable to Denial of Service (DoS) attacks as it does not limit the number of requests a user can make, potentially leading to resource exhaustion."
+}

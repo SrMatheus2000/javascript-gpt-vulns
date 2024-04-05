@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-79"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Cross-site Scripting (XSS)"],
+"description": "The function parseRequest does not properly validate and sanitize the input received in the 'request' parameter. This could lead to various vulnerabilities such as SQL Injection (CWE-89) if the input is used in a SQL query, Cross-site Scripting (XSS) (CWE-79) if the input is rendered on a web page, and other issues related to Improper Input Validation (CWE-20)."
+}

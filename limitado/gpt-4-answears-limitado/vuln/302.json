@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-497: Exposure of System Data to an Unauthorized Control Sphere"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is vulnerable as it exposes full error stack traces to the client. This can lead to information disclosure, revealing sensitive information about the system's internal workings, file paths, or potentially even code snippets. This information can be used by an attacker to understand the system and plan further attacks. It's generally a bad practice to expose such detailed error information."
+}

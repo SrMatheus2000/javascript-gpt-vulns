@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116", "CWE-690"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) and Regular Expression Denial of Service (ReDoS) attacks. The dangerousPropertyRegex variable is not defined in the provided code, so it is assumed that it contains a regular expression pattern that is used to validate the 'field' parameter. If this regular expression is not properly crafted, it can be abused to perform SSRF attacks by making the function fetch arbitrary URLs. Additionally, if the regular expression is susceptible to ReDoS, an attacker can cause a denial of service by providing a malicious 'field' value that triggers excessive backtracking in the regular expression engine."
+}

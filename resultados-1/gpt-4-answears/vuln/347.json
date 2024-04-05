@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input (repo.organization, repo.name, repo.branch, repo.commit) in a command that is executed by the system. This allows an attacker to execute arbitrary commands in the system. The function is also vulnerable to path traversal attacks because it uses user-supplied input to construct a file path without properly sanitizing it. This allows an attacker to access arbitrary files on the system."
+}

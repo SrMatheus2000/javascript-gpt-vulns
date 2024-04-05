@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-276: Incorrect Default Permissions", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable due to the use of the 'rimraf' function which is used to delete files and directories. If the input is not properly validated, this could lead to arbitrary file deletion. Also, the function does not seem to handle permissions correctly, potentially allowing unauthorized access. Furthermore, the function does not have any rate limiting or resource consumption control, which could lead to a Denial of Service (DoS) attack."
+}

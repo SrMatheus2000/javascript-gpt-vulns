@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The data object properties (legendText, headText, subText, extra) are directly inserted into the HTML content of different elements without any sanitization or encoding. An attacker can inject malicious scripts through these properties, which will be executed when the HTML content is rendered in the browser. The same applies to the primary_key array elements used in the value attribute of the input elements."
+}

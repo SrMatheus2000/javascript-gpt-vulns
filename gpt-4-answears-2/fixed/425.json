@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe as it uses the 'escapeHTML' function to sanitize the 'option.value' and 'option.label' inputs before they are used to create an 'option' element. This should prevent any Cross-Site Scripting (XSS) attacks."
+}

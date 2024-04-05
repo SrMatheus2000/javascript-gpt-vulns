@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_349 is vulnerable to OS command injection. The function uses the 'execFile' function to execute the 'cat' command with a file path that includes user-supplied input ('iface'). An attacker could provide a malicious 'iface' value that includes shell metacharacters, leading to arbitrary command execution."
+}

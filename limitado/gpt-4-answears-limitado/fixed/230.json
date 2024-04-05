@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Information Disclosure", "Path Traversal"],
+  "description": "The function is vulnerable to Information Disclosure and Path Traversal attacks. In the case of an error, the function returns detailed error messages including the file path and error details, which can be exploited by an attacker to gain information about the system (CWE-209). Additionally, while the function attempts to prevent path traversal by normalizing the URL, it does not validate or sanitize the input, which could allow an attacker to access restricted directories (CWE-22)."
+}

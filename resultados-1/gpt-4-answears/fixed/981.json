@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)"],
+  "description": "The function getLatestVersion is vulnerable to Server-Side Request Forgery (SSRF) because it sends a request to a URL that is provided as a parameter without validating it. An attacker could potentially provide a malicious URL that leads to a server-side request to an internal resource, bypassing the server's firewall."
+}

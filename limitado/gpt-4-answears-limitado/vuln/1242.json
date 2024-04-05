@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'html_unescape' is vulnerable to Cross-Site Scripting (XSS) attacks. It replaces certain HTML escape characters with their unescaped equivalents. If the input 'text' is not properly sanitized before being passed to this function, it could lead to the execution of malicious scripts. This is a common vulnerability known as Cross-Site Scripting (XSS), classified under CWE-79."
+}

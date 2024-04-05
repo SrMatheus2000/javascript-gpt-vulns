@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Use of Buffer.allocUnsafe()"],
+  "description": "The function uses Buffer.allocUnsafe() which can lead to the introduction of old and potentially sensitive data into a new buffer. If the buffer is not subsequently initialized by using buf.fill(0), the newly created buffer might contain sensitive data from the memory. It's recommended to use Buffer.alloc() instead of Buffer.allocUnsafe() to mitigate this risk."
+}

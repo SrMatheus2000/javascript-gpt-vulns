@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It simply defines a regular expression for matching HTML tags and comments. Without additional context or usage, it's hard to identify any potential security issues."
+}

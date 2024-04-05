@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The function 'new Function(argument, '_', source)' is used to create a new function from a string of code. This can allow an attacker to inject arbitrary code into the application. This is a serious security risk as it can lead to remote code execution (RCE)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property in several places (e.g., this.dom.value.innerHTML = this._escapeHTML(dom.select.value)). Even though the function _escapeHTML might be used to sanitize the input, if it's not implemented properly, it could lead to XSS attacks. An attacker could inject malicious scripts into the web page, which would then be executed in the context of the victim's browser."
+}

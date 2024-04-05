@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Potential Denial of Service"],
+"description": "The function sets the maximum number of listeners to 1000, which could potentially lead to a Denial of Service (DoS) attack if an attacker is able to continuously open connections. This is because Node.js will throw a warning when more than 10 listeners are added for a particular event and this could potentially block the event loop."
+}

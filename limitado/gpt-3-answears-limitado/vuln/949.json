@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The use of eval() function with user-supplied input can lead to code injection vulnerabilities. An attacker can manipulate the 'options.ratio' parameter to execute arbitrary code."
+}

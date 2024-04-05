@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-400", "CWE-770"],
+  "vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption", "Allocation of Resources Without Limits or Throttling"],
+  "description": "The function does not validate the input 'this.source' before processing it, which can lead to improper input validation (CWE-20). The function also does not limit the number of iterations in the while loop that processes 'err.details', which can lead to uncontrolled resource consumption (CWE-400). Additionally, the function does not limit the number of 'paths' processed in the forEach loop, which can lead to allocation of resources without limits or throttling (CWE-770)."
+}

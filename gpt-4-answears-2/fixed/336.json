@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function does not properly sanitize the 'author' and 'html' inputs before inserting them into the HTML content. This could lead to Cross-Site Scripting (XSS) attacks if an attacker can control the 'author' or 'html' inputs, as they could insert malicious scripts that would be executed when the resulting HTML is rendered by a web browser."
+}

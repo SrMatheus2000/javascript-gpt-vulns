@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly inserts user-controlled input into HTML without proper sanitization or escaping. Specifically, the 'src', 'url', 'alt', and 'i' variables, which are derived from 'image' and 'options' objects, are directly inserted into HTML. If an attacker can control the content of these variables, they can inject arbitrary JavaScript code, which will be executed when the generated HTML is rendered in a user's browser."
+}

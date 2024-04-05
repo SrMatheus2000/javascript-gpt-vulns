@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses regular expressions (regex) in the 'match' method. If an attacker provides a malicious input that results in a long-running match, it could lead to a denial of service (DoS) attack. This is known as a Regular Expression Denial of Service (ReDoS) vulnerability. Additionally, the function does not validate the 'statMode' input before using it in a regex, which could lead to unexpected behavior or errors."
+}

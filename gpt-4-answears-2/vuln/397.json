@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is intended to sanitize a URL by checking if it starts with 'javascript:', but it only checks for this at the beginning of the string after trimming and converting to lowercase. This means that any leading spaces or different casing of 'javascript:' would bypass the check. Additionally, it does not check for other potentially malicious protocols like 'data:', 'vbscript:', etc. This could lead to Cross-Site Scripting (XSS) attacks if the returned URL is used in a context that allows for JavaScript execution."
+}

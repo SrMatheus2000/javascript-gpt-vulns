@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The function uses user-supplied input to form a command that will be executed by the system. If an attacker can influence the 'config' object, they could inject arbitrary commands to be executed on the system. This could lead to a variety of impacts, including data loss, data corruption, or denial of service."
+}

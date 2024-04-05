@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Unvalidated Input"],
+  "description": "The function does not validate the input parameters before using them to construct a URL. This could potentially lead to security vulnerabilities such as URL redirection attacks (also known as 'open redirect') if the input parameters are controlled by an attacker. For example, an attacker could provide a malicious URL as the 'platform' or 'arch' parameter to redirect the user to a malicious website. To mitigate this vulnerability, the function should validate the input parameters to ensure they are within the expected range of values."
+}

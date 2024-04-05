@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure Randomness"],
+  "description": "The function uses the 'crypto.getRandomValues' method which is not supported in all browsers, leading to potential issues in older browsers. Also, the function uses 'new Buffer(size)', which is deprecated due to security and usability issues. It's recommended to use 'Buffer.alloc(size)' instead to initialize buffers with a specified size."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'filePath' variable is constructed by concatenating the current working directory and the requested resource pathname. An attacker can manipulate the 'req.url' to navigate to arbitrary directories on the server. This can lead to unauthorized access to sensitive files and data."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Lack of input validation", "Potential Cross-Site Request Forgery"],
+  "description": "The function does not validate the input before using it. This can lead to various vulnerabilities such as Cross-Site Request Forgery (CSRF) where an attacker can trick a victim into executing unwanted actions on a web application in which they're authenticated. Also, the function does not handle errors properly. If an error occurs during the transaction signing process, it simply rejects with a generic error message, which can lead to information disclosure."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function unique_name_606 is vulnerable to SQL Injection. The function constructs a SQL query fragment using the 'options.offset' and 'options.limit' parameters without properly sanitizing them. An attacker could potentially provide malicious input for 'options.offset' and 'options.limit', leading to SQL Injection. It's recommended to use parameterized queries or prepared statements to prevent SQL Injection."
+}

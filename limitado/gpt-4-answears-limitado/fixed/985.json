@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user-controlled input (downloadUrl) to construct a file path without proper validation or sanitization. This could allow an attacker to access, modify, or delete files outside of the intended directory. It's also vulnerable to External Control of File Name or Path (CWE-73) as it allows the downloadUrl to be controlled by an external source, which could lead to arbitrary file overwrite. Lastly, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of the file being downloaded, which could lead to a denial of service if an attacker provides

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Input Validation", "Information Exposure", "Resource Consumption"],
+"description": "The function does not validate the input from the request object which can lead to various vulnerabilities. It also exposes information through error messages which can be used for malicious purposes. The function also does not limit the number of routes that can be processed which can lead to resource exhaustion."
+}

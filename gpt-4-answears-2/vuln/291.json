@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-116"],
+"vulnerabilities": ["Code Injection", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to code injection. The message parameter is directly concatenated into a command string without proper sanitization or escaping. An attacker could provide a malicious string as the message, which would be executed as part of the command. This could lead to arbitrary code execution. The function also fails to properly escape or encode the output, which could lead to injection attacks."
+}

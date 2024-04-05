@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "URL Redirection to Untrusted Site ('Open Redirect')"],
+  "description": "The function validateLink is vulnerable as it only checks for the presence of bad protocols at the start of the URL. An attacker can bypass this check by appending a good protocol at the start. Also, the function does not validate or sanitize the URL properly which can lead to Cross-Site Scripting (XSS) or URL Redirection attacks."
+}

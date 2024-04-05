@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly injects user-controlled data (props.suggestionText and value.value) into HTML without proper sanitization. An attacker could exploit this by injecting malicious scripts as the suggestionText or value, which would then be executed in the browser of any user viewing the rendered HTML."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Exhaustion"],
+  "description": "The function 'mergeBuffers' is vulnerable to memory exhaustion. It allocates a new buffer of a size specified by 'options.bufferSize' for each buffer in the input array. If the input array is large, or if 'options.bufferSize' is large, this could consume all available memory and crash the program. This is a type of Denial of Service (DoS) attack. The function does not check or limit the size of the buffers it creates, making it vulnerable to this attack."
+}

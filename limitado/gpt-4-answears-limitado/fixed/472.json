@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-89", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "SQL Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user-supplied input to construct file paths without proper validation or sanitization. This could allow an attacker to access, modify, or delete files outside of the intended directory. It is also vulnerable to SQL Injection (CWE-89) as it uses user-supplied input in SQL queries without proper validation or sanitization, potentially allowing an attacker to manipulate the queries. Lastly, it is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of resources that can be consumed when handling requests, potentially leading to a denial of service."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the 'eval' function, which is a potential security risk as it allows execution of arbitrary JavaScript code. This can lead to code injection attacks if the input is not properly sanitized. In this case, the input to 'eval' is the return value of 'createWrapper', which is not shown in the provided code. If 'createWrapper' does not properly sanitize its inputs, this could lead to a code injection vulnerability."
+}

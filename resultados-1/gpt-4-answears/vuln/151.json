@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function inetChecksite uses the exec function to execute a shell command that includes user-supplied input. Even though the input is sanitized with util.sanitizeShellString, it is still possible to inject malicious commands if the sanitization is not done properly. This can lead to arbitrary command execution on the server where the script is running."
+}

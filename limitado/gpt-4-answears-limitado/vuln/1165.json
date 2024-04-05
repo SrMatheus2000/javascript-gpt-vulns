@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function does not validate or sanitize the request headers, which can lead to Cross-Site Request Forgery (CSRF) if an attacker can trick a victim into making a request to the server. Additionally, the function does not validate the 'if-none-match' and 'if-modified-since' headers, which can lead to Improper Input Validation vulnerability if an attacker can manipulate these headers to bypass cache controls or to cause the server to return incorrect responses."
+}

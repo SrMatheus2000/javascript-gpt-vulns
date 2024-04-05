@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89"],
+  "vulnerabilities": ["OS Command Injection", "SQL Injection"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input directly in a command that is executed by the operating system. This could allow an attacker to execute arbitrary commands on the system. The function is also vulnerable to SQL injection because it concatenates user-supplied input directly into a SQL query. This could allow an attacker to manipulate the SQL query and potentially access or modify data in the database."
+}

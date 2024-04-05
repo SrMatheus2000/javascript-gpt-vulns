@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'sanitizer' function is used to sanitize the 'html' variable, but it's not clear how effective this function is. If it's not properly implemented, it could allow an attacker to inject malicious scripts into the web page. The 'dangerouslySetInnerHTML' property is also used, which can potentially open up the application to XSS attacks if the input is not properly sanitized."
+}

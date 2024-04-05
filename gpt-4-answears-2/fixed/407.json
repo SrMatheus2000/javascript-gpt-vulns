@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The function uses the execFile function to execute the 'nmcli' command with user-supplied input (config.iface). An attacker could potentially inject malicious commands by providing specially crafted input to the 'config.iface' parameter."
+}

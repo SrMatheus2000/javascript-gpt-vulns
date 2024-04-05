@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-95", "CWE-676"],
+  "vulnerabilities": ["Unsanitized, parameterized use of `render` could allow the include directory to be reset, opening up the possibility of remote code execution"],
+  "description": "The function `unique_name_616` is vulnerable to remote code execution due to unsanitized, parameterized use of `render` which could allow the include directory to be reset."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Input Validation"],
+  "description": "The function is vulnerable to SQL Injection because it concatenates a user-controlled variable 'this.processName' directly into the API route. An attacker could manipulate 'this.processName' to alter the SQL query, leading to unauthorized access or data manipulation. Additionally, the function does not properly validate the 'limit' parameter from the request query. If a non-integer value is passed, it defaults to 0, which could lead to unexpected behavior."
+}

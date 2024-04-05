@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function uses the 'childProcess.execFile' method to execute a command built from user-controlled input. This can allow an attacker to inject malicious commands, leading to Command Injection vulnerability. The 'browserPath' variable is used directly without any sanitization or validation, which can lead to arbitrary command execution if it contains malicious values."
+}

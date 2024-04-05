@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function inetLatency is vulnerable to OS command injection. The function uses the exec function to execute a shell command that includes user-supplied input (the 'host' parameter). An attacker could provide a malicious 'host' value that includes shell metacharacters, leading to arbitrary command execution. The function attempts to sanitize the 'host' parameter with 'util.sanitizeShellString', but this may not be sufficient to prevent all possible injection attacks."
+}

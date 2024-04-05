@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function is vulnerable to code injection attacks. The replace function is used to escape periods, but it does not prevent other special characters or sequences that could be used to inject malicious code. An attacker could provide a name containing back-ticks and JavaScript code, which would be executed when the resulting string is used."
+}

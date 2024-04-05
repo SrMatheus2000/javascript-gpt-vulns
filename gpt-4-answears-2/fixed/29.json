@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery .html() method to insert content into the page. If the content is user-supplied and not properly sanitized, this could lead to XSS attacks. In addition, the function uses the .get() method to make a request to a URL constructed using user-supplied input, which could potentially lead to other vulnerabilities if the input is not properly validated and sanitized."
+}

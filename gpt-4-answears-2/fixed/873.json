@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm"],
+"description": "The function uses a cryptographic algorithm that is potentially broken or risky. This may allow an attacker to break the encryption and gain access to the underlying data. Specifically, the function uses the Elliptic Curve Cryptography (ECC) algorithm, which has known vulnerabilities and is considered risky."
+}

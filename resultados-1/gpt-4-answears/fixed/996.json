@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the input 'nodes'. This could lead to Cross-Site Scripting (XSS) if the input is controlled by an attacker. An attacker could inject malicious scripts as 'nodes' which would then be executed in the user's browser."
+}

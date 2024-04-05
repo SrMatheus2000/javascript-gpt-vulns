@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The provided JavaScript function is vulnerable to code injection. It directly executes the input 'str' without any validation or sanitization, which can lead to arbitrary code execution."
+}

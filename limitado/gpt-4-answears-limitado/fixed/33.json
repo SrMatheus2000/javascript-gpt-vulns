@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution", "Denial of Service"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. The function does not properly prevent the modification of Object's prototype. An attacker can control the 'keys' input to modify the Object prototype. This can lead to a variety of impacts such as Denial of Service, Remote Code Execution, or other unintended side effects. Additionally, the function does not validate the 'ch' input, which can lead to uncontrolled resource consumption if an attacker provides a large 'keys' array, causing a Denial of Service."
+}

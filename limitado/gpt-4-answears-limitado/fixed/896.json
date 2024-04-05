@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the 'value' parameter before using it to add a class or set a label. This could lead to Cross-Site Scripting (XSS) attacks if the 'value' parameter can be controlled by an attacker, as they could inject malicious scripts."
+}

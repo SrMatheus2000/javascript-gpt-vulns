@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-829"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The code is vulnerable to command injection. The user-controlled input 'this.prefix' is directly passed to the 'correctMkdir' function without proper sanitization or validation, allowing an attacker to execute arbitrary commands."
+}

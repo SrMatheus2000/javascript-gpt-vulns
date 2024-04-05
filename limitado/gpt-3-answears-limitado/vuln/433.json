@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable to any known CWEs or vulnerabilities. It validates if the input value is a positive or negative integer using a regular expression."
+}

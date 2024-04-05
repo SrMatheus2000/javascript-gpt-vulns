@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The function binBuild.file() is used to execute shell commands, and it includes user-supplied input without proper sanitization or validation. If an attacker can control the value of bin.dest(), they could potentially execute arbitrary commands on the system."
+}

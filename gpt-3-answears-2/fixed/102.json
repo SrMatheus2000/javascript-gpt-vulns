@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not properly sanitize the 'color' parameter before using it in the 'setColor' function, which can lead to a Cross-Site Scripting (XSS) vulnerability."
+}

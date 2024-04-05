@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Potential Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the 'frameName' input, which could lead to Cross-Site Scripting (XSS) if the 'frameName' is used in a context that's interpreted as code. An attacker could potentially inject malicious scripts through the 'frameName' parameter."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property in the function. The innerHTML property is used to write arbitrary HTML, and can be a potential security risk if the HTML content is not properly sanitized and contains malicious scripts. The malicious script can be executed when the HTML is rendered in the browser, leading to an XSS attack. The affected lines are where elMarker.innerHTML and elLegendText.innerHTML are set."
+}

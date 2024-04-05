@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-494: Download of Code Without Integrity Check"],
+  "vulnerabilities": ["Path Traversal", "Unverified Download"],
+  "description": "The function downloads a file from a URL that can be controlled by an environment variable. This could lead to a path traversal vulnerability if an attacker can control the environment variable and set it to a malicious URL. Additionally, the function does not verify the integrity of the downloaded file, which could lead to the execution of malicious code if the file is tampered with during transmission."
+}

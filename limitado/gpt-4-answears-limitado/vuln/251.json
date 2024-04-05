@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-209"],
+  "vulnerabilities": ["OS Command Injection", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input in the 'command' variable which is then passed to 'child_process.execSync'. An attacker could potentially inject malicious commands. Additionally, the function exposes sensitive information through error messages by logging the 'learnFile' content when the command execution fails."
+}

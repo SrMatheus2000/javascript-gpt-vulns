@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Null Pointer Dereference"],
+  "description": "The function objectForEach is vulnerable because it does not check if 'target', 'additional', and 'result' are null or undefined before accessing their properties. This can lead to a Null Pointer Dereference error if these objects are not properly initialized before the function is called."
+}

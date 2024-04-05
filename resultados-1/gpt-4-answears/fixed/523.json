@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "Improper Input Validation", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it constructs a command using user-supplied input (pathBundleIN, pathOUT, password) which are passed to openssl.spawnWrapper without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. Additionally, there is no validation on the pathBundleIN and pathOUT parameters, which could lead to path traversal attacks if an attacker can control these inputs. The function also uses the password directly without any sanitization, which could lead to issues if special characters are used."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-272: Least Privilege Violation", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Improper Input Validation"],
+  "description": "The function 'unique_name_200' is vulnerable due to the lack of input validation and improper handling of user-supplied data. The 'repoDir' parameter can be a function, which can lead to arbitrary code execution if a malicious function is passed. This is an example of an Insecure Direct Object References (IDOR) vulnerability. Additionally, the 'options' parameter is not properly validated, which can lead to unexpected behavior if it contains unexpected properties. This is an example of an Improper Input Validation vulnerability."
+}

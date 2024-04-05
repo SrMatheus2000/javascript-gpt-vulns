@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-918"],
+  "vulnerabilities": ["Path Traversal", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function is vulnerable to Path Traversal and Server-Side Request Forgery (SSRF). The Path Traversal vulnerability (CWE-22) is due to the use of '__dirname + '/cache'' in the 'fs.readFile' function, which allows an attacker to read arbitrary files on the system. The Server-Side Request Forgery (SSRF) vulnerability (CWE-918) is due to the use of 'http.get' function with a URL that can be manipulated by an attacker to make the server send a request to an arbitrary destination, potentially leading to information disclosure or other impacts."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'unique_name_775' is vulnerable to OS command injection. It concatenates the 'name' and 'url' parameters directly into a command string that is executed by the 'cp.exec' and 'cp.execSync' functions. An attacker could potentially inject arbitrary commands by providing specially crafted 'name' or 'url' parameters."
+}

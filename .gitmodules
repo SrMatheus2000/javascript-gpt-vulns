@@ -1,0 +1,6 @@
+[submodule "fixed-repo"]
+	path = fixed-repo
+	url = git@github.com:SrMatheus2000/fixed-vuln-test.git
+[submodule "vuln-repo"]
+	path = vuln-repo
+	url = git@github.com:SrMatheus2000/vuln-test.git

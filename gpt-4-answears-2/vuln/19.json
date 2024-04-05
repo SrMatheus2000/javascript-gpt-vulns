@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116", "CWE-79"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient Output Encoding", "Cross-site Scripting (XSS)"],
+"description": "The function normalizeSpacing is vulnerable as it does not validate or sanitize the input 'htmlString'. This could lead to Cross-site Scripting (XSS) attacks if the input contains malicious scripts. Additionally, the function does not properly encode the output, which could lead to the injection of unintended HTML or JavaScript code."
+}

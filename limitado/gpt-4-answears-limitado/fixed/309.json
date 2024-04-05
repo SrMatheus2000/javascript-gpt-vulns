@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate the input for 'port', 'host', 'inputRequestLimit', and 'numberOfWorkers' which can lead to improper functioning of the application. Also, the function does not control the number of requests it can handle at a time, which can lead to resource exhaustion and Denial of Service (DoS)."
+}

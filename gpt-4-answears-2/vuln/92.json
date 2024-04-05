@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_42 is vulnerable to OS command injection. It uses the exec function to execute a git reset command with user-supplied input (destination). An attacker could potentially inject malicious commands by providing a specially crafted string as the destination parameter."
+}

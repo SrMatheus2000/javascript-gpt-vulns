@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'cwd' input, which could lead to path traversal or other types of attacks. Additionally, the function uses the 'cwd' input in a regex match without sanitizing it, which could lead to SQL injection if the input contains SQL commands."
+}

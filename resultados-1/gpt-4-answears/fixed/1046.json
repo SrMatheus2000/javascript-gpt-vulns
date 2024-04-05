@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Code Injection", "Path Traversal"],
+  "description": "The function is vulnerable to code injection and path traversal attacks. The function does not properly sanitize user input, which can be exploited to inject malicious code. Additionally, the function does not properly limit or check the pathname, which can be exploited to access restricted directories."
+}

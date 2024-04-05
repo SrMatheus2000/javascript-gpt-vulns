@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Validation"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function attempts to sanitize a URL by decoding it and checking if it starts with 'javascript:', but this is not sufficient to prevent all XSS attacks. For example, an attacker could bypass the check by including whitespace or other characters after 'javascript:'. Additionally, the function does not properly validate the input, as it only checks for a specific pattern and does not handle other potentially malicious inputs. This could lead to other types of attacks, such as SQL injection or command injection."
+}

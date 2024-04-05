@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The provided code is vulnerable to Path Traversal (CWE-22) and Information Exposure (CWE-73) vulnerabilities. An attacker can manipulate the 'req.url' parameter to access files outside the intended directory and potentially disclose sensitive information."
+}

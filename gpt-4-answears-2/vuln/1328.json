@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses childProcess.execFile() to execute a command that includes user-supplied input (browserPath, commandOptions). This can allow an attacker to execute arbitrary commands in the server's OS. This is known as OS Command Injection vulnerability."
+}

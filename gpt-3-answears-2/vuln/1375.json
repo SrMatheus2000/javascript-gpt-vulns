@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection due to the use of user-controlled input in the 'url' parameter without proper validation or sanitization. An attacker can potentially execute arbitrary commands on the server."
+}

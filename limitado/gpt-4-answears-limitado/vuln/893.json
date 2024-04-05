@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function '_combineLongPacketBuffers' is vulnerable to Buffer Overflow. This is because it creates a new Buffer object with a size that is calculated from user-controlled input (remainingBytes + this._longPacketBuffers.size). If an attacker can control the size of '_longPacketBuffers', they can cause the application to allocate a Buffer larger than the available memory, leading to a crash or potentially arbitrary code execution."
+}

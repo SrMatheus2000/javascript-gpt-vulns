@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Uncontrolled Resource Consumption"],
+"description": "The function does not properly validate the input, which can lead to SQL injection if the input is used in a SQL query. The function also does not limit the amount of resources it can consume, which can lead to a denial of service if an attacker sends a large amount of data."
+}

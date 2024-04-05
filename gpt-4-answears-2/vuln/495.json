@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function creates HTML elements and sets their attributes using string concatenation of user-controlled data. This can lead to Cross-Site Scripting (XSS) vulnerabilities if the user-controlled data is not properly sanitized. For example, the function `createOption` directly includes the value parameter in the HTML string. If the value is user-controlled and not properly sanitized, this could lead to a XSS vulnerability."
+}

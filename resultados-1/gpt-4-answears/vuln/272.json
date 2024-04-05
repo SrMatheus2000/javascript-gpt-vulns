@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function sanitizeUrl is vulnerable to Cross-Site Scripting (XSS) attacks. The function decodes the URL and checks if it starts with 'javascript:', but it does not consider other possible ways to inject malicious scripts. For example, an attacker could use a data URI scheme (data:text/html,<script>alert('XSS')</script>) to bypass the check and execute arbitrary JavaScript code. This could lead to various security issues, such as stealing sensitive data or performing actions on behalf of the user."
+}

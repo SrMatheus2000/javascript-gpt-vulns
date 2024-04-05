@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'ffmpeg' is vulnerable to OS command injection because it directly uses the 'os' parameter in the 'command' function without any sanitization or validation. An attacker could potentially provide a malicious 'os' object that includes harmful commands, leading to arbitrary command execution on the server."
+}

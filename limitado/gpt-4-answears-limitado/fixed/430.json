@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function escapeHTML is used to sanitize user input before it is inserted into the HTML. However, the function is not defined within the provided code. If the function is not properly implemented, it could lead to XSS vulnerabilities where an attacker can inject malicious scripts."
+}

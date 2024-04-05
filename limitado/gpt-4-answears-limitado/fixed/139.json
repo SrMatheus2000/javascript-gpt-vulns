@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Code Injection", "Path Traversal"],
+  "description": "The function is vulnerable to code injection via the 'options.allowInjection' parameter. If this parameter is set to true, it allows for arbitrary code execution. This is a serious security risk as it can lead to remote code execution (RCE) attacks. This is related to CWE-94. Additionally, the function is vulnerable to path traversal attacks. The 'options.datadir' parameter is used to construct file paths and is not properly sanitized before use. This can allow an attacker to read arbitrary files on the system by providing a path with '..' sequences. This is related to CWE-22."
+}

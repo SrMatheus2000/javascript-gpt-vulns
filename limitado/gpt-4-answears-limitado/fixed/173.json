@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Unvalidated Input"],
+  "description": "The function does not validate the input for the 'cb' parameter, which is expected to be a function. If a malicious user passes something other than a function, it could lead to unexpected behavior or errors. Additionally, the function does not validate the 'options' parameter, which could lead to potential issues if it is not an object. The function also does not handle exceptions, which could lead to unhandled exceptions if the 'cb' function throws an error."
+}

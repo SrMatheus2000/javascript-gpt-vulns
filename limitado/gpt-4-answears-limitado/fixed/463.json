@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-352"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and Cross-Site Request Forgery (CSRF) attacks. The 'authorize' function does not sanitize the 'clientId', 'redirectUrl', 'scopes', 'state', 'realm', and 'additionalQueryStringParams' parameters before using them to construct a URL, which is then opened in a new window. This could allow an attacker to inject malicious scripts or perform unauthorized actions. The function also does not implement any CSRF protections, which could allow an attacker to trick a user into performing actions without their consent."
+}

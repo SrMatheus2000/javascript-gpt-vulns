@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the .html() function in several places, which can potentially insert malicious scripts into the DOM if the input is not properly sanitized. This is particularly evident in the 'showResponse' and 'showStatus' functions where user-provided 'content' and 'url' are directly inserted into the DOM. This can lead to various security issues, such as stealing user's data or performing actions on behalf of the user."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input to create an iframe without properly sanitizing the input. The user input is taken from the 'data-youtube' and 'data-vimeo' attributes and directly inserted into the iframe's src attribute. An attacker could potentially inject malicious scripts by manipulating these attributes."
+}

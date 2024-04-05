@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function unique_name_235 is vulnerable to SQL Injection. The function takes two parameters, 'column' and 'path', and uses them to construct SQL queries without properly sanitizing them. This could allow an attacker to inject malicious SQL code into the queries, leading to unauthorized access to or manipulation of the database. The vulnerability is present in all cases of the switch statement, as the 'column' and 'path' parameters are directly used in the construction of the SQL queries."
+}

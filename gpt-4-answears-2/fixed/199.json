@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-20"],
+"vulnerabilities": ["Command Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to command injection because it uses user-controlled input in a command that is executed by the system. This is a serious vulnerability that allows an attacker to execute arbitrary commands on the system. The function also lacks proper input validation, which makes it susceptible to other types of attacks."
+}

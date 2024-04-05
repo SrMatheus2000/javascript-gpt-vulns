@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function 'unique_name_253' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because the 'linkStr' parameter is directly used to set the 'link' property of vertices without proper sanitization or encoding. Although there is an attempt to remove 'javascript:' from the 'linkStr' when the security level is set to 'strict', this is not sufficient to prevent all possible XSS payloads. Additionally, the function does not validate the 'ids' parameter, which could lead to unexpected behavior if it is not a string or if it contains invalid IDs."
+}

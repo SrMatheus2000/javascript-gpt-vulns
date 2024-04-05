@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Input Validation", "Output Encoding"],
+"description": "The function does not validate the 'options' parameter properly. If an object is passed with a 'remove' property that is not a regular expression, it will cause a TypeError. Also, the function does not escape or encode the output, which could lead to Cross-Site Scripting (XSS) if the output is rendered in HTML without proper escaping."
+}

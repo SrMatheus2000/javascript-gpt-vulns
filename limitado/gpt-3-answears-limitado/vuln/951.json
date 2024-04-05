@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Server-Side Request Forgery (SSRF)"],
+  "description": "The provided code is vulnerable to Path Traversal and Server-Side Request Forgery (SSRF) attacks. An attacker can manipulate the 'req.url' parameter to access files outside of the intended directory or make unauthorized requests to internal resources."
+}

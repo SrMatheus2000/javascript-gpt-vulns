@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Command Injection"],
+  "description": "The provided JavaScript function is vulnerable to code injection and command injection attacks. The use of the 'eval' function with unsanitized input allows an attacker to execute arbitrary code or commands."
+}

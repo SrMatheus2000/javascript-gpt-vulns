@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Command Injection", "Code Injection"],
+  "description": "The cmdSet function is vulnerable to command injection and code injection attacks. The function uses the eval function to parse the 'val' parameter, which can allow an attacker to execute arbitrary commands or inject malicious code."
+}

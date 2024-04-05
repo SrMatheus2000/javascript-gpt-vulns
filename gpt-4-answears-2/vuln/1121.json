@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Improper Input Validation", "Use of Potentially Dangerous Function"],
+"description": "The function does not properly validate the input 'str'. If 'str' is an object, it directly uses it which can lead to unexpected behavior. Also, the function _.isFunction(str) can be potentially dangerous if 'str' is a malicious function. Moreover, the function updateDOM is not defined in the given code, which could potentially lead to ReferenceError."
+}

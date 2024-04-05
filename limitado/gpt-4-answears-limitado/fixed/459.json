@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery.html() method to insert user-controlled data into the HTML document. If an attacker can control the value of 'this.invocationUrl', they can inject arbitrary HTML and JavaScript code into the web page, which will be executed in the context of the victim's session. This can lead to session hijacking, identity theft, defacement of the website, and other attacks."
+}

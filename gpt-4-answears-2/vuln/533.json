@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to several types of attacks. First, it does not validate the input data, which can lead to various types of attacks, such as SQL injection or code injection. Second, it does not handle the case where the sessionIDs array is very large, which can lead to a denial of service due to resource exhaustion. Finally, it does not check the authenticity of the logout request, which can lead to unauthorized actions."
+}

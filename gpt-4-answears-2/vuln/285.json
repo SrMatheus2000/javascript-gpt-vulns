@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It directly inserts user-controlled data ('data-vimeoparams') into HTML without proper sanitization or validation, which can lead to execution of malicious scripts."
+}

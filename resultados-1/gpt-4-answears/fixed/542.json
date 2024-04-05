@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not properly sanitize the file paths. An attacker can manipulate the file path to access directories that should be restricted. This can lead to unauthorized read and write access to sensitive information."
+}

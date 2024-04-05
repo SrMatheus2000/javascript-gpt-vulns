@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Prototype Pollution", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Prototype Pollution as it allows the modification of a prototype object if the input string contains '__proto__'. This can lead to arbitrary JavaScript execution. Also, the function uses the decodeURIComponent function which can lead to Cross-Site Scripting (XSS) if the input is not properly sanitized. An attacker can inject malicious scripts through the input string."
+}

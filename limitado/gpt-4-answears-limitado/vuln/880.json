@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Path Traversal", "File Inclusion"],
+  "description": "The function does not properly validate the input 'path'. This could allow an attacker to traverse the file system to access files or directories that are outside of the restricted directory (Path Traversal). Additionally, the function could be tricked into including a file with a dangerous extension that it should not have access to (File Inclusion)."
+}

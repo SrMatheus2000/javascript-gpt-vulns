@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-384: Session Fixation"],
+"vulnerabilities": ["Insecure Cryptographic Operations", "Session Management"],
+"description": "The function signTransaction uses a cryptographic algorithm to sign a transaction. However, it does not validate the input parameters 'address' and 'tx', which can lead to insecure cryptographic operations. Additionally, the function uses a session-based mechanism to unlock the account, which can lead to session fixation attacks if the session ID is not properly managed."
+}

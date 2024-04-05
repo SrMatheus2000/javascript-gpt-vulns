@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses jQuery's $ function to create HTML elements from strings, which can lead to XSS if the strings contain user-controlled data. In particular, the function does not properly sanitize the 'settings.maxWidth', 'settings.id', 'settings.content', and 'settings.cssClass' properties before inserting them into the HTML. An attacker could potentially inject malicious scripts through these properties, leading to XSS."
+}

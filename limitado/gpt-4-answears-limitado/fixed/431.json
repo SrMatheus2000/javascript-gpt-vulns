@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user input to construct a file path without properly sanitizing it. This could allow an attacker to access sensitive files on the server. It's also vulnerable to Cross-Site Scripting (XSS) (CWE-79) because it directly uses user input in the construction of the 'jsonFileUrl' without proper sanitization or encoding, which could allow an attacker to inject malicious scripts."
+}

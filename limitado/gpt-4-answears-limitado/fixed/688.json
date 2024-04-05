@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-602: Client-Side Enforcement of Server-Side Security"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Lack of server-side validation"],
+  "description": "The function is vulnerable to Insecure Direct Object References (IDOR) because it uses user-supplied input in direct object references without proper authorization checks. This can allow an attacker to bypass authorization and directly access data. The function also lacks server-side validation for some of its inputs, relying on client-side validation instead. This can be easily bypassed, leading to potential security issues."
+}

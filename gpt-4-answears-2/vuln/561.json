@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate or sanitize the 'cwd' and 'opts' inputs which can lead to path traversal attacks. An attacker can provide paths or options that can lead to unauthorized file access or manipulation."
+}

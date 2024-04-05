@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. Even though it attempts to guard against injection by splitting the path on ';' and taking the first part, this is not sufficient to prevent an attacker from navigating to arbitrary directories. An attacker could provide a path like '../../etc/passwd' to read or manipulate files outside of the intended directory. This is a violation of CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

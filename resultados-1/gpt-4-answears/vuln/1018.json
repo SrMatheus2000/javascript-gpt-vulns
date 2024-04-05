@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. If an attacker sends a large amount of data that exceeds the limit set by the 'bytes' parameter, the 'deny' function will be called, which destroys the request. However, the data is still being received and processed until it exceeds the limit. This means that an attacker could potentially send a large amount of data, causing the server to consume resources unnecessarily and potentially leading to a DoS condition. This is related to CWE-400, which refers to uncontrolled resource consumption."
+}

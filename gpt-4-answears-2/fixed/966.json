@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function does not sanitize or validate the input that is being used to construct SQL queries. This could lead to SQL Injection attacks where an attacker could inject malicious SQL code into the query, leading to unauthorized access, data corruption or data leakage."
+}

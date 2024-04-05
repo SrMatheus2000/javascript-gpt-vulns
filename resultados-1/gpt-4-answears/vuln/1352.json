@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_787 is vulnerable to command injection. The function uses the exec function from the proc module to execute a command that is constructed by concatenating a static string with a user-supplied input (pinNumber and direction). An attacker could provide specially crafted input to execute arbitrary commands on the system."
+}

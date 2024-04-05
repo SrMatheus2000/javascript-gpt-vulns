@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Insecure Direct Object References"],
+  "description": "The function is vulnerable to Path Traversal and Insecure Direct Object References. The 'moduleVer' parameter is concatenated with the 'node-sass/vendor/' string to form the 'nodeBindingName' variable. An attacker can manipulate the 'moduleVer' parameter to traverse the file system and potentially access sensitive files outside the intended directory. Additionally, the function downloads a file from a URL without proper validation, which can lead to Insecure Direct Object References if the URL can be controlled by an attacker."
+}

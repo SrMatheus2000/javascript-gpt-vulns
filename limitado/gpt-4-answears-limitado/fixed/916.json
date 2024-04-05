@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Information Disclosure", "Improper Input Validation"],
+  "description": "The function logs error messages that could potentially expose sensitive information about the system, which could be exploited by an attacker to gain more knowledge about the system and perform further attacks. This is related to CWE-209. Additionally, the function does not validate the input 'socketIOCallback' before using it, which could lead to unexpected behavior or errors if the input is not a function. This is related to CWE-20."
+}

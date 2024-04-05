@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection because it concatenates user-supplied input (file) directly into a command that is executed by the system. An attacker could manipulate the 'file' parameter to execute arbitrary commands on the system."
+}

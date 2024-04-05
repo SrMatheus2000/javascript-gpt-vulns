@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it uses the .html() method to set the innerHTML of an element. This method does not escape or sanitize the input, so if untrusted input is passed into this function, it could lead to an XSS attack. The function does attempt to sanitize the input using DOMPurify, but only if DOMPurify is defined. If it is not, the function falls back to using the potentially unsafe input directly."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-749: Exposed Dangerous Method or Function"],
+"vulnerabilities": ["Information Disclosure", "Exposed Dangerous Method"],
+"description": "The function exposes detailed error messages to the user, which could potentially reveal sensitive information about the system's internal workings (CWE-209). Additionally, the function uses the 'console.warn' method, which could expose potentially dangerous methods or functions to the user (CWE-749)."
+}

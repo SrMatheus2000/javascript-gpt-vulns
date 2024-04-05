@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe. It checks if the key is '__proto__', 'constructor', or 'prototype' and skips those, preventing Prototype Pollution attacks. It also checks if both the base[key] and extend[key] are plain objects before recursively merging them, preventing Type Confusion attacks."
+}

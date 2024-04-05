@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Output Neutralization for Logs"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'id' variable is directly concatenated into the HTML string without any sanitization or encoding, which could allow an attacker to inject malicious scripts. The same issue applies to 'org.type' and 'org.uuid'. Additionally, the function may also be vulnerable to log injection attacks, as it does not neutralize or sanitize user-controllable input before logging."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Unvalidated input"],
+  "description": "The function getDownloadUrl does not validate the input for 'process' and 'version'. This could lead to unexpected behavior or security vulnerabilities. For example, if the 'version' parameter does not match the expected format, the function will throw an error. This could potentially be used for a Denial of Service (DoS) attack. Additionally, the 'process' parameter is directly used to construct a file path, which could potentially be exploited for path traversal or code injection attacks."
+}

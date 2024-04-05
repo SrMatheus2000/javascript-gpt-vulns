@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Denial of Service"],
+  "description": "The function is vulnerable to Code Injection because it uses the 'require' function with a parameter ('req.body.options.execModulePath') that can be controlled by the user. This can allow an attacker to execute arbitrary code. It is also vulnerable to Denial of Service attacks because it does not limit the number of callbacks that can be created, which can lead to resource exhaustion."
+}

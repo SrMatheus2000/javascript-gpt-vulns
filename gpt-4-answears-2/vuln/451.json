@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted creation of new objects"],
+"description": "The function unique_name_217 is vulnerable because it allows unrestricted creation of new objects. This can lead to a variety of attacks, including but not limited to: denial of service (DoS), unexpected control flow, or arbitrary base class, leading to a variety of impacts such as: code execution, information disclosure, or denial of service."
+}

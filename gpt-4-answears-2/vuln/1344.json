@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77", "CWE-78", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Command Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to command injection because it uses the exec function with user-supplied input (args.join(' ')) without proper sanitization. This could allow an attacker to execute arbitrary commands. Additionally, the function does not limit the amount of resources it can use, which could lead to a denial of service (DoS) if an attacker sends a large amount of data."
+}

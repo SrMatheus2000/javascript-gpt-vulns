@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the 'val' input, which could lead to SQL Injection if the input includes SQL special characters. This is particularly problematic in the case block for 'string' type and the final else block where 'val' is directly used in string concatenation to form SQL commands. An attacker could potentially manipulate the SQL commands by passing specially crafted input."
+}

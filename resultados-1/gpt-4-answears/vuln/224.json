@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'itemTemplate' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input in the 'data' parameter to generate HTML content without properly sanitizing it. An attacker could inject malicious scripts through the 'data' parameter, which would then be executed when the generated HTML content is rendered in a web browser."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function createHtmlText is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'matched' and 'normal' properties of the 'tokens' objects to create HTML content. If these properties contain malicious scripts, they will be executed when the generated HTML is rendered in a web browser. To mitigate this vulnerability, consider using a method that properly escapes special characters in the 'matched' and 'normal' properties before adding them to 'htmlText'."
+}

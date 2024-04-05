@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function unique_name_500 is vulnerable to Cross-site Scripting (XSS) attacks. This is due to the fact that it takes an input 'd' and uses it to create HTML content without properly sanitizing it. The function uses the match() method to extract parts of the input and then directly includes these parts in the generated HTML. If the input 'd' contains malicious scripts, these scripts will be included in the HTML and executed when the HTML is rendered in a web browser. This can lead to various security issues, such as stealing sensitive data or performing actions on behalf of the user."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function setupPostMessage() is vulnerable to code injection attacks. It takes a string from the event data and directly uses it to call a method on the Reveal object without proper sanitization or validation. This could allow an attacker to inject arbitrary code by sending a crafted message event. Additionally, the function does not properly validate the input data before processing it, which could lead to unexpected behavior or errors."
+}

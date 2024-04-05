@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471", "CWE-20"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)", "Improper Input Validation"],
+"description": "The function writeConfig does not validate the input parameters. This can lead to Modification of Assumed-Immutable Data (MAID) vulnerability if the function is called with untrusted input. The function also does not check the type of the 'output' parameter, which can lead to unexpected behavior if 'output' is not an object. This is an example of Improper Input Validation."
+}

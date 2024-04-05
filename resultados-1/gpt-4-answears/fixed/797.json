@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Use of potentially insecure function - 'Buffer.allocUnsafe'"],
+  "description": "The function 'Buffer.allocUnsafe' can lead to security vulnerabilities as it allocates memory space but does not initialize it, leaving behind old and potentially sensitive data. This data can be accessed and exploited by an attacker. It's recommended to use 'Buffer.alloc' instead, which will initialize the memory space with zeros."
+}

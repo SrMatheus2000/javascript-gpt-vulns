@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'requireModule' is vulnerable to a path traversal attack. An attacker can manipulate the 'path' parameter to access files outside of the intended directory."
+}

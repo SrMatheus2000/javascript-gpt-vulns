@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation", "CWE-404: Improper Resource Shutdown or Release"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncontrolled Resource Consumption", "Improper Input Validation", "Improper Resource Shutdown or Release"],
+  "description": "The function 'unique_name_566' is vulnerable due to several reasons. Firstly, it does not validate the input before using it to format a URL, which can lead to security issues. Secondly, it does not properly handle errors that may occur during the download process, which can lead to resource leaks. Lastly, it does not limit the number of retries when a download fails, which can lead to uncontrolled resource consumption and potential Denial of Service (DoS)."
+}

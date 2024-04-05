@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection"],
+  "description": "The function is vulnerable to OS command injection and code injection. This is because it uses template literals to include user-supplied input in commands that are executed by the system. An attacker could potentially inject malicious commands or code, leading to unauthorized system access or data manipulation. The specific lines of code that introduce these vulnerabilities are those that use the `utils.run` function with template literals, such as `utils.run(`git ls-files ${ignoredFile}`, { cwd })` and `utils.run(`git checkout -- ${ignoredFile}`, { cwd })`."
+}

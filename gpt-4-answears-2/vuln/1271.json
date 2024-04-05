@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function is vulnerable to command injection. The function uses the exec function to execute a command that includes user-supplied input. An attacker could provide specially crafted input that includes shell metacharacters, causing the function to execute arbitrary commands with the privileges of the process."
+}

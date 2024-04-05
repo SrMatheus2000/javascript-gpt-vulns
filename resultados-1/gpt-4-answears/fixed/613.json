@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Sensitive Data Exposure", "Error Message Information Leak"],
+  "description": "The function is vulnerable to sensitive data exposure. When the customer login is successful, the entire customer object, which may contain sensitive data, is returned in the response. This could potentially expose sensitive information such as hashed passwords or other personal data. Additionally, the error messages returned by the function provide information about whether a customer with a given email exists and whether the password is correct, which could be used for user enumeration or brute force attacks."
+}

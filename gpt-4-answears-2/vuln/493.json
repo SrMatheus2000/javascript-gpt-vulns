@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function constructs HTML code using string concatenation with user-controlled input, which can lead to code injection if the input is not properly sanitized. The vulnerability is specifically in the 'html' and 'addElement' properties where 'elementName' and 'id' are directly inserted into the HTML code."
+}

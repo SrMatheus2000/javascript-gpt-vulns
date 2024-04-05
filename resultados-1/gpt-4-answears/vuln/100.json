@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function tileLevel is vulnerable to OS command injection because it concatenates user-supplied input into a command string that is executed synchronously by the application. An attacker can manipulate the 'inPath', 'tileSize', 'pattern', 'quality', or 'outPath' parameters to execute arbitrary commands on the system."
+}

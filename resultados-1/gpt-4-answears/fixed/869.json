@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an 'element' parameter and directly injects it into the HTML of an iframe without properly sanitizing or escaping it. This could allow an attacker to inject malicious scripts into the webpage. The function attempts to remove script tags from the 'element' parameter using a regular expression, but this is not a reliable method of preventing XSS attacks as there are many ways to bypass such filters. The function should use a proper HTML encoding or escaping function to ensure that any potentially dangerous characters in the 'element' parameter are rendered harmless."
+}

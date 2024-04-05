@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery .html() method to insert user-controlled data into the DOM. Although the function attempts to mitigate this risk by using the escapeHtml() function, it does not do so consistently. For example, the spinner variable is inserted into the DOM without being escaped. This could allow an attacker to inject malicious scripts into the web page. Additionally, the function does not validate the input it receives, which could lead to unexpected behavior or further vulnerabilities."
+}

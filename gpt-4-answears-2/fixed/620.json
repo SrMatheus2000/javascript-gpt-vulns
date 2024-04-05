@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Input Validation", "Output Encoding"],
+"description": "The function does not validate the 'options' parameter properly. If an object is passed with a 'remove' property that is not a regular expression, it will cause a TypeError. Also, the function does not escape special characters in the 'replacement' property of the 'options' object, which could lead to unexpected behavior if the 'replacement' string contains special regular expression characters. Furthermore, the function does not handle the case where 'charMap[ch]' is undefined, which could potentially lead to unexpected behavior."
+}

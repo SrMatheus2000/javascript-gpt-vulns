@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-79", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Cross-Site Scripting (XSS)", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files without proper validation. It's also vulnerable to Cross-Site Scripting (XSS) (CWE-79) as it directly uses user input in the response without proper sanitization. Additionally, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of requests a client can make, potentially leading to Denial of Service (DoS)."
+}

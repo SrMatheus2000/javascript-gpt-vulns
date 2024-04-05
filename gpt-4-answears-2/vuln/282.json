@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function embedVimeoIframe is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses user input (from the 'data-vimeoparams' attribute) in the creation of an iframe without properly sanitizing it. An attacker could inject malicious scripts through this attribute, which would then be executed when the iframe is loaded."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks. The function uses the input directly in a function call without properly sanitizing it first. This could allow an attacker to inject malicious code into the function call, leading to arbitrary code execution. Additionally, the function does not validate the input before using it, which could lead to unexpected behavior or errors."
+}

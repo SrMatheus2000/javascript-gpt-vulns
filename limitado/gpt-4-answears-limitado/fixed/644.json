@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Unvalidated input", "Information disclosure", "Potential Denial of Service"],
+  "description": "The function does not validate the input for 'proxy_host' and 'proxy_port', which can lead to various attacks such as Server-Side Request Forgery (SSRF). The error handling discloses potentially sensitive information by sending 'Upstream Proxy Error' to the client. Also, there is no control over the number of requests, which can lead to a Denial of Service (DoS) attack by exhausting server resources."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attack. It retrieves the 'title' attribute value using jQuery's 'attr' function without proper input validation or output encoding, allowing an attacker to inject malicious scripts."
+}

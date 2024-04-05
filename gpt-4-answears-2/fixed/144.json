@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)"],
+"description": "The function is vulnerable to Modification of Assumed-Immutable Data (MAID) as it modifies the properties of the input object 'a'. This can lead to unexpected behavior if 'a' is assumed to be immutable. The function also does not properly check the ownership of properties when iterating over 'b', which can lead to Prototype Pollution if 'b' contains properties that are not own properties."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the input for the 'key' parameter. If the key is '__proto__' or 'prototype' and the object is manipulated, it can lead to an alteration of a JavaScript object prototype. This is known as Prototype Pollution and can lead to several security vulnerabilities, such as Remote Code Execution, Denial of Service, or even bypassing security checks."
+}

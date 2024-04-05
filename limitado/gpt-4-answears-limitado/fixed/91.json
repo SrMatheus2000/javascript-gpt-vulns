@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-79"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable as it does not validate or sanitize the input 'string'. This could lead to SQL Injection if the 'string' is used in a SQL query or Cross-site Scripting (XSS) if the 'string' is rendered on a web page. The function also decodes the username and password which could lead to other vulnerabilities if these values are used in insecure ways."
+}

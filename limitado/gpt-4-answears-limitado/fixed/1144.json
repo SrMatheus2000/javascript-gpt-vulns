@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-598: Information Exposure Through Query Strings in URL"],
+  "vulnerabilities": ["Information Exposure", "Information Exposure Through an Error Message", "Information Exposure Through Query Strings in URL"],
+  "description": "The function is vulnerable to information exposure. The function exposes sensitive information through error messages and query strings in the URL. The function also does not validate or sanitize the input from the user, which can lead to other vulnerabilities such as Cross-Site Scripting (XSS) or SQL Injection. The function also does not implement any form of authentication or authorization, which can lead to unauthorized access to sensitive information or functionality."
+}

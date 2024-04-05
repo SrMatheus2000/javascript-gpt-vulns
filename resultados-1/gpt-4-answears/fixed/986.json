@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73", "CWE-94"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path", "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user input to construct a file path without properly sanitizing it. This could allow an attacker to access, modify, or delete files outside of the intended directory. The function is also vulnerable to external control of file name or path (CWE-73) because it uses user input to determine the name and location of a file to download without proper validation. This could allow an attacker to overwrite important files or download malicious files. Finally, the function is vulnerable to injection attacks (CWE-94) because it uses user input in a command that is executed by a child process without proper sanitization. This could allow an attacker to execute arbitrary commands on the system."
+}

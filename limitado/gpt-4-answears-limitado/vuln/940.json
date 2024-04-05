@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable as it does not validate or sanitize the input data. This can lead to various types of attacks such as SQL Injection (CWE-89) or Code Injection (CWE-94) if the data is used in a context that allows for execution of commands or queries. Additionally, the function does not limit the size of the data it accepts, which can lead to a Denial of Service (DoS) attack via resource exhaustion (CWE-400). The function also directly uses the input to determine the control flow (checking if data equals 'stop' to close the server), which is an example of Improper Input

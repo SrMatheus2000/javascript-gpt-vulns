@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe. It iterates over the 'encodings' object and for each property, it escapes any HTML and makes it printable before inserting it into a table. This should prevent any Cross-Site Scripting (XSS) attacks as any malicious scripts would be escaped and therefore not executed."
+}

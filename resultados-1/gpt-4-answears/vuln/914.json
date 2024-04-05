@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'unique_name_483' is vulnerable to OS command injection. The 'pid' parameter is directly concatenated into the command string without any sanitization or validation. An attacker could potentially inject arbitrary commands by manipulating the 'pid' parameter."
+}

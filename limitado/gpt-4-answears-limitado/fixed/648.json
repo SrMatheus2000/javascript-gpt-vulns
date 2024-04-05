@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it uses the 'rendy' function to directly insert user-controlled input into HTML output. This can allow an attacker to inject malicious scripts that will be executed in the browser of any user viewing the page. The function also does not validate or sanitize the 'params' input, which can lead to other types of attacks. The 'encode' function is used on the 'file.name' parameter, but not on other parameters, which can lead to inconsistent handling of potentially dangerous input."
+}

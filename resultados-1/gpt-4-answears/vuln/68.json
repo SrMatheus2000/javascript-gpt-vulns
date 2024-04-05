@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the 'name' parameter, which can lead to Prototype Pollution if it contains '__proto__' or 'constructor.prototype'. This can allow an attacker to add or modify properties of Object.prototype, which can lead to various security issues like Remote Code Execution, Denial of Service, or even bypassing security checks."
+}

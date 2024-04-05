@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The data object properties (legendText, headText, subText, extra) are directly inserted into the HTML content without proper sanitization or encoding, which can lead to execution of malicious scripts if the data object contains any."
+}

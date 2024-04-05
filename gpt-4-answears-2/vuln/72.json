@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function inetLatency is vulnerable to OS command injection. The function uses the exec function to execute a shell command that includes user-supplied input (hostSanitized). An attacker could provide a malicious input that includes shell metacharacters, leading to arbitrary command execution."
+}

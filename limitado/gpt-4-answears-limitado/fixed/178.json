@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service", "Improper Input Validation"],
+  "description": "The function is vulnerable to Path Traversal attack as it reads files directly from the provided filename without any validation or sanitization. An attacker can provide a path to any file on the system, potentially reading sensitive information. The function also does not handle exceptions that might be thrown by fs.readFileSync, which could lead to Denial of Service if the file does not exist or is not readable. Additionally, the function does not validate the content of the file before passing it to yaml.safeLoad, which could lead to execution of malicious code if the file contains malicious YAML

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled File Name or Path"],
+  "description": "The function 'unique_name_284' is vulnerable to path traversal attacks because it uses user-supplied input in 'header.name' to construct a file path without properly validating or sanitizing it. This could allow an attacker to access, modify, or delete files outside of the intended directory. Additionally, the function does not control or restrict the file name or path, which could lead to other potential vulnerabilities."
+}

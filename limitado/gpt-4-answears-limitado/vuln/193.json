@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses the 'location.href' property in the 'innerHTML' method to create SVG elements. An attacker can manipulate the 'location.href' to inject malicious scripts, which will be executed when the SVG is rendered."
+}

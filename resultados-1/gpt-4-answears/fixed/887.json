@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The 'name' variable is directly constructed from user input (query.callback or query.callback_prefix + '_' + query.load) and then used to generate code. Although there is an attempt to sanitize the 'name' variable by replacing backslashes, single and double quotes, it does not prevent all forms of code injection. An attacker could potentially provide a 'name' that includes code to be executed. This could lead to arbitrary code execution in the context of the application."
+}

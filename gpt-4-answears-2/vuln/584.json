@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116", "CWE-20"],
+"vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"description": "The function is vulnerable to URL-based cross-site scripting (XSS) attacks. The function attempts to sanitize the URL by decoding it, removing non-alphanumeric characters, and checking if it starts with 'javascript:'. However, this is not sufficient to prevent all XSS attacks. For example, an attacker could use a URL that starts with 'data:' or 'vbscript:' to execute malicious scripts. Additionally, the function does not properly handle errors thrown by decodeURIComponent, which could lead to unexpected behavior."
+}

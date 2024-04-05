@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Validation"],
+"description": "The function does not sanitize the input for the 'unicode' macro. This could lead to Cross-Site Scripting (XSS) if an attacker is able to inject malicious scripts as input. Additionally, the function does not properly validate the input for the 'unicode' macro, which could lead to unexpected behavior or errors."
+}

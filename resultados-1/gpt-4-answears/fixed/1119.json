@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The data object properties (legendText, headText, subText, extra) are directly injected into the HTML without any sanitization or encoding. This means that if the data object contains any malicious scripts, they will be executed in the user's browser. The function also uses the escapeJsString function which may not properly escape all possible JavaScript special characters, leading to potential XSS vulnerabilities. The function also does not validate or sanitize the 'primary_key' data before using it in a jQuery selector, which could lead to DOM-based XSS attacks if the 'primary_key' data is controlled by an attacker."
+}

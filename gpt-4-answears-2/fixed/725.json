@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-95", "CWE-400"],
+"vulnerabilities": ["Code Injection", "Denial of Service"],
+"description": "The function evaluate_value uses the Function constructor to evaluate a string as code, which can lead to code injection if the input is not properly sanitized. This is a potential security risk. Additionally, the function parse_problem uses regular expressions in a way that can lead to catastrophic backtracking, causing a denial of service if the input is not properly sanitized."
+}

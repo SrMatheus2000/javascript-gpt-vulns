@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The function 'unique_name_97' is vulnerable to Path Traversal (CWE-22) and Information Exposure (CWE-200). The function uses 'fs.readFileSync(filename)' to read a file, but it does not validate or sanitize the 'filename' input, which could allow an attacker to read arbitrary files on the system. Additionally, the function exposes potentially sensitive information through error messages, which could be exploited to gain further information about the system or application."
+}

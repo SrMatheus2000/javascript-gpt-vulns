@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-522", "CWE-918"],
+  "vulnerabilities": ["Insufficiently Protected Credentials", "Server-Side Request Forgery (SSRF)"],
+  "description": "The function 'unique_name_284' is vulnerable as it does not adequately protect sensitive data (password) during transmission to other components or storage. This is a violation of CWE-522: Insufficiently Protected Credentials. The function also takes in 'pathIN' and 'pathOUT' parameters which could be manipulated to make the server send or receive data from arbitrary locations, leading to Server-Side Request Forgery (SSRF), a violation of CWE-918."
+}

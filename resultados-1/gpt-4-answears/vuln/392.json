@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'getData' function is used to get the 'originalUrl' from the 'img' element, and this value is directly assigned to the 'src' attribute of a new 'img' element. If an attacker can control the value of 'originalUrl', they can inject malicious scripts into the web page. This can lead to various attacks such as stealing sensitive data, session hijacking, and defacement of the website."
+}

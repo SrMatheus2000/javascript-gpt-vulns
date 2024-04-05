@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The parameters for the openssl command are constructed by concatenating untrusted input into the command string. An attacker could potentially inject arbitrary commands by providing specially crafted input."
+}

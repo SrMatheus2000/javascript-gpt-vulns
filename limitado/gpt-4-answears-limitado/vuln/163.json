@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'options.source' and 'options.destination' parameters are directly included in the command that is executed, without any sanitization or escaping. This means that if a user can control the value of these parameters, they can inject arbitrary commands to be executed on the server. This is a serious security vulnerability that could lead to full server compromise."
+}

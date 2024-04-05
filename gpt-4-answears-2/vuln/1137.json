@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input 'str' properly, which can lead to various vulnerabilities. It can lead to improper parsing and can cause unexpected behavior. The function also does not handle the case where the input string is extremely large, which can lead to excessive CPU and memory usage. The function also does not properly sanitize the input, which can lead to injection attacks."
+}

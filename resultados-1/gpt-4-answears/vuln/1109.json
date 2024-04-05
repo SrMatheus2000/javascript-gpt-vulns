@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Signature Verification Bypass"],
+  "description": "The function jwt_decode has a vulnerability where the signature verification can be bypassed. This is due to the 'noVerify' parameter. If an attacker can control this parameter and set it to 'true', they can bypass the signature verification process. This can lead to various attacks such as allowing the attacker to forge tokens. This vulnerability corresponds to CWE-347: Improper Verification of Cryptographic Signature."
+}

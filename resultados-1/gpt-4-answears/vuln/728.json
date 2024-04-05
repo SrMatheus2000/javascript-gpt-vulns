@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_381 is vulnerable to command injection. The function uses the 'exec' function to execute the 'ipconfig /all' command. However, it does not properly sanitize the 'iface' parameter before using it in the command. An attacker could provide a malicious 'iface' value that alters the command to execute arbitrary commands on the system."
+}

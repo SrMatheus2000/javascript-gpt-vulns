@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Path Traversal", "Improper Input Validation"],
+  "description": "The function is vulnerable to Path Traversal attack. The function uses the 'decodeURIComponent' function to decode the 'reqUrl' parameter which can contain malicious user input. This decoded value is then used to construct a file path. Although there is a check to prevent directory traversal, it is not sufficient as it only checks if the 'staticFilePath' is at the start of the 'staticPath'. An attacker can bypass this check by appending a valid 'staticFilePath' at the start of their payload. Additionally, the function does not properly validate the 'reqUrl' parameter before using it to split the 'staticPath', which can lead to unexpected behavior."
+}

@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Path Manipulation"],
+  "description": "The function is vulnerable to command injection and path manipulation attacks. It uses user-controlled input (the 'name' variable) without proper validation or sanitization, allowing an attacker to execute arbitrary commands or manipulate the file path."
+}

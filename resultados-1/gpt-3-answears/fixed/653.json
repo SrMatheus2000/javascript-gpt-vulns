@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-829"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The provided function is vulnerable to Prototype Pollution. It does not properly validate or sanitize the input 'array' parameter, allowing an attacker to modify the prototype of objects in the array and potentially execute arbitrary code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-23", "CWE-36"],
+  "vulnerabilities": ["Path Traversal", "Null Byte Injection", " Exposure"],
+  "description": "The function is to path traversal attacks, null byte injection, and information exposure. It does not properly validate user-supplied input, allowing an attacker to manipulate the path and access files outside of the intended directory. Additionally, it does not handle null bytes in the path, which can lead to arbitrary file access. Lastly, it exposes sensitive information by returning different error codes for existing and non-existing files, potentially leaking information about the server's file structure."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function getRedirectUrl is vulnerable to open redirect attacks. It takes a query parameter and uses it to construct a URL to which the user is redirected. An attacker could exploit this by providing a malicious URL as the query parameter, causing the user to be redirected to an untrusted site."
+}

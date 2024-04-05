@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function 'execute' in the provided JavaScript code is vulnerable to OS command injection. It constructs a command to be executed using the 'exec' function with inputs from the 'arrParams' parameter, which can be controlled by an attacker. This can lead to arbitrary command execution if an attacker provides specially crafted input."
+}

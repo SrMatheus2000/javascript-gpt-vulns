@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted Property Manipulation"],
+"description": "The function setDeepProperty is vulnerable to unrestricted property manipulation. This can lead to potential security risks such as unauthorized access or modification of sensitive data. The function does not validate or restrict the properties that can be set, allowing an attacker to manipulate any property of the object."
+}

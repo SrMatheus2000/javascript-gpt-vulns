@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function unique_name_572 is vulnerable to code injection. The function takes a function (fn) and a contextGetter as arguments, and it does not validate or sanitize these inputs before using them. This could allow an attacker to inject malicious code through these parameters. The function also uses the 'apply' method on the function pointer (fnPtr), which can be manipulated to execute arbitrary code. Additionally, the function does not validate the arguments (argsFn) before using them, which could lead to other types of attacks, such as type confusion or logic errors."
+}

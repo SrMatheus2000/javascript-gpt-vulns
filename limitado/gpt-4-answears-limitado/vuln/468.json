@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function deleteConnection is vulnerable to OS command injection. The function constructs a command string using the 'ap.ssid' parameter and then executes this command using the 'exec' function. If an attacker can control the 'ap.ssid' parameter, they can inject arbitrary commands to be executed on the system with the privileges of the process running the script. This can lead to a variety of security issues including unauthorized access, data exfiltration, and denial of service."
+}

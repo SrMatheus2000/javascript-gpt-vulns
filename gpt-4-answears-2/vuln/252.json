@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-22", "CWE-209"],
+"vulnerabilities": ["OS Command Injection", "Path Traversal", "Information Exposure Through an Error Message"],
+"description": "The function is vulnerable to OS command injection because it concatenates user-supplied input into a command that is executed synchronously by the system. This could allow an attacker to execute arbitrary commands. The function also uses user-supplied input to construct a file path, which could lead to path traversal vulnerabilities if the input is not properly sanitized. Additionally, the function logs the command to the console, which could expose sensitive information in an error message."
+}

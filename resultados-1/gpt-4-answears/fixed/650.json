@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is simply cloning specific types of values (Buffer, Date, RegExp) and throwing an error for unexpected types. It does not execute any user-provided input or perform any security-sensitive operations."
+}

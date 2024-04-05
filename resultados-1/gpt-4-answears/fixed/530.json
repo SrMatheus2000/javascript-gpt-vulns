@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "CWE-200: Information Exposure", "CWE-522: Insufficiently Protected Credentials"],
+  "vulnerabilities": ["Command Injection", "Sensitive Information Exposure", "Insufficiently Protected Credentials"],
+  "description": "The function 'createPkcs12' is vulnerable to command injection as it uses user-supplied input in 'options' object directly in the 'openssl.execBinary' function which can be manipulated to execute arbitrary commands. Also, the function creates temporary files to store passwords which can lead to sensitive information exposure if the files are not properly secured or deleted. The function also does not validate or sanitize the 'password' and 'options.clientKeyPassword' inputs which can lead to Insufficiently Protected Credentials vulnerability."
+}

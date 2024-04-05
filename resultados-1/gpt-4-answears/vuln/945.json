@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'growl' is vulnerable to OS command injection. The function uses the 'exec' function to execute commands. The arguments for the command are constructed by concatenating strings, some of which are user-controlled inputs (like 'options.exec', 'options.image', 'options.title', etc.). An attacker can inject malicious commands through these inputs. This is a critical security issue as it can lead to full system compromise. The vulnerability corresponds to CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

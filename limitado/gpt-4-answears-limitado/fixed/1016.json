@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-328: Reversible One-Way Hash"],
+  "vulnerabilities": ["Insecure Comparison"],
+  "description": "The function uses a '==' operator for comparing two SHA1 hashes. This can lead to potential security vulnerabilities as '==' in JavaScript can cause type coercion leading to unexpected results. It's recommended to use '===' operator for comparison to avoid type coercion. Also, SHA1 is considered weak for cryptographic hashes, it's recommended to use stronger hash functions like SHA-256 or SHA-3."
+}

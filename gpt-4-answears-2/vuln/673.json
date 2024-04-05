@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Improper Input Validation (CWE-20) as it does not validate the content of the uploaded files, which could lead to various attacks such as SQL Injection, XSS, etc. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of entries in the map, which could lead to a Denial of Service (DoS) attack by consuming server resources."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the 'map' object before using it. If 'map' is null or undefined, the function will throw an error. Also, the function does not validate the 'upload' object before using it. If 'upload' is null or undefined, or if it does not have the 'file' or 'done' properties, the function will throw an error. This can lead to unexpected behavior and potential security vulnerabilities."
+}

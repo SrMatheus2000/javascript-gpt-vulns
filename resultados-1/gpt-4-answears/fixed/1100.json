@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function uses the escapeHtml function to sanitize the table name before it is used in a string that is later added to the page content. However, if the escapeHtml function is not implemented correctly, it could lead to a Cross-Site Scripting (XSS) vulnerability. An attacker could inject malicious scripts by providing a specially crafted table name. These scripts would then be executed in the context of the victim's browser session when the page content is rendered."
+}

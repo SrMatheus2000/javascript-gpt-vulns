@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347", "CWE-20"],
+  "vulnerabilities": ["Improper Verification of Cryptographic Signature", "Improper Input Validation"],
+  "description": "The function is vulnerable to cryptographic signature verification bypass. The 'verifyJWSByKey' method checks the 'alg' field in the JWS header to determine the algorithm used for the signature. If the 'alg' field is set to 'none', the function returns true without verifying the signature. This allows an attacker to forge JWS tokens by setting the 'alg' field to 'none' and removing the signature. The function also lacks proper input validation, making it susceptible to attacks such as JSON injection."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'name' variable is directly concatenated into the command string without any sanitization or escaping. This means that if an attacker can control the value of 'name', they can inject arbitrary commands to be executed on the system."
+}

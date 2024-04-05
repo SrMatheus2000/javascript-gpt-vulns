@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-88", "CWE-89"],
+"vulnerabilities": ["OS Command Injection", "Argument Injection", "SQL Injection"],
+"description": "The function is vulnerable to OS command injection, argument injection, and SQL injection. The function uses user-supplied input in a command that is executed by the operating system. If an attacker can influence the files, message, newVer, or tagName parameters, they can execute arbitrary commands on the system. The function also does not properly sanitize the message parameter, which can lead to SQL injection if the message is used in a SQL query."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function 'execTag' is vulnerable to command injection. This is because it concatenates user-controlled input into a command that is executed by the system. An attacker could manipulate the 'args' parameter to inject malicious commands, which would then be executed with the same permissions as the script itself."
+}

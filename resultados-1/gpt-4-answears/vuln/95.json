@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_45 is vulnerable to command injection. This is due to the use of the exec function with user-supplied input (ip) without proper sanitization or validation. An attacker could potentially inject malicious commands by providing a specially crafted string as the 'ip' parameter, which could lead to arbitrary command execution on the server."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not validate the input 'n' before passing it to Buffer.byteLength. If 'n' is not a string or Buffer, or is not convertible to a string, it will throw a TypeError, which could lead to a Denial of Service (DoS) attack if the function is part of a server-side JavaScript application."
+}

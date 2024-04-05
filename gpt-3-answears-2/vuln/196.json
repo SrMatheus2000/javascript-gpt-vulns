@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200", "CWE-259"],
+  "vulnerabilities": ["Sensitive Data Exposure"],
+  "description": "The function is vulnerable to sensitive data exposure. It sanitizes sensitive data (passwords or secrets) by replacing them with '[SANITIZED]', but it does not ensure that the sensitive data is properly handled and protected throughout the application."
+}

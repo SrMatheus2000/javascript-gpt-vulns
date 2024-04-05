@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly uses user input in the construction of HTML content without proper sanitization or encoding. This is evident where the function uses the 'curr_table_name' and 'curr_column_name' variables directly in the 'question' string which is then passed to the 'PMA_confirm' function. An attacker could potentially inject malicious scripts by manipulating the 'table' property of the 'window.parent' object or the text content of the 'label' element in the selected row. Additionally, the function does not validate the input received from the user, which could lead to unexpected behavior or errors."
+}

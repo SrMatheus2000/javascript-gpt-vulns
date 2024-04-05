@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of a potentially inefficient regular expression in the match function. An attacker could provide a specially crafted input that causes the regular expression to take a long time to evaluate, leading to a denial of service. Additionally, the function is vulnerable to Cross-Site Scripting (XSS) attacks because it does not properly escape or sanitize the input value before returning it. An attacker could inject malicious scripts through the input value, which would then be executed when the returned string is used in a HTML context."
+}

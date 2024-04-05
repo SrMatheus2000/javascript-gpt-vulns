@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses jQuery to get the value of selected options in a select element and directly inserts them into the HTML content. An attacker could potentially inject malicious scripts by manipulating the value of the selected options."
+}

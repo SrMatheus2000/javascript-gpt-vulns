@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Type Confusion"],
+  "description": "The function does not validate the type of 'id' parameter. If a non-integer value is passed, it could lead to unexpected behavior or errors. Also, 'linkStr' is not defined in the function, which could lead to ReferenceError."
+}

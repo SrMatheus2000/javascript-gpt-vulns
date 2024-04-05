@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-829"],
+  "vulnerabilities": ["Insecure Direct Object References"],
+  "description": "The function does not perform any authorization checks before creating a directory using the 'mkdirp' function. This can lead to an insecure direct object reference vulnerability, allowing an attacker to create directories outside of the intended scope."
+}

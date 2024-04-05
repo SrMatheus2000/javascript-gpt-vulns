@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution", "Type Coercion"],
+  "description": "The function is vulnerable to Prototype Pollution which could allow an attacker to manipulate the behaviour of an object prototype. This can lead to a variety of impacts such as Denial of Service, Remote Code Execution, or Property Injection. The vulnerability occurs because the function does not properly validate the 'key' input, allowing an attacker to set arbitrary properties on objects. Additionally, the function uses the 'toString' method without checking the type of 'value', which could lead to Type Coercion vulnerabilities if 'value' is not a string."
+}

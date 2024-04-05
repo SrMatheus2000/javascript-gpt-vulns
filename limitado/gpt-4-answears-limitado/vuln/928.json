@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-798: Use of Hard-coded Credentials", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Hard-coded credentials", "Information exposure through an error message"],
+  "description": "The function uses hard-coded credentials to set 'client_id' and 'client_secret' which is a security risk. If the script is exposed, the credentials can be easily compromised. Also, the function does not handle errors, if any error occurs during the execution, it may expose sensitive information through error messages."
+}

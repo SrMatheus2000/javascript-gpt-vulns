@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352", "CWE-200", "CWE-614"],
+"vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Information Exposure", "Sensitive Cookie in HTTPS Session Without 'Secure' Attribute"],
+"description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any form of CSRF protection. It also exposes sensitive information by setting cookies without the 'Secure' attribute, which can lead to the exposure of session IDs over unencrypted connections. Additionally, the function does not validate or sanitize the 'username' input from 'postData', which can lead to potential information exposure if the 'users' database is not properly secured."
+}

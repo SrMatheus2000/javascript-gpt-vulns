@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function fetchContentType() does not validate or sanitize the input before processing it. This could lead to various types of attacks such as Cross-Site Scripting (XSS), SQL Injection, and Command Injection if the input data is coming from an untrusted source. It's recommended to always validate and sanitize the input before processing it."
+}

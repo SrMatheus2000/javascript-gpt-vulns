@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The vulnerability exists because the function uses the .html() method to insert 'track.entries[i].text' directly into the HTML DOM. If 'track.entries[i].text' contains malicious script, it will be executed in the user's browser. Similarly, the function uses .attr() to set the class attribute with 'track.entries[i].identifier', which can also lead to XSS if it contains malicious script. The function should sanitize the input before inserting it into the HTML DOM to prevent XSS attacks."
+}

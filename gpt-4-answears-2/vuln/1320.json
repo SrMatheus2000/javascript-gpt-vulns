@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution which can cause addition or modification of properties on Object.prototype. This can lead to several types of vulnerabilities like denial of service, property injection, or even remote code execution. The vulnerability occurs because the function recursively merges properties of any object passed to it without checking if the properties are part of the object's prototype chain. This can allow an attacker to modify the Object prototype."
+}

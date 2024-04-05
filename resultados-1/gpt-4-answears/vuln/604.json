@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_310 is vulnerable to command injection. The parameters 'pathBundleIN.cert', 'pathBundleIN.key', 'pathOUT', and 'pathBundleIN.ca' are used to construct a command that is executed by the openssl.spawnWrapper function. If an attacker can control the values of these parameters, they can inject arbitrary commands to be executed on the system. This can lead to a variety of attacks, including data theft, data corruption, or denial of service."
+}

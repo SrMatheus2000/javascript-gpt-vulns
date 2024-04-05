@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function validateLink is vulnerable to Cross-Site Scripting (XSS) attacks. The function attempts to sanitize the input URL by checking for bad protocols such as 'vbscript', 'javascript', and 'file'. However, it only checks if these protocols are present before the first colon in the URL. An attacker could bypass this check by encoding the malicious script or using data URLs, allowing them to execute arbitrary JavaScript code. Additionally, the function does not properly handle Unicode or other special characters, which could be used to bypass the sanitization."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input for 'header' and 'length' which can lead to unexpected behavior (CWE-20). Also, the function uses a regular expression to parse the 'header' input which can lead to Regular expression Denial of Service (ReDoS) if the input is not properly sanitized (CWE-400)."
+}

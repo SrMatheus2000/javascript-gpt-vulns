@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The function does not validate the input 'path' properly. If the 'path' is '__proto__.toString' or '__proto__.valueOf' or any property on the prototype chain, it can lead to adding or modifying properties on the Object prototype. This can further allow attackers to manipulate the application behaviour or even cause Denial of Service (DoS) or Remote Code Execution (RCE)."
+}

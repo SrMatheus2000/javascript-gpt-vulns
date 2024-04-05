@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not properly sanitize the 'params' input, which can lead to Cross-Site Scripting (XSS) attacks. This is because the function uses the 'entities.encode' method to encode the 'params' input, but this method may not properly sanitize all possible malicious inputs. An attacker could potentially inject malicious scripts through the 'params' input, which would then be executed when the resulting HTML is rendered in a user's browser."
+}

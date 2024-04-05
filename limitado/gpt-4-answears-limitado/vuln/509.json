@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Injection"],
+  "description": "The function is vulnerable as it directly uses the input value without any validation or sanitization. This can lead to Cross-Site Scripting (XSS) attacks if the input is a script. Also, the function does not escape or encode the output, which can lead to injection attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Use of deprecated Buffer constructor"],
+"description": "The function uses the deprecated Buffer constructor, which can lead to security vulnerabilities if not used properly. The Buffer constructor is deprecated due to security and usability issues. It's recommended to use Buffer.from(), Buffer.alloc(), and Buffer.allocUnsafe() instead."
+}

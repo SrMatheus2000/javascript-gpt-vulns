@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Path Traversal", "Improper Input Validation"],
+  "description": "The function does not properly sanitize the input for the 'path' variable. This could allow an attacker to traverse the file system to access files or directories that are outside of the restricted directory. Additionally, the function does not validate the input for the 'path' variable, which could lead to unexpected behavior or errors."
+}

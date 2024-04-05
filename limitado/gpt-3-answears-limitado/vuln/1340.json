@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The provided code is vulnerable to command injection. The 'dir' parameter is directly passed to the 'execGitCommand' function without proper input validation or sanitization. An attacker can potentially manipulate the 'dir' parameter to execute arbitrary commands on the underlying system."
+}

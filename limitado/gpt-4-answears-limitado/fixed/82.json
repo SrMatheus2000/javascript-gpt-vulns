@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-676", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Use of Potentially Dangerous Function"],
+  "description": "The function is vulnerable to code injection attacks because it uses the Function constructor to create a new function from a string of JavaScript code (ctor = Function; fn = new ctor(..., src);). This allows an attacker to inject arbitrary JavaScript code into the application. The use of the 'with' statement (if (opts._with !== false) {...}) can lead to unpredictable behavior and is generally considered a bad practice. The function also uses the eval-like method 'new Function', which can lead to various security issues."
+}

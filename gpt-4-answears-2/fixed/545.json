@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Information Disclosure", "Denial of Service"],
+"description": "The function is vulnerable to Information Disclosure as it exposes internal IP addresses in the 'blacklistedAddresses' array. An attacker can use this information to map the internal network. The function is also vulnerable to Denial of Service attacks. The 'proxyPostSizeLimit' is set to a default value of '102400' which can be exploited by an attacker to send large amounts of data, potentially causing the server to run out of resources."
+}

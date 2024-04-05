@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function unique_name_449 is vulnerable to code injection. It uses the new Function() constructor to create a new function from a string, which is a form of eval(). This can allow an attacker to inject arbitrary JavaScript code into the application. The template parameter is directly used in the creation of the new function, making it a potential point of injection. The function does attempt to sanitize the template string by replacing certain characters, but this is not sufficient to prevent all possible code injection attacks."
+}

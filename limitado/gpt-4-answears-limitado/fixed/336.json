@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize the 'html' and 'author' inputs before inserting them into the HTML content. This could lead to Cross-Site Scripting (XSS) attacks if an attacker can control the 'html' or 'author' inputs, as they could insert malicious scripts that would be executed when the resulting HTML is rendered in a user's browser."
+}

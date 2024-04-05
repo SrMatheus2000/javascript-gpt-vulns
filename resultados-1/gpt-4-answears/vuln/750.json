@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an input 'text' and a 'data' object, and replaces placeholders in the text with corresponding values from the data object. However, it does not sanitize or escape the data before inserting it into the text. If the data object contains malicious script, it will be inserted into the text and may be executed when the text is rendered in a web page."
+}

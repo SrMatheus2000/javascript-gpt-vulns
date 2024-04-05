@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function appears to be vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user-supplied input in the '_getPasteContent' function without properly sanitizing it. This could allow an attacker to inject malicious scripts that would be executed in the context of the victim's session."
+}

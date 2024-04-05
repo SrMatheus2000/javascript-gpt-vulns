@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Injection attacks"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) attacks due to the use of regular expressions in the 'mime.match' and '/^application\\/(?:.+\\+)?json$/.test' methods. An attacker could provide a specially crafted payload that causes the regular expression to take a long time to evaluate, leading to a denial of service. Additionally, the function may be vulnerable to injection attacks, as it does not appear to sanitize the 'payload' input before using it in the 'internals.jsonParse' and 'parse' functions. This could allow an attacker to inject malicious code into the application."
+}

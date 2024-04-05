@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Input Validation"],
+  "description": "The function does not validate the input 'request.endpoint' before using it to split and parse the URL. This could lead to unexpected behavior or crashes if the input is not a well-formed URL. Additionally, the function does not limit the amount of data that can be appended to the 'buffer' object in the 'data' event handler. This could lead to excessive memory consumption if an attacker sends a large amount of data, potentially leading to a Denial of Service (DoS) condition."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+"vulnerabilities": ["Code Injection", "Path Traversal"],
+"description": "The function is vulnerable to both Code Injection and Path Traversal attacks. The 'name' variable is directly concatenated into the require function, which can allow an attacker to load arbitrary modules or files. This can lead to execution of malicious code (Code Injection) or accessing sensitive files (Path Traversal)."
+}

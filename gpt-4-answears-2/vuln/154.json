@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function creates a new DOM element and appends it to the body of the document. If an attacker can control the input to the '_svgTag' variable, they could inject malicious scripts that would be executed when the SVG element is rendered by the browser."
+}

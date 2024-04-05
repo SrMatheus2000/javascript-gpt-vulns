@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function 'unique_name_333' is vulnerable to Insecure Direct Object References (IDOR) because it directly uses user input in 'options' to modify the function's behavior. An attacker could potentially manipulate these options to perform actions that are not intended by the developer. This is a type of CWE-676 where potentially dangerous functions are used."
+}

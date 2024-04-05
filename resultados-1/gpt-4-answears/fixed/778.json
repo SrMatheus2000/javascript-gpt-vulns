@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-749"],
+  "vulnerabilities": ["Exposed Dangerous Method or Function"],
+  "description": "The function is vulnerable as it exposes potentially dangerous methods or functions. The Electron framework is used in this function, which is known for its security issues if not properly handled. The function uses 'ipcMain.emit' which can be exploited if the event names are known to an attacker. This can lead to Remote Code Execution (RCE) if an attacker can send events to 'ipcMain'. Also, the function uses 'webContents' which can be manipulated to inject malicious scripts. It's recommended to validate and sanitize all inputs and limit the exposure of methods and functions."
+}

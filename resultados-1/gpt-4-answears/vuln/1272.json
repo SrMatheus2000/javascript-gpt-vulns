@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_744 is vulnerable to OS command injection. It concatenates a user-supplied input 'direction' directly into a command that is executed by the system. An attacker could provide a malicious input that includes command separators or terminators, allowing them to execute arbitrary commands on the system."
+}

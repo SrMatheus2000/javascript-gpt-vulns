@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["URL Manipulation"],
+  "description": "The function does not validate the input parameters 'url' and 'queryParams'. This could lead to URL manipulation where an attacker could inject malicious parameters. It's recommended to validate and sanitize all inputs."
+}

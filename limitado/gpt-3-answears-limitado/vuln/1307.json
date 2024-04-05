@@ -1,0 +1,13 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-94",
+    "CWE-99"
+  ],
+  "vulnerabilities": [
+    "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "Improper Control of Generation of Code ('Code Injection')",
+    "Improper Control of Resource Identifiers ('Resource Injection')"
+  ],
+  "description": "The provided JavaScript function is vulnerable to multiple CWEs:\n\n1. CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') - The function uses user-controlled input (chunk) directly in the console.log statements without proper sanitization or validation, which can lead to command injection vulnerabilities.\n\n2. CWE-94: Improper Control of Generation of Code ('Code Injection') - The function uses user-controlled input (chunk) to dynamically generate file

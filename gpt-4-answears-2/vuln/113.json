@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Potential Cross-Site Scripting (XSS)"],
+"description": "The function uses the escapeFn function on user-supplied input. If escapeFn is not properly implemented, it could lead to Cross-Site Scripting (XSS) vulnerabilities. Additionally, the function attempts to push values to 'args' array which is not defined within the function scope, this could lead to ReferenceError."
+}

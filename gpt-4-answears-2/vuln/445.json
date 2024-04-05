@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20"],
+"vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to SQL Injection attacks (CWE-89) because it concatenates user-controlled input into SQL queries without proper sanitization or parameterization. This can be seen in the `pruneSessions`, `get`, `set`, `destroy`, and `touch` methods where the `this.quotedTable()` function is used to include the table name directly into the SQL query. If an attacker can control the `tableName` or `schemaName` properties, they can inject arbitrary SQL commands. Additionally, the function does not validate or sanitize the `options` object (CWE-20), which can lead to unexpected behavior if the object contains unexpected properties."
+}

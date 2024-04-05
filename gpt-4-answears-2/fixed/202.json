@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function does not properly sanitize the 'data' input, which can lead to Cross-Site Scripting (XSS) if the input includes malicious scripts. This is a violation of CWE-79. Additionally, the function does not validate the 'data' input properly, which can lead to unexpected behavior or errors. This is a violation of CWE-20."
+}

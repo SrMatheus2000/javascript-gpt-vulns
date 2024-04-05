@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_791 is vulnerable to OS command injection. The 'file' parameter is directly concatenated into the command string without any sanitization or escaping. This means that if a user can control the 'file' parameter, they can inject arbitrary commands to be executed on the server. For example, if a user were to pass a value like '; rm -rf /' as the 'file' parameter, it would delete all files on the server."
+}

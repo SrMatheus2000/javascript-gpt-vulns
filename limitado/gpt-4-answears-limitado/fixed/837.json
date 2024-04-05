@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Code Injection"],
+  "description": "The function is vulnerable as it does not validate or sanitize the input data. This can lead to SQL Injection if the data is used in a SQL query or Code Injection if the data is used in a function or eval. The function also does not handle errors properly which can lead to unexpected behavior or crashes."
+}

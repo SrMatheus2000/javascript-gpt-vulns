@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It uses the 'dangerouslySetInnerHTML' property which is a known security risk as it directly inserts HTML content into the component and does not escape or sanitize the HTML. This can lead to XSS attacks if the source is not properly sanitized. Additionally, the function does not properly encode or escape the output, which can lead to injection attacks."
+}

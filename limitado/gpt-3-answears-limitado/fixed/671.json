@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Improper Neutralization of Special Elements used in an OS Command"],
+  "description": "The function makeParentPath is vulnerable to path traversal and command injection attacks. It uses the user-provided 'dir' parameter directly in the path.dirname() function without proper validation or sanitization, allowing an attacker to manipulate the directory path and potentially access files outside the intended directory. Additionally, the function does not properly sanitize the input before passing it to the mkdirp() function, which can lead to command injection vulnerabilities."
+}

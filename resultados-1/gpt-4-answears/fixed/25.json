@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Shell Injection"],
+  "description": "The function escapeShellArg is vulnerable to shell injection attacks. It attempts to sanitize the input by replacing null characters and single quotes, but it does not handle all special characters that could be used in a shell command. An attacker could potentially inject malicious shell commands by using other special characters or sequences that are not properly escaped by this function."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-367"],
+  "vulnerabilities": ["Command Injection", "Insecure Direct Object References"],
+  "description": "The function is vulnerable to command injection and insecure direct object references. The 'er' parameter is not properly validated before being used in the 'cb' function, which can lead to command injection attacks. Additionally, the 'this.prefix' value is used without proper authorization checks, which can result in insecure direct object references."
+}

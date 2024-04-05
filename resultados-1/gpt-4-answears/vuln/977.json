@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Open Redirect and Cross-Site Scripting (XSS) attacks. The Open Redirect vulnerability exists because the function redirects the user to a URL specified in the 'from' query parameter without validating it. An attacker can exploit this to redirect users to a malicious website. The XSS vulnerability exists because the function includes user-supplied data in the response without properly sanitizing it. An attacker can exploit this to inject malicious scripts that will be executed in the user's browser."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-89"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) and SQL Injection attacks. The function does not sanitize the 'name', 'size', and 'lastModified' parameters before inserting them into the HTML and SQL query. An attacker could potentially insert malicious scripts or SQL commands through these parameters, leading to unauthorized access or data manipulation."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It directly inserts user input into HTML without proper sanitization or escaping. An attacker could inject malicious scripts by providing a 'key' or 'value' that includes script tags. This could lead to various attacks such as stealing sensitive data, session hijacking, or defacement of the website. The associated Common Weakness Enumeration (CWE) identifier is CWE-79, which refers to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

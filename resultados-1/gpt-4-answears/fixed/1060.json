@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-20"],
+  "vulnerabilities": ["Path Traversal", "Input Validation"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user-supplied input in file paths without properly validating or sanitizing it. This could allow an attacker to access, read, or modify files outside of the intended directory. The function also lacks proper input validation (CWE-20), as it does not sufficiently check or sanitize the 'path' variable before using it, which could lead to various types of attacks."
+}

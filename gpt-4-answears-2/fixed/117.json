@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any common security vulnerabilities. It is a syntax highlighting function for the Kotlin programming language, and does not perform any operations that would typically be associated with security risks, such as handling user input, manipulating the DOM, or making network requests."
+}

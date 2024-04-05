@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Information Exposure Through Sent Data"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) as it allows the user to specify a URL to which a request is made. An attacker can exploit this to make requests to internal resources that are not normally accessible. This can lead to information exposure. The function also does not validate the input URL, which can lead to unexpected behavior."
+}

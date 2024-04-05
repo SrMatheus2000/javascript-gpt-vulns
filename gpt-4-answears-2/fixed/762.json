@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Injection vulnerability", "Improper input validation"],
+"description": "The function does not validate the input 'param'. This could lead to injection attacks if the input includes special characters. Also, the function does not check if 'param' is a string before calling the 'trim' and 'split' methods, which could lead to a TypeError if 'param' is not a string. Furthermore, the function does not handle the case where 'param' includes more than one '=' character, which could lead to unexpected behavior."
+}

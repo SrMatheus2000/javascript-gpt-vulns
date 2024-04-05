@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-78"],
+"vulnerabilities": ["Path Traversal", "OS Command Injection"],
+"description": "The function is vulnerable to Path Traversal and OS Command Injection. The 'scanner' parameter is used to construct a file path and a command without proper sanitization or validation. An attacker could manipulate the 'scanner' parameter to navigate to arbitrary directories (Path Traversal, CWE-22) or execute arbitrary commands (OS Command Injection, CWE-78)."
+}

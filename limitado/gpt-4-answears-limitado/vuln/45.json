@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Information Disclosure", "Path Traversal"],
+  "description": "The function is vulnerable to Information Disclosure as it pushes error messages to the 'projectLogMessages' array which might expose sensitive information about the system. It is also vulnerable to Path Traversal as it uses user-supplied input in 'settings.flowFile' to construct a file path without proper sanitization or validation, potentially allowing an attacker to access arbitrary files on the system."
+}

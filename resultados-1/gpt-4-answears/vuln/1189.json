@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_685' is vulnerable to Cross-Site Scripting (XSS) attacks. The vulnerability exists because the function does not properly sanitize the 'name' property of the 'currNodeData' object before appending it to the 'nodeName' string, which is later used as the 'text' property in the 'FileListDialog.openWindow' function. An attacker could exploit this vulnerability by injecting malicious script code into the 'name' property, which would then be executed in the context of the user's browser when the dialog window is opened."
+}

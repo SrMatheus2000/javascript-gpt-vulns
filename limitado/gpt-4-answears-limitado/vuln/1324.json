@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89"],
+  "vulnerabilities": ["OS Command Injection", "SQL Injection"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input in the 'exec' function without proper sanitization or validation. This could allow an attacker to execute arbitrary commands on the system. Additionally, if the 'options' object contains SQL commands, it could lead to SQL injection if the 'merge' function concatenates the SQL commands into a query that is executed against a database."
+}

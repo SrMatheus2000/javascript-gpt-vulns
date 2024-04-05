@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676", "CWE-20"],
+"vulnerabilities": ["Use of Potentially Dangerous Function", "Improper Input Validation"],
+"description": "The function uses the 'new Buffer' constructor, which can have security vulnerabilities if not used properly. It can lead to memory exposure if the input is not properly validated. Also, the function does not validate the 'data' input before processing it, which can lead to unexpected behavior or errors."
+}

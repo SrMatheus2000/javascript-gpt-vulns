@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'stderr' variable is directly concatenated into a command string that is executed by the 'exec' function. If an attacker can control the value of 'stderr', they can inject arbitrary commands to be executed on the system."
+}

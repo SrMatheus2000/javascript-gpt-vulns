@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function unique_name_453 is vulnerable to open redirect attacks. The 'redirect_uri' parameter in the 'urlOpts' object is taken from 'self.redirectUri' without any validation. An attacker can manipulate 'self.redirectUri' to redirect users to a malicious site after the OAuth process. This can lead to phishing attacks, session theft, or force the user to perform unwanted actions."
+}

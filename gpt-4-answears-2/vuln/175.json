@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Null Pointer Dereference"],
+"description": "The function 'unique_name_89' is vulnerable to null pointer dereference. The function 'iter' is called within the function but it is not defined anywhere. This could lead to a null pointer dereference if the function 'iter' is not defined before this function is called. Similarly, 'entries' is also not defined anywhere in the function which could also lead to a null pointer dereference."
+}

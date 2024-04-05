@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Potential Code Injection"],
+"description": "The function seems to be vulnerable to code injection attacks. The function 'fn' is called with user-supplied input (scope, locals, context) and the result is assigned to 'fnPtr'. If an attacker can control the input to 'fn', they may be able to execute arbitrary code. Additionally, the use of 'apply' method can also lead to potential code execution vulnerabilities if not properly sanitized."
+}

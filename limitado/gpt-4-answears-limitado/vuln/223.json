@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input in the 'template' variable without proper sanitization or encoding, which is then used in the 'replace' function. This could allow an attacker to inject malicious scripts that would be executed in the context of the user's browser session. Additionally, the function does not properly validate the 'data' input, which could lead to unexpected behavior or errors."
+}

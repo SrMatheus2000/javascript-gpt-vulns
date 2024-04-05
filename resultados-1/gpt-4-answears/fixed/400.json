@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function jsonPathExtractionQuery takes two parameters, column and path, and uses them to construct an SQL query. However, it does not properly sanitize these inputs before using them in the query. This could allow an attacker to inject malicious SQL code into the query, leading to SQL Injection vulnerability. This is particularly dangerous as it could allow an attacker to view, modify, or delete data in the database."
+}

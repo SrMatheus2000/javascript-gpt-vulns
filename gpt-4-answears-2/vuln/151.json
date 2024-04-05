@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-94", "CWE-20"],
+"vulnerabilities": ["OS Command Injection", "Code Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to OS command injection as it uses the exec function with user-supplied input (urlSanitized) which is not properly sanitized. This could allow an attacker to execute arbitrary commands on the system. The function is also vulnerable to code injection as it dynamically requires modules based on user-supplied input (urlSanitized). Furthermore, the function does not properly validate the input (url) before using it, which could lead to various types of attacks."
+}

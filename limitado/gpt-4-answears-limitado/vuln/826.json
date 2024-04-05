@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94"],
+  "vulnerabilities": ["Path Traversal", "Code Injection"],
+  "description": "The function is vulnerable to Path Traversal and Code Injection attacks. The _extGetter function uses the 'require' function with a variable ('./extensions/getter') which can be manipulated to access and execute arbitrary files on the system. This is a Path Traversal vulnerability (CWE-22). Also, the 'set' method of the Mimer prototype uses the 'ext' parameter in a 'match' function without proper sanitization, which can lead to Code Injection (CWE-94)."
+}

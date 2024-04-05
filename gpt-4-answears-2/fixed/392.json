@@ -1,0 +1,6 @@
+{
+"isulnerable": true,
+"CWEs": ["CWE-754", "CWE-691"],
+"vulnerabilities": ["Improper Check for Unusual or Exceptional Conditions", "Insufficient Flow Management"],
+"description": "The function does not handle case where the 'algo' parameter is not one of the expected enum values. This could lead to unexpected behavior or errors. Additionally, the function does not validate the 'pub_params' array length before accessing its elements, which could lead to 'undefined' values being passed to other functions if the array is not of the expected length."
+}

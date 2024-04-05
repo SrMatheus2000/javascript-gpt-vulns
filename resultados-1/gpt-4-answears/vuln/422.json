@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Infinite Loop Vulnerability"],
+  "description": "The function stripCustomNsAttrs has a potential vulnerability that can lead to an infinite loop. If the node has a child node, the function calls itself recursively with the child node as the argument. However, if the child node also has a child node, the function will keep calling itself indefinitely, leading to an infinite loop. This can cause the browser to freeze or crash, leading to a Denial of Service (DoS) attack."
+}

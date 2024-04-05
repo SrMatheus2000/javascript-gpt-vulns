@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-328: Reversible One-Way Hash", "CWE-200: Information Exposure", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References", "Timing Attack"],
+  "description": "The function is vulnerable to a timing attack because it uses a non-constant time comparison for the HMAC validation. This could allow an attacker to determine the correct HMAC one character at a time by measuring how long it takes for the comparison to fail. Additionally, the function exposes potentially sensitive information such as the token version, time, and HMAC in error messages. Finally, the function uses a reversible one-way hash function for the HMAC, which could allow an attacker to recover the original input."
+}

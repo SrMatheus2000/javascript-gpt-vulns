@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Insecure File Deletion"],
+  "description": "The function is vulnerable to path traversal and insecure file deletion. An attacker can manipulate the 'path' parameter to access files outside of the intended directory and delete arbitrary files on the system."
+}

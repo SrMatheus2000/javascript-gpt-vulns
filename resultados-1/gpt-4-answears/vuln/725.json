@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks if a stream is writable before proceeding, and it handles data encoding in a safe manner. It also properly handles errors by emitting an 'error' event with a relevant error message. Therefore, it does not seem to be vulnerable to common JavaScript vulnerabilities such as Cross-Site Scripting (XSS), Injection Attacks, or Insecure Direct Object References."
+}

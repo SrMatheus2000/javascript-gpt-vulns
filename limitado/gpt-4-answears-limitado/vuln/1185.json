@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The error message is directly concatenated with a string and set as the value of the CodeMirror instance (cm). If the error message is user-controlled input, it could include malicious scripts, which would then be executed in the context of the user's browser when the error message is displayed. This could lead to a variety of attacks, such as stealing the user's session cookies or performing actions on their behalf."
+}

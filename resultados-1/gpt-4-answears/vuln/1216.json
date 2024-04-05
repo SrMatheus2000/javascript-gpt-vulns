@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery $() function to create HTML elements from user-supplied input, which can include malicious scripts. This can allow an attacker to inject arbitrary web script or HTML via the 'colname' and 'inputstring' variables. This is a violation of the rule that one should never create HTML elements using user-supplied input. The vulnerability is classified as CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

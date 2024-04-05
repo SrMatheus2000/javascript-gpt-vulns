@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The function does not validate the input for the 'key' parameter. If the 'key' parameter is '__proto__' or 'prototype' and 'value' parameter is an arbitrary JavaScript value, it can add or modify properties of the Object prototype. This can lead to various attacks such as denial of service, property injection, or even remote code execution if the application logic depends on the polluted object properties."
+}

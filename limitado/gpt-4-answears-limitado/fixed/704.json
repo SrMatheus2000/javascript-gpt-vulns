@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to parse the 'path'. If the input string is large or complex enough, it can cause the application to freeze or crash, this is known as a Regular Expression Denial of Service (ReDoS) attack. The regex /^git@[^:\\s]+:(\\S+)\\// is vulnerable to ReDoS because it can end up taking a large amount of time to run on certain inputs."
+}

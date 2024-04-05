@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers ('HTTP Response Splitting')"],
+  "vulnerabilities": ["HTTP Header Injection", "HTTP Response Splitting"],
+  "description": "The function does not properly validate the 'url' parameter. An attacker could potentially manipulate the 'url' parameter to inject malicious content, leading to HTTP Header Injection or HTTP Response Splitting vulnerabilities. This could allow an attacker to set arbitrary HTTP headers and control the body of the HTTP response. The function should properly sanitize and validate the 'url' parameter to prevent these types of attacks."
+}

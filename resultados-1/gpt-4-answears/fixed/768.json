@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Sensitive Information Exposure"],
+  "description": "The function is vulnerable as it exposes sensitive information. If the key is not 'AEGIR_GHTOKEN', it directly assigns the value from the process environment variable to the env object. This could potentially expose sensitive information stored in the environment variables. It's recommended to avoid direct assignment from process.env and use secure ways to handle sensitive data."
+}

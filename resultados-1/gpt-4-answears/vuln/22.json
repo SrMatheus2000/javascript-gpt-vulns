@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_6 is vulnerable to OS command injection. The function uses the exec function to execute system commands, and it directly includes user-supplied input (the 'port' parameter) in the command without properly sanitizing it. An attacker could provide a malicious input that includes command separators or other special characters, allowing them to execute arbitrary commands on the system."
+}

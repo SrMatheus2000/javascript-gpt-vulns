@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-73: External Control of File Name or Path", "CWE-404: Improper Resource Shutdown or Release"],
+"vulnerabilities": ["Command Injection", "Path Manipulation", "Improper Cleanup"],
+"description": "The function is vulnerable to command injection because it concatenates user-controlled input into command strings without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. The function also uses user-controlled input to construct a file path, which could lead to path manipulation attacks if the input is not properly validated. Finally, the function does not properly clean up the created file in case of an error, which could lead to resource exhaustion."
+}

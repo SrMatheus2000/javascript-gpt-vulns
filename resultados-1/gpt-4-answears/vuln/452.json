@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'unique_name_218' is vulnerable to code injection. The function takes a 'node' and 'initialScope' as parameters and uses the 'getStaticValueR' and 'getElementValues' functions to manipulate these parameters. The 'tag' and 'expressions' variables are then used to create a new function 'func' which is executed with the 'strings' and 'expressions' variables as arguments. If an attacker can control the 'node' parameter, they could potentially inject malicious code into the 'strings' or 'expressions' variables, leading to code injection."
+}

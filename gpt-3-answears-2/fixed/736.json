@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The code is vulnerable to command injection. The 'branch' variable is directly used in the 'execFileSync' function without proper input validation or sanitization. An attacker can manipulate the 'branch' variable to execute arbitrary commands on the system."
+}

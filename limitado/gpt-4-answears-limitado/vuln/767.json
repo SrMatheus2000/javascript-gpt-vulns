@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function seems to be moving files around without any validation of the 'from' or 'fromModules' parameters. This could potentially allow an attacker to manipulate the file system outside of the intended boundaries, leading to unauthorized access to sensitive information or even code execution. This is known as a Path Traversal vulnerability."
+}

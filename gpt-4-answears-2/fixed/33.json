@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It properly checks for property existence before accessing or deleting them, and it also checks for '__proto__' property to prevent prototype pollution. It also checks if the object is an array before using the splice method. Therefore, it does not seem to be vulnerable to common JavaScript vulnerabilities such as Cross-Site Scripting (XSS), Prototype Pollution, or Type Confusion."
+}

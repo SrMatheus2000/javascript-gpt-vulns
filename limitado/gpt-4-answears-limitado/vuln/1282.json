@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function is not vulnerable. It correctly checks for 'constructor' and '__proto__' keys to prevent prototype pollution."
+}

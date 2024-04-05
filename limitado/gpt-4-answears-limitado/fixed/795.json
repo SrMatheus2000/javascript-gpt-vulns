@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncaught exceptions"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not validate the size of the input data before allocating memory using Buffer.alloc(0). This can lead to excessive memory consumption if an attacker provides a large amount of data, leading to a DoS condition. Additionally, the function does not handle exceptions properly. If an error occurs and no onError function is provided in the options, the function will throw an uncaught exception, which can crash the application."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function cmdSet uses the eval() function to parse the input value. This is a dangerous practice as it allows for arbitrary code execution. An attacker could potentially inject malicious code as the value, which would then be executed by the eval() function. This is a code injection vulnerability."
+}

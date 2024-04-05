@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information"],
+"description": "The function is using HTTP to fetch data from a remote server. This is a security vulnerability because the data is not encrypted and can be intercepted by attackers. It should use HTTPS instead."
+}

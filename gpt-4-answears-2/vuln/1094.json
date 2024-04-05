@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be safe. It checks if the property 'root' is being set and prevents it, which avoids potential remote code execution. There is no apparent vulnerability as it does not execute or evaluate any user-supplied data."
+}

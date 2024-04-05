@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Remote File Inclusion", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user-supplied input (moduleVer) to construct a file path without proper validation or sanitization. This could allow an attacker to access, modify, or delete files outside of the intended directory. It's also vulnerable to Remote File Inclusion (CWE-94) as it downloads a file from a URL constructed with user-supplied input without proper validation. This could allow an attacker to execute arbitrary code. Lastly, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it doesn't limit the size of the file being downloaded, which could lead to a denial of service if an attacker provides a URL to a large file."
+}

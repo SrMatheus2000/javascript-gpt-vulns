@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function loadProject is vulnerable to path traversal attacks. The function uses the user-supplied 'name' parameter to construct a file path to load a project. An attacker can manipulate the 'name' parameter to navigate the file system outside of the intended directory. This can lead to unauthorized access to files, which can result in sensitive information disclosure, data corruption, or even execution of arbitrary code if the attacker can reach a file with executable permissions."
+}

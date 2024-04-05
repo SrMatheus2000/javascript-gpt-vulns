@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can cause application-wide changes to JavaScript objects. If an attacker can control the input to the 'merge' function, they can add or modify properties of 'Object.prototype'. These changes could lead to application crashes or even remote code execution. Additionally, the function does not have any mechanism to prevent or control the consumption of resources, which can lead to a denial of service (DoS) condition."
+}

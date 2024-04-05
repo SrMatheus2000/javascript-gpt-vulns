@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it uses the 'interpolate' and 'sanitize' methods on user-supplied data without proper validation. This could allow an attacker to inject malicious scripts. Also, the function does not validate the input 'data' properly, which could lead to unexpected behavior or errors."
+}

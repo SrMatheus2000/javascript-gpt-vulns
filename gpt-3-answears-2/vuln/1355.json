@@ -1,0 +1,22 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-20",
+    "CWE-78",
+    "CWE-95",
+    "CWE-116",
+    "CWE-119",
+    "CWE-134",
+    "CWE-476"
+  ],
+  "vulnerabilities": [
+    "Improper Input Validation",
+    "Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+    "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "Use of Externally-Controlled Format String",
+    "Improper Restriction of Operations within the Bounds of a Memory Buffer",
+    "Use of Incorrectly-Resolved Name or Reference",
+    "NULL Pointer Dereference"
+  ],
+  "description": "The provided JavaScript function 'df' is vulnerable to multiple common weaknesses and exposures (CWEs). These vulnerabilities include improper input validation, cross-site scripting (XSS), OS command injection, use of externally-controlled format string, improper restriction of operations within the bounds of a memory buffer, use of incorrectly-resolved name or reference, and NULL pointer dereference. These vulnerabilities can lead to various security issues such as remote code execution, information disclosure, and denial of service attacks."
+}

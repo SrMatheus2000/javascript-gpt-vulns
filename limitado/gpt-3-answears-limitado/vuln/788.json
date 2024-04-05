@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-79"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) and Cross-Site Scripting (XSS) attacks. The regular expression used in the function can be exploited to cause a denial of service by providing a specially crafted input that triggers exponential backtracking. Additionally, the function does not properly sanitize or encode the input data, making it susceptible to XSS attacks."
+}

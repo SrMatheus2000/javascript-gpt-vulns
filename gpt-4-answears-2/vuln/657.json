@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-209: Information Exposure Through an Error Message", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Information Exposure", "Path Traversal"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks because it does not limit the size of the image that can be requested. This could allow an attacker to request a very large image, consuming server resources and potentially causing the server to crash. The function also exposes potentially sensitive information in error messages, which could be used by an attacker to gain more information about the system. Additionally, the function does not properly validate the URL parameter, which could allow an attacker to traverse the file system and access restricted directories."
+}

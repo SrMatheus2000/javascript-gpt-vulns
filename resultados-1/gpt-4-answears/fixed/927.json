@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')", "CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. The function does not properly validate the 'path' parameter, which can be controlled by an attacker. This can lead to modification of the prototype of 'Object' if the path is '__proto__' or 'constructor.prototype'. An attacker can add or modify properties of 'Object.prototype' which will be inherited by all objects. This can lead to several types of attacks like denial of service, property injection, or even remote code execution if the application logic depends on the polluted object properties."
+}

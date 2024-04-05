@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-807: Reliance on Untrusted Inputs in a Security Decision"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not properly validate the 'field' parameter. An attacker can pass '__proto__' or 'prototype' as a field, which can lead to Prototype Pollution vulnerability. This can allow an attacker to manipulate or extend the behavior of objects in JavaScript, potentially leading to Remote Code Execution or other security issues."
+}

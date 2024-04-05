@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["No input validation"],
+  "description": "The function does not validate the input 'v'. This can lead to unexpected behavior if the input is not in the expected format. For example, if 'v' does not contain a ';', the function will throw an error. Additionally, the function does not handle the case where 'v' is null or undefined, which will also lead to an error. Furthermore, the function does not validate the format of the parameters in 'v'. If a parameter does not contain an '=', the function will add a property to 'parsedParams' with a key of the entire parameter and a value of true. This could potentially be exploited to add unexpected properties to 'parsedParams'."
+}

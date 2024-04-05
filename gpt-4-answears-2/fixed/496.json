@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+"description": "The function uses a regular expression (RegExp) to replace a password in a URI with asterisks. However, it does not validate the input, which can lead to a Regular Expression Denial of Service (ReDoS) if a user provides a long, specially crafted string as a password. This can cause the application to consume excessive resources, potentially leading to a denial of service."
+}

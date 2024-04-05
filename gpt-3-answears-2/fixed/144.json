@@ -1,0 +1,6 @@
+{
+ "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The deepExtend function does not have any known vulnerabilities."
+}

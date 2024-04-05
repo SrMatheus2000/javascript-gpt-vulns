@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'command' and 'args' variables are used to execute a command using the 'child_process.execFileSync' function. If an attacker can control the value of 'command' or any element of 'args', they can execute arbitrary commands on the system."
+}

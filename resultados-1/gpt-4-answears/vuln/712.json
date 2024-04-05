@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function fetchContentType() is vulnerable as it does not validate or sanitize the input it receives. This can lead to various types of attacks such as SQL Injection where an attacker can inject malicious SQL commands. This can lead to unauthorized access to sensitive data, data corruption or even data loss. It is recommended to always validate and sanitize input data to prevent such vulnerabilities."
+}

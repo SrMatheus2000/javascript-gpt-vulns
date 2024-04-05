@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function is vulnerable to a buffer overflow attack due to the use of the deprecated Buffer constructor without proper length validation. An attacker can provide a large input value that exceeds the buffer size, causing a buffer overflow and potentially leading to arbitrary code execution."
+}

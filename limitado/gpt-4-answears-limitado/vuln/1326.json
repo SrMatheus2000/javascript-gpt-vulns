@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Denial of Service", "Improper Input Validation"],
+  "description": "The function setup() is vulnerable to several types of attacks. Firstly, it is susceptible to code injection attacks because it allows the execution of arbitrary code via the 'options' parameter. This is a serious security risk as it can lead to unauthorized access and control over the system. Secondly, the function does not properly manage system resources, making it vulnerable to Denial of Service (DoS) attacks. An attacker could potentially overload the system by sending a large number of requests, causing it to crash. Lastly, the function does not properly validate input, which can lead to various types of attacks

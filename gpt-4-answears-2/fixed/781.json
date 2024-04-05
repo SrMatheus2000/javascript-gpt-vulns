@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the input 'path' properly. An attacker can provide a malicious input that can lead to unexpected behavior. This can lead to various security issues depending on the context where this function is used."
+}

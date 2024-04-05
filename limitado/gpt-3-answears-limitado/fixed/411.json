@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89"],
+  "vulnerabilities": ["Command Injection", "SQL Injection"],
+  "description": "The function is vulnerable to command injection and SQL injection attacks. The 'cmd' variable is directly concatenated with user-controlled input ('ap.ssid') without proper sanitization or validation, which can allow an attacker to execute arbitrary commands. Additionally, the 'config.iface' variable is also directly concatenated with user-controlled input without proper sanitization, which can lead to SQL injection vulnerabilities."
+}

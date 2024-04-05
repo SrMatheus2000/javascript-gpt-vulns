@@ -1,0 +1,6 @@
+{
+ isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'location.href' is used in the function to create a URL for the 'marker-start' and 'marker-end' attributes in the SVG element. If an attacker can control the 'location.href', they can inject malicious scripts into the SVG element, which will be executed when the SVG is rendered."
+}

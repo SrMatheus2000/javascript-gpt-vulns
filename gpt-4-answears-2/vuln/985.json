@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it uses the .html() method to insert user-controlled data (the 'caption' variable) into the HTML DOM. An attacker could potentially insert malicious scripts as the 'data-caption' attribute of the '$image' object, which would then be executed in the context of the user's browser when the .html(caption) line is executed."
+}

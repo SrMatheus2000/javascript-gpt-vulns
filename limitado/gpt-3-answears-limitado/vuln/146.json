@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable to any known CWEs. It is a simple email validation function that checks if the given string matches the pattern of a valid email address."
+}

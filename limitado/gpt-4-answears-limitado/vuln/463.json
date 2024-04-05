@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Improper Input Validation"],
+  "description": "The function is vulnerable to URL redirection attacks because it takes a URL from the request query and uses it to redirect the user. An attacker could manipulate the 'url' query parameter to redirect a user to an untrusted site. This is known as an Open Redirect Vulnerability (CWE-601). Additionally, the function does not validate or sanitize the 'url' query parameter before using it, which could lead to other types of attacks such as Cross-Site Scripting (XSS) or SQL Injection if the 'url' parameter is used in a context that allows it (CWE-20)."
+}

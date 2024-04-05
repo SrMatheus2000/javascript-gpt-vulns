@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) and Uncontrolled Resource Consumption. The function uses regular expressions to match user agents, which can be exploited by an attacker to cause a denial of service by providing a specially crafted user agent string that takes a long time to process. The function also does not limit the amount of resources it uses, which can lead to resource exhaustion if an attacker sends a large number of requests."
+}

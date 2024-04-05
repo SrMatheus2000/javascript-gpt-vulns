@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation", "Resource Exhaustion"],
+  "description": "The function is vulnerable to code injection because it uses the 'require' function with a variable ('ruleSource') that can be manipulated by an attacker. This can lead to remote code execution. Additionally, the function does not properly validate the input for 'ruleSource', which can lead to unexpected behavior. The function also does not limit the size of the 'rules' array, which can lead to resource exhaustion if an attacker provides a large array."
+}

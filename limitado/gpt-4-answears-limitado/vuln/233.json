@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'innerHTML' property is used to write the 'index' directly into the 'childField' element. If the 'index' is controlled by the user, it could be used to inject malicious scripts into the webpage. This is a common security issue known as Cross-Site Scripting (XSS)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information"],
+  "description": "The function is using HTTP to fetch the latest version of chromedriver, which is not secure. The data transmitted over HTTP can be intercepted and viewed by an attacker. This is a violation of CWE-319: Cleartext Transmission of Sensitive Information. It is recommended to use HTTPS instead of HTTP for secure transmission of data."
+}

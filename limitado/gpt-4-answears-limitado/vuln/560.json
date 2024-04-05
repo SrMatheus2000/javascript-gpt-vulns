@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled File Name or Path"],
+  "description": "The function does not properly validate the 'header.name' input, which is used to construct a file path. This could allow an attacker to traverse the file system to arbitrary locations or include arbitrary files. The function also does not properly handle symbolic links, which could be exploited to access arbitrary files. Additionally, the function does not validate the 'header.type' input, which could allow an attacker to create arbitrary file types."
+}

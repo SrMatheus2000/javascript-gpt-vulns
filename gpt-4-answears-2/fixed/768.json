@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure"],
+"vulnerabilities": ["Information Exposure"],
+"description": "The function exposes sensitive information by assigning values from the process environment variables to the 'env' object. If the 'key' is not 'AEGIR_GHTOKEN', the function will expose the value of the environment variable with the same name as the 'key'. This could potentially expose sensitive information such as database credentials, API keys, or other secrets stored in the environment variables."
+}

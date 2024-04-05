@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-706"],
+"vulnerabilities": ["Path Traversal", "Use of Incorrectly-Resolved Name or Reference"],
+"description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user-supplied input in 'entry.absolute' without proper validation or sanitization. This could allow an attacker to access, modify, or delete files outside of the intended directory. Additionally, the function uses bracket notation to call methods (e.g., this[PEND]()), which could lead to the use of incorrectly-resolved names or references (CWE-706) if the variables used in the brackets are manipulated by an attacker."
+}

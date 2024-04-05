@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection", "Improper Input Validation"],
+  "description": "The function 'execCommand' is vulnerable to OS command injection as it directly uses the 'command' parameter in 'child_process.execFileSync' and 'child_process.execFile' without any sanitization or validation. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function does not validate the 'options' parameter, which could lead to code injection if an attacker can control the 'shell' option. The function also does not handle errors properly, which could lead to unhandled promise rejections."
+}

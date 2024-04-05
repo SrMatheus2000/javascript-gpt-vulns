@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the input 'quad' before using it. This could lead to unexpected behavior or errors if 'quad' is not in the expected format or type. It could also potentially lead to security vulnerabilities if an attacker can control the value of 'quad'."
+}

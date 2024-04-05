@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_758 is vulnerable to OS command injection. The 'option' parameter is concatenated directly into the command string without any sanitization or escaping. This means that an attacker could provide a specially crafted 'option' that modifies the command being executed, potentially allowing arbitrary command execution."
+}

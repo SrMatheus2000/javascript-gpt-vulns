@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not limit the number of concurrent uploads, which can lead to resource exhaustion and a Denial of Service (DoS) attack. An attacker can send a large number of concurrent uploads, which can consume all available resources (CPU, memory, disk space) and make the server unresponsive. This is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

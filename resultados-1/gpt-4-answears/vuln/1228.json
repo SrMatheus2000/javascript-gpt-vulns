@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function unique_name_715 is vulnerable to SQL Injection. The padId variable is directly concatenated into the SQL query without any form of sanitization or parameterization, which means an attacker could potentially control the structure of the SQL query."
+}

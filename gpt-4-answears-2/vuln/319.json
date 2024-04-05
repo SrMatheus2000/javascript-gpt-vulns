@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Potential command injection"],
+"description": "The function uses a regular expression to test and replace a string, which can lead to Regular Expression Denial of Service (ReDoS) if the input is a long, specially crafted string. Additionally, the function uses the 'replace' method which can be potentially dangerous if the 'cwd' variable contains command injection payloads."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The value of 'val' is directly used to create a new span without proper sanitization or encoding, which could allow an attacker to inject malicious scripts. The same issue occurs when 'val' is used in the 'screen-reader-text' span. This could lead to arbitrary script execution in the context of the user's browser session. The vulnerability corresponds to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

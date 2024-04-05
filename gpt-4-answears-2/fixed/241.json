@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function does not properly validate the input for the 'method', 'origin', 'path', 'valid', and 'stream' parameters. This could lead to SQL injection if the input is crafted in a certain way. The function also does not limit the amount of resources it uses, which could lead to a denial of service (DoS) if an attacker sends a large amount of data."
+}

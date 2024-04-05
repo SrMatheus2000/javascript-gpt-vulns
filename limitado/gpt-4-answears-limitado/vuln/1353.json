@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection because it concatenates a user-supplied command directly into a string that is executed as a shell command. An attacker could provide a malicious command that is executed with the privileges of the process, potentially leading to arbitrary code execution, data leakage, or denial of service."
+}

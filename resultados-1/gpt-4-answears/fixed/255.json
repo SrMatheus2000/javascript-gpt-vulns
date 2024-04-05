@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input in the 'innerHTML' property of an element. If an attacker can control the 'data-youtube', 'data-vimeo', 'data-ytparams', or 'data-vimeoparams' attributes, they could inject malicious scripts that would be executed in the context of the user's session. This could lead to session hijacking, defacement of the website, or execution of arbitrary actions on behalf of the user."
+}

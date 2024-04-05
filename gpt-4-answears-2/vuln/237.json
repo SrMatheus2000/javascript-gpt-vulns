@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["No null check for parent", "No type check for node.parent"],
+"description": "The function does not check if 'parent' is null before calling 'parent.insertAfter'. This could lead to a null pointer exception if 'parent' is null. Also, the function assumes that 'node.parent' is of type 'object', but does not validate this. If 'node.parent' is not an object, calling 'node.parent.type' and 'node.parent.getFieldNames()' could lead to unexpected behavior or errors."
+}

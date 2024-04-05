@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'orig' and 'compareTo' parameters are passed to the 'execCmd' command without proper sanitization. Although the 'utils.escape' function is used, it may not be sufficient to prevent all forms of command injection. An attacker could potentially inject malicious commands by manipulating the 'orig' and 'compareTo' parameters."
+}

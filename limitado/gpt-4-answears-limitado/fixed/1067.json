@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and Code Injection attacks. The function does not properly validate or escape the 'options' input, which can be manipulated by an attacker to inject malicious scripts or commands. The 'validateLink' function attempts to block certain protocols, but it only checks the protocol part of the URL, which can be bypassed. Additionally, the function does not escape or sanitize the 'options' input before using it to set the '_self.config' properties, which can lead to Code Injection attacks if the 'options' input contains malicious commands."
+}

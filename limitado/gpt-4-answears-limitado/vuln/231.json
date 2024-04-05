@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property in the function. The innerHTML property sets or returns the HTML content (inner HTML) of an element. If this property is used to insert user-controlled input, it could lead to an XSS attack. In this function, the innerHTML property is used to insert the 'item.text' and 'item.submenuTitle' which could be user-controlled input. An attacker could potentially insert malicious scripts as 'item.text' or 'item.submenuTitle' which would then be executed when the HTML is rendered."
+}

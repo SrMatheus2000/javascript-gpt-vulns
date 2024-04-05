@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property in the function. The innerHTML property sets or returns the HTML content (inner HTML) of an element. If user input is included in the HTML content and is not properly sanitized, it can lead to an XSS attack. In this function, the innerHTML property is used multiple times, for example, elMarker.innerHTML and elLegendText.innerHTML. If the values of w.config.legend.markers.customHTML[i]() or text are user-supplied and not properly sanitized, it can lead to an XSS attack."
+}

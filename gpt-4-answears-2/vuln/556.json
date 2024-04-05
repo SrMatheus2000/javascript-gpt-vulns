@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Input Validation"],
+"description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks as it directly uses user input in the creation of a new RegExp object. This can allow an attacker to inject malicious scripts. Additionally, the function does not appear to validate or sanitize the 'capture' input before using it, which can lead to potential Input Validation issues."
+}

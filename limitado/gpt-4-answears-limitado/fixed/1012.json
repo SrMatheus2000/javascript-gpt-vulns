@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize user inputs before using them to generate HTML content. This can lead to Cross-Site Scripting (XSS) attacks, where an attacker can inject malicious scripts into the web page, which are then executed in the user's browser. The vulnerability is specifically in the 'onOk' method, where user-provided 'linkText' is directly used to create a new text node without any sanitization."
+}

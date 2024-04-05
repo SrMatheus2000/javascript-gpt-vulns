@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function mimeWordsEncode is vulnerable to Cross-Site Scripting (XSS) attacks. The regex used to match and replace data does not properly sanitize user input, allowing malicious scripts to be executed in the context of the website."
+}

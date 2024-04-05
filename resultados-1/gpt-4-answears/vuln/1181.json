@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function uses the $.getScript() method to load a script from an external site. This can lead to an open redirect vulnerability if the external site is compromised. An attacker could potentially redirect users to a malicious site, leading to phishing attacks or other security issues."
+}

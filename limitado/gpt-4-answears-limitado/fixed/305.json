@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Input Validation"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. If an attacker provides a large number of ranges in the header, the function will consume a lot of resources to process them, potentially leading to a DoS condition. This is related to CWE-400: Uncontrolled Resource Consumption. Additionally, the function does not validate the input properly. If the range values are not integers, the parseInt function will return NaN, which can lead to unexpected behavior. This is related to CWE-20: Improper Input Validation."
+}

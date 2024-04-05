@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Exposure"],
+  "description": "The function is vulnerable to Information Exposure (CWE-200) as it directly exposes environment variables. If an attacker can control the 'key' parameter, they can access sensitive information stored in other environment variables."
+}

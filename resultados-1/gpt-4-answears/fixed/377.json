@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service"],
+  "description": "The function 'unique_name_191' is vulnerable to Information Disclosure and Denial of Service attacks. In the case of an error, detailed system information including process id, architecture, platform, path, arguments, environment variables, and more are logged and potentially displayed, which can be exploited to gain sensitive information about the system (CWE-209). Additionally, the function uses 'setTimeout' to force the process to exit after a certain delay, which can be exploited to cause a Denial of Service attack by forcing the application to continuously restart (CWE-400)."
+}

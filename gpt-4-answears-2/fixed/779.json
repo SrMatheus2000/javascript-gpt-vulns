@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-807: Reliance on Untrusted Inputs in a Security Decision"],
+"vulnerabilities": ["Input Validation", "Reliance on Untrusted Inputs"],
+"description": "The function does not validate or sanitize the 'name' variable before using it to access 'req.headers'. This could allow an attacker to inject malicious input, potentially leading to security vulnerabilities such as Cross-Site Scripting (XSS) or Server-Side Request Forgery (SSRF). Additionally, the function relies on untrusted inputs to make a security decision, which could be manipulated by an attacker."
+}

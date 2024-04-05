@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Information Exposure Through Error Message"],
+  "description": "The function is vulnerable to Open Redirect attacks because it does not validate or sanitize the URL passed in the request parameters. An attacker could potentially redirect users to a malicious site. Additionally, the function exposes detailed error messages which could provide an attacker with sensitive information about the system."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-94", "CWE-400"],
+"vulnerabilities": ["OS Command Injection", "Improper Control of Generation of Code", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to OS command injection because it uses user-supplied input directly in a command that is executed by the operating system. This can allow an attacker to execute arbitrary commands. The function also does not properly control the generation of code, which can lead to injection vulnerabilities. Additionally, the function does not control the consumption of resources, which can lead to a denial of service if an attacker provides a large amount of data."
+}

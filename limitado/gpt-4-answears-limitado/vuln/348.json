@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'cmd' variable is constructed by concatenating strings and user-supplied input without proper sanitization or validation. An attacker could potentially inject malicious commands by providing specially crafted input."
+}

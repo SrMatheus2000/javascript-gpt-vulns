@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'innerHTML' property to insert user-controlled data into the DOM. If the user-controlled data is not properly sanitized, it can lead to XSS attacks. The 'DOMPurify.sanitize(val)' function is used to sanitize the user-controlled data, but it is only used if 'DOMPurify' is defined. If 'DOMPurify' is not defined, the user-controlled data is inserted into the DOM without any sanitization."
+}

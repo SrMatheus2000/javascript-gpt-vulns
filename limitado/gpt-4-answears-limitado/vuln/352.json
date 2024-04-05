@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly injects user-controlled input (`cssStrings`) into HTML (`styleHtml`) without proper sanitization or output encoding. An attacker could potentially inject malicious scripts through `cssStrings` which would then be executed when the resulting HTML is rendered in a web browser."
+}

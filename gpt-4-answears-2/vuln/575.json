@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function seems to be vulnerable to Path Traversal attacks (also known as Directory Traversal). It uses user-supplied input to construct a filesystem path that is used to access, modify, or delete files. If an attacker can control the input, they might be able to read sensitive files or execute arbitrary code."
+}

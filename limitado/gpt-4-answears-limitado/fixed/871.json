@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function is vulnerable to URL redirection, also known as 'Open Redirect'. This occurs when an application incorporates user-controllable data into the target of a redirection in an unsafe way. An attacker can manipulate the 'from' query parameter to redirect users to an arbitrary website. This can be used for phishing attacks, stealing user credentials, or performing other malicious activities. The regular expression used to validate the 'from' parameter is not sufficient to prevent this vulnerability."
+}

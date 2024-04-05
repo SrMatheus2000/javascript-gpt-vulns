@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-319: Cleartext Transmission of Sensitive Information", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Sensitive data transmission in clear text", "Uncontrolled resource consumption", "Missing error handling"],
+  "description": "The function downloads a file from a URL using HTTP, not HTTPS, which means the data is transmitted in clear text and can be intercepted by attackers (CWE-311, CWE-319). The function also does not limit the size of the file being downloaded, which could lead to resource exhaustion (CWE-400). Additionally, the function lacks proper error handling for the 'fs.readFile' function, which could lead to unhandled exceptions."
+}

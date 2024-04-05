@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20", "CWE-400"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Input Validation", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly uses user input (req.query._escaped_fragment_) to form a URL that is then opened by PhantomJS. This could allow an attacker to inject malicious scripts. The function also lacks proper input validation (CWE-20) which could lead to other types of attacks. Additionally, the function could be vulnerable to a Denial of Service (DoS) attack (CWE-400) because it does not limit the number of requests that can be made, potentially leading to resource exhaustion."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function diskusage is vulnerable to OS command injection. The function uses the execFile method to execute the 'df' command with user-supplied input (path). If an attacker can control the 'path' variable, they could inject arbitrary commands to be executed on the server. This could lead to unauthorized access, data corruption, or even a denial of service."
+}

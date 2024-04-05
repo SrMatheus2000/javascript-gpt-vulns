@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'jqLiteBuildFragment' is vulnerable to Cross-Site Scripting (XSS) attacks. The vulnerability exists because the function directly uses the 'html' parameter to set 'innerHTML' of an element. An attacker can exploit this vulnerability by injecting malicious scripts as 'html' parameter, which will be executed when the function is called."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-706"],
+"vulnerabilities": ["Path Traversal", "Use of Incorrectly-Resolved Name or Reference"],
+"description": "The function is vulnerable to path traversal attacks (CWE-22) as it uses user-supplied input in file system operations without proper validation or sanitization. This could allow an attacker to read, write, or delete files outside of the intended directories. Additionally, the function uses bracket notation to access object properties (this[MKDIR], this[ONERROR], etc.), which could lead to the use of incorrectly-resolved names or references (CWE-706) if the properties are not properly validated."
+}

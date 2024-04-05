@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function 'decodeMap' does not have any checks to prevent an infinite loop. If the 'tryDecode' function does not consume any bytes (i.e., 'bytesConsumed' is 0), the 'offset' variable will not be incremented, and the loop will continue indefinitely. This can lead to a Denial of Service (DoS) attack, where the server's resources are consumed by the infinite loop, making it unavailable to handle other requests. This is known as 'Uncontrolled Resource Consumption' (CWE-400)."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Validation"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly uses user input in the response without proper sanitization or encoding. This is evident where the function uses 'data.query.jsonp' directly in the response. This can allow an attacker to inject malicious scripts. Additionally, the function does not validate or sanitize the 'origin' header from the request, which can lead to security issues."
+}

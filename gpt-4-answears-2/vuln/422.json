@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Potential Denial of Service (DoS)"],
+"description": "The function stripCustomNsAttrs recursively traverses a DOM tree and removes certain attributes. If the DOM tree is deeply nested, this could potentially lead to a stack overflow, causing the browser to crash. This could be exploited by an attacker to perform a Denial of Service (DoS) attack."
+}

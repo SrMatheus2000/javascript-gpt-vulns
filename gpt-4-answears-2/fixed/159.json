@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function takes an 'os' object as input and directly uses its properties to construct a command that is then executed. This can lead to OS command injection if the 'os' object is controlled by an attacker. The attacker could provide a malicious 'os' object that causes the function to execute arbitrary commands."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to code injection and cross-site scripting (XSS) attacks. The 'name' variable is directly constructed from the query parameters without any sanitization or encoding, which allows an attacker to inject arbitrary JavaScript code that will be executed when the response is processed. This can lead to various security issues, including unauthorized actions, data theft, and other malicious activities."
+}

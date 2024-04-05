@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It takes an input string and a data object, and replaces occurrences of terms in the string that match keys in the data object with the corresponding values from the data object. If the data object contains malicious script as a value, it will be inserted into the text and may be executed when the resulting string is rendered in a web page. This can lead to various security issues, such as stealing sensitive data or performing actions on behalf of the user."
+}

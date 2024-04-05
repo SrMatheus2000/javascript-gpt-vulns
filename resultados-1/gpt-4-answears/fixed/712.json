@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Email Validation Bypass"],
+  "description": "The function is vulnerable because it does not properly validate the domain part of the email. The function checks if the domain part contains only alphanumeric characters, dots, and hyphens, but it does not check if the domain part starts or ends with a dot or hyphen, or if it contains consecutive dots or hyphens. This could allow an attacker to bypass the email validation by using an invalid email address."
+}

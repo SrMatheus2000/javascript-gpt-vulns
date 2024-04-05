@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Type confusion vulnerability"],
+  "description": "The function unique_name_680 does not validate the type of the 'options' object. If 'options' is not an object, the function will throw an error when it tries to access its properties. This is a type confusion vulnerability. Additionally, the function does not validate the type of the 'field' property of the 'options' object. If 'field' is not a string, the function will throw an error when it tries to compare it to a string. This is another type confusion vulnerability."
+}

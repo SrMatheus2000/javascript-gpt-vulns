@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "HTML Injection"],
+"description": "The function unescapeHTML is vulnerable as it does not properly sanitize the input. This can lead to Cross-Site Scripting (XSS) attacks where malicious scripts are injected into webpages viewed by other users, or HTML Injection attacks where HTML code is injected into the output HTML document. The function also does not validate the input, which can lead to unexpected behavior or errors."
+}

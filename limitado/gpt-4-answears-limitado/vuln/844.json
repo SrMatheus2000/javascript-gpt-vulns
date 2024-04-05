@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Sensitive information exposure", "Error message information leakage", "Cross-Site Request Forgery (CSRF)", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to several security issues. Firstly, it exposes sensitive information through environment variables. If an attacker can access these variables, they can gain unauthorized access. Secondly, it leaks information through error messages, which can be exploited by an attacker to gain more knowledge about the system. Thirdly, it does not validate or sanitize the 'pathname' input, which can lead to Cross-Site Script

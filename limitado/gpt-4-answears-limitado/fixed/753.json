@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the input 'msg' before using it. This could lead to various issues such as type errors, or in worst case scenarios, code injection attacks. It's recommended to always validate and sanitize inputs before using them."
+}

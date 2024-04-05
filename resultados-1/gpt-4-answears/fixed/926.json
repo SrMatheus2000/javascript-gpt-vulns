@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function unique_name_525 is vulnerable to code injection attacks. This is because it takes a function 'fn' and a 'contextGetter' as arguments and executes them without any validation or sanitization. An attacker could potentially pass malicious code as these arguments, leading to code injection. Additionally, the function does not validate the input it receives, which could lead to unexpected behavior or errors."
+}

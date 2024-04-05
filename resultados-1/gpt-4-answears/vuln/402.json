@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-807: Reliance on Untrusted Inputs in a Security Decision"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not properly validate the 'field' input, which can lead to a Prototype Pollution attack if the input is controlled by an attacker. This can allow an attacker to add or modify properties of 'Object.prototype', which can lead to a variety of impacts depending on the application's logic, including Remote Code Execution (RCE), Denial of Service (DoS), or Cross-Site Scripting (XSS)."
+}

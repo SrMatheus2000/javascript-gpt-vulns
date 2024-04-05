@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which could allow an attacker to manipulate the behaviour of an object prototype. This can lead to several types of vulnerabilities like Remote Code Execution, Denial of Service, or even bypassing security checks. The vulnerability occurs because the function does not prevent the modification of the Object prototype. An attacker can control the 'options' parameter and set '__proto__' or 'constructor.prototype' to a specified value."
+}

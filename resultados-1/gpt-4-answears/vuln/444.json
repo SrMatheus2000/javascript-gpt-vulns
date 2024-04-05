@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function '_createPreviewButton' is vulnerable to Cross-Site Scripting (XSS) attacks. The 'href' attribute of the button is directly bound to the 'href' property of 'this' object without any sanitization or encoding. If the 'href' property contains malicious JavaScript code, it will be executed when the button is clicked. This can lead to various security issues such as session hijacking, identity theft, defacement of the website, and other malicious activities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure Through Log Files", "Open Redirect"],
+"description": "The function is vulnerable to Improper Input Validation as it does not validate the request.url before using it. This could lead to unexpected behavior or security issues. It also logs the request.url which could potentially expose sensitive information. Additionally, the function changes the URL from 'file://' to 'http://' without any validation, which could lead to Open Redirect vulnerability."
+}

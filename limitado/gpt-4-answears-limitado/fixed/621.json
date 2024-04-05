@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function uses a regular expression (regex) to replace characters in a string. If the input string is very large, the regex operation can consume a lot of CPU resources, leading to a DoS condition. This is known as a 'regex DoS' or 'ReDoS' attack."
+}

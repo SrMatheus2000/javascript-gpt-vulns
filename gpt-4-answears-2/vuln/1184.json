@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function is vulnerable to code injection. The function 'parsePost', 'parseSignature', and 'parseRaw' use the 'parser.render' method which can execute any code passed in the 'content' or 'signature' or 'raw' field. An attacker can inject malicious code into these fields, leading to code execution on the server side."
+}

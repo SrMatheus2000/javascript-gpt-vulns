@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-73", "CWE-22"],
+  "vulnerabilities": ["Path Traversal", "Command Injection"],
+  "description": "The given JavaScript function is vulnerable to Path Traversal and Command Injection attacks. The 'dir' parameter is not properly validated before being used to create directories. An attacker can manipulate the 'dir' parameter to traverse the file system and potentially create directories in unintended locations or execute arbitrary commands."
+}

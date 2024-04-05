@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-89"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and SQL Injection attacks. The XSS vulnerability arises from the fact that user-supplied input (name, size, lastModified) is directly embedded into HTML without proper sanitization or encoding, allowing an attacker to inject malicious scripts. The SQL Injection vulnerability is due to the fact that the 'name' parameter is directly concatenated into a SQL query in the href attribute of the anchor tag, which could allow an attacker to manipulate the SQL query."
+}

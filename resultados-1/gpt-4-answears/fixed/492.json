@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_263' is vulnerable to Path Traversal attack (also known as Directory Traversal). This vulnerability is due to the use of 'path.join' function which concatenates 'cwd' and 'header.name' without proper validation or sanitization of 'header.name'. An attacker can manipulate 'header.name' to navigate through directories, potentially allowing them to read, write or delete files outside of the intended directory. This vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

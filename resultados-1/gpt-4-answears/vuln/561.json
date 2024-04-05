@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_285' is vulnerable to path traversal attacks. The variable 'name' is created by joining 'cwd' and 'header.name' without proper sanitization or validation of 'header.name'. An attacker can manipulate 'header.name' to navigate to arbitrary directories. This can lead to unauthorized read or write access to files outside of the intended directory."
+}

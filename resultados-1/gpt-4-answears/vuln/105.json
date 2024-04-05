@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function deepCopy is vulnerable to a potential Denial of Service (DoS) attack. If the sourceObj has a circular reference, the function will enter an infinite loop, consuming resources until the application crashes. This is due to the recursive nature of the function without a proper base case to handle such scenarios."
+}

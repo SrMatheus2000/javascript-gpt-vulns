@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user input (entry.html) to create a new DOM element without properly sanitizing the input first. An attacker could potentially inject malicious scripts through the 'html' property of the 'entry' object, which would then be executed when the resulting HTML is rendered in a web page."
+}

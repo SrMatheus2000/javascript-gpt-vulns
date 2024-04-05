@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)", "Input Validation Error"],
+"description": "The function does not validate the input 'header' properly. If the input is not in the expected format, it could lead to unexpected behavior. Also, the function does not limit the number of ranges that can be processed, which could lead to high CPU usage if a large number of ranges are provided, potentially leading to a Denial of Service (DoS) attack."
+}

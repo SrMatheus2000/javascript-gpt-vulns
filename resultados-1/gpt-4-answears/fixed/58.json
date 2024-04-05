@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Prototype Pollution which could allow an attacker to manipulate the behaviour of an object prototype. This can lead to a variety of impacts such as Denial of Service (DoS), Remote Code Execution or other unintended side effects. The function also does not validate the input 'path' which could lead to uncontrolled resource consumption if the path is very large."
+}

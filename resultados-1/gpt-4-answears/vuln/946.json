@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user input to construct a file path without properly sanitizing it. This could allow an attacker to access sensitive files outside of the intended directory. Additionally, the function is vulnerable to Information Exposure (CWE-200) because it reveals system-specific details (like the current working directory) in the constructed file path, which could be exploited by an attacker to gather information about the system."
+}

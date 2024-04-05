@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function 'htmlEncode' is not vulnerable to any known CWEs. It properly encodes special characters to prevent HTML injection attacks."
+}

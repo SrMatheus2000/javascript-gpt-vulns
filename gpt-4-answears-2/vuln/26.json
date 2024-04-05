@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the 'giturl' parameter which can lead to improper input validation (CWE-20). This can be exploited by an attacker to inject malicious code. Additionally, the function uses regular expressions which can lead to excessive consumption of system resources (CWE-400) if an attacker provides a specially crafted string that results in catastrophic backtracking."
+}

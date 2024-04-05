@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Cross-Site Request Forgery", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to Open Redirect, Cross-Site Request Forgery (CSRF), and Cross-Site Scripting (XSS) attacks. The Open Redirect vulnerability is due to the use of $.getScript() function with a URL from an external site, which can be manipulated to redirect users to malicious sites. The CSRF vulnerability is due to the lack of CSRF tokens in form submissions, which can be exploited by attackers to perform actions on behalf of the user. The XSS

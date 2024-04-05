@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output", "CWE-184: Incomplete List of Disallowed Inputs"],
+  "vulnerabilities": ["Insecure Protocol Handling", "Inadequate Input Validation"],
+  "description": "The function validateLink is vulnerable as it only checks for a few bad protocols and does not validate the URL properly. An attacker could use a protocol not listed in the BAD_PROTOCOLS array to bypass the check. Additionally, the function does not properly handle encoded characters, which could allow an attacker to inject malicious code. The function also does not handle cases where the protocol is not at the beginning of the URL."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that the 'id' variable, which is concatenated into the 'optionTemplate' string, is not properly sanitized before being used. If an attacker can control the value of 'id', they could inject malicious scripts into the web page, which would then be executed in the context of the victim's session. This could lead to a variety of attacks, such as session hijacking, identity theft, or defacement of the web page."
+}

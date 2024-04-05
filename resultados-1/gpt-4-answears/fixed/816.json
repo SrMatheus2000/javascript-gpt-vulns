@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Path Traversal"],
+  "description": "The function does not validate or sanitize the 'item' input, which can lead to vulnerabilities. The 'path' variable can be manipulated to traverse directories (Path Traversal) and access sensitive files. The 'name' variable is sanitized, but the 'type' and 'path' variables are directly used in the 'url' and 'icon' without any sanitization, which can lead to Cross-Site Scripting (XSS) attacks if they contain malicious scripts."
+}

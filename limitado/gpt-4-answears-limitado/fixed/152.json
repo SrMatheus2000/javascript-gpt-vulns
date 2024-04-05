@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks. The fileName is directly taken from the request URL and decoded, which means an attacker could potentially manipulate the URL to access files outside of the intended directory. This is a security risk as it could allow an attacker to read sensitive files on the server."
+}

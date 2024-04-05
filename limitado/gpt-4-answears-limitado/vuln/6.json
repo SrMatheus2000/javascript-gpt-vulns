@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is intended to remove XML processing instructions from an SVG string, but it does not properly sanitize the input. This could allow an attacker to inject malicious scripts into the SVG, leading to Cross-site Scripting (XSS) attacks. XSS attacks can lead to a variety of security issues, including session hijacking, identity theft, and defacement of the website."
+}

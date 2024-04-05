@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-95"],
+  "vulnerabilities": ["Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "description": "The function set() is vulnerable to SQL injection and eval injection attacks. The key parameter is not properly sanitized before being used in the getObjKeyPair() function, which could allow an attacker to manipulate the key and perform SQL injection. Additionally, the function uses the eval() function without proper validation, which could lead to eval injection vulnerabilities."
+}

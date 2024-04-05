@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_771 uses childProcess.execFile() to execute a command built from user-controlled input (browserPath). This can allow an attacker to execute arbitrary commands on the system. This is known as OS Command Injection vulnerability."
+}

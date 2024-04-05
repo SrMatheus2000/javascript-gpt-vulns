@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses user input in the 'req.headers.host' without proper sanitization or validation. This could allow an attacker to inject malicious scripts that will be executed in the context of the victim's session. Additionally, the function does not validate the 'file' parameter before using it to read a file, which could lead to unauthorized file access or disclosure of sensitive information if an attacker can control the 'file' parameter."
+}

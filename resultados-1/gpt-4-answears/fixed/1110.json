@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function buildLogTable is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly uses user-supplied input (the 'data' parameter) to create HTML content. Specifically, the function does not properly sanitize the 'data.rows' input before appending it to the HTML table. An attacker could exploit this vulnerability by injecting malicious scripts as part of the 'data' input, which would then be executed in the context of the victim's browser when the generated HTML content is rendered."
+}

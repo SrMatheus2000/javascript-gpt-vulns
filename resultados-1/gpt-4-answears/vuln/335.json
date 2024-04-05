@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function 'unique_name_153' is vulnerable because it does not validate or sanitize the 'address' input. This could allow an attacker to manipulate the 'address' input to redirect users to an untrusted site, leading to phishing attacks, or to reference objects directly, leading to unauthorized access to data. It is recommended to implement proper input validation and sanitization to prevent such vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'execBinary' and 'execArguments' variables are directly used in the 'execFile' function without proper sanitization or validation. This could allow an attacker to execute arbitrary commands on the system by passing specially crafted arguments to the function."
+}

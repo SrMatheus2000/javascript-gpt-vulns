@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'name' variable is constructed by joining the 'cwd' and 'header.name' variables. If an attacker can control the 'header.name' variable, they can traverse the file system and potentially read, write, or execute files outside of the intended directory. This is a violation of CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

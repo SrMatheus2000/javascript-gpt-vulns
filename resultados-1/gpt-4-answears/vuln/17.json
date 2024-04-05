@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack where the properties of JavaScript object prototypes are injected with values that lead to side effects. The function does not properly validate the 'path' parameter to protect against the modification of a prototype (__proto__). An attacker can manipulate these attributes to overwrite, or pollute, a JavaScript application object prototype of the base object by injecting other values. This vulnerability can lead to several issues like denial of service (DoS), Remote Code Execution, or even server-side request forgery (SSRF)."
+}

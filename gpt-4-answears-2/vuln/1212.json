@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function highlightTarget is vulnerable to Cross-Site Scripting (XSS) attacks. The anchor parameter is directly concatenated into a jQuery selector without any form of sanitization or encoding, which could allow an attacker to inject malicious scripts."
+}

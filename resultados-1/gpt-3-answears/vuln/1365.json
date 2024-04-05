@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "Unvalidated URL"],
+  "description": "The function does not validate the 'version' parameter before concatenating it with the URL, which can lead to a path traversal vulnerability. Additionally, the function does not validate or sanitize the 'version' parameter, which can result in an unvalidated URL vulnerability."
+}

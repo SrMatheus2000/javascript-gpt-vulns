@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the 'dangerouslySetInnerHTML' property to set the HTML content of a div element. This property is dangerous because it's easy to inadvertently expose your users to a cross-site scripting (XSS) attack. Even though the function uses a sanitizer to clean the HTML, it's not guaranteed to catch all possible XSS attacks. It's recommended to avoid using 'dangerouslySetInnerHTML' and instead use React's built-in mechanisms for rendering content."
+}

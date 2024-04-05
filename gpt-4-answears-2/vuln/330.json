@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+"vulnerabilities": ["Insecure Cryptographic Operations"],
+"description": "The function uses 'ethUtil.stripHexPrefix(message)' to strip the hex prefix from the message before signing it. This could potentially lead to insecure cryptographic operations if the message is manipulated before being signed. Additionally, the function uses 'sigUtil.recoverPersonalSignature' to recover the address that signed the message. If an attacker can manipulate the signature, they could potentially impersonate another user. The function also does not handle errors properly, which could lead to unhandled exceptions and potential Denial of Service (DoS) attacks."
+}

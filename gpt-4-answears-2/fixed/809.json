@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200", "CWE-209", "CWE-598", "CWE-352"],
+"vulnerabilities": ["Information Exposure", "Information Exposure Through an Error Message", "Use of Insufficiently Random Values", "Cross-Site Request Forgery (CSRF)"],
+"description": "The function is vulnerable to information exposure through error messages as it logs sensitive information such as user credentials. It also allows all origins in CORS policy which can lead to Cross-Site Request Forgery (CSRF). The function also uses insufficiently random values for authentication credentials which can be easily guessed by an attacker. Lastly, the function does not validate or sanitize the pathname which can lead to path traversal attacks."
+}

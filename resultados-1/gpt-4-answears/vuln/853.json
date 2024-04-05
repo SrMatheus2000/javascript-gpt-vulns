@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Use of eval function"],
+  "description": "The function 'unique_name_450' is vulnerable because it uses the 'eval' function, which can lead to arbitrary code execution if the input is not properly sanitized. This is a common security issue and is generally considered a bad practice. The 'eval' function executes a string of JavaScript code in the local scope, which means that any JavaScript code can be executed. If an attacker can control the input to 'eval', they can run arbitrary code, leading to a variety of attacks such as cross-site scripting (XSS), data theft, and more."
+}

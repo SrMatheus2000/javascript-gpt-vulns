@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses regular expressions (regex) in the 'match' method. If an attacker provides a malicious input that results in a long-running match, it could lead to a Regular Expression Denial of Service (ReDoS) attack. This is because JavaScript's regex engine can be forced into taking a very long time when analyzing certain strings, effectively blocking the event loop and preventing other operations from completing. Additionally, the function does not validate the 'coverage' input before parsing it to a float, which could lead to unexpected behavior if a non-numeric value is passed."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption"],
+  "description": "The provided code is vulnerable to CWE-94, which is an Uncontrolled Resource Consumption vulnerability. This vulnerability occurs when an attacker can influence the amount of resources consumed by a program, leading to a denial of service or degradation of system performance. In this case, the 'setColor' function is called without any input validation or rate limiting, allowing an attacker to potentially consume excessive resources by repeatedly calling this function with large or malicious inputs."
+}

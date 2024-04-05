@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The vulnerability is due to the fact that the function does not limit the number of client connections it can handle at a time. An attacker can exploit this vulnerability by creating a large number of connections to the server, which can exhaust system resources and cause the server to become unresponsive or crash. This is known as a Denial of Service (DoS) attack."
+}

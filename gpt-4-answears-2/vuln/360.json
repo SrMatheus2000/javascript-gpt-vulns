@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function does not validate the input 'obj' properly. This can lead to a Prototype Pollution vulnerability, where an attacker can manipulate the properties of JavaScript objects. This can lead to a variety of security issues, such as Denial of Service, Remote Code Execution, or even bypassing security checks."
+}

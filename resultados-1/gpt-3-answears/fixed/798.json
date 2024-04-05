@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319"],
+  "vulnerabilities": ["Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to CWE-319, which is Improper Encoding or Escaping of Output. The API key is encoded using base64, which is not a secure method of protecting sensitive information. An attacker can easily decode the base64 string and obtain the API key."
+}

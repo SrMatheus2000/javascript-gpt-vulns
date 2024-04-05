@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the jQuery html() method to insert user-controlled input into the DOM. If the user-controlled input is not properly sanitized, an attacker can inject malicious scripts that will be executed when other users interact with the page. The function does attempt to sanitize the 'tabId' and 'options.name' variables, but it does not sanitize the 'options.content' and 'options.dropdown' variables, which are passed to the getObjectFromSelector() function and can potentially contain malicious scripts."
+}

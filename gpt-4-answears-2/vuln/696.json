@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319", "CWE-400"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable as it allows the creation of a server without HTTPS, leading to the potential for Cleartext Transmission of Sensitive Information (CWE-319). Additionally, there is no control over the number of WebSocket connections that can be made, which could lead to Uncontrolled Resource Consumption (CWE-400)."
+}

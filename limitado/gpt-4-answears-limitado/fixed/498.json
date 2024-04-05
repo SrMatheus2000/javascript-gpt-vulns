@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. It allows the modification of a prototype of an object, which can lead to several security issues. The function does not properly validate the 'field' parameter, which can be manipulated to modify the prototype of an object. This can lead to unexpected behavior in the application, including Remote Code Execution (RCE), Denial of Service (DoS), or even potentially bypassing security checks."
+}

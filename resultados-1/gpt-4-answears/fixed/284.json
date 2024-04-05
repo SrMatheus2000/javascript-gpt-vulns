@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Insecure Cryptographic Operations"],
+  "description": "The function signTransaction uses the ethUtil.bufferToHex method to convert the transaction's chain ID to a hexadecimal string. This method is not secure for cryptographic operations because it does not provide any protection against timing attacks. This could allow an attacker to determine the secret key used in the transaction by measuring the time it takes to generate the hexadecimal string. Additionally, the function does not validate the input parameters 'address' and 'tx', which could lead to other vulnerabilities such as injection attacks."
+}

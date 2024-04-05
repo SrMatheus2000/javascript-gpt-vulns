@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function '_combineLongPacketBuffers' uses 'Buffer.allocUnsafe' to allocate memory buffer. This method allows for the creation of a Buffer of a certain length without initializing it, which can lead to exposure of sensitive information if the Buffer is not properly filled. Additionally, the function does not perform any checks on the size of the data being copied into the buffer, which could potentially lead to a buffer overflow if the size of the data exceeds the size of the buffer."
+}

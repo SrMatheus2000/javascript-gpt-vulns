@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["C-20"],
+  "vulnerabilities": [" Expression Denial of Service (ReDoS)"],
+ "description": "The function uses a regular expression without any input validation or limiting, which can lead to a ReDoS vulnerability."
+}

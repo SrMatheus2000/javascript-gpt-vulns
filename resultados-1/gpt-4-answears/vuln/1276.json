@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Information Exposure", "SQL Injection", "Input Validation"],
+  "description": "The function getEmail is vulnerable to several types of attacks. First, it exposes sensitive information through error messages (CWE-209) by returning the error object directly to the client, potentially revealing system details. Second, it does not sanitize the email parameter before passing it to the validate function, which could lead to SQL Injection (CWE-89) if the validate function uses the email parameter in an SQL query. Lastly, it does not validate the email parameter, which could lead to unexpected behavior or errors (CWE-20)."
+}

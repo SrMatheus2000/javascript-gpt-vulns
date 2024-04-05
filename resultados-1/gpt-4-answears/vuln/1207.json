@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'append' method to add HTML content to the page, which can lead to XSS if the input is not properly sanitized. The function does use the 'encodeEntities' method to sanitize the 'bookmark.url' and 'bookmark.title' inputs, but it does not sanitize the 'bookmark.id' input, which is directly included in the HTML content. This can allow an attacker to inject malicious scripts into the page by providing a specially crafted 'bookmark.id'. Additionally, the function does not properly escape the output of the 'replaceQueryString' function, which can lead to Improper Encoding or Escaping of Output."
+}

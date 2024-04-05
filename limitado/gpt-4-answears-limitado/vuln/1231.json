@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-89", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "SQL Injection", "Cross-site Scripting"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user-supplied input in file paths without proper sanitization, allowing an attacker to access arbitrary files. It is also vulnerable to SQL Injection (CWE-89) as it uses user-supplied input in SQL queries without proper sanitization, allowing an attacker to manipulate SQL queries. Additionally, it is vulnerable to Cross-site Scripting (CWE-79) as it uses user-supplied input in HTML output without proper sanitization, allowing an attacker to inject arbitrary HTML or JavaScript."
+}

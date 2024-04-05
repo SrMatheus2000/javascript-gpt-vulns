@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the input before inserting it into the HTML document. This can allow an attacker to inject malicious scripts into the web page, which will be executed when the page is loaded. The vulnerability is in the 'cols.join('</th><th class=\"nowrap\">')' and 'formatValue(cols[j], rows[i][cols[j]])' parts of the function, where user-supplied input is directly inserted into the HTML without proper sanitization."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-89", "CWE-22"],
+"vulnerabilities": ["OS Command Injection", "SQL Injection", "Path Traversal"],
+"description": "The function is vulnerable to OS command injection as it directly uses user input in exec() function without proper sanitization. This can allow an attacker to execute arbitrary commands. Similarly, the function is vulnerable to SQL injection as it directly uses user input in SQL queries without proper sanitization. This can allow an attacker to manipulate SQL queries. The function is also vulnerable to path traversal as it uses user input to access file system without proper validation and sanitization. This can allow an attacker to access sensitive files."
+}

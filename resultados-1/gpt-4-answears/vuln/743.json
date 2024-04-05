@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "The function is vulnerable to timing attacks. Although it uses the 'crypto.timingSafeEqual' function to compare the buffers, the time taken to create the buffers can still leak information about the lengths of the input strings. An attacker can measure the time taken to execute the function with different inputs to determine the length of the secret string."
+}

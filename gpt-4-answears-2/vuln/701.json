@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-770: Allocation of Resources Without Limits or Throttling"],
+"vulnerabilities": ["Memory Leak"],
+"description": "The function creates a new cache object without any limit on the size. This can lead to a memory leak if the cache grows indefinitely. This is especially problematic if the function is called repeatedly with different arguments, as a new cache entry is created for each unique argument."
+}

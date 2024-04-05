@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Information Exposure", "No Input Validation"],
+"description": "The function is vulnerable to information exposure through error messages as it directly sends the error object to the next middleware without sanitizing or handling it properly. This can expose sensitive information about the system. Additionally, there is no validation on the input 'email' from the request parameters, which can lead to other vulnerabilities such as injection attacks."
+}

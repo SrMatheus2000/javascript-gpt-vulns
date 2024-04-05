@@ -1,0 +1,6 @@
+{
+ "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-561"],
+  "vulnerabilities": ["Arbitrary Code Execution", "Insecure Cryptographic Algorithm"],
+  "description": "The function pointFpMultiply is vulnerable to arbitrary code execution and uses an insecure cryptographic algorithm."
+}

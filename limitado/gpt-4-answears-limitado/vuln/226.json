@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Query Parameter Injection"],
+  "description": "The function does not properly sanitize the 'key' query parameter before appending it to the URL. This could lead to Cross-Site Scripting (XSS) if the 'key' parameter contains malicious scripts. Additionally, the function does not validate the 'publicUrl' parameter before using it to construct a new URL, which could lead to Query Parameter Injection if the 'publicUrl' parameter is manipulated by an attacker."
+}

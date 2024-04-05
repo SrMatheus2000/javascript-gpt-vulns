@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function appears to be safe as it checks for '__proto__', 'constructor', and 'prototype' properties and does not allow them to be overwritten. This prevents Prototype Pollution attacks. However, the function's safety also depends on the implementation of the 'isPlainObject' function, which is not provided."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Potential Buffer Overflow"],
+  "description": "The function uses the 'new Buffer' constructor, which is deprecated and potentially unsafe. If the 'new Buffer' constructor is called with a number as argument, it will return a buffer of that size but the memory allocated will not be initialized, so it may contain sensitive data. It's recommended to use 'Buffer.from()', 'Buffer.alloc()', or 'Buffer.allocUnsafe()' instead."
+}

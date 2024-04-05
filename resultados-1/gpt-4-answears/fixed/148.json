@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Prototype Pollution", "Potential Denial of Service"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. This happens because the function directly assigns properties to the 'target' object without checking if the keys are built-in JavaScript properties. An attacker can manipulate these properties to modify the Object prototype. Also, the recursive call to 'baseExtend' can lead to a potential Denial of Service (DoS) if an attacker provides a large, deeply nested object, causing the application to consume large amounts of memory and CPU."
+}

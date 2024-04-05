@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-20", "CWE-352"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation", "Cross-Site Request Forgery (CSRF)"],
+"description": "The function is vulnerable to Code Injection via the JSON.parse method which can be exploited if a user can control the input to it. This is identified as CWE-94. Also, the function does not validate the 'params' input properly, leading to CWE-20. Furthermore, the function does not implement any CSRF protections, making it vulnerable to CSRF attacks (CWE-352)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attack. The 'response' variable is directly used in the 'res._____send' function without proper sanitization or encoding, allowing an attacker to inject malicious scripts."
+}

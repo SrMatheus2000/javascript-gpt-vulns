@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Potential null pointer dereference"],
+"description": "The function 'stripCustomNsAttrs' does not check if 'node' is null before accessing its properties. This could lead to a null pointer dereference if the function is called with a null argument or if 'getNonDescendant' returns null."
+}

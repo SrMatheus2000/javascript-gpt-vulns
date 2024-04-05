@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The server.timeout is set to 0, which means the server will hold the connection as long as the client is connected. This can lead to a Denial of Service (DoS) attack where an attacker can open many connections and exhaust system resources, causing the server to slow down or crash."
+}

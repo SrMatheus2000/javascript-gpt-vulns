@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Insecure Cryptographic Algorithm Usage", "Improper Input Validation"],
+"description": "The function uses the 'rsa-sha256' algorithm by default if no algorithm is provided. This algorithm is considered weak and can be vulnerable to attacks. Also, the function does not validate the 'options.key' and 'options.keyId' inputs which can lead to potential security risks."
+}

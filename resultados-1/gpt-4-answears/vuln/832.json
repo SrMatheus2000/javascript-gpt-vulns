@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_441 uses execSync to execute a shell command. This can lead to OS command injection if the command string that is passed to execSync is constructed using externally influenced input. In this case, if an attacker can modify the git config, they could potentially execute arbitrary commands."
+}

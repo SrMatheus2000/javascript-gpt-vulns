@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Unvalidated input", "URL manipulation"],
+  "description": "The function does not validate the input parameters 'platform', 'arch', 'majorVersion', and 'nightly'. This could lead to URL manipulation, where an attacker could inject malicious content into the URL. This could lead to various attacks such as Cross-Site Scripting (XSS), SQL Injection, and others. It's recommended to validate and sanitize all input data."
+}

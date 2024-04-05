@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-829", "CWE-494"],
+"vulnerabilities": ["Insecure Direct Object References (IDOR)", "Download of Code Without Integrity Check"],
+"description": "The function downloads a file from a specific URL without any form of verification. This can lead to arbitrary code execution if the file is tampered with during the download process. Additionally, the function uses string concatenation to create the URL, which can lead to Insecure Direct Object References if the 'scalaVersion' or 'scalaJsVersion' variables are controlled by the user."
+}

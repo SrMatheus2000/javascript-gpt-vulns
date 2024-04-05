@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["SQL Injection", "Cross-site Scripting"],
+  "description": "The function 'unique_name_505' is vulnerable to SQL Injection and Cross-site Scripting (XSS) attacks. The function does not properly sanitize the 'data.query.jsonp' input before using it to construct a string that is executed as code. This could allow an attacker to inject malicious code into the 'data.query.jsonp' parameter, leading to SQL Injection or XSS attacks. Additionally, the function does not validate or encode the 'newData' parameter before using it in the 'onHandshake' and 'publish' methods, which could lead to further vulnerabilities."
+}

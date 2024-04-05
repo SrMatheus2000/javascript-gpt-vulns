@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Injection"],
+  "description": "The function does not validate or sanitize the input 'value'. This could lead to injection attacks if the input is controlled by an attacker. For example, if the input is used in a database query, an attacker could provide a value that alters the query to access unauthorized data or perform other actions. Additionally, the function does not handle errors, which could lead to unexpected behavior or application crashes."
+}

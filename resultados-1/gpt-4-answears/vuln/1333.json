@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function addRemote is vulnerable to command injection because it concatenates user-supplied input into a command that is executed without proper sanitization or validation. An attacker could provide a specially crafted 'name' or 'url' that includes shell commands, which would be executed with the privileges of the process running the script."
+}

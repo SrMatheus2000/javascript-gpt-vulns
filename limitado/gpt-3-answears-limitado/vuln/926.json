@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Handling of Exceptional Conditions"],
+  "description": "The provided code is vulnerable to Cross-Site Scripting (XSS) and Improper Handling of Exceptional Conditions. The unescape() function can be exploited to execute malicious scripts in the browser. Additionally, the catch block is empty, which means that any exceptions thrown during the JSON parsing process will be silently ignored."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not validate or limit the size of the uploaded file. If a large file is uploaded, it could potentially consume server resources leading to a Denial of Service (DoS) attack. This is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

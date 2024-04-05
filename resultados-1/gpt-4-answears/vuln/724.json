@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'unique_name_377' is vulnerable to OS command injection. The function uses the 'exec' function to execute a command that deletes files specified in the 'imagePaths' array. If an attacker can control the content of 'imagePaths', they could inject arbitrary commands to be executed on the server. This could lead to unauthorized access, data corruption, or even a denial of service."
+}

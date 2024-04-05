@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Arbitrary Code Execution"],
+  "description": "The provided code is vulnerable to code injection and arbitrary code execution attacks. The function takes a string 'code' as input and directly concatenates it into the 'src' variable without any sanitization or validation. This allows an attacker to inject malicious code into the 'code' parameter, which will then be executed using 'vm.runInContext'. This can lead to various security vulnerabilities, including code injection and arbitrary code execution."
+}

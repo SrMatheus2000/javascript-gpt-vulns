@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. This is because it uses the Function constructor in the 'FunctionExpression' block. The Function constructor is a form of eval() which can execute arbitrary code. If an attacker can control the input to the Function constructor, they can inject arbitrary code which will be executed."
+}

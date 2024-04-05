@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-522: Insufficiently Protected Credentials"],
+"vulnerabilities": ["Information Exposure", "Insufficiently Protected Credentials"],
+"description": "The function is directly assigning the value of a process environment variable to a property of the 'env' object using the 'key' parameter. If the 'key' parameter is not properly validated, it could lead to exposure of sensitive information such as API keys, database credentials, etc. stored in the environment variables. This could lead to information disclosure or unauthorized access."
+}

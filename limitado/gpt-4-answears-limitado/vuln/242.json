@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The placeholder variable is directly assigned to innerHTML of placeEl without any sanitization or encoding. If an attacker can control the value of placeholder, they can inject malicious scripts."
+}

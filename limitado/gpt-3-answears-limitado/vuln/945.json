@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Path Manipulation"],
+  "description": "The growl function is vulnerable to command injection and path manipulation attacks. The options.exec parameter is directly used in the cmd.pkg variable without proper input validation or sanitization, which can allow an attacker to execute arbitrary commands. Additionally, the options.image parameter is used to construct a file path without proper validation, which can allow an attacker to manipulate the path and potentially access or overwrite sensitive files."
+}

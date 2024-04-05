@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function uses the escapeFn function on user-supplied input. If escapeFn is not properly implemented, it could lead to Cross-Site Scripting (XSS) vulnerabilities. XSS vulnerabilities occur when an application includes untrusted data in a new web page without proper validation or escaping, or updates an existing web page with user-supplied data using a browser API that can create HTML or JavaScript."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses user input directly from the 'req.headers.host' object to construct a URL ('jsonFileUrl') which is then inserted into the 'localContent' string. If an attacker can control the 'host' header of the request, they could inject arbitrary JavaScript code into the 'localContent' string, leading to an XSS attack. This could allow the attacker to execute arbitrary JavaScript code in the context of the user's browser session."
+}

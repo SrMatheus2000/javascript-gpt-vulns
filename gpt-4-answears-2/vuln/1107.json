@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676", "CWE-400"],
+"vulnerabilities": ["Uncontrolled Resource Consumption", "Use of Potentially Dangerous Function"],
+"description": "The function uses the 'new Buffer' constructor, which is deprecated and potentially unsafe, leading to security vulnerabilities such as buffer overflow. It also does not control the size of the data being received, which can lead to a denial of service (DoS) attack by consuming server resources."
+}

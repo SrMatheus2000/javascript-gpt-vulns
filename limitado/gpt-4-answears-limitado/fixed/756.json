@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. Although it attempts to mitigate basic XSS attacks by replacing '<' and '>' characters in strings, it does not account for other forms of XSS attacks such as those involving event handlers or script tags. Additionally, the function does not validate the input 'ctxt' and directly uses it to access properties, which can lead to unexpected behavior if 'ctxt' is not an object or does not contain the expected properties."
+}

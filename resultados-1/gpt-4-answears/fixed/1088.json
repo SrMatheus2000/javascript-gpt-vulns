@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) because it does not implement any form of CSRF protection. This could allow an attacker to trick a victim into making an unintended request to the web application. The function is also vulnerable to Cross-Site Scripting (XSS) because it directly inserts the response body into the HTML document using the .text() method, which could allow an attacker to inject malicious scripts if the response body contains unescaped HTML."
+}

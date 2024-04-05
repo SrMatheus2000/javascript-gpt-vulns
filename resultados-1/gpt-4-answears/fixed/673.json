@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_369' is vulnerable to path traversal attacks. The function does not validate or sanitize the 'pkg.realpath' input which is used in file system operations such as 'move' and 'rimraf'. An attacker can manipulate 'pkg.realpath' to navigate the file system outside of the intended directory. This can lead to unauthorized access to files, information disclosure, denial of service, or execution of arbitrary code."
+}

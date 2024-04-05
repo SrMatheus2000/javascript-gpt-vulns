@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-798: Use of Hard-coded Credentials", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Hard-coded credentials", "Information exposure through an error message"],
+  "description": "The function 'unique_name_492' is vulnerable as it uses hard-coded credentials (client_id and client_secret) which can lead to unauthorized access if the code is exposed or leaked. This is related to CWE-798. Additionally, the function may expose sensitive information through error messages (if any error occurs during the execution), which is related to CWE-200. It's recommended to store sensitive data in secure storage and handle errors properly without revealing sensitive information."
+}

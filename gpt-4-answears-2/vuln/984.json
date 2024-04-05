@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'html' method of jQuery to insert unescaped content into the DOM. If the 'this.model' object contains any user-supplied input, this could lead to a XSS vulnerability. Additionally, the 'sanitize' method of 'SwaggerUi.utils' is used, but it's not clear if this method properly escapes all possible dangerous characters. The function should use contextually appropriate escaping on all untrusted data before including it in the DOM."
+}

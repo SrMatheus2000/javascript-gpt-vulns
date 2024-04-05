@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-20"],
+  "vulnerabilities": ["Command Injection", "Path Traversal"],
+  "description": "The provided JavaScript function is vulnerable to command injection (CWE-78) and path traversal (CWE-20) attacks. The function does not properly validate user input, allowing an attacker to execute arbitrary commands or access files outside of the intended directory."
+}

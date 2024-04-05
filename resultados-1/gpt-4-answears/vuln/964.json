@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'runNpmCommand' is vulnerable to OS command injection because it directly uses the 'command' parameter in a call to 'child_process.exec'. An attacker could provide a malicious command as input, which would then be executed with the privileges of the process."
+}

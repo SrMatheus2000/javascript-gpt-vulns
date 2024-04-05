@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function $.render creates a new Function object from a string, which can lead to arbitrary code execution if a user can control the 'template' or 'data' inputs. This is a form of code injection vulnerability."
+}

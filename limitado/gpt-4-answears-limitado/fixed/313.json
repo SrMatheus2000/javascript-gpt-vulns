@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to command injection. It uses the 'exec' function to execute commands, which can be manipulated by an attacker to execute arbitrary commands. The function attempts to sanitize the 'path' input by checking for certain special characters, but this is not sufficient to prevent command injection. For example, an attacker could bypass the check by using encoded versions of the special characters. Additionally, the function does not properly validate the 'opts' input, which could lead to other types of attacks."
+}

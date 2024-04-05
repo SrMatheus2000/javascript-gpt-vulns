@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["No input validation", "Potential for prototype pollution"],
+  "description": "The function does not validate the input for 'path'. If the 'path' is user-controlled, it could lead to prototype pollution which allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This could lead to various attacks such as denial of service, data manipulation, or even arbitrary code execution. Also, the function does not neutralize special elements in the 'path' input, which could lead to injection attacks."
+}

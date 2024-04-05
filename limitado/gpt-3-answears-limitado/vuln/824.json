@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-23"],
+  "vulnerabilities": ["Path Traversal", "Directory Traversal"],
+  "description": "The provided JavaScript function is vulnerable to Path Traversal and Directory Traversal attacks. It does not properly validate user input and allows an attacker to access files outside of the intended directory."
+}

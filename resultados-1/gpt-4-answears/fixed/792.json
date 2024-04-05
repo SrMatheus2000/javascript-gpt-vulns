@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function uses 'Buffer.allocUnsafe' to allocate memory buffer. This method of Node.js Buffer API allows for the creation of Buffer instances in a way that is faster than 'Buffer.alloc', but the allocated memory segment might contain old data that is potentially sensitive. If this old data is not completely overwritten by the user, it can be leaked when the Buffer memory is read. This can lead to information disclosure vulnerabilities. Additionally, there is no check for negative values of 'sliceLength', 'sliceStart', and 'sliceEnd', which can lead to buffer overflow vulnerabilities."
+}

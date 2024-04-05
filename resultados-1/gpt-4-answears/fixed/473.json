@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files without proper validation. This could allow an attacker to read arbitrary files on the server. It's also vulnerable to Code Injection (CWE-94) as it uses the 'exec' function from 'child_process' which can execute arbitrary commands. This could allow an attacker to execute arbitrary commands on the server. Lastly, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it uses 'setInterval' without any mechanism to clear the interval. This could lead to a Denial of Service (DoS) attack by consuming server resources."
+}

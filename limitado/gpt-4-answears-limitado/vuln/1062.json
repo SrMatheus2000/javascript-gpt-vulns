@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Type Confusion"],
+  "description": "The function is vulnerable to SQL Injection attacks because it concatenates user-supplied input into SQL queries without properly sanitizing it. This could allow an attacker to manipulate SQL queries and potentially access, modify or delete data in the database. The function also does not validate the type of the 'prop' parameter, which could lead to Type Confusion vulnerabilities if an unexpected type is passed."
+}

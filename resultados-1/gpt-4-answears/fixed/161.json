@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks if the provided value is an array or a plain object and iterates over its elements or properties. It also has a protection against prototype pollution by checking if the keys include '__proto__' or 'constructor'."
+}

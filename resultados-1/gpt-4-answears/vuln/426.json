@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE200: Information Exposure"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Information Exposure"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it includes a mechanism for adding an XSRF token to a request but does not validate or verify that the token is correct. This could allow an attacker to trick a user into making an unintended request to the web application. The function is also vulnerable to Information Exposure as it exposes potentially sensitive information in error messages. This could allow an attacker to gain information about the internal workings of the application."
+}

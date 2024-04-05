@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'org.type' and 'org.uuid' variables are directly concatenated into the HTML string without any sanitization or encoding. If these variables contain malicious scripts, they will be executed when the HTML is rendered in the browser. This can lead to various security issues such as stealing sensitive data, session hijacking, defacement of the website, etc."
+}

@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-95"
+  ],
+  "vulnerabilities": [
+    "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')",
+    "Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"
+  ],
+  "description": "The provided code is vulnerable to SQL injection and eval injection attacks. The 'merge' function does not properly sanitize user input before using it in SQL queries or dynamically evaluating code. This can allow an attacker to manipulate the SQL query or inject malicious code, leading to unauthorized access or execution of arbitrary code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function JSONPPolling is vulnerable to code injection. It directly uses the user input (data.query.i) in the generation of code without any sanitization or validation. An attacker can manipulate the 'i' parameter in the query to inject malicious code, which will be executed when the function is called."
+}

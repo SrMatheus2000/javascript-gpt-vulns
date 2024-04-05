@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-706: Use of Incorrectly-Resolved Name or Reference"],
+  "vulnerabilities": ["Path Traversal", "Incorrectly-Resolved Name or Reference"],
+  "description": "The function 'finishModule' is vulnerable to path traversal attacks because it does not validate or sanitize the 'stageTo' and 'stageFrom' parameters before using them in file operations. This could allow an attacker to read, write, or delete files outside of the intended directories. Additionally, the function may use an incorrectly-resolved name or reference if 'child.fromBundle' is not equal to 'bundler', which could lead to unintended behavior."
+}

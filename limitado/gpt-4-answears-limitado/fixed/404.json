@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The function uses the 'execFile' function to execute the 'nmcli' command with user-supplied input (config.iface) as arguments without proper sanitization or validation. This could allow an attacker to inject malicious commands that will be executed with the privileges of the process running the JavaScript code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is not vulnerable. It simply removes XML entities from an SVG string using a regular expression. There are no obvious security vulnerabilities such as injection points, insecure use of eval, or insecure direct object references."
+}

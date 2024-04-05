@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It properly escapes user input before using it in a SQL query, which protects against SQL injection attacks. It also throws an error if an unsupported dialect is used, which prevents unexpected behavior."
+}

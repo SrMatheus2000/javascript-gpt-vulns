@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Code Injection", "Prototype Pollution"],
+"description": "The function does not validate or sanitize the input 'v', which can lead to code injection if the input includes malicious code. Additionally, the function directly uses the input to modify the 'extensions' object, which can lead to prototype pollution if the input includes property names that exist on the object's prototype."
+}

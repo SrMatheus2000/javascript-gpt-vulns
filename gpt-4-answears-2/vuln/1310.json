@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it does not validate or sanitize the 'uploadDir' and 'filename' variables which are used to construct a path to a file. An attacker could manipulate these variables to access or overwrite arbitrary files on the system. The function is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of concurrent uploads or the total amount of data that can be uploaded, potentially leading to a Denial of Service (DoS) condition."
+}

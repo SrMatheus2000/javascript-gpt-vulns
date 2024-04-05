@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function uses the escapeFn function to escape the input value before pushing it into the args array. However, if the escapeFn function does not properly escape all potentially dangerous characters, this could lead to Cross-Site Scripting (XSS) vulnerabilities. An attacker could inject script code as the input value, which would then be executed when the args array is used in a context that interprets the script code."
+}

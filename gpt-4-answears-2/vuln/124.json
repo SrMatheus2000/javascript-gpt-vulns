@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any common security vulnerabilities. It is primarily defining a set of constants and returning an object. There are no obvious instances of insecure practices such as eval() usage, insecure regular expressions, or prototype pollution. However, it's important to note that this analysis is based on the provided function alone and does not take into account the wider application context or the source and handling of the data processed by this function."
+}

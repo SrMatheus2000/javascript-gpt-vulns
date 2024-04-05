@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'cortex_data' variable is directly inserted into 'popupHtml' without any sanitization or encoding. If an attacker can control the value of 'cortex_data', they can inject arbitrary JavaScript code that will be executed when the HTML is rendered. This can lead to a variety of attacks, such as stealing sensitive data, performing actions on behalf of the user, or defacing the website. The vulnerability corresponds to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

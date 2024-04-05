@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+  "vulnerabilities": ["Type confusion", "Uncaught exceptions"],
+  "description": "The function does not properly validate the input 'type'. If an unexpected type is provided, the function will return the original value without any transformation, which could lead to type confusion in the rest of the program. Additionally, the function uses a try-catch block when parsing a JSON object, but does not handle the exception, which could lead to uncaught exceptions in the program."
+}

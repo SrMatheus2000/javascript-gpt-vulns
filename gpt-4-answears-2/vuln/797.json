@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Input Validation Vulnerability"],
+"description": "The function does not validate the input 'cwd' and 'verbose' which can lead to unexpected behavior or errors. It's also possible to inject malicious code through these parameters. Moreover, the function uses the 'url.parse' method which is deprecated in Node.js v11.0.0. Using deprecated API can lead to potential security issues and unexpected behavior."
+}

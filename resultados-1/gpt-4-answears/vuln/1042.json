@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Uncontrolled Modification of Object Prototype Attributes ('Prototype Pollution')"],
+  "description": "The function 'unique_name_575' is vulnerable to Prototype Pollution because it dynamically modifies object attributes without proper validation. This can allow an attacker to modify the prototype of 'Object' which could lead to application-wide changes that can result in Denial of Service (DoS), Remote Code Execution (RCE), or other serious security vulnerabilities."
+}

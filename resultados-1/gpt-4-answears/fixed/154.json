@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it reads files from a path specified in the 'filepath' parameter without validating or sanitizing it. An attacker could potentially read any file on the system by providing a path like '../../etc/passwd'. The function is also vulnerable to Code Injection (CWE-94) because it uses the 'YAML.load' function, which can execute arbitrary JavaScript code contained in the YAML file. If 'yamlOptions.unsafeLoad' is true, an attacker could potentially execute arbitrary code by providing a malicious YAML file. Finally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of the file that can be read. An attacker could potentially cause a denial of service by providing a very large file."
+}

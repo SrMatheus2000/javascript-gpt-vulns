@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function 'dataselectfn' is vulnerable to Cross-Site Scripting (XSS) and Code Injection attacks. The function does not properly sanitize the input 'sel' before using it in the function call 'sel.call'. This could allow an attacker to inject malicious scripts or code. Additionally, the function attempts to mitigate basic XSS attacks by replacing '<' and '>' characters in the 'data' variable. However, this is not sufficient to prevent all forms of XSS attacks, as there are many other ways to inject malicious scripts. The function should use a proper output encoding library to encode the output for the correct context."
+}

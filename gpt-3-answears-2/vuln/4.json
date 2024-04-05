@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The htmlEncode function does not properly sanitize input, making it vulnerable Cross-Site Scripting (XSS) attacks. An attacker can inject malicious code into the text parameter, which will be executed by the browser when the encoded HTML is rendered."
+}

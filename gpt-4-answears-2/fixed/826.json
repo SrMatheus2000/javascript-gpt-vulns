@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The sanitize function attempts to remove script tags and javascript event handlers from the input HTML, but it does not cover all possible cases. For example, it does not handle inline event handlers in a case-insensitive manner, and it does not handle javascript URLs in href attributes. This could allow an attacker to inject malicious scripts into the web page."
+}

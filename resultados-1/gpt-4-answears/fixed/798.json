@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-312: Cleartext Storage of Sensitive Information", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Sensitive Data Exposure"],
+  "description": "The function is converting an API key into base64 and returning it. This can be a potential security risk as base64 encoding is not a secure way to hide or encrypt sensitive data like API keys. Anyone who has access to the base64 encoded API key can easily decode it and gain access to the API key. This can lead to unauthorized access to the API."
+}

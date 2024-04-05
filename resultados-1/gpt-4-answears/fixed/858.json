@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to contain any known vulnerabilities. It is a well-structured function for creating and managing tooltips, and it uses jQuery in a safe and appropriate manner. It does not use any dangerous functions or practices, such as eval(), and it does not appear to be susceptible to common web vulnerabilities such as Cross-Site Scripting (XSS) or Cross-Site Request Forgery (CSRF)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-310: Cryptographic Issues", "CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Cryptographic Algorithm", "Information Exposure"],
+  "description": "The function is vulnerable as it does not validate the input 'value' for potential harmful data, which can lead to security issues. The function uses 'crypto.createDecipheriv' which can be insecure if not properly implemented. The 'key' and 'algorithm' used for decryption are not shown in the function, if they are hard-coded or insecurely stored, it can lead to Insecure Cryptographic Storage vulnerability. Also, if an insecure or outdated algorithm is used, it can lead to Insecure Cryptographic Algorithm vulnerability. Lastly, if an error occurs during the decryption process, the function throws an error message which can expose sensitive information, leading to Information Exposure vulnerability."
+}

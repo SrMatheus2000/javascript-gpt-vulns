@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a serious security vulnerability. It allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to several types of security issues, such as Remote Code Execution, Denial of Service, or even Cross-Site Scripting. This happens because the function does not validate the input 'arrKey' and directly uses it to modify the object 'obj'. An attacker can provide '__proto__' or 'constructor' as 'arrKey' to modify the Object prototype."
+}

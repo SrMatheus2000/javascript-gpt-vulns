@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses several regular expressions (regex) to parse input. If an attacker provides a malicious string that results in catastrophic backtracking, it could cause the application to consume excessive resources, leading to a Denial of Service (DoS) condition. This is known as a Regular Expression Denial of Service (ReDoS) attack. The vulnerability is particularly concerning for the 'coord' regex, which does not have an upper limit for the number of digits, potentially leading to excessive backtracking."
+}

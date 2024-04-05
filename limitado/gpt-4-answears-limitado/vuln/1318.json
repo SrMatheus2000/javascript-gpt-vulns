@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input in a command that is executed by a child process. This can allow an attacker to execute arbitrary commands in the server's context. The function also does not properly validate or sanitize the user-supplied input, which can lead to other types of attacks."
+}

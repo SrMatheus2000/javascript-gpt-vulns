@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The 'srcpath' variable is created by resolving the 'header.linkname' path, which could be manipulated to access directories and files outside of the intended path. This could allow an attacker to read, write, or delete files that they should not have access to. This vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

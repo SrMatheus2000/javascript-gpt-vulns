@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Input Validation", "Code Injection"],
+  "description": "The function does not validate the input 'param'. This can lead to unexpected behavior if 'param' is not in the expected format. Additionally, the function does not sanitize the 'key' and 'value' variables before using them to modify 'parsedParams'. This could potentially allow for code injection if 'param' contains malicious code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Control of Generation of Code ('Code Injection')"],
+  "description": "The function is vulnerable to command injection and code injection attacks. The 'exec' function is used without proper input validation, allowing an attacker to inject malicious commands or code."
+}

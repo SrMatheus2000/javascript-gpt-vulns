@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The 'command' variable is directly included in the error message without any sanitization or escaping. If the 'command' variable can be controlled by an attacker, they could inject malicious code that would be executed when the error message is processed."
+}

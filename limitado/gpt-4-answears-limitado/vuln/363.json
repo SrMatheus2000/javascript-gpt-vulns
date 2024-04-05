@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of worker processes that can be created. This can lead to resource exhaustion if an attacker sends a large number of requests. Additionally, the function does not validate the input received in the 'message' event (CWE-20). This can lead to unexpected behavior if the input is not in the expected format or contains malicious data."
+}

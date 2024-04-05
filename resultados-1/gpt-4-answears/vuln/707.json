@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function 'unique_name_369' is vulnerable to Denial of Service (DoS) attacks. The function uses a regular expression (regex) in the 'replace' method which can lead to excessive consumption of CPU resources when processing large inputs. This is known as a 'regex DoS' (ReDoS) attack. An attacker could exploit this vulnerability by providing a large input string, causing the application to become unresponsive."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'path' property of the 'opts' object is directly used to determine the extraction directory. An attacker can manipulate the 'path' to navigate to arbitrary directories. This can lead to unauthorized read/write access to files and directories located outside of the intended directory. The vulnerability corresponds to CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

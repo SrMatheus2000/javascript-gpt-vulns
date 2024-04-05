@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-807"],
+"vulnerabilities": ["Improper Input Validation", "Reliance on Untrusted Inputs in a Security Decision"],
+"description": "The function does not validate the 'type' parameter, which can lead to unexpected behavior. Also, the function relies on untrusted inputs to make security decisions, such as parsing a string to JSON without verifying its structure first. This can lead to various types of attacks, such as code injection or denial of service."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'sha' variable is directly used in the 'git show' and 'git log' commands without any sanitization or validation. An attacker can inject arbitrary commands by providing a specially crafted 'sha' value."
+}

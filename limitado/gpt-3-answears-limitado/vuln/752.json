@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-754"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The provided code is vulnerable to command injection. The 'this.prefix' variable is not properly sanitized before being passed to the 'correctMkdir' function, which can allow an attacker to execute arbitrary commands."
+}

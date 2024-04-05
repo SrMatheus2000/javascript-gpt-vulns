@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The function uses user-supplied input to form shell commands that are then executed. If an attacker can influence the 'options' object, they can inject arbitrary shell commands which will be executed by the server. This can lead to arbitrary code execution, data exfiltration, or denial of service."
+}

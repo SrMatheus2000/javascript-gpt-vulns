@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function appears to be safe. It checks if a 'matched' property exists on the input object 't'. If it does, it appends a string to 'htmlText' that includes the 'matched' property value, but only after it has been passed through an 'escapeHTML' function, presumably to sanitize it and prevent Cross-Site Scripting (XSS) attacks. If the 'matched' property does not exist, it appends the 'normal' property value to 'htmlText', again after passing it through the 'escapeHTML' function. The function does not appear to have any obvious vulnerabilities."
+}

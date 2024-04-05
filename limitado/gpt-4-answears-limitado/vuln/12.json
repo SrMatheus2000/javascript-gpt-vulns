@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918: Server-Side Request Forgery (SSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) because it takes a URL from the 'Location' header of the response and makes a request to it without any validation. An attacker can control the 'Location' header to make the server send a request to an arbitrary URL. This can be used to attack internal network resources that are not normally accessible from the outside. Additionally, the function does not validate the response status code before using it to determine the method of the new request. This can lead to unexpected behavior if the status code is not one of the expected values."
+}

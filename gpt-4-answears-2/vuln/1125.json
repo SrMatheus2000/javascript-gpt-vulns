@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function does not properly sanitize the 'data.linkText', 'data.email.address', and 'attributes.set['data-cke-saved-href']' inputs before inserting them into the DOM using the 'setHtml' and 'CKEDITOR.dom.text' methods. An attacker could inject malicious scripts into these inputs, which would then be executed in the user's browser when the page is rendered."
+}

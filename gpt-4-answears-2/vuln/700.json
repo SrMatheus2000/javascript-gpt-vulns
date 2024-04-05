@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Null Pointer Dereference"],
+"description": "The function does not check if 'options' or 'cache' are null or undefined before calling methods on them. This could lead to a Null Pointer Dereference if these objects are not properly initialized before the function is called."
+}

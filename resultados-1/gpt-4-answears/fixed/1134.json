@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the jQuery $.html() method in the quickClicks function, which does not escape or sanitize the input, allowing for the potential execution of malicious scripts. This is identified as CWE-79, which is a type of Input Validation vulnerability."
+}

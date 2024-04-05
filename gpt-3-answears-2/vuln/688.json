@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-704"],
+  "vulnerabilities": ["Improper Access Control", "Insecure Direct Object References"],
+  "description": "The function 'unique_name_356' is vulnerable to improper access control and insecure direct object references. It does not properly validate the input parameters 't', 'e', 'n', and 'r', which can lead to unauthorized access or manipulation of data."
+}

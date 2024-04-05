@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-676"],
+"vulnerabilities": ["Code Injection", "Use of Potentially Dangerous Function"],
+"description": "The function uses the eval() function in case 39, which can lead to code injection vulnerabilities if the input is not properly sanitized. This is a serious security risk as it allows an attacker to execute arbitrary JavaScript code. The function also does not validate or sanitize input in other cases, which can lead to unexpected behavior or further vulnerabilities."
+}

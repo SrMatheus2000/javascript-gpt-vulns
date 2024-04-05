@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Environment Variable Exposure", "No Input Validation"],
+  "description": "The function is vulnerable as it directly assigns the value of an environment variable to a property of the 'env' object without any validation. This could lead to exposure of sensitive information if the 'key' parameter is controlled by an attacker. Additionally, there is no error handling or input validation, which could lead to unexpected behavior or further vulnerabilities."
+}

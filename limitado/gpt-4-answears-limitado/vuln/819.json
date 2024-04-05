@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-200", "CWE-601"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure", "URL Redirection to Untrusted Site ('Open Redirect')"],
+  "description": "The function parse_URI is vulnerable to several types of attacks. Firstly, it does not validate the input URI properly, which can lead to unexpected behavior (CWE-20). Secondly, it exposes sensitive information such as username and password in the constructed URI (CWE-200). Lastly, it does not validate the redirection URL, which can lead to redirection to untrusted sites (CWE-601)."
+}

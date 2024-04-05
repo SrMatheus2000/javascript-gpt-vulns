@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-276: Incorrect Default Permissions"],
+  "vulnerabilities": ["Path Traversal", "Insecure Direct Object References (IDOR)"],
+  "description": "The function deleteProject is vulnerable to Path Traversal and Insecure Direct Object References (IDOR) attacks. The function does not validate or sanitize the 'name' parameter before using it to construct a file path. An attacker could manipulate the 'name' parameter to traverse the file system outside of the intended directory (CWE-22). Additionally, the function does not check if the user has the necessary permissions to delete the project, which could lead to unauthorized access or modification of data (CWE-276)."
+}

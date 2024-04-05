@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-330: Use of Insufficiently Random Values"],
+"vulnerabilities": ["Insecure Randomness"],
+"description": "The function uses Math.random() for generating random numbers. Math.random() is not cryptographically secure and can produce predictable values. This can lead to vulnerabilities where an attacker can predict the outcome of the random numbers."
+}

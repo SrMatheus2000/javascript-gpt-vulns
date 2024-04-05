@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function daySegHTML(segs) is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input in the generation of HTML content without properly sanitizing it. Specifically, the 'url' and 'event.title' variables are directly included in the HTML content. If these variables contain malicious scripts, they will be executed when the HTML content is rendered in a web browser."
+}

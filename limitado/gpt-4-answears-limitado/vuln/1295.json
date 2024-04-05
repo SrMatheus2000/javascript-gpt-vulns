@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function `inlineCodeRenderer` is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly inserts user-controlled input (`code.content` and `lang`) into HTML output without proper sanitization or encoding. An attacker could potentially inject malicious scripts by providing specially crafted input, leading to XSS. This is related to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

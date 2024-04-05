@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-209: Information Exposure Through an Error Message", "CWE-404: Improper Resource Shutdown or Release"],
+  "vulnerabilities": ["Denial of Service", "Information Exposure", "Resource Leak"],
+  "description": "The function 'unique_name_446' is vulnerable to several types of attacks. Firstly, it is susceptible to a Denial of Service (DoS) attack due to the 'setMaxListeners' method which sets the maximum number of listeners to 1000. This could potentially lead to an uncontrolled resource consumption (CWE-400) if an attacker sends a large number of requests. Secondly, the function may expose sensitive information through error messages (CWE-209) as it emits 'error' events without any filtering or sanitization. Lastly, the function may not properly release system resources (CWE-404) as it does not seem to handle the cleanup of the 'stream' object in case of errors or when it is no longer needed."
+}

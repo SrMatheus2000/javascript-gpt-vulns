@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'unique_name_83' is vulnerable to Prototype Pollution. This is because it does not prevent the modification of the Object prototype. An attacker can manipulate these attributes to add or modify properties of JavaScript objects. This can lead to several types of attacks such as Denial of Service, Remote Code Execution, or even property injection."
+}

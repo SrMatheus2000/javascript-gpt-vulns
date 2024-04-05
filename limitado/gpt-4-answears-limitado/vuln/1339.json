@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function splits the input string into lines and then processes each line using regular expressions. If the input string is very large, this can consume a lot of memory and CPU resources, leading to a DoS condition. Additionally, if the regular expressions used in the match() calls are complex and the input string is crafted in a certain way, this can lead to Regular Expression Denial of Service (ReDoS) attacks. The function does not validate the input string before processing it, which is a violation of the principle of 'never trust user input'."
+}

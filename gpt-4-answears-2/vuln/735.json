@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to several types of attacks. First, it does not validate the input from the user, which can lead to various types of attacks such as SQL Injection, Cross-Site Scripting (XSS), etc. Second, it exposes sensitive information such as the hostname and port number, which can be exploited by an attacker to gain unauthorized access. Lastly, it does not control the amount of resources consumed when processing the request, which can lead to a Denial of Service (DoS) attack."
+}

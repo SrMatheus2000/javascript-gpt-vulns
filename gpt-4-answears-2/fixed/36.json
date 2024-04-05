@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function checkGraphvizInstalled takes a config object and uses its graphVizPath property to construct a command that is then executed. If an attacker can control the value of graphVizPath, they could inject arbitrary commands to be executed on the server."
+}

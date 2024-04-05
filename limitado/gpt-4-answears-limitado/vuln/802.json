@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-184: Incomplete List of Disallowed Inputs"],
+  "vulnerabilities": ["URL Redirection to Untrusted Site ('Open Redirect')", "Potential Protocol Injection"],
+  "description": "The function 'fixUrl' is vulnerable as it does not properly validate the 'url' and 'protocol' inputs. An attacker could potentially manipulate the 'protocol' parameter to inject malicious protocols. Additionally, the function does not validate against all possible disallowed inputs, which could lead to URL redirection to untrusted sites."
+}

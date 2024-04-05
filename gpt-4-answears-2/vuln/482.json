@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to path traversal attacks. An attacker can provide a directory string that includes '..' to navigate up directories, potentially gaining unauthorized access to files and directories outside of the intended scope. This is a common security issue known as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

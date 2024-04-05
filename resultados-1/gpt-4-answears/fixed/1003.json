@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Output Neutralization for Logs"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize user input, allowing for the potential execution of malicious scripts. This is particularly evident in the 'htmlToData' function where user input is directly used without any sanitization. Additionally, the function does not properly neutralize output for logs, which could lead to information disclosure or other potential attacks."
+}

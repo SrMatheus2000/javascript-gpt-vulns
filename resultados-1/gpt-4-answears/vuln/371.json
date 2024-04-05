@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Path Traversal", "Code Injection"],
+  "description": "The function is vulnerable to Command Injection (CWE-78) as it uses execSync function which can execute shell commands. This can be exploited if an attacker can control the input to these functions. It is also vulnerable to Path Traversal (CWE-22) as it uses fs.readFileSync function with user controlled input without proper sanitization. This can allow an attacker to read arbitrary files on the system. The function is also vulnerable to Code Injection (CWE-94) as it uses eval-like method (execSync) which can execute arbitrary code."
+}

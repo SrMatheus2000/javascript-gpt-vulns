@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Improper Output Neutralization for Logs"],
+"description": "The function uses the escape() function to sanitize the input. However, the escape() function is not safe for escaping user input in the context of HTML or JavaScript as it does not escape all characters that have special meaning in HTML or JavaScript. This could lead to Cross-Site Scripting (XSS) attacks if the output of this function is directly inserted into HTML or JavaScript code without further sanitization. It is recommended to use context-specific escaping/encoding libraries to sanitize user input."
+}

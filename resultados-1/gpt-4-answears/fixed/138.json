@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function inetChecksite is vulnerable to command injection. This is because it uses the exec function to execute a curl command with user-supplied input (urlSanitized). Although the function attempts to sanitize the input by removing certain special characters, it does not adequately prevent all forms of command injection. An attacker could potentially provide a URL that includes shell commands, which would then be executed on the server."
+}

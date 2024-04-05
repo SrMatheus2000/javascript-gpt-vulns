@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The function checkCertificate is vulnerable to command injection. This is because it uses user-supplied input (certificate and passphrase) to construct a command that is executed by the openssl.spawnWrapper function. If an attacker can control the certificate or passphrase, they can inject arbitrary commands to be executed. Additionally, the function does not properly validate the input, which can lead to unexpected behavior or further vulnerabilities."
+}

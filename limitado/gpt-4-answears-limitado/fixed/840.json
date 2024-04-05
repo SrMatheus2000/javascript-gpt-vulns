@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The fileName parameter is used to construct a file path that is used to read a file. An attacker can manipulate the fileName parameter to read arbitrary files on the system. This is possible because the function does not properly validate or sanitize the fileName parameter before using it to construct a file path."
+}

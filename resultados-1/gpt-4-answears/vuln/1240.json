@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses jQuery's .text() method to get the text of each option in a select element and pushes it into the columnNames array. If an attacker can control the text of these options, they could inject malicious scripts that would be executed when the array is used. This could lead to a variety of attacks, such as stealing sensitive data or performing actions on behalf of the user."
+}

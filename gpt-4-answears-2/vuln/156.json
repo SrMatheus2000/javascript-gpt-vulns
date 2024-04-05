@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200"],
+"vulnerabilities": ["Input Validation", "Information Exposure"],
+"description": "The function does not properly validate the email input. It only checks if there is a character before and after '@' and '.', which is not sufficient to validate an email address. This can lead to Input Validation vulnerability (CWE-20). Moreover, the error message might expose sensitive information about the system (Information Exposure - CWE-200)."
+}

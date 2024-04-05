@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It uses the escapeHtml function to sanitize the table name before it is used in a query, which should prevent SQL injection attacks. The function also uses AJAX to send a GET request, which could potentially expose sensitive data if the request is intercepted, but this is a risk inherent in any web application and not a specific vulnerability of this function."
+}

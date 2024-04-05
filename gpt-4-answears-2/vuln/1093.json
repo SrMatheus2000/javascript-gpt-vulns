@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function does not sanitize or validate the input 'p' which can lead to code injection if a malicious value is passed. It also uses the input 'p' directly in the code without any validation, which can lead to unexpected behavior or security issues."
+}

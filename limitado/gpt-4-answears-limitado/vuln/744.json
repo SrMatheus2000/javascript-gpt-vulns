@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is about altering a JavaScript object's prototype (prototype chaining). The vulnerability occurs when the properties of JavaScript objects, which can be controlled by an attacker, can be arbitrarily polluted by manipulating their prototype. This can lead to several types of vulnerabilities like Remote Code Execution, Denial of Service, or even bypassing security checks. In this function, the keys from the source object are directly assigned to the merged object without any validation, which can lead to Prototype Pollution if the source object contains malicious keys."
+}

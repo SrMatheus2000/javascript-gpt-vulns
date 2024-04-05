@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-327", "CWE-759", "CWE-760"],
+"vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm", "Use of a One-Way Hash without a Salt", "Use of a One-Way Hash with a Predictable Salt"],
+"description": "The function uses 'aes-256-cbc' which is a risky cryptographic algorithm. It also uses 'pbkdf2' for key derivation without a salt, making it vulnerable to rainbow table attacks. The salt used for signed cookies is predictable, which can lead to vulnerabilities."
+}

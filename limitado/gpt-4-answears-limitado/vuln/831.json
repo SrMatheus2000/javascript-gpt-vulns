@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'branch' variable is directly included in the command string that is passed to 'execSync', without any sanitization or escaping. If an attacker can control the value of 'res.data.head.ref', they could inject arbitrary commands to be executed on the server."
+}

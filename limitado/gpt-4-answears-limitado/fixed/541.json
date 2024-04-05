@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It takes an input (tElement.text()) and directly uses it to replace certain characters without proper sanitization or encoding. An attacker could potentially inject malicious scripts through the input, which would then be executed when the output is rendered in a web page."
+}

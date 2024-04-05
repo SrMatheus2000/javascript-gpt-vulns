@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'name' parameter is directly used in the creation of a new HTML element without proper sanitization or encoding, which can lead to the execution of arbitrary JavaScript code if a malicious string is passed as 'name'."
+}

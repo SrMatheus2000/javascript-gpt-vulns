@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["SQL Injection", "NoSQL Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to SQL and NoSQL injection attacks. The 'filter' parameter is directly used in the query without any sanitization or parameterization, which can lead to injection attacks if the 'filter' data is user-controlled. Also, there is no validation of the input parameters, which can lead to unexpected behavior or errors."
+}

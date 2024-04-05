@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'html' variable is directly inserted into the innerHTML of an element, which can lead to the execution of malicious scripts if the input is not properly sanitized. This is a common security issue known as Cross-Site Scripting (XSS)."
+}

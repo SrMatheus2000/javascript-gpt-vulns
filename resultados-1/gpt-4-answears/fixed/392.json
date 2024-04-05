@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-754", "CWE-252"],
+  "vulnerabilities": ["Improper Check for Unusual or Exceptional Conditions", "Unchecked Return Value"],
+  "description": "The function does not check if the 'algo' variable is defined before using it in a switch statement, which could lead to unexpected behavior. Also, the function does not check the return value of the 'encrypt' methods, which could lead to unexpected behavior if the encryption fails. Furthermore, the function does not handle the default case in the switch statement, which could lead to unexpected behavior if 'algo' does not match any of the expected values."
+}

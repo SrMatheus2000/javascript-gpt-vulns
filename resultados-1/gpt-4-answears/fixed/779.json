@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-117: Improper Output Neutralization for Logs"],
+  "vulnerabilities": ["Input Validation", "Log Injection"],
+  "description": "The function does not validate or sanitize the 'name' variable from the request headers, which could lead to potential security risks such as injection attacks. Also, the function does not neutralize user-controllable input before it is placed in log files, which could lead to log injection attacks."
+}

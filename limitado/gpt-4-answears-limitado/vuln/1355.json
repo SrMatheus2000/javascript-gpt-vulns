@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'options.file' variable is directly concatenated to the 'command' string without any sanitization or escaping. This means that if an attacker can control the value of 'options.file', they can inject arbitrary commands to be executed on the server. For example, if 'options.file' is set to '; rm -rf /', the resulting command would be '/bin/df -kP ; rm -rf /', which would delete all files on the server."
+}

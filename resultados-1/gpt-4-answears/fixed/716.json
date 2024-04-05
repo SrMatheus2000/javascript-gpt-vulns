@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function generateColumnString does not sanitize the input 'column' before using it to generate SQL. This could allow an attacker to inject malicious SQL code into the 'column' parameter, leading to SQL Injection attacks. It is recommended to always sanitize user inputs and use parameterized queries or prepared statements to prevent SQL Injection attacks."
+}

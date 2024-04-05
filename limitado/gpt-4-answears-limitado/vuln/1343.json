@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it concatenates user-controlled input into a command string that is executed by the system. This occurs in the 'exec', 'kill', 'restart', 'rm', 'run' methods where 'serviceName' and 'cmd' are directly concatenated into the command string. An attacker could inject malicious commands, leading to arbitrary command execution. Additionally, the function is vulnerable to path traversal attacks. The 'cwd' variable, which is used to construct file paths, can be controlled by the user through the 'options' parameter. An attacker could manipulate 'cwd' to access arbitrary files on the system."
+}

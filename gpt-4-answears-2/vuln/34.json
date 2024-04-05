@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the .html() method in jQuery, which allows for the execution of arbitrary JavaScript code. The input received from the server is directly inserted into the page without proper sanitization or encoding, which can lead to XSS attacks if the server-side code does not properly sanitize the input. An attacker could inject malicious scripts into the page, leading to various security issues such as session hijacking, identity theft, defacement of the website, and other malicious activities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a nonce validation function that checks if a given nonce is in the list of nonces and is not expired. If the nonce is found and not expired, the function returns true; otherwise, it returns false. The function also removes expired nonces from the list. There are no obvious security issues such as injection, insecure direct object references, security misconfiguration, sensitive data exposure, missing function level access control, cross-site scripting (XSS), insecure deserialization, using components with known vulnerabilities, or unvalidated redirects and forwards."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400"],
+"vulnerabilities": ["Uncontrolled Resource Consumption"],
+"description": "The function 'replace.extend' allows the extension of the 'charMap' object without any restrictions. This can lead to uncontrolled resource consumption ('CWE-400') if an attacker provides a large amount of data to be added to 'charMap', potentially causing a denial of service."
+}

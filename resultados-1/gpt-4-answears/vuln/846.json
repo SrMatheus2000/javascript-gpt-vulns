@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'host' parameter is directly concatenated into the command string without any sanitization or escaping. This means that an attacker could provide a 'host' value that alters the command being executed, potentially allowing them to execute arbitrary commands on the system."
+}

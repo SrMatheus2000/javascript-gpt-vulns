@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-613: Insufficient Session Expiration"],
+  "vulnerabilities": ["Information Disclosure", "Insufficient Session Management"],
+  "description": "The function is vulnerable to Information Disclosure (CWE-200) as it reveals whether a user with a specific email exists in the system or not. This can be exploited by an attacker to enumerate users in the system. Additionally, the function does not handle session expiration (CWE-613), which can lead to session hijacking if an attacker is able to obtain the session cookie."
+}

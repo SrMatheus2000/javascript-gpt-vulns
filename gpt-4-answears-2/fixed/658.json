@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to code injection and cross-site scripting (XSS) attacks. The function does not validate or sanitize the input data before using it to replace the placeholders in the text. An attacker could potentially inject malicious code or scripts in the data, which would then be executed when the resulting string is used in a context that interprets it as code or HTML."
+}

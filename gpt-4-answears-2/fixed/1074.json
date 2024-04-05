@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function 'unique_name_637' is vulnerable to open redirect attacks. The function uses user input to construct a URL without validating or sanitizing the input. This could allow an attacker to create a URL that redirects users to an arbitrary website. The attacker could use this to perform phishing attacks or steal sensitive information."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function uses the 'clone' function which can lead to Insecure Direct Object References (IDOR) vulnerability if the object being cloned has methods. This can allow an attacker to manipulate the object and potentially execute arbitrary code. Additionally, the function does not validate or sanitize the 'options' input, which can lead to potential security risks if the input is controlled by an attacker."
+}

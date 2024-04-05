@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the 'playback.url' input when creating the 'initVars' array. If an attacker can control the 'playback.url' input, they could inject malicious scripts that would be executed in the context of the user's browser. This could lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

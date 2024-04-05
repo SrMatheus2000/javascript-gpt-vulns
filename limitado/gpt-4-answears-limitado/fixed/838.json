@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-200", "CWE-209", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to several types of attacks. Firstly, it does not validate the input 'data' which can lead to unexpected behavior or malicious exploitation (CWE-20). Secondly, it exposes potentially sensitive server information (server name, API version, request duration, current time) which can be used by an attacker to gain more information about the system (CWE-200). Thirdly, it exposes detailed error messages which can provide an attacker with valuable information about the system (CWE-209). Lastly, it does not limit the size of the response, which can lead to resource exhaustion if an attacker sends a large

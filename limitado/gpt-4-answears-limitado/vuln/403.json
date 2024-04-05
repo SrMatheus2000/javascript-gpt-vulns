@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470"],
+  "vulnerabilities": ["Unrestricted property access"],
+  "description": "The function allows unrestricted access to an object's properties. This can lead to potential security risks if the object contains sensitive data. The function does attempt to prevent access to the 'constructor' property, but it does not prevent access to other potentially dangerous properties such as '__proto__' or 'prototype'. This can lead to prototype pollution attacks where an attacker can manipulate the prototype of an object, leading to unexpected behavior and potential security vulnerabilities."
+}

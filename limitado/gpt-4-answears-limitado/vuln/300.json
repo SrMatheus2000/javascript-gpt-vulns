@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'checkout' is vulnerable to code injection. It concatenates the 'options' parameter directly into a command that is then executed. If an attacker can control the 'options' parameter, they could inject arbitrary commands to be executed."
+}

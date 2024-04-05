@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'this.settings.title' value is directly inserted into the HTML without proper sanitization, allowing an attacker to inject malicious scripts."
+}

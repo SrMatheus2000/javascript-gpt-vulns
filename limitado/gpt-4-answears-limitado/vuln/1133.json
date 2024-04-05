@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input to generate HTML content without properly sanitizing it. For example, the 'title', 'name', 'value', and 'bgcolor' variables are directly inserted into the HTML string 'text' without any form of sanitization or encoding. An attacker could potentially inject malicious scripts by providing specially crafted input, leading to XSS attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an input string and a data object, and replaces any instances of {{ }} markers in the string with the corresponding value from the data object. However, it does not sanitize the input or the data before inserting it into the string. This means that if the data object contains any malicious scripts, they will be inserted into the string and could be executed when the string is rendered in a web page."
+}

@@ -1,0 +1,14 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-78",
+    "CWE-94",
+    "CWE-99"
+  ],
+  "vulnerabilities": [
+    "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')",
+    "Improper Control of Generation of Code ('Code Injection')",
+    "Improper Control of Resource Identifiers ('Resource Injection')"
+  ],
+  "description": "The function is vulnerable to OS command injection, code injection, and resource injection attacks. The 'chunk' variable is directly used in the 'yaml.load' function without proper validation or sanitization, which can allow an attacker to inject malicious code or commands. Additionally, the 'filename' variable is constructed using user-controlled input without proper validation, which can lead to resource injection vulnerabilities."
+}

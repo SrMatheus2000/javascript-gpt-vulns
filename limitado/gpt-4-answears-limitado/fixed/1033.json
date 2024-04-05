@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL Injection. The 'options.offset' and 'options.limit' parameters are directly concatenated into the SQL query without proper sanitization or parameterization. An attacker could potentially manipulate these parameters to inject malicious SQL code, leading to unauthorized data access, data corruption, or data loss."
+}

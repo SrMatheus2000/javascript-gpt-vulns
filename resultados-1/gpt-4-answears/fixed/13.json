@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Null Pointer Exception"],
+  "description": "The function getAnnotationURL does not validate the input 'sourceMapString'. If a null or undefined value is passed, the function will throw a TypeError because it attempts to call the match method on an undefined value. This can lead to a Denial of Service (DoS) if an attacker can control the input to this function. Additionally, if the regular expression does not match, the function will attempt to access the second element ([1]) of a null array, leading to a Null Pointer Exception."
+}

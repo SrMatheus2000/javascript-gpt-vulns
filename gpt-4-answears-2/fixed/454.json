@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks the types of its inputs and handles them appropriately, and does not use any dangerous functions or operations that could lead to common vulnerabilities such as injection attacks, cross-site scripting (XSS), or denial-of-service (DoS)."
+}

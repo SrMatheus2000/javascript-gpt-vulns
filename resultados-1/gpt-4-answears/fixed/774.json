@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-749"],
+  "vulnerabilities": ["Exposed Dangerous Method or Function"],
+  "description": "The function 'unique_name_424' is using 'ipcRenderer.sendSync' which is a synchronous inter-process communication (IPC) method. This can be exploited by an attacker to send arbitrary events to the main process, potentially leading to remote code execution (RCE) if unsanitized input is passed to the function. It's recommended to use context isolation and validate or sanitize all inputs."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and Injection attacks. It directly concatenates the 'queryParams' object to the 'url' without any form of sanitization or encoding. An attacker can inject malicious scripts or commands through 'queryParams', which will be executed when the returned string is used in a context that interprets it as code or a command."
+}

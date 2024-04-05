@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Use of eval function"],
+  "description": "The function 'loopfn' is vulnerable because it uses the 'eval' function which can execute arbitrary code. This can lead to various security issues like code injection attacks. It's recommended to avoid using 'eval' whenever possible."
+}

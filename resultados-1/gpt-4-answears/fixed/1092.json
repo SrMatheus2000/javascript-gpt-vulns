@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the 'bookmark.id' in the HTML output without properly sanitizing it. An attacker could inject malicious scripts by manipulating the 'bookmark.id' value. These scripts would then be executed in the user's browser when the page is rendered. This could lead to various harmful actions, such as stealing sensitive information or performing actions on behalf of the user."
+}

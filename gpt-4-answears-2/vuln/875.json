@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-749"],
+"vulnerabilities": ["Exposed Dangerous Method or Function"],
+"description": "The function is using 'ipcMain.emit' which is a part of Electron's IPC module. This can be a potential security risk if the event handlers registered on the IPC channels don't validate the incoming messages, as it can lead to Remote Code Execution (RCE) attacks. It's recommended to use 'ipcMain.handle' or 'ipcMain.invoke' instead of 'ipcMain.emit' and always validate incoming messages."
+}

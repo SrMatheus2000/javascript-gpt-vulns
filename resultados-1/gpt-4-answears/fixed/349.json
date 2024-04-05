@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Prototype Pollution", "Cross-Site Scripting (XSS)"],
+  "description": "The function 'lookup' does not properly validate the 'field' input, which can lead to Prototype Pollution if the 'field' input is '__proto__' or 'constructor'. This can allow an attacker to add or modify properties of 'Object.prototype'. The function also does not sanitize the 'field' input before using it to access a property of 'obj', which can lead to Cross-Site Scripting (XSS) if 'obj' is used to generate HTML and 'field' contains a script."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)", "Type Coercion"],
+"description": "The function is vulnerable to Denial of Service (DoS) attacks. An attacker can pass a very large number as the 'limit' parameter, causing the server to consume excessive resources while trying to process the large amount of data. This can lead to the server becoming unresponsive or crashing. Additionally, the function does not properly validate the 'limit' parameter. It uses the 'parseInt' function to convert the parameter to an integer, but if the parameter cannot be converted, it defaults to 0. This can lead to unexpected behavior if the function is called with a non-numeric 'limit' parameter."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Exposure of sensitive information", "Potential for input validation issues"],
+  "description": "The function 'unique_name_152' seems to be vulnerable due to the exposure of sensitive information. The 'unlock' function might expose sensitive information such as private keys or other account details. Also, the function does not validate the input 'n', which could lead to unexpected behavior or security issues if it is not properly sanitized before use."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function 'Formatter_Oracle.prototype._wrapString' takes a value and splits it by '.'. Each segment is then wrapped and joined back together. However, there is no validation or sanitization of the input value before it is used in the SQL query. This could potentially allow an attacker to inject malicious SQL code into the query, leading to SQL Injection vulnerability."
+}

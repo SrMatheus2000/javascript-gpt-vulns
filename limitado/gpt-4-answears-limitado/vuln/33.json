@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The input received from the server is directly injected into the HTML without any sanitization or encoding. If the server response contains malicious scripts, it will be executed in the user's browser. This can lead to various attacks such as stealing sensitive information, session hijacking, defacement of the website, etc. The vulnerability is related to CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') and CWE-116: Improper Encoding or Escaping of Output."
+}

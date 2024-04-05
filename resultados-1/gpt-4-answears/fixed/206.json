@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Cross-site Scripting"],
+  "description": "The function does not validate or sanitize the 'domains', 'path', 'format', 'publicUrl', and 'aliases' inputs, which can lead to SQL Injection and Cross-site Scripting attacks. The 'req.query.key' and 'req.query.style' are also not validated or sanitized before being used to construct a query string, which can lead to similar vulnerabilities. The function also does not check if the 'req.headers.host' is a trusted domain before using it, which can lead to Server-Side Request Forgery (SSRF) attacks."
+}

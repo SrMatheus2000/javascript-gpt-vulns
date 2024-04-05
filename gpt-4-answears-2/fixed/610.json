@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319", "CWE-200"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Information Exposure"],
+"description": "The function is vulnerable as it allows the creation of an HTTP server which does not use encryption, leading to the potential for Cleartext Transmission of Sensitive Information (CWE-319). Additionally, the function exposes potentially sensitive information through error messages sent over the WebSocket connection (CWE-200)."
+}

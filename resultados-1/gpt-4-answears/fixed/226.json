@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it uses the 'dangerouslySetInnerHTML' property, which allows the insertion of HTML code directly into the page. This can lead to the execution of malicious scripts if the input is not properly sanitized. The 'sanitizer' function is used, but its effectiveness depends on its implementation, which is not provided. Additionally, the 'useUnsafeMarkdown' option from 'getConfigs' could potentially allow unsafe markdown to be rendered, depending on its implementation. The function also does not validate the 'className' parameter, which could lead to other types of injection attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'generate' is vulnerable to Prototype Pollution. This is because it dynamically assigns properties to objects based on user input without proper validation. An attacker can manipulate the 'hierarchies' parameter to add or modify properties of the Object prototype. These changes could lead to a variety of impacts depending on the other code in the application, including arbitrary JavaScript execution, denial of service, or other unexpected behavior."
+}

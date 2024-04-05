@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'html' parameter is directly used in the 'innerHTML' property of an element, which means that if the 'html' parameter can be controlled by an attacker, they can inject arbitrary HTML/JavaScript code. This code will be executed when the HTML is rendered in a web browser."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20"],
+  "vulnerabilities": ["Improper Input Validation"],
+  "description": "The function does not perform proper input validation, allowing potential injection attacks."
+}

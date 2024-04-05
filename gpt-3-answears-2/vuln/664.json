@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470", "CWE-482"],
+  "vulnerabilities": ["Insecure Object Merge", "Prototype Pollution"],
+  "description": "The provided JavaScript function is vulnerable to Insecure Object Merge and Prototype Pollution. These vulnerabilities can lead to arbitrary code execution and modification of object prototypes, respectively."
+}

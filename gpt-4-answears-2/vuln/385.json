@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function unique_name_186 is vulnerable to Cross-Site Scripting (XSS) attacks. The email and text parameters are directly inserted into the HTML without any sanitization or encoding, which allows an attacker to inject malicious scripts."
+}

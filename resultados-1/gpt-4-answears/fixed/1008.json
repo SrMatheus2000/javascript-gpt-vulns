@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Attribute Injection"],
+  "description": "The function does not validate or sanitize the 'name' and 'value' parameters before using them. This could lead to Cross-Site Scripting (XSS) if the parameters contain malicious scripts. Also, the function does not properly escape the 'value' parameter before setting it as an attribute, which could lead to Attribute Injection if the parameter contains special characters."
+}

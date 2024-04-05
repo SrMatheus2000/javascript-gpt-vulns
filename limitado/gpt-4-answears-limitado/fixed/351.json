@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Information Exposure Through Sent Data", "URL Redirection to Untrusted Site"],
+  "description": "The function is vulnerable to Information Exposure Through Sent Data (CWE-200) as it sends error messages containing potentially sensitive system information to the client. This could be used by an attacker to gain more information about the system and aid in further attacks. The function is also vulnerable to URL Redirection to Untrusted Site (CWE-601) as it redirects the user to a URL specified in the request without validating if the URL is a trusted site. This could be used by an attacker to trick users into visiting malicious websites."
+}

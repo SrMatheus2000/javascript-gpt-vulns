@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function writeConfig is vulnerable to Prototype Pollution. Prototype Pollution is about polluting the prototype of a base object which can sometimes lead to arbitrary code execution. In this function, the key is directly used to set a property on an object without any validation. An attacker can manipulate the input to overwrite properties or add new properties to the object prototype. This can lead to various security issues like denial of service, property injection, or even arbitrary code execution if the application logic depends on the polluted properties."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it uses the .html() method to insert user-controlled data into the DOM. If the 'text' or 'this.label.text()' variables contain malicious scripts, they will be executed in the user's browser."
+}

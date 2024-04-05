@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function itemTemplate(data) is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the interpolate function to process the template, which can lead to the execution of malicious scripts if the data input is not properly sanitized. The function does attempt to sanitize the template, but it does so after the interpolation, which means that any malicious scripts could have already been executed. Additionally, the function uses the JSON.stringify method to convert the data into a string, which can also lead to XSS attacks if the data contains malicious scripts."
+}

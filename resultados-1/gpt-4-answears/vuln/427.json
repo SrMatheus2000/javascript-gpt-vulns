@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Null Pointer Dereference"],
+  "description": "The function 'onsocket' is vulnerable to Null Pointer Dereference. The variable 'buffers' is used without being defined in the function scope. If 'buffers' is null or undefined when the function is called, it will cause a runtime error. This can lead to unexpected behavior or crash the application."
+}

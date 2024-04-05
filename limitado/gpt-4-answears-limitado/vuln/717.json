@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function takes parameters from the user and directly uses them to generate HTML content. Although it uses the 'entities.encode' function to encode the parameters, it does not validate or sanitize the input, which can lead to XSS attacks if the user provides malicious input. An attacker can inject scripts that can be executed in the context of the user's browser, leading to various attacks such as cookie theft, session hijacking, defacement of websites, and redirection to malicious sites."
+}

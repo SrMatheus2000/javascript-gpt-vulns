@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function does not sanitize the 'node.content' input before inserting it into the HTML structure. This could lead to Cross-site Scripting (XSS) attacks if an attacker can control the 'node.content' value, allowing them to inject malicious scripts."
+}

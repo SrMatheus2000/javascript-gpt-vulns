@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-120", "CWE-400"],
+"vulnerabilities": ["Buffer Overflow", "Uncontrolled Resource Consumption"],
+"description": "The function 'unique_name_352' is vulnerable to Buffer Overflow and Uncontrolled Resource Consumption. The '_size' variable is doubled without any upper limit check, which can lead to Buffer Overflow if 'afterSize' is large. Also, the function allocates new buffer without checking if there is enough memory available, leading to potential Uncontrolled Resource Consumption."
+}

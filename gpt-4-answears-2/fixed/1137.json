@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The data retrieved from $(this).data('cortex-json') is encoded with htmlEncode() function and then directly injected into the HTML DOM using the html() function. If an attacker can control the 'cortex-json' data attribute, they can inject malicious scripts that will be executed in the context of the victim's session."
+}

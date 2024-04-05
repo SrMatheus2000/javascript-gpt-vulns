@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-116"],
+  "vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Special Elements used in an SQL Command"],
+  "description": "The provided code is vulnerable to CWE-20 (Improper Input Validation) and CWE-116 (Improper Neutralization of Special Elements used in an SQL Command). The function takes a parameter and splits it into key-value pairs. However, it does not perform proper input validation or sanitization on the input. This can lead to various vulnerabilities, such as SQL injection if the parsedParams object is used in an SQL query without proper sanitization."
+}

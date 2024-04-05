@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function is vulnerable to URL redirection, which is also known as Open Redirect. This occurs in the block of code where the function checks if the URL hash is in a whitelist and then redirects the user to the URL specified in the hash. An attacker could potentially manipulate the URL hash to redirect users to a malicious site. This vulnerability is classified as CWE-601."
+}

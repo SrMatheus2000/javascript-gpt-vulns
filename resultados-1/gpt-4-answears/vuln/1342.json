@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The function uses the exec function to execute a command that is constructed by concatenating user-controlled input. An attacker could inject malicious OS commands which will be executed by the server."
+}

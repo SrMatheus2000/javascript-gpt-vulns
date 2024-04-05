@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Cross-site Scripting"],
+  "description": "The function does not validate or sanitize the input from the request headers which can lead to SQL Injection if the input is used in a SQL query. The function also does not sanitize the URL which can lead to Cross-site Scripting (XSS) attacks if the URL is rendered on a web page. The function also does not handle errors properly which can lead to information disclosure."
+}

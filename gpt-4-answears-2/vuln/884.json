@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function 'mergeBuffers' is vulnerable to buffer overflow. This is because it copies data from the input 'buffers' array into the 'mergeBuffer' without properly checking that the size of the input data does not exceed the size of the 'mergeBuffer'. This can lead to overwriting of adjacent memory and can cause erratic program behavior, including memory access errors, incorrect results, and crashes."
+}

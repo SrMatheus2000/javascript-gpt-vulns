@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Attribute Injection"],
+  "description": "The function does not validate or sanitize the 'name' and 'value' parameters before using them to manipulate the 'attribs' object of the 'elem' parameter. This could lead to Cross-Site Scripting (XSS) if the 'name' or 'value' parameters contain malicious scripts. It could also lead to Attribute Injection if the 'name' parameter is manipulated to overwrite existing attributes or add new ones. The function should validate and sanitize all input parameters before using them."
+}

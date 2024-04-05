@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-89"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) as it directly uses user input in the 'markup' parameter without proper sanitization or encoding. This could allow an attacker to inject malicious scripts. Also, the function uses the 'md5' function which is considered weak for cryptographic operations. Additionally, the function may be vulnerable to SQL Injection if the 'cacheKey' is used in a SQL query without proper sanitization or parameterization."
+}

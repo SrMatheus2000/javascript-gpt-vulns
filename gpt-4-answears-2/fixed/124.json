@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any common security vulnerabilities. It is primarily defining constants and returning an object, without performing any risky operations such as executing dynamic code or handling user input."
+}

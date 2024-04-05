@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function execTag is vulnerable to OS command injection. It constructs a command using string concatenation with user-controlled input, which is then executed. An attacker could potentially inject malicious commands, leading to arbitrary command execution on the server."
+}

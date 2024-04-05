@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78", "CWE-94", "CWE-99"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection", "Code Injection", "Resource Injection"],
+  "description": "The function is vulnerable to several types of attacks. The 'expandPath' function can lead to Path Traversal vulnerabilities (CWE-22) as it resolves file paths without proper validation or sanitization. The 'grep' function uses 'exec' to run shell commands, which can lead to OS Command Injection (CWE-78) if the 'config.grep' or 'config.grepDir' variables are controlled by an attacker. The 'generateRunner' function writes JavaScript code to a file, which can lead to Code Injection (CWE-94) if the 'testFiles' object is controlled by an attacker. The 'loadFromCache

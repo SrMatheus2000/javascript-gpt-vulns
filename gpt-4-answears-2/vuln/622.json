@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message"],
+"vulnerabilities": ["Uncontrolled Input", "Error Message Information Leak"],
+"description": "The function does not validate the input for 'options.strip' which can lead to unexpected behavior or errors. Additionally, the error message thrown when 'options.strip' is greater than the number of directories can expose sensitive information about the file structure."
+}

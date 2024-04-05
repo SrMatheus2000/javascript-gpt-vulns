@@ -1,0 +1,1 @@
+{"isVulnerable": true, "CWEs": ["CWE-95"], "vulnerabilities": ["Eval Injection"], "description": "The function dust.loadSource uses the eval() function, which can lead to execution of arbitrary code, leading to a potential security vulnerability."}

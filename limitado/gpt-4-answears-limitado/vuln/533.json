@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["No validation of input data", "Potential SQL Injection", "Potential Cross-site Scripting"],
+  "description": "The function adminLogout does not validate the input data, which can lead to security vulnerabilities. The data received from the request is directly used without any sanitization or validation. This can lead to SQL Injection if the 'adapterSessionIds' is used in a SQL query or Cross-site Scripting (XSS) if the data is rendered on a web page. It is recommended to always validate and sanitize input data to prevent such vulnerabilities."
+}

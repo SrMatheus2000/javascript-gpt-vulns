@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function 'wrapValue' is vulnerable to SQL Injection attacks as it directly concatenates the input 'value' into the SQL query without any sanitization or parameterization. An attacker can provide malicious input to manipulate the SQL query, leading to unauthorized data access, data manipulation or data loss."
+}

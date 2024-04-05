@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function does not validate the input properly which can lead to OS command injection if the input contains special OS command characters. Also, the function does not control the consumption of resources which can lead to resource exhaustion if the input is too large."
+}

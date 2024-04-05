@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Case Insensitive String Comparison"],
+  "description": "The function is vulnerable to case insensitive string comparison. It converts both the input and stored addresses to lower case before comparing them. This could potentially lead to unexpected behavior if the original case of the addresses is significant. For example, if the blockchain network differentiates addresses based on case, this function could incorrectly match addresses that are not actually the same. This is an instance of CWE-20, where the function does not properly validate or sanitize the input before processing it."
+}

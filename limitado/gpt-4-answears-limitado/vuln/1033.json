@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not properly sanitize the 'key' and 'value' parameters before using them to manipulate the DOM. This could potentially lead to Cross-Site Scripting (XSS) attacks, where an attacker could inject malicious scripts into the web page, which would then be executed in the context of the victim's browser. This could lead to a variety of attacks, such as stealing sensitive information, performing actions on behalf of the user, or even installing malware on the user's system."
+}

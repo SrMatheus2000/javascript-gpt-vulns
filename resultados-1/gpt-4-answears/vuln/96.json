@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89", "CWE-20"],
+  "vulnerabilities": ["OS Command Injection", "SQL Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to OS command injection because it uses the exec function to execute the arp command with user-supplied input (ip). An attacker could provide a malicious input to execute arbitrary commands on the system. Additionally, the function does not validate or sanitize the input, which could lead to SQL injection if the input is used in a SQL query. The function also does not handle errors properly, which could lead to unexpected behavior."
+}

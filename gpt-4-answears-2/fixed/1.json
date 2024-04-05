@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient URL Encoding/Decoding"],
+"description": "The function does not validate or sanitize the input 'req.url' which can lead to security vulnerabilities. Also, the function does not properly encode or decode the URL which can lead to issues with special characters in the URL."
+}

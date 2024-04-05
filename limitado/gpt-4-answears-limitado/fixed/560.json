@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is creating a form radio or checkbox with a unique id and setting its properties. The function is also sanitizing the id with a 'safeId' function, which presumably prevents any potential injection attacks. However, without knowing the implementation of 'safeId', 'htmlOrText', and 'h' functions, it's hard to be certain. It's recommended to always validate and sanitize all inputs to prevent potential security issues."
+}

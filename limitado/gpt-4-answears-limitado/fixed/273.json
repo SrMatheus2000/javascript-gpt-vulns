@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'scanner' parameter is used to construct a command that is then executed. If an attacker can control the 'scanner' parameter, they can inject arbitrary commands to be executed. This can lead to a variety of attacks, including data theft, data corruption, denial of service, and even full system compromise."
+}

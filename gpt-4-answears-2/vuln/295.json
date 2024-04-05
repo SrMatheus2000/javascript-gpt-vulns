@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_141 is vulnerable to OS command injection because it concatenates a user-supplied input (gitUrl, options) directly into a command that is executed without proper sanitization or validation. An attacker could provide a malicious input to execute arbitrary commands on the system."
+}

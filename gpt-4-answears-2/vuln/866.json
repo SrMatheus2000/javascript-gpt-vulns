@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to path traversal attacks. The function attempts to sanitize the input URL by replacing encoded characters and normalizing the path. However, it does not adequately prevent directory traversal sequences (../ or ..\\) that can be used to access arbitrary files and directories stored on the file system. An attacker can exploit this vulnerability to read, write, or delete sensitive data or files outside of the intended directory."
+}

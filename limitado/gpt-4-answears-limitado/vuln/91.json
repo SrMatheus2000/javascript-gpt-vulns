@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Code Injection and Cross-Site Scripting (XSS) attacks. The code uses the Function constructor to dynamically generate and execute code from a string, which is obtained from the HTML of a webpage. This can lead to Code Injection if an attacker can control the content of the webpage. Additionally, the function directly inserts HTML content into the page without sanitizing it, which can lead to Cross-Site Scripting (XSS) attacks if an attacker can inject malicious scripts into the HTML content."
+}

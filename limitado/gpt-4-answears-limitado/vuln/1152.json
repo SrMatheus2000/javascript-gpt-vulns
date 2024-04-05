@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-79", "CWE-352"],
+  "vulnerabilities": ["Improper Input Validation", "Cross-site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)"],
+  "description": "The function is vulnerable to several types of attacks. Firstly, it does not validate or sanitize input before using it to create a WebSocket, which could lead to attacks such as Cross-Site Scripting (XSS) or Cross-Site WebSocket Hijacking (CSWSH). Secondly, it does not implement any form of anti-CSRF tokens, making it vulnerable to Cross-Site Request Forgery (CSRF) attacks. Lastly, it does not handle errors securely, potentially revealing sensitive information to an attacker."
+}

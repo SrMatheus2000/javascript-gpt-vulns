@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-676: Use of Potentially Dangerous Function", "CWE-915: Improperly Controlled Modification of Dynamically-Determined Object Attributes"],
+  "vulnerabilities": ["No input validation", "Use of potentially dangerous function", "Improperly controlled modification of dynamically-determined object attributes"],
+  "description": "The function unique_name_490 does not validate the input 'value' before processing it. This could lead to various issues such as code injection or other unexpected behavior. The function also uses the potentially dangerous function '_.unescape' which could lead to security vulnerabilities if the input is not properly sanitized. Additionally, the function modifies the 'options' object without proper control, which could lead to unexpected behavior if 'key' is not a valid attribute of the 'options' object."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-807: Reliance on Untrusted Inputs in a Security Decision", "CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'unique_name_268' is vulnerable to Prototype Pollution. It allows the modification of a prototype property through the 'lookup' helper. If an attacker can control the 'field' parameter, they can add or modify properties of 'Object.prototype'. This can lead to several types of attacks, such as adding properties to objects that can lead to Remote Code Execution or other security vulnerabilities."
+}

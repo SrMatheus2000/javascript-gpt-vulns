@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Potential Denial of Service"],
+  "description": "The function 'unique_name_398' is vulnerable to information disclosure through error messages. When the function fails to read the package.json file, it logs an error message that includes the path to the file. This could potentially expose sensitive information about the file system structure. Additionally, the function does not handle the case where the 'readShrinkwrap' function fails and continues to execute, which could lead to uncontrolled resource consumption and a potential Denial of Service (DoS) condition."
+}

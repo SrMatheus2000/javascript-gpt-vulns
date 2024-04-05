@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-400", "CWE-676"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption", "Use of Potentially Dangerous Function"],
+  "description": "The function `unique_name_101` is vulnerable to several types of attacks. Firstly, it is susceptible to Path Traversal (CWE-22) because it uses `fs.readFileSync(filename)` without validating the `filename` input, which could allow an attacker to read arbitrary files on the system. Secondly, it is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of the file that can be read, potentially leading to a denial of service if an excessively large file is read. Lastly, it uses the `yaml.load` function, which can execute arbitrary JavaScript code if the input is not properly sanitized, leading to a potential Use of Potentially Dangerous Function vulnerability (CWE-676)."
+}

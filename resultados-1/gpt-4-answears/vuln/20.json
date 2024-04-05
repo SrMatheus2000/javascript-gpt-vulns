@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Unsafe Reflection"],
+  "description": "The function is vulnerable to Unsafe Reflection. It uses the 'is' method on the 'child' object without checking if the 'is' method exists or not. If an attacker can control the 'child' object, they can potentially inject malicious code. This is a type of CWE-470 vulnerability."
+}

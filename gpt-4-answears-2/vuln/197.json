@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) because it uses 'fs.readFileSync(filename)' without validating 'filename'. An attacker could provide a path to a sensitive file, leading to information disclosure. The function is also vulnerable to Uncontrolled Resource Consumption (CWE-400) because it loads the entire file into memory with 'fs.readFileSync(filename).toString()', which could lead to a denial of service if the file is large."
+}

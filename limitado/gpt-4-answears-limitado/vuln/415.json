@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function does not validate or sanitize the 'repoDir' input which can lead to path traversal attacks if the input comes from an untrusted source. This can allow an attacker to access, modify, or read files outside of the intended directory. This is also known as an Insecure Direct Object References (IDOR) vulnerability."
+}

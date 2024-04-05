@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["The function modifies the input object"],
+  "description": "The function 'unique_name_88' is vulnerable because it modifies the input object 'obj'. This can lead to unexpected behavior if the caller of the function does not expect 'obj' to be modified. This is a violation of the principle of least surprise. The function should instead return a new object with the modifications, leaving the input object unchanged."
+}

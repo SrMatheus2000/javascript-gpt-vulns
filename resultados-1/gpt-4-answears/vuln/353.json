@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it directly injects user-controlled input into HTML output. Specifically, the 'markup' parameter is processed and its content is directly used in the 'html' output. If an attacker can control the 'markup' input, they can inject malicious scripts that will be executed when the HTML is rendered. This can lead to a variety of attacks, such as stealing sensitive information or performing actions on behalf of the user."
+}

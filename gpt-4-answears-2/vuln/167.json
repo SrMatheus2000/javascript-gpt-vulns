@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses the exec function to execute a command that includes user-supplied input (opts.uri). This can allow an attacker to execute arbitrary commands in the system's shell."
+}

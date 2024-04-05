@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327", "CWE-311"],
+  "vulnerabilities": ["Use of a Broken or Risky Cryptographic Algorithm", "Missing Encryption of Sensitive Data"],
+  "description": "The function uses 'aes-256-cbc' which is a block cipher mode that is not authenticated. This can expose the code to various attacks such as replay attacks, bit flipping attacks, etc. Also, the function does not validate or sanitize the input 'cookie' which can lead to security vulnerabilities. Furthermore, the function does not encrypt sensitive data which can expose the data to unauthorized access."
+}

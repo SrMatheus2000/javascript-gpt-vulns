@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'repo.organization', 'repo.name', and 'repo.branch' variables are used to construct a command that is executed without proper sanitization or validation. An attacker could potentially inject malicious commands through these variables."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-601", "CWE-295"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+  "description": "The startForward function is vulnerable to Server-Side Request Forgery (SSRF) and Improper Input Validation. The function does not properly validate the input for the proxy_host parameter, allowing an attacker to specify any destination host. This can lead to SSRF attacks where an attacker can make the server perform requests to internal or external resources on behalf of the server. Additionally, the function does not validate the input for the proxy_port parameter, which can lead to potential port scanning or other network-related vulnerabilities."
+}

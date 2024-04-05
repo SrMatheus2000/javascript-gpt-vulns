@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function unique_name_1 is vulnerable to code injection attacks. The function uses JSON.stringify() to convert the 'name' parameter to a JSON string, but it does not sanitize or validate the input before doing so. This means that if an attacker can control the 'name' parameter, they could potentially inject malicious code into the output of the function. This could lead to a variety of attacks, including arbitrary code execution, data theft, or denial of service."
+}

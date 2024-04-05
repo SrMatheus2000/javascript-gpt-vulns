@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the 'propsData' input. This could lead to unexpected behavior or errors if the input is not as expected. For example, if 'propsData.message' is not an array, the function will attempt to delete a property from an undefined object, leading to a TypeError. Additionally, if 'propsData' is not an object, the function will fail when it tries to pass it to the DialogComponent constructor."
+}

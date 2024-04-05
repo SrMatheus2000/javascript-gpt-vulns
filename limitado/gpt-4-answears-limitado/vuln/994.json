@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function uses the 'new Buffer()' constructor, which is deprecated and potentially unsafe. If the 'new Buffer()' constructor is called with a number as the first argument, it allocates a buffer of that size in bytes. If the number is large, it can cause the application to run out of memory and crash, leading to a Denial of Service (DoS) attack. It's recommended to use 'Buffer.alloc()' or 'Buffer.from()' instead."
+}

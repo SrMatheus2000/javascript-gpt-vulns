@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Input Validation", "Code Injection"],
+  "description": "The function buildDownloadUrl does not validate or sanitize the input parameters 'version' and 'minorVersion'. This could lead to a potential code injection vulnerability where an attacker could manipulate the URL to download malicious content. For example, an attacker could pass a version parameter like '2.0.0; rm -rf /' which could lead to arbitrary code execution."
+}

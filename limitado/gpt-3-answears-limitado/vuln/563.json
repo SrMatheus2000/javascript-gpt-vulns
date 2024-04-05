@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209"],
+  "vulnerabilities": ["Insecure Comparison"],
+  "description": "The function is vulnerable to an insecure comparison vulnerability (CWE-209) because it uses the '==' operator to compare the username and password with the values stored in the 'users' object. This can lead to a potential vulnerability where an attacker can bypass the authentication by providing different types of input that can be coerced to match the expected values."
+}

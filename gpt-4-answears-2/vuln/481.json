@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'dir' parameter is directly concatenated into the command string without any sanitization or escaping. This allows an attacker to inject arbitrary commands by providing a specially crafted 'dir' parameter."
+}

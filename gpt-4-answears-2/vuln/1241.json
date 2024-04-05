@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function dismissChangeRelatedObjectPopup is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the html_unescape function to decode a potentially user-controlled input (objId, newRepr) and then directly injects the result into the HTML DOM via innerHTML. An attacker could exploit this to execute arbitrary JavaScript code in the context of the victim's browser session."
+}

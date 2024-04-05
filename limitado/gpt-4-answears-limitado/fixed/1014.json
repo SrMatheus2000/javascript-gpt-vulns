@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function appears to be secure. It checks the type of the input, converts it to a string if necessary, and then sanitizes it by replacing certain characters with their HTML entity equivalents. This helps prevent Cross-Site Scripting (XSS) attacks by ensuring that any potentially harmful characters are not interpreted as code. There are no apparent vulnerabilities or CWEs (Common Weakness Enumerations) in this function."
+}

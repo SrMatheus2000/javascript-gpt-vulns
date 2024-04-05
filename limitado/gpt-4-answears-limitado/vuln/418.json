@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Unrestricted Use of System Critical APIs"],
+  "vulnerabilities": ["Unrestricted Use of System Critical APIs"],
+  "description": "The function uses the 'instanceOf' function to check the type of the 'value' parameter. If the 'value' is an instance of a system critical API such as 'host.Number', 'host.String', 'host.Boolean', etc., it returns the value without any restrictions. This could potentially allow an attacker to manipulate these system critical APIs and cause unexpected behavior in the application."
+}

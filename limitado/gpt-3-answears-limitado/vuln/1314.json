@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-95"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The provided function is vulnerable to code injection and cross-site scripting (XSS) attacks. The use of eval() function with user-supplied data can lead to code injection vulnerabilities, allowing an attacker to execute arbitrary code. Additionally, the function does not properly sanitize the input data, making it susceptible to XSS attacks where an attacker can inject malicious scripts into the resulting template."
+}

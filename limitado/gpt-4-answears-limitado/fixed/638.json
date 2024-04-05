@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The function attempts to prevent this by checking if the pathname contains '../' or '..\\' or '..%5c'. However, this check can be bypassed by using URL encoded versions of these strings. For example, '..%2F' or '..%2F%2F' would bypass the check but still allow directory traversal. This could allow an attacker to access sensitive files outside of the intended directories. The vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

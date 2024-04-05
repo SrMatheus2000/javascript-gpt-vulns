@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Input Validation", "Injection", "Server-Side Request Forgery"],
+  "description": "The function buildDownloadUrl does not validate or sanitize the input parameters 'version' and 'minorVersion'. This could lead to an injection attack where an attacker could manipulate the URL to point to a malicious file or server. Additionally, this could lead to Server-Side Request Forgery (SSRF) where an attacker could force the server to make requests to arbitrary URLs."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function is used to encode HTML entities to prevent Cross-Site Scripting (XSS) attacks. It replaces special characters with their corresponding HTML entities. There are no apparent vulnerabilities in this function."
+}

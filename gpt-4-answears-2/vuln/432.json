@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function is safe. It checks if a given value is an integer by using a regular expression. There are no apparent vulnerabilities such as injection, cross-site scripting, or denial of service attacks."
+}

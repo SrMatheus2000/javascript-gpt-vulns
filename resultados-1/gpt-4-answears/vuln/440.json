@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function serveIndexPage is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly includes user-supplied data (the file name and torrent name) in the HTML output without properly sanitizing it. An attacker could potentially inject malicious scripts by crafting a file or torrent name that includes HTML and JavaScript code. When this page is served and viewed in a browser, the malicious script would be executed."
+}

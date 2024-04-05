@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function 'mrk.htmlify' is used to convert tokens into HTML. However, it does not properly sanitize the 'metadata.href' and 'metadata.name' values before inserting them into the HTML. An attacker could potentially inject malicious scripts through these values, leading to an XSS attack. The function 'mrk.sanitizeURL' attempts to sanitize URLs, but it only checks for the presence of 'http' or 'https' at the start of the URL, which is not sufficient to prevent all forms of XSS attacks."
+}

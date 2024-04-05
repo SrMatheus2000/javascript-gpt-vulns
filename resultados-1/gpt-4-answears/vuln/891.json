@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function is vulnerable to buffer overflow attacks. The function does not properly check the size of the input 'chunk' before copying it into the buffer. If the size of the 'chunk' is larger than the buffer, it can lead to buffer overflow, which can cause the application to crash or potentially allow an attacker to execute arbitrary code. The function should check the size of the 'chunk' and ensure it does not exceed the size of the buffer before copying."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The vulnerability exists because the function '_convertUrlsToLinks' directly inserts user-controlled input into HTML output without proper sanitization. An attacker can inject malicious scripts in the 'url' parameter, which will be executed when the HTML is rendered in a web browser."
+}

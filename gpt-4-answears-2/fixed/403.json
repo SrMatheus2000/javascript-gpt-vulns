@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function 'connectToWifi' is vulnerable to OS command injection. The function uses 'execFile' to execute the 'nmcli' command with user-supplied input ('ap.ssid', 'ap.password', 'config.iface'). An attacker could potentially inject malicious commands by manipulating these inputs."
+}

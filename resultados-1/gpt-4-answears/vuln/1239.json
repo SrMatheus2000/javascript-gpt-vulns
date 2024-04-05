@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_722 is vulnerable because it directly uses the text from a jQuery object and pushes it into the columnNames array. If the text is user-controlled and not properly sanitized, it could lead to a Cross-Site Scripting (XSS) attack, where malicious scripts are injected into trusted websites. An attacker could use this vulnerability to steal sensitive information, perform actions on behalf of the user, or even take control of the user's account."
+}

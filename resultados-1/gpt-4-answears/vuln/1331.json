@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78", "CWE-94", "CWE-676"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection", "Code Injection", "Use of Potentially Dangerous Function"],
+  "description": "The function is vulnerable to several types of attacks. The use of 'fs.writeFileSync' and 'fs.readFileSync' can lead to Path Traversal attacks (CWE-22) if user-supplied input is used for the 'filePath' parameter. The use of 'exec' function can lead to OS Command Injection (CWE-78) if user-supplied input is used for the 'config.grep' parameter. The use of 'require' in 'generateRunner' function can lead to Code Injection (CWE-94) if user-supplied input is used for the 'filePath' parameter. The use of 'JSON.parse' can lead to Use of Potentially Dangerous Function (CWE-676) if user-supplied input is used for the 'config.cachePath' parameter."
+}

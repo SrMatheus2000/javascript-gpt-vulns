@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks if the provided value is an array or a plain object and iterates over its elements or properties. It also checks for '__proto__' and 'constructor' properties to prevent prototype pollution attacks. If the value is neither an array nor a plain object, it is added to an 'entries' array with its key. However, the 'entries' array is not defined in the provided function, which might cause a ReferenceError if it's not defined in the outer scope."
+}

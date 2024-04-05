@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-209", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the 'httpVerb' parameter which can lead to unexpected behavior (CWE-20). It also exposes potentially sensitive information in error messages (CWE-200, CWE-209). The function does not limit the size of the request body, which can lead to resource exhaustion (CWE-400)."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function is vulnerable to URL redirection attacks. The if condition checks if the 'from' query parameter starts with 'http', '//' or 'javascript' and if not, it redirects to the URL specified in the 'from' parameter. An attacker can craft a URL with a malicious site and trick users into visiting it, leading to potential phishing attacks or session thefts."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information"],
+  "description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319). The function does not always use SSL/TLS to protect network traffic, which may expose sensitive information to unauthorized actors. Specifically, the function uses the 'tls.connect' method when 'this.secureProxy' is true, but uses the 'net.connect' method otherwise. The 'net.connect' method does not use SSL/TLS, which means that any data sent over the connection is not protected from eavesdropping or tampering."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function moveModuleOnly is vulnerable to path traversal attacks. The parameters 'from' and 'to' are used to construct file paths without any sanitization or validation. An attacker could potentially provide malicious input to these parameters to read, write, or delete files outside of the intended directories."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function regexpify() is vulnerable to Regular Expression Denial of Service (ReDoS) attacks. The regular expressions used in this function can cause exponential time complexity for certain inputs. An attacker can provide a specially crafted input that can cause the application to consume excessive resources, leading to a denial of service condition."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-200"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Information Exposure"],
+"description": "The function does not properly validate the input in the URI, which can lead to an SQL Injection attack if the URI is used in a database query. Additionally, the function exposes sensitive information through error messages, which can be exploited to gain unauthorized access to the system."
+}

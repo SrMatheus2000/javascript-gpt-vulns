@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function checkGraphvizInstalled takes a config object and uses its graphVizPath property to construct a command that is then executed. If an attacker can control the value of graphVizPath, they could potentially execute arbitrary commands on the system. This is a classic example of OS command injection vulnerability."
+}

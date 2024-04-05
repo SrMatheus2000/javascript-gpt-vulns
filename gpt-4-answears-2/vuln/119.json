@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any known vulnerabilities. It is a function for syntax highlighting for the Crystal programming language. It does not perform any dangerous operations such as eval, does not modify any global objects, and does not seem to have any injection vulnerabilities."
+}

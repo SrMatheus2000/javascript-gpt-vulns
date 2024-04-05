@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Path Traversal", "Code Injection"],
+  "description": "The function reads a file from a provided path without validating or sanitizing the input, which can lead to a Path Traversal vulnerability. An attacker could potentially read any file on the system by providing a malicious file path. Additionally, the function uses the 'load' method of the 'js-yaml' library when 'unsafeLoad' is set to true in the options. This method can parse and execute code within the YAML file, leading to a potential Code Injection vulnerability."
+}

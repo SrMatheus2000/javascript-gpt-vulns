@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks for '__proto__' and 'constructor' properties to prevent Prototype Pollution attacks. It also checks the type of the properties before assigning them, which can prevent Type Confusion attacks. The 'overwrite' parameter is used to control whether existing properties should be overwritten, which can prevent unintended data loss."
+}

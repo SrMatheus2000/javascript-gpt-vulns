@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted use of dangerous functions"],
+"description": "The function uses the 'delete' operator which can lead to the removal of necessary properties and can cause the application to crash. Also, the function uses the 'eval' function which can lead to arbitrary code execution if user-controlled data is passed to it. The function also does not validate the 'members' parameter which can lead to unexpected behavior if it is not an object."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The filename parameter is directly concatenated into the command string for the exec function, which can allow an attacker to execute arbitrary commands. This is a serious security risk."
+}

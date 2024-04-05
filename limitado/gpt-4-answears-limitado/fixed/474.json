@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function provides detailed error messages that could potentially expose sensitive information. For example, it tells the user if the username or email is invalid, or if the password doesn't match. This could allow an attacker to enumerate valid usernames or emails. It's recommended to provide generic error messages to avoid giving away any information about the system or its users."
+}

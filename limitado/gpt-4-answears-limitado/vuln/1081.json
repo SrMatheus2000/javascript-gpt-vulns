@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not properly sanitize the input 'value'. If 'value' contains malicious scripts, it could lead to Cross-Site Scripting (XSS) attacks when the returned string is rendered in a web page. Also, the function does not escape special characters in 'value' when it's not matched by the regular expression, which could lead to injection attacks."
+}

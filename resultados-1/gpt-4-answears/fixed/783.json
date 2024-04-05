@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate the input 'string' and 'opts' which can lead to unexpected behavior. If a large string is passed, it can lead to high CPU usage and memory consumption, causing a Denial of Service (DoS) attack. Also, the function does not handle the case where 'opts' is not an object, which can lead to type errors."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption"],
+  "description": "The die function in the provided code does not have any input validation or rate limiting mechanisms, which can lead to uncontrolled resource consumption. An attacker can repeatedly call this function with malicious input, causing the application to consume excessive resources and potentially crash."
+}

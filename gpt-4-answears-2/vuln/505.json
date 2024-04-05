@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Input Validation", "Null Pointer Dereference"],
+"description": "The function does not validate the 'name' input which can lead to unexpected behavior. It also does not check if 'UNICODE[N]' is null before accessing its properties, which can lead to a null pointer dereference."
+}

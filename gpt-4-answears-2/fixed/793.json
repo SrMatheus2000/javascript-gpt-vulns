@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-120"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function does not check if the length parameter is greater than the size of the buffer. This can lead to a buffer overflow, which can cause the application to crash or potentially allow an attacker to execute arbitrary code."
+}

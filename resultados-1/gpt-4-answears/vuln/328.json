@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Input Validation", "Error Message Information Leak"],
+  "description": "The function does not validate the input parameters 'withAccount' and 'message' which can lead to unexpected behavior or errors. Additionally, the error messages in the reject() calls may expose sensitive information about the system or its state, which could be useful to an attacker."
+}

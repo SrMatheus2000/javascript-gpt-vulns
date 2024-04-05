@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function takes a SQL query as a parameter and directly executes it without any sanitization or parameterization. This makes it vulnerable to SQL Injection attacks, where an attacker could provide a malicious SQL query that could read, modify, or delete data in the database. The function also constructs a SQL query for creating a database using string concatenation, which is also vulnerable to SQL Injection if the database name, charset, or collation are user-controlled and not properly sanitized."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function unique_name_489 is vulnerable to URL redirection attacks. In the onSuccess function, it redirects the user to a URL specified in req.query.from without properly validating or sanitizing the URL. This could allow an attacker to craft a URL that redirects a user to an arbitrary website, potentially for phishing or other malicious purposes."
+}

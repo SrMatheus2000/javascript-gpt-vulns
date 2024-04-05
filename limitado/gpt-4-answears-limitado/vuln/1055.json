@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL Injection attacks. The database name 'db', 'charset', and 'collation' are directly concatenated into the SQL query without any sanitization or parameterization. An attacker could potentially control these values to manipulate the SQL query, leading to unauthorized data access, data corruption, or data loss."
+}

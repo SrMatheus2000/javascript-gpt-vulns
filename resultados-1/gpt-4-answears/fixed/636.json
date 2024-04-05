@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function 'unique_name_351' is vulnerable to command injection. The 'iface' parameter is passed directly to the 'execFile' function without any sanitization or validation. An attacker could potentially pass a malicious string as 'iface' that could execute arbitrary commands on the system."
+}

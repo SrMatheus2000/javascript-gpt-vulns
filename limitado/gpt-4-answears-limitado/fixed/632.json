@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'imagePaths' parameter is passed directly to the 'spawn' function without any sanitization or validation. This means that an attacker could potentially pass in a string that includes additional commands, which would then be executed by the system. This could lead to arbitrary command execution, which is a serious security risk."
+}

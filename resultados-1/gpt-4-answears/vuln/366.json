@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function createMuteOgg is vulnerable to command injection. It concatenates user-supplied input into a command that is executed by the system. An attacker could provide malicious input that alters the command to be executed, leading to arbitrary command execution."
+}

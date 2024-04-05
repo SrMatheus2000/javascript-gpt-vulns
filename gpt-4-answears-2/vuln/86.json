@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function unique_name_39 seems to be vulnerable to code injection attacks. It takes a string as input and directly uses it to create a new instance of tree.Anonymous. If the input string is an instance of tree.JavaScript, it is evaluated. This means that if an attacker can control the input string, they can inject arbitrary JavaScript code, which will be executed when the function is called."
+}

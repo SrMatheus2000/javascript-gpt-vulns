@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_374' is vulnerable to path traversal attacks. The 'entry.path' is concatenated with 'opts.path' without any validation or sanitization. An attacker can manipulate 'entry.path' to navigate to arbitrary directories. This can lead to unauthorized access to files and directories."
+}

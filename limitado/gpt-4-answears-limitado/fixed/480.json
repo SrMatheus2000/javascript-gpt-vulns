@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Insecure Direct Object References (IDOR)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks when the security level is not set to 'strict'. This is because it directly assigns the 'linkStr' to 'vertices[id].link' without any sanitization or encoding. This could allow an attacker to inject malicious scripts. Additionally, the function does not validate the 'id' parameter, which could lead to Insecure Direct Object References (IDOR) vulnerabilities, allowing an attacker to access unauthorized data."
+}

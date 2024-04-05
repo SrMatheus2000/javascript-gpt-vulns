@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Command Injection", "Information Exposure"],
+  "description": "The function uses the exec() function to execute shell commands, which can lead to command injection if the input is not properly sanitized. This can allow an attacker to execute arbitrary commands on the system. Additionally, the function exposes error messages to the user, which can reveal sensitive information about the system."
+}

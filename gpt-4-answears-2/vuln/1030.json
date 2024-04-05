@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-209: Error Message Information Leak"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Error Message Information Leak"],
+"description": "The function does not validate or sanitize the input properly which can lead to various attacks such as XSS, SQL Injection, etc. It also exposes sensitive information in error messages which can be exploited by an attacker to gain more information about the system. The function also leaks error message information which can be used by an attacker to understand the internal workings of the application."
+}

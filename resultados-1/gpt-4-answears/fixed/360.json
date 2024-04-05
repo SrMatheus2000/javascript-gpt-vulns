@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+  "description": "The function does not validate the 'repoDir' and 'options' parameters. This could lead to Insecure Direct Object References (IDOR) vulnerability if an attacker can manipulate these values. For example, an attacker could potentially manipulate the 'repoDir' parameter to access unauthorized directories. The 'options' parameter is also directly used without any validation, which could lead to potential security issues if it contains malicious values."
+}

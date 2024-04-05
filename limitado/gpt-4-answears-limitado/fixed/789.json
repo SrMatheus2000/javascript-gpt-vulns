@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-129: Improper Validation of Array Index"],
+  "vulnerabilities": ["Array Index Out of Bounds"],
+  "description": "The function does not check if the lengths of the input arrays 'a' and 'b' are equal. If 'b' is shorter than 'a', an 'Array Index Out of Bounds' error will occur, which can lead to unexpected behavior or crashes. This is a common vulnerability that can lead to a variety of security issues."
+}

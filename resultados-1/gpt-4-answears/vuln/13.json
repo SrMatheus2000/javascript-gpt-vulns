@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function getAnnotationURL uses a regular expression to parse the sourceMapString. If an attacker provides a specially crafted string that takes a long time to process, it could cause a denial of service (DoS) by blocking the event loop. This is known as a Regular Expression Denial of Service (ReDoS) attack. The function also does not validate the input, which could lead to other potential issues."
+}

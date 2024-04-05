@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-330: Use of Insufficiently Random Values", "CWE-400: Uncontrolled Resource Consumption", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Insecure Randomness", "Resource Exhaustion", "Server-Side Request Forgery"],
+  "description": "The function 'createPrivateKey' is vulnerable due to several reasons. Firstly, the keyBitsize is not securely randomized, which can lead to the generation of predictable keys (CWE-330). Secondly, there is no limit on the size of the keyBitsize, which can lead to resource exhaustion (CWE-400). Lastly, the function is vulnerable to Server-Side Request Forgery (SSRF) attacks as it does not validate or sanitize the 'options' parameter before using it in the 'openssl.exec' function (CWE-918)."

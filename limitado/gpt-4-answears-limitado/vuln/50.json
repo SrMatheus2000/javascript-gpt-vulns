@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Sensitive data exposure"],
+  "description": "The function 'createProject' is vulnerable as it exposes sensitive information. The encryption key is being stored in the metadata object which can be accessed by the user. This can lead to information disclosure and privacy violation. It is recommended to never expose sensitive information like encryption keys, passwords, etc. in such a way. Instead, such sensitive information should be securely stored and accessed only when necessary."
+}

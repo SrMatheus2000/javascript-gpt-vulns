@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function embedVimeoIframe is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly inserts user-controlled data (the 'id' and 'vimeoParams' variables) into the HTML content of the 'elem' element. An attacker could potentially manipulate these variables to inject malicious scripts into the webpage, which would then be executed in the context of the victim's session. This could lead to a variety of attacks, such as session hijacking, identity theft, or defacement of the website."
+}

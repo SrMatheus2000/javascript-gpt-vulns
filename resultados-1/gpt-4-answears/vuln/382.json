@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-88", "CWE-94", "CWE-20"],
+  "vulnerabilities": ["Command Injection", "Argument Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to command injection attacks. This is because it uses user-supplied input in shell commands without proper sanitization or validation. For example, the `remoteUrl`, `startTag`, `endTag`, `ignoredFiles`, `startCommand`, and `endCommand` parameters are used in shell commands without any validation. An attacker could potentially inject malicious commands through these parameters. This could lead to arbitrary command execution on the server where this function is running."
+}

@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')", "CWE-522: Insufficiently Protected Credentials"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection", "Insufficiently Protected Credentials"],
+  "description": "The function is vulnerable to path traversal attacks because it does not validate or sanitize the 'pathBundleIN.key', 'pathOUT', and 'pathBundleIN.ca' variables before using them to construct a file path. An attacker could potentially manipulate these variables to access files outside of the intended directory. Additionally, the function is vulnerable to OS command injection because it directly includes user-supplied input ('params' array) in a command that is executed by the system. If an attacker can control

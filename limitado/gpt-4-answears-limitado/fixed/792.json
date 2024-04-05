@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function uses 'Buffer.allocUnsafe' which allows for the creation of a buffer that contains old and potentially sensitive data. If this data is not overwritten by the user, it can be leaked when the buffer is read. This can lead to information disclosure or buffer overflow vulnerabilities. It's recommended to use 'Buffer.alloc' instead of 'Buffer.allocUnsafe' to ensure that the newly created buffer is zero-filled, which prevents any potentially sensitive data from being leaked."
+}

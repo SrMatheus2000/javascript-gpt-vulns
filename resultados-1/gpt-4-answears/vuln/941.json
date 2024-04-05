@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Information Disclosure", "Improper Input Validation"],
+  "description": "The function 'unique_name_503' has potential vulnerabilities. Firstly, it exposes server information such as server name, API version, request duration, and current time. This could potentially be used by an attacker to gain more information about the system (CWE-209). Secondly, the function does not validate the 'data' input, which could lead to unexpected behavior or security issues if the input is not as expected (CWE-20)."
+}

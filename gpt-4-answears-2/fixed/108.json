@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is a simple function that defines a few regex patterns and returns an object. There is no use of eval, no obvious Regular Expression Denial of Service (ReDoS) vulnerabilities, and no insecure use of dangerous functions or methods. The function does not take user input, so there is no risk of Cross-Site Scripting (XSS) or SQL Injection attacks."
+}

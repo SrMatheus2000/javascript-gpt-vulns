@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function 'execCommit' is vulnerable to command injection. This is because it uses user-supplied input in 'args' and 'newVersion' directly in the 'runExec' function which executes system commands. An attacker could potentially inject malicious commands through these inputs, leading to unauthorized system access or data manipulation."
+}

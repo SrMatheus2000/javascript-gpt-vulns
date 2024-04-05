@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The vulnerability lies in the fact that the function does not limit the number of events that can be queued for processing. An attacker can exploit this by sending a large number of events to the function, causing it to consume excessive resources and potentially leading to a system crash. This is a form of resource exhaustion and is classified as CWE-400."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the 'field' parameter. If a user can control the 'field' parameter, they can potentially access any property on the object, including prototype properties, which can lead to prototype pollution vulnerability. Prototype pollution can lead to several security vulnerabilities, including remote code execution, denial of service, or property injection."
+}

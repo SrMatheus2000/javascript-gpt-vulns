@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116", "CWE-79"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient Encoding or Escaping of Output", "Cross-site Scripting (XSS)"],
+"description": "The function does not properly validate the input 'str'. If 'str' is an object, it directly uses it without any validation which can lead to unexpected behavior. Also, the function uses $.encode() to encode 'str' which may not be sufficient to prevent all forms of output encoding issues, leading to potential Cross-site Scripting (XSS) vulnerabilities if the output is rendered in a web page without further sanitization."
+}

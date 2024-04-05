@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-601"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "URL Redirection to Untrusted Site ('Open Redirect')"],
+"description": "The function does not validate or sanitize the URI input properly, which could lead to various vulnerabilities. It could be manipulated to redirect users to an untrusted site, potentially leading to phishing attacks (CWE-601). The function also exposes sensitive information such as username and password in the URI (CWE-200). The lack of proper input validation could lead to other potential attacks (CWE-20)."
+}

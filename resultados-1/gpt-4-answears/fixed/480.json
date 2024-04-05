@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_252' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'linkStr' variable to set the 'link' property of the 'vertices[id]' object without properly validating or escaping it. This could allow an attacker to inject malicious scripts into the web page, leading to various security issues such as data theft, website defacement, and other malicious activities. The function attempts to mitigate this by removing 'javascript:' from 'linkStr' when 'config.securityLevel' is set to 'strict', but this is not sufficient as there are many other ways to perform XSS attacks."
+}

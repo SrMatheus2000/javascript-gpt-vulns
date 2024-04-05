@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function 'extractProtocol' is vulnerable to Regular Expression Denial of Service (ReDoS) attack. The vulnerability exists because the function uses a regular expression (regex) to parse the 'address' input. If an attacker provides a specially crafted string that matches the regex but takes a long time to evaluate, it could cause the application to become unresponsive, leading to a denial of service. This is known as a ReDoS attack. The function does not validate the 'address' input before executing the regex, which is an instance of CWE-20: Improper Input Validation."
+}

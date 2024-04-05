@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function unique_name_537 is vulnerable to SQL Injection. The function constructs an SQL query by concatenating a user-controlled variable 'indexName' directly into the query. An attacker could provide malicious input to 'indexName', which could modify the SQL query to perform unintended actions, such as viewing, modifying, or deleting data."
+}

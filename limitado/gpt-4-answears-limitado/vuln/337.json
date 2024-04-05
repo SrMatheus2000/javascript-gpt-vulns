@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'setKey' is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify an object's prototype, which can lead to an unexpected application behavior. In this function, the keys are directly used to set a value in the object without any validation. An attacker can manipulate the keys to modify the object's prototype. This can lead to several security issues like denial of service (DoS), property injection, or even remote code execution."
+}

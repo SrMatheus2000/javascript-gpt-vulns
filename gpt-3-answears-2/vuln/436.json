@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-703"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Exception Handling"],
+  "description": "This function has a vulnerability of uncontrolled resource consumption (CWE-400) because it does not have any limit on the number of times it can enter the 'else' block, potentially causing a death loop. It also has a vulnerability of improper exception handling (CWE-703) because it catches all exceptions with a generic catch block, which can hide important error information and make it difficult to diagnose and fix issues."
+}

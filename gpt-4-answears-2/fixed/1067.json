@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to prototype pollution as it directly assigns properties from the options object to the _self.config object without any validation. An attacker can manipulate the options object to add or modify properties of the Object prototype. This can lead to a variety of security issues, such as denial of service, alteration of program behavior, or arbitrary code execution."
+}

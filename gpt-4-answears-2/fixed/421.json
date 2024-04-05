@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'entry.html' input is directly used to create a new DOM element without proper sanitization or validation. Although there is an attempt to convert the 'html' variable to a DOM element using the 'domify' function, it does not guarantee that the input is safe from malicious scripts. An attacker can inject malicious scripts through the 'entry.html' input, which will be executed when the HTML is rendered in a web browser."
+}

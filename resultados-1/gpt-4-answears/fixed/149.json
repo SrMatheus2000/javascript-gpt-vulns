@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Information Disclosure", "Command Injection"],
+  "description": "The function is vulnerable to Information Disclosure as it exposes sensitive information like the executed command and the directory in which it was executed in the error message. This could potentially help an attacker understand the system better and plan further attacks. Additionally, the function does not validate the 'command' and 'args' inputs, making it susceptible to Command Injection attacks where an attacker could inject malicious commands."
+}

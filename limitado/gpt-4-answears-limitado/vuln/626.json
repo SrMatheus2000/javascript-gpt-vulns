@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "NoSQL Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to NoSQL injection attacks. The 'where' parameter is directly used to construct a MongoDB query without proper sanitization or validation. An attacker could potentially provide a malicious 'where' object that manipulates the query, leading to unauthorized data access or modification. This is similar to SQL Injection but in the context of a NoSQL database like MongoDB. Additionally, the function does not validate the 'model' parameter which could lead to unexpected behavior if an invalid or malicious value is provided."
+}

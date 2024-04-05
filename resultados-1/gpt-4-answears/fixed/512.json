@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is vulnerable to information disclosure. The length of the input strings 'a' and 'b' are used to create buffers 'bufA' and 'bufB'. If an attacker can control the length of 'a' and 'b', they can potentially learn information about the length of the other string. This is because the function uses the length of 'a' to allocate both buffers, and then checks if the lengths of 'a' and 'b' are equal. If they are not, the function will return false, revealing to an attacker that the lengths are different. This could potentially be used to learn information about secret values if they are compared using this function."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'url' parameter is inserted into the HTML without proper sanitization. Although the 'escape.entities' function is used, it may not be sufficient to prevent all possible XSS payloads. An attacker could potentially inject malicious scripts by providing a specially crafted 'url' parameter."
+}

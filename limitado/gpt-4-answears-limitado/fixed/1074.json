@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'nodeName' variable is constructed by concatenating user-controlled input ('currNodeData.name') and then it is used as 'text' in 'FileListDialog.openWindow' function. If the user-controlled data is not properly sanitized, it could lead to XSS attacks where an attacker can inject malicious scripts."
+}

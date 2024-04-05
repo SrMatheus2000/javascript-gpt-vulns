@@ -1,0 +1,6 @@
+{
+ isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Potential for Prototype Pollution"],
+  "description": "The function does not validate the 'path' parameter, which can lead to Prototype Pollution if it is user-controlled. Prototype Pollution can lead to several security vulnerabilities, such as Remote Code Execution, Denial of Service, or even bypassing security checks. It is recommended to validate the 'path' parameter to ensure it does not contain '__proto__' or 'constructor.prototype'."
+}

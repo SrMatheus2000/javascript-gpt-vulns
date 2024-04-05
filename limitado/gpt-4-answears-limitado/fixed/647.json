@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function does not sanitize the 'file.name' input before using it to create a link and a data attribute. This could lead to Cross-Site Scripting (XSS) if an attacker can control the 'file.name' input. Additionally, there is no validation of the 'file' input object properties, which could lead to unexpected behavior or errors if the input is not as expected."
+}

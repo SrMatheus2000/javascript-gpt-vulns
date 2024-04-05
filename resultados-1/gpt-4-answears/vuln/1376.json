@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-117: Improper Output Neutralization for Logs", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Log Injection", "Unvalidated Input"],
+  "description": "The function logs error messages without sanitizing the input, which could lead to log injection attacks. Additionally, the function does not validate the URL it receives before using it to create a new Selenium Server, which could lead to unexpected behavior if the URL is not a valid Selenium Server URL."
+}

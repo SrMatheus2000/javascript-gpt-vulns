@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function uses user input to construct a file path in a way that allows the user to control which file is accessed. If the user provides a path, it is directly used to resolve a path to 'etc', 'npmrc', and 'npmignore'. This could allow an attacker to traverse the file system to read or write to arbitrary files."
+}

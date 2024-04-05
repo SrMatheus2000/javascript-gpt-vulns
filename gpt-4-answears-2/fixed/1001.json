@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Potential Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function does not properly sanitize the 'attrs' input, which can lead to potential Cross-Site Scripting (XSS) attacks if the input includes malicious scripts. Additionally, the function uses potentially dangerous functions such as 'serializeStyle' and 'parseStyle' without proper validation or sanitization of the input. The function also does not properly handle or escape output, which can lead to injection attacks."
+}

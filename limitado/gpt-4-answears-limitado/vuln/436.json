@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Denial of Service"],
+  "description": "The function is vulnerable to information disclosure as it prints out detailed error messages which include sensitive information such as environment variables, process details, stack traces, etc. This could potentially expose sensitive information to an attacker. Additionally, the function is vulnerable to Denial of Service (DoS) attacks as it does not control the consumption of resources in case of an error, potentially leading to resource exhaustion."
+}

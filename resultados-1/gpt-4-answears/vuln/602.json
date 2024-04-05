@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-78"],
+  "vulnerabilities": ["SQL Injection", "OS Command Injection"],
+  "description": "The function is vulnerable to SQL Injection and OS Command Injection. The 'pathBundleIN', 'pathOUT', and 'password' parameters are directly used in the 'params' array without any sanitization or validation. This can allow an attacker to inject malicious commands or SQL queries. The 'openssl.spawnWrapper' function is also potentially dangerous as it executes the 'params' array as a command, which can lead to OS Command Injection if the 'params' array contains malicious commands."
+}

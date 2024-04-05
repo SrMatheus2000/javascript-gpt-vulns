@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'ip' parameter is directly used in the 'execFile' function without any sanitization or validation. An attacker can inject malicious commands through the 'ip' parameter, which will be executed on the server side."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-476: NULL Pointer Dereference"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to several types of attacks like denial of service, property override, or potentially remote code execution if a property is overwritten with a function. The vulnerability occurs because the function does not validate if the properties 'name' are prototype properties and can be overwritten."
+}

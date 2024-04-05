@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-346: Origin Validation Error"],
+  "vulnerabilities": ["Unvalidated input", "Improper origin validation"],
+  "description": "The function getOriginOfRequest does not validate the 'origin' and 'referrer' headers from the request object. This can lead to security vulnerabilities as an attacker can manipulate these headers. The function also does not validate the parsed protocol and host from the referrer, which can lead to origin validation errors. An attacker can manipulate the referrer to bypass security checks based on the origin."
+}

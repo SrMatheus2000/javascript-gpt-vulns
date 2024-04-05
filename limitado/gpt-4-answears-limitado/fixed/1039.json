@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-384: Session Fixation", "CWE-613: Insufficient Session Expiration"],
+  "vulnerabilities": ["Session ID is not regenerated after login", "Session expiration is not properly handled", "Sensitive information is exposed through HTTP headers"],
+  "description": "The function is vulnerable as it does not regenerate the session ID after login, which can lead to session fixation attacks. The session expiration is also not properly handled, which can lead to unauthorized access if the session ID is compromised. Additionally, the session ID is exposed through HTTP headers, which can lead to information exposure."
+}

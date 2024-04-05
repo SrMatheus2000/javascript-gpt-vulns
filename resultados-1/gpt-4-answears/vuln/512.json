@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of template literals to inject user-controlled data (`props.suggestionText` and `value[props.displayKey]`) into HTML content. If the user-controlled data is not properly sanitized, it could lead to the execution of malicious scripts."
+}

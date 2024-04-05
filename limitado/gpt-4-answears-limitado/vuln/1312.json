@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'innerHTML' property is used to insert user-controlled data (firstLine) into the HTML document, which is sanitized by the 'sanitizeHtmlCode' function. If the sanitization is not done properly, it could lead to XSS attacks where an attacker can inject malicious scripts. This is classified as CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

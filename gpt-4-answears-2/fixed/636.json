@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses execFile to execute the 'ipconfig' command, which can be vulnerable to OS command injection if the 'iface' parameter is controlled by an attacker. This could allow an attacker to execute arbitrary commands on the system."
+}

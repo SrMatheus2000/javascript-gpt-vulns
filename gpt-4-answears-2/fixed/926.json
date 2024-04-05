@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470"],
+"vulnerabilities": ["Unrestricted use of dangerous function"],
+"description": "The function 'unique_name_525' is vulnerable as it uses the 'apply' method without proper validation. This can lead to unrestricted use of dangerous functions, which can be exploited by an attacker to execute arbitrary code. This vulnerability is classified as CWE-470 (Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection'))."
+}

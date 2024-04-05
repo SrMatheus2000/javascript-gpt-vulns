@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-116"],
+  "vulnerabilities": ["Improper Input Validation", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "description": "The provided code is vulnerable to both CWE-20 (Improper Input Validation) and CWE-116 (Improper Neutralization of Special Elements used in an SQL Command). The code does not properly validate the input parameter 'param' before using it to construct a key-value pair. This can lead to various vulnerabilities, including SQL injection if the resulting key-value pair is used in an SQL command. Additionally, the code does not properly handle quoted values, allowing an attacker to manipulate the value by including quotes in the input."
+}

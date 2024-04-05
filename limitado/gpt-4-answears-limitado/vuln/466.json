@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'ssid', 'password', and 'iface' values are directly concatenated into the command string without any sanitization or escaping. An attacker could potentially inject arbitrary commands by providing specially crafted input."
+}

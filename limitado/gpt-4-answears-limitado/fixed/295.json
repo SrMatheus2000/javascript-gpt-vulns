@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function writeConfig is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify a JavaScript object prototype. The prototype is an object from which other objects inherit properties. If an attacker can control the properties of the Object prototype, they can affect all objects in the application, leading to issues such as Denial of Service, Remote Code Execution, or Property Injection. In this function, the key-value pairs are directly written into the output object without any checks, which can lead to Prototype Pollution if the key is '__proto__' or 'prototype'."
+}

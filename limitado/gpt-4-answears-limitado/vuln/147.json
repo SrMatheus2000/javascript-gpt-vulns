@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the 'request.url' input, which can lead to Insecure Direct Object References (IDOR) vulnerability. An attacker can manipulate 'request.url' to access unauthorized data. Also, the function directly uses 'request.url' in 'console.log' and 'networkRequest.changeUrl', which can lead to Cross-Site Scripting (XSS) attacks if 'request.url' contains malicious scripts."
+}

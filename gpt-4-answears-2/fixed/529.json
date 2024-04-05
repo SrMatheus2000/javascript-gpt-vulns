@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Command Injection", "Information Exposure", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to command injection as it uses user input to construct a command that is executed by a system shell. This can allow an attacker to execute arbitrary commands. The function also exposes sensitive information by not properly handling errors and exceptions, which can lead to information disclosure. Additionally, the function does not limit the amount of resources it can consume, which can lead to a denial of service."
+}

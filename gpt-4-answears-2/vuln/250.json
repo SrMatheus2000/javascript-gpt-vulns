@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_118 is vulnerable to OS command injection. The function uses the cp.exec function to execute git commands. However, it directly concatenates user-supplied input into the command string (files, message, tagName), which can allow an attacker to inject arbitrary commands. This is a critical security issue that can lead to full system compromise."
+}

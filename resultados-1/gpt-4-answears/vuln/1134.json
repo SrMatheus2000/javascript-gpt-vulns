@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_647' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses the 'data' parameter to set the HTML content of an element with the id 'message-bar'. If an attacker can control the value of 'data', they can inject arbitrary HTML or JavaScript code into the page, which will then be executed in the context of the victim's session. This can lead to a variety of attacks, such as stealing the victim's session cookies or performing actions on their behalf."
+}

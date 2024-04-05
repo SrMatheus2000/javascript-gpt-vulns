@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-94"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection"],
+"description": "The function is vulnerable to Improper Input Validation (CWE-20) as it does not validate the 'parts' input parameter. This can lead to SQL Injection (CWE-89) and Code Injection (CWE-94) vulnerabilities if the 'parts' parameter contains malicious SQL or JavaScript code. The function also does not sanitize the 'value' variable before using it in a regular expression match, which can lead to Regular Expression Denial of Service (ReDoS) attacks."
+}

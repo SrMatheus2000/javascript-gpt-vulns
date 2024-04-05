@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-20", "CWE-200"],
+"vulnerabilities": ["OS Command Injection", "Improper Input Validation", "Information Exposure"],
+"description": "The function is vulnerable to OS command injection as it passes user-controlled input to the openssl.exec function without proper sanitization. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function does not validate the input options properly, which could lead to unexpected behavior. The function also exposes sensitive information such as service keys and passwords, which could be exploited by an attacker to gain unauthorized access."
+}

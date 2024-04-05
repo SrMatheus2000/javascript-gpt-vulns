@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-494: Download of Code Without Integrity Check", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Unverified download", "Potential path injection"],
+  "description": "The function downloads and builds a binary from a URL without verifying the integrity of the downloaded file. This could allow an attacker to tamper with the downloaded file and execute arbitrary code. Additionally, the function uses input from an external source to construct a file path. An attacker could potentially manipulate this input to gain access to unintended files or directories."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not properly validate the 'path' parameter, allowing an attacker to perform a path traversal attack and potentially access sensitive files on the server."
+}

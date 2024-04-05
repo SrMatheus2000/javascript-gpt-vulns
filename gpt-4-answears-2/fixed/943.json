@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function 'unique_name_537' is vulnerable to SQL Injection. The function uses string concatenation to create a SQL query, which is then executed. An attacker could potentially manipulate the 'indexName' parameter to execute arbitrary SQL commands."
+}

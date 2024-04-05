@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-706"],
+"vulnerabilities": ["Path Traversal", "Use of Incorrectly-Resolved Name or Reference"],
+"description": "The function is vulnerable to path traversal attacks (CWE-22) because it uses user-supplied input in 'entry.absolute' to access file system resources without properly validating or sanitizing the input. This could allow an attacker to read, write, or delete files outside of the intended directories. Additionally, the function uses the 'this' keyword in a way that could lead to incorrect resolution of names or references (CWE-706), depending on the context in which the function is called."
+}

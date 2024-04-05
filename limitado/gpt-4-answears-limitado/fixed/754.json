@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function sets the maximum number of listeners for the 'stream' event emitter to 1000 with 'this.stream.setMaxListeners(1000)'. This could potentially lead to a Denial of Service (DoS) attack if an attacker is able to continuously trigger the 'stream' event, causing a large number of listeners to be created and consuming system resources. This is related to CWE-400, which refers to uncontrolled resource consumption."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function 'unique_name_776' is vulnerable to OS command injection. It constructs a command to be executed using the 'exec' function with inputs from the 'options' object. An attacker could potentially inject malicious commands through the 'options' object, leading to arbitrary command execution on the server."
+}

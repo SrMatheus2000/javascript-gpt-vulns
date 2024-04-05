@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+  "description": "The function unique_name_366 is vulnerable to SQL Injection and Improper Input Validation. The function does not sanitize or validate the input 'pkg.name' before using it, which can lead to SQL Injection if the input contains SQL commands. Additionally, the function does not validate the input 'self.where', which can lead to directory traversal or other file system attacks if the input is not a valid directory path."
+}

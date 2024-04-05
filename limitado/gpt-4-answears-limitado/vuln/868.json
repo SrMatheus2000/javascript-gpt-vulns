@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Exposure"],
+  "description": "The function is vulnerable as it exposes sensitive environment variables that match the PREFIX /^AEGIR_/i. This can lead to information exposure if any of these environment variables contain sensitive information. Additionally, the function does not handle errors that may occur during the execution of the function, which could lead to information exposure through error messages."
+}

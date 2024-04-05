@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-390", "CWE-327"],
+  "vulnerabilities": ["Improper Error Handling", "Inadequate Encryption Strength"],
+  "description": "The function encrypt() is vulnerable to CWE-390 (Improper Error Handling) and CWE-327 (Inadequate Encryption Strength). The function does not handle the case when the value parameter is null or undefined properly, as it throws a generic Error instead of a more specific error message. Additionally, the function uses a weak encryption algorithm and does not provide sufficient encryption strength."
+}

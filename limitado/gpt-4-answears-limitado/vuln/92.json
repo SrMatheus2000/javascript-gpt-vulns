@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The 'destination' parameter is directly included in the command string that is passed to the 'exec' function. If an attacker can control the 'destination' parameter, they can inject arbitrary commands to be executed on the server. This can lead to a variety of attacks, including data theft, data corruption, denial of service, and unauthorized system access."
+}

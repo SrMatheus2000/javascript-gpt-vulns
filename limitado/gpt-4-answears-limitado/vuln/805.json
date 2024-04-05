@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Email Validation Vulnerability"],
+  "description": "The function is vulnerable as it does not properly validate the email. It does not check for the presence of a '.' after the '@' symbol in the email address. This could allow invalid emails to pass through the validation. Additionally, the function does not check for multiple '@' symbols in the email address."
+}

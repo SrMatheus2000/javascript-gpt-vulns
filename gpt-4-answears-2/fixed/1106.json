@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+"vulnerabilities": ["Open Redirect Vulnerability"],
+"description": "The function does not properly validate the input in the URL hash. This could lead to an open redirect vulnerability, where an attacker could craft a URL with a malicious site, and the function would redirect the user to this site."
+}

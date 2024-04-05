@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-310: Cryptographic Issues"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insufficient Entropy in PRNG"],
+  "description": "The function uses the 'crypto' library to encrypt and decrypt data, but the 'algorithm' variable is not defined in the provided code. If a weak or broken algorithm is used, it could lead to vulnerabilities. Also, the function uses 'crypto.randomBytes(16)' to generate an Initialization Vector (IV). If the PRNG is not properly seeded, it could generate predictable values and lead to vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-78"],
+  "vulnerabilities": ["Potential corruption of binary data", "Possible injection of untrusted data"],
+  "description": "The createRequest function does not properly sanitize the headers, which could lead to potential corruption of binary data. Additionally, the post, put, and head functions do not properly sanitize the request body, which could result in possible injection of untrusted data."
+}

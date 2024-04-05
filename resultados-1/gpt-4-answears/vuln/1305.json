@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_759 is vulnerable to OS command injection. The function uses the exec function to execute commands in the shell. The key and value parameters are directly inserted into the command string without any sanitization or escaping. This means that if a user can control the key or value, they can inject arbitrary commands to be executed on the server. This is a serious security vulnerability that can lead to full server compromise."
+}

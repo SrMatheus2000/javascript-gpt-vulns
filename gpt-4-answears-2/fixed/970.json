@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Potential Denial of Service (DoS)"],
+"description": "The function could potentially lead to a Denial of Service (DoS) attack. This is because it does not control the number of event handlers or notifications that can be added to the queue. If an attacker can add an excessive number of handlers or notifications, it could consume system resources leading to a DoS condition. This is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

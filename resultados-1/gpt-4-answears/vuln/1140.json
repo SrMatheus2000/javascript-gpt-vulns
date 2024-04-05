@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Unvalidated Input", "Global Variable Modification"],
+  "description": "The function 'unique_name_649' is vulnerable due to the lack of input validation. The function accepts an 'options' object and does not validate its properties before using them. This can lead to unexpected behavior or errors. For instance, if 'options' is an object with a 'server' property that is not a valid server, the function will throw an error. Additionally, the function modifies the global 'Socket' variable, which can lead to unexpected behavior in other parts of the application that use this variable."
+}

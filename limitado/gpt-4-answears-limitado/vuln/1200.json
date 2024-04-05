@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses user input in the 'curr_table_name' and 'curr_column_name' variables without proper sanitization or encoding. This could allow an attacker to inject malicious scripts that will be executed in the user's browser. This is identified as CWE-79. Additionally, the function does not validate the user input before using it, which is a violation of CWE-20. An attacker could provide unexpected input that could lead to unexpected behavior or errors."
+}

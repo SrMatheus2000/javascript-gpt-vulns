@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function does not validate the 'path' parameter, which can lead to Prototype Pollution if it is user-controlled. An attacker can manipulate the 'path' parameter to add or modify properties of 'Object.prototype'. These changes would then be visible on all objects in the application. This can lead to various security issues, such as Remote Code Execution, Denial of Service, or even bypassing security checks."
+}

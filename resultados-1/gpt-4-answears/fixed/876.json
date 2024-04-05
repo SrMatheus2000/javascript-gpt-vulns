@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function _wrapMatchesInNode is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of innerHTML property which can execute JavaScript code. The function _convertUrlsToLinks(nodeValue) is used to set the innerHTML of tempElement, which could potentially introduce malicious scripts if nodeValue is not properly sanitized. An attacker could exploit this vulnerability to run arbitrary JavaScript code in the context of the victim's browser, leading to possible session theft, account takeover, or other malicious actions."
+}

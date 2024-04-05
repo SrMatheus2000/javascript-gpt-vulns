@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89"],
+"vulnerabilities": ["SQL Injection"],
+"description": "The function does not properly sanitize the input 'val' before using it in SQL queries. This could lead to SQL Injection if the input is controlled by an attacker. The replace function used to escape special characters does not prevent all forms of SQL Injection, especially if the 'val' is an object or array. The function also does not handle the case where 'val' is a function, which could lead to unexpected behavior."
+}

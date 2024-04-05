@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471", "CWE-476"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)", "NULL Pointer Dereference"],
+"description": "The function 'unique_name_343' is vulnerable as it modifies the properties of its input objects, which can lead to unexpected behavior (CWE-471). It also does not check if the input object is null before accessing its properties, which can lead to a NULL Pointer Dereference (CWE-476)."
+}

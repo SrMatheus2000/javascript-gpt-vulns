@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a simple function that processes a stack trace, removing lines that are internal to Mocha or Node.js, and cleaning up the current working directory from the stack trace. It does not perform any dangerous operations, does not use any deprecated or insecure functions, and does not have any obvious logic errors that could lead to security issues."
+}

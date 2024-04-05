@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function inetChecksite is vulnerable to OS command injection. This is because it uses the exec function to execute a curl command with user-supplied input (urlSanitized). Even though the input is sanitized with util.sanitizeShellString, it is still possible to inject malicious commands if the sanitization function is not robust enough. An attacker could potentially execute arbitrary commands on the server with the same privileges as the Node.js process."
+}

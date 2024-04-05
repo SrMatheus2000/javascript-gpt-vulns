@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+  "description": "The function 'unique_name_484' is vulnerable to SQL Injection and Improper Input Validation. The function does not properly sanitize the 'postData', 'uid', and 'pids' inputs before using them in database queries. This could allow an attacker to inject malicious SQL commands into the queries, leading to unauthorized access to, modification of, or deletion of data in the database. Additionally, the function does not validate the 'postData' input before using it, which could lead to unexpected behavior or errors."
+}

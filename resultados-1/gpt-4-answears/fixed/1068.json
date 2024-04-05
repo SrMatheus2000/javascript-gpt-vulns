@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_632' is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'MarkdownIt' library to parse markdown text, but it does not properly sanitize the input. The 'validateLink' function is intended to prevent links to dangerous protocols, but it only checks if the protocol is present in the 'BAD_PROTOCOLS' array. An attacker could bypass this check by using a protocol not included in the 'BAD_PROTOCOLS' array, or by using a mixed case protocol (since the function converts the input to lower case before checking). This could allow an attacker to inject malicious scripts into the markdown text, which would then be executed when the markdown is rendered."
+}

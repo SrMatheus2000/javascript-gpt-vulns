@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_40 uses the execFile function to execute a ping command with user-supplied input (the 'ip' variable). This can lead to command injection if the user-supplied input is not properly sanitized. An attacker could provide an 'ip' that includes command line syntax, potentially allowing them to execute arbitrary commands on the system."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-367"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The provided code is vulnerable to a Path Traversal attack. The 'from' parameter is not properly validated, allowing an attacker to traverse the file system and potentially access sensitive files outside the intended directory."
+}

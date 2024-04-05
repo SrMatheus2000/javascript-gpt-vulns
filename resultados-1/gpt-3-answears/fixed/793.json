@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-120"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function does not perform any input validation or boundary checks on the length parameter, which can lead to a buffer overflow vulnerability (CWE-120) if an attacker provides a length value that exceeds the size of the buffer."
+}

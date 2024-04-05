@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352", "CWE-200", "CWE-601"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Information Exposure", "URL Redirection to Untrusted Site ('Open Redirect')"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any CSRF tokens or similar security measures. This could allow an attacker to trick a victim into making an unintended request to the web application. The function also exposes information through error messages, which could potentially be exploited by an attacker to gain more information about the system. Additionally, the function does not validate or sanitize the 'redirect' URL parameter, making it vulnerable to URL Redirection attacks."
+}

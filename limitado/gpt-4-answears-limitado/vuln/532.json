@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["No validation of 'data' input", "Potential SQL Injection through 'adapterSessionIds'", "Potential Code Injection through 'action'"],
+  "description": "The function does not validate the 'data' input, which is split and parsed into JSON. This could lead to unexpected behavior or errors if the input is not in the expected format. The 'adapterSessionIds' are used directly in a function call without any sanitization or parameterization, which could lead to SQL Injection if they contain malicious SQL commands. The 'action' is directly compared to a string without any sanitization, which could lead to Code Injection if it

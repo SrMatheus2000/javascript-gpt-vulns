@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Type coercion", "Potential for injection attacks"],
+  "description": "The function does not properly validate the input 'value' before using it. This can lead to type coercion vulnerabilities, where an attacker can provide a 'value' that is not of the expected type, but is still processed by the function. For example, if 'value' is expected to be a string but an object is provided, the function will attempt to split the object, leading to unexpected behavior. Additionally, the function uses the 'value' input directly in a JSON.parse call, which can lead to injection attacks if the 'value' is not properly sanitized before use."
+}

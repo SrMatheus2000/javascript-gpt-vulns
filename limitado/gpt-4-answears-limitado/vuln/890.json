@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function '_allocate' is vulnerable to buffer overflow attacks. This is because it does not properly check the size of the input 'bytes' before allocating memory with the 'new Buffer' function. If an attacker can control the size of 'bytes', they could cause the application to allocate more memory than is available, leading to a buffer overflow. This could result in a crash or potentially allow an attacker to execute arbitrary code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Potential Cross-Site Scripting (XSS)"],
+  "description": "The function does not validate or sanitize the 'url' and 'frameName' values that are retrieved from the 'urlFrameName' hidden value. This could potentially lead to Cross-Site Scripting (XSS) attacks if an attacker is able to manipulate these values. XSS attacks can lead to a variety of security issues, including session hijacking, identity theft, and defacement of the website."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function unique_name_753 is vulnerable to code injection. The function uses user-controlled input in the 'message', 'additional', 'keyword' and 'errorPath' variables, which are directly included in the generated code without proper sanitization or encoding. An attacker could potentially inject malicious code by manipulating these inputs, leading to arbitrary code execution."
+}

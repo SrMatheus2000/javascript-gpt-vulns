@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-310: Cryptographic Issues", "CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable as it does not validate the input before using it in the cryptographic operation. This can lead to various cryptographic issues. The key and algorithm used for the decryption are not shown, if they are hard-coded or insecure, it can lead to the use of a broken or risky cryptographic algorithm. The error message thrown when the value is null or undefined can expose sensitive information about the system. Also, the function does not handle errors that may occur during the decryption process, which can lead to unhandled exceptions."
+}

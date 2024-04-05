@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319", "CWE-400"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) as it does not enforce encryption when transmitting sensitive data, which can expose it to unauthorized actors. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not properly control the allocation and maintenance of a limited resource, thereby enabling an actor to influence consumption and cause the system to consume more resources than intended."
+}

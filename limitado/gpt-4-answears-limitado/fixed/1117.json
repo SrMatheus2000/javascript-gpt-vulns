@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the jQuery .html() method to insert content into the page. If the content being inserted (e.g., PMA_messages.strFinishMsg, PMA_commonParams.get('table')) is not properly sanitized and contains malicious script, it could be executed in the user's browser, leading to an XSS attack. This could allow an attacker to steal sensitive information, perform actions on behalf of the user, or deliver malware."
+}

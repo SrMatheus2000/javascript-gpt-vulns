@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-918: Server-Side Request Forgery (SSRF)", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+"description": "The function is vulnerable to Server-Side Request Forgery (SSRF) as it allows the user to control the target of the HTTP request. This can be exploited to make requests to internal resources that should not be accessible. Additionally, there is no validation of the input from the user, which can lead to other types of attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the 'path' parameter. If the 'path' parameter is not an array or a string, it could lead to unexpected behavior or errors. This could potentially be exploited by an attacker to cause a Denial of Service (DoS) by passing in a large object or other unexpected input types."
+}

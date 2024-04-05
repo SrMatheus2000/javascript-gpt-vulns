@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Type Coercion"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The 'limit' variable is parsed from the request query and used to slice the logs array. If an attacker provides a very large number, it could cause the application to consume excessive resources and potentially crash. This is a form of CWE-400: Uncontrolled Resource Consumption. Additionally, the function does not properly validate the 'limit' input. If a non-integer value is provided, it is coerced to 0. This could lead to unexpected behavior and is a form of CWE-20: Improper Input Validation."
+}

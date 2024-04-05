@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-20", "CWE-400"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to code injection via the 'wsEngine' option, which is directly taken from the environment variable without any sanitization. This can lead to arbitrary code execution. The function also does not validate the 'opts' input, which can lead to various issues. The 'clients' object can be filled without limit, leading to potential resource exhaustion."
+}

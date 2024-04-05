@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'caption' variable is directly taken from the 'data-caption' attribute of the '$image' object and is then used to set the HTML of the 'container' object. If an attacker can control the 'data-caption' attribute, they can inject malicious scripts, which will be executed when the HTML of the 'container' is rendered by a web browser."
+}

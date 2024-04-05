@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function 'unique_name_12' is vulnerable to Denial of Service (DoS) attacks. The function does not limit the size of the 'keys' array that it processes. If an attacker provides a large 'keys' array, the function could consume excessive system resources (CPU and memory), leading to a DoS condition. This is a type of Resource Exhaustion vulnerability (CWE-400)."
+}

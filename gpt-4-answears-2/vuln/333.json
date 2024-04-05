@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-359: Exposure of Private Information ('Privacy Violation')", "CWE-749: Exposed Dangerous Method or Function"],
+"vulnerabilities": ["Exposure of sensitive information", "Potential for code injection"],
+"description": "The function 'signPersonalMessage' is vulnerable as it exposes sensitive information during the signing process. The 'withAccount' and 'message' parameters could potentially contain sensitive information that should not be exposed. Additionally, the function '_sendMessage' is potentially dangerous as it could be exploited for code injection if not properly sanitized."
+}

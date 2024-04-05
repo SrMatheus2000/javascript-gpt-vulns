@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-297"],
+  "vulnerabilities": ["Weak Transport Layer Security", "Improper Certificate Validation"],
+  "description": "The function _startTLS is vulnerable due to the use of weak transport layer security. The function uses the 'tls.createSecurePair' method, which is deprecated and can lead to potential security issues. Additionally, the function may not properly validate SSL/TLS certificates, which can lead to man-in-the-middle attacks. This is indicated by the 'rejectUnauthorized' variable, which if set to false, would allow any self-signed certificate."
+}

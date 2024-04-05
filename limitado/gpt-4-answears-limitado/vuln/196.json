@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Information Disclosure"],
+  "description": "The function is intended to sanitize sensitive information such as 'password' or 'secret' from the error response. However, it only checks for the exact words 'password' and 'secret' in a case-insensitive manner. If the sensitive information is labeled with other names or variations, they will not be sanitized and could be exposed. This could lead to information disclosure vulnerability."
+}

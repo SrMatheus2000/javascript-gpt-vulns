@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function execute() takes smbCommand and smbCommandArgs as parameters and passes them directly to execa() function which is used to execute shell commands. If an attacker can control the smbCommand or smbCommandArgs, they can execute arbitrary commands on the system."
+}

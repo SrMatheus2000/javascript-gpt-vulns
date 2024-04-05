@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-89", "CWE-20"],
+"vulnerabilities": ["Cross-site Scripting (XSS)", "SQL Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it directly uses user input (req.query._escaped_fragment_) in the creation of a URL without proper sanitization. This could allow an attacker to inject malicious scripts. It's also vulnerable to SQL Injection because the user input is directly used in the creation of a URL which could be used to manipulate SQL queries. Improper Input Validation is present because the function does not validate or sanitize the user input before using it."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+"vulnerabilities": ["Command Injection", "Path Traversal"],
+"description": "The function is vulnerable to command injection because it concatenates user-supplied input into command strings without proper sanitization or validation. This could allow an attacker to execute arbitrary commands. The function is also vulnerable to path traversal because it writes to a file using a hard-coded, predictable filename. An attacker could potentially overwrite any file on the system by predicting the filename."
+}

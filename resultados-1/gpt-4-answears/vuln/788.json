@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (regex) to process the input data. The regex used is vulnerable to a Regular Expression Denial of Service (ReDoS) attack. In a ReDoS attack, an attacker provides a piece of input that causes the regex processing to take a very long time, effectively causing a denial of service. This is due to the use of nested quantifiers in the regex, which can lead to excessive backtracking. The function does not validate the input data before processing it, which is a violation of CWE-20. Additionally, the function does not limit the amount of resources (CPU time, memory) it uses when processing the input data, which is a violation of CWE-400."
+}

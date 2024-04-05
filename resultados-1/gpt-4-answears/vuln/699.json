@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-200", "CWE-613"],
+  "vulnerabilities": ["SQL Injection", "Information Exposure", "Insufficient Session Expiration"],
+  "description": "The function is vulnerable to SQL Injection (CWE-89) because it directly uses user input (req.body.loginEmail) in a database query without proper sanitization or parameterization. This could allow an attacker to manipulate the query and access or modify data they shouldn't be able to. The function also exposes potentially sensitive information (CWE-200) by returning the entire customer object, including the hashed password, in the response when login is successful. This could potentially expose sensitive data if the response is intercepted or logged somewhere. Lastly, the function sets a session for the customer but does not appear to handle session expiration (CWE-613), which could allow an attacker to use an old session to impersonate a user."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Information Disclosure", "Error Message Information Leak", "Potential Denial of Service"],
+  "description": "The function has several potential vulnerabilities. First, it may disclose sensitive information through error messages (CWE-209). For example, if the port is already in use, the function logs an error message that includes the port number. This could potentially provide an attacker with useful information. Second, the function may be vulnerable to a denial of service attack (CWE-400). The function uses the 'express' module to create a server and does not appear to limit the number of incoming connections or the amount of data that can be sent in a request. This could allow an attacker to consume all available resources, causing the server to become unresponsive. Finally, the function may disclose sensitive information (CWE-200) by sending the contents of files in response to certain requests. This could potentially allow an attacker to read sensitive files."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-770"],
+"vulnerabilities": ["Allocation of Resources Without Limits or Throttling"],
+"description": "The function deepExtend is vulnerable to a potential Denial of Service (DoS) attack. If an attacker provides a deeply nested object, it could cause a stack overflow due to the recursive nature of the function. This is known as CWE-770: Allocation of Resources Without Limits or Throttling. The function does not limit the depth of the object that can be provided, and does not throttle the allocation of resources, which can lead to excessive consumption of resources (CPU and memory), and potentially crash the application."
+}

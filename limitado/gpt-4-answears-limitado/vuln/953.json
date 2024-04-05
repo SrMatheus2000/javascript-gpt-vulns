@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The regex used to filter out potentially harmful attributes is not sufficient. It only checks for 'script' or 'data' at the beginning of the attribute value, but there are many other ways to execute JavaScript. For example, an attacker could use an event handler like 'onload' or 'onerror' to execute malicious scripts. Additionally, the function does not properly sanitize the attribute values, which could lead to script injection."
+}

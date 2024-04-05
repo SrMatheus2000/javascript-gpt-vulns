@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+"description": "The function does not validate or sanitize the input 'decodeKeys' and 'decodeValues' which can lead to vulnerabilities such as Cross-Site Scripting (XSS) and Code Injection. Also, the function uses 'decodeComponent' which can lead to improper encoding or escaping of output."
+}

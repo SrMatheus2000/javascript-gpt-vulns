@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The function uses user-controlled input in the 'this.code()' function calls without proper sanitization or validation. An attacker could potentially inject malicious code through the 'keyword', 'key', 'additional' parameters, which could lead to arbitrary code execution."
+}

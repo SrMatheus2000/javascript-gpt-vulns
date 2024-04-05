@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_660 is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the escapeHtml function to sanitize the 'table' parameter before it is included in the 'question' variable. However, if the escapeHtml function is not properly implemented, it could allow an attacker to inject malicious scripts into the web page. These scripts could be used to steal sensitive information, perform actions on behalf of the user, or exploit other vulnerabilities in the web application."
+}

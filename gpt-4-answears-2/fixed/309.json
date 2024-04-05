@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the 'port' input which can lead to improper handling of the input (CWE-20). Also, the function does not limit the number of worker processes that can be created, which can lead to resource exhaustion (CWE-400)."
+}

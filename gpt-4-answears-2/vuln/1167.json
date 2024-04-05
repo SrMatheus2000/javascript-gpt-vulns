@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the input for 'opts.strip' and 'entry'. This could lead to unexpected behavior or errors if the input is not as expected. For example, if 'opts.strip' is not a number or if 'entry' is not an object with the expected properties. This is a type of Improper Input Validation (CWE-20)."
+}

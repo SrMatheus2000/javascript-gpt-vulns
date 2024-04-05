@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-129: Improper Validation of Array Index"],
+  "vulnerabilities": ["Array Index Out of Bounds"],
+  "description": "The function does not check if the lengths of the input arrays 'a' and 'b' are equal. If 'b' is shorter than 'a', an attempt to access an index of 'b' that does not exist will result in 'undefined', which will then be XORed with the corresponding value in 'a'. This can lead to unexpected behavior or errors."
+}

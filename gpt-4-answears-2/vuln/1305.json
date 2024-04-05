@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function unique_name_759 is vulnerable to OS command injection. The function uses user-supplied input (key and value) to construct a command to be executed. An attacker could provide specially crafted input to execute arbitrary commands on the system."
+}

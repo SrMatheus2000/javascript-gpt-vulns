@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function 'unique_name_672' is vulnerable to OS command injection. The function constructs a command to be executed using the 'exec' function, with parts of the command being formed from user-controlled input ('orig', 'compareTo', 'options.file', 'options.highlightColor', 'options.highlightStyle'). This could allow an attacker to inject arbitrary commands to be executed on the server. The vulnerability is related to CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

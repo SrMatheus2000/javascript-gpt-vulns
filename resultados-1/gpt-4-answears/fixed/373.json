@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Output Neutralization for Logs"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses user-supplied input (event.message, event.filename, event.lineno, event.colno, event.error.stack) in the HTML output without proper sanitization or encoding. This could allow an attacker to inject malicious scripts that will be executed in the context of the victim's browser. Additionally, the function may also be vulnerable to log injection attacks as it directly uses user-supplied input in log messages without proper sanitization."
+}

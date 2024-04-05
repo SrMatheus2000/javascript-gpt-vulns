@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The 'file' variable is directly taken from the request parameters without any sanitization or validation. An attacker can manipulate the 'file' parameter to access and read files outside of the intended directory. This can lead to exposure of sensitive information."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not validate or limit the size of the input data. If the input data is too large, it can cause the application to consume a large amount of memory, leading to a Denial of Service (DoS) attack. This is known as a Resource Exhaustion vulnerability (CWE-400)."
+}

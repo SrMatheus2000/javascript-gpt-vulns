@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Infinite Loop Vulnerability"],
+"description": "The function has a potential vulnerability where it can enter an infinite loop. This happens in the while loops where the increment of 'i' is not properly controlled. If the conditions to break the loop are not met, the function will keep running indefinitely, leading to resource exhaustion and potential Denial of Service (DoS)."
+}

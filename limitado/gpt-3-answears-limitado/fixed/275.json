@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-754"],
+  "vulnerabilities": ["Arithmetic Overflow or Wraparound"],
+  "description": "The function does not handle arithmetic overflow or wraparound, which can lead to unexpected behavior or security vulnerabilities."
+}

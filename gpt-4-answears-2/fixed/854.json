@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-213", "CWE-384"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure Through Sent Data", "Exposure of Sensitive Information Due to Unencrypted Transmission", "Session Fixation"],
+"description": "The function is vulnerable to several types of attacks. Firstly, it does not validate the input 'cookies' which can lead to various types of attacks such as SQL Injection, XSS, etc. Secondly, it exposes sensitive information through the 'auth' object which can be exploited by an attacker to gain unauthorized access. Thirdly, the function transmits sensitive information such as 'auth' in an unencrypted form which can be intercepted by an attacker. Lastly, the function is vulnerable to session fixation attacks as it does not change the session ID after successful authentication."
+}

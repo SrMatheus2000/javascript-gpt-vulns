@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-125", "CWE-119"],
+  "vulnerabilities": ["Out-of-bounds Read", "Buffer Overflow"],
+  "description": "The function allocates an unsafe buffer, which can lead to vulnerabilities such as out-of-bounds read (CWE-125) and buffer overflow (CWE-119). The function does not validate the length of the buffer before allocating it, which can lead to reading or writing outside the allocated memory space. This can result in data corruption, crashes, or code execution."
+}

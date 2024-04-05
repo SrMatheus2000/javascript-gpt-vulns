@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability"],
+  "description": "The function isExternal is vulnerable to open redirect attacks. This is because it uses user-supplied input (the 'url' parameter) to construct a URL without properly validating or sanitizing the input. An attacker could exploit this vulnerability to redirect users to a malicious website. This could be used for phishing attacks or to steal sensitive information."
+}

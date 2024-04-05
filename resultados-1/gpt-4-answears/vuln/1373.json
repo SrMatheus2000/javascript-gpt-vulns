@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Unvalidated input", "Path manipulation"],
+  "description": "The function unique_name_800 does not validate the input parameters 'platform', 'arch', 'majorVersion', and 'nightly'. This could lead to a path manipulation vulnerability where an attacker could control the file name or path that the function returns. For example, an attacker could provide a 'platform' value that includes directory traversal characters (e.g., '../') to potentially access files outside of the intended directories. Additionally, the function uses the input parameters to construct a URL without any validation, which could lead to potential security risks if the input parameters contain malicious values."
+}

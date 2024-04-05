@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it concatenates user-supplied input into a command that is executed without proper sanitization. An attacker could provide malicious input to the 'options.source' or 'options.destination' parameters, which could lead to arbitrary command execution."
+}

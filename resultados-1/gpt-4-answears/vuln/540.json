@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Command Injection", "Path Traversal", "Denial of Service"],
+  "description": "The function is vulnerable to command injection via the 'url' parameter in the 'curl' endpoint. An attacker could inject arbitrary commands that will be executed on the server. The function is also vulnerable to path traversal via the 'slug' parameter in the 'datalog' endpoints. An attacker could manipulate the 'slug' parameter to access arbitrary files on the server. Additionally, the function does not limit the number of concurrent requests or the size of the data being processed, which could lead to a denial of service if an attacker sends a large number of requests or very large data payloads."
+}

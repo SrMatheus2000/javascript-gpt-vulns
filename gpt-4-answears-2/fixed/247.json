@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400", "CWE-730"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption", "Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+"description": "The function does not validate the input 'string' which can lead to improper input validation vulnerability. The 'allowUnsafe' flag can lead to unsafe parsing of the input string. The 'regex.exec(string)' can lead to uncontrolled resource consumption (CWE-400) if the regex pattern is not properly defined. The 'loader(yaml)' can lead to buffer overflow (CWE-730) if the yaml content is larger than the buffer size."
+}

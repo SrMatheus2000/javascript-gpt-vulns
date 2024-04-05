@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The given JavaScript function is vulnerable to code injection. The function uses the `eval` function to execute the input string as code, which can lead to arbitrary code execution. This vulnerability is classified as CWE-94: Improper Control of Generation of Code ('Code Injection')."
+}

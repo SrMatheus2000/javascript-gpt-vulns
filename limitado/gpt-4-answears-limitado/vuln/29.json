@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function escapeShellArg is vulnerable to command injection. It attempts to escape double quotes, but it does not handle other special characters that could be used to inject arbitrary commands, such as backticks (`), dollar signs ($), or semicolons (;). An attacker could use these characters to break out of the intended command context and execute arbitrary commands."
+}

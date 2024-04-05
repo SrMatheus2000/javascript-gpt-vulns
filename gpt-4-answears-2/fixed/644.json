@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Information Exposure Through Sent Data", "Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"description": "The function is vulnerable to Information Exposure Through Sent Data because it logs error messages that may contain sensitive information. This could potentially expose sensitive information to unauthorized users. Additionally, the function is vulnerable to Uncontrolled Resource Consumption because it does not limit the number of connections that can be made to the proxy server, which could lead to a denial of service (DoS) attack if an attacker makes a large number of connections."
+}

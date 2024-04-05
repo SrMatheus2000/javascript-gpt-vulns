@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not properly handle cases where the 'content-length' header is missing or manipulated. An attacker could potentially send a large amount of data that exceeds the 'bytes' limit, causing the server to consume excessive resources and potentially leading to a Denial of Service (DoS) attack. Additionally, the function does not validate the 'content-length' header, which could be manipulated by an attacker to bypass the limit check."
+}

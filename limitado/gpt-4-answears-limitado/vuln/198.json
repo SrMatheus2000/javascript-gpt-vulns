@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200", "CWE-209", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it reads files directly from the filesystem without validating the input filename, which could allow an attacker to read arbitrary files. It also exposes sensitive information (CWE-200) by revealing internal configuration details. Additionally, it exposes detailed error messages (CWE-209) that could provide an attacker with useful information. Finally, it does not limit the size of the file being read into memory (CWE-400), which could lead to a Denial of Service (DoS) attack if an attacker can cause it to read a large file."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function uses '__proto__' to assign a new EventEmitter to the 'db' object. This can lead to Prototype Pollution where an attacker can manipulate the prototype of an object, leading to potential Remote Code Execution or other types of attacks. It's recommended to avoid direct manipulation of '__proto__'."
+}

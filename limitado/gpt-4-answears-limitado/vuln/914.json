@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection because it concatenates a user-supplied 'pid' directly into a command that is executed by the system. An attacker could provide a malicious 'pid' that includes command line special characters, allowing them to execute arbitrary commands on the system."
+}

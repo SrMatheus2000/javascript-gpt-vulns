@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89", "CWE-79", "CWE-352"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)"],
+  "description": "The function is vulnerable to SQL Injection (CWE-89) because it does not properly sanitize the user input before using it in SQL queries. It is also vulnerable to Cross-Site Scripting (XSS) (CWE-79) because it does not properly sanitize user input before using it in the output. The function is also vulnerable to Cross-Site Request Forgery (CSRF) (CWE-352) because it does not verify whether the request was intentionally sent by the user."
+}

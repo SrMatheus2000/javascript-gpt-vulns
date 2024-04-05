@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function _convertUrlsToLinks constructs a link using string concatenation, and this link is then used in the innerHTML assignment. This can lead to Cross-site Scripting (XSS) if the URL is not properly sanitized. An attacker can inject malicious scripts in the URL, which will then be executed when the link is clicked."
+}

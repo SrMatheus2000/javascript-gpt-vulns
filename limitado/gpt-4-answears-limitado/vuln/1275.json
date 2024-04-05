@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["OS Command Injection", "Code Injection"],
+  "description": "The function is vulnerable to OS command injection and code injection. The 'port' parameter is directly used in the 'exec' function without any sanitization or validation. This allows an attacker to inject arbitrary commands or code. For example, an attacker could provide a value like '; rm -rf /' for the 'port' parameter, which would delete all files on the server. This is a serious security issue and should be addressed immediately."
+}

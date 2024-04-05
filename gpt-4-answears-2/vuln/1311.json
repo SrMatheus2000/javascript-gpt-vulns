@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution which can cause addition or modification of properties on Object.prototype. This can lead to several types of vulnerabilities like Denial of Service (DoS), Remote Code Execution (RCE), or even lead to other vulnerabilities like Cross-Site Scripting (XSS). The vulnerability occurs because the function does not validate the input 'add' and directly assigns its properties to the 'origin' object. An attacker can manipulate these properties to modify the Object prototype."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an input 'd' and uses it to create HTML elements without properly sanitizing it. This could allow an attacker to inject malicious scripts into the web page, which would then be executed in the context of the victim's browser. The vulnerability is particularly evident where the function creates an 'a' element with the href attribute set to a value derived from the input 'd'."
+}

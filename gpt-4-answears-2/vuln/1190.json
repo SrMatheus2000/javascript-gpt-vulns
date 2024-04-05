@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The '_html' parameter is directly appended to 'tooltip_div' without any sanitization or encoding, which means that if '_html' contains malicious scripts, they will be executed in the context of the user's browser."
+}

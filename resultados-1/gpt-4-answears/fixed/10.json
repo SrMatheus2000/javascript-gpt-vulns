@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Regular Expression (Regex) Catastrophic Backtracking"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks due to the use of a regular expression that can cause catastrophic backtracking. If an attacker provides a specially crafted string as the 'sourceMapString' parameter, it can cause the application to consume excessive resources, leading to a DoS condition. This is related to CWE-400. Additionally, the function does not validate the input 'sourceMapString' which can lead to unexpected behavior or errors (CWE-20)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20"],
+  "vulnerabilities": ["Integer Overflow or Wraparound"],
+  "description": "The regular expression used in the function does not account for the possibility of an integer overflow or wraparound vulnerability. This can lead to unexpected behavior or security issues when handling large numbers."
+}

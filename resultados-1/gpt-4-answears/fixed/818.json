@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-798: Use of Hard-coded Credentials", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Hard-coded credentials", "Lack of input validation"],
+  "description": "The function is vulnerable as it uses hard-coded credentials to authenticate with Github. This is a security risk as anyone who has access to the code can see the token and use it for unauthorized activities. This is identified as CWE-798. Additionally, the function does not validate the input 'repo' which can lead to unexpected behavior or security issues. This is identified as CWE-20."
+}

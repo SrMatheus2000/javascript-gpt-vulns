@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (CWE-22). The 'srcpath' variable is created by resolving a path from user-controlled input ('header.linkname'). An attacker could manipulate 'header.linkname' to point to arbitrary files on the system, potentially leading to unauthorized read or write access."
+}

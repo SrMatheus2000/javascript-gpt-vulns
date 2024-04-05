@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks the origin of an event against a presumably trusted 'lockOrigin', and only then does it process the event data. Without more context, it's hard to say definitively, but this function seems to be following good security practices."
+}

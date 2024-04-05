@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-400"],
+"vulnerabilities": ["Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function uses the 'new Function()' constructor which can lead to code injection vulnerabilities if the input is not properly sanitized. This is because the 'new Function()' constructor allows for the execution of dynamically created JavaScript code. Additionally, the function does not have any mechanism to prevent or control the consumption of resources which can lead to denial of service attacks if an attacker provides a large amount of data as input."
+}

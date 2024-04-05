@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-326"],
+  "vulnerabilities": ["Insecure Direct Object References", "Inadequate Encryption Strength"],
+  "description": "The function createPkcs12 has two vulnerabilities. First, it is vulnerable to Insecure Direct Object References (CWE-319) because it does not properly validate the options.cipher and options.clientKeyPassword parameters before using them to create a password file. An attacker could manipulate these parameters to access unauthorized resources or perform unauthorized actions. Second, it is vulnerable to Inadequate Encryption Strength (CWE-326) because it does not enforce a strong encryption cipher for the password file. This could lead to weak encryption and potential security breaches."
+}

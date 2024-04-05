@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'key' input which can lead to security vulnerabilities. If the 'key' is an object, its properties are directly used without any checks. This can lead to SQL Injection if the 'key' object properties are used in a SQL query. Also, if the 'key' is not an object, there are no checks to ensure that it is of the expected type or format. This can lead to unexpected behavior or errors."
+}

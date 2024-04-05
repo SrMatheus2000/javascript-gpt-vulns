@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The function uses the execSync function to execute a command that is constructed by concatenating unsanitized input from the user. An attacker could provide specially crafted input that, when concatenated into the command string, changes the command the system runs. This could allow the attacker to execute arbitrary commands on the system with the same privileges as the process that runs the script."
+}

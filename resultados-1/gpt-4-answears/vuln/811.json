@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function unique_name_424 does not validate or sanitize the input it receives. This can lead to an SQL Injection attack if the input is crafted in a certain way. The function also uses the match method with a regular expression, which can be exploited to cause a Denial of Service (DoS) attack by providing a specially crafted string that takes a long time to process."
+}

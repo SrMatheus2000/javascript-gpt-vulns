@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks for '__proto__' property to prevent Prototype Pollution attacks. It also checks for the type of the source value before performing a deep copy, which prevents Type Confusion attacks. The function seems to be well-written with necessary checks and precautions."
+}

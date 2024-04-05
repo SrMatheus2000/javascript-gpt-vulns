@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-807"],
+  "vulnerabilities": ["Reliance on Untrusted Inputs in a Security Decision"],
+  "description": "The function 'lookup' is vulnerable to a potential security risk as it relies on untrusted inputs to make a security decision. The function takes an object and a field as parameters and returns the value of the field in the object. However, it does not validate or sanitize the 'field' input, which can lead to potential security risks if the input is malicious. For example, if the 'field' input is 'constructor', the function will return undefined, which can lead to unexpected behavior. This vulnerability is classified as CWE-807: Reliance on Untrusted Inputs in a Security Decision."
+}

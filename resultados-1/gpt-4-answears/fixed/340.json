@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'unique_name_175' is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the 'escapeHTMLEntities' function to sanitize the 'originalUrl' and 'alt' attributes of an image. However, if the 'escapeHTMLEntities' function is not implemented correctly, it may not fully sanitize the input, allowing an attacker to inject malicious scripts. These scripts can be executed when the image is loaded, leading to various security issues such as data theft, website defacement, and other malicious activities."
+}

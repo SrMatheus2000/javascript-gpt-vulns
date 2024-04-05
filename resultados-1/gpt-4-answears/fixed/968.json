@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function 'wrapValue' is vulnerable to SQL Injection. It takes a value and wraps it in double quotes, but it does not properly sanitize the input. If the value contains a double quote, it simply replaces it with two double quotes. This could allow an attacker to inject arbitrary SQL code into the query. For example, if the value is something like '\"; DROP TABLE users; --', it would be converted to '\"\"; DROP TABLE users; --\"', which could potentially drop the users table when this string is concatenated into a SQL query."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function does not sanitize the input markdown before processing it, which can lead to Cross-site Scripting (XSS) attacks. An attacker can inject malicious scripts in the markdown content, which will then be executed when the content is rendered in a web page."
+}

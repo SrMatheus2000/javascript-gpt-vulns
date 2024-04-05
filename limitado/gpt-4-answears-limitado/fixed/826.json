@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('-site Scripting')"],
+ vulnerabilities": ["Cross Scripting (XSS)  "description": " function is vulnerable to Cross-siteing (XSS) attacks The sanitize function attempts to remove tags and attributes starting with 'on' or 'javascript but it does not cover all possible XSS attack vectors. For example, it does not handle event handlers in SVG elements, or JavaScript URLs in href attributes. Additionally, the function removes style attributes, which can prevent some types of XSS but can also break legitimate functionality."
+}

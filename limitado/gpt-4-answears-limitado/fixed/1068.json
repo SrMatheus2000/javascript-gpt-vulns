@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Potential Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The validateLink function checks if the URL contains any of the bad protocols (vbscript, javascript, file, data) but it only checks if the protocol is at the beginning of the URL (str.indexOf(':') >= 0). An attacker could bypass this check by adding a good protocol at the beginning of the URL followed by a bad protocol. For example, http:javascript:alert(1) would bypass the check and execute the javascript code."
+}

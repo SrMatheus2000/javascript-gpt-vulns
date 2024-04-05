@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Input Validation", "Open Redirect"],
+  "description": "The function is vulnerable to input validation and open redirect attacks. The function does not validate the 'parts' input parameter, which can lead to unexpected behavior if it contains malicious data. Additionally, the function blindly redirects to a URL provided in the 'location' header of a response, which can be exploited to redirect users to a malicious site."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection attacks. The data.query.jsonp value is directly inserted into the response without any sanitization or encoding, which allows an attacker to inject arbitrary JavaScript code. This can lead to various security issues, such as Cross-Site Scripting (XSS) attacks, data theft, or even remote code execution if the injected code is run in a privileged context."
+}

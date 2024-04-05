@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-116"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_449' is vulnerable to code injection (CWE-94) and cross-site scripting (XSS) (CWE-116) attacks. The function uses the 'new Function()' constructor to dynamically create a function from the 'template' parameter. This allows an attacker to inject arbitrary code into the template, leading to code execution vulnerabilities. Additionally, the function does not properly sanitize user input in the 'data' parameter, which can result in XSS vulnerabilities when the template is rendered."
+}

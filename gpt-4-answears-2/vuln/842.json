@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It properly checks the request method and content type, and handles unsupported methods and media types with appropriate HTTP status codes. Without additional context, such as the implementation of the 'handler', 'jsonBody', and 'context.contentTypeParser' methods, it's not possible to identify any specific Common Weakness Enumerations (CWEs) or vulnerabilities."
+}

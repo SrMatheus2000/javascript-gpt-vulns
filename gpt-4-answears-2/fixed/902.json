@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-20"],
+"vulnerabilities": ["Code Injection", "Input Validation"],
+"description": "The function is vulnerable to Code Injection. It directly uses user input in the 'this.head' without proper sanitization or validation. This can allow an attacker to inject arbitrary JavaScript code. The function also lacks proper input validation, as it does not check if 'data.query.i' is a number before using it."
+}

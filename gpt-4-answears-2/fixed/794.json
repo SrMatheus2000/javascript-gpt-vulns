@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-119: Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function uses Buffer.allocUnsafe() to allocate buffer memory. This method of buffer allocation can lead to vulnerabilities as it allows for the creation of a Buffer instance with uninitialized memory. This uninitialized memory may contain sensitive information. It's recommended to use Buffer.alloc() instead, which will initialize the memory with zeros."
+}

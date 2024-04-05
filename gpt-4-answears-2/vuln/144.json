@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470", "CWE-20"],
+"vulnerabilities": ["Unrestricted use of dangerous function", "Improper Input Validation"],
+"description": "The function is vulnerable to unrestricted use of dangerous function as it uses the 'new' keyword to create an object from a user-supplied constructor (type). This can lead to arbitrary code execution if a malicious function is passed. Additionally, the function does not validate the input 'hierarchies' which can lead to unexpected behavior if the input is not an array or contains invalid data."
+}

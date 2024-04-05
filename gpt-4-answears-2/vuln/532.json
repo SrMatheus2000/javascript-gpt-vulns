@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["No validation of 'data' input", "Potential SQL Injection through 'adapterSessionIds'", "Potential Cross-site Scripting (XSS) through 'notBefore'"],
+"description": "The function does not validate the 'data' input which can lead to various vulnerabilities. The 'adapterSessionIds' can be manipulated to perform SQL Injection attacks. The 'notBefore' payload can be used to execute scripts leading to Cross-site Scripting (XSS) attacks."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function unique_name_501 is vulnerable due to several reasons. Firstly, it does not validate the input 'data' which can lead to various attacks such as SQL Injection or Code Injection. Secondly, the function uses the 'eval' function which can execute arbitrary code. Lastly, the function does not handle exceptions properly which can lead to Denial of Service (DoS) attacks."
+}

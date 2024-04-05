@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function setupGlobalExceptionHandler() is vulnerable to Cross-Site Scripting (XSS) attack. The user input from the 'msg' parameter is not properly sanitized before being displayed in the HTML. This allows an attacker to inject malicious scripts into the error message, which can lead to the execution of arbitrary code in the context of the user's browser."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-78"],
+  "vulnerabilities": ["Unvalidated Input", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "description": "The given JavaScript function is vulnerable to SQL injection attacks. It takes user input without validating or sanitizing it, which can lead to malicious SQL commands being executed on the database. This vulnerability can be exploited to perform unauthorized actions, such as retrieving sensitive data or modifying the database."
+}

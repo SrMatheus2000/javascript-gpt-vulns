@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-117: Improper Output Neutralization for Logs"],
+"vulnerabilities": ["Information Disclosure", "Log Injection"],
+"description": "The function is vulnerable to information disclosure through error messages. It exposes detailed error messages to the console which could potentially reveal sensitive information about the system or application. This is related to CWE-209. Additionally, the function does not sanitize the error messages before logging them to the console, making it vulnerable to log injection attacks. This is related to CWE-117."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-310: Cryptographic Issues", "CWE-328: Reversible One-Way Hash"],
+  "vulnerabilities": ["Timing Attack", "Insecure Cryptographic Storage"],
+  "description": "The function is vulnerable to timing attacks because it uses a simple equality comparison to validate the HMAC. An attacker can measure the time it takes for the function to return an error and use this information to guess the HMAC one character at a time. This is a known vulnerability in cryptographic systems and is classified as CWE-200 and CWE-310. Additionally, the function uses a reversible one-way hash (CWE-328) to decode the token, which could potentially allow an attacker to reverse-engineer the original token."
+}

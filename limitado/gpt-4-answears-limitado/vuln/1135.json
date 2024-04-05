@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The data parameter is directly inserted into the HTML content of the '#message-bar' element without any sanitization or encoding. If an attacker can control the value of data, they can inject arbitrary HTML or JavaScript code, which will be executed in the context of the user's browser when the page is rendered."
+}

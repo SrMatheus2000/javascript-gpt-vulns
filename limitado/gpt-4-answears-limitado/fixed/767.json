@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22 Improper Limitation of aname to a Restricted Directory (' Traversal')"],
+  "ulnerabilities": ["Path Tr"],
+  "description": " function is vulnerable to path traversal. The function attempts to sanitize input URL by replacing encoded and ensuring it starts with a. However, it does not properly handle cases where the URL contains sequences like '/./' or '/../', which can be used to traverse directories. An attacker could potentially use this vulnerability to access sensitive files outside of the intended directory."
+}

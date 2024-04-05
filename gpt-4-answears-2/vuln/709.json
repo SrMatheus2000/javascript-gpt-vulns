@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is primarily concerned with parsing and handling MIME types and charsets in a safe manner. There are no instances of eval(), unvalidated user input, or other common JavaScript vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function is vulnerable to command injection. The function uses the 'exec' function to execute a shell command that includes user-supplied input ('stderr'). An attacker could potentially inject malicious commands by manipulating the 'stderr' input, leading to arbitrary command execution."
+}

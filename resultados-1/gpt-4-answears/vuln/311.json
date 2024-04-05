@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-770"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Allocation of Resources Without Limits or Throttling"],
+  "description": "The function ParserHandle does not have any mechanism to prevent or limit resource consumption. If the input is too large, it can lead to excessive CPU and memory usage, potentially causing a Denial of Service (DoS). This is particularly problematic in the 'parse' and 'guessLineEndings' methods where large inputs are processed without any size checks or limitations. Additionally, the 'guessDelimiter' method can also lead to excessive CPU usage due to the nested loops and regular expression operations."
+}

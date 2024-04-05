@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function does not sanitize the 'content' and 'attrsMap' parameters, which could lead to Cross-Site Scripting (XSS) if the function is used to generate HTML from user-supplied input. An attacker could inject malicious scripts through these parameters, which would then be executed when the generated HTML is rendered by a web browser."
+}

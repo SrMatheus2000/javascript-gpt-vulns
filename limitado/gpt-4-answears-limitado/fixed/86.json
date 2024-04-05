@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The function does not validate the 'key' parameter, which can be manipulated to modify the prototype of 'Object'. An attacker can add or modify properties of 'Object.prototype' which will be inherited by all objects. This can lead to several types of attacks like denial of service, property injection, or even remote code execution if the application code uses the polluted object properties in a dangerous way."
+}

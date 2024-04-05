@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function _wrapMatchesInNode is vulnerable to Cross-site Scripting (XSS) attacks. The vulnerability exists because the function uses the innerHTML property to insert user-controlled data into the HTML document. An attacker can exploit this vulnerability by injecting malicious scripts into the user-controlled data, which will then be executed when the HTML document is loaded."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function does not properly sanitize the 'value' parameter before using it to set attributes of an HTML element. This could lead to Cross-Site Scripting (XSS) attacks if the 'value' parameter can be controlled by an attacker. Additionally, the function does not properly encode or escape the 'value' parameter when it is used to construct a string that is later used as an attribute value, which could lead to injection attacks."
+}

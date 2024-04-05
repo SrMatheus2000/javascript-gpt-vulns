@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-770: Allocation of Resources Without Limits or Throttling"],
+  "vulnerabilities": ["Memory Leak"],
+  "description": "The function is vulnerable to a memory leak. The cache object keeps growing as new keys are added without any mechanism to limit its size or clear old entries. This can lead to excessive memory usage if the function is called with a large number of unique arguments, potentially causing the application to slow down or crash. This vulnerability is classified as CWE-770: Allocation of Resources Without Limits or Throttling."
+}

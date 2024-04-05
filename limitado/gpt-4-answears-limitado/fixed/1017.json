@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function sanitises the 'title', 'value', and 'name' variables, but it does not sanitise the 'bgcolor' variable before it is inserted into the 'text' variable. An attacker could potentially inject malicious scripts through the 'bgcolor' variable, which would then be executed when the 'text' variable is rendered in the browser."
+}

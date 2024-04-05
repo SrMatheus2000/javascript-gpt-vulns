@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function uses 'execFile' to execute a system command 'tail' with user-supplied input 'stderr' as an argument. This can lead to command injection if an attacker can control the value of 'stderr'. An attacker could provide a value for 'stderr' that includes shell metacharacters, causing the execution of arbitrary commands."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any vulnerabilities. It is a simple function that tests if a given value matches a regular expression. The regular expression checks if the value is a positive or negative integer. There are no operations that could lead to security vulnerabilities such as SQL injection, cross-site scripting (XSS), or remote code execution."
+}

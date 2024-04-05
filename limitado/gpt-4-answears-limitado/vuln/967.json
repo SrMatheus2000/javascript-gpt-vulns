@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["SQL Injection", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to SQL Injection and Cross-Site Scripting (XSS) attacks. The data received from the user is directly used in the function without any sanitization or validation. This can allow an attacker to inject malicious SQL queries or scripts that can compromise the database or manipulate the web page content."
+}

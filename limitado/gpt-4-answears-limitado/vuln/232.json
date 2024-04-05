@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function directly assigns a value to the innerHTML property of an element. This can lead to Cross-Site Scripting (XSS) attacks if the value of 'index' is user-controlled and not properly sanitized. An attacker could inject malicious scripts into the web page, leading to various security issues such as data theft, site defacement, or remote code execution."
+}

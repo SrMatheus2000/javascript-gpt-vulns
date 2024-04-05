@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-94", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Improper Input Validation (CWE-20) as it does not validate the 'entry' object before using its properties. This can lead to unexpected behavior or errors. It is also vulnerable to Code Injection (CWE-94) as it uses the 'new RegExp()' function with user-supplied input ('regex'), which can lead to arbitrary code execution if the input is not properly sanitized. Additionally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) as it uses the 'minimatch()' function with user-supplied input ('value'), which can lead to a denial of service if the input is crafted in a way that causes excessive resource consumption

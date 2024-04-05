@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting"],
+  "description": "The function unique_name_147 does not validate or sanitize the input 'stack' before processing it. This could lead to code injection vulnerabilities if the input contains malicious code. Additionally, the function does not properly escape or encode the output before returning it, which could lead to Cross-Site Scripting (XSS) vulnerabilities if the output is used in a web context."
+}

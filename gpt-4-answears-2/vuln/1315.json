@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function uses the eval() function, which is dangerous because it executes any code given to it. It's used here to execute a string that can be manipulated to inject malicious code."
+}

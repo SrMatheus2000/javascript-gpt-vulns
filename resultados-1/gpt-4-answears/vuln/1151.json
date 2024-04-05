@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the 'val' input, which can lead to SQL Injection if the input includes SQL special characters. This is especially problematic in the case where 'val' is a string and the dialect is not 'postgres', 'sqlite', or 'mssql', as the function attempts to escape certain characters, but does not cover all possible SQL special characters. An attacker could potentially manipulate the SQL query by passing in a specially crafted string."
+}

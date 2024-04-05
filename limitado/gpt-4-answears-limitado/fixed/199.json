@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The command that is being run using gitane().run() includes a variable (gitUrl(config)[0]) that is directly inserted into the command string. If an attacker can control the value of this variable, they could potentially execute arbitrary commands on the system."
+}

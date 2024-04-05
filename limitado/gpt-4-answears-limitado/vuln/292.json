@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection because it concatenates the 'options' parameter directly into a command string that is executed without any sanitization. An attacker could provide malicious input in 'options' that alters the command to perform unintended actions."
+}

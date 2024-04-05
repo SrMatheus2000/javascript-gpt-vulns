@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it concatenates a user-supplied string (iface) into a command that is executed without proper sanitization. An attacker could provide a malicious string that executes arbitrary commands on the system."
+}

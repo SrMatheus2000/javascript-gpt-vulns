@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly uses the 'path_part' parameter to create a URL and HTML content without proper sanitization or encoding. This could allow an attacker to inject malicious scripts. Also, there is no validation of the 'path_part' input, which could lead to other types of attacks."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function is vulnerable to Prototype Pollution, which can lead to several injection vulnerabilities. The function does not validate the input for the 'path' parameter. If the path is '__proto__.toString' or '__proto__.valueOf', it can add a toString or valueOf function to all the objects. This can lead to several security vulnerabilities, such as Remote Code Execution, Denial of Service, or even can lead to other vulnerabilities like Cross-Site Scripting."
+}

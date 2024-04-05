@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319", "CWE-200"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Information Exposure"],
+"description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) as it sends sensitive data such as username and password in clear text over HTTP. This can expose the data to unauthorized actors who can intercept the network traffic. Additionally, the function is also vulnerable to Information Exposure (CWE-200) as it exposes sensitive information in error messages, which can be exploited by attackers to gain more information about the system."
+}

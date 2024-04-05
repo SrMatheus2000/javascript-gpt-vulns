@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-310: Cryptographic Issues", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Insecure Cryptographic Algorithm", "Improper Input Validation"],
+  "description": "The function is vulnerable due to the use of potentially insecure cryptographic algorithm. The algorithm used for HMAC is determined by the 'algorithm' property of the 'parsedSignature' object, which is user-controlled input. This could allow an attacker to specify a weak algorithm, leading to a potential downgrade attack. Additionally, the function does not properly validate the 'parsedSignature' and 'secret' inputs before using them, which could lead to unexpected behavior or errors."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is a DOMPurify function, which is a DOM-only, super-fast, uber-tolerant XSS sanitizer for HTML, MathML and SVG. It's also very simple to use and get started with. The function is designed to prevent Cross-Site Scripting (XSS) attacks and does not appear to have any vulnerabilities."
+}

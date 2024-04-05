@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function 'unique_name_301' is vulnerable to code injection. It takes an input 'code' and directly executes it using 'vm.runInContext'. An attacker can provide malicious JavaScript code as input, which will be executed, leading to serious security issues."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be secure. It properly escapes HTML to prevent Cross-Site Scripting (XSS) attacks. There are no apparent vulnerabilities."
+}

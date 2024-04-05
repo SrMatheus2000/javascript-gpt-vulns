@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Input Validation", "Code Injection", "Use of Potentially Dangerous Function"],
+  "description": "The function does not validate the 'name' parameter which can lead to code injection attacks. The function uses the 'eval' function which is potentially dangerous as it allows execution of arbitrary code. The function also does not neutralize special elements in output used by a downstream component, which can lead to injection attacks."
+}

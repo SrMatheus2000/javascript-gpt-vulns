@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287", "CWE-522"],
+  "vulnerabilities": ["Improper Authentication", "Insufficiently Protected Credentials"],
+  "description": "The function 'unique_name_374' is vulnerable due to improper authentication and insufficiently protected credentials. The function does not properly verify the user's identity before allowing password changes, which could allow an attacker to gain unauthorized access (CWE-287). Additionally, the function does not adequately protect sensitive data such as passwords. The password setter allows for plain text passwords to be set, which could expose user credentials if an attacker gains access to the system (CWE-522)."
+}

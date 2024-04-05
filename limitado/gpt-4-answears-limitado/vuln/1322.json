@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function is vulnerable to a potential Denial of Service (DoS) attack. If an attacker provides a very large array or a string with many '.' characters as the 'key' argument, the function will consume a large amount of resources to process it, potentially leading to a DoS condition. This is related to CWE-400: Uncontrolled Resource Consumption."
+}

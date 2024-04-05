@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Potential for infinite recursion"],
+  "description": "The function deepCopy is vulnerable to a potential infinite recursion if the sourceObj contains a circular reference. This could lead to a stack overflow error, causing the application to crash. This is a form of CWE-400, where the resource being exhausted is the call stack."
+}

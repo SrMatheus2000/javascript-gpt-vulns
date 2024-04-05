@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the 'html()' method to insert user-supplied data (errorId, msg, url, linenumber) into the HTML document, which can lead to XSS if the user-supplied data is not properly sanitized. Although the function uses the 'escapeHtml()' method to sanitize the 'userAgent' and 'window.location.href' variables, it does not sanitize the 'errorId', 'msg', 'url', and 'linenumber' variables."
+}

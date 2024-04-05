@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470", "CWE-20"],
+"vulnerabilities": ["Unrestricted property assignment", "Improper Input Validation"],
+"description": "The function is vulnerable to unrestricted property assignment which can lead to potential prototype pollution. This can allow an attacker to manipulate the behavior of an object by modifying its prototype. Additionally, the function does not validate the input parameters which can lead to unexpected behavior or errors."
+}

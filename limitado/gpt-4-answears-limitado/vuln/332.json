@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-346: Origin Validation Error"],
+  "vulnerabilities": ["Lack of input validation", "Lack of origin validation"],
+  "description": "The function does not validate the input parameters 'address' and 'tx'. This could lead to unexpected behavior or security vulnerabilities. For example, an attacker could pass malicious data in these parameters, leading to potential attacks such as SQL Injection, Cross-Site Scripting (XSS), or Remote Code Execution (RCE). Additionally, the function does not validate the origin of the 'payload' in the response from '_sendMessage'. This could allow an attacker to provide a malicious 'payload' from an untrusted source."
+}

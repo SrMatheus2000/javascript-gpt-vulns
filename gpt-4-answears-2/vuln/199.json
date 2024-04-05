@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function applyOperation is vulnerable to code injection as it allows the execution of arbitrary code through the validateOperation and mutateDocument parameters. If these parameters are controlled by an attacker, they can inject malicious code that will be executed by the function. Additionally, the function does not properly validate the input for the operation parameter, which can lead to unexpected behavior if the input is not as expected."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The 'repoDir' parameter can be a function, which is then assigned to 'this.dirMap'. If an attacker can control the 'repoDir' parameter, they can execute arbitrary code. This is a serious security risk."
+}

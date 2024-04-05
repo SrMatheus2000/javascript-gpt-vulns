@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function uses the eval() function, which can make the application vulnerable to code injection attacks. Even though the function uses a sanitizer, it is generally not recommended to use eval() because it can execute any JavaScript code, which makes it a powerful tool for attackers. In this case, an attacker could potentially control the 'colorTheme' parameter to inject malicious code."
+}

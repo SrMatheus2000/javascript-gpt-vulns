@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it uses user-supplied input in a command that is executed by the system. This occurs in the 'spawnSync' function where 'opts.sqlclPath' and 'spawnOpts' can be manipulated by an attacker to execute arbitrary commands. Additionally, the function is vulnerable to path traversal attacks. This is because it uses user-supplied input to access file system resources without properly validating or sanitizing the input. This occurs when 'opts.directory' is used in 'fs.existsSync' and 'fs.readdirSync' functions."
+}

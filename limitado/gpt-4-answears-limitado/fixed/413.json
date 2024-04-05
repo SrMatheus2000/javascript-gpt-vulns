@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function takes an input 'd' and uses it to create HTML tags without properly sanitizing it. This could allow an attacker to inject malicious scripts into the web page, which would then be executed in the context of the victim's browser. The vulnerability is specifically in the 'extraStyle' variable, where the function directly includes the user input into the style attribute of an HTML tag without proper sanitization or encoding."
+}

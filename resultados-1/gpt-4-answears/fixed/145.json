@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-352", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses user input in the 'state' parameter directly without proper sanitization. This could allow an attacker to inject malicious scripts. It's also vulnerable to Cross-Site Request Forgery (CSRF) because it does not validate or verify the origin of requests. Furthermore, the function does not properly validate the input received in the 'p' object, which could lead to various attacks such as SQL Injection, Command Injection, etc."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Neutralization of Special Elements in Output Used by a Downstream Component"],
+  "description": "The function is vulnerable to command injection and improper neutralization of special elements in output used by a downstream component. The 'command' parameter is not properly validated or sanitized before being passed to the 'cp.exec' function, which can allow an attacker to execute arbitrary commands on the underlying operating system. Additionally, the 'stdout' and 'stderr' values returned by the 'cp.exec' function are not properly sanitized, which can lead to potential security issues when used by other components downstream."
+}

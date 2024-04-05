@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78", "CWE-94", "CWE-20"],
+"vulnerabilities": ["OS Command Injection", "Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "Improper Input Validation"],
+"description": "The function inetChecksite is vulnerable to OS command injection because it concatenates a sanitized URL directly into a command string that is executed by the system. Although the function attempts to sanitize the URL by removing certain characters, it does not adequately prevent all forms of command injection. Additionally, the function does not properly validate the input URL, which could lead to unexpected behavior or errors. Finally, the function does not properly neutralize special elements in the output used by a downstream component, which could lead to injection attacks."
+}

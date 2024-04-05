@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "vulnerabilities": ["Code Injection", "Eval Injection"],
+  "description": "The function is vulnerable because it uses the eval() function, which allows for arbitrary code execution. This can lead to code injection attacks where an attacker can inject malicious code that gets executed. The function does not sanitize or validate the 'exp' input, which means that an attacker can pass in any code they want to be executed."
+}

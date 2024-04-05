@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it directly uses the 'innerHTML' property to set the HTML content of 'item'. This can lead to the execution of malicious scripts if the 'string' or 'option' variables contain untrusted data."
+}

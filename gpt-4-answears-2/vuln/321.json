@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure"],
+"vulnerabilities": ["Information Exposure"],
+"description": "The function is vulnerable to information exposure. The function isMochaInternal and isNodeInternal can expose sensitive information about the file system structure and installed packages. This information can be used by an attacker to understand the system and plan further attacks. Also, the function uses the process.cwd() method, which can expose the current working directory of the Node.js process. This can also lead to information exposure."
+}

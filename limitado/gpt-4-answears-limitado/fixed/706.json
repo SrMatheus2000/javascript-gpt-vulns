@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses regular expressions (regex) to validate input. However, it does not properly handle cases where the input is not as expected. This can lead to Regular Expression Denial of Service (ReDoS) where an attacker can cause the application to consume excessive resources leading to a denial of service by providing input that results in extensive backtracking by the regex engine."
+}

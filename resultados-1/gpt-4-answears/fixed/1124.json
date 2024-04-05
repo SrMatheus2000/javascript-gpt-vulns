@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. The function is using the escapeHtml function to sanitize the input before pushing it into the columnNames array, which should prevent Cross-Site Scripting (XSS) attacks. However, without the full context of the code, it's impossible to say for certain that there are no vulnerabilities."
+}

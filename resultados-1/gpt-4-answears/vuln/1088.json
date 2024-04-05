@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Command Injection", "Path Traversal"],
+  "description": "The function 'unique_name_613' is vulnerable to command injection because it uses 'execFile' function to execute system commands without properly sanitizing the input. This could allow an attacker to execute arbitrary commands on the system. Additionally, the function is also vulnerable to path traversal attacks because it uses 'path.join' and 'path.resolve' functions without properly validating the input. This could allow an attacker to access files outside of the intended directory."
+}

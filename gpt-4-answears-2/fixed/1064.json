@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')", "CWE-396: Declaration of Catch for Generic Exception"],
+"vulnerabilities": ["Code Injection", "Eval Injection", "Catch Generic Exception"],
+"description": "The function uses the eval() function, which is dangerous because it executes any code given to it. It does not sanitize the input, which allows for code injection. This can lead to various attacks such as cross-site scripting (XSS), data theft, and denial of service. The function also catches generic exceptions, which can make debugging more difficult and can potentially hide other vulnerabilities."
+}

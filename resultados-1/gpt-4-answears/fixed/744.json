@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function isSafeMethod is vulnerable to Prototype Pollution. This is because it allows the modification of a prototype of an object via '__proto__' or 'constructor.prototype'. An attacker can manipulate these attributes to add or modify properties of Object.prototype. This can lead to several issues like denial of service (DoS), property injection, or even arbitrary code execution."
+}

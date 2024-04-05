@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It checks if the first argument is a function, sets default options if none are provided, and then calls a function to create a wrapper around the provided function. Without knowing the implementation of the 'assert' and 'createWrapper' functions, it's impossible to identify any specific vulnerabilities."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676", "CWE-119"],
+"vulnerabilities": ["Use of Potentially Dangerous Function", "Improper Restriction of Operations within the Bounds of a Memory Buffer"],
+"description": "The function uses the Buffer constructor, which is deprecated and potentially unsafe, leading to security vulnerabilities such as buffer overflow. It's recommended to use Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe() instead. The function also doesn't validate or sanitize the input 'options', which can lead to potential security risks if the input is controlled by an attacker."
+}

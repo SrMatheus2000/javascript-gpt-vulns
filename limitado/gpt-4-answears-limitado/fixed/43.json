@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["No validation of 'request.endpoint' input", "Potential Denial of Service (DoS) due to uncontrolled resource consumption"],
+  "description": "The function does not validate the 'request.endpoint' input, which could lead to unexpected behavior or security issues if the input is not as expected. For example, if the endpoint contains a malicious payload or is not a valid URL, it could lead to issues. Additionally, the function could potentially be vulnerable to a Denial of Service (DoS) attack due to uncontrolled resource consumption. If an attacker sends a large amount of data, it could consume all the available resources and crash the system."
+}

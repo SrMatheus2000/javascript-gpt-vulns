@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The text and link parameters are directly inserted into the HTML template without any sanitization or encoding. An attacker could inject malicious scripts by providing specially crafted text or link values."
+}

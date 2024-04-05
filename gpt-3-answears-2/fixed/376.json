@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-703"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Exception Handling"],
+  "description": "The function does not properly handle exceptions and can lead to uncontrolled resource consumption and potential denial of service. Additionally, the function does not sanitize user input, which can lead to code injection vulnerabilities."
+}

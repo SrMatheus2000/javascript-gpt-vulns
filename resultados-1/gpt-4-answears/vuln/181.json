@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Type confusion vulnerability"],
+  "description": "The function does not validate the types of its parameters. This can lead to unexpected behavior if the function is called with arguments of the wrong type. For example, if 'obj' is not an object, 'obj[part]' will throw an exception. Similarly, if 'path' is not a string, 'split(path)' will also throw an exception. This is a type confusion vulnerability, which is a type of security issue where a value is used as if it were of a different type, leading to logical errors."
+}

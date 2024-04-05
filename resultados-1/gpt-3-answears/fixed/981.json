@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20"],
+  "vulnerabilities": ["Insecure Direct Object References"],
+  "description": "The function does not validate or sanitize the input URL before making a request, which can lead to Insecure Direct Object References vulnerability."
+}

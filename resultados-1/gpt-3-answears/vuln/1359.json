@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-94"],
+  "vulnerabilities": ["Command Injection", "Improper Control of Generation of Code ('Code Injection')"],
+  "description": "The function is vulnerable to command injection and code injection attacks. The 'file' parameter is directly concatenated into the command executed by the 'spawn' function, allowing an attacker to inject arbitrary commands. Additionally, the 'width' and 'height' variables are used in a code injection context without proper validation or sanitization, which can lead to code execution vulnerabilities."
+}

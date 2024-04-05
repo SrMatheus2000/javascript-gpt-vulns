@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-476: NULL Pointer Dereference"],
+"vulnerabilities": ["Type confusion", "Null pointer dereference"],
+"description": "The function does not properly validate the input for 'keys' and 'value', which can lead to type confusion. It also does not check if 'obj' is null before accessing its properties, which can lead to null pointer dereference."
+}

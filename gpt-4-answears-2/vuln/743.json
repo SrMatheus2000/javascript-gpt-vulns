@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-203: Information Exposure Through Discrepancy"],
+"vulnerabilities": ["Timing Attack"],
+"description": "The function is vulnerable to timing attacks. The time taken by the function to compare two strings can be used by an attacker to guess the string values. This is because the function compares the strings character by character and will take longer when more characters match. This can be used to guess the string one character at a time."
+}

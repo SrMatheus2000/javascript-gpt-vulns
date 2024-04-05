@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function uses jQuery's .attr() method to set the 'href' attribute of the '#saveChart' element to the value of currentChart.toImageString(). If the value of currentChart.toImageString() is not properly sanitized and can be controlled by an attacker, this could lead to a Cross-site Scripting (XSS) vulnerability. XSS vulnerabilities allow an attacker to inject malicious scripts into web pages viewed by other users, which can lead to a variety of attacks such as stealing user data, performing actions on behalf of the user, or defacing the web page."
+}

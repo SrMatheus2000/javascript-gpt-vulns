@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-319", "CWE-400"],
+"vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+"description": "The function uses basic authentication which transmits credentials in cleartext that can be intercepted by an attacker. This is a violation of CWE-319. Also, the function does not control the number of sockets created, which can lead to resource exhaustion, a violation of CWE-400."
+}

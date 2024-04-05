@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it uses the 'decodeComponent' function to decode user-supplied input without properly sanitizing it first. This could allow an attacker to inject malicious scripts into the web page, which would then be executed in the context of the victim's browser. Additionally, the function does not perform any input validation, which could lead to other types of attacks such as SQL Injection or Command Injection."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function 'unique_name_540' is vulnerable to Cross-Site Scripting (XSS) attacks. It takes user input 'e' and 't' without proper sanitization or validation, and directly inserts it into the HTML using the 'innerHTML' property. This allows an attacker to inject malicious scripts or HTML code, leading to potential XSS vulnerabilities."
+}

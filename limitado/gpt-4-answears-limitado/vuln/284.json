@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is because it directly uses user-provided data in the 'data-youtube', 'data-vimeo', 'data-vimeoparams', and 'data-ytparams' attributes to generate URLs and HTML content without properly sanitizing the input. An attacker could potentially inject malicious scripts through these attributes, which would then be executed in the context of the victim's session."
+}

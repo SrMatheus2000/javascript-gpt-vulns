@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) because it directly uses the 'location.href' in the 'url()' function which can be manipulated to inject malicious scripts. An attacker can manipulate the 'href' to execute arbitrary JavaScript code in the context of the victim's session."
+}

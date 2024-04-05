@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Insecure Direct Object References (IDOR)"],
+  "description": "The function unique_name_103 is vulnerable to Cross-Site Scripting (XSS) and Insecure Direct Object References (IDOR). The function does not properly validate or sanitize the input data, which can lead to XSS attacks if an attacker can inject malicious scripts. The function also directly uses the input data to access object properties, which can lead to IDOR if an attacker can manipulate the input to reference objects they should not have access to."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function unique_name_606 does not properly sanitize the input 'value'. If the input contains malicious scripts, it could lead to Cross-Site Scripting (XSS) attacks. The function also does not properly escape the output, which can lead to injection attacks."
+}

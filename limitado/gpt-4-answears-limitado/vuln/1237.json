@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is primarily concerned with mapping a name to a registry, and does not perform any dangerous operations such as executing user-provided code or making insecure network requests. However, without knowing the context in which this function is used, it's impossible to say for certain that it's completely secure. For example, if the 'name' or 'config' parameters can be influenced by an attacker, there could potentially be issues. As always, it's important to validate and sanitize all user-provided input."
+}

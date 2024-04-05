@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Infinite Loop", "Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function is vulnerable to an infinite loop if the 'digest' function always returns true. This can lead to uncontrolled resource consumption (CWE-400) and can cause the application to hang or crash. Additionally, there is no validation of the input parameters 'configObj' and 'envObj'. If these objects contain malicious data or structure (e.g., prototype pollution), it can lead to unexpected behavior or security issues (CWE-20: Improper Input Validation)."
+}

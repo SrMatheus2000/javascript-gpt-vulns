@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function baseExtend is vulnerable to a potential Denial of Service (DoS) attack. This is due to the recursive nature of the function, which could lead to a large amount of memory consumption if a large, deeply nested object is passed as an argument. This could potentially crash the application or make it unresponsive, leading to a DoS condition. This vulnerability is classified as CWE-400: Uncontrolled Resource Consumption."
+}

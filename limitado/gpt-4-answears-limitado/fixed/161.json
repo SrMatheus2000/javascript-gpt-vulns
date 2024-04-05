@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function recursively processes input without any limit on the recursion depth. This can lead to a Denial of Service (DoS) if an attacker provides a deeply nested object, consuming all available stack space and crashing the application. This is known as a 'billion laughs' attack or 'entity expansion' attack."
+}

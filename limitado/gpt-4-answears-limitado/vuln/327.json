@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insecure Direct Object References"],
+  "description": "The function is vulnerable as it uses '0x00' for the 'r' and 's' values of the transaction before signing it, which could lead to insecure cryptographic storage. Also, the function exposes private information by sending the transaction details, including the 'to' address and the serialized transaction, to an external service for signing. This could lead to privacy violation if the external service is compromised or not trustworthy."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The 'title' key value is directly injected into the HTML without any sanitization or encoding, which allows for the execution of arbitrary JavaScript code."
+}

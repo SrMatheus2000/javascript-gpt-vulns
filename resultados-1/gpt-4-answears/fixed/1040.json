@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-352", "CWE-200", "CWE-614"],
+  "vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Information Exposure", "Sensitive Cookie in HTTPS Session Without 'Secure' Attribute"],
+  "description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it does not implement any form of CSRF protection. This could allow an attacker to trick a victim into performing actions on their behalf. Additionally, the function exposes sensitive information by storing privileged user data in a session cookie without proper encryption. This could potentially allow an attacker to gain unauthorized access to privileged data. Lastly, the function sets a cookie with the HttpOnly flag, but without the 'Secure' flag, which means that the cookie may be sent over an unencrypted HTTP connection, making it susceptible to interception and theft."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function seems to be vulnerable to Cross-Site Scripting (XSS) attacks. The data input is directly used in the function without proper sanitization or encoding. This could allow an attacker to inject malicious scripts that could be executed in the context of the user's browser. The vulnerability is specifically in the lines where the function interpolates the component template with the data input and where it returns the JSON stringified data."
+}

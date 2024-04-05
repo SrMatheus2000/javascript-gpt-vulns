@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'name' variable before using it to access the 'headers' property of the 'req' object. This could lead to an Input Validation vulnerability, allowing an attacker to pass malicious data. Additionally, if the 'header' value is used in a SQL query, it could lead to SQL Injection if not properly sanitized."
+}

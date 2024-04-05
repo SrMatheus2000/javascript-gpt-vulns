@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to code injection and potentially Cross-Site Scripting (XSS) attacks. The function listens for 'message' events and directly parses the event data as JSON without any validation. This allows an attacker to inject arbitrary code by sending a crafted 'message' event. The function also does not validate the 'method' property of the parsed data before using it to call a function on the 'Reveal' object. This could allow an attacker to call any function on the 'Reveal' object, potentially leading to unexpected behavior or security vulnerabilities. The function also does not sanitize the 'method' property before using it in a console

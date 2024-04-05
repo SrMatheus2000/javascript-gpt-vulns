@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-89", "CWE-94", "CWE-79"],
+"vulnerabilities": ["Improper Input Validation", "SQL Injection", "Code Injection", "Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to several types of attacks. It does not properly validate the input (CWE-20), which can lead to SQL Injection (CWE-89) if the input is used in a SQL query. It is also vulnerable to Code Injection (CWE-94) if the input is used in a code that is executed. Additionally, if the input is reflected back to the user, it can lead to Cross-site Scripting (XSS) attacks (CWE-79)."
+}

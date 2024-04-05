@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The provided JavaScript function is vulnerable to Cross-Site Scripting (XSS) attacks. The function directly passes the 'message' and 'title' parameters to the 'ELECTRON_BROWSER_WINDOW_ALERT' event without proper input validation or output encoding. An attacker can exploit this vulnerability by injecting malicious code into the 'message' or 'title' parameters, which will be executed in the context of the Electron application, potentially leading to unauthorized actions or data theft."
+}

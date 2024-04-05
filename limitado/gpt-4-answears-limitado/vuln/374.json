@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Potential Denial of Service (DoS)"],
+  "description": "The function generates a random number 'n' between 1 and 9 and then enters a loop that runs 'n' times. If the random number is large, this could potentially lead to a high CPU usage and memory consumption, causing a Denial of Service (DoS) attack. This is especially dangerous if the function is exposed to external input, as an attacker could repeatedly trigger the function, causing the server to become unresponsive."
+}

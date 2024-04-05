@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function uses execSync to execute a shell command with user-supplied input. This can allow an attacker to inject arbitrary shell commands, leading to command execution on the server side. This is known as OS command injection vulnerability."
+}

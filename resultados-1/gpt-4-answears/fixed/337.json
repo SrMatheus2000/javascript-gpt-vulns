@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Type Confusion Vulnerability"],
+  "description": "The function does not properly validate the types of the 'value' and 'pattern' objects. This could lead to a type confusion vulnerability where an attacker could potentially manipulate the input to cause unexpected behavior. For example, if an attacker passes an object instead of an array to the 'value' parameter, it could cause the function to throw an error or behave unexpectedly. This could potentially lead to further vulnerabilities such as denial of service or code execution."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function does not sanitize or escape the 'data' input before using it in the template. This could lead to Cross-Site Scripting (XSS) attacks if the 'data' input includes malicious scripts. Also, the function does not validate the 'data' input properly, which could lead to unexpected behavior or errors."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The function uses execFileSync and execSync to execute shell commands, which can be manipulated to execute arbitrary commands if user-controlled input is passed to them. This is particularly dangerous as it can lead to remote code execution (RCE) attacks, where an attacker can execute arbitrary commands on the system."
+}

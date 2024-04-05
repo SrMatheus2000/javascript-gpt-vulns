@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses regular expressions (regex) to parse file headers. However, the regex used can be exploited to cause a Denial of Service (DoS) attack. This is known as a Regular Expression Denial of Service (ReDoS) vulnerability. The regex used in the function can cause excessive backtracking on certain inputs, which can lead to a significant performance hit and potentially cause the application to hang or crash. This is particularly problematic if the function is exposed to user input, as a malicious user could provide a specially crafted input to cause the application to consume excessive resources and become unresponsive."
+}

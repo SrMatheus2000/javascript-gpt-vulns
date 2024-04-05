@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-470", "CWE-20"],
+"vulnerabilities": ["Unrestricted use of system environment variables", "Improper Input Validation"],
+"description": "The function uses 'process.env' which allows unrestricted access to system environment variables. This can lead to sensitive information exposure if not properly handled. Also, there is no validation of the input parameters 'configObj' and 'envObj', which can lead to unexpected behavior or errors."
+}

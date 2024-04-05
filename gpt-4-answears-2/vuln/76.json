@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function uses the exec() function to execute a system command. This can lead to command injection if an attacker can control the input to the exec() function. In this case, the command 'smbtree -U guest -N' is hardcoded and does not seem to take any user input, but if the function is modified to include user input in the command, it could lead to a command injection vulnerability."
+}

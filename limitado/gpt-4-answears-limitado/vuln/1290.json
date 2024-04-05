@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which can lead to several injection vulnerabilities. The function does not validate the input for the 'path' parameter. If the path is '__proto__.toString' or '__proto__.valueOf' and the value is set, it can change the behavior of all objects. This can lead to several types of attacks like Denial of Service (DoS), Remote Code Execution (RCE), or even lead to property overwrite."
+}

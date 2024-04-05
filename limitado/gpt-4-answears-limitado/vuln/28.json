@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function escapeShellArg is vulnerable to command injection. It attempts to escape shell metacharacters, but it only escapes single quotes. Other shell metacharacters such as ;, &, |, $, ``, \", \n, \r, \t, \0, *, ?, [, <, >, ^, (, ), {, }, ~, and ! are not escaped. This allows an attacker to inject arbitrary shell commands, leading to command injection vulnerability."
+}

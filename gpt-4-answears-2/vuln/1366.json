@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-494", "CWE-22"],
+"vulnerabilities": ["Download of Code Without Integrity Check", "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+"description": "The function downloads a file from a URL without checking the integrity of the downloaded file. This could lead to the execution of malicious code. Additionally, the function does not properly limit or check the 'to' parameter for directory traversal sequences, which could allow an attacker to read, write or delete arbitrary files."
+}

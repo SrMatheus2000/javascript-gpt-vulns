@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate or sanitize the 'FilePath' input which can lead to path traversal attacks. An attacker can provide a 'FilePath' such as '../../etc/passwd' to access sensitive files on the server."
+}

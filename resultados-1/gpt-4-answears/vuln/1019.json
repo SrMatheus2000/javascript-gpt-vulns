@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_557' is vulnerable to Cross-Site Scripting (XSS) attacks. The function takes an input 'tokens' and uses it to generate HTML content without properly sanitizing it. This could allow an attacker to inject malicious scripts into the generated HTML, which would then be executed when the page is loaded. The vulnerability is specifically in the 'highlighted' variable, where the 'token.content' is directly used without proper sanitization or encoding."
+}

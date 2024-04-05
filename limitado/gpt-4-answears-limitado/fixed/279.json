@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-749: Exposed Dangerous Method or Function"],
+  "vulnerabilities": ["Path Injection", "Exposed Internal Functions"],
+  "description": "The function is vulnerable to path injection attacks as it uses user input to construct a file path without proper validation. This could allow an attacker to access, modify, or delete files outside of the intended directories. Additionally, the function exposes internal methods such as 'isMochaInternal' and 'isNodeInternal' which could be exploited if an attacker can invoke these methods with malicious inputs."
+}

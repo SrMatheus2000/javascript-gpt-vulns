@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Code Injection", "Denial of Service"],
+  "description": "The function 'unique_name_779' is vulnerable to code injection and denial of service attacks. The function uses the 'require' function to dynamically load modules from file paths that are derived from user input (the 'mockGlob' variable). An attacker could potentially provide a malicious file path that leads to the execution of arbitrary code. Additionally, the function does not limit the number of files that can be loaded, which could lead to excessive resource consumption if an attacker provides a large number of files, leading to a denial of service."
+}

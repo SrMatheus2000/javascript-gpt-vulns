@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-330: Use of Insufficiently Random Values"],
+  "vulnerabilities": ["Insufficient Entropy"],
+  "description": "The function uses crypto.randomBytes(1)[0] to generate a random number, which only provides 256 possible values. This is a small number and can be easily brute-forced, leading to predictability in the output of the function. This is especially problematic if this function is used in security-critical contexts, such as generating cryptographic keys, random nonces, or other similar uses."
+}

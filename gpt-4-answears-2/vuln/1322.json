@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Prototype Pollution"],
+"description": "The function does not validate the input for the 'key' parameter. This could lead to a Prototype Pollution vulnerability if the function is called with a 'key' parameter that includes '__proto__' or 'constructor' and 'prototype'. This could allow an attacker to add or modify properties of the Object prototype. These changes could lead to unexpected behavior when objects are instantiated or methods are called on these objects."
+}

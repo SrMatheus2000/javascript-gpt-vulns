@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Information Disclosure", "Improper Input Validation"],
+"description": "The function seems to be vulnerable to Information Disclosure as it exposes server information and requester information based on the configuration. This could potentially leak sensitive information about the server or the requester. Also, the function does not seem to validate the input 'data' properly before using it, which could lead to unexpected behavior or errors."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The function is not vulnerable as it uses the 'escapeId' method which is used to prevent SQL injection attacks by escaping identifiers like table or column names. It does not have any known Common Weakness Enumerations (CWEs)."
+}

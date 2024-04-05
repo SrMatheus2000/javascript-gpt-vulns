@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is a DOMPurify library, which is a widely used and trusted library for sanitizing HTML and preventing XSS attacks. It does not contain any known vulnerabilities."
+}

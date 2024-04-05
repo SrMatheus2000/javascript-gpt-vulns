@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Input Validation", "Information Exposure"],
+  "description": "The function does not validate the 'httpVerb' parameter which can lead to unexpected behavior or security issues. It also exposes potentially sensitive information through error messages, both in the console and in the HTTP response. This could potentially leak sensitive server information to a client. Additionally, the function does not handle errors in a secure manner, potentially exposing sensitive information through stack traces."
+}

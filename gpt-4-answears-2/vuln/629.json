@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'innerHTML' property is used to insert user-controlled input ('props.footer') into the HTML content. If the input is not properly sanitized, an attacker can inject malicious scripts."
+}

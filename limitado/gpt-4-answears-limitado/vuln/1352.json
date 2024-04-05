@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection because it concatenates user-supplied input (pinNumber and direction) into a command that is executed without proper sanitization or validation. An attacker could potentially inject malicious commands by providing specially crafted input."
+}

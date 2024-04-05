@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function is vulnerable to code injection. The MarkdownIt library used in this function is known to be vulnerable to code injection attacks. An attacker could potentially inject malicious code into the markdown content, which would then be executed when the markdown is parsed and rendered. This could lead to a variety of security issues, including cross-site scripting (XSS) attacks, data breaches, and other malicious activities."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Insecure Cryptographic Algorithm"],
+  "description": "The function uses the 'crypto.createCipheriv' method without specifying the algorithm and key. This could lead to the use of a weak or insecure cryptographic algorithm, making the encrypted data vulnerable to attacks. The key used for encryption is also not defined which could lead to errors or insecure encryption. It's recommended to use a secure and standard algorithm like 'aes-256-cbc' and a strong key."
+}

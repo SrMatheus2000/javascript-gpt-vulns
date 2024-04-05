@@ -1,0 +1,5 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-73: External Control of File Name or Path", "CWE-276: Incorrect Default Permissions", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal", "Arbitrary File Overwrite", "Insecure File Permissions"],
+  "description": "The function 'extractDownload' is vulnerable to several security issues. Firstly, it allows external control of file paths, which can lead to path traversal attacks if an attacker can control the 'filePath' variable. This could allow an attacker to read or write files anywhere on the system. Secondly, the function sets insecure default permissions (0777) on the created directory, which allows any user on the system to read, write, and execute files in the directory. Lastly, the function does not validate or sanitize the 'filePath' variable before using

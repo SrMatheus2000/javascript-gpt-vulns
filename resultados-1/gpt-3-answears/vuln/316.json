@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-754"],
+  "vulnerabilities": ["Arithmetic Overflow"],
+  "description": "The function is vulnerable to an arithmetic overflow vulnerability (CWE-754) due to the use of the BigInteger class. An attacker could provide a large value for 'b' that causes an overflow, leading to unexpected behavior or crashes."
+}

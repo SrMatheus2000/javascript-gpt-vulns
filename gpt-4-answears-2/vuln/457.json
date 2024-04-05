@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Type Coercion"],
+"description": "The function does not properly sanitize the input, which can lead to Cross-Site Scripting (XSS) attacks if the output is rendered in HTML without proper escaping. The function also uses JavaScript's loose equality operator '==' instead of the strict equality operator '===', which can lead to unexpected type coercion and potentially incorrect results."
+}

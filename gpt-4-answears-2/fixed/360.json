@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function does not validate the 'repoDir' parameter, which is used in a 'path.join' function. This could lead to a path traversal vulnerability if an attacker can control the 'repoDir' parameter, allowing them to access files outside of the intended directory."
+}

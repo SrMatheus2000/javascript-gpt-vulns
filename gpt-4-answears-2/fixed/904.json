@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the $sanitize service to sanitize the input, but if the service fails to sanitize the input properly, it could lead to XSS attacks. Additionally, the function uses the .html() method which can also lead to XSS if the input is not properly sanitized. The function also attempts to remove script tags from the input, but this is not a reliable way to prevent XSS as there are many ways to bypass such filters."
+}

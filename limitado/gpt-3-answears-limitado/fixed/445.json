@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-22",
+    "CWE-23"
+  ],
+  "vulnerabilities": [
+    "Null Byte Injection",
+    "Path Traversal"
+  ],
+  "description": "The function is vulnerable to Null Byte Injection and Path Traversal attacks. It does not properly sanitize the received path, allowing an attacker to manipulate the path and potentially access unauthorized files or directories."
+}

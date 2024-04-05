@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471", "CWE-494"],
+  "vulnerabilities": ["Prototype Pollution", "Path Traversal"],
+  "description": "The set function is vulnerable to Prototype Pollution and Path Traversal attacks. It allows the modification of the prototype of an object, which can lead to unexpected behavior and security issues. Additionally, it does not properly sanitize the input path, allowing an attacker to traverse the file system and access sensitive files."
+}

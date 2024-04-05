@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+"vulnerabilities": ["Improper Verification of Cryptographic Signature"],
+"description": "The function 'unique_name_585' is vulnerable to an attack where an attacker can bypass the JWT signature verification. This is because the function does not properly verify the cryptographic signature of the JWT token. An attacker can manipulate the JWT token and the function will still accept it as valid. This can lead to unauthorized access to the application."
+}

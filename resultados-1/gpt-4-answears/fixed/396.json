@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). This vulnerability is due to the use of user-supplied input without proper validation. This can allow an attacker to access or view files on the server that they should not be able to access, and possibly to execute commands. The vulnerability is specifically in the 'req.urlBase' variable, which is used to construct a file path without being properly sanitized first. This could allow an attacker to manipulate the path to access arbitrary files."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function unique_name_91 does not validate the input passed to it. This can lead to unexpected behavior or errors. Additionally, the function contains a while loop that continues until no updates have been made. If the updates never cease, this could lead to an infinite loop, consuming system resources and potentially leading to a Denial of Service (DoS) condition."
+}

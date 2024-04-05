@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function 'unique_name_753' is vulnerable to code injection attacks. The function uses user-supplied input to construct code that is later executed. This could allow an attacker to inject malicious code that is then executed by the application. Additionally, the function does not appear to validate or sanitize the input, which could lead to other types of attacks."
+}

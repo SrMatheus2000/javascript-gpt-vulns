@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function is vulnerable to command injection. The 'params' array is used to construct a command that is executed by the 'openssl.exec' function. If an attacker can control the 'options' object, they can inject arbitrary commands to be executed on the system. This is a serious security risk that can lead to full system compromise."
+}

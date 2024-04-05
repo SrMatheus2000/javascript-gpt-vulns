@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The curr_table_name and curr_column_name variables are directly used in the construction of the question string without proper sanitization. Although the escapeHtml function is used, it may not be sufficient to prevent all forms of XSS, especially if the function does not correctly handle all possible edge cases. An attacker could potentially inject malicious scripts by manipulating the table or column names."
+}

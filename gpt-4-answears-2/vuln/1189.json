@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'nodeName' variable is being constructed by concatenating user-controlled input (currNodeData.name) without proper sanitization or encoding, and then it is used to set the 'text' property of a dialog window. An attacker could potentially inject malicious scripts by providing specially crafted input for 'currNodeData.name', which would then be executed in the context of the user's browser when the dialog is displayed."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94", "CWE-400"],
+"vulnerabilities": ["Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to code injection via the 'allowInjection' option. If this option is set to true, it could allow an attacker to execute arbitrary code. This is related to CWE-94: Improper Control of Generation of Code. Additionally, the function does not limit the number of connections that can be made to the server, which could lead to a denial of service (DoS) attack by exhausting system resources. This is related to CWE-400: Uncontrolled Resource Consumption."
+}

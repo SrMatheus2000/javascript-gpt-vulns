@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Potential Denial of Service (DoS) due to uncontrolled resource consumption"],
+"description": "The function does not have any mechanism to control or limit the amount of resources (memory) it consumes when buffering data. This can lead to a potential Denial of Service (DoS) attack, where an attacker can cause the application to consume excessive system resources, leading to slow performance or system crash. This is related to CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

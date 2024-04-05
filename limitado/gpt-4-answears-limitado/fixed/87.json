@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Infinite Loop", "Type Coercion"],
+  "description": "The function is vulnerable to an infinite loop if the input string does not contain the expected characters. This can lead to resource exhaustion (CWE-400). The function also uses JavaScript's loose equality (==) instead of strict equality (===), which can lead to unexpected type coercion and potentially incorrect results (CWE-20)."
+}

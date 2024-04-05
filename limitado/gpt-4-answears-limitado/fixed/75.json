@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function uses the 'eval' method, which is a potential security risk as it allows for the execution of arbitrary code. This can lead to code injection attacks if the input is not properly sanitized. An attacker could potentially inject malicious scripts that can lead to data theft, data loss, or server takeover."
+}

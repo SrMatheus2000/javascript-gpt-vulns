@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function deleteConnection is vulnerable to command injection. The variable ap.ssid is concatenated directly into the commandStr without proper sanitization or validation, allowing an attacker to inject arbitrary commands."
+}

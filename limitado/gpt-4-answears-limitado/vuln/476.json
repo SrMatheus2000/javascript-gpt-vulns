@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-73: External Control of File Name or Path", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Command Injection", "Path Traversal", "Insecure Temporary File"],
+  "description": "The function is vulnerable to command injection because it concatenates user-controlled input into command strings that are executed by the system. This can allow an attacker to execute arbitrary commands. The function also writes to a file with a hard-coded name, which can lead to issues if multiple instances of the function are running concurrently. Additionally, the function does not properly validate the 'ssid' and 'iface' parameters, which can lead to path traversal vulnerabilities if an attacker provides specially crafted input."
+}

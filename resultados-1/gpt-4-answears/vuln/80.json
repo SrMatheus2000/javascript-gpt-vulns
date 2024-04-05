@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it uses the innerHTML property to directly insert user-controlled input into the DOM. If the variables 'xVal', 'xAxisTTVal', 'seriesName', 'val', 'zVal' contain malicious scripts, they will be executed in the user's browser. To mitigate this, consider using textContent or createTextNode() instead of innerHTML, or ensure that user input is properly sanitized before it is added to the DOM."
+}

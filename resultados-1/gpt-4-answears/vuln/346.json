@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack where the properties of JavaScript objects can be manipulated. This can lead to a variety of security vulnerabilities such as Denial of Service (DoS), Remote Code Execution (RCE), or even bypassing security checks. The vulnerability occurs because the function does not validate the 'key' parameter before using it to modify an object's properties. An attacker can provide a 'key' parameter that includes '__proto__' or 'constructor.prototype' to modify an object's prototype. This can lead to unexpected behavior in the application that uses this function."
+}

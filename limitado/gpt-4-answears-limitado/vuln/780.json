@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-522: Insufficiently Protected Credentials"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Insecure password handling"],
+  "description": "The function is vulnerable to Insecure Direct Object References (IDOR) because it allows the client to supply direct object references to access data without an additional authorization check. This can lead to unauthorized data access. The function also handles passwords insecurely. It allows passwords to be set directly if they are already hashed and start with '$2a$'. This could allow an attacker to set a password directly if they can generate a correctly hashed password."
+}

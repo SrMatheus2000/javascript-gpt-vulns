@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Information Disclosure", "Denial of Service"],
+  "description": "The function is vulnerable to Open Redirect attacks because it does not validate the 'dest' variable which is directly used to set the target host for the proxy. An attacker can manipulate the 'dest' variable to redirect the user to a malicious site. The function also exposes sensitive information such as error details which can be exploited by an attacker to gain more information about the system. Additionally, the function does not limit the number of connections that can be made to the proxy server, making it vulnerable to Denial of Service attacks."
+}

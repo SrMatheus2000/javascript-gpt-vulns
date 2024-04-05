@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-352: Cross-Site Request Forgery (CSRF)", "CWE20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Request Forgery (CSRF)", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site Request Forgery (CSRF) as it allows cross-origin requests (CORS) without proper validation or token checks. This could allow an attacker to trick a victim into making an unwanted request to the server. Additionally, the function does not properly validate the pathname input, which could lead to unexpected behavior or security issues."
+}

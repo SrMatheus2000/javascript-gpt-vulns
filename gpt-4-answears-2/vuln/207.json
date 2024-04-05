@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input string 's' properly. If the input string is not in the expected format, the function throws an error. This can lead to unexpected behavior or Denial of Service (DoS) if the function is used in a context where the input is not guaranteed to be in the correct format. Additionally, the function uses a regular expression to parse the input string. If the input string is very large, this can lead to excessive CPU usage, potentially leading to a Denial of Service (DoS)."
+}

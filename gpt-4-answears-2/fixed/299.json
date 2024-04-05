@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+"vulnerabilities": ["Denial of Service (DoS)"],
+"description": "The function does not limit the number of lines that can be split from the message. If an attacker provides a very large message with many line breaks, it could lead to resource exhaustion and a potential Denial of Service (DoS) attack."
+}

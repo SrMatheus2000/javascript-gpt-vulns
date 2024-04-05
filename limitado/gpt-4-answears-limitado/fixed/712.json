@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Email Validation Bypass"],
+  "description": "The function is vulnerable because it does not properly validate the email format. For instance, it does not check if the domain part of the email contains at least one '.' character, which is a requirement for a valid email address. This could allow an attacker to bypass the email validation by providing an email address without a '.' in the domain part. Additionally, the function does not check for the presence of '@' character in the user part of the email, which could also lead to validation bypass."
+}

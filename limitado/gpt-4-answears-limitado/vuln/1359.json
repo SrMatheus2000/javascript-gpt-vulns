@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection because it concatenates a user-supplied 'file' variable directly into a command that is executed by the system. An attacker could potentially manipulate the 'file' variable to execute arbitrary commands on the system."
+}

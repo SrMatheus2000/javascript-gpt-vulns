@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It properly validates input using a regular expression to ensure that the 'from' and 'to' parameters are in the correct format. If they are not, it throws an error. This function also does not use any dangerous JavaScript functions or methods that could lead to security issues such as code injection or cross-site scripting (XSS)."
+}

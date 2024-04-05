@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL Injection. The 'opts' object properties are directly concatenated into the SQL query string without any sanitization or parameterization, which could allow an attacker to inject malicious SQL code. This could lead to unauthorized viewing, modification, or deletion of data in the database."
+}

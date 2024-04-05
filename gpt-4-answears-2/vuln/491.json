@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function updateOptionsDropDown is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly concatenates user-controlled input into HTML that is then inserted into the DOM. If the 'option.value' or 'option.label' variables contain malicious scripts, they will be executed in the context of the user's browser."
+}

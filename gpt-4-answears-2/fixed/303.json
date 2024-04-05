@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-74", "CWE-89", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Injection", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate or sanitize the 'payload' and 'mime' inputs, which can lead to various vulnerabilities. For instance, if the 'payload' is a large data, it can lead to resource consumption (CWE-400). Also, the function is vulnerable to injection attacks (CWE-74, CWE-89, CWE-94) as the 'payload' and 'mime' inputs are directly used in the function without any checks. Improper input validation (CWE-20) is a common issue that can lead to various other vulnerabilities."
+}

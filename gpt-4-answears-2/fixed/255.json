@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function embeds user-supplied input into HTML without properly sanitizing it. This could allow an attacker to inject arbitrary HTML or JavaScript code into the web page, which would be executed in the context of the victim's browser. The vulnerability is present in the 'embedVimeoIframe' and 'embedYoutubeIframe' functions, where the 'id' and 'vimeoParams'/'youtubeParams' variables are directly embedded into the HTML code."
+}

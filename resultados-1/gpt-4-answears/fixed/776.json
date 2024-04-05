@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It directly uses the 'url' parameter in the 'ipcMain.emit' function without any sanitization or validation. An attacker can inject malicious scripts through the 'url' parameter, which will be executed when the function is called. This can lead to various security issues like stealing sensitive information, session hijacking, defacement of the website, etc."
+}

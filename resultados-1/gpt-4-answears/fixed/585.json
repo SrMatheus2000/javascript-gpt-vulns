@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-88", "CWE-209"],
+  "vulnerabilities": ["Command Injection", "Argument Injection", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable to command injection because it uses user-supplied input to form a command that is executed by the system. This can allow an attacker to execute arbitrary commands. The function is also vulnerable to argument injection because it splits the command string into arguments based on spaces, which can allow an attacker to manipulate the arguments. Additionally, the function may expose sensitive information through error messages, as it discards stderr messages without logging or handling them."
+}

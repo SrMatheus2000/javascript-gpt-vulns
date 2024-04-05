@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-94", "CWE-400"],
+"vulnerabilities": ["Path Traversal", "Code Injection", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files (fs.statSync(staticPath)). It's also vulnerable to Code Injection (CWE-94) as it uses user input to call functions (controllerInst[params.action]). Additionally, it's vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the number of requests a user can make, potentially leading to a Denial of Service attack."
+}

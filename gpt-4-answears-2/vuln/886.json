@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Use of Buffer function"],
+"description": "The function uses the Buffer constructor, which is considered unsafe due to vulnerabilities that can occur if user input is passed directly into it. This can lead to security issues like buffer overflow. It's recommended to use Buffer.from(), Buffer.alloc(), or Buffer.allocUnsafe() instead."
+}

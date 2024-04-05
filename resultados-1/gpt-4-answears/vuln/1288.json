@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Infinite Recursion"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. This is due to the fact that the function does not have a base case for its recursion when merging objects. If a circular reference is present in the object, the function will keep calling itself indefinitely, leading to a stack overflow and thus a DoS condition. Additionally, the use of JSON.stringify within an Array.indexOf operation can lead to high CPU usage for large arrays or complex objects, leading to resource exhaustion. The function also does not validate the input, which can lead to unexpected behavior."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The 'entry.absolute' parameter is used directly in file system operations such as 'fs.lstatSync', 'fs.chmodSync', 'fs.rmdirSync', and 'fs.unlinkSync' without any sanitization or validation. An attacker could potentially manipulate the 'entry.absolute' parameter to access, modify, or delete files outside of the intended directory. This is a type of CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

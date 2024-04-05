@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The parameters 'pathBundleIN.cert', 'pathBundleIN.key', 'pathOUT', and 'pathBundleIN.ca' are used in a command that is executed without proper sanitization or validation. An attacker could potentially inject malicious commands through these parameters."
+}

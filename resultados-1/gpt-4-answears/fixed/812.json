@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Path Traversal", "Improper Input Validation"],
+  "description": "The function is vulnerable to path traversal attacks because it uses the 'pid' parameter directly in a file system operation without properly validating or sanitizing it. An attacker could potentially manipulate the 'pid' parameter to access arbitrary files on the system. Additionally, the function does not validate the 'options' parameter, which could lead to unexpected behavior if it is not properly formatted."
+}

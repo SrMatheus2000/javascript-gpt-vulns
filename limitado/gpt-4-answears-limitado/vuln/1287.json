@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-476: NULL Pointer Dereference", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Null Pointer Dereference", "Improper Input Validation"],
+  "description": "The function objectForEach does not check if the objects 'target', 'result', 'additional' are defined before accessing their properties. This can lead to a Null Pointer Dereference if these objects are undefined. Also, there is no validation of the input parameters 'key' and 'value', which can lead to unexpected behavior if they are not of the expected types."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) and OS Command Injection (CWE-78). The 'path' variable is directly used without any sanitization or validation, which can lead to these vulnerabilities. An attacker can manipulate the 'path' to access sensitive files or execute arbitrary commands."
+}

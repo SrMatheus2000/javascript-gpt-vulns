@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function module.execute() is vulnerable to OS command injection. It constructs a command string with user-supplied input (arrParams) and then passes this string to exec(), which executes the command. An attacker could provide malicious input that alters the command that is executed, leading to arbitrary command execution on the system."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function seems to be vulnerable to Cross-site Scripting (XSS) attacks. This is due to the fact that it directly uses user input in the 'props' object to create HTML content. If an attacker can control the 'prependHTML', 'appendHTML', 'prepend', 'append', 'tag', or 'id' properties, they could inject malicious scripts that would be executed when the generated HTML content is rendered in a web browser."
+}

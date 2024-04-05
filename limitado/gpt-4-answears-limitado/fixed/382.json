@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function 'onConnection' pushes every new socket connection into the 'sockets' array and only removes it when the 'close' event is triggered. If a client opens many connections without closing them, it could lead to a Denial of Service (DoS) attack by filling up the server's memory. This is a form of resource exhaustion where too many resources are used, leading to a degradation of service or a complete shutdown."
+}

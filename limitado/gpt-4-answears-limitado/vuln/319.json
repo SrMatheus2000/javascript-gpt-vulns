@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)", "Potential Code Injection"],
+  "description": "The function is vulnerable to Regular Expression Denial of Service (ReDoS) due to the use of a potentially inefficient regular expression in the test method. An attacker could provide a specially crafted input that would cause the regular expression to take a very long time to evaluate, effectively causing a denial of service. Additionally, the function uses the replace method on the 'line' variable without properly sanitizing the input, which could lead to potential code injection if 'line' contains malicious code."
+}

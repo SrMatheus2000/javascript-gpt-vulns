@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-73", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "External Control of File Name or Path", "Uncontrolled Resource Consumption"],
+"description": "The function does not validate the input parameters before using them to construct a URL. This could lead to a variety of vulnerabilities, such as allowing an attacker to control the file name or path (CWE-73), or causing the application to consume resources unnecessarily by requesting large or numerous files (CWE-400). Additionally, the lack of input validation (CWE-20) could allow an attacker to cause the function to behave in unexpected ways, potentially leading to further vulnerabilities."
+}

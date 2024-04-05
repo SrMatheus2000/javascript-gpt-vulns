@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-770: Allocation of Resources Without Limits or Throttling"],
+  "vulnerabilities": ["Memory Leak"],
+  "description": "The function does not have a mechanism to limit the size of the cache. If the function is called repeatedly with different arguments, the cache size will grow indefinitely, leading to a potential memory leak. This can cause the application to slow down or crash due to out of memory error."
+}

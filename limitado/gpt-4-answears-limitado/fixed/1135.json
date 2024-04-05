@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the use of the .html() method in jQuery, which can potentially insert malicious scripts if the input is not properly sanitized. In this case, the 'body' variable is directly manipulated with .html() method without any sanitization, making it possible for an attacker to inject malicious scripts. The vulnerability is associated with CWE-79, which refers to Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the 'val' input, which is used in SQL queries. This could allow an attacker to inject malicious SQL code, leading to SQL Injection attacks. Specifically, the function uses the 'escape' function to sanitize the input, but this function is not sufficient to prevent SQL Injection attacks as it does not escape all characters that have special meaning in SQL. Additionally, the function does not sanitize the 'operator' input, which is also used in SQL queries."
+}

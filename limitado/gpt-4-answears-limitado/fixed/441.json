@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Untrusted Input"],
+  "description": "The function does not validate the 'input' object before using its 'value' property. If the 'input' object is undefined or null, the function will throw an error. This can lead to unexpected behavior or Denial of Service (DoS). It's recommended to validate the 'input' object before using it."
+}

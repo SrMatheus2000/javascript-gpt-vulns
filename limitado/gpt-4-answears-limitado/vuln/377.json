@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Code Injection", "Denial of Service"],
+  "description": "The function is vulnerable to code injection via the 'eval' function used in case 39. An attacker could potentially inject malicious code via the 'yytext' variable. This could lead to arbitrary code execution. Additionally, the function does not have any control over the size of the input arrays, which could lead to resource exhaustion and a Denial of Service (DoS) condition."
+}

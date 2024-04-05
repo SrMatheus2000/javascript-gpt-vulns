@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Code Injection", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to code injection and cross-site scripting (XSS) attacks. The function uses the input 'name' directly in the 'JSON.stringify' method without any validation or sanitization. This could allow an attacker to inject malicious code or scripts that could be executed in the context of the application. This could lead to various security issues such as unauthorized access, data theft, and other potential security breaches."
+}

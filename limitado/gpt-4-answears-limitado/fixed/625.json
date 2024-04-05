@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-116"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Output Neutralization for Logs"],
+  "description": "The function unescapeHTML is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it decodes HTML entities without properly sanitizing the input, which can allow an attacker to inject malicious scripts. Additionally, the function does not properly neutralize output for logs, which can lead to information disclosure or other potential security issues."
+}

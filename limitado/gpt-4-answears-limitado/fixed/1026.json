@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message"],
+  "vulnerabilities": ["Improper input validation", "Information exposure through error message"],
+  "description": "The function does not validate the 'options' parameter properly. It assumes that 'options' is an object, but if a different data type is passed, it could lead to unexpected behavior or errors. Additionally, the function throws errors with potentially sensitive information, which could be caught and exposed by an attacker, leading to information disclosure."
+}

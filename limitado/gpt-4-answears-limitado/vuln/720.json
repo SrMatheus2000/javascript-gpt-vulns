@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not validate or sanitize the 'entry.path' input, which may allow an attacker to traverse the file system and access, modify, or delete files outside of the intended directory. This is a Path Traversal vulnerability (CWE-22)."
+}

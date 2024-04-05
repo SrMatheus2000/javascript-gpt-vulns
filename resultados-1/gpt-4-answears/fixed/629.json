@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_345' is vulnerable to path traversal attacks. The function uses 'entry.path' to construct a file path that is used to write data. An attacker can manipulate 'entry.path' to navigate the file system outside of the intended directory. The function checks if the resolved 'extractPath' starts with 'opts.path', but this check can be bypassed by using paths like '../dir'. This can allow an attacker to write files to arbitrary locations. To fix this vulnerability, it's recommended to use a library function to normalize paths and check if the resulting path is within the intended directory."
+}

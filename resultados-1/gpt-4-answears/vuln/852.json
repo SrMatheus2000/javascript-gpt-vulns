@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470: Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+  "vulnerabilities": ["Unsafe Reflection"],
+  "description": "The function unique_name_449 uses the input 'm' to access properties of the 'ctxt' object. If 'm' is controlled by an attacker, they could potentially access any property of the 'ctxt' object, including potentially sensitive data or functions. This is a form of the vulnerability known as 'Unsafe Reflection'."
+}

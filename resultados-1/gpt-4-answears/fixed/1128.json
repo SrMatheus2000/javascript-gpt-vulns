@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function compileObjectNode does not properly validate the input for 'node.properties'. This could potentially allow an attacker to inject malicious code into the application. The function also does not properly control the generation of code, which could lead to code injection vulnerabilities. The function uses the 'eval' function, which is generally considered unsafe and can lead to code injection if not properly sanitized."
+}

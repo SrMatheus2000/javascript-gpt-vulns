@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-78"],
+  "vulnerabilities": ["Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "description": "The set function is vulnerable to Cross-site Scripting (XSS) and SQL Injection attacks. It does not properly sanitize user input before using it in the code, allowing an attacker to inject malicious code or SQL statements."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_442 is vulnerable to OS command injection. The function uses the execSync function to execute a git command, which includes the user-supplied id. If an attacker can control the id, they can inject arbitrary commands to be executed on the server. This can lead to a variety of attacks, including data theft, data corruption, or denial of service."
+}

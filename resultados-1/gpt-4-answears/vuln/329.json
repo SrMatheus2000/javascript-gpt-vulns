@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Insecure Cryptographic Operations"],
+  "description": "The function 'unique_name_150' is vulnerable due to the use of insecure cryptographic operations. The function uses 'ethUtil.bufferToHex' to convert the transaction's chain ID to hexadecimal, which is then assigned to 'tx.v'. This operation is insecure and can lead to vulnerabilities such as weak encryption. The function also uses 'Buffer.from' to convert the payload's 'v', 'r', and 's' values from hexadecimal to binary, which can lead to vulnerabilities such as buffer overflow. The function does not validate the input parameters 'address' and 'tx', which can lead to vulnerabilities such as injection attacks."
+}

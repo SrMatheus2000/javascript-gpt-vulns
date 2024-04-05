@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The function appears to be secure. It checks if the name is 'script' or 'noscript' and returns if true, preventing script injection. It also checks if any attribute names start with 'on', which are typically used for event handlers in HTML, and returns if true, preventing potential cross-site scripting (XSS) attacks. The function then calls another function 'writer.start' with the parameters it received."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-23"],
+  "vulnerabilities": ["Path Traversal", "Directory Traversal"],
+  "description": "The provided code is vulnerable to Path Traversal and Directory Traversal attacks. An attacker can manipulate the 'req.url' parameter to access files outside of the intended directory. This can lead to unauthorized access to sensitive files or even remote code execution."
+}

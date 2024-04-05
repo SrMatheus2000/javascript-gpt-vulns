@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. This is due to the use of innerHTML property in the function. The innerHTML property sets or returns the HTML content (inner HTML) of an element. If user input is included without proper sanitization, it can lead to XSS attacks. In this function, the user input is directly included in the innerHTML without any sanitization or encoding, making it vulnerable to XSS attacks."
+}

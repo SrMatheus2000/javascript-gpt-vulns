@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20"],
+"vulnerabilities": ["Improper Input Validation"],
+"description": "The function does not validate the input for 'track.entries[i].text' and 'track.entries[i].identifier' before using them. This could lead to potential Cross-Site Scripting (XSS) attacks if the input is not properly sanitized elsewhere in the code."
+}

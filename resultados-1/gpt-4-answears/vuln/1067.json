@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-494: Download of Code Without Integrity Check", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Unverified download", "Potential path injection"],
+  "description": "The function downloads and installs a package from a URL without verifying the integrity of the downloaded content. This could allow an attacker to tamper with the downloaded content and execute arbitrary code. Additionally, the function uses user input to construct a file path without properly sanitizing the input, which could lead to path injection if the input contains special characters."
+}

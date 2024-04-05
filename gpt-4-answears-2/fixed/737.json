@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function uses execFileSync to execute a shell command without properly sanitizing the input. This could lead to OS command injection if an attacker can control the 'remote.origin.url' value."
+}

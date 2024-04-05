@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'mergeObjects' is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify an object's prototype, which can lead to a variety of security vulnerabilities. In this case, the function does not validate or has any restrictions on what properties can be added to the object. This can lead to an attacker adding or modifying properties of 'Object.prototype' which will then be present on all objects."
+}

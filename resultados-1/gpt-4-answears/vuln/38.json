@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection"],
+  "description": "The function parseDCC does not validate or sanitize the 'source' input, which can lead to potential security vulnerabilities. An attacker could potentially inject malicious code or SQL commands into the 'source' input, leading to SQL Injection attacks. This could allow the attacker to manipulate SQL queries, leading to unauthorized access to data, data corruption, or data loss."
+}

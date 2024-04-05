@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-79"],
+"vulnerabilities": ["SQL Injection", "Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to SQL Injection and Cross-Site Scripting (XSS) attacks. The function does not sanitize the 'data.query.jsonp' input before using it to construct a string that is then executed as code. This could allow an attacker to inject malicious code. Additionally, the function does not sanitize the 'newData' input before using it in a SQL query, which could allow an attacker to manipulate the query."
+}

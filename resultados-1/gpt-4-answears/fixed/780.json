@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It simply creates a function that retrieves a specific header from a request. It also sets a 'Vary' header on the response. The function handles the case where the header is not present in the request, and it correctly handles the case where multiple headers are joined with a comma by Node.js. There is no direct user input being evaluated or executed, no insecure data handling, and no obvious security misconfigurations."
+}

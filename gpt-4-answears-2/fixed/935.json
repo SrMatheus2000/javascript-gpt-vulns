@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any obvious security vulnerabilities. It is using TLS to secure the connection, and it is properly handling the encryption and decryption of data. The function also correctly handles the removal of listeners to prevent potential memory leaks. However, without the full context of the application, it is impossible to guarantee that there are no vulnerabilities."
+}

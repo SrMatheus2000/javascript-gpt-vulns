@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-95: Improper Neutralization of Directives in Dynamically Evaluated Code ('Eval Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'evaluate_value' uses the JavaScript 'new Function()' constructor to create a new function from a string. This is similar to using 'eval()' and can lead to code injection vulnerabilities if user-supplied input is passed into it without proper sanitization. An attacker could potentially inject malicious code that gets executed."
+}

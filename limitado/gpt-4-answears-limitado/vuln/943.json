@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). The fileName variable is directly influenced by user input through connection.params.fileName or the URL path. This input is then used to construct a file path in api.configData.general.flatFileDirectory + fileName. An attacker could potentially manipulate the fileName to navigate to arbitrary directories and access or modify files outside of the intended directory. This is a violation of the CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

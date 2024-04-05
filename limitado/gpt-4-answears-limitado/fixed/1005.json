@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-347: Improper Verification of Cryptographic Signature"],
+  "vulnerabilities": ["Insecure Signature Validation"],
+  "description": "The function 'verifyJWSByKey' is vulnerable to insecure signature validation. It does not properly verify the cryptographic signature of the JSON Web Token (JWT). This could allow an attacker to forge a JWT and bypass security controls."
+}

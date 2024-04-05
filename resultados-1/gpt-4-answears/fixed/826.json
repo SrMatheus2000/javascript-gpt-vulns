@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. Although the function attempts to sanitize the HTML input by removing script tags and attributes starting with 'on' or 'javascript', it does not cover all possible XSS attack vectors. For example, it does not handle event handlers like 'href', 'src', 'data', or 'formaction' that can also be used to inject malicious scripts. Moreover, it does not handle case-insensitive matching, so an attacker could bypass the filter by using uppercase letters. Finally, the function does not handle encoded or obfuscated scripts."
+}

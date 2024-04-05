@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Path Traversal", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Path Traversal attack as it uses user-supplied input (pid) in a filesystem operation without properly validating or sanitizing it. An attacker could manipulate the 'pid' to access files outside of the intended directory. Additionally, the function does not control or limit the amount of resources it consumes when reading a file, which can lead to a denial of service if an attacker can cause it to consume more resources than the system can provide."
+}

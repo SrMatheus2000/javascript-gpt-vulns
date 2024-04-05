@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Cross-site Scripting"],
+  "description": "The function unique_name_661 does not validate or sanitize the 'repo' input, which can lead to vulnerabilities. An attacker could potentially inject malicious code or commands into the 'repo' parameter, leading to SQL Injection or Cross-site Scripting attacks. Additionally, the function does not check if the 'repo' parameter is a valid URL, which could lead to unexpected behavior or errors."
+}

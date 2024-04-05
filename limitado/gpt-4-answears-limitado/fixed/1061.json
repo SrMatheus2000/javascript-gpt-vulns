@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Infinite recursion"],
+  "description": "The function is vulnerable to infinite recursion if an object with a circular reference is passed as an argument. This can lead to a stack overflow error, causing the application to crash. This is a form of resource exhaustion where the application consumes more resources than necessary, which can lead to denial of service."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-94"],
+"vulnerabilities": ["Path Traversal", "Code Injection"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) as it uses user input to access files (fs.readFile(path.resolve(swaggerUiPath, file))). An attacker could manipulate the 'file' parameter to access arbitrary files on the system. It's also vulnerable to Code Injection (CWE-94) as it uses user input to dynamically construct code (content.toString().replace()). An attacker could manipulate the 'url' parameter to inject malicious code."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22", "CWE-94"],
+"vulnerabilities": ["Path Traversal", "Code Injection"],
+"description": "The function is vulnerable to Path Traversal (CWE-22) because it uses the 'unescape' function on the 'pathname' variable which can be manipulated by an attacker to access files outside of the intended directory. It is also vulnerable to Code Injection (CWE-94) because it directly uses the 'pathname' variable in the 'dispatch.cgi' function without proper sanitization or validation, which can allow an attacker to execute arbitrary code."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-89", "CWE-22"],
+  "vulnerabilities": ["OS Command Injection", "SQL Injection", "Path Traversal"],
+  "description": "The function is vulnerable to OS command injection because it concatenates the 'dir' variable directly into the command string that is executed by the '_cp.exec' function. An attacker could potentially inject arbitrary commands by providing a specially crafted 'dir' value. The function also does not properly sanitize the 'dir' variable, which could lead to SQL injection if the 'dir' value is used in a SQL query. Additionally, the function does not validate or sanitize the 'dir' variable, which could lead to path traversal attacks if an attacker provides a 'dir' value that includes directory traversal sequences."
+}

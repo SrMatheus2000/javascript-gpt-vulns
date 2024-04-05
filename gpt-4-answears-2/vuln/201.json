@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation"],
+"description": "The function does not properly validate input in several places, which can lead to code injection. For example, the function does not validate the 'op' property of the 'c' object, which can lead to execution of arbitrary code. Additionally, the function does not validate the 'path' property of the 'c' object, which can lead to improper access to array elements."
+}

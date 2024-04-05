@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to path traversal attacks. The resourcePathname variable is derived from the user-supplied input (req.url). Although there is an attempt to sanitize the input by replacing '/../' and '../', it is not sufficient to prevent all path traversal attacks. An attacker could potentially access sensitive files outside of the intended directory by using encoded or double path traversal sequences."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-328: Reversible One-Way Hash"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Inadequate Encryption Strength"],
+  "description": "The function 'unique_name_643' is vulnerable as it uses a weak cryptographic function 'exports.sign' which is not shown in the code but assumed to be weak. The function is used to sign a string with a secret, but if the function is not cryptographically strong, it could be vulnerable to attacks. The function also does not encrypt the sensitive data (the secret), which is a violation of CWE-311. Furthermore, if the hash function used in 'exports.sign' is reversible, it would be a violation of CWE-328."
+}

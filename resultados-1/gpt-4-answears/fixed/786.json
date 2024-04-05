@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-328: Reversible One-Way Hash", "CWE-759: Use of a One-Way Hash without a Salt", "CWE-760: Use of a One-Way Hash with a Predictable Salt"],
+  "vulnerabilities": ["Insecure Cryptographic Storage", "Insufficiently Protected Credentials"],
+  "description": "The function uses SHA-1, which is a weak hash function. It's vulnerable to collision attacks. Also, the function does not use a salt with the hash, making it vulnerable to rainbow table attacks. The scramble value is also predictable, which further weakens the security. The password is also converted to binary format, which could potentially reduce the complexity of the password."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Input Validation", "SQL Injection", "Command Injection"],
+  "description": "The function checkCertificate is vulnerable to several types of attacks. First, it does not validate the input for 'certificate' and 'passphrase', which can lead to unexpected behavior or security issues. Second, the function uses the 'certificate' and 'passphrase' in a command that is passed to the openssl.spawnWrapper function, which can lead to command injection if the input is not properly sanitized. Finally, if the 'certificate' or 'passphrase' contains SQL commands, it could lead to SQL injection attacks."
+}

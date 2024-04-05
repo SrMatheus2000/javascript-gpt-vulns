@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function does not sanitize the input before using it in the 'Unicode' function. An attacker can inject malicious scripts as input, which will be executed when the function is called."
+}

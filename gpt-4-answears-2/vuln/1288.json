@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Prototype Pollution", "Denial of Service"],
+"description": "The function is vulnerable to Prototype Pollution which can lead to multiple application-level vulnerabilities such as Remote Code Execution, Denial of Service, or even bypassing security checks. The function does not properly validate the input and allows the modification of an object's prototype. Additionally, the use of JSON.stringify in a loop can lead to high CPU usage, causing a Denial of Service (DoS) attack."
+}

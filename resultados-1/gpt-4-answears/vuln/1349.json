@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function noLocalBranchConflict takes a user-supplied input 'branch' and directly concatenates it into a command that is executed by the system. This could allow an attacker to inject arbitrary commands to be executed on the system with the privileges of the user running the script. For example, an attacker could provide '; rm -rf /' as input, which would delete all files on the system."
+}

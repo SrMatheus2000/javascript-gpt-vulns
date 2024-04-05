@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output", "CWE-89: SQL Injection"],
+  "vulnerabilities": ["Input Validation", "Output Encoding", "SQL Injection"],
+  "description": "The function does not validate or sanitize the 'name' input, which can lead to various vulnerabilities. The 'name' input is used in a regex match and replace operations without any validation, which can lead to improper input validation issues. The 'name' input is also used in the GetBrackets and GetArgument functions, the behavior of which is not shown, but if these functions interact with a database, it could potentially lead to SQL Injection if the input is not properly sanitized. The function also does not properly encode the 'font' output, which can lead to improper encoding or escaping of output issues."
+}

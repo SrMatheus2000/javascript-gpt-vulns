@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function 'setTitle' in the provided JavaScript code is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly sets the 'textContent' of the 'Title' element to the 'name' parameter without any sanitization or encoding. An attacker could potentially inject malicious scripts by providing a 'name' parameter that includes script tags. This script would then be executed whenever the title is displayed in a user's browser."
+}

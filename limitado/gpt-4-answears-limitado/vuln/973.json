@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-522", "CWE-400"],
+  "vulnerabilities": ["Path Traversal", "Insufficiently Protected Credentials", "Uncontrolled Resource Consumption"],
+  "description": "The function reads files synchronously using 'fs.readFileSync' which can lead to Path Traversal (CWE-22) if the 'sslOptions' object is manipulated to include paths outside the intended directory. It also exposes sensitive information such as SSL keys and certificates (CWE-522) which should be protected. The function does not limit the number of concurrent connections to the server (CWE-400), which can lead to a Denial of Service (DoS) attack if an attacker makes a large number of simultaneous requests."
+}

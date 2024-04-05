@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-287: Improper Authentication", "CWE-359: Exposure of Private Information"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Potential Information Disclosure"],
+  "description": "The function 'unique_name_81' is vulnerable due to Insecure Direct Object References (IDOR). The function does not properly verify if the user has the right to change the password of another user. An attacker could potentially change the password of another user by manipulating the 'uid' and 'data.uid' parameters. Additionally, the function may expose sensitive information such as hashed passwords and UUIDs, which could lead to potential information disclosure."
+}

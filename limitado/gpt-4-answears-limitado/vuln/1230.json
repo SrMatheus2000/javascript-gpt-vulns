@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-706"],
+  "vulnerabilities": ["Path Traversal", "Incorrect Permission Assignment"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses the 'decodeURIComponent' function on 'reqUrl' which is user-controlled input. This can allow an attacker to access arbitrary files on the system by sending special characters in 'reqUrl'. Additionally, the function checks if a file exists with 'utils.file.existsSync' and then directly serves it without any permission checks, which can lead to Incorrect Permission Assignment (CWE-706) if sensitive files are inadvertently served."
+}

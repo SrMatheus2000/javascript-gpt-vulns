@@ -1,0 +1,12 @@
+{
+  "isVulnerable": true,
+  "CWEs": [
+    "CWE-79",
+    "CWE-116"
+  ],
+  "vulnerabilities": [
+    "Cross-Site Scripting (XSS)",
+    "Unvalidated Input"
+  ],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) and Unvalidated Input. The 'org.name' variable is not properly sanitized before being inserted into the HTML, which can lead to XSS attacks. Additionally, the 'org.uuid' variable is directly concatenated into the HTML without any validation, which can result in unvalidated input vulnerabilities."
+}

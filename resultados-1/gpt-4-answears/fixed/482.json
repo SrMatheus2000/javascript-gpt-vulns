@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The '_linkStr' parameter is used to open a window, but it is not properly sanitized before use. Even though there is an attempt to remove 'javascript:' from the string, this is not sufficient to prevent all possible XSS attacks. For example, an attacker could still inject code using data URIs. Additionally, the function does not validate the 'ids' parameter before using it, which could lead to unexpected behavior or errors."
+}

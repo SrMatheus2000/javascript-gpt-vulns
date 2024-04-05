@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Improper escaping of special characters"],
+"description": "The function escapeshellarg is intended to escape any special characters in a string that is used as a shell argument. However, the current implementation only escapes single quotes that are not preceded by a backslash. This leaves the function vulnerable to injection attacks if the input string contains any other special characters that are not properly escaped."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-471"],
+"vulnerabilities": ["Modification of Assumed-Immutable Data (MAID)"],
+"description": "The function modifies the input object directly which can lead to unexpected behavior if the object is assumed to be immutable. This is a type of Modification of Assumed-Immutable Data (MAID) vulnerability."
+}

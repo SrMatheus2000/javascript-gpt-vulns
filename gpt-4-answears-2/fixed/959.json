@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function does not validate or sanitize the 'tag', 'no_data_text', and 'no_data_class' properties of the 'opts' object. This could lead to Cross-Site Scripting (XSS) if the properties contain malicious scripts."
+}

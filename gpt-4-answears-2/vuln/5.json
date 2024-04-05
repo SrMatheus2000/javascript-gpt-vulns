@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "This JavaScript function is used to remove entities from SVG files. It uses a regular expression to match the entity pattern and replace it with an empty string. There are no apparent vulnerabilities in this function as it does not execute any user input or perform any unsafe operations."
+}

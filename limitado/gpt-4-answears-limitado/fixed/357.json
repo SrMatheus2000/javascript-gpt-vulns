@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the `innerHTML` property to insert HTML content into the span element. If the `text` variable is controlled by the user, it could be used to inject malicious scripts into the web page. Although the function uses `xssUtils.escapeHTML(text)` to escape the `text` variable, it does not escape the `this.label.text()` which is also inserted into the HTML content. If `this.label.text()` is controlled by the user, it could be used to inject malicious scripts."
+}

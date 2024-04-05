@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-89"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses the jQuery .html() method, which does not escape HTML special characters, so any HTML the server returns will be rendered by the browser. This could allow an attacker to inject malicious scripts into the web page. The function is also vulnerable to SQL Injection because it concatenates user input directly into a SQL query. An attacker could potentially manipulate the SQL query to view, modify, or delete data in the database."
+}

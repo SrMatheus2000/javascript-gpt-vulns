@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is primarily defining regular expressions and patterns for a syntax highlighting library, and does not perform any risky operations such as executing dynamic code or handling user input in an insecure way."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any obvious security vulnerabilities. It creates a secure context using TLS, removes all listeners from the socket and protocol, creates a new secure socket, and starts TLS communications. The function also handles data piping between the secure socket and the protocol. All sensitive data such as keys, certificates, and passphrases are securely handled within the context. The function also checks if the certificate is authorized before starting the secure connection."
+}

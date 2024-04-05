@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400", "CWE-703"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Exception Handling"],
+  "description": "This function has a vulnerability related to uncontrolled resource consumption (CWE-400) and improper exception handling (CWE-703). The function does not have any input validation or rate limiting mechanisms, which could lead to resource exhaustion if it is called repeatedly with malicious input. Additionally, the function catches all exceptions with a generic catch block, which can hide critical errors and make it difficult to diagnose and fix issues."
+}

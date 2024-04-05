@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Improper Encoding or Escaping of Output"],
+"description": "The function 'unique_name_742' is vulnerable to Improper Encoding or Escaping of Output. The function 'decodeComponent' uses 'decodeURIComponent' to decode URL components, but it doesn't correctly handle '+' characters, which should be converted to spaces according to the 'application/x-www-form-urlencoded' specification. This could potentially lead to issues with the interpretation of the decoded string. Additionally, the 'parseQueryString' function doesn't properly handle keys and values that are null, which could lead to unexpected behavior."
+}

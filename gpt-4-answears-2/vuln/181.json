@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Type confusion", "Potential for prototype pollution"],
+"description": "The function does not validate the type of the 'path' parameter. If a user can control the 'path' parameter, they could potentially cause type confusion or prototype pollution. For example, if 'path' is an array, the 'split' function will throw an exception. Additionally, if 'path' includes '__proto__', it could lead to prototype pollution, which could allow an attacker to add or modify properties of 'Object.prototype'. This could affect all objects in the application, potentially leading to various types of attacks such as denial of service, data modification, or even remote code execution."
+}

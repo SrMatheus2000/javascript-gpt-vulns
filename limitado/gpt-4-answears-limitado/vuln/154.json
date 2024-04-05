@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. It directly manipulates the Document Object Model (DOM) by appending child elements to the body of the document. If the SVG tag or its content is user-controlled and not properly sanitized, it could lead to an XSS attack where malicious scripts are injected and executed in the context of the victim's session. This could lead to session hijacking, defacement of the website, or redirection to malicious sites."
+}

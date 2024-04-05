@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-73"],
+  "vulnerabilities": ["Path Traversal", "External Control of File Name or Path"],
+  "description": "The function is vulnerable to Path Traversal and External Control of File Name or Path. The 'downloadUrl' variable is directly used to determine the 'fileName' and 'downloadedFile' path. If an attacker can control the 'SAFARIDRIVER_CDNURL' environment variable, they can manipulate the path to read, write or download arbitrary files on the system. This can lead to unauthorized access to sensitive data or code execution. The function does not validate or sanitize the 'SAFARIDRIVER_CDNURL' environment variable."
+}

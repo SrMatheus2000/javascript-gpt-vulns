@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'link' and 'autolink' functions in the 'htmlify' object do not properly sanitize the 'href' attribute of the 'a' tag. This could allow an attacker to inject malicious JavaScript code into the 'href' attribute, which would be executed when a user clicks on the link."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Memory Exhaustion"],
+  "description": "The function is vulnerable to memory exhaustion. If an attacker provides a large jpegData, it could cause the application to consume all available memory when trying to allocate a new Buffer or Uint8Array. This could lead to a denial of service (DoS) condition where the application becomes unresponsive or crashes due to lack of memory."
+}

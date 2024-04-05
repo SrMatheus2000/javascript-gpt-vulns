@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Global Variable Leakage"],
+"description": "The function uses 'src' and 'val' as global variables because they are not declared with 'var', 'let', or 'const'. This can lead to unexpected behavior if there are other parts of the code that use the same variable names. It's a good practice to always declare variables to avoid global namespace pollution. Also, the function 'override' and 'isSpecificValue' are not defined in the given context, which could potentially lead to ReferenceError."
+}

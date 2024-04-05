@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function is vulnerable to command injection. The 'name' parameter is directly concatenated into a command string that is executed by the system. An attacker could provide a malicious 'name' that includes command line syntax, which could allow them to execute arbitrary commands on the system."
+}

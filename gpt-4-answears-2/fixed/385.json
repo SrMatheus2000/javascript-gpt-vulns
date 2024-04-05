@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20"],
+"vulnerabilities": ["SQL Injection", "Improper Input Validation"],
+"description": "The function is vulnerable to SQL Injection attacks as it directly uses user input in SQL queries without proper sanitization or parameterization. This can allow an attacker to manipulate the SQL queries and potentially access, modify or delete data in the database. The function also lacks proper input validation which can lead to unexpected behavior or errors."
+}

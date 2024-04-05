@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the innerHTML property to insert user-controlled data into the DOM. If the user-controlled data is not properly sanitized, an attacker can inject malicious scripts that will be executed when other users load the page. The function does sanitize some of the user-controlled data with the Utilities.sanitizeDom function, but not all of it. For example, the xVal, xAxisTTVal, val, and zVal variables are inserted into the DOM without being sanitized."
+}

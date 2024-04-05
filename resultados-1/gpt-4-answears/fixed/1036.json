@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the 'val' input, which is used in SQL queries. This could lead to SQL Injection if an attacker can control the 'val' input. Specifically, the function replaces certain characters in 'val' with their escaped versions, but it does not handle all possible special characters that could be used in an SQL Injection attack. For example, it does not handle the '%' character, which can be used in LIKE clauses in SQL."
+}

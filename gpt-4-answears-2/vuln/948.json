@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94"],
+"vulnerabilities": ["Code Injection"],
+"description": "The function setColorTheme uses the eval() function, which can execute arbitrary JavaScript code. This can lead to code injection if an attacker can control the input to the eval() function."
+}

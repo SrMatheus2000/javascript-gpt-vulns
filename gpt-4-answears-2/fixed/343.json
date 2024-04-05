@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "URL Redirection to Untrusted Site ('Open Redirect')"],
+"description": "The function attempts to sanitize a URL by checking if it starts with 'javascript:', 'vbscript:', or 'data:'. However, it only checks the beginning of the URL and ignores any potential malicious code that could be inserted after these prefixes. Additionally, it does not validate or escape the output, which could lead to Cross-Site Scripting (XSS) or URL redirection vulnerabilities."
+}

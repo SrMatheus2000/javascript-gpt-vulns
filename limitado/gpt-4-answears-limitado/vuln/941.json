@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Information Exposure", "Improper Input Validation"],
+  "description": "The function seems to be vulnerable to Information Exposure through error messages (CWE-209) as it sends detailed server information and error details in the response. This could potentially provide an attacker with sensitive information about the system. Also, the function does not validate the input 'data' which can lead to various issues (CWE-20). For instance, if 'data' is null or does not have expected properties, the function will throw an error. Moreover, the function does not sanitize 'data.params.callback' before using it to construct a response, which could lead to Cross-Site Scripting (XSS) attacks if 'data.params.callback' contains malicious scripts."
+}

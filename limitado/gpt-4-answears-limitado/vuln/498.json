@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to Path Traversal attack. The vulnerability exists because the function uses user-supplied input in 'req.params['*']' to construct a file path to be read from the file system without properly validating or sanitizing the input. An attacker can manipulate the input to read arbitrary files from the system, potentially leading to exposure of sensitive information."
+}

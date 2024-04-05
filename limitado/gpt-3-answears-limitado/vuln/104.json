@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78", "CWE-116"],
+  "vulnerabilities": ["Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "Improper Access Control"],
+  "description": "The function does not properly validate the 'path' parameter, which can lead to SQL injection and improper access control vulnerabilities."
+}

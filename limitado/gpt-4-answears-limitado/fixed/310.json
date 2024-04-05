@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function does not validate the input passed to the 'cb' callback function, which could lead to unexpected behavior or errors. Additionally, the function does not limit the number of worker processes that can be created, which could lead to resource exhaustion if an attacker sends a large number of requests."
+}

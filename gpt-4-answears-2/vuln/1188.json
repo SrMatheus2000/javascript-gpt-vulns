@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-330: Use of Insufficiently Random Values"],
+"vulnerabilities": ["Insufficient Entropy in PRNG", "Potential Information Exposure"],
+"description": "The function uses Math.random() for generating password which is not cryptographically strong. This can lead to predictable passwords and increase the risk of password cracking. Also, the password is directly assigned to form fields which can lead to potential information exposure through DOM-based attacks or if the page content is cached."
+}

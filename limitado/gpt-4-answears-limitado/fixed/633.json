@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Insecure use of 'new Buffer()'"],
+  "description": "The function uses 'new Buffer()', which can lead to security vulnerabilities if the input is not properly validated or sanitized. This can lead to issues such as buffer overflow. It is recommended to use 'Buffer.from()', 'Buffer.alloc()', or 'Buffer.allocUnsafe()' instead."
+}

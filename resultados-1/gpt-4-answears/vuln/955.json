@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a sanitization function that removes potentially harmful elements and attributes from HTML, SVG, and MathML tags. It also provides options to configure the sanitization process. It checks for clobbering attacks and ensures that the output is safe for jQuery's $() factory. Therefore, it does not seem to have any common weaknesses (CWEs)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The data from 'cortex-json' is being encoded with 'htmlEncode' and then directly injected into the HTML of '#screenshot_box' using the 'html' function. If an attacker can control the value of 'cortex-json', they could potentially inject malicious scripts into the page. Although 'htmlEncode' is used, it may not be sufficient to prevent all forms of XSS, especially if the data is JSON. It's recommended to use context-specific output encoding libraries to properly escape the output."
+}

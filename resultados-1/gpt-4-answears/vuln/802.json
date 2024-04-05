@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-184: Incomplete List of Disallowed Inputs"],
+  "vulnerabilities": ["URL Redirection to Untrusted Site ('Open Redirect')", "Potential Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function does not properly validate the input URL, which could lead to URL redirection to an untrusted site. This could be used in phishing attacks to redirect users to malicious websites. Additionally, the use of regular expressions could potentially lead to a Regular Expression Denial of Service (ReDoS) if an attacker provides a specially crafted input that causes excessive backtracking."
+}

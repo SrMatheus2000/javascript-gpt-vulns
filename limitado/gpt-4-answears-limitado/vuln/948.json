@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function setColorTheme uses the eval() function to execute code. This is a dangerous practice as it allows for arbitrary code execution. If an attacker can control the input to the eval() function, they can execute arbitrary code with the permissions of the script. This can lead to a variety of attacks, including data theft, data corruption, denial of service, and more."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-327: Use of a Broken or Risky Cryptographic Algorithm"],
+  "vulnerabilities": ["Insecure Cryptographic Operations"],
+  "description": "The function uses 'ethUtil.bufferToHex' for cryptographic operations which might not be secure. It's recommended to use secure and standard cryptographic algorithms. Also, the error handling part of the function could potentially leak sensitive information about the system, which could be used by an attacker for further exploits."
+}

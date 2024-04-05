@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-918", "CWE-20"],
+"vulnerabilities": ["Server-side Request Forgery (SSRF)", "Improper Input Validation"],
+"description": "The function is vulnerable to Server-side Request Forgery (SSRF) as it downloads a file from a URL that is constructed by concatenating a static string with a value returned by the getArchiveName() function. If an attacker can control the output of getArchiveName(), they can force the server to make a HTTP GET request to an arbitrary URL. This can be used to attack internal resources that are not normally accessible. Additionally, there is no validation of the response.statusCode, which could lead to unexpected behavior if a non-200 status code is returned."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200", "CWE-209", "CWE-598"],
+"vulnerabilities": ["Information Exposure", "Information Exposure Through an Error Message", "Use of Insufficiently Random Values"],
+"description": "The function has several vulnerabilities. First, it exposes sensitive information through error messages (CWE-209) when the SERVE_USER and SERVE_PASSWORD environment variables are not set. Second, it uses a wildcard '*' in the 'Access-Control-Allow-Origin' header (CWE-598), which allows any domain to access the resources, leading to potential Cross-Origin Resource Sharing (CORS) issues. Third, it uses the 'fs.exists' function (CWE-200) which can lead to Information Exposure as it discloses whether a specific file exists or not."
+}

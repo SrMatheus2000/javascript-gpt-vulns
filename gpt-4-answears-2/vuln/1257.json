@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function uses the 'html' method to insert user-supplied data (errorId, msg, url, linenumber, userAgent) into the page, which can lead to XSS if the data is not properly sanitized. Although the function uses the 'escapeHtml' method to sanitize the 'userAgent' variable, it does not sanitize the other variables. An attacker could exploit this vulnerability by injecting malicious scripts into these variables, which would then be executed in the user's browser when the page is loaded."
+}

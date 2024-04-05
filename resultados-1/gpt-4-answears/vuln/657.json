@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption", "CWE-209: Information Exposure Through an Error Message", "CWE-319: Cleartext Transmission of Sensitive Information"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Information Exposure", "Sensitive Data Exposure"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks because it does not limit the size of the image that can be requested. This could allow an attacker to request a very large image, consuming server resources and potentially causing the server to crash. This is related to CWE-400. Additionally, the function exposes potentially sensitive information in error messages (CWE-209). If an error occurs, the URL that caused the error is included in the response, which could expose sensitive information. Finally, the function sends the image data in clear text, which could expose sensitive data if the image contains such information (CWE-319)."
+}

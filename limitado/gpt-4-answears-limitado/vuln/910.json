@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-79"],
+  "vulnerabilities": ["Path Traversal", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses the 'unescape' function on the 'pathname' variable which is concatenated to 'dispatch.static_route' to form 'full_path'. This could allow an attacker to access arbitrary files on the system by providing a specially crafted 'pathname'. The function is also vulnerable to Cross-Site Scripting (CWE-79) because it directly uses the 'pathname' variable in the response without proper sanitization or encoding, which could allow an attacker to inject malicious scripts."
+}

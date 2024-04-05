@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Denial of Service", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks because it evaluates code via the 'eval' function. This can allow an attacker to run arbitrary JavaScript code. The function also does not properly validate the input for the 'c.op' parameter, which can lead to unexpected behavior. Additionally, the function does not limit the consumption of resources, which can lead to a denial of service if an attacker provides a large amount of data."
+}

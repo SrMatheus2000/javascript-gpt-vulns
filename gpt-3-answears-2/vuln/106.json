@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is a regular expression pattern that matches semantic version numbers. It does not contain any known vulnerabilities or CWEs."
+}

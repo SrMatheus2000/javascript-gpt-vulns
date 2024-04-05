@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The variables 'curr_table_name' and 'curr_column_name' are directly included in the 'question' string without any sanitization or encoding. If these variables contain malicious scripts, they will be executed when the 'question' string is rendered in the browser. This can lead to various security issues such as session hijacking, identity theft, defacement of the website, and other malicious activities."
+}

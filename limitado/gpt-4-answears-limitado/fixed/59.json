@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Path Traversal", "Potential Arbitrary File Write"],
+  "description": "The function does not validate or sanitize the 'child.entryName' input which is used to construct a file path. This could lead to a Path Traversal vulnerability where an attacker could manipulate 'child.entryName' to read or write files outside of the intended directory. Additionally, the function uses 'Utils.writeFileTo' which could potentially write arbitrary files if 'childName' and 'content' are controlled by an attacker."
+}

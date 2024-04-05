@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function does not properly prevent a certain size calculation from overflowing, which allows remote attackers to cause a denial of service (memory consumption or application crash) via a crafted JPEG file that triggers a large memory allocation. This is related to the 'requestMemoryAllocation' function which is called multiple times in the code without any limit or control over the size of the memory being allocated."
+}

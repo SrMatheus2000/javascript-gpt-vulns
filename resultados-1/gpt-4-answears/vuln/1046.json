@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-209: Information Exposure Through an Error Message", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Improper Input Validation", "Information Exposure Through an Error Message", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate the input 'this.source' before using it to load YAML, which can lead to improper input validation vulnerability. It also exposes error details in the error messages, which can lead to information exposure. The function also does not control the number of iterations in the while loop when handling error details, which can lead to uncontrolled resource consumption if the 'err.details' array is large."
+}

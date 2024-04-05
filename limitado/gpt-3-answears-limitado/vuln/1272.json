@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The provided JavaScript function is vulnerable to command injection. The 'direction' parameter is directly concatenated into the 'oledExecutable' command without proper input validation or sanitization. An attacker can manipulate the 'direction' parameter to inject arbitrary commands, leading to unauthorized command execution."
+}

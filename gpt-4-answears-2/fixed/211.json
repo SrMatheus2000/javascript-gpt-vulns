@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It simply assigns an index to a child object and updates the textContent of the child's dom field if it exists. There are no obvious security issues such as injection vulnerabilities, unhandled exceptions, or insecure use of dangerous functions."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function takes a string and passes it directly to the constructor of 'tree.Anonymous', which could potentially allow for arbitrary code execution if the input is not properly sanitized. This is a form of code injection vulnerability."
+}

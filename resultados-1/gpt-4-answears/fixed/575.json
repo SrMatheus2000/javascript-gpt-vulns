@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-site Scripting (XSS)"],
+  "description": "The function 'unique_name_313' is vulnerable to Cross-site Scripting (XSS) attacks. The function attempts to sanitize the 'html' input by removing disallowed HTML tags. However, it does not properly handle cases where HTML entities are used in the input, which can be exploited to inject malicious scripts. For example, an attacker could provide an input like '<img src=x onerror=alert(1)>', which would bypass the sanitization process and result in a script being executed when the resulting HTML is rendered in a web browser."
+}

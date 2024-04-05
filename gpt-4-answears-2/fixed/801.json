@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to Path Traversal attacks (also known as Directory Traversal). This vulnerability is due to the use of user-supplied input without proper validation. This can allow an attacker to access or manipulate files outside of the intended directory. The vulnerability is specifically in the 'filename' variable, which is normalized but not properly sanitized to prevent directory traversal sequences."
+}

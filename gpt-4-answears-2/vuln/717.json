@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-116"],
+"vulnerabilities": ["Improper Input Validation", "Insufficient Output Encoding"],
+"description": "The function does not validate the input 'params' and directly uses it in the 'inputs' array. This can lead to potential security risks such as Cross-Site Scripting (XSS) attacks. Also, the function does not properly encode the output before sending it to the client, which can lead to Information Exposure vulnerabilities."
+}

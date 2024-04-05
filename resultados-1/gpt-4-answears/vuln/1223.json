@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function 'unique_name_712' is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it takes an input 'value' and directly uses it in the 'replace' function without properly sanitizing it. An attacker could potentially input a malicious script as 'value', which would then be executed when the function is called. This could lead to a variety of security issues, including data theft, website defacement, and other malicious activities."
+}

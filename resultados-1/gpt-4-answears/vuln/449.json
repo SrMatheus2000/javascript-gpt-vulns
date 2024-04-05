@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function 'speak' in the 'liveRegion' object is vulnerable to Cross-Site Scripting (XSS) attacks. It takes a message as input and directly inserts it into the HTML DOM without any sanitization. An attacker can inject malicious scripts as the message, which will be executed when the function is called."
+}

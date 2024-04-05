@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "Information Disclosure"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses user input to access files (filename = path.join(baseDir, uri)). An attacker could manipulate the 'uri' to access sensitive files outside of the intended directory. It's also vulnerable to Information Disclosure (CWE-200) because it reveals system-level details in error messages (response.end(err + \"\\n\")). This could provide an attacker with valuable information about the system."
+}

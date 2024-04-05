@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection via the 'regex' field of the 'bodyRegexFilters' array. The 'regex' field is directly used to create a new RegExp object without any sanitization or validation, which can lead to arbitrary code execution if a malicious regex is provided. Additionally, the function does not properly validate the input for 'path', 'origin', 'method', and 'valid' fields of the 'entry' object, which can lead to unexpected behavior or errors."
+}

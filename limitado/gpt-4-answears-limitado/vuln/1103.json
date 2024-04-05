@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure", "CWE-310: Cryptographic Issues", "CWE-328: Reversible One-Way Hash"],
+  "vulnerabilities": ["Timing Attack"],
+  "description": "The function is vulnerable to timing attacks. The comparison of the HMAC in the for loop can take different amounts of time depending on how many characters match before a mismatch is found. This can allow an attacker to guess the HMAC one character at a time by observing how long the function takes to return an error. To fix this, a constant time comparison function should be used."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-116", "CWE-89"],
+  "vulnerabilities": ["Improper Input Validation", "Insufficient Input Validation", "SQL Injection"],
+  "description": "The function does not properly validate the input 'str' and 'options'. This could lead to various vulnerabilities such as SQL Injection if the input is used in a SQL query, or Cross-Site Scripting (XSS) if the input is rendered on a web page. The function also does not properly handle errors, which could lead to unexpected behavior. Additionally, the function uses the 'eval' function, which can lead to arbitrary code execution if an attacker can control the input."
+}

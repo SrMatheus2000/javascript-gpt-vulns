@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The vulnerability lies in the 'ondata' function where it keeps buffering data until it finds the end of HTTP headers. If an attacker sends a large amount of data without the end of HTTP headers, it can cause the application to consume high memory and CPU, leading to a DoS condition. This is related to CWE-400, which is about uncontrolled resource consumption."
+}

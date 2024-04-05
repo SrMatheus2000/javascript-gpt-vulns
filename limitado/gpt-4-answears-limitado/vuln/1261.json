@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The function does not validate the input parameters which can be manipulated to modify a JavaScript object prototype. When that happens, properties that are meant to be present only in specific objects become available in all objects, leading to potential data leakage or unexpected behavior."
+}

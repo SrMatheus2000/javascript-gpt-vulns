@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-377"],
+  "vulnerabilities": ["Unrestricted File Upload"],
+  "description": "The function does not properly validate the file being unlinked and linked, which can lead to an unrestricted file upload vulnerability. An attacker may be able to upload malicious files to the server."
+}

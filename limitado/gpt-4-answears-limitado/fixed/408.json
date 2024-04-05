@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Command Injection", "Improper Input Validation"],
+  "description": "The function 'connectToWifi' is vulnerable to command injection because it uses 'execFile' function to execute a command that includes user-supplied input ('config.iface', 'ap.ssid', 'ap.password'). An attacker could potentially inject malicious commands by manipulating these inputs. Additionally, there is no input validation for 'config.iface', 'ap.ssid', and 'ap.password', which could lead to unexpected behavior or further vulnerabilities."
+}

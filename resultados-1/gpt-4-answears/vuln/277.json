@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation", "CWE-352: Cross-Site Request Forgery (CSRF)", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Code Injection", "Input Validation", "Cross-Site Request Forgery", "Cross-Site Scripting"],
+  "description": "The function is vulnerable to code injection because it uses JSON.parse() on params.message without validating the input. This could allow an attacker to inject malicious code. The function also does not validate the origin of the request, making it vulnerable to Cross-Site Request Forgery (CSRF). Additionally, the function is vulnerable to Cross-Site Scripting (XSS) because it does not properly neutralize user input before inserting it into the web page."
+}

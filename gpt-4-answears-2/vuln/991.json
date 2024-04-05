@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20", "CWE-79"],
+"vulnerabilities": ["SQL Injection", "Improper Input Validation", "Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to SQL Injection because it directly uses the 'sql' variable in the 'executeSql' function without any form of sanitization or parameterization. This could allow an attacker to manipulate the SQL query. Additionally, the function parses JSON data without proper validation which could lead to unexpected behavior or errors. The function also does not sanitize the 'metadata.id' before using it in the 'doc' object, which could lead to Cross-site Scripting (XSS) if the 'doc' object is rendered in a web page."
+}

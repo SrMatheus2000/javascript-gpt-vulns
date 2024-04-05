@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-20"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. This is due to the fact that it uses the 'interpolate' function to parse the 'component.template' which can contain user-supplied data. If an attacker can control the 'component.template' value, they can inject malicious scripts that will be executed in the context of the victim's session. This can lead to session theft, account takeover, and other malicious activities. Additionally, the function does not properly validate the input 'data' before using it, which can lead to unexpected behavior and potential security issues."
+}

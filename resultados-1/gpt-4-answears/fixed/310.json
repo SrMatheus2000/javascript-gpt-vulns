@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncontrolled Resource Consumption"],
+  "description": "The function does not validate the input passed to the 'findFreePort' function, which could lead to improper input validation (CWE-20). This could potentially allow an attacker to pass malicious input, leading to unexpected behavior. Additionally, the function does not limit the number of worker processes that can be created (CWE-400). This could potentially allow an attacker to exhaust system resources, leading to a Denial of Service (DoS) condition."
+}

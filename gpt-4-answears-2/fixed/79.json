@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+"vulnerabilities": ["Input Validation", "Code Injection"],
+"description": "The function cmdSet does not properly validate the input for 'key' and 'val' parameters. This could lead to an injection attack where an attacker could inject malicious code as the 'key' or 'val' parameter. The function also does not handle exceptions properly, which could lead to unexpected behavior or application crashes."
+}

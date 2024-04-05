@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function 'unique_name_40' is vulnerable to code injection. It takes an input 'exp' and directly evaluates it using the 'eval' function. This means that an attacker could potentially input malicious code as 'exp', which would then be executed by the 'eval' function. This could lead to a variety of attacks, including data theft, data corruption, or even full system control, depending on the privileges of the JavaScript environment."
+}

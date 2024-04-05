@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79", "CWE-89", "CWE-352"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "SQL Injection", "Cross-Site Request Forgery (CSRF)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) because it uses the .html() method which can interpret any HTML and JavaScript code included in the string. It is also vulnerable to SQL Injection because it concatenates user input directly into SQL queries. Additionally, it is vulnerable to Cross-Site Request Forgery (CSRF) because it does not implement any CSRF protection mechanism, such as CSRF tokens."
+}

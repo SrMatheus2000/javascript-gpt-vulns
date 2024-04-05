@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function diskusage is vulnerable to command injection because it concatenates a user-supplied path directly into a command that is executed by the system. An attacker could provide a path that includes command line syntax, which could result in arbitrary command execution."
+}

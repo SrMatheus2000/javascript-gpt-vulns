@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-601: URL Redirection to Untrusted Site ('Open Redirect')"],
+  "vulnerabilities": ["Open Redirect Vulnerability", "Improper Input Validation"],
+  "description": "The function 'uncapitalise' is vulnerable to Open Redirect attacks. This is because it uses user input from 'req.path' to redirect the user to a new URL without validating or sanitizing the input. An attacker could manipulate 'req.path' to redirect users to a malicious website. Additionally, the function does not properly validate or sanitize the 'req.path' input before using it in a regular expression match, which could lead to other potential vulnerabilities."
+}

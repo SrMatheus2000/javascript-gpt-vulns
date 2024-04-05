@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["URL Redirection to Untrusted Site ('Open Redirect')", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to URL redirection and Cross-Site Scripting (XSS) attacks. The function decodes the URL and removes non-alphanumeric characters, but it only checks if the URL starts with 'javascript:'. An attacker could bypass this check by starting the URL with a different protocol (like 'data:' or 'http:') and then including malicious code. The function also does not validate the URL before returning it, which could lead to Open Redirect vulnerabilities if the URL is used to redirect the user to an untrusted site."
+}

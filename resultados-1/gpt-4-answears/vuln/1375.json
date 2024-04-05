@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918: Server-Side Request Forgery (SSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+  "description": "The function unique_name_802 is vulnerable to Server-Side Request Forgery (SSRF) because it takes a URL parameter and uses it to build a Selenium WebDriver without validating the input. An attacker could potentially provide a malicious URL that leads to internal resources that should not be exposed. This is classified as CWE-918. Additionally, the function does not validate the 'url' parameter, which could lead to unexpected behavior or errors. This is classified as CWE-20."
+}

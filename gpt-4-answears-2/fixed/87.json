@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+"vulnerabilities": ["Input Validation", "Error Handling"],
+"description": "The function does not validate the input 'str' before processing it. This could lead to unexpected behavior or errors if the input is not in the expected format. Additionally, the function does not properly handle errors or exceptions, which could lead to unexpected behavior or crashes. For example, if the 'str' input does not contain a character that the function expects (like '-' or ','), the function could enter an infinite loop."
+}

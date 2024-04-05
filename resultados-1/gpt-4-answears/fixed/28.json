@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. Although the function uses the escapeHtml function to sanitize the input, it does not sanitize the input before checking if it matches certain substrings. An attacker could craft a string that passes the checks and then includes malicious script. The malicious script would then be included in the returned string and could be executed when the string is rendered in a browser."
+}

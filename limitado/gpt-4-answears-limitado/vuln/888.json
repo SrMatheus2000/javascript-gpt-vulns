@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+  "vulnerabilities": ["Buffer Overflow"],
+  "description": "The function uses the 'new Buffer' constructor, which can lead to security vulnerabilities if not used properly. If the input is not controlled, it can lead to buffer overflow. It's recommended to use 'Buffer.from', 'Buffer.alloc', or 'Buffer.allocUnsafe' instead."
+}

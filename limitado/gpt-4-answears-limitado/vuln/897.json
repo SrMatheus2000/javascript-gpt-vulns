@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-312: Cleartext Storage of Sensitive Information", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Sensitive Data Exposure"],
+  "description": "The function is vulnerable as it is storing API keys in base64 format which is easily decodable. This can lead to exposure of sensitive information. It is recommended to store such sensitive information in a secure way, for example by using encryption."
+}

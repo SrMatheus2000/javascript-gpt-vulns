@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function is a regular expression for versioning. It does not have any vulnerabilities as it does not interact with any external inputs or systems, does not perform any operations that could lead to security issues, and does not expose any sensitive information."
+}

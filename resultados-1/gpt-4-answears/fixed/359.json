@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection"],
+  "description": "The function unique_name_182 is vulnerable to code injection. The function accepts a parameter 'repoDir' which can be a function. If an attacker can control the input to 'repoDir', they can inject arbitrary code that will be executed when the 'dirMap' method is called. This can lead to serious security issues such as remote code execution."
+}

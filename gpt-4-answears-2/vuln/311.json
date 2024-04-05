@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400"],
+"vulnerabilities": ["Uncontrolled Resource Consumption"],
+"description": "The function ParserHandle has a potential vulnerability of Uncontrolled Resource Consumption (CWE-400). The function guessLineEndings uses a regular expression to replace all text inside quotes. If the input is crafted in a way that results in catastrophic backtracking, it could cause the application to consume resources excessively, leading to longer processing times or triggering out-of-memory conditions."
+}

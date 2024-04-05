@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'disconnect' is vulnerable to OS command injection. The function uses 'execFile' to execute the 'nmcli' command with arguments that are partially controlled by the user (through 'config.iface'). If an attacker can control the 'config.iface' value, they could inject arbitrary commands to be executed on the system."
+}

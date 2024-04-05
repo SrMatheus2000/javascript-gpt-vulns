@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function does not properly sanitize the 'options' input, which is used to construct a SQL query. This could allow an attacker to inject malicious SQL code into 'options.order', 'options.offset', or 'options.limit', leading to SQL Injection. This could allow the attacker to manipulate SQL queries, leading to unauthorized access to data, data corruption, or data loss."
+}

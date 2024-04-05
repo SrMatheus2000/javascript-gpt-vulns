@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94", "CWE-400"],
+  "vulnerabilities": ["Code Injection", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Code Injection (CWE-94) because it uses the 'require' function with a variable ('cors') that can be manipulated by the user through 'opts'. This can allow an attacker to load and execute arbitrary packages within the application. Additionally, the function is vulnerable to Uncontrolled Resource Consumption (CWE-400) because it does not limit the size of 'opts', which can lead to a denial of service if an attacker provides a large object."
+}

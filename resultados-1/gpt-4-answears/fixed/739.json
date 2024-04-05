@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function uses execFileSync to execute a shell command. This can lead to OS command injection if the command or its arguments are controlled by an untrusted user. In this case, if an attacker can modify the git configuration, they could inject arbitrary commands."
+}

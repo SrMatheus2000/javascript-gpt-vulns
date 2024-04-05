@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection via the 'ruleSource' parameter. If an attacker can control the value of 'ruleSource', they can potentially execute arbitrary code. This is due to the use of the 'require' function with a variable ('require(ruleSource)'), which can lead to remote code execution if the input is not properly sanitized. Additionally, the function does not properly validate the input for 'ruleSource', which can lead to unexpected behavior or errors."
+}

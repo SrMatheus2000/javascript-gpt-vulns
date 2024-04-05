@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+"vulnerabilities": ["Type confusion vulnerability", "Uncaught exceptions"],
+"description": "The function does not properly validate the type of 'key' before using it in operations. This can lead to type confusion vulnerabilities where an attacker can pass unexpected types to manipulate the program flow. Additionally, the function throws an error if 'key' is not a ssb message id or a flume offset, but does not catch this exception, potentially causing the program to crash."
+}

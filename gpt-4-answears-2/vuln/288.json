@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function does not properly sanitize the input for the 'e' parameter, which is used to construct a URL. This could allow an attacker to inject malicious scripts, leading to Cross-Site Scripting (XSS) vulnerabilities. Additionally, the function does not properly encode or escape the output, which could lead to further injection vulnerabilities."
+}

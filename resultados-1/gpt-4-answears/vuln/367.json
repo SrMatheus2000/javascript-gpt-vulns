@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function unique_name_173 is vulnerable to OS command injection. The 'path' and 'opts' parameters are passed directly to the 'exec' function without any sanitization or validation. An attacker could potentially pass malicious input to execute arbitrary commands on the system."
+}

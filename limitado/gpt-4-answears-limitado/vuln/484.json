@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-706"],
+  "vulnerabilities": ["Path Traversal", "Incorrect Permission Assignment"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) as it does not validate or sanitize the 'path' input. An attacker could potentially manipulate the 'path' to access, read, or modify files outside of the intended directory. Additionally, the function does not check for permissions before deleting a file or directory (CWE-706). This could lead to unauthorized deletion of files or directories."
+}

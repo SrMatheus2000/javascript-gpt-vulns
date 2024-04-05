@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure"],
+  "vulnerabilities": ["Lack of input validation", "Potential information exposure"],
+  "description": "The function does not validate the input 'msg' before using it to decode a proposal and create a public key. This could lead to unexpected behavior or errors if 'msg' is not in the expected format. Additionally, the function logs potentially sensitive information (the local and remote peer IDs), which could be exposed if the logs are not properly secured."
+}

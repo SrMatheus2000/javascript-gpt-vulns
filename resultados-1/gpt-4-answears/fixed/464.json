@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["No validation of 'data' input", "Potential SQL Injection"],
+  "description": "The function does not validate the 'data' input which can lead to unexpected behavior or errors. It also directly uses the 'adapterSessionIds' from the payload in the 'unstoreGrant' function which could lead to SQL Injection if the function executes a SQL query without properly escaping the input."
+}

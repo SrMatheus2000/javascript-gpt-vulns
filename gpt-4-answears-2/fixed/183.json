@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-200", "CWE-209"],
+"vulnerabilities": ["Improper Input Validation", "Information Exposure", "Information Exposure Through an Error Message"],
+"description": "The function does not validate the input properly which can lead to unexpected behavior. It also exposes information through verbose error messages which can be exploited by an attacker to gain more information about the system. Furthermore, the function does not handle exceptions properly which can lead to information exposure."
+}

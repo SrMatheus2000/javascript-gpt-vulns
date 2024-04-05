@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-367"],
+  "vulnerabilities": ["Directory Traversal", "Insecure File Deletion"],
+  "description": "The provided code is vulnerable to directory traversal and insecure file deletion attacks. An attacker can manipulate the 'path' parameter to traverse outside of the intended directory and delete arbitrary files on the system."
+}

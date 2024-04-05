@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-471: Modification of Assumed-Immutable Data (MAID)"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a type of attack that occurs when an attacker is able to inject properties into existing JavaScript language construct prototypes, such as objects. This can lead to various potential issues such as Denial of Service, Remote Code Execution, or even property injection if the polluted objects are used in security sensitive ways."
+}

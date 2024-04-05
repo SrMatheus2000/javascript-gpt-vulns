@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-330: Use of Insufficiently Random Values"],
+  "vulnerabilities": ["Sensitive data exposure", "Insufficient randomness in key generation"],
+  "description": "The function is vulnerable as it does not implement any form of encryption on the 'secret' variable which could potentially hold sensitive data. This could lead to exposure of sensitive data. Also, the function does not ensure sufficient randomness in the generation of the 'secret' key, which could make it predictable and susceptible to attacks."
+}

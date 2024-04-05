@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function 'setKey' is vulnerable to Prototype Pollution. Prototype Pollution refers to the ability to modify the prototype of a JavaScript object, which can lead to an alteration in the properties of all instances of that object. In this function, the keys are directly used to set a property on the object 'o'. If the keys include '__proto__' or 'constructor.prototype', it can lead to modification of the base object prototype. This can further lead to addition or modification of existing properties for all objects. This can potentially lead to execution of arbitrary JavaScript code or other unexpected behavior, hence it's a serious security issue."
+}

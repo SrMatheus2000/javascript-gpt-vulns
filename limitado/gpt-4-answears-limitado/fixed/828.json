@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function attempts to sanitize the input by removing script tags and attributes starting with 'on' or 'javascript', and style attributes. However, this is not a comprehensive solution and can be bypassed. For example, an attacker could use other HTML tags or event handlers that do not start with 'on' to inject malicious scripts. It is recommended to use a proven library or built-in functions for sanitizing user input, or better yet, to avoid inserting user input directly into the HTML."
+}

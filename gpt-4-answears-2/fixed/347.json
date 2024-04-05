@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is simply defining properties on an object and extending an object with known helpers. There is no use of eval, no obvious opportunity for injection attacks, no insecure use of dangerous functions, and no clear mishandling of errors or exceptions."
+}

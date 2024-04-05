@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Code Injection", "Denial of Service", "Improper Input Validation"],
+  "description": "The function is vulnerable to code injection attacks because it uses user input to construct a regular expression without proper sanitization (new RegExp(regex)). An attacker could provide a malicious input that alters the intended logic of the regex, leading to code injection. Additionally, the function does not properly validate the input before using it, which could lead to unexpected behavior. The function is also vulnerable to a Denial of Service (DoS) attack because it does not limit the size of the input that it processes, potentially leading to excessive resource consumption."
+}

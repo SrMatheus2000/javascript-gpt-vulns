@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function directly assigns a value to the textContent property of an element without any form of sanitization or encoding. This could lead to Cross-Site Scripting (XSS) if the value or state[property].value contains malicious scripts."
+}

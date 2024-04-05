@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"],
+  "vulnerabilities": ["Code Injection", "Path Traversal"],
+  "description": "The function unique_name_316 is vulnerable to both Code Injection and Path Traversal attacks. The function uses the 'require' function with a variable 'name' that is directly taken from the function's input. An attacker could potentially provide a malicious 'name' that could lead to execution of arbitrary code or access to restricted directories."
+}

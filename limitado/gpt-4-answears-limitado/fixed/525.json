@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function is vulnerable to OS command injection. The parameters for the openssl.spawnWrapper function are constructed by concatenating user-supplied input (pathBundleIN.cert, pathBundleIN.key, pathBundleIN.ca, pathOUT, password) with static strings. If an attacker can control the input, they can inject arbitrary commands to be executed by the system. This can lead to various security issues, such as unauthorized access, data leakage, data corruption, or even denial of service."
+}

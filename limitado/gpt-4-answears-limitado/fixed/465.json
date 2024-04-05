@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')", "CWE-287: Improper Authentication"],
+  "vulnerabilities": ["No validation of input data", "Potential SQL Injection", "Improper authentication"],
+  "description": "The function is vulnerable as it does not validate the input data. This can lead to potential SQL Injection attacks if the 'adapterSessionIds' are used in a SQL query. Also, the function does not authenticate the user before performing the logout action. An attacker can potentially logout any user by sending a request with the user's session ID."
+}

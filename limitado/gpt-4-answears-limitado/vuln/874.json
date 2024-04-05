@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-749: Exposed Dangerous Method or Function"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Insecure Direct Object References (IDOR) and Cross-Site Scripting (XSS) attacks. The function does not validate or sanitize the 'url' parameter in the 'window.open' method, which can lead to IDOR if an attacker can manipulate the 'url' to reference unauthorized objects. Additionally, the 'message' parameter in the 'window.alert' and 'window.confirm' methods is not sanitized, which can lead to XSS attacks if an attacker can inject malicious scripts into the 'message'. The function also exposes the 'window.prompt' method, which can be dangerous if used improperly."
+}

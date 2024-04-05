@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-200", "CWE-311"],
+"vulnerabilities": ["SQL Injection", "Information Exposure", "Missing Encryption of Sensitive Data"],
+"description": "The function is vulnerable to SQL Injection (CWE-89) as it directly uses user input in a database query without proper sanitization or parameterization. It also exposes sensitive information (CWE-200) by returning detailed error messages that could aid an attacker. Additionally, it does not appear to encrypt sensitive data (CWE-311), such as the customer's password, before storing it in the session."
+}

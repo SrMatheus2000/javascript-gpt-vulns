@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Denial of Service (DoS)", "Uncontrolled Resource Consumption", "Improper Input Validation"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. If an attacker sends a large number of requests, it can exhaust system resources, causing the service to become unavailable. This is due to the lack of rate limiting in the function. Additionally, the function does not validate the input properly. It parses the 'operations' and 'map' fields from the request without checking if they are in the correct format. This can lead to unexpected behavior or errors if the input is not as expected."
+}

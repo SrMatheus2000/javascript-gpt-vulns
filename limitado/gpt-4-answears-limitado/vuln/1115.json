@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-116: Improper Encoding or Escaping of Output", "CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function does not properly sanitize the 'name' and 'attrs' parameters. This could lead to Cross-Site Scripting (XSS) attacks if the parameters contain malicious scripts. The function only checks if the 'name' parameter is 'script' or 'noscript', and if the 'attrs' parameter starts with 'on', but it does not check for other possible malicious inputs. Additionally, the function does not escape or encode the output, which could lead to information disclosure or other security issues."
+}

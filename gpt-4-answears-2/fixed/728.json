@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It is a function that validates data URLs using a regular expression. The function is strict mode compliant and does not use any risky JavaScript features such as eval or the Function constructor. It also does not appear to have any issues with variable scoping or closure leaks."
+}

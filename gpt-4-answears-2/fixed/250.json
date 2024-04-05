@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Code Injection", "Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function is vulnerable to code injection via the 'params.message' and 'params.jsonp' parameters, which are parsed and executed without proper sanitization. This could allow an attacker to execute arbitrary code. Additionally, the function does not properly validate the 'params.message' input, which could lead to unexpected behavior. Finally, the function does not control the size of the 'body' variable, which could lead to resource exhaustion if an attacker sends a large amount of data."
+}

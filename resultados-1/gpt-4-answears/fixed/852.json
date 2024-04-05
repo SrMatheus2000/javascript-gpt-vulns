@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any vulnerabilities. It is a DOMPurify function that sanitizes HTML and prevents Cross-Site Scripting (XSS) attacks. It does this by removing any potentially harmful elements and attributes from the HTML. The function also has checks in place to prevent DOM clobbering attacks."
+}

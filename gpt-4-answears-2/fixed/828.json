@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-site Scripting (XSS) attacks. The function uses the innerHTML property to parse and manipulate HTML content, which can lead to the execution of malicious scripts if the input is not properly sanitized. Although the function attempts to remove script tags and attributes starting with 'on' or 'javascript', it does not cover all possible XSS attack vectors. For example, it does not handle event handlers that are not starting with 'on', or script execution via other HTML tags or attributes."
+}

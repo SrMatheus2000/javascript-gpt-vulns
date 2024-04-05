@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-359: Exposure of Private Information ('Privacy Violation')"],
+  "vulnerabilities": ["Insecure Direct Object References (IDOR)", "Information Exposure Through Sent Data"],
+  "description": "The function does not validate or sanitize the 'opts' input, which can lead to Insecure Direct Object References (IDOR) if the 'opts' object contains properties that reference system-level objects. Additionally, the function exposes potentially sensitive information through sent data by including potentially sensitive options in the 'opts' object, such as 'pfx', 'key', 'passphrase', 'cert', 'ca', 'ciphers', and 'rejectUnauthorized'. This can lead to exposure of private information if the 'opts' object is intercepted or logged."
+}

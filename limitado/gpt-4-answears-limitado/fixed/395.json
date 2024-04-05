@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Prototype Pollution", "Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Prototype Pollution as it directly manipulates an object's prototype. This can allow an attacker to add or modify properties of any JavaScript object. The function is also vulnerable to Cross-Site Scripting (XSS) as it does not properly sanitize the input string before using it. An attacker can inject malicious scripts through the input string, which will then be executed."
+}

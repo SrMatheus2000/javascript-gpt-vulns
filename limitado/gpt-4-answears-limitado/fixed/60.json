@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-754: Improper Check for Unusual or Exceptional Conditions"],
+  "vulnerabilities": ["Type Coercion", "Potential Denial of Service"],
+  "description": "The function does not properly validate the input 'obj' and 'name'. If 'obj' is not an object or 'name' is not a string, it could lead to unexpected behavior. Additionally, the function does not handle the case where 'obj' is null or undefined before using it in a string concatenation, which could lead to a TypeError and potential Denial of Service (DoS)."
+}

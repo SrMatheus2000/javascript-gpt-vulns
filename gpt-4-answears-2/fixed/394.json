@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulner": [],
+"description": "The provided JavaScript function does not appear to have any obvious vulnerabilities. It uses modern JavaScript practices such as Promises and arrow functions. It also uses the Array.prototype.filter and Array.prototype.map methods, which are safe to use. The function does not use any dangerous JavaScript methods such as eval(), and it does not appear to have any injection vulnerabilities, as it does not construct any strings that are later run as code. The function also does not appear to have any obvious logic errors."
+}

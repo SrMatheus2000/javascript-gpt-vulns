@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')", "CWE-400: Uncontrolled Resource Consumption", "CWE-918: Server-Side Request Forgery (SSRF)"],
+  "vulnerabilities": ["Path Traversal", "Denial of Service", "Server-Side Request Forgery"],
+  "description": "The function reads files synchronously using 'fs.readFileSync' which can lead to Path Traversal if 'sslOptions.key', 'sslOptions.cert', or 'sslOptions.ca' contain relative paths or paths outside the intended directory. This can also lead to Denial of Service if large files are read, blocking the event loop. Additionally, the function creates an HTTP or HTTPS server without any request validation, which can lead to Server-Side Request Forgery if the server is used to make requests to internal resources."
+}

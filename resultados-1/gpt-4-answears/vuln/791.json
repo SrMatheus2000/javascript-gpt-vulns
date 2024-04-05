@@ -1,0 +1,6 @@
+{
+  "isVulnerable": false,
+  "CWEs": [],
+  "vulnerabilities": [],
+  "description": "The provided JavaScript function does not appear to have any obvious security vulnerabilities. It is primarily setting up some properties and regular expressions, and does not perform any risky operations such as eval(), document.write(), or changing the innerHTML property. It also does not appear to be susceptible to common JavaScript vulnerabilities such as Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), or SQL Injection."
+}

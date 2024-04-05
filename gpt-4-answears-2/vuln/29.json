@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-116: Improper Encoding or Escaping of Output"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function escapeShellArg is intended to escape shell arguments to prevent command injection attacks. However, it only replaces double quotes with two double quotes, which is not sufficient to prevent all forms of command injection. For example, it does not handle single quotes, backticks, or other special characters that can be used to inject commands. This can lead to command injection if the function is used to escape arguments for a shell command."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Encoding or Escaping of Output"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function attempts to sanitize the DOM by removing certain attributes from elements, but it does not properly handle all possible cases. For example, it does not consider the case where an attribute's value is a script that gets executed when the attribute is accessed. Additionally, the function does not properly escape or encode the output, which can lead to injection attacks if the output is used in a context that does not properly handle special characters."
+}

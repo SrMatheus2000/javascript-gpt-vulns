@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89: Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection')"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL Injection attacks. User input is being directly used to construct SQL queries without proper sanitization or parameterization. This can allow an attacker to manipulate the queries to execute arbitrary SQL commands. The vulnerability is present in the lines where the SQL queries are being constructed using the `propName`, `f.Field`, `indexName` variables which are derived from user input."
+}

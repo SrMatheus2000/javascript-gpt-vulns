@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-120: Buffer Copy without Checking Size of Input ('Classic Buffer Overflow')", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Buffer Overflow", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to buffer overflow and uncontrolled resource consumption. The function doubles the size of the buffer without checking if the new size is within a safe limit. This can lead to a buffer overflow if the size of the buffer exceeds the available memory. Additionally, the function does not limit the amount of memory that can be allocated, which can lead to uncontrolled resource consumption if the function is called repeatedly with increasing sizes."
+}

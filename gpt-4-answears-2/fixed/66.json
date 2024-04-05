@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-77: Improper Neutralization of Special Elements used in a Command ('Command Injection')"],
+"vulnerabilities": ["Command Injection"],
+"description": "The function uses execa to execute a shell command, which can lead to command injection if the arguments are not properly sanitized. In this case, the arguments are hardcoded and do not seem to be influenced by user input, but if this changes in the future, it could lead to a vulnerability. It's always a good practice to avoid executing shell commands when possible, or to use libraries that allow for argument arrays which are automatically sanitized."
+}

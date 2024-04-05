@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-319", "CWE-400"],
+  "vulnerabilities": ["Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Cleartext Transmission of Sensitive Information (CWE-319) as it uses basic authentication which transmits the password in base64 encoding that can be easily decoded. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it keeps adding sockets to the 'sockets' array without any limit which can lead to a Denial of Service (DoS) attack by consuming server resources."
+}

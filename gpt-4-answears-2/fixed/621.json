@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-400"],
+"vulnerabilities": ["Uncontrolled Resource Consumption"],
+"description": "The function replace.extend allows for the extension of the charMap object. If an attacker can control the keys and values being inserted into this object, they can cause a denial of service by inserting a large number of keys into the object, causing the application to consume a large amount of memory and CPU resources."
+}

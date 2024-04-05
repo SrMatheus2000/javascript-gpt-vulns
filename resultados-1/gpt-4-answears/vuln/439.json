@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The file.name and file.path variables are directly inserted into the HTML code without any sanitization or encoding. If an attacker can control the value of file.name or file.path, they can inject arbitrary JavaScript code that will be executed when the generated HTML is rendered in a web browser."
+}

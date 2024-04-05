@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-94: Improper Control of Generation of Code ('Code Injection')"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function does not properly validate the input for 'node.properties'. An attacker could potentially inject malicious code through 'node.properties', which could lead to code execution when the 'compile' function is called. Additionally, the function does not check if 'node.properties' is an object, which could lead to unexpected behavior if a non-object is passed."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-918", "CWE-20"],
+"vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+"description": "The function is vulnerable to Server-Side Request Forgery (SSRF) because it takes a URL as an input and makes a request to that URL without any validation. This could allow an attacker to make requests to internal resources. The function is also vulnerable to Improper Input Validation because it does not validate the input 'url' before using it to build a new seleniumWebdriver."
+}

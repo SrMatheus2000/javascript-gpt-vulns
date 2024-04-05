@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function deleteConnection is vulnerable to command injection. This is because it takes user-supplied input (config.iface and ap.ssid) and directly uses it in a command that is executed by the system (execFile('networksetup', args, env, function(err, resp))). An attacker could potentially inject malicious commands by manipulating the input, leading to arbitrary command execution on the system."
+}

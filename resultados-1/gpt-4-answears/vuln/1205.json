@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function update_config() is vulnerable to Cross-Site Scripting (XSS) attacks. This is because it directly uses user input from the '#db_select' and '#db_type' options in the HTML generation without proper sanitization or encoding. An attacker could inject malicious scripts through these inputs, which would then be executed in the browser of any user viewing the generated page."
+}

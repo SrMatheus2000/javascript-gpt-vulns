@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to path traversal attacks. The function attempts to sanitize the 'dir' input by splitting it at semicolons and taking the first element, but this is not sufficient to prevent path traversal. An attacker could provide a directory string like '../../etc/passwd' to potentially read sensitive files on the server. This vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

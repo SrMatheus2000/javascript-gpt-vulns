@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure"],
+"vulnerabilities": ["Input Validation", "Information Exposure"],
+"description": "The function does not validate the 'msg' input before using it, which could lead to unexpected behavior or errors. Additionally, the function logs potentially sensitive information (the local and remote peer IDs), which could expose sensitive information if the logs are not properly secured."
+}

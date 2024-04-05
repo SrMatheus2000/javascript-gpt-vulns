@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-89", "CWE-20"],
+"vulnerabilities": ["SQL Injection", "Input Validation"],
+"description": "The function is vulnerable to SQL Injection because it constructs SQL queries using string concatenation with user-supplied input. This could allow an attacker to manipulate the SQL queries by injecting malicious SQL code. Additionally, the function does not perform any input validation, which could lead to unexpected behavior if the input is not in the expected format."
+}

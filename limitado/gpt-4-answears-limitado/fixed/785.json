@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')"],
+  "vulnerabilities": ["Denial of Service (DoS)"],
+  "description": "The function is vulnerable to Denial of Service (DoS) attacks. The function does not validate the size of the input buffers before allocating memory for the mergeBuffer. If a large buffer is passed, it could potentially exhaust system resources leading to a Denial of Service (DoS). This is classified under CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion')."
+}

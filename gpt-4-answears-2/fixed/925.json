@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-915", "CWE-470"],
+"vulnerabilities": ["Improper Control of Dynamically-Managed Code Resources", "Use of Externally-Controlled Input to Select Classes or Code ('Unsafe Reflection')"],
+"description": "The function is vulnerable as it uses the 'apply' method on a function pointer 'fnPtr' which can be manipulated to execute arbitrary code. This can lead to 'Improper Control of Dynamically-Managed Code Resources' (CWE-915). Also, the function uses externally controlled input to select classes or code which can lead to 'Unsafe Reflection' (CWE-470)."
+}

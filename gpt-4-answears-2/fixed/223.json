@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'text' parameter is directly assigned to 'spacer.textContent' without any sanitization or encoding, which means that if the 'text' parameter contains any malicious script, it will be executed when the function is called."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": false,
+"CWEs": [],
+"vulnerabilities": [],
+"description": "The provided JavaScript function does not appear to contain any common security vulnerabilities. It is primarily constructing and using regular expressions, and does not perform any dangerous operations such as eval(), does not manipulate the DOM, and does not handle any user input directly. Therefore, it is not vulnerable to common web security issues such as Cross-Site Scripting (XSS), SQL Injection, or Command Injection."
+}

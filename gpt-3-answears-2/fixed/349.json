@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-116"],
+  "vulnerabilities": ["Arbitrary Code Execution", "Server-Side Request Forgery"],
+  "description": "The function does not properly validate the 'field' parameter before using it to access the 'obj' object. This can lead to arbitrary code execution if an attacker can control the 'field' value. Additionally, the function does not check if the 'field' value is a URL, which can result in server-side request forgery vulnerabilities."
+}

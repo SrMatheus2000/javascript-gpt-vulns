@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+  "description": "The function sanitizeUrl is vulnerable to Cross-Site Scripting (XSS) attacks. The function attempts to sanitize the URL by decoding it and removing non-alphanumeric characters. However, it only checks if the URL starts with 'javascript:', 'vbscript:', or 'data:', which can be bypassed. An attacker could craft a URL that doesn't start with these protocols but still contains malicious JavaScript code. Additionally, the function does not properly validate the input, as it only checks for specific patterns and does not ensure that the input is a valid URL."
+}

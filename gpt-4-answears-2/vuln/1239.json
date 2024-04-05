@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks because it directly uses the input from $(this).text() without any sanitization. An attacker can inject malicious scripts through the input, which will then be executed in the user's browser."
+}

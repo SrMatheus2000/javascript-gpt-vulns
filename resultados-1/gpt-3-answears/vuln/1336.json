@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The given JavaScript function is vulnerable to command injection. It directly passes the 'cmd' parameter to the 'exec' function without any input validation or sanitization. An attacker can manipulate the 'cmd' parameter to execute arbitrary commands on the underlying system, leading to unauthorized access, data leakage, or system compromise."
+}

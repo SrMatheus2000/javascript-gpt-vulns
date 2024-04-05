@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20", "CWE-400"],
+  "vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable to Improper Input Validation (CWE-20) as it does not validate the content of the 'operations' and 'map' fields before parsing them with JSON.parse, which can lead to unexpected behavior or errors. It is also vulnerable to Uncontrolled Resource Consumption (CWE-400) as it does not limit the size of the 'operations' and 'map' fields, which can lead to excessive memory usage if a large amount of data is sent in these fields."
+}

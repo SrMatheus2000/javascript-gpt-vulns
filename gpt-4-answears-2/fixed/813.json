@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Buffer Overflow"],
+"description": "The function does not validate the input for 'addr' and 'mask'. If the input is not a valid IP address, the function 'ip.toBuffer()' could throw an error. Moreover, the function does not check if 'addr' and 'mask' are of the same type (IPv4 or IPv6). This could lead to a buffer overflow if 'addr' is IPv4 and 'mask' is IPv6, as the function will try to access 'mask[i + 12]' where 'i + 12' could be out of bounds for an IPv4 address."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The 'linkStr' parameter is directly used in the 'window.open' function without any sanitization or encoding. An attacker could inject malicious scripts through this parameter, which would then be executed in the user's browser when the link is clicked."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-377"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function is vulnerable to a path traversal attack. The 'srcpath' variable is derived from the 'header.linkname' parameter without proper validation or sanitization, allowing an attacker to manipulate the path and access files outside the intended directory."
+}

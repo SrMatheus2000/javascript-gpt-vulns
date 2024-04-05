@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution which is a serious security vulnerability. The function does not validate the input 'path' and allows the modification of the prototype of 'obj'. An attacker can manipulate these properties to add or modify properties of JavaScript objects. This can lead to several issues like denial of service, potentially leading to remote code execution or other security vulnerabilities in the application using this function."
+}

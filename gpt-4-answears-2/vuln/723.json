@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. The 'exec' function is used to execute the 'rm' command with user-supplied input ('imagePaths'). An attacker could potentially inject malicious commands by manipulating 'imagePaths'."
+}

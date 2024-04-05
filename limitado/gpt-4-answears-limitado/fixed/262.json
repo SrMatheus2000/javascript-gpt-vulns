@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-209: Information Exposure Through an Error Message", "CWE-117: Improper Output Neutralization for Logs"],
+  "vulnerabilities": ["Information Disclosure", "Log Injection"],
+  "description": "The function is vulnerable as it exposes detailed error information to the user, which can be exploited to gain insights about the system. This is a violation of CWE-209. Additionally, it does not sanitize the error message before logging it, which could lead to log injection attacks (CWE-117)."
+}

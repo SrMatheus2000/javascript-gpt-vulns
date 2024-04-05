@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-918: Server-Side Request Forgery (SSRF)", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Server-Side Request Forgery (SSRF)", "Improper Input Validation"],
+  "description": "The function is vulnerable to Server-Side Request Forgery (SSRF) because it takes a user-controlled input 'parsedMinor.minorVersion' and uses it to construct a URL which is then fetched by the server. An attacker could manipulate 'parsedMinor.minorVersion' to make the server fetch an arbitrary URL, potentially leading to unauthorized actions or information disclosure. Additionally, the function does not validate or sanitize the 'parsedMinor.minorVersion' input, making it susceptible to Improper Input Validation."
+}

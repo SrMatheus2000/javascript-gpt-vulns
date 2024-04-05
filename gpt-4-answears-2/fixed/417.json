@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-78"],
+"vulnerabilities": ["OS Command Injection"],
+"description": "The function is vulnerable to OS command injection. Even though there is an attempt to guard against injection by splitting the 'dir' variable on semicolons and taking the first part, this is not sufficient to prevent all possible injection attacks. For example, an attacker could still inject commands using && or || in Unix-based systems, or & and | in Windows. The 'dir' variable is directly included in the command that is executed, which allows for command injection if an attacker can control the 'dir' variable. This is a serious security issue that could allow an attacker to execute arbitrary commands on the server."
+}

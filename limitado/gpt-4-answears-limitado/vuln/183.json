@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Input Validation"],
+  "description": "The function does not validate the 'options' parameter. If the 'options' object contains functions (transformRead, transformKey, transformWrite), they are directly used without any validation. An attacker could potentially pass malicious functions in the 'options' object, leading to arbitrary code execution. This is a form of Improper Input Validation vulnerability."
+}

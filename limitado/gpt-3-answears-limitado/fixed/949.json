@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The provided JavaScript function is vulnerable to SQL Injection. The function uses the 'escapeId' method to escape the 'name' parameter, but this method is not sufficient to prevent SQL Injection attacks. An attacker can still manipulate the 'name' parameter to inject malicious SQL code and potentially perform unauthorized actions on the database."
+}

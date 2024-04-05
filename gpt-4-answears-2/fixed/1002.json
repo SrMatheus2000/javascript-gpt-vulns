@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-116"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Output Neutralization for Logs"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function does not properly sanitize the HTML input. If the 'media_filter_html' setting is set to false, the function will return the input HTML without any sanitization. This can lead to XSS attacks if the input HTML contains malicious scripts. Additionally, the function does not properly neutralize output for logs. The function writes comments, CDATA, text, and start and end tags directly to the writer without any sanitization. If the input HTML contains malicious scripts, these scripts can be written to the logs, potentially leading to further security issues."
+}

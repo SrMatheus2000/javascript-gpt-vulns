@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-200: Information Exposure"],
+  "vulnerabilities": ["Sensitive Information Exposure"],
+  "description": "The function attempts to hide the password in the URL by replacing it with '***'. However, if the password itself is '***', the function will replace the actual part of the URL, not the password. This could lead to incorrect logging and potential information exposure."
+}

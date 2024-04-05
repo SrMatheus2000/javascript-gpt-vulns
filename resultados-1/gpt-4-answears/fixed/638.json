@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function 'unique_name_353' is vulnerable to Path Traversal attack. The function uses 'decodeURI' to decode the pathname, but it only checks for '../' and '..\\' patterns to prevent directory traversal. However, it does not check for URL encoded versions of these patterns (e.g., '%2e%2e%2f', '%2e%2e%5c'). An attacker can use these patterns to bypass the check and access arbitrary files on the system. This vulnerability is classified as CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')."
+}

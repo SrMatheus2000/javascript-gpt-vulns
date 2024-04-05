@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-94: Improper Control of Generation of Code ('Code Injection')", "CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Code Injection", "Improper Input Validation"],
+  "description": "The function unique_name_47 is vulnerable to code injection. This is due to the use of the match() function with user-supplied input without proper sanitization. An attacker could potentially inject malicious code through the 'src' parameter. Additionally, the function does not validate the input data properly. This could lead to unexpected behavior or errors if the input is not in the expected format or type."
+}

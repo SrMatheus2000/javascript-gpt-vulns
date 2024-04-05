@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-78", "CWE-200"],
+  "vulnerabilities": ["Path Traversal", "OS Command Injection", "Information Exposure"],
+  "description": "The function checkPkcs12 is vulnerable to several types of attacks. The 'bufferOrPath' parameter can be manipulated to traverse the file system (CWE-22) and access sensitive files. The 'passphrase' parameter can be used to inject malicious commands (CWE-78) that will be executed by the system. The function also exposes sensitive information (CWE-200) by returning error messages that may contain details about the system or the application."
+}

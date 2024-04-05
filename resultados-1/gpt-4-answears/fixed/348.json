@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Regular Expression Denial of Service (ReDoS)"],
+  "description": "The function uses a regular expression (dangerousPropertyRegex) to validate the 'field' input. If this regular expression is poorly written, it could potentially lead to a Regular Expression Denial of Service (ReDoS) attack, where an attacker provides a specially crafted input that takes a very long time to evaluate, causing the application to hang or become unresponsive."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-384: Session Fixation", "CWE-400: Uncontrolled Resource Consumption"],
+  "vulnerabilities": ["Session Fixation", "Denial of Service"],
+  "description": "The function validateNonce is vulnerable to session fixation attacks because it does not invalidate or change the nonce after it has been used. This allows an attacker to fixate the nonce and potentially hijack the session. Additionally, the function is vulnerable to denial of service attacks. If an attacker sends a large number of requests with different nonces, the noncesToRemove array and the nonces array can grow indefinitely, consuming server resources and potentially leading to a denial of service."
+}

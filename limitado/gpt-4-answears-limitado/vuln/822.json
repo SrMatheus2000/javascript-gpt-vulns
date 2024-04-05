@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-73: External Control of File Name or Path"],
+  "vulnerabilities": ["Path Traversal"],
+  "description": "The function does not properly sanitize the 'path' input, which may allow an attacker to traverse the file system to access files or directories that are outside of the restricted directory. This is known as a Path Traversal attack. The function uses a regular expression to split the path, but it does not check for or handle relative paths (e.g., '../'), which can be used to navigate to parent directories. An attacker could potentially use this vulnerability to access sensitive files on the server."
+}

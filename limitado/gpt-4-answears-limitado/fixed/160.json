@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation"],
+  "vulnerabilities": ["Prototype Pollution"],
+  "description": "The function is vulnerable to Prototype Pollution. The function does not validate or sanitize the input 'arg'. This allows an attacker to inject properties into existing JavaScript language construct prototypes, such as objects. This can allow an attacker to manipulate the application's behavior, leading to a variety of impacts such as Remote Code Execution, Denial of Service, or potentially leading to other vulnerabilities."
+}

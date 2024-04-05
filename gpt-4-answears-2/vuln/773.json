@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-22"],
+"vulnerabilities": ["Path Traversal"],
+"description": "The function is vulnerable to Path Traversal attacks (CWE-22). The 'req' parameter is concatenated directly into the file path used by the 'glob' function without any sanitization or validation. An attacker could potentially manipulate the 'req' parameter to navigate to arbitrary directories."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-330: Use of Insufficiently Random Values", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Insecure Randomness", "Resource Exhaustion"],
+"description": "The function createPrivateKey is vulnerable due to the use of insecure randomness and potential for resource exhaustion. The keyBitsize is set to a default value of 2048 if not provided, which may not provide sufficient randomness for key generation, leading to potential predictability of the private key (CWE-330). Additionally, the function does not limit the size of the keyBitsize input, which could lead to resource exhaustion if a large value is provided (CWE-400)."
+}

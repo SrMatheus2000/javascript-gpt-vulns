@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470", "CWE-20"],
+  "vulnerabilities": ["Unrestricted use of dangerous function", "Improper Input Validation"],
+  "description": "The function is vulnerable as it allows unrestricted use of potentially dangerous functions. This is due to the fact that the function checks if a property of the data object is a function and if so, it calls it without any restrictions or checks. This can lead to arbitrary code execution if a malicious function is passed. Additionally, the function does not properly validate the input 'ctxt', which can lead to unexpected behavior if the input is not as expected."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function inetLatency is vulnerable to OS command injection. The host parameter is used in the construction of a command that is executed by the system. If an attacker can control the value of the host parameter, they can inject arbitrary commands to be executed by the system. This is a serious security risk that can lead to full system compromise. The vulnerability is related to CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')."
+}

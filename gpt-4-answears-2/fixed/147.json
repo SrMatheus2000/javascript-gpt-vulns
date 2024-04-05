@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-200: Information Exposure", "CWE-400: Uncontrolled Resource Consumption"],
+"vulnerabilities": ["Sensitive Data Exposure", "Denial of Service"],
+"description": "The function logs sensitive information such as access tokens when loggingNoPII option is set to false, which can lead to information exposure (CWE-200). Also, the function does not limit the size of the access token that can be processed, which can lead to high memory consumption if an attacker sends a very large token, causing a Denial of Service (CWE-400)."
+}

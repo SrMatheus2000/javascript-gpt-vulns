@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-22", "CWE-209"],
+  "vulnerabilities": ["Path Traversal", "Information Exposure Through an Error Message"],
+  "description": "The function is vulnerable to Path Traversal (CWE-22) because it uses the 'urlPath' from the request to read a file without validating or sanitizing the input. This could allow an attacker to read arbitrary files on the server by sending a request with a crafted URL. Additionally, the function is vulnerable to Information Exposure Through an Error Message (CWE-209) because it includes detailed error information in the response. This could provide an attacker with valuable information about the system."
+}

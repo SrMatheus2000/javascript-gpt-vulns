@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-311: Missing Encryption of Sensitive Data", "CWE-319: Cleartext Transmission of Sensitive Information"],
+"vulnerabilities": ["Insecure communication", "Potential exposure of sensitive information"],
+"description": "The function creates an HTTP server if the 'https' option is not provided, which can lead to insecure communication. Also, if there is an unresolved error, it is sent over the WebSocket connection, potentially exposing sensitive information."
+}

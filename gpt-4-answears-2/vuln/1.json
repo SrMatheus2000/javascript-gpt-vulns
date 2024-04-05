@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation", "CWE-200: Information Exposure"],
+"vulnerabilities": ["Input Validation", "Information Exposure"],
+"description": "The function does not validate or sanitize the input 'req.url' which can lead to various types of attacks such as Cross-Site Scripting (XSS), SQL Injection, etc. Also, the function exposes potentially sensitive information by returning the 'url' object in the 'Location' header without any sanitization or encoding."
+}

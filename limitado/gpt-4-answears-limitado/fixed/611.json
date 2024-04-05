@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-306", "CWE-319", "CWE-400"],
+  "vulnerabilities": ["Missing Authentication for Critical Function", "Cleartext Transmission of Sensitive Information", "Uncontrolled Resource Consumption"],
+  "description": "The function is vulnerable as it does not implement any form of authentication before establishing a WebSocket connection, which could allow unauthorized users to connect to the server (CWE-306). If the 'https' option is not provided, the server will default to using HTTP, potentially transmitting sensitive information in cleartext (CWE-319). The function also does not limit the number of WebSocket connections that can be established, which could lead to resource exhaustion (CWE-400)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78"],
+  "vulnerabilities": ["OS Command Injection"],
+  "description": "The function 'growl' is vulnerable to OS command injection. The 'spawn' function is used to execute a command that is constructed by concatenating unsanitized input from the user. This could allow an attacker to execute arbitrary commands on the system with the privileges of the process."
+}

@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function does not sanitize the file name before using it in the template rendering, which could lead to Cross-Site Scripting (XSS) if the file name contains malicious scripts. Also, there is no validation on the file size, date, owner, and mode, which could lead to unexpected behavior if they contain invalid values."
+}

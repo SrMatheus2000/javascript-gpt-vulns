@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-470"],
+  "vulnerabilities": ["Unrestricted Property Assignment"],
+  "description": "The function allows for unrestricted property assignment. This can lead to potential issues where an attacker can add or modify properties of an object. The function does not validate or restrict the properties that can be added or modified on the 'lhs' object. This can lead to potential issues where an attacker can add or modify properties of an object, potentially leading to logic errors, denial of service, or execution of arbitrary code."
+}

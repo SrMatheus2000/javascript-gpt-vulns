@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-89"],
+  "vulnerabilities": ["SQL Injection"],
+  "description": "The function is vulnerable to SQL Injection attacks. The function constructs SQL queries by concatenating user-controlled input, which can be manipulated to inject malicious SQL code. This is evident in the 'get', 'set', 'destroy', and 'touch' methods of the 'PGStore' object where the 'sid' parameter is directly used in the SQL query without any sanitization or parameterization. This can lead to unauthorized data access, data corruption or even data loss."
+}

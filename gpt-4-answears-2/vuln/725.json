@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-676: Use of Potentially Dangerous Function"],
+"vulnerabilities": ["Insecure use of 'new Buffer'"],
+"description": "The function uses 'new Buffer' to convert data, which can lead to security vulnerabilities if the data is user-supplied. This can lead to various types of attacks such as remote code execution, memory exposure, and denial of service. It is recommended to use 'Buffer.from', 'Buffer.alloc', or 'Buffer.allocUnsafe' instead."
+}

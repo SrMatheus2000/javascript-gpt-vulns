@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-74: Improper Neutralization of Special Elements in Output Used by a Downstream Component ('Injection')"],
+  "vulnerabilities": ["No input validation", "Potential for injection attacks"],
+  "description": "The function does not validate the input 'value'. This could lead to unexpected behavior or potential security vulnerabilities. For example, if 'value' is an object with circular references, calling JSON.stringify(value) will throw an error. Additionally, if 'value' is a string that includes special characters, it could lead to injection attacks when the output is used in a downstream component."
+}

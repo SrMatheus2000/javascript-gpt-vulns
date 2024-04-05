@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20: Improper Input Validation"],
+"vulnerabilities": ["Insecure Direct Object References (IDOR)"],
+"description": "The function does not validate or sanitize the 'embedder' and 'options' inputs. This could allow an attacker to manipulate these inputs to gain unauthorized access to data or functionality. For example, an attacker could potentially manipulate the 'embedder.id' to reference a different object than intended. This is known as an Insecure Direct Object References (IDOR) vulnerability."
+}

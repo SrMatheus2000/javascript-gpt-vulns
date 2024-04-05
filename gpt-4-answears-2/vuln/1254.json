@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-79", "CWE-20"],
+"vulnerabilities": ["Cross-Site Scripting (XSS)", "Improper Input Validation"],
+"description": "The function is vulnerable to Cross-Site Scripting (XSS) because it directly uses user input (req.query.jsonp) in the response without any sanitization or encoding. This can allow an attacker to inject malicious scripts. Also, the function does not validate the input before processing it, which can lead to various types of attacks."
+}

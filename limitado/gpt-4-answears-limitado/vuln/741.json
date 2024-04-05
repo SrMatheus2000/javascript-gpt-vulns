@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)"],
+  "description": "The function is vulnerable to Cross-Site Scripting (XSS) attacks. The function decodes the query string parameters and directly assigns them to the result object without any sanitization or encoding. This means that if the query string parameters contain any malicious scripts, they will be executed when the result object is used in a context that can execute scripts (like innerHTML)."
+}

@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-78: Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"],
+  "vulnerabilities": ["Command Injection"],
+  "description": "The function unique_name_350 uses the execFile function to execute the 'ifconfig' command with user-supplied input (iface). This can lead to command injection if the user-supplied input is not properly sanitized. An attacker could provide a malicious input that includes command line syntax, which could lead to arbitrary command execution."
+}

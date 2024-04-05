@@ -1,0 +1,6 @@
+{
+"isVulnerable": true,
+"CWEs": ["CWE-20", "CWE-400"],
+"vulnerabilities": ["Improper Input Validation", "Uncontrolled Resource Consumption"],
+"description": "The function parseDCC does not validate the input 'source' which can lead to unexpected behavior (CWE-20). Also, the function uses the 'indexOf' method on the 'source' input which can lead to high CPU usage if the 'source' input is large, leading to a potential Denial of Service (DoS) attack (CWE-400)."
+}

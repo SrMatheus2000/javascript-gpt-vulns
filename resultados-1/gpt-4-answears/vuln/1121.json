@@ -1,0 +1,6 @@
+{
+  "isVulnerable": true,
+  "CWEs": ["CWE-20: Improper Input Validation", "CWE-116: Improper Encoding or Escaping of Output"],
+  "vulnerabilities": ["Cross-Site Scripting (XSS)", "Code Injection"],
+  "description": "The function `unique_name_634` does not validate or sanitize the input `str` before using it. This could lead to Cross-Site Scripting (XSS) if `str` contains malicious scripts. Also, if `str` is a function, it is directly executed which could lead to Code Injection if the function contains malicious code. Furthermore, the function does not escape or encode the output before using it which could lead to Improper Encoding or Escaping of Output."
+}
